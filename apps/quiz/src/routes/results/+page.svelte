@@ -73,23 +73,23 @@
 </svelte:head>
 
 {#if $quizStore.questions.length > 0}
-  <QuizSummary title={stats.percentage >= 80 ? 'Bạn đã nắm chắc phần này' : 'Đã có danh sách cần ôn'} score={stats.correct} total={stats.total} message={`${wrongCount} câu cần xem lại · Thời gian ${duration} · Xếp hạng ${stats.grade}`}>
+  <QuizSummary title={stats.percentage >= 80 ? 'You\'ve got this down' : 'A few things to review'} score={stats.correct} total={stats.total} message={`${wrongCount} to review · ${duration} · Grade ${stats.grade}`}>
         {#if wrongCount > 0}
           <UiButton variant="default" size="lg" class="w-full" onclick={retryWrong}>
-            <PenLine size={16} aria-hidden="true" /> Ôn lại {wrongCount} câu sai
+            <PenLine size={16} aria-hidden="true" /> Review {wrongCount} wrong answers
           </UiButton>
         {/if}
         <UiButton variant="secondary" size="lg" class="w-full" onclick={retryAll}>
-          <RefreshCw size={16} aria-hidden="true" /> Làm lại toàn bộ
+          <RefreshCw size={16} aria-hidden="true" /> Retry all
         </UiButton>
         <UiButton variant="default" class="w-full" onclick={continueLearning}>
-          Học bài tiếp theo <ArrowRight size={16} aria-hidden="true" />
+          Next lesson <ArrowRight size={16} aria-hidden="true" />
         </UiButton>
         <UiButton variant="outline" class="w-full" onclick={backToLesson}>
-          <ArrowLeft size={16} aria-hidden="true" /> Về bài học
+          <ArrowLeft size={16} aria-hidden="true" /> Back to lesson
         </UiButton>
         <UiButton variant="ghost" class="w-full" onclick={backToHome}>
-          <Home size={16} aria-hidden="true" /> Trang chủ
+          <Home size={16} aria-hidden="true" /> Home
         </UiButton>
   </QuizSummary>
 {/if}

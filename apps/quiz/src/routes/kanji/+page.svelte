@@ -19,23 +19,23 @@
   let masteryFilter: 'all' | 'started' | 'mastered' = 'all';
 
   const levels = [
-    { id: 'n5n4' as const, label: 'N5/N4', count: 255, desc: '25 bài Minna' },
-    { id: 'n3' as const, label: 'N3', count: KANJI_N3_DATA.length, desc: 'Trung cấp' },
-    { id: 'n2' as const, label: 'N2', count: KANJI_N2_DATA.length, desc: 'Trung cao cấp' },
-    { id: 'n1' as const, label: 'N1', count: KANJI_N1_DATA.length, desc: 'Cao cấp' }
+    { id: 'n5n4' as const, label: 'N5/N4', count: 255, desc: '25 Minna lessons' },
+    { id: 'n3' as const, label: 'N3', count: KANJI_N3_DATA.length, desc: 'Intermediate' },
+    { id: 'n2' as const, label: 'N2', count: KANJI_N2_DATA.length, desc: 'Upper intermediate' },
+    { id: 'n1' as const, label: 'N1', count: KANJI_N1_DATA.length, desc: 'Advanced' }
   ];
 
   const masteryOptions = [
-    { id: 'all', label: 'Tất cả' },
-    { id: 'started', label: 'Đang học' },
-    { id: 'mastered', label: 'Đã vững' }
+    { id: 'all', label: 'All' },
+    { id: 'started', label: 'In progress' },
+    { id: 'mastered', label: 'Mastered' }
   ];
 
   $: totalKanji = levels.reduce((s, l) => s + l.count, 0);
   $: levelOptions = levels.map(lvl => ({
     id: lvl.id,
     label: lvl.label,
-    description: `${lvl.count} chữ`
+    description: `${lvl.count} kanji`
   }));
 
   $: recentLesson = getRecentKanjiLesson($kanjiProgressStore);
@@ -63,20 +63,20 @@
 </script>
 
 <svelte:head>
-  <title>Kanji ({totalKanji} chữ) | Smart Quiz</title>
+  <title>Kanji ({totalKanji} characters) | Smart Quiz</title>
 </svelte:head>
 
 <PageWorkspace size="lg">
   <PageHero
     eyebrow="Japanese script"
     title="漢字 Kanji"
-    subtitle="{totalKanji} chữ Hán — N5 đến N1. Chọn cấp độ, học theo bài, rồi quay lại ôn những chữ chưa vững."
+    subtitle="{totalKanji} kanji, N5 through N1. Pick a level, study by lesson, then come back to review what isn't solid yet."
     script="japanese"
   >
     {#snippet actions()}
       <UiButton href="{base}/kanji/radicals" variant="outline" size="sm">
         <BookOpen size={16} aria-hidden="true" />
-        214 Bộ thủ
+        214 Radicals
       </UiButton>
     {/snippet}
   </PageHero>
@@ -87,8 +87,8 @@
     {#if recentLesson}
       <StudyListCard
         href="{base}/kanji/{recentLesson}/reference"
-        title="Tiếp tục bàn học Kanji"
-        subtitle={`Bài ${recentLesson} · ${getKanjiMastery($kanjiProgressStore, recentLesson)}% thành thạo`}
+        title="Continue kanji study"
+        subtitle={`Lesson ${recentLesson} · ${getKanjiMastery($kanjiProgressStore, recentLesson)}% mastered`}
         active
       >
         {#snippet leading()}
@@ -101,9 +101,9 @@
       </StudyListCard>
     {/if}
 
-    <section class="grid gap-3" aria-label="Tìm và lọc bài Kanji">
-      <SearchInput bind:value={searchQuery} placeholder="Tìm bài kanji... (số hoặc tên)" />
-      <FilterTabs bind:value={masteryFilter} options={masteryOptions} ariaLabel="Lọc theo mức thành thạo" class="sm:inline-flex sm:w-fit" />
+    <section class="grid gap-3" aria-label="Search and filter kanji lessons">
+      <SearchInput bind:value={searchQuery} placeholder="Search lessons... (number or name)" />
+      <FilterTabs bind:value={masteryFilter} options={masteryOptions} ariaLabel="Filter by mastery" class="sm:inline-flex sm:w-fit" />
     </section>
 
     <section class="grid gap-3" aria-label="Kanji lessons">
@@ -113,7 +113,7 @@
           href="{base}/kanji/{lesson.lessonNumber}"
           title={lesson.title}
           subtitle={lesson.preview}
-          meta={`${lesson.kanjiCount} chữ`}
+          meta={`${lesson.kanjiCount} kanji`}
         >
           {#snippet leading()}
             <span class="text-sm font-bold">{lesson.lessonNumber}</span>
@@ -128,7 +128,7 @@
 
       {#if lessons.length === 0}
         <p class="rounded-surface border border-border bg-card p-6 text-center text-sm text-muted-foreground">
-          Không có bài Kanji phù hợp với bộ lọc.
+          No kanji lessons match this filter.
         </p>
       {/if}
     </section>

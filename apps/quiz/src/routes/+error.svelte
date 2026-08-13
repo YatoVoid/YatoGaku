@@ -13,21 +13,21 @@
     <h1>{status}</h1>
     <h2>
       {#if status === 404}
-        Không tìm thấy trang
+        Page not found
       {:else if status === 500}
-        Lỗi server
+        Server error
       {:else}
-        Có lỗi xảy ra
+        Something went wrong
       {/if}
     </h2>
 
     <p class="error-message">
-      {error?.message || 'Đã xảy ra lỗi không xác định'}
+      {error?.message || 'An unknown error occurred'}
     </p>
 
     <div class="actions">
       <BackButton />
-      <a href="{base}/" class="btn-primary">Về trang chủ</a>
+      <a href="{base}/" class="btn-primary">Back to home</a>
     </div>
   </div>
 </div>
