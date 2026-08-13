@@ -80,7 +80,7 @@ const config: Config = {
         {
           to: '/docs/grammar-n5',
           position: 'left',
-          label: 'Grammar',
+          label: 'N5 Grammar',
         },
         {
           href: kanaAppUrl,
@@ -121,8 +121,12 @@ const config: Config = {
               to: '/docs/dashboard',
             },
             {
-              label: 'Grammar',
+              label: 'N5 Grammar',
               to: '/docs/grammar-n5',
+            },
+            {
+              label: 'N4 Grammar',
+              to: '/docs/grammar-n4',
             },
             {
               label: 'Kana Practice',

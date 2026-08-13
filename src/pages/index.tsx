@@ -22,9 +22,15 @@ export default function Home(): ReactNode {
       internal: true,
     },
     {
-      label: 'Grammar',
+      label: 'N5 Grammar',
       description: 'N5 grammar points, linking to Tae Kim, Imabi, and Tofugu.',
       href: '/docs/grammar-n5',
+      internal: true,
+    },
+    {
+      label: 'N4 Grammar',
+      description: 'N4 grammar points: passive, causative, conditionals, and more.',
+      href: '/docs/grammar-n4',
       internal: true,
     },
     {

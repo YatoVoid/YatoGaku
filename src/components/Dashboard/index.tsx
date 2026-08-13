@@ -3,12 +3,14 @@ import type {ReactNode} from 'react';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import {n5GrammarGroups} from '@site/src/data/n5-grammar';
+import {n4GrammarGroups} from '@site/src/data/n4-grammar';
 import {listeningReadingResources} from '@site/src/data/listening-reading';
 import {useCategoryProgress} from '@site/src/hooks/useProgress';
 import {isStorageAvailable} from '@site/src/utils/progress';
 import styles from './styles.module.css';
 
-const allGrammarIds = n5GrammarGroups.flatMap((group) => group.points.map((p) => p.id));
+const allN5GrammarIds = n5GrammarGroups.flatMap((group) => group.points.map((p) => p.id));
+const allN4GrammarIds = n4GrammarGroups.flatMap((group) => group.points.map((p) => p.id));
 const allResourceIds = listeningReadingResources.map((r) => r.id);
 
 function ProgressBar({done, total}: {done: number; total: number}): ReactNode {
@@ -25,7 +27,8 @@ export default function Dashboard(): ReactNode {
   const kanaAppUrl = `${siteConfig.url}${siteConfig.baseUrl}apps/kana/`;
   const quizAppUrl = `${siteConfig.url}${siteConfig.baseUrl}apps/quiz/`;
 
-  const grammar = useCategoryProgress('grammar', allGrammarIds);
+  const n5Grammar = useCategoryProgress('grammar', allN5GrammarIds);
+  const n4Grammar = useCategoryProgress('grammar-n4', allN4GrammarIds);
   const listeningReading = useCategoryProgress('listening-reading', allResourceIds);
 
   const [available, setAvailable] = useState(false);
@@ -42,10 +45,17 @@ export default function Dashboard(): ReactNode {
       )}
       <div className={styles.section}>
         <h2>
-          Grammar: {grammar.done} / {grammar.total}
+          N5 grammar: {n5Grammar.done} / {n5Grammar.total}
         </h2>
-        <ProgressBar done={grammar.done} total={grammar.total} />
-        <Link to="/docs/grammar-n5">Continue grammar</Link>
+        <ProgressBar done={n5Grammar.done} total={n5Grammar.total} />
+        <Link to="/docs/grammar-n5">Continue N5 grammar</Link>
+      </div>
+      <div className={styles.section}>
+        <h2>
+          N4 grammar: {n4Grammar.done} / {n4Grammar.total}
+        </h2>
+        <ProgressBar done={n4Grammar.done} total={n4Grammar.total} />
+        <Link to="/docs/grammar-n4">Continue N4 grammar</Link>
       </div>
       <div className={styles.section}>
         <h2>
