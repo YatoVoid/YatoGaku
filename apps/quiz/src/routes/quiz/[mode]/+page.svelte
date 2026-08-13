@@ -24,7 +24,7 @@
 
   $: course = getCourse(courseId);
   $: lessonData = course?.getLessonData(lessonId) ?? null;
-  $: directionLabel = direction === 'ja-vi' ? 'Nhật → Việt' : direction === 'vi-ja' ? 'Việt → Nhật' : direction === 'vi-romaji' ? 'Việt → Romaji' : 'Nhật → Romaji';
+  $: directionLabel = direction === 'ja-vi' ? 'Nhật → Việt' : direction === 'vi-ja' ? 'Việt → Nhật' : direction === 'vi-romaji' ? 'Việt → Romaji' : direction === 'ja-en' ? 'Japanese → English' : direction === 'en-ja' ? 'English → Japanese' : direction === 'ja-romaji' ? 'Nhật → Romaji' : direction;
   $: shortcutLabels = mode === 'flashcard' ? ['Space / Enter: lật thẻ', 'F1: nghe'] : mode === 'multiple-choice' ? ['1–4: chọn đáp án', 'F1: nghe'] : ['Enter: trả lời / tiếp tục', 'F1: nghe'];
 
   let mcOptions: string[] = [];

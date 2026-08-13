@@ -17,9 +17,10 @@
   $: course = getCourse(courseId);
   $: lesson = course?.getLessonData(lessonId);
   $: mastery = getLessonMastery($progressStore, courseId, lessonId);
-  let selectedDirection: QuizDirection = 'ja-vi';
+  let selectedDirection: QuizDirection = 'ja-en';
 
   const directions: { value: QuizDirection; label: string; description: string }[] = [
+    { value: 'ja-en', label: 'Japanese → English', description: 'Recognize meaning' },
     { value: 'ja-vi', label: 'Nhật → Việt', description: 'Nhận diện nghĩa' },
     { value: 'vi-ja', label: 'Việt → Nhật', description: 'Gợi nhớ từ Nhật' },
     { value: 'vi-romaji', label: 'Việt → Romaji', description: 'Luyện cách đọc' }
@@ -96,7 +97,7 @@
   .section-title { display: flex; align-items: flex-start; gap: var(--spacing-sm); margin-bottom: var(--spacing-md); }
   .section-title :global(svg) { color: var(--color-primary); margin-top: 2px; }
   .section-title p { margin-bottom: 0; font-size: .78rem; }
-  .direction-options { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--spacing-sm); }
+  .direction-options { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--spacing-sm); }
   .direction-options button { min-height: 70px; display: grid; align-content: center; gap: 2px; padding: var(--spacing-sm); color: var(--color-muted-foreground); background: transparent; border: 1px solid var(--color-border); border-radius: var(--radius-control); cursor: pointer; }
   .direction-options button.active { color: var(--color-primary); background: var(--color-primary-subtle); border-color: var(--color-primary); }
   .direction-options span { font-size: .7rem; }

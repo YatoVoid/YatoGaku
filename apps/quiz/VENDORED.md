@@ -7,7 +7,7 @@
 - License: MIT, see `LICENSE` in this directory (copied unmodified from upstream)
 
 Source copied as-is from the upstream repo's `svelte-app/` subdirectory,
-`.git` history excluded. No logic changes made.
+`.git` history excluded. Two logic changes made since, both described below.
 
 ## Base path change for hosting under this site
 
@@ -17,3 +17,27 @@ victoraurelius.github.io/2026-Smart-Quiz/. Changed to
 `/YatoGaku/apps/quiz` to match where this app is served from inside the
 assembled YatoGaku site (github.com/YatoVoid/YatoGaku, project pages,
 this app copied to `build/apps/quiz/`). Path only, no logic changed.
+
+## Made English the default practice direction
+
+Upstream's vocabulary and grammar data already carries a real, populated
+`english` field on every item (confirmed: 0 empty across all N5 minna
+lessons, N4/N3/N2 course lessons, kanji N1-N3 data), and the underlying
+`QuizDirection` type and `quizUtils.ts` already fully support `ja-en`/
+`en-ja`. But the lesson page's practice-direction selector
+(`src/routes/course/[courseId]/lesson/[id]/+page.svelte`) only exposed
+three options (ja-vi, vi-ja, vi-romaji), missing English entirely, and
+`src/lib/stores/progress.ts`'s default settings defaulted to `ja-vi`.
+
+Added a `ja-en` option to the lesson page's selector (kept the three
+existing Vietnamese-pair options, did not remove them) and made it the
+default `selectedDirection`; changed the four `defaultDirection: 'ja-vi'`
+occurrences in `progress.ts` to `'ja-en'`. Also fixed
+`src/routes/quiz/[mode]/+page.svelte`'s direction label, which had no
+`ja-en`/`en-ja` case and silently mislabeled English mode as "Nhật →
+Romaji"; added explicit cases for both plus a safe fallback.
+
+Not fixed: Conversations data (`ConversationPattern`/`DialogueLine`) has
+no `english` field at all, Vietnamese only. Left as a known limitation,
+see docs/SOURCES.md, rather than authoring 110 dialogue translations
+under this key result's scope.

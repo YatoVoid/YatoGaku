@@ -16,7 +16,7 @@ function loadProgress(): ProgressState {
       lessons: {},
       hsk: {},
       settings: {
-        defaultDirection: 'ja-vi',
+        defaultDirection: 'ja-en',
         autoPlay: false,
         showEnglish: true
       }
@@ -36,7 +36,7 @@ function loadProgress(): ProgressState {
     lessons: {},
     hsk: {},
     settings: {
-      defaultDirection: 'ja-vi',
+      defaultDirection: 'ja-en',
       autoPlay: false,
       showEnglish: true
     }
@@ -115,7 +115,7 @@ export function clearProgress() {
       lessons: {},
       hsk: {},
       settings: {
-        defaultDirection: 'ja-vi',
+        defaultDirection: 'ja-en',
         autoPlay: false,
         showEnglish: true
       }
@@ -128,7 +128,7 @@ export function exportProgress(): string {
   let data: ProgressState = {
     lessons: {},
     hsk: {},
-    settings: { defaultDirection: 'ja-vi', autoPlay: false, showEnglish: true }
+    settings: { defaultDirection: 'ja-en', autoPlay: false, showEnglish: true }
   };
   progressStore.subscribe(v => { data = v; })();
   return JSON.stringify({
