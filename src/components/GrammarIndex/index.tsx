@@ -1,13 +1,20 @@
 import {useEffect, useState} from 'react';
 import type {ReactNode} from 'react';
-import {n5GrammarGroups} from '@site/src/data/n5-grammar';
-import type {GrammarPoint} from '@site/src/data/n5-grammar';
+import type {GrammarGroup, GrammarPoint} from '@site/src/data/n5-grammar';
 import {useTrackedItem} from '@site/src/hooks/useProgress';
 import {isStorageAvailable} from '@site/src/utils/progress';
 import styles from './styles.module.css';
 
-function GrammarPointCard({point, available}: {point: GrammarPoint; available: boolean}): ReactNode {
-  const {checked, toggle} = useTrackedItem('grammar', point.id);
+function GrammarPointCard({
+  point,
+  available,
+  progressCategory,
+}: {
+  point: GrammarPoint;
+  available: boolean;
+  progressCategory: string;
+}): ReactNode {
+  const {checked, toggle} = useTrackedItem(progressCategory, point.id);
   return (
     <div className={styles.point}>
       <label className={styles.pointHeader}>
@@ -34,7 +41,13 @@ function GrammarPointCard({point, available}: {point: GrammarPoint; available: b
   );
 }
 
-export default function GrammarIndex(): ReactNode {
+export default function GrammarIndex({
+  groups,
+  progressCategory,
+}: {
+  groups: GrammarGroup[];
+  progressCategory: string;
+}): ReactNode {
   const [available, setAvailable] = useState(false);
   useEffect(() => {
     setAvailable(isStorageAvailable());
@@ -47,11 +60,16 @@ export default function GrammarIndex(): ReactNode {
           Progress tracking isn&apos;t available in this browser, so the checkboxes below are disabled.
         </p>
       )}
-      {n5GrammarGroups.map((group) => (
+      {groups.map((group) => (
         <section key={group.id} className={styles.group}>
           <h2>{group.title}</h2>
           {group.points.map((point) => (
-            <GrammarPointCard key={point.id} point={point} available={available} />
+            <GrammarPointCard
+              key={point.id}
+              point={point}
+              available={available}
+              progressCategory={progressCategory}
+            />
           ))}
         </section>
       ))}
