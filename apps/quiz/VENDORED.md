@@ -7,7 +7,7 @@
 - License: MIT, see `LICENSE` in this directory (copied unmodified from upstream)
 
 Source copied as-is from the upstream repo's `svelte-app/` subdirectory,
-`.git` history excluded. Two logic changes made since, both described below.
+`.git` history excluded. Three changes made since, described below.
 
 ## Base path change for hosting under this site
 
@@ -41,3 +41,23 @@ Not fixed: Conversations data (`ConversationPattern`/`DialogueLine`) has
 no `english` field at all, Vietnamese only. Left as a known limitation,
 see docs/SOURCES.md, rather than authoring 110 dialogue translations
 under this key result's scope.
+
+## Translated remaining UI chrome to English
+
+Following on from the direction fix above, translated the app's
+remaining Vietnamese interface chrome (not learning content): the home
+page (`src/routes/+page.svelte`) hero and tools list; the breadcrumb/
+page-title system (`src/lib/navigation/routeMeta.ts`), which affects
+every workspace route, not just the home page; the error page
+(`+error.svelte`); the quiz results page (`results/+page.svelte`); and
+the kanji library page (`kanji/+page.svelte`). Updated
+`src/tests/routeMeta.test.ts`, which asserted the old Vietnamese
+breadcrumb labels, to match.
+
+Deliberately not touched: individual lesson titles (both the Minna no
+Nihongo course lessons and the kanji lesson library) carry an embedded
+Vietnamese subtitle baked directly into their data (e.g. "わたしは
+～です (Giới thiệu bản thân)", "数字・基本 (Số đếm & Cơ bản)"). This is
+lesson content, not interface chrome, and editing it title-by-title
+across dozens of lessons was judged out of scope here, same reasoning
+as leaving Conversations untranslated.
