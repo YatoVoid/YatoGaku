@@ -19,7 +19,7 @@
   <PageHero
     eyebrow="Learning path"
     title="Japanese Courses"
-    subtitle="Chọn khóa học để bắt đầu. Mỗi khóa giữ cùng một nhịp học: bài học, từ vựng, ngữ pháp, luyện tập và ôn lại."
+    subtitle="Pick a course to get started. Each one follows the same rhythm: lessons, vocabulary, grammar, practice, and review."
   />
 
   {#if courses.length === 0}

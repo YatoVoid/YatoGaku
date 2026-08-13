@@ -28,10 +28,10 @@
     ? Math.round((courseProgress.completed / courseProgress.total) * 100) : 0;
 
   const primaryLinks = [
-    { href: '/', label: 'Hôm nay', section: 'home', icon: Home },
-    { href: '/courses', label: 'Học', section: 'learn', icon: BookOpen },
-    { href: '/review', label: 'Ôn tập', section: 'review', icon: RefreshCw },
-    { href: '/stats', label: 'Tiến trình', section: 'progress', icon: ChartNoAxesColumnIncreasing }
+    { href: '/', label: 'Today', section: 'home', icon: Home },
+    { href: '/courses', label: 'Learn', section: 'learn', icon: BookOpen },
+    { href: '/review', label: 'Review', section: 'review', icon: RefreshCw },
+    { href: '/stats', label: 'Progress', section: 'progress', icon: ChartNoAxesColumnIncreasing }
   ] as const;
 
   onMount(() => {
@@ -59,8 +59,8 @@
 
 <div class:focus-shell={meta.mode === 'focus'} class="app-shell" data-hydrated={hydrated}>
   {#if meta.mode === 'workspace'}
-    <aside class="desktop-rail" aria-label="Điều hướng chính">
-      <a class="brand" href="{base}/" aria-label="Smart Quiz — Trang chủ">
+    <aside class="desktop-rail" aria-label="Main navigation">
+      <a class="brand" href="{base}/" aria-label="Smart Quiz — Home">
         <img src="{base}/logo.svg" alt="" width="126" height="24" class="dark:brightness-0 dark:invert" />
       </a>
 
@@ -77,18 +77,18 @@
       <div class="rail-context">
         {#if course && courseProgress}
           <a class="course-context" href="{base}/course/{meta.courseId}">
-            <span class="eyebrow">Đang học</span>
+            <span class="eyebrow">Studying</span>
             <strong>{course.level} · {course.title}</strong>
-            <span>{courseProgress.completed}/{courseProgress.total} bài hoàn thành</span>
-            <Progress value={coursePercent} label={`Tiến trình ${course.level}`} />
+            <span>{courseProgress.completed}/{courseProgress.total} lessons done</span>
+            <Progress value={coursePercent} label={`${course.level} progress`} />
           </a>
         {/if}
         <div class:offline={!online} class="connection" role="status">
-          {#if online}<Wifi size={16} aria-hidden="true" /><span>Đang trực tuyến</span>
-          {:else}<CloudOff size={16} aria-hidden="true" /><span>Đang ngoại tuyến</span>{/if}
+          {#if online}<Wifi size={16} aria-hidden="true" /><span>Online</span>
+          {:else}<CloudOff size={16} aria-hidden="true" /><span>Offline</span>{/if}
         </div>
         <a class="rail-settings" href="{base}/settings" class:active={meta.section === 'settings'}>
-          <Settings size={20} aria-hidden="true" /><span>Cài đặt</span>
+          <Settings size={20} aria-hidden="true" /><span>Settings</span>
         </a>
       </div>
     </aside>
@@ -98,13 +98,13 @@
     <header class="topbar">
       <div class="topbar-leading">
         {#if meta.mode === 'focus'}
-          <IconButton icon={X} label="Thoát phiên học" onclick={requestExit} />
+          <IconButton icon={X} label="Exit session" onclick={requestExit} />
         {:else}
-          <a class="mobile-brand" href="{base}/" aria-label="Smart Quiz — Trang chủ"><CircleUserRound size={24} aria-hidden="true" /></a>
+          <a class="mobile-brand" href="{base}/" aria-label="Smart Quiz — Home"><CircleUserRound size={24} aria-hidden="true" /></a>
         {/if}
         <div class="title-block">
           {#if meta.mode === 'workspace' && meta.breadcrumbs.length > 1}
-            <nav class="breadcrumbs" aria-label="Đường dẫn">
+            <nav class="breadcrumbs" aria-label="Breadcrumb">
               {#each meta.breadcrumbs as item, index}
                 {#if item.href && index < meta.breadcrumbs.length - 1}<a href="{base}{item.href}">{item.label}</a><span aria-hidden="true">/</span>
                 {:else}<span aria-current="page">{item.label}</span>{/if}
@@ -115,22 +115,22 @@
         </div>
       </div>
       <div class="topbar-actions">
-        <span class:offline={!online} class="mobile-connection" aria-label={online ? 'Ứng dụng đang trực tuyến' : 'Ứng dụng đang ngoại tuyến'}>
+        <span class:offline={!online} class="mobile-connection" aria-label={online ? 'App is online' : 'App is offline'}>
           {#if online}<Wifi size={16} aria-hidden="true" />{:else}<CloudOff size={16} aria-hidden="true" />{/if}
         </span>
-        <IconButton icon={$uiStore.darkMode ? Sun : Moon} label={$uiStore.darkMode ? 'Dùng giao diện sáng' : 'Dùng giao diện tối'} onclick={toggleDarkMode} />
+        <IconButton icon={$uiStore.darkMode ? Sun : Moon} label={$uiStore.darkMode ? 'Use light theme' : 'Use dark theme'} onclick={toggleDarkMode} />
         {#if meta.mode === 'focus'}
-          <a class="settings-action" href="{base}/settings" aria-label="Cài đặt"><Settings size={20} aria-hidden="true" /></a>
+          <a class="settings-action" href="{base}/settings" aria-label="Settings"><Settings size={20} aria-hidden="true" /></a>
         {/if}
       </div>
     </header>
 
-    <div class="route-announcer" aria-live="polite" aria-atomic="true">Đã mở {meta.title}</div>
+    <div class="route-announcer" aria-live="polite" aria-atomic="true">Opened {meta.title}</div>
     <main id="main-content" tabindex="-1" class="shell-content"><slot /></main>
   </div>
 
   {#if meta.mode === 'workspace'}
-    <nav class="mobile-nav" aria-label="Điều hướng chính trên di động">
+    <nav class="mobile-nav" aria-label="Main navigation, mobile">
       {#each primaryLinks as link}
         <a href="{base}{link.href}" class:active={meta.section === link.section} aria-current={meta.section === link.section ? 'page' : undefined}>
           <span class="nav-icon"><svelte:component this={link.icon} size={20} strokeWidth={2} aria-hidden="true" />
@@ -143,7 +143,7 @@
   {/if}
 </div>
 
-<AlertDialog bind:open={confirmExit} title="Rời phiên học?" description="Tiến trình chưa hoàn thành của câu hiện tại có thể bị mất." confirmText="Rời phiên" cancelText="Tiếp tục học" destructive onconfirm={goBack} />
+<AlertDialog bind:open={confirmExit} title="Leave this session?" description="Progress on the current question may be lost." confirmText="Leave" cancelText="Keep studying" destructive onconfirm={goBack} />
 
 <style>
   .app-shell { min-height: 100svh; background: var(--color-background); color: var(--color-foreground); }

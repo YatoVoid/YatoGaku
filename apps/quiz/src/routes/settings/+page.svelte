@@ -31,7 +31,7 @@
   let saveTimer: ReturnType<typeof setTimeout>;
 
   function announceSaved() {
-    saveMessage = 'Đã lưu trên thiết bị';
+    saveMessage = 'Saved on this device';
     clearTimeout(saveTimer);
     saveTimer = setTimeout(() => saveMessage = '', 2500);
   }
@@ -121,7 +121,7 @@
   <PageHero
     eyebrow="Preferences"
     title="Settings"
-    subtitle="Tùy chỉnh trải nghiệm học, font chữ, dữ liệu tiến trình và các lựa chọn quiz mặc định."
+    subtitle="Customize your study experience, font, progress data, and default quiz options."
   />
 
   <div class="flex flex-col gap-8">
@@ -136,7 +136,7 @@
       <div class="flex items-center justify-between px-5 py-5">
         <div>
           <label for="direction" class="text-sm font-medium block">Default Direction</label>
-          <span class="text-[0.65rem] text-muted-foreground">Hướng mặc định khi bắt đầu quiz</span>
+          <span class="text-[0.65rem] text-muted-foreground">Default direction when starting a quiz</span>
         </div>
         <Select
           id="direction"
@@ -153,7 +153,7 @@
       <div class="flex items-center justify-between px-5 py-5">
         <div>
           <label for="autoPlay" class="text-sm font-medium block">Auto-speak on new card</label>
-          <span class="text-[0.65rem] text-muted-foreground">Tự động phát âm khi lật thẻ mới</span>
+          <span class="text-[0.65rem] text-muted-foreground">Automatically play audio when a new card appears</span>
         </div>
         <Switch checked={settings.autoPlay} label="Auto-speak on new card" onchange={handleAutoPlayChange} />
       </div>
@@ -161,7 +161,7 @@
       <div class="flex items-center justify-between px-5 py-5">
         <div>
           <label for="showEnglish" class="text-sm font-medium block">Show English translations</label>
-          <span class="text-[0.65rem] text-muted-foreground">Hiển thị nghĩa tiếng Anh bên cạnh tiếng Việt</span>
+          <span class="text-[0.65rem] text-muted-foreground">Show the English meaning alongside Vietnamese</span>
         </div>
         <Switch checked={settings.showEnglish} label="Show English translations" onchange={handleShowEnglishChange} />
       </div>
@@ -199,7 +199,7 @@
     </h2>
     {#if lessonCount === 0 && totalItems === 0 && hskCount === 0}
       <div class="rounded-surface border border-border bg-card p-5 text-center">
-        <p class="text-sm text-muted-foreground">Bắt đầu học để xem tiến trình tại đây!</p>
+        <p class="text-sm text-muted-foreground">Start studying to see your progress here.</p>
       </div>
     {:else}
       <div class="grid grid-cols-3 gap-3">
@@ -225,7 +225,7 @@
       <Database size={12} aria-hidden="true" /> Data Management
     </h2>
     <div class="flex flex-col gap-3">
-      <p class="text-sm text-muted-foreground rounded-control border border-border bg-muted p-3">Tiến trình được lưu cục bộ và hoạt động ngoại tuyến. Dữ liệu chỉ rời thiết bị khi bạn chủ động xuất tệp.</p>
+      <p class="text-sm text-muted-foreground rounded-control border border-border bg-muted p-3">Progress is stored locally and works offline. Data only leaves this device if you export it yourself.</p>
       <button
         class="group flex w-full cursor-pointer items-center gap-4 rounded-surface border border-border bg-card px-5 py-5 text-left transition-colors duration-200 hover:border-primary active:scale-[0.98]"
         on:click={handleExport}
