@@ -22,3 +22,11 @@ to stop it from looking at the parent project's types. This is a one-line
 config addition, not a logic change; it only affects which `@types` packages
 TypeScript considers, and only matters because this project now lives nested
 inside another npm project instead of standalone.
+
+## Base path change for hosting under this site
+
+Upstream hardcodes `base: "/kana/"` in `vite.config.ts` to match their own
+deploy at vedxyz.github.io/kana/. Changed to `base: "/YatoGaku/apps/kana/"`
+to match where this app is served from inside the assembled YatoGaku site
+(github.com/YatoVoid/YatoGaku, project pages, this app copied to
+`build/apps/kana/`). Path only, no logic changed.

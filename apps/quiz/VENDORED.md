@@ -8,3 +8,12 @@
 
 Source copied as-is from the upstream repo's `svelte-app/` subdirectory,
 `.git` history excluded. No logic changes made.
+
+## Base path change for hosting under this site
+
+Upstream hardcodes production `paths.base` to `/2026-Smart-Quiz` in
+`svelte.config.js`, matching their own deploy at
+victoraurelius.github.io/2026-Smart-Quiz/. Changed to
+`/YatoGaku/apps/quiz` to match where this app is served from inside the
+assembled YatoGaku site (github.com/YatoVoid/YatoGaku, project pages,
+this app copied to `build/apps/quiz/`). Path only, no logic changed.
