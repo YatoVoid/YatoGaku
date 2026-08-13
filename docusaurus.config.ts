@@ -4,6 +4,18 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
+// apps/kana and apps/quiz are separately built static apps copied into
+// build/apps/*, not Docusaurus routes. Docusaurus's broken-link checker
+// validates any root-relative path against known routes regardless of
+// whether it's used via `to` or `href`, so a plain '/apps/kana/' link
+// fails the build. A fully-qualified URL (scheme + host) is treated as
+// external and skips that check, so links to the sub-apps are built from
+// this instead of a root-relative path.
+const siteUrl = 'https://YatoVoid.github.io';
+const siteBaseUrl = '/YatoGaku/';
+const kanaAppUrl = `${siteUrl}${siteBaseUrl}apps/kana/`;
+const quizAppUrl = `${siteUrl}${siteBaseUrl}apps/quiz/`;
+
 const config: Config = {
   title: 'YatoGaku',
   tagline: 'A Japanese-learning site built on existing open source tools',
@@ -15,10 +27,10 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://YatoVoid.github.io',
+  url: siteUrl,
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/YatoGaku/',
+  baseUrl: siteBaseUrl,
 
   // GitHub pages deployment config.
   organizationName: 'YatoVoid',
@@ -61,6 +73,21 @@ const config: Config = {
       },
       items: [
         {
+          to: '/docs/grammar-n5',
+          position: 'left',
+          label: 'Grammar',
+        },
+        {
+          href: kanaAppUrl,
+          position: 'left',
+          label: 'Kana Practice',
+        },
+        {
+          href: quizAppUrl,
+          position: 'left',
+          label: 'Quiz Practice',
+        },
+        {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
@@ -71,6 +98,23 @@ const config: Config = {
     footer: {
       style: 'dark',
       links: [
+        {
+          title: 'Learn',
+          items: [
+            {
+              label: 'Grammar',
+              to: '/docs/grammar-n5',
+            },
+            {
+              label: 'Kana Practice',
+              href: kanaAppUrl,
+            },
+            {
+              label: 'Quiz Practice',
+              href: quizAppUrl,
+            },
+          ],
+        },
         {
           title: 'Docs',
           items: [
