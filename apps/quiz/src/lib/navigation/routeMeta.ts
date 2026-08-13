@@ -17,11 +17,11 @@ export interface RouteMeta {
 }
 
 const LABELS: Record<string, string> = {
-  courses: 'Khóa học', vocabulary: 'Từ vựng', grammar: 'Ngữ pháp', alphabet: 'Bảng chữ cái',
-  counters: 'Trợ số từ', conversations: 'Hội thoại', hsk: 'HSK 5', kanji: 'Kanji',
-  radicals: 'Bộ thủ', review: 'Ôn tập', stats: 'Tiến trình', settings: 'Cài đặt',
-  exams: 'Đề thi', 'mock-test': 'Thi thử', premium: 'Premium', about: 'Giới thiệu',
-  results: 'Kết quả', 'grammar-reference': 'Ngữ pháp', vocab: 'Từ vựng'
+  courses: 'Courses', vocabulary: 'Vocabulary', grammar: 'Grammar', alphabet: 'Alphabet',
+  counters: 'Counters', conversations: 'Conversations', hsk: 'HSK 5', kanji: 'Kanji',
+  radicals: 'Radicals', review: 'Review', stats: 'Progress', settings: 'Settings',
+  exams: 'Exams', 'mock-test': 'Mock test', premium: 'Premium', about: 'About',
+  results: 'Results', 'grammar-reference': 'Grammar', vocab: 'Vocabulary'
 };
 
 export function stripBase(pathname: string, base = ''): string {
@@ -49,29 +49,29 @@ export function getRouteMeta(pathname: string, base = ''): RouteMeta {
   const queryCourseMatch = path.match(/^\/quiz\//);
   const courseId = courseMatch?.[1] as CourseId | undefined;
   const lessonId = courseMatch?.[2] ? Number(courseMatch[2]) : undefined;
-  let title = path === '/' ? 'Hôm nay bạn muốn học gì?' : LABELS[segments.at(-1) ?? ''] ?? 'Smart Quiz';
+  let title = path === '/' ? 'What do you want to study today?' : LABELS[segments.at(-1) ?? ''] ?? 'Smart Quiz';
 
   if (courseId && lessonId) {
-    if (path.includes('/vocabulary')) title = 'Từ vựng';
-    else if (path.includes('/grammar-quiz')) title = 'Luyện ngữ pháp';
-    else if (path.endsWith('/grammar')) title = 'Ngữ pháp';
-    else title = `Bài ${lessonId}`;
-  } else if (courseId) title = `Khóa ${courseId.toUpperCase()}`;
-  else if (path.startsWith('/quiz/')) title = 'Phiên luyện tập';
-  else if (/^\/hsk\/[^/]+\/quiz/.test(path)) title = 'Luyện HSK';
-  else if (/^\/hsk\/[^/]+/.test(path)) title = 'Từ vựng HSK';
-  else if (/^\/kanji\/.+\/quiz/.test(path)) title = 'Luyện Kanji';
-  else if (/^\/kanji\/\d+\/reference/.test(path)) title = 'Tra cứu Kanji';
-  else if (/^\/kanji\/\d+/.test(path)) title = `Bài Kanji ${segments[1]}`;
-  else if (/^\/kanji\/radicals\/[^/]+/.test(path)) title = `Bộ thủ ${decodeURIComponent(segments[2] ?? '')}`;
-  else if (/^\/exams\/[^/]+/.test(path)) title = 'Đang làm bài thi';
-  else if (/^\/vocab\/[^/]+/.test(path)) title = `Từ vựng ${(segments[1] ?? '').toUpperCase()}`;
+    if (path.includes('/vocabulary')) title = 'Vocabulary';
+    else if (path.includes('/grammar-quiz')) title = 'Grammar practice';
+    else if (path.endsWith('/grammar')) title = 'Grammar';
+    else title = `Lesson ${lessonId}`;
+  } else if (courseId) title = `${courseId.toUpperCase()} course`;
+  else if (path.startsWith('/quiz/')) title = 'Study session';
+  else if (/^\/hsk\/[^/]+\/quiz/.test(path)) title = 'HSK practice';
+  else if (/^\/hsk\/[^/]+/.test(path)) title = 'HSK vocabulary';
+  else if (/^\/kanji\/.+\/quiz/.test(path)) title = 'Kanji practice';
+  else if (/^\/kanji\/\d+\/reference/.test(path)) title = 'Kanji reference';
+  else if (/^\/kanji\/\d+/.test(path)) title = `Kanji lesson ${segments[1]}`;
+  else if (/^\/kanji\/radicals\/[^/]+/.test(path)) title = `Radical ${decodeURIComponent(segments[2] ?? '')}`;
+  else if (/^\/exams\/[^/]+/.test(path)) title = 'Taking exam';
+  else if (/^\/vocab\/[^/]+/.test(path)) title = `${(segments[1] ?? '').toUpperCase()} vocabulary`;
 
-  const breadcrumbs: BreadcrumbItem[] = [{ label: 'Trang chủ', href: '/' }];
+  const breadcrumbs: BreadcrumbItem[] = [{ label: 'Home', href: '/' }];
   if (courseId) {
-    breadcrumbs.push({ label: 'Khóa học', href: '/courses' });
+    breadcrumbs.push({ label: 'Courses', href: '/courses' });
     breadcrumbs.push({ label: courseId.toUpperCase(), href: `/course/${courseId}` });
-    if (lessonId) breadcrumbs.push({ label: `Bài ${lessonId}`, href: `/course/${courseId}/lesson/${lessonId}` });
+    if (lessonId) breadcrumbs.push({ label: `Lesson ${lessonId}`, href: `/course/${courseId}/lesson/${lessonId}` });
     if (breadcrumbs.at(-1)?.label !== title) breadcrumbs.push({ label: title });
   } else if (path !== '/') {
     const root = segments[0] ?? '';

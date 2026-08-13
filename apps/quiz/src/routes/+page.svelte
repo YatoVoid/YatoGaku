@@ -16,29 +16,29 @@
   $: hasProgress = Boolean(primaryProgress && (primaryProgress.completed > 0 || Object.keys($progressStore.lessons).length > 0));
 
   const tools = [
-    { href: '/kanji', label: 'Kanji', detail: 'Tra cứu và luyện viết', icon: Shapes },
-    { href: '/grammar-reference', label: 'Ngữ pháp', detail: 'Mẫu câu theo cấp độ', icon: Library },
-    { href: '/alphabet', label: 'Bảng chữ cái', detail: 'Hiragana và Katakana', icon: Languages },
-    { href: '/conversations', label: 'Hội thoại', detail: 'Mẫu câu trong ngữ cảnh', icon: MessageCircle }
+    { href: '/kanji', label: 'Kanji', detail: 'Look up and practice writing', icon: Shapes },
+    { href: '/grammar-reference', label: 'Grammar', detail: 'Patterns by level', icon: Library },
+    { href: '/alphabet', label: 'Alphabet', detail: 'Hiragana and Katakana', icon: Languages },
+    { href: '/conversations', label: 'Conversations', detail: 'Patterns in context', icon: MessageCircle }
   ];
 </script>
 
-<svelte:head><title>Hôm nay học gì? · Smart Quiz</title></svelte:head>
+<svelte:head><title>What do you want to study today? · Smart Quiz</title></svelte:head>
 
 {#if dataError}
-  <PageError message="Không thể tải dữ liệu học tập." retry={() => location.reload()} />
+  <PageError message="Couldn't load study data." retry={() => location.reload()} />
 {:else if primaryCourse && primaryProgress}
   <div class="home-workspace">
     <section class="today" aria-labelledby="today-title">
-      <p class="eyebrow">Không gian học hôm nay</p>
-      <h1 id="today-title">{hasProgress ? 'Tiếp tục từ nơi bạn dừng lại' : 'Bắt đầu một nhịp học nhỏ'}</h1>
-      <p class="intro">{hasProgress ? `Bạn đang ở lộ trình ${primaryCourse.metadata.level}. Một bài ngắn là đủ để giữ nhịp.` : 'Minna no Nihongo N5 là lộ trình phù hợp để bắt đầu.'}</p>
+      <p class="eyebrow">Today's study space</p>
+      <h1 id="today-title">{hasProgress ? 'Continue where you left off' : 'Start a small study habit'}</h1>
+      <p class="intro">{hasProgress ? `You're on the ${primaryCourse.metadata.level} path. A short lesson is enough to keep the rhythm.` : 'Minna no Nihongo N5 is a good place to start.'}</p>
 
       <a class="continue-action" href="{base}/course/{primaryCourse.metadata.id}/lesson/{nextLesson}">
         <span class="continue-copy">
-          <span class="action-label">{hasProgress ? 'Học tiếp' : 'Bắt đầu'}</span>
-          <strong>{primaryCourse.metadata.title} · Bài {nextLesson}</strong>
-          <span>{primaryProgress.completed}/{primaryProgress.total} bài hoàn thành</span>
+          <span class="action-label">{hasProgress ? 'Continue' : 'Start'}</span>
+          <strong>{primaryCourse.metadata.title} · Lesson {nextLesson}</strong>
+          <span>{primaryProgress.completed}/{primaryProgress.total} lessons done</span>
         </span>
         <ArrowRight size={24} aria-hidden="true" />
       </a>
@@ -46,8 +46,8 @@
 
     <section class="course-paths" aria-labelledby="paths-title">
       <div class="section-heading">
-        <div><p class="eyebrow">Lộ trình</p><h2 id="paths-title">Chọn cấp độ tiếng Nhật</h2></div>
-        <a href="{base}/courses">Xem tất cả</a>
+        <div><p class="eyebrow">Learning path</p><h2 id="paths-title">Choose a Japanese level</h2></div>
+        <a href="{base}/courses">View all</a>
       </div>
       <div class="path-list">
         {#each courses as course}
@@ -63,14 +63,14 @@
     </section>
 
     <section class="study-tools" aria-labelledby="tools-title">
-      <p class="eyebrow">Thư viện học</p>
-      <h2 id="tools-title">Tra cứu khi cần</h2>
+      <p class="eyebrow">Study library</p>
+      <h2 id="tools-title">Look things up as you need them</h2>
       <div class="tool-list">
         {#each tools as tool}
           <a href="{base}{tool.href}"><svelte:component this={tool.icon} size={20} aria-hidden="true" /><span><strong>{tool.label}</strong><small>{tool.detail}</small></span><ArrowRight size={16} aria-hidden="true" /></a>
         {/each}
       </div>
-      <a class="all-tools" href="{base}/courses"><BookOpen size={16} aria-hidden="true" /> Khám phá toàn bộ nội dung</a>
+      <a class="all-tools" href="{base}/courses"><BookOpen size={16} aria-hidden="true" /> Browse all content</a>
     </section>
   </div>
 {/if}

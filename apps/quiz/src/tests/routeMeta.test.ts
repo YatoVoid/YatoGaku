@@ -9,8 +9,8 @@ describe('Wave 2 route metadata', () => {
 
   it('provides course context and canonical breadcrumbs', () => {
     const meta = getRouteMeta('/course/n4/lesson/3/vocabulary');
-    expect(meta).toMatchObject({ title: 'Từ vựng', courseId: 'n4', lessonId: 3, mode: 'workspace' });
-    expect(meta.breadcrumbs.map((item) => item.label)).toEqual(['Trang chủ', 'Khóa học', 'N4', 'Bài 3', 'Từ vựng']);
+    expect(meta).toMatchObject({ title: 'Vocabulary', courseId: 'n4', lessonId: 3, mode: 'workspace' });
+    expect(meta.breadcrumbs.map((item) => item.label)).toEqual(['Home', 'Courses', 'N4', 'Lesson 3', 'Vocabulary']);
   });
 
   it.each(['/quiz/flashcard', '/hsk/group-1/quiz/mc', '/kanji/1/quiz/typing', '/exams/n5-1', '/mock-test'])(
