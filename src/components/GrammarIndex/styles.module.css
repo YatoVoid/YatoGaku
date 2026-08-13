@@ -13,7 +13,26 @@
   margin-bottom: 0.25rem;
 }
 
+.pointHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.pointHeader h3 {
+  margin-bottom: 0;
+}
+
 .links {
   margin: 0.5rem 0 0;
+  font-size: 0.9rem;
+}
+
+.unavailable {
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: var(--ifm-global-radius);
   font-size: 0.9rem;
 }
