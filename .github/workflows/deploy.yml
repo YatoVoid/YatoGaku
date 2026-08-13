@@ -38,6 +38,9 @@ jobs:
         run: npm install
         working-directory: apps/quiz
 
+      - name: Run tests
+        run: npm test
+
       - name: Build all
         run: npm run build:all
 
