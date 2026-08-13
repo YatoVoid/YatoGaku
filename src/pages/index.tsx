@@ -16,6 +16,12 @@ export default function Home(): ReactNode {
   const quizAppUrl = `${siteConfig.url}${siteConfig.baseUrl}apps/quiz/`;
   const entryPoints = [
     {
+      label: 'Dashboard',
+      description: 'Where you stand across grammar and listening/reading.',
+      href: '/docs/dashboard',
+      internal: true,
+    },
+    {
       label: 'Grammar',
       description: 'N5 grammar points, linking to Tae Kim, Imabi, and Tofugu.',
       href: '/docs/grammar-n5',

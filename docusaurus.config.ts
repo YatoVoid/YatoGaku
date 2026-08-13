@@ -73,6 +73,11 @@ const config: Config = {
       },
       items: [
         {
+          to: '/docs/dashboard',
+          position: 'left',
+          label: 'Dashboard',
+        },
+        {
           to: '/docs/grammar-n5',
           position: 'left',
           label: 'Grammar',
@@ -111,6 +116,10 @@ const config: Config = {
         {
           title: 'Learn',
           items: [
+            {
+              label: 'Dashboard',
+              to: '/docs/dashboard',
+            },
             {
               label: 'Grammar',
               to: '/docs/grammar-n5',
