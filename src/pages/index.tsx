@@ -34,6 +34,18 @@ export default function Home(): ReactNode {
       internal: false,
     },
     {
+      label: 'Listening & Reading',
+      description: 'NHK and Erin\'s Challenge audio and reading resources, by level.',
+      href: '/docs/listening-reading',
+      internal: true,
+    },
+    {
+      label: 'Dictionary',
+      description: 'Look up a word on Jisho without leaving this site.',
+      href: '/docs/dictionary',
+      internal: true,
+    },
+    {
       label: 'Sources',
       description: 'Which open source projects this site is built on, and why.',
       href: '/docs/sources',

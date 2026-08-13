@@ -88,6 +88,16 @@ const config: Config = {
           label: 'Quiz Practice',
         },
         {
+          to: '/docs/listening-reading',
+          position: 'left',
+          label: 'Listening & Reading',
+        },
+        {
+          to: '/docs/dictionary',
+          position: 'left',
+          label: 'Dictionary',
+        },
+        {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
@@ -112,6 +122,14 @@ const config: Config = {
             {
               label: 'Quiz Practice',
               href: quizAppUrl,
+            },
+            {
+              label: 'Listening & Reading',
+              to: '/docs/listening-reading',
+            },
+            {
+              label: 'Dictionary',
+              to: '/docs/dictionary',
             },
           ],
         },
