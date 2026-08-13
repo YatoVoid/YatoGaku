@@ -34,6 +34,12 @@ export default function Home(): ReactNode {
       internal: true,
     },
     {
+      label: 'N3 Grammar',
+      description: 'N3 grammar points: certainty, formality, and more nuanced patterns.',
+      href: '/docs/grammar-n3',
+      internal: true,
+    },
+    {
       label: 'Kana Practice',
       description: 'Hiragana and katakana drilling.',
       href: kanaAppUrl,
