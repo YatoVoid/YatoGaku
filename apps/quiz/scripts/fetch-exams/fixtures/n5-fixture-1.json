@@ -1,0 +1,75 @@
+{
+  "id": "n5-fixture-1",
+  "level": "N5",
+  "title": "N5 — Đề luyện mẫu A (fixture)",
+  "source": { "name": "Smart Quiz fixtures (original)", "license": "original", "fetchedAt": "2026-06-21" },
+  "durationMinutes": 25,
+  "sections": [
+    {
+      "type": "vocab",
+      "title": "語彙 (Từ vựng)",
+      "instructions": "Chọn đáp án đúng.",
+      "questions": [
+        {
+          "prompt": "「ねこ」 は えいご で なん ですか。",
+          "options": ["dog", "cat", "bird", "fish"],
+          "answer": "cat",
+          "explanation": "ねこ = cat (con mèo)."
+        },
+        {
+          "prompt": "「いぬ」 の いみ は どれ ですか。",
+          "options": ["mèo", "chó", "chim", "cá"],
+          "answer": "chó",
+          "explanation": "いぬ = con chó."
+        }
+      ]
+    },
+    {
+      "type": "grammar",
+      "title": "文法 (Ngữ pháp)",
+      "instructions": "Chọn trợ từ/từ điền vào chỗ trống.",
+      "questions": [
+        {
+          "prompt": "これ ____ ほん です。",
+          "options": ["は", "を", "に", "の"],
+          "answer": "は",
+          "explanation": "は đánh dấu chủ đề: \"Đây là sách\"."
+        },
+        {
+          "prompt": "わたし は がくせい ____。",
+          "options": ["です", "ます", "ない", "たい"],
+          "answer": "です",
+          "explanation": "Danh từ + です: \"Tôi là học sinh\"."
+        }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "読解 (Đọc hiểu)",
+      "instructions": "Đọc đoạn văn và trả lời.",
+      "passages": [
+        {
+          "key": "p1",
+          "text": "たなかさん は にほんじん です。とうきょう に すんで います。まいにち でんしゃ で かいしゃ に いきます。",
+          "translation": "Anh Tanaka là người Nhật. Sống ở Tokyo. Mỗi ngày đi tàu điện đến công ty."
+        }
+      ],
+      "questions": [
+        {
+          "passage": "p1",
+          "prompt": "たなかさん は どこ に すんで いますか。",
+          "options": ["おおさか", "とうきょう", "きょうと", "なごや"],
+          "answer": "とうきょう",
+          "explanation": "「とうきょう に すんで います」."
+        },
+        {
+          "passage": "p1",
+          "prompt": "たなかさん は なに で かいしゃ に いきますか。",
+          "options": ["バス", "でんしゃ", "くるま", "じてんしゃ"],
+          "answer": "でんしゃ",
+          "explanation": "「でんしゃ で … いきます」."
+        }
+      ]
+    }
+  ]
+}

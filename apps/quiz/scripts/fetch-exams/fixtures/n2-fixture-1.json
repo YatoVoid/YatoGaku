@@ -1,0 +1,75 @@
+{
+  "id": "n2-fixture-1",
+  "level": "N2",
+  "title": "N2 — Đề luyện mẫu A (fixture)",
+  "source": { "name": "Smart Quiz fixtures (original)", "license": "original", "fetchedAt": "2026-06-21" },
+  "durationMinutes": 50,
+  "sections": [
+    {
+      "type": "vocab",
+      "title": "語彙 (Từ vựng)",
+      "instructions": "Chọn đáp án đúng.",
+      "questions": [
+        {
+          "prompt": "「あいまい」 の いみ は どれ ですか。",
+          "options": ["mơ hồ, không rõ ràng", "chính xác", "rộng rãi", "nhanh chóng"],
+          "answer": "mơ hồ, không rõ ràng",
+          "explanation": "あいまい = mơ hồ, không rõ ràng."
+        },
+        {
+          "prompt": "けいき が かいふく した。「かいふく」 の いみ は どれ ですか。",
+          "options": ["hồi phục", "suy thoái", "dừng lại", "biến mất"],
+          "answer": "hồi phục",
+          "explanation": "かいふく = hồi phục, phục hồi."
+        }
+      ]
+    },
+    {
+      "type": "grammar",
+      "title": "文法 (Ngữ pháp)",
+      "instructions": "Chọn từ điền vào chỗ trống.",
+      "questions": [
+        {
+          "prompt": "けっか は どう ____、さいご まで がんばる つもり です。",
+          "options": ["であれ", "として", "につき", "において"],
+          "answer": "であれ",
+          "explanation": "どう であれ: \"dù kết quả thế nào đi nữa\"."
+        },
+        {
+          "prompt": "この データ に ____、うりあげ は ぞうか して いる。",
+          "options": ["よると", "たいして", "かわって", "くわえて"],
+          "answer": "よると",
+          "explanation": "～に よると: \"theo dữ liệu này\"."
+        }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "読解 (Đọc hiểu)",
+      "instructions": "Đọc đoạn văn và trả lời.",
+      "passages": [
+        {
+          "key": "p1",
+          "text": "げんだい しゃかい で は、じょうほう が あふれて いる。たいせつ なの は、おおく の じょうほう の なか から ひつよう な もの を えらびとる ちから だ。すべて を しんじる の で は なく、しゅってん を たしかめる しゅうかん を み に つけたい。",
+          "translation": "Trong xã hội hiện đại, thông tin tràn ngập. Điều quan trọng là năng lực chọn lọc thứ cần thiết từ vô vàn thông tin. Thay vì tin tất cả, ta nên rèn thói quen kiểm chứng nguồn gốc."
+        }
+      ],
+      "questions": [
+        {
+          "passage": "p1",
+          "prompt": "ひっしゃ が たいせつ だ と かんがえて いる の は どれ ですか。",
+          "options": ["すべて の じょうほう を しんじる こと", "ひつよう な じょうほう を えらぶ ちから", "じょうほう を ふやす こと", "しゅってん を むしする こと"],
+          "answer": "ひつよう な じょうほう を えらぶ ちから",
+          "explanation": "「ひつよう な もの を えらびとる ちから だ」."
+        },
+        {
+          "passage": "p1",
+          "prompt": "ひっしゃ が すすめて いる しゅうかん は どれ ですか。",
+          "options": ["しゅってん を たしかめる", "すべて を あんき する", "じょうほう を むしする", "ともだち に きく"],
+          "answer": "しゅってん を たしかめる",
+          "explanation": "「しゅってん を たしかめる しゅうかん」."
+        }
+      ]
+    }
+  ]
+}

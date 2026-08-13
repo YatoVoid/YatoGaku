@@ -1,0 +1,58 @@
+{
+  "name": "Smart Quiz - Japanese & Chinese Learning",
+  "short_name": "Smart Quiz",
+  "description": "Interactive quiz app for learning Japanese JLPT vocabulary, grammar, Hiragana, Katakana, and Chinese HSK vocabulary",
+  "start_url": "/2026-Smart-Quiz/",
+  "display": "standalone",
+  "background_color": "#f4f4f8",
+  "theme_color": "#8b4fe6",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "productivity"],
+  "lang": "vi-VN",
+  "dir": "ltr",
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Lessons",
+      "short_name": "Lessons",
+      "description": "Browse JLPT lessons",
+      "url": "/2026-Smart-Quiz/",
+      "icons": [{ "src": "icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Grammar",
+      "short_name": "Grammar",
+      "description": "Grammar reference",
+      "url": "/2026-Smart-Quiz/grammar-reference",
+      "icons": [{ "src": "icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Alphabet",
+      "short_name": "Alphabet",
+      "description": "Hiragana & Katakana",
+      "url": "/2026-Smart-Quiz/alphabet",
+      "icons": [{ "src": "icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "HSK",
+      "short_name": "HSK",
+      "description": "Chinese vocabulary",
+      "url": "/2026-Smart-Quiz/hsk",
+      "icons": [{ "src": "icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}

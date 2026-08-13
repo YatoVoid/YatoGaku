@@ -1,3 +1,7 @@
+---
+id: sources
+---
+
 # Upstream projects
 
 YatoGaku is built on top of existing open source Japanese learning tools rather than an invented UI or a rewritten SRS engine. This file records which projects were selected, why, their license, and where their code lives in this repo. Every license claim here was checked against the actual `LICENSE` file content in the upstream repo, not the license badge or the repo description.

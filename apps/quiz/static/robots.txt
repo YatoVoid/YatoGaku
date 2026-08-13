@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://victoraurelius.github.io/2026-Smart-Quiz/sitemap.xml

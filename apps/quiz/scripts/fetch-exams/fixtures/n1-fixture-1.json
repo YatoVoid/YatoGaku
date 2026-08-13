@@ -1,0 +1,75 @@
+{
+  "id": "n1-fixture-1",
+  "level": "N1",
+  "title": "N1 — Đề luyện mẫu A (fixture)",
+  "source": { "name": "Smart Quiz fixtures (original)", "license": "original", "fetchedAt": "2026-06-21" },
+  "durationMinutes": 60,
+  "sections": [
+    {
+      "type": "vocab",
+      "title": "語彙 (Từ vựng)",
+      "instructions": "Chọn đáp án đúng.",
+      "questions": [
+        {
+          "prompt": "「ばくぜん」 と した ふあん。「ばくぜん」 の いみ は どれ ですか。",
+          "options": ["mơ hồ, mông lung", "mãnh liệt", "cụ thể", "tạm thời"],
+          "answer": "mơ hồ, mông lung",
+          "explanation": "ばくぜん = mơ hồ, mông lung."
+        },
+        {
+          "prompt": "「いっかん」 して しゅちょう する。「いっかん」 の いみ に ちかい もの は どれ ですか。",
+          "options": ["nhất quán", "mâu thuẫn", "do dự", "ngẫu nhiên"],
+          "answer": "nhất quán",
+          "explanation": "いっかん = nhất quán, trước sau như một."
+        }
+      ]
+    },
+    {
+      "type": "grammar",
+      "title": "文法 (Ngữ pháp)",
+      "instructions": "Chọn từ điền vào chỗ trống.",
+      "questions": [
+        {
+          "prompt": "プロ の せんしゅ ____、この ていど の れんしゅう は とうぜん だ。",
+          "options": ["ともなると", "をもって", "がてら", "そばから"],
+          "answer": "ともなると",
+          "explanation": "～ともなると: \"khi đã là tuyển thủ chuyên nghiệp thì…\"."
+        },
+        {
+          "prompt": "かれ の どりょく ____、この せいこう は ありえなかった。",
+          "options": ["なくして は", "をかわきりに", "ならでは", "とあって"],
+          "answer": "なくして は",
+          "explanation": "～なくしては: \"nếu không có nỗ lực của anh ấy thì…\"."
+        }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "読解 (Đọc hiểu)",
+      "instructions": "Đọc đoạn văn và trả lời.",
+      "passages": [
+        {
+          "key": "p1",
+          "text": "かがく ぎじゅつ の はってん は、われわれ の せいかつ を ひかく てき ゆたか に した いっぽう で、あらた な りんり てき かだい を つきつけて いる。ぎじゅつ そのもの に ぜんあく は なく、それ を どう もちいる か が とわれて いる の だ。",
+          "translation": "Sự phát triển của khoa học kỹ thuật một mặt làm đời sống chúng ta tương đối sung túc, mặt khác lại đặt ra những vấn đề đạo đức mới. Bản thân kỹ thuật không có thiện ác; điều bị chất vấn là sử dụng nó như thế nào."
+        }
+      ],
+      "questions": [
+        {
+          "passage": "p1",
+          "prompt": "ひっしゃ に よれば、とわれて いる の は なに か。",
+          "options": ["ぎじゅつ の ぜんあく", "ぎじゅつ を どう もちいる か", "せいかつ の ゆたかさ", "かがく の しんぽ そくど"],
+          "answer": "ぎじゅつ を どう もちいる か",
+          "explanation": "「それ を どう もちいる か が とわれて いる」."
+        },
+        {
+          "passage": "p1",
+          "prompt": "かがく ぎじゅつ の はってん に ついて、ひっしゃ の かんがえ に あう もの は どれ か。",
+          "options": ["りてん だけ が ある", "けってん だけ が ある", "りてん も かだい も ある", "えいきょう は ない"],
+          "answer": "りてん も かだい も ある",
+          "explanation": "Văn bản nêu cả mặt lợi (sung túc) và vấn đề (đạo đức)."
+        }
+      ]
+    }
+  ]
+}

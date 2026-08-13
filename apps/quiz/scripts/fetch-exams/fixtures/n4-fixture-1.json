@@ -1,0 +1,75 @@
+{
+  "id": "n4-fixture-1",
+  "level": "N4",
+  "title": "N4 — Đề luyện mẫu A (fixture)",
+  "source": { "name": "Smart Quiz fixtures (original)", "license": "original", "fetchedAt": "2026-06-21" },
+  "durationMinutes": 35,
+  "sections": [
+    {
+      "type": "vocab",
+      "title": "語彙 (Từ vựng)",
+      "instructions": "Chọn đáp án đúng.",
+      "questions": [
+        {
+          "prompt": "「べんり」 の いみ に ちかい もの は どれ ですか。",
+          "options": ["tiện lợi", "nguy hiểm", "yên tĩnh", "phức tạp"],
+          "answer": "tiện lợi",
+          "explanation": "べんり = tiện lợi."
+        },
+        {
+          "prompt": "この まち は とても ____ です。",
+          "options": ["しずか", "たかい でんわ", "あおい", "はやく"],
+          "answer": "しずか",
+          "explanation": "しずか(な) = yên tĩnh, hợp với まち."
+        }
+      ]
+    },
+    {
+      "type": "grammar",
+      "title": "文法 (Ngữ pháp)",
+      "instructions": "Chọn từ điền vào chỗ trống.",
+      "questions": [
+        {
+          "prompt": "あめ が ふって いる ____、しあい は ちゅうし です。",
+          "options": ["ので", "のに", "でも", "まで"],
+          "answer": "ので",
+          "explanation": "ので chỉ lý do: \"Vì trời mưa nên hoãn trận đấu\"."
+        },
+        {
+          "prompt": "にほんご を はなす こと ____ できます。",
+          "options": ["が", "を", "に", "で"],
+          "answer": "が",
+          "explanation": "こと が できる: \"có thể nói tiếng Nhật\"."
+        }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "読解 (Đọc hiểu)",
+      "instructions": "Đọc đoạn văn và trả lời.",
+      "passages": [
+        {
+          "key": "p1",
+          "text": "わたし の しゅみ は りょこう です。きょねん は ともだち と かんこく へ いきました。ことし は ひとり で たいわん に いく つもり です。",
+          "translation": "Sở thích của tôi là du lịch. Năm ngoái tôi đi Hàn Quốc với bạn. Năm nay tôi định đi Đài Loan một mình."
+        }
+      ],
+      "questions": [
+        {
+          "passage": "p1",
+          "prompt": "きょねん どこ へ いきましたか。",
+          "options": ["たいわん", "かんこく", "にほん", "ちゅうごく"],
+          "answer": "かんこく",
+          "explanation": "「きょねん は … かんこく へ いきました」."
+        },
+        {
+          "passage": "p1",
+          "prompt": "ことし の よてい は どれ ですか。",
+          "options": ["ともだち と かんこく", "ひとり で たいわん", "かぞく と にほん", "ひとり で かんこく"],
+          "answer": "ひとり で たいわん",
+          "explanation": "「ことし は ひとり で たいわん に いく つもり」."
+        }
+      ]
+    }
+  ]
+}

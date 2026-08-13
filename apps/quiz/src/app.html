@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <title>Smart Quiz — Học Tiếng Nhật & Tiếng Trung</title>
+    <meta name="description" content="App luyện thi JLPT và HSK miễn phí. Flashcard, trắc nghiệm, gõ kana, ngữ pháp, kanji cho người Việt." />
+
+    <!-- Google Fonts preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Smart Quiz — Học Tiếng Nhật & Tiếng Trung" />
+    <meta property="og:description" content="App luyện thi JLPT và HSK miễn phí. Flashcard, trắc nghiệm, gõ kana, ngữ pháp, kanji." />
+    <meta property="og:image" content="https://victoraurelius.github.io/2026-Smart-Quiz/og-image.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://victoraurelius.github.io/2026-Smart-Quiz/" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Smart Quiz — Học Tiếng Nhật & Tiếng Trung" />
+    <meta name="twitter:description" content="App luyện thi JLPT và HSK miễn phí." />
+    <meta name="twitter:image" content="https://victoraurelius.github.io/2026-Smart-Quiz/og-image.png" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://victoraurelius.github.io/2026-Smart-Quiz/" />
+
+    <link rel="icon" href="%sveltekit.assets%/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#8b4fe6" />
+    <link rel="apple-touch-icon" href="%sveltekit.assets%/icon-192.png" />
+    <link rel="manifest" href="%sveltekit.assets%/manifest.json" />
+    %sveltekit.head%
+  </head>
+  <body data-sveltekit-preload-data="hover">
+    <script>
+      try {
+        var s = JSON.parse(localStorage.getItem('ui-store') || '{}');
+        if (s.darkMode) document.documentElement.classList.add('dark');
+      } catch(e) {}
+    </script>
+    <div style="display: contents">%sveltekit.body%</div>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://victoraurelius.github.io/2026-Smart-Quiz/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://victoraurelius.github.io/2026-Smart-Quiz/courses</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://victoraurelius.github.io/2026-Smart-Quiz/lessons</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://victoraurelius.github.io/2026-Smart-Quiz/kanji</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://victoraurelius.github.io/2026-Smart-Quiz/kanji/radicals</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://victoraurelius.github.io/2026-Smart-Quiz/hsk</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://victoraurelius.github.io/2026-Smart-Quiz/grammar-reference</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://victoraurelius.github.io/2026-Smart-Quiz/alphabet</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://victoraurelius.github.io/2026-Smart-Quiz/counters</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://victoraurelius.github.io/2026-Smart-Quiz/conversations</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://victoraurelius.github.io/2026-Smart-Quiz/mock-test</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://victoraurelius.github.io/2026-Smart-Quiz/about</loc><changefreq>yearly</changefreq><priority>0.4</priority></url>
+</urlset>

@@ -1,0 +1,81 @@
+{
+  "id": "n5-sample-1",
+  "level": "N5",
+  "title": "N5 — Đề mẫu 1",
+  "source": { "name": "Smart Quiz (original sample)", "license": "original", "fetchedAt": "2026-06-21" },
+  "durationMinutes": 30,
+  "sections": [
+    {
+      "type": "vocab",
+      "title": "語彙 (Từ vựng)",
+      "instructions": "Chọn cách đọc/nghĩa đúng.",
+      "questions": [
+        {
+          "id": "n5s1-v1",
+          "prompt": "がっこう の よみかた は どれ ですか。",
+          "options": ["がっこう", "がくこう", "かっこう", "がっごう"],
+          "answerIndex": 0,
+          "explanation": "学校 (がっこう) = trường học."
+        },
+        {
+          "id": "n5s1-v2",
+          "prompt": "「みず」 の かんじ は どれ ですか。",
+          "options": ["火", "水", "木", "土"],
+          "answerIndex": 1,
+          "explanation": "水 (みず) = nước."
+        }
+      ]
+    },
+    {
+      "type": "grammar",
+      "title": "文法 (Ngữ pháp)",
+      "instructions": "Chọn từ điền vào chỗ trống.",
+      "questions": [
+        {
+          "id": "n5s1-g1",
+          "prompt": "わたし ____ がくせい です。",
+          "options": ["は", "を", "に", "へ"],
+          "answerIndex": 0,
+          "explanation": "は đánh dấu chủ đề: \"Tôi là học sinh\"."
+        },
+        {
+          "id": "n5s1-g2",
+          "prompt": "まいにち がっこう ____ いきます。",
+          "options": ["で", "を", "へ", "が"],
+          "answerIndex": 2,
+          "explanation": "へ chỉ hướng di chuyển: \"đi đến trường\"."
+        }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "読解 (Đọc hiểu)",
+      "instructions": "Đọc đoạn văn và trả lời câu hỏi.",
+      "passages": [
+        {
+          "id": "n5s1-p1",
+          "text": "わたし は まいあさ ６じ に おきます。あさごはん を たべて、７じ に うち を でます。がっこう まで バス で いきます。",
+          "translation": "Tôi thức dậy lúc 6 giờ mỗi sáng. Ăn sáng xong, 7 giờ rời nhà. Tôi đi bus đến trường."
+        }
+      ],
+      "questions": [
+        {
+          "id": "n5s1-r1",
+          "passageId": "n5s1-p1",
+          "prompt": "この ひと は なんじ に おきますか。",
+          "options": ["６じ", "７じ", "８じ", "９じ"],
+          "answerIndex": 0,
+          "explanation": "「６じ に おきます」."
+        },
+        {
+          "id": "n5s1-r2",
+          "passageId": "n5s1-p1",
+          "prompt": "がっこう まで なに で いきますか。",
+          "options": ["でんしゃ", "バス", "じてんしゃ", "あるいて"],
+          "answerIndex": 1,
+          "explanation": "「バス で いきます」."
+        }
+      ]
+    }
+  ]
+}

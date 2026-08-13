@@ -1,0 +1,75 @@
+{
+  "id": "n3-fixture-1",
+  "level": "N3",
+  "title": "N3 — Đề luyện mẫu A (fixture)",
+  "source": { "name": "Smart Quiz fixtures (original)", "license": "original", "fetchedAt": "2026-06-21" },
+  "durationMinutes": 40,
+  "sections": [
+    {
+      "type": "vocab",
+      "title": "語彙 (Từ vựng)",
+      "instructions": "Chọn đáp án đúng.",
+      "questions": [
+        {
+          "prompt": "「えんりょ」 の いみ に ちかい もの は どれ ですか。",
+          "options": ["khách sáo, ngại ngần", "vui mừng", "tức giận", "mệt mỏi"],
+          "answer": "khách sáo, ngại ngần",
+          "explanation": "えんりょ = sự khách sáo, ngại ngần."
+        },
+        {
+          "prompt": "かれ は しごと に ____ な ひと です。",
+          "options": ["まじめ", "だめ", "むだ", "らく"],
+          "answer": "まじめ",
+          "explanation": "まじめ(な) = nghiêm túc."
+        }
+      ]
+    },
+    {
+      "type": "grammar",
+      "title": "文法 (Ngữ pháp)",
+      "instructions": "Chọn từ điền vào chỗ trống.",
+      "questions": [
+        {
+          "prompt": "いそがしくて、ひるごはん を たべる ____ も なかった。",
+          "options": ["ひま", "よてい", "つもり", "はず"],
+          "answer": "ひま",
+          "explanation": "～ひま も ない: \"bận đến mức không có thời gian ăn trưa\"."
+        },
+        {
+          "prompt": "せんせい が おっしゃった ____ に、しけん は らいしゅう です。",
+          "options": ["とおり", "ばかり", "ながら", "うちに"],
+          "answer": "とおり",
+          "explanation": "～とおりに: \"đúng như thầy đã nói\"."
+        }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "読解 (Đọc hiểu)",
+      "instructions": "Đọc đoạn văn và trả lời.",
+      "passages": [
+        {
+          "key": "p1",
+          "text": "さいきん、ざいたく きんむ を する ひと が ふえて きました。かいしゃ に いかなくても しごと が できる ので、じかん を じゆう に つかえます。しかし、いえ で は しゅうちゅう しにくい と いう ひと も います。",
+          "translation": "Gần đây số người làm việc tại nhà tăng lên. Vì không cần đến công ty vẫn làm được việc nên có thể dùng thời gian tự do. Tuy nhiên cũng có người nói ở nhà khó tập trung."
+        }
+      ],
+      "questions": [
+        {
+          "passage": "p1",
+          "prompt": "ざいたく きんむ の りてん は なん ですか。",
+          "options": ["きゅうりょう が たかい", "じかん を じゆう に つかえる", "どうりょう に あえる", "しゅうちゅう できる"],
+          "answer": "じかん を じゆう に つかえる",
+          "explanation": "「じかん を じゆう に つかえます」."
+        },
+        {
+          "passage": "p1",
+          "prompt": "ざいたく きんむ の もんだいてん は どれ ですか。",
+          "options": ["しごと が おおい", "いえ で しゅうちゅう しにくい", "つうきん が たいへん", "きゅうりょう が ひくい"],
+          "answer": "いえ で しゅうちゅう しにくい",
+          "explanation": "「いえ で は しゅうちゅう しにくい」."
+        }
+      ]
+    }
+  ]
+}
