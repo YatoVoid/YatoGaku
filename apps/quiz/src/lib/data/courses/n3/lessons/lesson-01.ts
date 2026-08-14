@@ -7,7 +7,7 @@ import type { LessonData } from '$lib/types';
 
 export const LESSON_01_DATA: LessonData = {
   lessonNumber: 1,
-  title: '受身形 (Thể bị động / Passive form)',
+  title: '受身形 (Passive Form)',
   vocabulary: [
     // Emotions & Feelings
     {

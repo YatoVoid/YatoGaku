@@ -3,7 +3,7 @@ import type { KanjiLessonData } from '$lib/types';
 
 export const KANJI_LESSON_10_DATA: KanjiLessonData = {
   lessonNumber: 10,
-  title: '場所・建物 (Nơi chốn & Toà nhà)',
+  title: '場所・建物 (Places & Buildings)',
   kanji: [
     {
       character: '店',

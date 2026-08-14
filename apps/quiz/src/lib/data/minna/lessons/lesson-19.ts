@@ -1,9 +1,9 @@
-// Minna no Nihongo — Lesson 19: た形 (Thể た — kinh nghiệm, liệt kê hoạt động)
+// Minna no Nihongo — Lesson 19: た形 (Ta-form: experience, listing activities)
 import type { LessonData } from '$lib/types';
 
 export const LESSON_19_DATA: LessonData = {
     lessonNumber: 19,
-    title: "た形 (Thể た — kinh nghiệm, liệt kê hoạt động)",
+    title: "た形 (Ta-form: experience, listing activities)",
     vocabulary: [
       {
         japanese: "登（のぼ）ります",

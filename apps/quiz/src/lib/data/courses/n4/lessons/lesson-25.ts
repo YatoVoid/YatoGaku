@@ -7,7 +7,7 @@ import type { LessonData } from '$lib/types';
 
 export const LESSON_25_DATA: LessonData = {
   lessonNumber: 25,
-  title: 'N4総復習 (Tổng ôn tập N4)',
+  title: 'N4総復習 (N4 Comprehensive Review)',
   vocabulary: [
     // Essential N4 verbs review
     {

@@ -7,7 +7,7 @@ import type { LessonData } from '$lib/types';
 
 export const LESSON_02_DATA: LessonData = {
   lessonNumber: 2,
-  title: '動詞と形容詞と経験 (Động từ, tính từ và kinh nghiệm)',
+  title: '動詞と形容詞と経験 (Verbs, Adjectives, and Experience)',
   vocabulary: [
     // Movement & Transportation
     {

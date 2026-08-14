@@ -1,13 +1,13 @@
 /**
  * N3 Lessons — Lesson 15: Comprehensive Review
- * 総合復習 (Tổng hợp ôn tập)
+ * 総合復習 (Comprehensive Review)
  */
 
 import type { LessonData } from '$lib/types';
 
 export const LESSON_15_DATA: LessonData = {
   lessonNumber: 15,
-  title: '総合復習 (Tổng hợp ôn tập)',
+  title: '総合復習 (Comprehensive Review)',
   vocabulary: [
     // Feelings and emotions
     {

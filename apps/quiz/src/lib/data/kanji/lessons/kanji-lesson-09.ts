@@ -3,7 +3,7 @@ import type { KanjiLessonData } from '$lib/types';
 
 export const KANJI_LESSON_09_DATA: KanjiLessonData = {
   lessonNumber: 9,
-  title: '動詞 II (Động từ II)',
+  title: '動詞 II (Verbs II)',
   kanji: [
     {
       character: '教',

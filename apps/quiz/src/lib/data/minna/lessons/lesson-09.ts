@@ -1,9 +1,9 @@
-// Minna no Nihongo — Lesson 09: すきです・きらいです (Thích, ghét, khả năng)
+// Minna no Nihongo — Lesson 09: すきです・きらいです (Likes, dislikes, ability)
 import type { LessonData } from '$lib/types';
 
 export const LESSON_09_DATA: LessonData = {
     lessonNumber: 9,
-    title: "すきです・きらいです (Thích, ghét, khả năng)",
+    title: "すきです・きらいです (Likes, dislikes, ability)",
     vocabulary: [
       {
         japanese: "わかります",

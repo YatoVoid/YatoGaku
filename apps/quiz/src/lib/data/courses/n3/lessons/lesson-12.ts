@@ -1,13 +1,13 @@
 /**
  * N3 Lessons — Lesson 12: Degree and Scope
- * 程度・範囲 (Mức độ và phạm vi)
+ * 程度・範囲 (Degree and Scope)
  */
 
 import type { LessonData } from '$lib/types';
 
 export const LESSON_12_DATA: LessonData = {
   lessonNumber: 12,
-  title: '程度・範囲 (Mức độ và phạm vi)',
+  title: '程度・範囲 (Degree and Scope)',
   vocabulary: [
     // Quantity and extent
     {

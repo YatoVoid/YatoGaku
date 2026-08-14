@@ -3,7 +3,7 @@ import type { KanjiLessonData } from '$lib/types';
 
 export const KANJI_LESSON_03_DATA: KanjiLessonData = {
   lessonNumber: 3,
-  title: '時間・曜日 (Thời gian & Thứ)',
+  title: '時間・曜日 (Time & Days of the Week)',
   kanji: [
     {
       character: '時',

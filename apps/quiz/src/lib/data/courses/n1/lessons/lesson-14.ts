@@ -7,7 +7,7 @@ import type { LessonData } from '$lib/types';
 
 export const LESSON_14_DATA: LessonData = {
   lessonNumber: 14,
-  title: 'に即して／を踏まえて (Dựa theo ~ / Căn cứ vào ~)',
+  title: 'に即して／を踏まえて (In accordance with / Based on)',
   vocabulary: [
     { japanese: '分析', kana: 'ぶんせき', vietnamese: 'phân tích', english: 'analysis', type: 'main', example: 'データを分析して報告する。' },
     { japanese: '方針', kana: 'ほうしん', vietnamese: 'phương châm, chính sách', english: 'policy, course of action', type: 'main', example: '会社の方針に従う。' },

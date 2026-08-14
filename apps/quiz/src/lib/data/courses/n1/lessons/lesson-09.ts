@@ -7,7 +7,7 @@ import type { LessonData } from '$lib/types';
 
 export const LESSON_09_DATA: LessonData = {
   lessonNumber: 9,
-  title: 'なり／や否や／そばから (Ngay khi ~ / Vừa ~ thì ~)',
+  title: 'なり／や否や／そばから (As soon as)',
   vocabulary: [
     { japanese: '瞬間', kana: 'しゅんかん', vietnamese: 'khoảnh khắc', english: 'moment, instant', type: 'main', example: 'ドアを開けた瞬間、猫が飛び出した。' },
     { japanese: '直ちに', kana: 'ただちに', vietnamese: 'ngay lập tức', english: 'immediately, at once', type: 'main', example: '危険を察知して直ちに避難した。' },

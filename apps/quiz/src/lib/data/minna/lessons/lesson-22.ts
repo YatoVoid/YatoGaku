@@ -1,9 +1,9 @@
-// Minna no Nihongo — Lesson 22: 名詞修飾 (Bổ nghĩa danh từ bằng mệnh đề)
+// Minna no Nihongo — Lesson 22: 名詞修飾 (Modifying nouns with clauses)
 import type { LessonData } from '$lib/types';
 
 export const LESSON_22_DATA: LessonData = {
     lessonNumber: 22,
-    title: "名詞修飾 (Bổ nghĩa danh từ bằng mệnh đề)",
+    title: "名詞修飾 (Modifying nouns with clauses)",
     vocabulary: [
       {
         japanese: "着（き）ます",

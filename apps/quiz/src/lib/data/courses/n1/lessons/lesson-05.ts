@@ -7,7 +7,7 @@ import type { LessonData } from '$lib/types';
 
 export const LESSON_05_DATA: LessonData = {
   lessonNumber: 5,
-  title: 'に至るまで／を皮切りに (Cho đến tận / Bắt đầu từ)',
+  title: 'に至るまで／を皮切りに (Even up to / Starting with)',
   vocabulary: [
     { japanese: '範囲', kana: 'はんい', vietnamese: 'phạm vi', english: 'scope, range', type: 'main', example: '調査の範囲を広げた。' },
     { japanese: '展開', kana: 'てんかい', vietnamese: 'triển khai, mở rộng', english: 'development, expansion', type: 'main', example: '事業を全国に展開した。' },

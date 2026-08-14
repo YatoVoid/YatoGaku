@@ -7,7 +7,7 @@ import type { LessonData } from '$lib/types';
 
 export const LESSON_13_DATA: LessonData = {
   lessonNumber: 13,
-  title: 'たりとも～ない／といえども (Dù chỉ ~ cũng không ~ / Dù ~ đi nữa)',
+  title: 'たりとも～ない／といえども (Not even / Even though)',
   vocabulary: [
     { japanese: '規則', kana: 'きそく', vietnamese: 'quy tắc', english: 'rule, regulation', type: 'main', example: '規則を厳守しなければならない。' },
     { japanese: '厳格', kana: 'げんかく', vietnamese: 'nghiêm khắc', english: 'strict, rigorous', type: 'main', example: '厳格な教育を受けた。' },

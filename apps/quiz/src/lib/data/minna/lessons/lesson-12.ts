@@ -1,9 +1,9 @@
-// Minna no Nihongo — Lesson 12: 比較 (So sánh, mùa, thời tiết)
+// Minna no Nihongo — Lesson 12: 比較 (Comparison, seasons, weather)
 import type { LessonData } from '$lib/types';
 
 export const LESSON_12_DATA: LessonData = {
     lessonNumber: 12,
-    title: "比較 (So sánh, mùa, thời tiết)",
+    title: "比較 (Comparison, seasons, weather)",
     vocabulary: [
       {
         japanese: "簡単（な）（かんたん）",

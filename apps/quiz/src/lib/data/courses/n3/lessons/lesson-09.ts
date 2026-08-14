@@ -7,7 +7,7 @@ import type { LessonData } from '$lib/types';
 
 export const LESSON_09_DATA: LessonData = {
   lessonNumber: 9,
-  title: '理由・原因 (Lý do và nguyên nhân / Reasons & Causes)',
+  title: '理由・原因 (Reasons and Causes)',
   vocabulary: [
     // Nouns about problems and causes
     {

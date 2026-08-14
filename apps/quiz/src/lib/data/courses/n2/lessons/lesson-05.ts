@@ -7,7 +7,7 @@ import type { LessonData } from '$lib/types';
 
 export const LESSON_05_DATA: LessonData = {
   lessonNumber: 5,
-  title: 'ばかり／ばかりか／ばかりに (Toàn là / Không chỉ / Chỉ vì)',
+  title: 'ばかり／ばかりか／ばかりに (Only / Not only / Just because)',
   vocabulary: [
     { japanese: '文句', kana: 'もんく', vietnamese: 'lời phàn nàn', english: 'complaint', type: 'main', example: '文句ばかり言わないでください。' },
     { japanese: '無駄', kana: 'むだ', vietnamese: 'lãng phí, vô ích', english: 'waste, useless', type: 'main', example: 'お金を無駄にした。' },

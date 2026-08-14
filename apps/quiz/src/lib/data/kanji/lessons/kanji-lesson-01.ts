@@ -3,7 +3,7 @@ import type { KanjiLessonData } from '$lib/types';
 
 export const KANJI_LESSON_01_DATA: KanjiLessonData = {
   lessonNumber: 1,
-  title: '数字・基本 (Số đếm & Cơ bản)',
+  title: '数字・基本 (Numbers & Basics)',
   kanji: [
     {
       character: '一',

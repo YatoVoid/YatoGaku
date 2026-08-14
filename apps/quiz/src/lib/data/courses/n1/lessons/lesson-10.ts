@@ -7,7 +7,7 @@ import type { LessonData } from '$lib/types';
 
 export const LESSON_10_DATA: LessonData = {
   lessonNumber: 10,
-  title: '極まりない／きわまる／限りだ (Cực kỳ ~ / Vô cùng ~)',
+  title: '極まりない／きわまる／限りだ (Extremely)',
   vocabulary: [
     { japanese: '感激', kana: 'かんげき', vietnamese: 'cảm kích, xúc động', english: 'deeply moved, impressed', type: 'main', example: '彼の言葉に感激した。' },
     { japanese: '憤慨', kana: 'ふんがい', vietnamese: 'phẫn nộ', english: 'indignation, resentment', type: 'main', example: '不正に対して憤慨した。' },

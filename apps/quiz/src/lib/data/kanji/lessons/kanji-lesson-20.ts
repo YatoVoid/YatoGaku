@@ -3,7 +3,7 @@ import type { KanjiLessonData } from '$lib/types';
 
 export const KANJI_LESSON_20_DATA: KanjiLessonData = {
   lessonNumber: 20,
-  title: '食・料理 (Ẩm thực & Nấu ăn)',
+  title: '食・料理 (Food & Cooking)',
   kanji: [
     {
       character: '料',

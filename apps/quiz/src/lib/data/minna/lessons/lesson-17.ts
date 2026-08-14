@@ -1,9 +1,9 @@
-// Minna no Nihongo — Lesson 17: ない形 (Thể ない — phải làm, không cần làm, xin đừng)
+// Minna no Nihongo — Lesson 17: ない形 (Nai-form: must do, don't need to, please don't)
 import type { LessonData } from '$lib/types';
 
 export const LESSON_17_DATA: LessonData = {
     lessonNumber: 17,
-    title: "ない形 (Thể ない — phải làm, không cần làm, xin đừng)",
+    title: "ない形 (Nai-form: must do, don't need to, please don't)",
     vocabulary: [
       {
         japanese: "覚（おぼ）えます",

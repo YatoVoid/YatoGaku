@@ -7,7 +7,7 @@ import type { LessonData } from '$lib/types';
 
 export const LESSON_05_DATA: LessonData = {
   lessonNumber: 5,
-  title: '様態・比較 (Trạng thái và so sánh / Appearance + comparison)',
+  title: '様態・比較 (Appearance and Comparison)',
   vocabulary: [
     // Appearance & Feelings
     {

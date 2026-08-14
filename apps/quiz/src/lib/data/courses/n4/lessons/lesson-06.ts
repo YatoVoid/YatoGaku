@@ -7,7 +7,7 @@ import type { LessonData } from '$lib/types';
 
 export const LESSON_06_DATA: LessonData = {
   lessonNumber: 6,
-  title: '条件形 (Các dạng điều kiện)',
+  title: '条件形 (Conditional Forms)',
   vocabulary: [
     // Verbs related to conditions and outcomes
     {

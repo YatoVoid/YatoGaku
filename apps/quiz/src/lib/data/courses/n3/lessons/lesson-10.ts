@@ -7,7 +7,7 @@ import type { LessonData } from '$lib/types';
 
 export const LESSON_10_DATA: LessonData = {
   lessonNumber: 10,
-  title: '時間関係 (Quan hệ thời gian / Time relations)',
+  title: '時間関係 (Time Relations)',
   vocabulary: [
     // Time-related nouns
     {

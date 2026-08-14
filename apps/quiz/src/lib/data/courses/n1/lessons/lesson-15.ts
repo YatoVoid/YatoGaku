@@ -7,7 +7,7 @@ import type { LessonData } from '$lib/types';
 
 export const LESSON_15_DATA: LessonData = {
   lessonNumber: 15,
-  title: 'N1 総合復習 (Ôn tập tổng hợp N1)',
+  title: 'N1 総合復習 (N1 Comprehensive Review)',
   vocabulary: [
     { japanese: '論文', kana: 'ろんぶん', vietnamese: 'luận văn, bài nghiên cứu', english: 'thesis, academic paper', type: 'main', example: '博士論文を提出した。' },
     { japanese: '概念', kana: 'がいねん', vietnamese: 'khái niệm', english: 'concept, notion', type: 'main', example: '新しい概念を導入する。' },

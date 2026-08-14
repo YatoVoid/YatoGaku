@@ -7,7 +7,7 @@ import type { LessonData } from '$lib/types';
 
 export const LESSON_07_DATA: LessonData = {
   lessonNumber: 7,
-  title: '授受表現 (Cách cho và nhận)',
+  title: '授受表現 (Giving and Receiving Expressions)',
   vocabulary: [
     // Giving and receiving verbs
     {

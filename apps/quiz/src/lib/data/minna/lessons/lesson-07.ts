@@ -1,9 +1,9 @@
-// Minna no Nihongo — Lesson 07: あげます・もらいます (Cho, nhận, mượn, dạy)
+// Minna no Nihongo — Lesson 07: あげます・もらいます (Giving, receiving, lending, teaching)
 import type { LessonData } from '$lib/types';
 
 export const LESSON_07_DATA: LessonData = {
     lessonNumber: 7,
-    title: "あげます・もらいます (Cho, nhận, mượn, dạy)",
+    title: "あげます・もらいます (Giving, receiving, lending, teaching)",
     vocabulary: [
       {
         japanese: "あげます",

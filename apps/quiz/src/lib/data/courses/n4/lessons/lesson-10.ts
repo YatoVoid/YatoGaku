@@ -7,7 +7,7 @@ import type { LessonData } from '$lib/types';
 
 export const LESSON_10_DATA: LessonData = {
   lessonNumber: 10,
-  title: '敬語 (Kính ngữ)',
+  title: '敬語 (Honorific Language)',
   vocabulary: [
     // Special honorific verbs
     {

@@ -3,7 +3,7 @@ import type { KanjiLessonData } from '$lib/types';
 
 export const KANJI_LESSON_11_DATA: KanjiLessonData = {
   lessonNumber: 11,
-  title: '数量・助数詞 (Số lượng & Trợ số từ)',
+  title: '数量・助数詞 (Quantities & Counters)',
   kanji: [
     {
       character: '年',

@@ -7,7 +7,7 @@ import type { LessonData } from '$lib/types';
 
 export const LESSON_01_DATA: LessonData = {
   lessonNumber: 1,
-  title: '日常活動と進行形 (Hoạt động hàng ngày và hình thức tiến hành)',
+  title: '日常活動と進行形 (Daily Activities and Progressive Form)',
   vocabulary: [
     // Daily Activities - Main Verbs
     {

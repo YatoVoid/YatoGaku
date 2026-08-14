@@ -7,7 +7,7 @@ import type { LessonData } from '$lib/types';
 
 export const LESSON_01_DATA: LessonData = {
   lessonNumber: 1,
-  title: 'ようにする／ようになる (Thay đổi thói quen / Gradually)',
+  title: 'ようにする／ようになる (Making an effort to / Gradually coming to)',
   vocabulary: [
     { japanese: '心がける', kana: 'こころがける', vietnamese: 'cố gắng, lưu ý', english: 'to try to, to keep in mind', type: 'main', example: '健康に心がけています。' },
     { japanese: '気をつける', kana: 'きをつける', vietnamese: 'cẩn thận, chú ý', english: 'to be careful', type: 'main', example: '車に気をつけてください。' },

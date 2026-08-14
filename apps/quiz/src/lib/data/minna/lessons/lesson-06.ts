@@ -1,9 +1,9 @@
-// Minna no Nihongo — Lesson 06: ～を します (Làm ~)
+// Minna no Nihongo — Lesson 06: ～を します (Doing ~)
 import type { LessonData } from '$lib/types';
 
 export const LESSON_06_DATA: LessonData = {
     lessonNumber: 6,
-    title: "～を します (Làm ~)",
+    title: "～を します (Doing ~)",
     vocabulary: [
       {
         japanese: "食べます（たべます）",

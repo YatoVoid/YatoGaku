@@ -3,7 +3,7 @@ import type { KanjiLessonData } from '$lib/types';
 
 export const KANJI_LESSON_08_DATA: KanjiLessonData = {
   lessonNumber: 8,
-  title: '形容詞 (Tính từ)',
+  title: '形容詞 (Adjectives)',
   kanji: [
     {
       character: '多',

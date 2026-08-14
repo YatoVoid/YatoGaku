@@ -1,9 +1,9 @@
-// Minna no Nihongo — Lesson 02: これは ～です (Cái này là ~)
+// Minna no Nihongo — Lesson 02: これは ～です (This is ~)
 import type { LessonData } from '$lib/types';
 
 export const LESSON_02_DATA: LessonData = {
     lessonNumber: 2,
-    title: "これは ～です (Cái này là ~)",
+    title: "これは ～です (This is ~)",
     vocabulary: [
       {
         japanese: "これ",

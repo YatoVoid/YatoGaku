@@ -1,9 +1,9 @@
-// Minna no Nihongo — Lesson 18: 辞書形＋ことができます (Khả năng, sở thích, trước khi làm)
+// Minna no Nihongo — Lesson 18: 辞書形＋ことができます (Ability, hobbies, before doing)
 import type { LessonData } from '$lib/types';
 
 export const LESSON_18_DATA: LessonData = {
     lessonNumber: 18,
-    title: "辞書形＋ことができます (Khả năng, sở thích, trước khi làm)",
+    title: "辞書形＋ことができます (Ability, hobbies, before doing)",
     vocabulary: [
       {
         japanese: "できます",

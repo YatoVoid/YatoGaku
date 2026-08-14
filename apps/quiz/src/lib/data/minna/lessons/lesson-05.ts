@@ -1,9 +1,9 @@
-// Minna no Nihongo — Lesson 05: ～へ 行きます (Đi đến ~)
+// Minna no Nihongo — Lesson 05: ～へ 行きます (Going to ~)
 import type { LessonData } from '$lib/types';
 
 export const LESSON_05_DATA: LessonData = {
     lessonNumber: 5,
-    title: "～へ 行きます (Đi đến ~)",
+    title: "～へ 行きます (Going to ~)",
     vocabulary: [
       {
         japanese: "行きます（いきます）",

@@ -3,7 +3,7 @@ import type { KanjiLessonData } from '$lib/types';
 
 export const KANJI_LESSON_17_DATA: KanjiLessonData = {
   lessonNumber: 17,
-  title: '仕事・職業 (Công việc & Nghề nghiệp)',
+  title: '仕事・職業 (Work & Occupations)',
   kanji: [
     {
       character: '仕',

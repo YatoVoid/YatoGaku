@@ -1,9 +1,9 @@
-// Minna no Nihongo — Lesson 23: 〜とき/〜と (Khi ~/Nếu ~)
+// Minna no Nihongo — Lesson 23: 〜とき/〜と (When ~ / If ~)
 import type { LessonData } from '$lib/types';
 
 export const LESSON_23_DATA: LessonData = {
     lessonNumber: 23,
-    title: "〜とき/〜と (Khi ~/Nếu ~)",
+    title: "〜とき/〜と (When ~ / If ~)",
     vocabulary: [
       {
         japanese: "聞きます（ききます）",

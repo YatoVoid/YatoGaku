@@ -7,7 +7,7 @@ import type { LessonData } from '$lib/types';
 
 export const LESSON_01_DATA: LessonData = {
   lessonNumber: 1,
-  title: 'てはじめて／た上で (Chỉ sau khi ~ / Sau khi cân nhắc)',
+  title: 'てはじめて／た上で (Only after / After considering)',
   vocabulary: [
     { japanese: '痛感', kana: 'つうかん', vietnamese: 'cảm nhận sâu sắc', english: 'to feel keenly', type: 'main', example: '健康の大切さを痛感した。' },
     { japanese: '実感', kana: 'じっかん', vietnamese: 'cảm nhận thực tế', english: 'to realize, to feel truly', type: 'main', example: '親になって実感した。' },

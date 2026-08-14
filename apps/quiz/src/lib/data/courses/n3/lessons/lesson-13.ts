@@ -1,13 +1,13 @@
 /**
  * N3 Lessons — Lesson 13: Connection and Parallel
- * 接続・並列 (Liên kết và song song)
+ * 接続・並列 (Connectives and Parallels)
  */
 
 import type { LessonData } from '$lib/types';
 
 export const LESSON_13_DATA: LessonData = {
   lessonNumber: 13,
-  title: '接続・並列 (Liên kết và song song)',
+  title: '接続・並列 (Connectives and Parallels)',
   vocabulary: [
     // Relationship and logic words
     {

@@ -7,7 +7,7 @@ import type { LessonData } from '$lib/types';
 
 export const LESSON_09_DATA: LessonData = {
   lessonNumber: 9,
-  title: '使役形 (Thể sai khiến)',
+  title: '使役形 (Causative Form)',
   vocabulary: [
     // Verbs commonly used in causative
     {

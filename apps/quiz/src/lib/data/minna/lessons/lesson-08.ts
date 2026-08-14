@@ -1,9 +1,9 @@
-// Minna no Nihongo — Lesson 08: 形容詞 (Tính từ い và な)
+// Minna no Nihongo — Lesson 08: 形容詞 (i- and na-adjectives)
 import type { LessonData } from '$lib/types';
 
 export const LESSON_08_DATA: LessonData = {
     lessonNumber: 8,
-    title: "形容詞 (Tính từ い và な)",
+    title: "形容詞 (i- and na-adjectives)",
     vocabulary: [
       {
         japanese: "ハンサム（な）",

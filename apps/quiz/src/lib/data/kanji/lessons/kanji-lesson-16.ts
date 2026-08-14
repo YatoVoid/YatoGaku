@@ -3,7 +3,7 @@ import type { KanjiLessonData } from '$lib/types';
 
 export const KANJI_LESSON_16_DATA: KanjiLessonData = {
   lessonNumber: 16,
-  title: '交通・移動 (Giao thông & Di chuyển)',
+  title: '交通・移動 (Transportation & Movement)',
   kanji: [
     {
       character: '乗',

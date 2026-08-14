@@ -7,7 +7,7 @@ import type { LessonData } from '$lib/types';
 
 export const LESSON_08_DATA: LessonData = {
   lessonNumber: 8,
-  title: 'っぽい／気味／がち (Có vẻ / Hơi có xu hướng / Hay bị)',
+  title: 'っぽい／気味／がち (-ish / Tendency toward / Prone to)',
   vocabulary: [
     { japanese: '大人', kana: 'おとな', vietnamese: 'người lớn', english: 'adult', type: 'main', example: '彼は大人っぽい話し方をする。' },
     { japanese: '子供', kana: 'こども', vietnamese: 'trẻ con', english: 'child', type: 'main', example: '子供っぽい行動はやめてください。' },

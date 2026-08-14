@@ -3,7 +3,7 @@ import type { KanjiLessonData } from '$lib/types';
 
 export const KANJI_LESSON_13_DATA: KanjiLessonData = {
   lessonNumber: 13,
-  title: '動詞 III (Động từ III)',
+  title: '動詞 III (Verbs III)',
   kanji: [
     {
       character: '出',

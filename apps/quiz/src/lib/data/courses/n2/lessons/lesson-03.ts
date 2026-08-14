@@ -7,7 +7,7 @@ import type { LessonData } from '$lib/types';
 
 export const LESSON_03_DATA: LessonData = {
   lessonNumber: 3,
-  title: 'わけだ／わけがない／わけではない (Lý do / Không thể nào / Không hẳn)',
+  title: "わけだ／わけがない／わけではない (It's because / No way / Not necessarily)",
   vocabulary: [
     { japanese: '理由', kana: 'りゆう', vietnamese: 'lý do', english: 'reason', type: 'main', example: '遅刻した理由を説明してください。' },
     { japanese: '原因', kana: 'げんいん', vietnamese: 'nguyên nhân', english: 'cause', type: 'main', example: '事故の原因を調査する。' },

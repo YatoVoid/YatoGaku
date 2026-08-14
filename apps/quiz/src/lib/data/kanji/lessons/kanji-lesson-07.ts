@@ -3,7 +3,7 @@ import type { KanjiLessonData } from '$lib/types';
 
 export const KANJI_LESSON_07_DATA: KanjiLessonData = {
   lessonNumber: 7,
-  title: '家族 (Gia đình)',
+  title: '家族 (Family)',
   kanji: [
     {
       character: '父',

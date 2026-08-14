@@ -1,9 +1,9 @@
-// Minna no Nihongo — Lesson 04: ～時に 起きます (Thời gian / Lịch trình)
+// Minna no Nihongo — Lesson 04: ～時に 起きます (Time / Schedule)
 import type { LessonData } from '$lib/types';
 
 export const LESSON_04_DATA: LessonData = {
     lessonNumber: 4,
-    title: "～時に 起きます (Thời gian / Lịch trình)",
+    title: "～時に 起きます (Time / Schedule)",
     vocabulary: [
       {
         japanese: "起きます（おきます）",

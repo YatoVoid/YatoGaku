@@ -7,7 +7,7 @@ import type { LessonData } from '$lib/types';
 
 export const LESSON_22_DATA: LessonData = {
   lessonNumber: 22,
-  title: '複文と名詞化 (Câu phức và danh từ hóa)',
+  title: '複文と名詞化 (Complex Sentences and Nominalization)',
   vocabulary: [
     // Verbs related to thinking and expression
     {

@@ -1,9 +1,9 @@
-// Minna no Nihongo — Lesson 01: わたしは ～です (Giới thiệu bản thân)
+// Minna no Nihongo — Lesson 01: わたしは ～です (Self-introduction)
 import type { LessonData } from '$lib/types';
 
 export const LESSON_01_DATA: LessonData = {
     lessonNumber: 1,
-    title: "わたしは ～です (Giới thiệu bản thân)",
+    title: "わたしは ～です (Self-introduction)",
     vocabulary: [
       {
         japanese: "わたし",

@@ -7,7 +7,7 @@ import type { LessonData } from '$lib/types';
 
 export const LESSON_04_DATA: LessonData = {
   lessonNumber: 4,
-  title: 'にしたがって／につれて／とともに (Tỷ lệ thuận, cùng với sự thay đổi)',
+  title: 'にしたがって／につれて／とともに (As, along with, proportional change)',
   vocabulary: [
     { japanese: '成長', kana: 'せいちょう', vietnamese: 'tăng trưởng, lớn lên', english: 'growth', type: 'main', example: '子供の成長は早い。' },
     { japanese: '発展', kana: 'はってん', vietnamese: 'phát triển', english: 'development', type: 'main', example: '技術の発展が著しい。' },

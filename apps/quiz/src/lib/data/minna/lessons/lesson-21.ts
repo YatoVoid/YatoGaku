@@ -1,9 +1,9 @@
-// Minna no Nihongo — Lesson 21: 〜と思います (Tôi nghĩ rằng ~)
+// Minna no Nihongo — Lesson 21: 〜と思います (I think that ~)
 import type { LessonData } from '$lib/types';
 
 export const LESSON_21_DATA: LessonData = {
     lessonNumber: 21,
-    title: "〜と思います (Tôi nghĩ rằng ~)",
+    title: "〜と思います (I think that ~)",
     vocabulary: [
       {
         japanese: "思います（おもいます）",

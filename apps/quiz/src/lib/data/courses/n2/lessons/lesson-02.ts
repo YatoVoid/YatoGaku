@@ -7,7 +7,7 @@ import type { LessonData } from '$lib/types';
 
 export const LESSON_02_DATA: LessonData = {
   lessonNumber: 2,
-  title: 'ことにする／ことになる (Quyết định cá nhân / Quyết định bên ngoài)',
+  title: 'ことにする／ことになる (Personal decision / External decision)',
   vocabulary: [
     { japanese: '決定', kana: 'けってい', vietnamese: 'quyết định', english: 'decision', type: 'main', example: '重要な決定を下した。' },
     { japanese: '決心', kana: 'けっしん', vietnamese: 'quyết tâm', english: 'determination, resolve', type: 'main', example: '留学する決心をした。' },

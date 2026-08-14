@@ -7,7 +7,7 @@ import type { LessonData } from '$lib/types';
 
 export const LESSON_04_DATA: LessonData = {
   lessonNumber: 4,
-  title: '意志・推量 (Ý chí và suy đoán / Volitional + conjecture)',
+  title: '意志・推量 (Volitional and Conjecture)',
   vocabulary: [
     // Plans & Decisions
     {

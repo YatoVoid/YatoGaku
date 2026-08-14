@@ -1,9 +1,9 @@
-// Minna no Nihongo — Lesson 10: あります・います (Sự tồn tại, vị trí)
+// Minna no Nihongo — Lesson 10: あります・います (Existence, location)
 import type { LessonData } from '$lib/types';
 
 export const LESSON_10_DATA: LessonData = {
     lessonNumber: 10,
-    title: "あります・います (Sự tồn tại, vị trí)",
+    title: "あります・います (Existence, location)",
     vocabulary: [
       {
         japanese: "います",

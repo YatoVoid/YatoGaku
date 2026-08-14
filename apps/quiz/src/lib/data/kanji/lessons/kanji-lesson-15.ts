@@ -3,7 +3,7 @@ import type { KanjiLessonData } from '$lib/types';
 
 export const KANJI_LESSON_15_DATA: KanjiLessonData = {
   lessonNumber: 15,
-  title: '位置・方向 (Vị trí & Phương hướng)',
+  title: '位置・方向 (Position & Direction)',
   kanji: [
     {
       character: '上',

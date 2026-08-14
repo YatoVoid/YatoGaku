@@ -3,7 +3,7 @@ import type { KanjiLessonData } from '$lib/types';
 
 export const KANJI_LESSON_02_DATA: KanjiLessonData = {
   lessonNumber: 2,
-  title: '人・国 (Con người & Quốc gia)',
+  title: '人・国 (People & Countries)',
   kanji: [
     {
       character: '人',

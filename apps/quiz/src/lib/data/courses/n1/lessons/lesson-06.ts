@@ -7,7 +7,7 @@ import type { LessonData } from '$lib/types';
 
 export const LESSON_06_DATA: LessonData = {
   lessonNumber: 6,
-  title: 'ならでは／ともなると (Chỉ riêng ~ mới có / Khi đã ở vị thế ~)',
+  title: 'ならでは／ともなると (Uniquely / Once at that stage)',
   vocabulary: [
     { japanese: '独自', kana: 'どくじ', vietnamese: 'độc đáo, riêng biệt', english: 'unique, original', type: 'main', example: '独自の文化が発展した。' },
     { japanese: '特有', kana: 'とくゆう', vietnamese: 'đặc hữu, riêng có', english: 'peculiar to, characteristic of', type: 'main', example: '日本特有の文化だ。' },

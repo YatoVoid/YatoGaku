@@ -1,9 +1,9 @@
-// Minna no Nihongo — Lesson 13: ほしい・〜たい (Mong muốn, gọi món)
+// Minna no Nihongo — Lesson 13: ほしい・〜たい (Wants, ordering food)
 import type { LessonData } from '$lib/types';
 
 export const LESSON_13_DATA: LessonData = {
     lessonNumber: 13,
-    title: "ほしい・〜たい (Mong muốn, gọi món)",
+    title: "ほしい・〜たい (Wants, ordering food)",
     vocabulary: [
       {
         japanese: "欲しい（ほしい）",

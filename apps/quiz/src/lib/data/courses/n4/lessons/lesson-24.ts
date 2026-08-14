@@ -7,7 +7,7 @@ import type { LessonData } from '$lib/types';
 
 export const LESSON_24_DATA: LessonData = {
   lessonNumber: 24,
-  title: '時間の前後関係 (Quan hệ trước sau về thời gian)',
+  title: '時間の前後関係 (Time Sequence Relations)',
   vocabulary: [
     // Time-related verbs
     {

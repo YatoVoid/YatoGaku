@@ -7,7 +7,7 @@ import type { LessonData } from '$lib/types';
 
 export const LESSON_07_DATA: LessonData = {
   lessonNumber: 7,
-  title: 'おかげで／せいで／ために (Nhờ ~ / Tại ~ / Vì ~)',
+  title: 'おかげで／せいで／ために (Thanks to / Because of / For the sake of)',
   vocabulary: [
     { japanese: '感謝', kana: 'かんしゃ', vietnamese: 'cảm tạ, biết ơn', english: 'gratitude, appreciation', type: 'main', example: '先生に感謝しています。' },
     { japanese: '恩恵', kana: 'おんけい', vietnamese: 'ân huệ', english: 'grace, benefit', type: 'additional', example: '自然の恩恵を受けている。' },

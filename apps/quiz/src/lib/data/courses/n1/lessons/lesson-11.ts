@@ -7,7 +7,7 @@ import type { LessonData } from '$lib/types';
 
 export const LESSON_11_DATA: LessonData = {
   lessonNumber: 11,
-  title: 'めく／じみた／ぶる (Có vẻ ~ / Giả vờ ~)',
+  title: 'めく／じみた／ぶる (Seeming like / Pretending to be)',
   vocabulary: [
     { japanese: '皮肉', kana: 'ひにく', vietnamese: 'mỉa mai, châm biếm', english: 'irony, sarcasm', type: 'main', example: '皮肉めいた言い方をする。' },
     { japanese: '謎', kana: 'なぞ', vietnamese: 'bí ẩn, câu đố', english: 'mystery, riddle', type: 'main', example: '謎めいた微笑みを浮かべた。' },

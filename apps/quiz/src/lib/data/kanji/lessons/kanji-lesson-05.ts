@@ -3,7 +3,7 @@ import type { KanjiLessonData } from '$lib/types';
 
 export const KANJI_LESSON_05_DATA: KanjiLessonData = {
   lessonNumber: 5,
-  title: '場所・形容詞 (Địa điểm & Tính từ)',
+  title: '場所・形容詞 (Places & Adjectives)',
   kanji: [
     {
       character: '大',

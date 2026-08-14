@@ -7,7 +7,7 @@ import type { LessonData } from '$lib/types';
 
 export const LESSON_13_DATA: LessonData = {
   lessonNumber: 13,
-  title: '意向形 (Thể ý chí và dự định)',
+  title: '意向形 (Volitional Form)',
   vocabulary: [
     // Future plans and intentions
     {

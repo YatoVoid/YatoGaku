@@ -7,7 +7,7 @@ import type { LessonData } from '$lib/types';
 
 export const LESSON_12_DATA: LessonData = {
   lessonNumber: 12,
-  title: 'もさることながら／はおろか (Không chỉ ~ / Chưa nói đến ~)',
+  title: 'もさることながら／はおろか (Not to mention / Let alone)',
   vocabulary: [
     { japanese: '比較', kana: 'ひかく', vietnamese: 'so sánh', english: 'comparison', type: 'main', example: '二つの商品を比較する。' },
     { japanese: '圧倒的', kana: 'あっとうてき', vietnamese: 'áp đảo', english: 'overwhelming', type: 'main', example: '圧倒的な差で勝利した。' },

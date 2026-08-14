@@ -7,7 +7,7 @@ import type { LessonData } from '$lib/types';
 
 export const LESSON_17_DATA: LessonData = {
   lessonNumber: 17,
-  title: '複合動詞 (Động từ ghép)',
+  title: '複合動詞 (Compound Verbs)',
   vocabulary: [
     // Main Vocabulary - Basic Verbs
     {

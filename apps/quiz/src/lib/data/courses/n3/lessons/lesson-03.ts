@@ -7,7 +7,7 @@ import type { LessonData } from '$lib/types';
 
 export const LESSON_03_DATA: LessonData = {
   lessonNumber: 3,
-  title: '条件 (Điều kiện / Conditionals)',
+  title: '条件 (Conditionals)',
   vocabulary: [
     // Situations & Outcomes
     {

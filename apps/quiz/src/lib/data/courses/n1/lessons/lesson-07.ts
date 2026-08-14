@@ -7,7 +7,7 @@ import type { LessonData } from '$lib/types';
 
 export const LESSON_07_DATA: LessonData = {
   lessonNumber: 7,
-  title: 'べく／んがために (Để mà ~ / Vì mục đích ~ — văn chương)',
+  title: 'べく／んがために (In order to / For the purpose of — literary)',
   vocabulary: [
     { japanese: '目的', kana: 'もくてき', vietnamese: 'mục đích', english: 'purpose, objective', type: 'main', example: '目的を達成するために努力する。' },
     { japanese: '志', kana: 'こころざし', vietnamese: 'chí hướng, hoài bão', english: 'ambition, aspiration', type: 'main', example: '高い志を持って生きる。' },

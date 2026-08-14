@@ -1,9 +1,9 @@
-// Minna no Nihongo — Lesson 20: 普通形 (Thể thông thường)
+// Minna no Nihongo — Lesson 20: 普通形 (Plain form)
 import type { LessonData } from '$lib/types';
 
 export const LESSON_20_DATA: LessonData = {
     lessonNumber: 20,
-    title: "普通形 (Thể thông thường)",
+    title: "普通形 (Plain form)",
     vocabulary: [
       {
         japanese: "要ります（いります）",

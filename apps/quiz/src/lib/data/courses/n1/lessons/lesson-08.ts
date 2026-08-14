@@ -7,7 +7,7 @@ import type { LessonData } from '$lib/types';
 
 export const LESSON_08_DATA: LessonData = {
   lessonNumber: 8,
-  title: 'まじき／ざるを得ない (Không được phép ~ / Không thể không ~)',
+  title: 'まじき／ざるを得ない (Must not / Cannot help but)',
   vocabulary: [
     { japanese: '倫理', kana: 'りんり', vietnamese: 'luân lý, đạo đức', english: 'ethics, morals', type: 'main', example: '医療倫理を守るべきだ。' },
     { japanese: '道徳', kana: 'どうとく', vietnamese: 'đạo đức', english: 'morality, ethics', type: 'main', example: '道徳的に許されない行為だ。' },

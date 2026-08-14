@@ -1,9 +1,9 @@
-// Minna no Nihongo — Lesson 24: くれます (Cho tôi/ai đó)
+// Minna no Nihongo — Lesson 24: くれます (Giving to me/someone)
 import type { LessonData } from '$lib/types';
 
 export const LESSON_24_DATA: LessonData = {
     lessonNumber: 24,
-    title: "くれます (Cho tôi/ai đó)",
+    title: "くれます (Giving to me/someone)",
     vocabulary: [
       {
         japanese: "くれます",

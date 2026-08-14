@@ -7,7 +7,7 @@ import type { LessonData } from '$lib/types';
 
 export const LESSON_12_DATA: LessonData = {
   lessonNumber: 12,
-  title: '可能形 (Thể khả năng)',
+  title: '可能形 (Potential Form)',
   vocabulary: [
     // Ability verbs
     {

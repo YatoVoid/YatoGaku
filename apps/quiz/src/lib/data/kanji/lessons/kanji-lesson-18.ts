@@ -3,7 +3,7 @@ import type { KanjiLessonData } from '$lib/types';
 
 export const KANJI_LESSON_18_DATA: KanjiLessonData = {
   lessonNumber: 18,
-  title: '感情・状態 (Cảm xúc & Trạng thái)',
+  title: '感情・状態 (Emotions & States)',
   kanji: [
     {
       character: '好',

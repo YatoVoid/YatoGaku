@@ -3,7 +3,7 @@ import type { KanjiLessonData } from '$lib/types';
 
 export const KANJI_LESSON_14_DATA: KanjiLessonData = {
   lessonNumber: 14,
-  title: '体・健康 (Cơ thể & Sức khoẻ)',
+  title: '体・健康 (Body & Health)',
   kanji: [
     {
       character: '目',

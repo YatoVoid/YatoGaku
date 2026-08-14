@@ -1,9 +1,9 @@
-// Minna no Nihongo — Lesson 25: 〜たら (Nếu ~ thì)
+// Minna no Nihongo — Lesson 25: 〜たら (If ~ then)
 import type { LessonData } from '$lib/types';
 
 export const LESSON_25_DATA: LessonData = {
     lessonNumber: 25,
-    title: "〜たら (Nếu ~ thì)",
+    title: "〜たら (If ~ then)",
     vocabulary: [
       {
         japanese: "考えます（かんがえます）",

@@ -7,7 +7,7 @@ import type { LessonData } from '$lib/types';
 
 export const LESSON_03_DATA: LessonData = {
   lessonNumber: 3,
-  title: 'をものともせず／をよそに (Bất chấp / Mặc kệ)',
+  title: 'をものともせず／をよそに (Undeterred by / Ignoring)',
   vocabulary: [
     { japanese: '逆境', kana: 'ぎゃっきょう', vietnamese: 'nghịch cảnh', english: 'adversity', type: 'main', example: '逆境に負けない精神力が必要だ。' },
     { japanese: '勇敢', kana: 'ゆうかん', vietnamese: 'dũng cảm', english: 'brave, courageous', type: 'main', example: '勇敢に立ち向かった。' },

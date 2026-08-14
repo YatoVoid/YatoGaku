@@ -1,13 +1,13 @@
 /**
  * N3 Lessons — Lesson 14: Purpose and Means
- * 目的・手段 (Mục đích và phương tiện)
+ * 目的・手段 (Purpose and Means)
  */
 
 import type { LessonData } from '$lib/types';
 
 export const LESSON_14_DATA: LessonData = {
   lessonNumber: 14,
-  title: '目的・手段 (Mục đích và phương tiện)',
+  title: '目的・手段 (Purpose and Means)',
   vocabulary: [
     // Purpose and goals
     {

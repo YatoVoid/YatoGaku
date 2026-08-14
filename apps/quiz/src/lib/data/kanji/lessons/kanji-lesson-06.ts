@@ -3,7 +3,7 @@ import type { KanjiLessonData } from '$lib/types';
 
 export const KANJI_LESSON_06_DATA: KanjiLessonData = {
   lessonNumber: 6,
-  title: '日常・天気 (Cuộc sống hàng ngày & Thời tiết)',
+  title: '日常・天気 (Daily Life & Weather)',
   kanji: [
     {
       character: '天',

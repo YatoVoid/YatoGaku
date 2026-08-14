@@ -3,7 +3,7 @@ import type { KanjiLessonData } from '$lib/types';
 
 export const KANJI_LESSON_22_DATA: KanjiLessonData = {
   lessonNumber: 22,
-  title: '社会・政治 (Xã hội & Chính trị)',
+  title: '社会・政治 (Society & Politics)',
   kanji: [
     {
       character: '政',

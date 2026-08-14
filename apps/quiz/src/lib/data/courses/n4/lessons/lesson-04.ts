@@ -7,7 +7,7 @@ import type { LessonData } from '$lib/types';
 
 export const LESSON_04_DATA: LessonData = {
   lessonNumber: 4,
-  title: '時間表現と頻度 (Biểu hiện thời gian và tần suất)',
+  title: '時間表現と頻度 (Time Expressions and Frequency)',
   vocabulary: [
     // Time Actions
     {

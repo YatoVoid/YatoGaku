@@ -1,9 +1,9 @@
-// Minna no Nihongo — Lesson 16: 動詞の接続 (Nối động từ — sinh hoạt hàng ngày, cách làm)
+// Minna no Nihongo — Lesson 16: 動詞の接続 (Connecting verbs: daily routines, how-to)
 import type { LessonData } from '$lib/types';
 
 export const LESSON_16_DATA: LessonData = {
     lessonNumber: 16,
-    title: "動詞の接続 (Nối động từ — sinh hoạt hàng ngày, cách làm)",
+    title: "動詞の接続 (Connecting verbs: daily routines, how-to)",
     vocabulary: [
       {
         japanese: "乗（の）ります",

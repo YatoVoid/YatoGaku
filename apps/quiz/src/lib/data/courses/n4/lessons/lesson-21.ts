@@ -7,7 +7,7 @@ import type { LessonData } from '$lib/types';
 
 export const LESSON_21_DATA: LessonData = {
   lessonNumber: 21,
-  title: '敬語と丁寧な表現 (Ngôn ngữ lịch sự và khiêm nhường)',
+  title: '敬語と丁寧な表現 (Honorific and Polite Expressions)',
   vocabulary: [
     // Honorific Verbs (尊敬語)
     {

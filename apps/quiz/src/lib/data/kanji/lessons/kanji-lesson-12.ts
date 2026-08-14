@@ -3,7 +3,7 @@ import type { KanjiLessonData } from '$lib/types';
 
 export const KANJI_LESSON_12_DATA: KanjiLessonData = {
   lessonNumber: 12,
-  title: '季節・自然 (Mùa & Thiên nhiên)',
+  title: '季節・自然 (Seasons & Nature)',
   kanji: [
     {
       character: '春',

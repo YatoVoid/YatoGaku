@@ -3,7 +3,7 @@ import type { KanjiLessonData } from '$lib/types';
 
 export const KANJI_LESSON_25_DATA: KanjiLessonData = {
   lessonNumber: 25,
-  title: '総合 (Tổng hợp)',
+  title: '総合 (Comprehensive)',
   kanji: [
     {
       character: '物',

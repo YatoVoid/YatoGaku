@@ -1,9 +1,9 @@
-// Minna no Nihongo — Lesson 15: てもいいです (Xin phép, cấm đoán, trạng thái)
+// Minna no Nihongo — Lesson 15: てもいいです (Permission, prohibition, states)
 import type { LessonData } from '$lib/types';
 
 export const LESSON_15_DATA: LessonData = {
     lessonNumber: 15,
-    title: "てもいいです (Xin phép, cấm đoán, trạng thái)",
+    title: "てもいいです (Permission, prohibition, states)",
     vocabulary: [
       {
         japanese: "座（すわ）ります",

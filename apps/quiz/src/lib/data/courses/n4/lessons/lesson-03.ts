@@ -7,7 +7,7 @@ import type { LessonData } from '$lib/types';
 
 export const LESSON_03_DATA: LessonData = {
   lessonNumber: 3,
-  title: '助詞と文型 (Trợ từ và cấu trúc câu)',
+  title: '助詞と文型 (Particles and Sentence Patterns)',
   vocabulary: [
     // Change & State Verbs
     {

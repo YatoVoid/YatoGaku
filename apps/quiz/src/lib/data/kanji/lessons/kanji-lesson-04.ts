@@ -3,7 +3,7 @@ import type { KanjiLessonData } from '$lib/types';
 
 export const KANJI_LESSON_04_DATA: KanjiLessonData = {
   lessonNumber: 4,
-  title: '動作・方向 (Hành động & Phương hướng)',
+  title: '動作・方向 (Actions & Directions)',
   kanji: [
     {
       character: '行',

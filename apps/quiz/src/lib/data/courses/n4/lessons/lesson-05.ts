@@ -7,7 +7,7 @@ import type { LessonData } from '$lib/types';
 
 export const LESSON_05_DATA: LessonData = {
   lessonNumber: 5,
-  title: '願望と可能形 (Mong muốn và thể khả năng)',
+  title: '願望と可能形 (Desire and Potential Form)',
   vocabulary: [
     // Desire & Want
     {

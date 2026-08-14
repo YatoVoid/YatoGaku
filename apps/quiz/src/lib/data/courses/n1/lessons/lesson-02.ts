@@ -7,7 +7,7 @@ import type { LessonData } from '$lib/types';
 
 export const LESSON_02_DATA: LessonData = {
   lessonNumber: 2,
-  title: 'にほかならない／に相違ない (Không gì khác hơn / Chắc chắn là)',
+  title: 'にほかならない／に相違ない (Nothing other than / Surely)',
   vocabulary: [
     { japanese: '確信', kana: 'かくしん', vietnamese: 'xác tín, tin chắc', english: 'conviction, firm belief', type: 'main', example: '成功を確信している。' },
     { japanese: '真実', kana: 'しんじつ', vietnamese: 'sự thật', english: 'truth', type: 'main', example: '真実は一つしかない。' },

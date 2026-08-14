@@ -1,9 +1,9 @@
-// Minna no Nihongo — Lesson 11: 助数詞・家族 (Trợ số từ, gia đình)
+// Minna no Nihongo — Lesson 11: 助数詞・家族 (Counters, family)
 import type { LessonData } from '$lib/types';
 
 export const LESSON_11_DATA: LessonData = {
     lessonNumber: 11,
-    title: "助数詞・家族 (Trợ số từ, gia đình)",
+    title: "助数詞・家族 (Counters, family)",
     vocabulary: [
       {
         japanese: "一つ（ひとつ）",

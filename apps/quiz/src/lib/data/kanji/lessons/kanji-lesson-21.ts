@@ -3,7 +3,7 @@ import type { KanjiLessonData } from '$lib/types';
 
 export const KANJI_LESSON_21_DATA: KanjiLessonData = {
   lessonNumber: 21,
-  title: '経済・お金 (Kinh tế & Tiền bạc)',
+  title: '経済・お金 (Economy & Money)',
   kanji: [
     {
       character: '金',

@@ -7,7 +7,7 @@ import type { LessonData } from '$lib/types';
 
 export const LESSON_19_DATA: LessonData = {
   lessonNumber: 19,
-  title: '決定と変化 (Quyết định và Thay đổi)',
+  title: '決定と変化 (Decisions and Change)',
   vocabulary: [
     // Main Vocabulary - Decisions & Changes
     {

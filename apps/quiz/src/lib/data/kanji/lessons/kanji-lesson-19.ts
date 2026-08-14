@@ -3,7 +3,7 @@ import type { KanjiLessonData } from '$lib/types';
 
 export const KANJI_LESSON_19_DATA: KanjiLessonData = {
   lessonNumber: 19,
-  title: '教育・学問 (Giáo dục & Học vấn)',
+  title: '教育・学問 (Education & Learning)',
   kanji: [
     {
       character: '問',

@@ -7,7 +7,7 @@ import type { LessonData } from '$lib/types';
 
 export const LESSON_15_DATA: LessonData = {
   lessonNumber: 15,
-  title: '接続表現 (Liên từ và chuyển tiếp)',
+  title: '接続表現 (Connective Expressions)',
   vocabulary: [
     // Conjunctions - reason
     {

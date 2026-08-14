@@ -7,7 +7,7 @@ import type { LessonData } from '$lib/types';
 
 export const LESSON_11_DATA: LessonData = {
   lessonNumber: 11,
-  title: '様態表現 (Biểu hiện dáng vẻ, truyền đạt)',
+  title: '様態表現 (Appearance and Hearsay Expressions)',
   vocabulary: [
     // Appearance verbs
     {

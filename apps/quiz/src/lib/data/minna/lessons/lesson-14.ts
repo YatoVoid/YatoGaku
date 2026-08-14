@@ -1,9 +1,9 @@
-// Minna no Nihongo — Lesson 14: て形 (Thể て — yêu cầu, hành động đang diễn ra)
+// Minna no Nihongo — Lesson 14: て形 (Te-form: requests, ongoing actions)
 import type { LessonData } from '$lib/types';
 
 export const LESSON_14_DATA: LessonData = {
     lessonNumber: 14,
-    title: "て形 (Thể て — yêu cầu, hành động đang diễn ra)",
+    title: "て形 (Te-form: requests, ongoing actions)",
     vocabulary: [
       {
         japanese: "つけます",

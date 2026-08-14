@@ -7,7 +7,7 @@ import type { LessonData } from '$lib/types';
 
 export const LESSON_15_DATA: LessonData = {
   lessonNumber: 15,
-  title: 'N2 Review & Mixed Grammar (Ôn tập tổng hợp)',
+  title: 'N2 Review & Mixed Grammar (Comprehensive Review)',
   vocabulary: [
     { japanese: '社会', kana: 'しゃかい', vietnamese: 'xã hội', english: 'society', type: 'main', example: '社会に貢献したいと思っている。' },
     { japanese: '経験', kana: 'けいけん', vietnamese: 'kinh nghiệm', english: 'experience', type: 'main', example: '海外での経験があるだけあって、英語が上手だ。' },

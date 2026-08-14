@@ -7,7 +7,7 @@ import type { LessonData } from '$lib/types';
 
 export const LESSON_20_DATA: LessonData = {
   lessonNumber: 20,
-  title: '伝聞と引用 (Truyền đạt và Trích dẫn)',
+  title: '伝聞と引用 (Hearsay and Quotation)',
   vocabulary: [
     // Main Vocabulary - Communication Verbs
     {

@@ -7,7 +7,7 @@ import type { LessonData } from '$lib/types';
 
 export const LESSON_06_DATA: LessonData = {
   lessonNumber: 6,
-  title: 'くせに／にもかかわらず／ものの (Mặc dù / Bất chấp / Tuy rằng)',
+  title: 'くせに／にもかかわらず／ものの (Even though / Despite / Although)',
   vocabulary: [
     { japanese: '期待', kana: 'きたい', vietnamese: 'kỳ vọng', english: 'expectation', type: 'main', example: '期待に応えるように頑張る。' },
     { japanese: '予想', kana: 'よそう', vietnamese: 'dự đoán', english: 'prediction, expectation', type: 'main', example: '予想に反して、結果は良かった。' },

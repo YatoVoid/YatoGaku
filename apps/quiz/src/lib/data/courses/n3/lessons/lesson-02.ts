@@ -7,7 +7,7 @@ import type { LessonData } from '$lib/types';
 
 export const LESSON_02_DATA: LessonData = {
   lessonNumber: 2,
-  title: '使役形 (Thể sai khiến / Causative form)',
+  title: '使役形 (Causative Form)',
   vocabulary: [
     // Work Orders & Instructions
     {

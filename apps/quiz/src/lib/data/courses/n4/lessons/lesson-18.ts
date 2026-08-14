@@ -7,7 +7,7 @@ import type { LessonData } from '$lib/types';
 
 export const LESSON_18_DATA: LessonData = {
   lessonNumber: 18,
-  title: '副詞的表現 (Biểu thức trạng từ)',
+  title: '副詞的表現 (Adverbial Expressions)',
   vocabulary: [
     // Main Vocabulary - Purpose & Goal
     {

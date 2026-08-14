@@ -7,7 +7,7 @@ import type { LessonData } from '$lib/types';
 
 export const LESSON_14_DATA: LessonData = {
   lessonNumber: 14,
-  title: '比較表現 (So sánh và mức độ)',
+  title: '比較表現 (Comparison Expressions)',
   vocabulary: [
     // Comparison words
     {

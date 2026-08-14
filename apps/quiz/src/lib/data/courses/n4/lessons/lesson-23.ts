@@ -7,7 +7,7 @@ import type { LessonData } from '$lib/types';
 
 export const LESSON_23_DATA: LessonData = {
   lessonNumber: 23,
-  title: '仮定と条件 (Giả định và điều kiện)',
+  title: '仮定と条件 (Hypotheticals and Conditions)',
   vocabulary: [
     // Condition-related verbs
     {

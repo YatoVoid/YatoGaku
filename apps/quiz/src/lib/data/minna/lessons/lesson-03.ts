@@ -1,9 +1,9 @@
-// Minna no Nihongo — Lesson 03: ここは ～です (Nơi này là ~)
+// Minna no Nihongo — Lesson 03: ここは ～です (This place is ~)
 import type { LessonData } from '$lib/types';
 
 export const LESSON_03_DATA: LessonData = {
     lessonNumber: 3,
-    title: "ここは ～です (Nơi này là ~)",
+    title: "ここは ～です (This place is ~)",
     vocabulary: [
       {
         japanese: "ここ",

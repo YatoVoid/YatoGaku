@@ -1,13 +1,13 @@
 /**
  * N3 Lessons — Lesson 11: Change and Result
- * 変化・結果 (Biến đổi và kết quả)
+ * 変化・結果 (Change and Results)
  */
 
 import type { LessonData } from '$lib/types';
 
 export const LESSON_11_DATA: LessonData = {
   lessonNumber: 11,
-  title: '変化・結果 (Biến đổi và kết quả)',
+  title: '変化・結果 (Change and Results)',
   vocabulary: [
     // Change and transformation verbs
     {

@@ -7,7 +7,7 @@ import type { LessonData } from '$lib/types';
 
 export const LESSON_04_DATA: LessonData = {
   lessonNumber: 4,
-  title: 'かたわら／がてら／ついでに (Bên cạnh đó / Nhân tiện)',
+  title: 'かたわら／がてら／ついでに (While also / Incidentally)',
   vocabulary: [
     { japanese: '兼業', kana: 'けんぎょう', vietnamese: 'kiêm nghiệp, làm thêm', english: 'side job, secondary occupation', type: 'main', example: '農業のかたわら兼業で収入を得ている。' },
     { japanese: '副業', kana: 'ふくぎょう', vietnamese: 'nghề phụ', english: 'side business', type: 'main', example: '副業として翻訳の仕事をしている。' },
