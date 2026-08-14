@@ -46,6 +46,12 @@ export default function Home(): ReactNode {
       internal: true,
     },
     {
+      label: 'N1 Grammar',
+      description: 'N1 grammar points: formal written expressions from Imabi\'s advanced lessons.',
+      href: '/docs/grammar-n1',
+      internal: true,
+    },
+    {
       label: 'Kana Practice',
       description: 'Hiragana and katakana drilling.',
       href: kanaAppUrl,

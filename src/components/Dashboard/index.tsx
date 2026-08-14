@@ -6,6 +6,7 @@ import {n5GrammarGroups} from '@site/src/data/n5-grammar';
 import {n4GrammarGroups} from '@site/src/data/n4-grammar';
 import {n3GrammarGroups} from '@site/src/data/n3-grammar';
 import {n2GrammarGroups} from '@site/src/data/n2-grammar';
+import {n1GrammarGroups} from '@site/src/data/n1-grammar';
 import {listeningReadingResources} from '@site/src/data/listening-reading';
 import {useCategoryProgress} from '@site/src/hooks/useProgress';
 import {isStorageAvailable} from '@site/src/utils/progress';
@@ -15,6 +16,7 @@ const allN5GrammarIds = n5GrammarGroups.flatMap((group) => group.points.map((p) 
 const allN4GrammarIds = n4GrammarGroups.flatMap((group) => group.points.map((p) => p.id));
 const allN3GrammarIds = n3GrammarGroups.flatMap((group) => group.points.map((p) => p.id));
 const allN2GrammarIds = n2GrammarGroups.flatMap((group) => group.points.map((p) => p.id));
+const allN1GrammarIds = n1GrammarGroups.flatMap((group) => group.points.map((p) => p.id));
 const allResourceIds = listeningReadingResources.map((r) => r.id);
 
 function ProgressBar({done, total}: {done: number; total: number}): ReactNode {
@@ -35,6 +37,7 @@ export default function Dashboard(): ReactNode {
   const n4Grammar = useCategoryProgress('grammar-n4', allN4GrammarIds);
   const n3Grammar = useCategoryProgress('grammar-n3', allN3GrammarIds);
   const n2Grammar = useCategoryProgress('grammar-n2', allN2GrammarIds);
+  const n1Grammar = useCategoryProgress('grammar-n1', allN1GrammarIds);
   const listeningReading = useCategoryProgress('listening-reading', allResourceIds);
 
   const [available, setAvailable] = useState(false);
@@ -76,6 +79,13 @@ export default function Dashboard(): ReactNode {
         </h2>
         <ProgressBar done={n2Grammar.done} total={n2Grammar.total} />
         <Link to="/docs/grammar-n2">Continue N2 grammar</Link>
+      </div>
+      <div className={styles.section}>
+        <h2>
+          N1 grammar: {n1Grammar.done} / {n1Grammar.total}
+        </h2>
+        <ProgressBar done={n1Grammar.done} total={n1Grammar.total} />
+        <Link to="/docs/grammar-n1">Continue N1 grammar</Link>
       </div>
       <div className={styles.section}>
         <h2>

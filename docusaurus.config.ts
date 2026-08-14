@@ -137,6 +137,10 @@ const config: Config = {
               to: '/docs/grammar-n2',
             },
             {
+              label: 'N1 Grammar',
+              to: '/docs/grammar-n1',
+            },
+            {
               label: 'Kana Practice',
               href: kanaAppUrl,
             },
