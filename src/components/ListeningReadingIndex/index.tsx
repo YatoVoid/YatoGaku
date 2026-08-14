@@ -57,7 +57,7 @@ export default function ListeningReadingIndex(): ReactNode {
   return (
     <div>
       {!available && (
-        <p className={styles.unavailable}>
+        <p className={styles.unavailable} role="status">
           Progress tracking isn&apos;t available in this browser, so the checkboxes below are disabled.
         </p>
       )}

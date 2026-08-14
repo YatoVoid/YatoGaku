@@ -19,10 +19,24 @@ const allN2GrammarIds = n2GrammarGroups.flatMap((group) => group.points.map((p) 
 const allN1GrammarIds = n1GrammarGroups.flatMap((group) => group.points.map((p) => p.id));
 const allResourceIds = listeningReadingResources.map((r) => r.id);
 
-function ProgressBar({done, total}: {done: number; total: number}): ReactNode {
+function ProgressBar({
+  done,
+  total,
+  label,
+}: {
+  done: number;
+  total: number;
+  label: string;
+}): ReactNode {
   const pct = total > 0 ? Math.round((done / total) * 100) : 0;
   return (
-    <div className={styles.barTrack}>
+    <div
+      className={styles.barTrack}
+      role="progressbar"
+      aria-label={label}
+      aria-valuemin={0}
+      aria-valuemax={total}
+      aria-valuenow={done}>
       <div className={styles.barFill} style={{width: `${pct}%`}} />
     </div>
   );
@@ -48,7 +62,7 @@ export default function Dashboard(): ReactNode {
   return (
     <div>
       {!available && (
-        <p className={styles.unavailable}>
+        <p className={styles.unavailable} role="status">
           Progress tracking isn&apos;t available in this browser, so the counts below will always show 0.
         </p>
       )}
@@ -56,42 +70,42 @@ export default function Dashboard(): ReactNode {
         <h2>
           N5 grammar: {n5Grammar.done} / {n5Grammar.total}
         </h2>
-        <ProgressBar done={n5Grammar.done} total={n5Grammar.total} />
+        <ProgressBar done={n5Grammar.done} total={n5Grammar.total} label="N5 grammar progress" />
         <Link to="/docs/grammar-n5">Continue N5 grammar</Link>
       </div>
       <div className={styles.section}>
         <h2>
           N4 grammar: {n4Grammar.done} / {n4Grammar.total}
         </h2>
-        <ProgressBar done={n4Grammar.done} total={n4Grammar.total} />
+        <ProgressBar done={n4Grammar.done} total={n4Grammar.total} label="N4 grammar progress" />
         <Link to="/docs/grammar-n4">Continue N4 grammar</Link>
       </div>
       <div className={styles.section}>
         <h2>
           N3 grammar: {n3Grammar.done} / {n3Grammar.total}
         </h2>
-        <ProgressBar done={n3Grammar.done} total={n3Grammar.total} />
+        <ProgressBar done={n3Grammar.done} total={n3Grammar.total} label="N3 grammar progress" />
         <Link to="/docs/grammar-n3">Continue N3 grammar</Link>
       </div>
       <div className={styles.section}>
         <h2>
           N2 grammar: {n2Grammar.done} / {n2Grammar.total}
         </h2>
-        <ProgressBar done={n2Grammar.done} total={n2Grammar.total} />
+        <ProgressBar done={n2Grammar.done} total={n2Grammar.total} label="N2 grammar progress" />
         <Link to="/docs/grammar-n2">Continue N2 grammar</Link>
       </div>
       <div className={styles.section}>
         <h2>
           N1 grammar: {n1Grammar.done} / {n1Grammar.total}
         </h2>
-        <ProgressBar done={n1Grammar.done} total={n1Grammar.total} />
+        <ProgressBar done={n1Grammar.done} total={n1Grammar.total} label="N1 grammar progress" />
         <Link to="/docs/grammar-n1">Continue N1 grammar</Link>
       </div>
       <div className={styles.section}>
         <h2>
           Listening & reading: {listeningReading.done} / {listeningReading.total}
         </h2>
-        <ProgressBar done={listeningReading.done} total={listeningReading.total} />
+        <ProgressBar done={listeningReading.done} total={listeningReading.total} label="Listening & reading progress" />
         <Link to="/docs/listening-reading">Continue listening & reading</Link>
       </div>
       <div className={styles.section}>
