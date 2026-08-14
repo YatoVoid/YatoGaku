@@ -88,15 +88,15 @@
 </script>
 
 <svelte:head>
-  <title>Vocabulary - {lessonData?.title || 'Lesson'} | {course?.metadata.title || 'Smart Quiz'}</title>
+  <title>Vocabulary - {lessonData?.title || 'Lesson'} | {course?.metadata.title || 'YatoGaku'}</title>
 </svelte:head>
 
 {#if lessonData && course}
   <PageWorkspace size="lg" class={selectedSet.size > 0 ? 'pb-28' : ''}>
     <PageHero
-      eyebrow={`${course.metadata.level} · Bài ${lessonData.lessonNumber}`}
+      eyebrow={`${course.metadata.level} · Lesson ${lessonData.lessonNumber}`}
       title="Vocabulary"
-      subtitle={`${lessonData.title} · ${vocabulary.length} từ vựng`}
+      subtitle={`${lessonData.title} · ${vocabulary.length} vocabulary words`}
     >
       {#snippet actions()}
         <BackButton href={`/course/${courseId}/lesson/${lessonId}`} text="Back to Lesson" />
@@ -121,19 +121,19 @@
     <div class="flex items-center gap-2 flex-wrap text-sm">
       <button class="inline-flex items-center gap-1.5 px-3 py-1 border border-border rounded-lg text-sm cursor-pointer hover:border-primary hover:text-primary transition-colors bg-transparent" on:click={toggleFiltered}>
         <span class="leading-none">{#if allFilteredSelected}<CheckSquare size={16} aria-hidden="true" />{:else}<Square size={16} aria-hidden="true" />{/if}</span>
-        {allFilteredSelected ? 'Bỏ chọn' : 'Chọn tất cả'}
+        {allFilteredSelected ? 'Deselect' : 'Select all'}
         {#if filterType !== 'all'}({filterType}){/if}
         ({filteredVocab.length})
       </button>
       {#if selectedSet.size > 0}
-        <span class="font-semibold text-primary">{selectedSet.size} đã chọn</span>
-        <button class="text-xs text-muted-foreground underline cursor-pointer bg-transparent border-none hover:text-destructive" on:click={clearSelection}>Xóa chọn</button>
+        <span class="font-semibold text-primary">{selectedSet.size} selected</span>
+        <button class="text-xs text-muted-foreground underline cursor-pointer bg-transparent border-none hover:text-destructive" on:click={clearSelection}>Clear selection</button>
       {/if}
       <span class="ml-auto text-xs text-muted-foreground">
         {#if searchTerm || filterType !== 'all'}
-          {filteredVocab.length} / {vocabulary.length} từ
+          {filteredVocab.length} / {vocabulary.length} words
         {:else}
-          {vocabulary.length} từ
+          {vocabulary.length} words
         {/if}
       </span>
     </div>
@@ -204,13 +204,13 @@
 <!-- Practice bar -->
 {#if selectedSet.size > 0}
   <div class="practice-bar fixed bottom-0 inset-x-0 bg-card border-t-2 border-primary px-4 py-2.5 flex items-center gap-3 z-50 shadow-lg">
-    <span class="text-sm text-muted-foreground whitespace-nowrap"><strong class="text-primary text-base">{selectedSet.size}</strong> từ</span>
+    <span class="text-sm text-muted-foreground whitespace-nowrap"><strong class="text-primary text-base">{selectedSet.size}</strong> words</span>
     <div class="flex gap-2 flex-1 justify-center flex-wrap">
       <UiButton size="sm" onclick={() => practice('flashcard')}><Layers class="size-4" strokeWidth={2} aria-hidden="true" /> Flashcard</UiButton>
-      <UiButton size="sm" onclick={() => practice('multiple-choice')}><CheckCircle class="size-4" strokeWidth={2} aria-hidden="true" /> Trắc nghiệm</UiButton>
-      <UiButton size="sm" onclick={() => practice('typing')}><Keyboard class="size-4" strokeWidth={2} aria-hidden="true" /> Nhập chữ</UiButton>
+      <UiButton size="sm" onclick={() => practice('multiple-choice')}><CheckCircle class="size-4" strokeWidth={2} aria-hidden="true" /> Multiple choice</UiButton>
+      <UiButton size="sm" onclick={() => practice('typing')}><Keyboard class="size-4" strokeWidth={2} aria-hidden="true" /> Type it</UiButton>
     </div>
-    <IconButton icon={X} label="Clear selection" title="Bỏ chọn tất cả" variant="outline" onclick={clearSelection} />
+    <IconButton icon={X} label="Clear selection" title="Deselect all" variant="outline" onclick={clearSelection} />
   </div>
 {/if}
 

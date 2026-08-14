@@ -19,14 +19,14 @@
 </script>
 
 <svelte:head>
-  <title>Premium - Smart Quiz</title>
+  <title>Premium - YatoGaku</title>
 </svelte:head>
 
 <PageWorkspace size="md">
   <PageHero
     eyebrow="Beta access"
     title="Smart Quiz Premium"
-    subtitle="Không có thanh toán trong phiên bản hiện tại. Chế độ beta chỉ mở các tính năng đã có sẵn trên thiết bị."
+    subtitle="No payment in this version. Beta mode just unlocks features already available on the device."
   />
 
   <div class="text-center mb-6">
@@ -53,7 +53,7 @@
   </Card>
 
   <Card class="mb-3">
-    <CardHeader class="pb-2"><CardTitle class="text-sm">Tính năng thử nghiệm</CardTitle></CardHeader>
+    <CardHeader class="pb-2"><CardTitle class="text-sm">Experimental Features</CardTitle></CardHeader>
     <CardContent class="flex flex-col gap-2">
       {#each premiumFeatures as feature}
         <div class="flex items-center gap-3 py-1 {premium ? '' : 'opacity-60'}">
@@ -70,7 +70,7 @@
   <Card class="mb-3">
     <CardHeader class="pb-2"><CardTitle class="text-sm">Activation</CardTitle></CardHeader>
     <CardContent>
-      <p class="text-sm text-muted-foreground mb-3">Kích hoạt miễn phí và được lưu cục bộ. Không tạo tài khoản, không gửi dữ liệu và không cam kết đây là gói thương mại tương lai.</p>
+      <p class="text-sm text-muted-foreground mb-3">Free to activate and stored locally. No account is created, no data is sent, and this is not a commitment to a future paid plan.</p>
       <UiButton
         variant={premium ? 'destructive' : 'default'}
         onclick={togglePremium}

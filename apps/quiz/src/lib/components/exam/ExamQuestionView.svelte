@@ -52,7 +52,7 @@
     <audio controls src={question.audioUrl} class="mb-3 w-full"></audio>
   {/if}
 
-  <div class="options" role="group" aria-label={`Câu ${number}`}>
+  <div class="options" role="group" aria-label={`Question ${number}`}>
     {#each question.options as option, idx (idx)}
       <button
         type="button"
@@ -64,9 +64,9 @@
         <span class="option-key">{idx + 1}.</span>
         <span class="option-text">{option}</span>
         {#if review && optionState(idx) === 'correct'}
-          <Check size={16} class="ml-auto text-success" aria-label="Đáp án đúng" />
+          <Check size={16} class="ml-auto text-success" aria-label="Correct answer" />
         {:else if review && optionState(idx) === 'wrong'}
-          <X size={16} class="ml-auto text-destructive" aria-label="Bạn chọn sai" />
+          <X size={16} class="ml-auto text-destructive" aria-label="Your choice was wrong" />
         {/if}
       </button>
     {/each}
@@ -75,11 +75,11 @@
   {#if review}
     <p class="verdict {answeredCorrectly ? 'verdict--ok' : 'verdict--no'}">
       {#if selected === undefined}
-        Chưa trả lời — đáp án đúng là {question.answerIndex + 1}.
+        Not answered: the correct answer is {question.answerIndex + 1}.
       {:else if answeredCorrectly}
-        Chính xác
+        Correct
       {:else}
-        Bạn chọn {selected + 1}, đáp án đúng là {question.answerIndex + 1}.
+        You chose {selected + 1}, the correct answer is {question.answerIndex + 1}.
       {/if}
     </p>
     {#if question.explanation}

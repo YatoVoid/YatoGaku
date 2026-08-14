@@ -20,29 +20,29 @@
 </script>
 
 <svelte:head>
-  <title>Bộ thủ {radicalId} — Smart Quiz</title>
+  <title>Radical {radicalId} — YatoGaku</title>
 </svelte:head>
 
 <div class="radical-detail-page">
   <div class="page-header">
-    <a href="{base}/kanji/radicals" class="back-link">← Bộ thủ</a>
+    <a href="{base}/kanji/radicals" class="back-link">← Radicals</a>
     <div class="radical-hero">
       <div class="radical-char">{radicalId}</div>
       {#if radicalInfo}
         <div class="radical-meaning">{radicalInfo.meaningVi} · {radicalInfo.meaningEn}</div>
-        <div class="radical-strokes">{radicalInfo.strokeCount} nét</div>
+        <div class="radical-strokes">{radicalInfo.strokeCount} strokes</div>
       {/if}
     </div>
   </div>
 
   {#if kanjiItems.length === 0}
     <div class="no-data">
-      <p>Không tìm thấy kanji nào chứa bộ thủ này trong dữ liệu hiện tại.</p>
-      <a href="{base}/kanji/radicals" class="ui-button" data-variant="secondary">Quay lại</a>
+      <p>No kanji containing this radical were found in the current data.</p>
+      <a href="{base}/kanji/radicals" class="ui-button" data-variant="secondary">Back</a>
     </div>
   {:else}
     <div class="kanji-section">
-      <h2>{kanjiItems.length} Kanji có bộ thủ này</h2>
+      <h2>{kanjiItems.length} kanji with this radical</h2>
       <div class="kanji-grid">
         {#each kanjiItems as item}
           <a
@@ -59,22 +59,22 @@
     </div>
 
     <div class="quiz-section">
-      <h2>Luyện tập</h2>
+      <h2>Practice</h2>
       <div class="quiz-modes">
         <button class="quiz-mode-btn" on:click={() => startQuiz('flashcard')} disabled={!canQuiz}>
           <span class="mode-icon">🃏</span>
           <span class="mode-name">Flashcard</span>
-          <span class="mode-desc">Lật thẻ ghi nhớ</span>
+          <span class="mode-desc">Flip cards to memorize</span>
         </button>
         <button class="quiz-mode-btn" on:click={() => startQuiz('mc')} disabled={!canMC}>
           <span class="mode-icon">📝</span>
-          <span class="mode-name">Trắc nghiệm</span>
-          <span class="mode-desc">{canMC ? 'Chọn đáp án đúng' : 'Cần ít nhất 4 kanji'}</span>
+          <span class="mode-name">Multiple choice</span>
+          <span class="mode-desc">{canMC ? 'Choose the correct answer' : 'Needs at least 4 kanji'}</span>
         </button>
         <button class="quiz-mode-btn" on:click={() => startQuiz('typing')} disabled={!canQuiz}>
           <span class="mode-icon">⌨️</span>
-          <span class="mode-name">Gõ nghĩa</span>
-          <span class="mode-desc">Nhập nghĩa tiếng Anh</span>
+          <span class="mode-name">Type the meaning</span>
+          <span class="mode-desc">Type the English meaning</span>
         </button>
       </div>
     </div>

@@ -35,16 +35,16 @@
       const chunk = items.slice(i, i + 5);
       const start = chunk[0]?.lessonNumber ?? i + 1;
       const end = chunk[chunk.length - 1]?.lessonNumber ?? i + 5;
-      groups.push({ label: `Bài ${start}–${end}`, items: chunk });
+      groups.push({ label: `Lesson ${start}-${end}`, items: chunk });
     }
     return groups;
   }
 
-  $: lessonGroups = searchQuery ? [{ label: 'Kết quả', items: lessons }] : groupLessons(lessons);
+  $: lessonGroups = searchQuery ? [{ label: 'Results', items: lessons }] : groupLessons(lessons);
 </script>
 
 <svelte:head>
-  <title>{course?.metadata.title || 'Course'} - Smart Quiz</title>
+  <title>{course?.metadata.title || 'Course'} - YatoGaku</title>
 </svelte:head>
 
 {#if course}
@@ -52,16 +52,16 @@
     <PageHero
       eyebrow={course.metadata.level}
       title={course.metadata.title}
-      subtitle="{course.metadata.description} · {courseProgress.completed}/{courseProgress.total} bài đã hoàn thành"
+      subtitle="{course.metadata.description} · {courseProgress.completed}/{courseProgress.total} lessons completed"
     >
       {#snippet actions()}
         <UiButton href={buildLessonUrl(courseId, nextLesson)} size="sm">
-          {courseProgress.completed === 0 ? 'Bắt đầu' : `Tiếp tục bài ${nextLesson}`}
+          {courseProgress.completed === 0 ? 'Start' : `Continue lesson ${nextLesson}`}
         </UiButton>
       {/snippet}
     </PageHero>
 
-    <SearchInput bind:value={searchQuery} placeholder="Tìm bài học... (số hoặc tên)" />
+    <SearchInput bind:value={searchQuery} placeholder="Search lessons... (number or name)" />
 
     {#each lessonGroups as group}
       <section class="grid gap-3" aria-label={group.label}>
@@ -72,7 +72,7 @@
           <StudyListCard
             href={buildLessonUrl(courseId, lesson.lessonNumber)}
             title={lesson.title}
-            subtitle={`${lesson.vocabCount} từ · ${lesson.grammarCount} ngữ pháp`}
+            subtitle={`${lesson.vocabCount} words · ${lesson.grammarCount} grammar points`}
             active={lesson.lessonNumber === nextLesson}
           >
             {#snippet leading()}
@@ -83,7 +83,7 @@
               {#if mastery > 0}
                 <MasteryRing percentage={mastery} size={32} />
               {:else if lesson.lessonNumber === nextLesson}
-                <span class="rounded-control bg-primary-subtle px-2 py-1 text-xs font-bold text-primary">Tiếp</span>
+                <span class="rounded-control bg-primary-subtle px-2 py-1 text-xs font-bold text-primary">Next</span>
               {/if}
               <ChevronRight size={20} class="text-muted-foreground transition-colors group-hover:text-primary" aria-hidden="true" />
             {/snippet}

@@ -12,7 +12,7 @@ const manifest = JSON.parse(readFileSync(join(__dirname, '../../static/manifest.
 
 describe('SEO Metadata — app.html', () => {
   it('should have default <title> tag', () => {
-    expect(appHtml).toMatch(/<title>.*Smart Quiz.*<\/title>/);
+    expect(appHtml).toMatch(/<title>.*YatoGaku.*<\/title>/);
   });
 
   it('should have meta description', () => {
@@ -38,14 +38,14 @@ describe('SEO Metadata — app.html', () => {
     expect(appHtml).toMatch(/<link\s+rel="canonical"\s+href="[^"]+"/);
   });
 
-  it('should have lang="vi"', () => {
-    expect(appHtml).toMatch(/<html\s+lang="vi"/);
+  it('should have lang="en"', () => {
+    expect(appHtml).toMatch(/<html\s+lang="en"/);
   });
 });
 
 describe('SEO — manifest.json', () => {
   it('start_url should include base path', () => {
-    expect(manifest.start_url).toContain('2026-Smart-Quiz');
+    expect(manifest.start_url).toContain('YatoGaku/apps/quiz');
   });
 
   it('theme_color should be consistent with app.html', () => {

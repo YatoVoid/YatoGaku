@@ -63,7 +63,7 @@
 </script>
 
 <svelte:head>
-  <title>Kanji ({totalKanji} characters) | Smart Quiz</title>
+  <title>Kanji ({totalKanji} characters) | YatoGaku</title>
 </svelte:head>
 
 <PageWorkspace size="lg">

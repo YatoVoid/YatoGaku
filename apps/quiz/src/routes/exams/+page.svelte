@@ -16,28 +16,28 @@
 </script>
 
 <svelte:head>
-  <title>Luyện đề JLPT - Smart Quiz</title>
-  <meta name="description" content="Làm đề thi thử JLPT theo cấp độ — chấm điểm, xem lại đáp án và giải thích." />
+  <title>JLPT Mock Exams - YatoGaku</title>
+  <meta name="description" content="Take timed JLPT mock exams by level: scoring, answer review, and explanations." />
 </svelte:head>
 
 <PageWorkspace size="lg">
   <PageHero
     eyebrow="Exam practice"
-    title="Luyện đề JLPT"
-    subtitle="Làm đề thi thử có tính giờ, chấm điểm và xem lại đáp án."
+    title="JLPT Mock Exams"
+    subtitle="Take timed mock exams with scoring and answer review."
   />
 
   {#if totalPapers === 0}
     <div class="rounded-surface border border-border bg-card p-8 text-center">
-      <p class="text-sm font-bold mb-1">Chưa có đề thi</p>
-      <p class="text-xs text-muted-foreground">Các đề thi thử sẽ sớm được bổ sung.</p>
+      <p class="text-sm font-bold mb-1">No exams yet</p>
+      <p class="text-xs text-muted-foreground">More mock exams will be added soon.</p>
     </div>
   {:else}
     {#each byLevel as group (group.level)}
       <section class="mb-7">
         <h2 class="mb-3 flex items-center gap-2 text-lg font-bold">
           <span>{group.level}</span>
-          <span class="text-xs font-normal text-muted-foreground">({group.papers.length} đề)</span>
+          <span class="text-xs font-normal text-muted-foreground">({group.papers.length} papers)</span>
         </h2>
         <div class="flex flex-col gap-3">
           {#each group.papers as paper (paper.id)}

@@ -28,18 +28,18 @@
 </script>
 
 <svelte:head>
-  <title>{lessonData?.title || 'Lesson'} - Smart Quiz</title>
+  <title>{lessonData?.title || 'Lesson'} - YatoGaku</title>
 </svelte:head>
 
 {#if lessonData}
   <div class="lesson-menu">
     <div class="lesson-header">
-      <div class="lesson-number-badge">Bài {lessonData.lessonNumber}</div>
+      <div class="lesson-number-badge">Lesson {lessonData.lessonNumber}</div>
       <h2 class="lesson-title-large">{lessonData.title}</h2>
       <div class="lesson-stats">
-        <span>{lessonData.vocabulary.length} từ vựng</span>
+        <span>{lessonData.vocabulary.length} vocabulary words</span>
         <span>•</span>
-        <span>{lessonData.grammar.length} ngữ pháp</span>
+        <span>{lessonData.grammar.length} grammar points</span>
       </div>
     </div>
 

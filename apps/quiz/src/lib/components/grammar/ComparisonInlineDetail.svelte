@@ -6,11 +6,11 @@
 </script>
 
 <section class="comparison-detail" aria-labelledby="comparison-title">
-  <button on:click={onclose} aria-label="Đóng so sánh"><X size={20} aria-hidden="true" /></button>
-  <p>So sánh ngữ pháp</p><h3 id="comparison-title">{comparison.title}</h3>
+  <button on:click={onclose} aria-label="Close comparison"><X size={20} aria-hidden="true" /></button>
+  <p>Grammar Comparison</p><h3 id="comparison-title">{comparison.title}</h3>
   <div class="patterns">{#each comparison.patterns as pattern}<span>{pattern}</span>{/each}</div>
   <p class="meaning">{comparison.vietnamese}</p>
-  {#if comparison.tips}<aside><strong>Điểm phân biệt</strong><p>{comparison.tips}</p></aside>{/if}
+  {#if comparison.tips}<aside><strong>Distinguishing points</strong><p>{comparison.tips}</p></aside>{/if}
   {#if comparison.examples?.length}<div class="examples">{#each comparison.examples as example}<article><strong>{example.pattern}</strong><p class="japanese">{example.japanese}</p><p>{example.vietnamese}</p></article>{/each}</div>{/if}
 </section>
 

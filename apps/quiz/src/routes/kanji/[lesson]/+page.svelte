@@ -15,10 +15,9 @@
   $: lessonId = parseInt($page.params.lesson || '0');
   $: lessonData = lessonId > 0 ? getKanjiLessonData(lessonId) : null;
 
-  let selectedDirection: KanjiQuizDirection = 'kanji-vi';
+  let selectedDirection: KanjiQuizDirection = 'kanji-en';
 
   const directions: { value: KanjiQuizDirection; label: string }[] = [
-    { value: 'kanji-vi', label: 'Kanji → Việt' },
     { value: 'kanji-en', label: 'Kanji → English' },
     { value: 'kanji-reading', label: 'Kanji → Reading' },
     { value: 'kanji-romaji', label: 'Kanji → Romaji' },
@@ -34,13 +33,13 @@
 </script>
 
 <svelte:head>
-  <title>{lessonData?.title || 'Kanji Lesson'} - Smart Quiz</title>
+  <title>{lessonData?.title || 'Kanji Lesson'} - YatoGaku</title>
 </svelte:head>
 
 {#if lessonData}
   <div class="lesson-menu">
     <div class="lesson-header">
-      <div class="lesson-number-badge">Kanji - Bài {lessonData.lessonNumber}</div>
+      <div class="lesson-number-badge">Kanji - Lesson {lessonData.lessonNumber}</div>
       <h2 class="lesson-title-large">{lessonData.title}</h2>
       <div class="lesson-stats">
         <span>{lessonData.kanji.length} kanji</span>

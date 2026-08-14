@@ -90,7 +90,7 @@
 </script>
 
 <svelte:head>
-  <title>JLPT Mock Test - Smart Quiz</title>
+  <title>JLPT Mock Test - YatoGaku</title>
 </svelte:head>
 
 <svelte:window on:keydown={handleKeydown} />

@@ -12,7 +12,7 @@
 </script>
 
 <svelte:head>
-  <title>Courses - Smart Quiz</title>
+  <title>Courses - YatoGaku</title>
 </svelte:head>
 
 <PageWorkspace size="lg">

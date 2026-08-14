@@ -21,7 +21,7 @@
 
   $: mode = $page.params.mode as 'flashcard' | 'mc' | 'typing';
   $: lessonId = parseInt($page.params.lesson || '0');
-  $: direction = ($page.url.searchParams.get('direction') || 'kanji-vi') as KanjiQuizDirection;
+  $: direction = ($page.url.searchParams.get('direction') || 'kanji-en') as KanjiQuizDirection;
 
   $: lessonData = lessonId > 0 ? getKanjiLessonData(lessonId) : null;
 
@@ -106,20 +106,20 @@
 </script>
 
 <svelte:head>
-  <title>Kanji Quiz - {lessonData?.title || 'Smart Quiz'}</title>
+  <title>Kanji Quiz - {lessonData?.title || 'YatoGaku'}</title>
 </svelte:head>
 
 {#if isComplete}
-  <QuizSummary title="Hoàn thành luyện Kanji" {score} total={questions.length}>
+  <QuizSummary title="Kanji Practice Complete" {score} total={questions.length}>
         <button class="ui-button" data-variant="default" on:click={restartQuiz}>
-          Làm lại
+          Retry
         </button>
         <button class="ui-button" data-variant="secondary" on:click={goBack}>
-          Về bài Kanji
+          Back to lesson
         </button>
   </QuizSummary>
 {:else if currentQuestion}
-  <QuizFrame title={mode === 'flashcard' ? 'Flashcard Kanji' : mode === 'mc' ? 'Chọn đáp án Kanji' : 'Nhập đáp án Kanji'} context={`Kanji · Bài ${lessonId}`} direction={direction} current={progressCurrent} total={progressTotal} shortcuts={mode === 'mc' ? ['1–4: chọn đáp án', 'F1: nghe'] : mode === 'flashcard' ? ['Space / Enter: lật thẻ', 'F1: nghe'] : ['Enter: trả lời / tiếp tục']}>
+  <QuizFrame title={mode === 'flashcard' ? 'Kanji Flashcards' : mode === 'mc' ? 'Kanji Multiple Choice' : 'Kanji Typing'} context={`Kanji · Lesson ${lessonId}`} direction={direction} current={progressCurrent} total={progressTotal} shortcuts={mode === 'mc' ? ['1-4: choose answer', 'F1: listen'] : mode === 'flashcard' ? ['Space / Enter: flip card', 'F1: listen'] : ['Enter: answer / continue']}>
 
     {#if mode === 'flashcard'}
       {#key currentQuestion.id}

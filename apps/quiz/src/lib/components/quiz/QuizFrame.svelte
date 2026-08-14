@@ -24,15 +24,15 @@
       <h1 id="quiz-frame-title">{title}</h1>
       {#if direction}<p class="quiz-direction">{direction}</p>{/if}
     </div>
-    <span class="quiz-count" aria-label={`Câu ${current} trên ${total}`}>{current}<span>/{total}</span></span>
+    <span class="quiz-count" aria-label={`Question ${current} of ${total}`}>{current}<span>/{total}</span></span>
   </header>
 
-  <Progress value={current} max={total} label={`Tiến trình ${percentage}% — câu ${current} trên ${total}`} />
+  <Progress value={current} max={total} label={`Progress ${percentage}%: question ${current} of ${total}`} />
 
   <div class="quiz-stage">{@render children()}</div>
 
   {#if shortcuts.length > 0}
-    <footer class="shortcut-bar" aria-label="Phím tắt">
+    <footer class="shortcut-bar" aria-label="Shortcuts">
       <Keyboard size={16} aria-hidden="true" />
       {#each shortcuts as shortcut}<span>{shortcut}</span>{/each}
       {#if shortcuts.some((item) => item.includes('F1'))}<Volume2 size={16} aria-hidden="true" />{/if}

@@ -6,7 +6,7 @@
   import { Search, X } from 'lucide-svelte';
 
   export let value = '';
-  export let placeholder = 'Tìm kiếm...';
+  export let placeholder = 'Search...';
 
   let inputEl: HTMLInputElement;
 

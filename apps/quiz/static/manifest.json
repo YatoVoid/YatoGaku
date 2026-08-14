@@ -1,8 +1,8 @@
 {
-  "name": "Smart Quiz - Japanese & Chinese Learning",
-  "short_name": "Smart Quiz",
+  "name": "YatoGaku Quiz Practice",
+  "short_name": "YatoGaku Quiz",
   "description": "Interactive quiz app for learning Japanese JLPT vocabulary, grammar, Hiragana, Katakana, and Chinese HSK vocabulary",
-  "start_url": "/2026-Smart-Quiz/",
+  "start_url": "/YatoGaku/apps/quiz/",
   "display": "standalone",
   "background_color": "#f4f4f8",
   "theme_color": "#8b4fe6",
@@ -22,7 +22,7 @@
     }
   ],
   "categories": ["education", "productivity"],
-  "lang": "vi-VN",
+  "lang": "en",
   "dir": "ltr",
   "screenshots": [],
   "shortcuts": [
@@ -30,28 +30,28 @@
       "name": "Lessons",
       "short_name": "Lessons",
       "description": "Browse JLPT lessons",
-      "url": "/2026-Smart-Quiz/",
+      "url": "/YatoGaku/apps/quiz/",
       "icons": [{ "src": "icon-192.png", "sizes": "192x192" }]
     },
     {
       "name": "Grammar",
       "short_name": "Grammar",
       "description": "Grammar reference",
-      "url": "/2026-Smart-Quiz/grammar-reference",
+      "url": "/YatoGaku/apps/quiz/grammar-reference",
       "icons": [{ "src": "icon-192.png", "sizes": "192x192" }]
     },
     {
       "name": "Alphabet",
       "short_name": "Alphabet",
       "description": "Hiragana & Katakana",
-      "url": "/2026-Smart-Quiz/alphabet",
+      "url": "/YatoGaku/apps/quiz/alphabet",
       "icons": [{ "src": "icon-192.png", "sizes": "192x192" }]
     },
     {
       "name": "HSK",
       "short_name": "HSK",
       "description": "Chinese vocabulary",
-      "url": "/2026-Smart-Quiz/hsk",
+      "url": "/YatoGaku/apps/quiz/hsk",
       "icons": [{ "src": "icon-192.png", "sizes": "192x192" }]
     }
   ]

@@ -100,16 +100,16 @@
 </script>
 
 <svelte:head>
-  <title>Quiz bộ thủ {radicalId} — Smart Quiz</title>
+  <title>Quiz Radical {radicalId} — YatoGaku</title>
 </svelte:head>
 
 {#if isComplete}
-  <QuizSummary title={`Hoàn thành bộ thủ ${radicalId}`} {score} total={questions.length} message={radicalInfo ? `Bộ thủ ${radicalId} · ${radicalInfo.meaningVi}` : undefined}>
-        <button class="ui-button" data-variant="default" on:click={restartQuiz}>Thử lại</button>
-        <button class="ui-button" data-variant="secondary" on:click={goBack}>Về bộ thủ</button>
+  <QuizSummary title={`Radical ${radicalId} Complete`} {score} total={questions.length} message={radicalInfo ? `Radical ${radicalId} · ${radicalInfo.meaningEn}` : undefined}>
+        <button class="ui-button" data-variant="default" on:click={restartQuiz}>Try again</button>
+        <button class="ui-button" data-variant="secondary" on:click={goBack}>Back to radicals</button>
   </QuizSummary>
 {:else if currentQuestion}
-  <QuizFrame title={mode === 'flashcard' ? 'Flashcard bộ thủ' : mode === 'mc' ? 'Chọn đáp án bộ thủ' : 'Nhập đáp án bộ thủ'} context={`Bộ thủ ${radicalId}`} direction={direction} current={progressCurrent} total={progressTotal} shortcuts={mode === 'mc' ? ['1–4: chọn đáp án', 'F1: nghe'] : mode === 'flashcard' ? ['Space / Enter: lật thẻ', 'F1: nghe'] : ['Enter: trả lời / tiếp tục']}>
+  <QuizFrame title={mode === 'flashcard' ? 'Radical Flashcards' : mode === 'mc' ? 'Radical Multiple Choice' : 'Radical Typing'} context={`Radical ${radicalId}`} direction={direction} current={progressCurrent} total={progressTotal} shortcuts={mode === 'mc' ? ['1-4: choose answer', 'F1: listen'] : mode === 'flashcard' ? ['Space / Enter: flip card', 'F1: listen'] : ['Enter: answer / continue']}>
 
     {#if mode === 'flashcard'}
       {#key currentQuestion.id}

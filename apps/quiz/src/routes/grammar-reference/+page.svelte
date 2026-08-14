@@ -66,15 +66,15 @@
   $: comparisons = getAllComparisons();
 
   const viewTabs = [
-    { id: 'lesson' as const, icon: '📖', label: 'Theo bài' },
-    { id: 'category' as const, icon: '🎯', label: 'Theo phân loại' },
-    { id: 'function' as const, icon: '💡', label: 'Theo chức năng' },
-    { id: 'comparisons' as const, icon: '📊', label: 'So sánh' },
+    { id: 'lesson' as const, label: 'By lesson' },
+    { id: 'category' as const, label: 'By category' },
+    { id: 'function' as const, label: 'By function' },
+    { id: 'comparisons' as const, label: 'Comparisons' },
   ];
 </script>
 
 <svelte:head>
-  <title>Grammar Reference - Smart Quiz</title>
+  <title>Grammar Reference - YatoGaku</title>
 </svelte:head>
 
 <div class="min-h-screen pb-24">
@@ -82,7 +82,7 @@
   <div class="px-6 py-5 bg-muted border-b border-border">
     <div class="flex items-center gap-4">
       <BackButton />
-      <h1 class="text-xl font-bold text-foreground">📖 Ngữ pháp tổng hợp</h1>
+      <h1 class="text-xl font-bold text-foreground">Grammar Reference</h1>
     </div>
   </div>
 
@@ -92,21 +92,21 @@
       <input
         type="text"
         class="w-full px-4 py-3 border-2 border-border rounded-xl text-base bg-muted text-foreground focus:outline-none focus:border-primary transition-colors"
-        placeholder="Tìm kiếm ngữ pháp..."
+        placeholder="Search grammar..."
         on:input={handleSearchInput}
       />
     </div>
     <div class="grid gap-3" style="grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));">
       <select class="px-2 py-2 border border-border rounded-lg bg-muted text-foreground text-sm" bind:value={$filters.jlpt} on:change={() => filters.set($filters)}>
-        <option value="all">Tất cả JLPT</option>
+        <option value="all">All JLPT levels</option>
         {#each JLPT_LEVELS as level}<option value={level}>{level}</option>{/each}
       </select>
       <select class="px-2 py-2 border border-border rounded-lg bg-muted text-foreground text-sm" bind:value={$filters.category} on:change={() => filters.set($filters)}>
-        <option value="all">Tất cả phân loại</option>
+        <option value="all">All categories</option>
         {#each Object.values(GRAMMAR_CATEGORIES) as category}<option value={category.id}>{category.icon} {category.name}</option>{/each}
       </select>
       <select class="px-2 py-2 border border-border rounded-lg bg-muted text-foreground text-sm" bind:value={$filters.function} on:change={() => filters.set($filters)}>
-        <option value="all">Tất cả chức năng</option>
+        <option value="all">All functions</option>
         {#each Object.values(GRAMMAR_FUNCTIONS) as func}<option value={func.id || ''}>{func.name}</option>{/each}
       </select>
     </div>
@@ -120,7 +120,7 @@
           {currentView === tab.id ? '!text-primary !border-primary' : ''}"
         on:click={() => handleViewChange(tab.id)}
       >
-        {tab.icon} {tab.label}
+        {tab.label}
       </button>
     {/each}
   </div>
@@ -129,8 +129,8 @@
   <div class="p-6">
     {#if currentView === 'comparisons'}
       <div class="flex justify-between items-center p-4 mb-4 bg-muted rounded-lg">
-        <h3 class="text-lg font-bold">📊 So sánh ngữ pháp</h3>
-        <span class="text-sm text-muted-foreground">{comparisons.length} so sánh</span>
+        <h3 class="text-lg font-bold">Grammar Comparisons</h3>
+        <span class="text-sm text-muted-foreground">{comparisons.length} comparisons</span>
       </div>
       <div class="grid gap-4">
         {#each comparisons as comparison}
@@ -141,15 +141,15 @@
     {:else}
       {#if filteredPatterns.length === 0}
         <div class="text-center py-12 text-muted-foreground">
-          <p class="text-base font-semibold mb-2">Không tìm thấy ngữ pháp nào.</p>
-          <p>Thử thay đổi bộ lọc hoặc từ khóa tìm kiếm.</p>
+          <p class="text-base font-semibold mb-2">No grammar found.</p>
+          <p>Try changing the filters or search terms.</p>
         </div>
       {:else}
         {#each Object.entries(groupedData) as [key, group]}
           <div class="mb-8">
             <div class="flex justify-between items-center p-4 mb-4 bg-muted rounded-lg">
               {#if currentView === 'lesson'}
-                <h3 class="text-lg font-bold">📖 Bài {group.lessonNumber}</h3>
+                <h3 class="text-lg font-bold">Lesson {group.lessonNumber}</h3>
               {:else if currentView === 'category' && group.category}
                 <h3 class="text-lg font-bold">{group.category.icon} {group.category.name}</h3>
               {:else if currentView === 'function' && group.function}
@@ -176,9 +176,9 @@
   {#if selectedPatterns.size > 0}
     <div class="fixed bottom-0 inset-x-0 px-6 py-4 bg-card border-t-2 border-border flex justify-between items-center shadow-lg z-50">
       <div class="text-base">
-        <span class="text-xl font-bold text-primary">{selectedPatterns.size}</span> patterns đã chọn
+        <span class="text-xl font-bold text-primary">{selectedPatterns.size}</span> patterns selected
       </div>
-      <button class="ui-button" data-variant="default">🎯 Quiz các pattern đã chọn</button>
+      <button class="ui-button" data-variant="default">Quiz selected patterns</button>
     </div>
   {/if}
 </div>

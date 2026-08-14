@@ -89,7 +89,7 @@
     <div class="stroke-fallback">Stroke data not available</div>
   {:else}
     {#if loaded}
-      <div class="stroke-display" style="width: {size}px; height: {size}px" role="img" aria-label={`Thứ tự nét chữ ${character}: đang hiển thị ${currentStroke} trên ${totalStrokes} nét`}>
+      <div class="stroke-display" style="width: {size}px; height: {size}px" role="img" aria-label={`Stroke order for ${character}: showing stroke ${currentStroke} of ${totalStrokes}`}>
         {@html svgContent}
       </div>
     {:else}
@@ -97,17 +97,17 @@
     {/if}
 
     <div class="stroke-info">
-      Nét {currentStroke}/{totalStrokes}
+      Stroke {currentStroke}/{totalStrokes}
     </div>
 
     <div class="stroke-controls">
-      <button class="ctrl-btn" on:click={stepBack} aria-label="Nét trước" disabled={!loaded}><SkipBack size={16} aria-hidden="true" /></button>
+      <button class="ctrl-btn" on:click={stepBack} aria-label="Previous stroke" disabled={!loaded}><SkipBack size={16} aria-hidden="true" /></button>
       {#if playing}
-        <button class="ctrl-btn ctrl-main" on:click={pause} aria-label="Tạm dừng"><Pause size={20} aria-hidden="true" /></button>
+        <button class="ctrl-btn ctrl-main" on:click={pause} aria-label="Pause"><Pause size={20} aria-hidden="true" /></button>
       {:else}
-        <button class="ctrl-btn ctrl-main" on:click={play} aria-label="Phát thứ tự nét" disabled={!loaded}><Play size={20} aria-hidden="true" /></button>
+        <button class="ctrl-btn ctrl-main" on:click={play} aria-label="Play stroke order" disabled={!loaded}><Play size={20} aria-hidden="true" /></button>
       {/if}
-      <button class="ctrl-btn" on:click={stepForward} aria-label="Nét tiếp theo" disabled={!loaded}><SkipForward size={16} aria-hidden="true" /></button>
+      <button class="ctrl-btn" on:click={stepForward} aria-label="Next stroke" disabled={!loaded}><SkipForward size={16} aria-hidden="true" /></button>
 
       <div class="speed-control">
         {#each [0.5, 1, 2] as s}

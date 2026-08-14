@@ -61,7 +61,7 @@
 </script>
 
 <svelte:head>
-  <title>JLPT {(level || '').toUpperCase()} Vocabulary | Smart Quiz</title>
+  <title>JLPT {(level || '').toUpperCase()} Vocabulary | YatoGaku</title>
 </svelte:head>
 
 <div class="vocab-container">

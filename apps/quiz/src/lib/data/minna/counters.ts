@@ -65,7 +65,7 @@ export const NUMBERS_DATA: NumberData[] = [
 export const COUNTERS_DATA: CounterType[] = [
   {
     counter: '個', kana: 'こ', romaji: 'ko',
-    vietnamese: 'Vật nhỏ (táo, kẹo, trứng)',
+    vietnamese: 'Small items (apples, candy, eggs)',
     lesson: 11,
     readings: [
       { number: 1,  form: '一個',   kana: 'いっこ',     romaji: 'ikko',     irregular: true  },
@@ -79,11 +79,11 @@ export const COUNTERS_DATA: CounterType[] = [
       { number: 9,  form: '九個',   kana: 'きゅうこ',   romaji: 'kyuuko'     },
       { number: 10, form: '十個',   kana: 'じゅっこ',   romaji: 'jukko',    irregular: true  },
     ],
-    example: { japanese: 'りんごを三個ください。', vietnamese: 'Cho tôi 3 quả táo.' },
+    example: { japanese: 'りんごを三個ください。', vietnamese: 'Please give me 3 apples.' },
   },
   {
     counter: '枚', kana: 'まい', romaji: 'mai',
-    vietnamese: 'Vật phẳng (giấy, tem, quần áo, đĩa)',
+    vietnamese: 'Flat items (paper, stamps, clothes, plates)',
     lesson: 11,
     readings: [
       { number: 1,  form: '一枚',   kana: 'いちまい',   romaji: 'ichimai'  },
@@ -97,11 +97,11 @@ export const COUNTERS_DATA: CounterType[] = [
       { number: 9,  form: '九枚',   kana: 'きゅうまい', romaji: 'kyuumai'  },
       { number: 10, form: '十枚',   kana: 'じゅうまい', romaji: 'juumai'   },
     ],
-    example: { japanese: '切手を三枚ください。', vietnamese: 'Cho tôi 3 con tem.' },
+    example: { japanese: '切手を三枚ください。', vietnamese: 'Please give me 3 stamps.' },
   },
   {
     counter: '本', kana: 'ほん', romaji: 'hon',
-    vietnamese: 'Vật dài hình trụ (bút, chai, cà vạt, ô, cây)',
+    vietnamese: 'Long cylindrical items (pens, bottles, ties, umbrellas, trees)',
     lesson: 11,
     readings: [
       { number: 1,  form: '一本',   kana: 'いっぽん',   romaji: 'ippon',    irregular: true },
@@ -115,11 +115,11 @@ export const COUNTERS_DATA: CounterType[] = [
       { number: 9,  form: '九本',   kana: 'きゅうほん', romaji: 'kyuuhon'  },
       { number: 10, form: '十本',   kana: 'じゅっぽん', romaji: 'juppon',   irregular: true },
     ],
-    example: { japanese: 'ビールを一本お願いします。', vietnamese: 'Cho tôi 1 chai bia.' },
+    example: { japanese: 'ビールを一本お願いします。', vietnamese: 'Please give me 1 bottle of beer.' },
   },
   {
     counter: '冊', kana: 'さつ', romaji: 'satsu',
-    vietnamese: 'Sách, vở, tạp chí (vật đóng bìa)',
+    vietnamese: 'Books, notebooks, magazines (bound items)',
     lesson: 11,
     readings: [
       { number: 1,  form: '一冊',   kana: 'いっさつ',   romaji: 'issatsu',  irregular: true },
@@ -133,11 +133,11 @@ export const COUNTERS_DATA: CounterType[] = [
       { number: 9,  form: '九冊',   kana: 'きゅうさつ', romaji: 'kyuusatsu'},
       { number: 10, form: '十冊',   kana: 'じゅっさつ', romaji: 'jussatsu', irregular: true },
     ],
-    example: { japanese: 'この本を二冊ください。', vietnamese: 'Cho tôi 2 quyển sách này.' },
+    example: { japanese: 'この本を二冊ください。', vietnamese: 'Please give me 2 copies of this book.' },
   },
   {
     counter: '台', kana: 'だい', romaji: 'dai',
-    vietnamese: 'Máy móc, xe cộ (TV, xe hơi, máy tính)',
+    vietnamese: 'Machines, vehicles (TVs, cars, computers)',
     lesson: 11,
     readings: [
       { number: 1,  form: '一台',   kana: 'いちだい',   romaji: 'ichidai'  },
@@ -151,11 +151,11 @@ export const COUNTERS_DATA: CounterType[] = [
       { number: 9,  form: '九台',   kana: 'きゅうだい', romaji: 'kyuudai'  },
       { number: 10, form: '十台',   kana: 'じゅうだい', romaji: 'juudai'   },
     ],
-    example: { japanese: '車が三台あります。', vietnamese: 'Có 3 chiếc xe.' },
+    example: { japanese: '車が三台あります。', vietnamese: 'There are 3 cars.' },
   },
   {
     counter: '杯', kana: 'はい', romaji: 'hai',
-    vietnamese: 'Cốc, ly, bát, tô (đồ đựng chất lỏng)',
+    vietnamese: 'Cups, glasses, bowls (containers for liquid)',
     lesson: 11,
     readings: [
       { number: 1,  form: '一杯',   kana: 'いっぱい',   romaji: 'ippai',    irregular: true },
@@ -169,11 +169,11 @@ export const COUNTERS_DATA: CounterType[] = [
       { number: 9,  form: '九杯',   kana: 'きゅうはい', romaji: 'kyuuhai'  },
       { number: 10, form: '十杯',   kana: 'じゅっぱい', romaji: 'juppai',   irregular: true },
     ],
-    example: { japanese: 'コーヒーを一杯お願いします。', vietnamese: 'Cho tôi 1 ly cà phê.' },
+    example: { japanese: 'コーヒーを一杯お願いします。', vietnamese: 'Please give me 1 cup of coffee.' },
   },
   {
     counter: '匹', kana: 'ひき', romaji: 'hiki',
-    vietnamese: 'Thú nhỏ, cá, côn trùng (mèo, chó, cá)',
+    vietnamese: 'Small animals, fish, insects (cats, dogs, fish)',
     lesson: 11,
     readings: [
       { number: 1,  form: '一匹',   kana: 'いっぴき',   romaji: 'ippiki',   irregular: true },
@@ -187,11 +187,11 @@ export const COUNTERS_DATA: CounterType[] = [
       { number: 9,  form: '九匹',   kana: 'きゅうひき', romaji: 'kyuuhiki' },
       { number: 10, form: '十匹',   kana: 'じゅっぴき', romaji: 'juppiki',  irregular: true },
     ],
-    example: { japanese: '猫が二匹います。', vietnamese: 'Có 2 con mèo.' },
+    example: { japanese: '猫が二匹います。', vietnamese: 'There are 2 cats.' },
   },
   {
     counter: '頭', kana: 'とう', romaji: 'tou',
-    vietnamese: 'Thú lớn (bò, ngựa, voi, gấu)',
+    vietnamese: 'Large animals (cows, horses, elephants, bears)',
     lesson: null,
     readings: [
       { number: 1,  form: '一頭',   kana: 'いっとう',   romaji: 'ittou',    irregular: true },
@@ -201,11 +201,11 @@ export const COUNTERS_DATA: CounterType[] = [
       { number: 5,  form: '五頭',   kana: 'ごとう',     romaji: 'gotou'    },
       { number: 10, form: '十頭',   kana: 'じゅっとう', romaji: 'juttou',   irregular: true },
     ],
-    example: { japanese: '牛が一頭います。', vietnamese: 'Có 1 con bò.' },
+    example: { japanese: '牛が一頭います。', vietnamese: 'There is 1 cow.' },
   },
   {
     counter: '羽', kana: 'わ', romaji: 'wa',
-    vietnamese: 'Chim, thỏ',
+    vietnamese: 'Birds, rabbits',
     lesson: null,
     readings: [
       { number: 1,  form: '一羽',   kana: 'いちわ',     romaji: 'ichiwa'   },
@@ -214,11 +214,11 @@ export const COUNTERS_DATA: CounterType[] = [
       { number: 6,  form: '六羽',   kana: 'ろくわ',     romaji: 'rokuwa'   },
       { number: 10, form: '十羽',   kana: 'じゅっぱ',   romaji: 'juppa',    irregular: true },
     ],
-    example: { japanese: '鳥が三羽います。', vietnamese: 'Có 3 con chim.' },
+    example: { japanese: '鳥が三羽います。', vietnamese: 'There are 3 birds.' },
   },
   {
     counter: '人', kana: 'にん', romaji: 'nin',
-    vietnamese: 'Người',
+    vietnamese: 'People',
     lesson: 3,
     readings: [
       { number: 1,  form: '一人',   kana: 'ひとり',     romaji: 'hitori',   irregular: true },
@@ -232,11 +232,11 @@ export const COUNTERS_DATA: CounterType[] = [
       { number: 9,  form: '九人',   kana: 'きゅうにん', romaji: 'kyuunin'  },
       { number: 10, form: '十人',   kana: 'じゅうにん', romaji: 'juunin'   },
     ],
-    example: { japanese: '家族は四人です。', vietnamese: 'Gia đình có 4 người.' },
+    example: { japanese: '家族は四人です。', vietnamese: 'There are 4 people in the family.' },
   },
   {
     counter: '歳', kana: 'さい', romaji: 'sai',
-    vietnamese: 'Tuổi',
+    vietnamese: 'Age (years old)',
     lesson: 4,
     readings: [
       { number: 1,  form: '一歳',   kana: 'いっさい',   romaji: 'issai',    irregular: true },
@@ -251,11 +251,11 @@ export const COUNTERS_DATA: CounterType[] = [
       { number: 10, form: '十歳',   kana: 'じゅっさい', romaji: 'jussai',   irregular: true },
       { number: 20, form: '二十歳', kana: 'はたち',     romaji: 'hatachi',  irregular: true },
     ],
-    example: { japanese: '私は二十歳です。', vietnamese: 'Tôi 20 tuổi.' },
+    example: { japanese: '私は二十歳です。', vietnamese: 'I am 20 years old.' },
   },
   {
     counter: '階', kana: 'かい', romaji: 'kai',
-    vietnamese: 'Tầng (trong tòa nhà)',
+    vietnamese: 'Floor (in a building)',
     lesson: 10,
     readings: [
       { number: 1,  form: '一階',   kana: 'いっかい',   romaji: 'ikkai',    irregular: true },
@@ -269,11 +269,11 @@ export const COUNTERS_DATA: CounterType[] = [
       { number: 9,  form: '九階',   kana: 'きゅうかい', romaji: 'kyuukai'  },
       { number: 10, form: '十階',   kana: 'じゅっかい', romaji: 'jukkai',   irregular: true },
     ],
-    example: { japanese: 'エレベーターは三階にあります。', vietnamese: 'Thang máy ở tầng 3.' },
+    example: { japanese: 'エレベーターは三階にあります。', vietnamese: 'The elevator is on the 3rd floor.' },
   },
   {
     counter: '時', kana: 'じ', romaji: 'ji',
-    vietnamese: 'Giờ (chỉ thời điểm, o\'clock)',
+    vietnamese: 'Hour (o\'clock, a point in time)',
     lesson: 3,
     readings: [
       { number: 1,  form: '一時',   kana: 'いちじ',     romaji: 'ichiji'   },
@@ -289,11 +289,11 @@ export const COUNTERS_DATA: CounterType[] = [
       { number: 11, form: '十一時', kana: 'じゅういちじ',romaji: 'juuichiji'},
       { number: 12, form: '十二時', kana: 'じゅうにじ', romaji: 'juuniji'  },
     ],
-    example: { japanese: '会議は九時からです。', vietnamese: 'Cuộc họp từ 9 giờ.' },
+    example: { japanese: '会議は九時からです。', vietnamese: 'The meeting starts at 9 o\'clock.' },
   },
   {
     counter: '分', kana: 'ふん', romaji: 'fun',
-    vietnamese: 'Phút',
+    vietnamese: 'Minutes',
     lesson: 3,
     readings: [
       { number: 1,  form: '一分',   kana: 'いっぷん',   romaji: 'ippun',    irregular: true },
@@ -308,11 +308,11 @@ export const COUNTERS_DATA: CounterType[] = [
       { number: 10, form: '十分',   kana: 'じゅっぷん', romaji: 'juppun',   irregular: true },
       { number: 30, form: '三十分', kana: 'さんじゅっぷん', romaji: 'sanjuppun', note: 'half' },
     ],
-    example: { japanese: '五分待ってください。', vietnamese: 'Vui lòng đợi 5 phút.' },
+    example: { japanese: '五分待ってください。', vietnamese: 'Please wait 5 minutes.' },
   },
   {
     counter: '月', kana: 'がつ', romaji: 'gatsu',
-    vietnamese: 'Tháng (chỉ tên tháng trong năm)',
+    vietnamese: 'Month (naming a month of the year)',
     lesson: 4,
     readings: [
       { number: 1,  form: '一月',   kana: 'いちがつ',   romaji: 'ichigatsu' },
@@ -328,11 +328,11 @@ export const COUNTERS_DATA: CounterType[] = [
       { number: 11, form: '十一月', kana: 'じゅういちがつ', romaji: 'juuichigatsu' },
       { number: 12, form: '十二月', kana: 'じゅうにがつ', romaji: 'juunigatsu' },
     ],
-    example: { japanese: '私の誕生日は四月です。', vietnamese: 'Sinh nhật tôi là tháng 4.' },
+    example: { japanese: '私の誕生日は四月です。', vietnamese: 'My birthday is in April.' },
   },
   {
     counter: '日', kana: 'にち', romaji: 'nichi',
-    vietnamese: 'Ngày (trong tháng) — hầu hết đều bất quy tắc',
+    vietnamese: 'Day (of the month), mostly irregular readings',
     lesson: 4,
     readings: [
       { number: 1,  form: '一日',   kana: 'ついたち',   romaji: 'tsuitachi',  irregular: true },
@@ -349,11 +349,11 @@ export const COUNTERS_DATA: CounterType[] = [
       { number: 20, form: '二十日', kana: 'はつか',     romaji: 'hatsuka',    irregular: true },
       { number: 24, form: '二十四日',kana: 'にじゅうよっか', romaji: 'nijuuyokka', irregular: true },
     ],
-    example: { japanese: '今日は三日です。', vietnamese: 'Hôm nay là ngày mồng 3.' },
+    example: { japanese: '今日は三日です。', vietnamese: 'Today is the 3rd.' },
   },
   {
     counter: '番', kana: 'ばん', romaji: 'ban',
-    vietnamese: 'Số thứ tự (số điện thoại, số ghế, vị trí)',
+    vietnamese: 'Ordinal number (phone numbers, seat numbers, position)',
     lesson: 3,
     readings: [
       { number: 1,  form: '一番',   kana: 'いちばん',   romaji: 'ichiban'  },
@@ -362,12 +362,12 @@ export const COUNTERS_DATA: CounterType[] = [
       { number: 4,  form: '四番',   kana: 'よんばん',   romaji: 'yonban'   },
       { number: 5,  form: '五番',   kana: 'ごばん',     romaji: 'goban'    },
     ],
-    example: { japanese: '電話番号は何番ですか。', vietnamese: 'Số điện thoại là số mấy?' },
+    example: { japanese: '電話番号は何番ですか。', vietnamese: 'What is the phone number?' },
   },
   // ── Priority 1 Counters ──────────────────────────────────
   {
     counter: 'つ', kana: 'つ', romaji: 'tsu',
-    vietnamese: 'Counter chung (dùng với vật không đặc thù, 1-10)',
+    vietnamese: 'General counter (for unspecified items, 1-10)',
     lesson: 11,
     readings: [
       { number: 1,  form: 'ひとつ',   kana: 'ひとつ',   romaji: 'hitotsu',  irregular: true },
@@ -381,11 +381,11 @@ export const COUNTERS_DATA: CounterType[] = [
       { number: 9,  form: 'ここのつ', kana: 'ここのつ', romaji: 'kokonotsu',irregular: true },
       { number: 10, form: 'とお',     kana: 'とお',     romaji: 'too',      irregular: true },
     ],
-    example: { japanese: 'りんごを三つください。', vietnamese: 'Cho tôi 3 quả táo.' },
+    example: { japanese: 'りんごを三つください。', vietnamese: 'Please give me 3 apples.' },
   },
   {
     counter: '回', kana: 'かい', romaji: 'kai',
-    vietnamese: 'Lần (tần suất, số lần)',
+    vietnamese: 'Times (frequency, number of occurrences)',
     lesson: 13,
     readings: [
       { number: 1,  form: '一回',   kana: 'いっかい',   romaji: 'ikkai',    irregular: true },
@@ -399,11 +399,11 @@ export const COUNTERS_DATA: CounterType[] = [
       { number: 9,  form: '九回',   kana: 'きゅうかい', romaji: 'kyuukai'  },
       { number: 10, form: '十回',   kana: 'じゅっかい', romaji: 'jukkai',   irregular: true },
     ],
-    example: { japanese: '一日三回薬を飲みます。', vietnamese: 'Uống thuốc 3 lần một ngày.' },
+    example: { japanese: '一日三回薬を飲みます。', vietnamese: 'Take medicine 3 times a day.' },
   },
   {
     counter: 'ヶ月', kana: 'かげつ', romaji: 'kagetsu',
-    vietnamese: 'Tháng (thời lượng, duration)',
+    vietnamese: 'Months (duration)',
     lesson: 18,
     readings: [
       { number: 1,  form: '一ヶ月',   kana: 'いっかげつ',   romaji: 'ikkagetsu',   irregular: true },
@@ -417,11 +417,11 @@ export const COUNTERS_DATA: CounterType[] = [
       { number: 9,  form: '九ヶ月',   kana: 'きゅうかげつ', romaji: 'kyuukagetsu' },
       { number: 10, form: '十ヶ月',   kana: 'じゅっかげつ', romaji: 'jukkagetsu',  irregular: true },
     ],
-    example: { japanese: '日本に三ヶ月住んでいます。', vietnamese: 'Tôi sống ở Nhật 3 tháng.' },
+    example: { japanese: '日本に三ヶ月住んでいます。', vietnamese: 'I lived in Japan for 3 months.' },
   },
   {
     counter: '泊', kana: 'はく', romaji: 'haku',
-    vietnamese: 'Đêm (ở khách sạn, du lịch)',
+    vietnamese: 'Nights (hotel stays, travel)',
     lesson: 16,
     readings: [
       { number: 1,  form: '一泊',   kana: 'いっぱく',   romaji: 'ippaku',   irregular: true },
@@ -435,11 +435,11 @@ export const COUNTERS_DATA: CounterType[] = [
       { number: 9,  form: '九泊',   kana: 'きゅうはく', romaji: 'kyuuhaku' },
       { number: 10, form: '十泊',   kana: 'じゅっぱく', romaji: 'juppaku',  irregular: true },
     ],
-    example: { japanese: '沖縄に三泊四日で行きます。', vietnamese: 'Đi Okinawa 3 đêm 4 ngày.' },
+    example: { japanese: '沖縄に三泊四日で行きます。', vietnamese: 'Going to Okinawa for 3 nights, 4 days.' },
   },
   {
     counter: '週間', kana: 'しゅうかん', romaji: 'shuukan',
-    vietnamese: 'Tuần (thời lượng)',
+    vietnamese: 'Weeks (duration)',
     lesson: null,
     readings: [
       { number: 1,  form: '一週間',   kana: 'いっしゅうかん', romaji: 'isshuukan',  irregular: true },
@@ -453,11 +453,11 @@ export const COUNTERS_DATA: CounterType[] = [
       { number: 9,  form: '九週間',   kana: 'きゅうしゅうかん',romaji:'kyuushuukan'},
       { number: 10, form: '十週間',   kana: 'じゅっしゅうかん',romaji:'jusshuukan', irregular: true },
     ],
-    example: { japanese: '二週間日本語を勉強しました。', vietnamese: 'Tôi học tiếng Nhật 2 tuần.' },
+    example: { japanese: '二週間日本語を勉強しました。', vietnamese: 'I studied Japanese for 2 weeks.' },
   },
   {
     counter: '度', kana: 'ど', romaji: 'do',
-    vietnamese: 'Lần (hơi formal hơn 回), độ (nhiệt độ, góc độ)',
+    vietnamese: 'Times (slightly more formal than 回), degrees (temperature, angle)',
     lesson: null,
     readings: [
       { number: 1,  form: '一度',     kana: 'いちど',       romaji: 'ichido'    },
@@ -470,11 +470,11 @@ export const COUNTERS_DATA: CounterType[] = [
       { number: 30, form: '三十度',   kana: 'さんじゅうど', romaji: 'sanjuudo'  },
       { number: 100,form: '百度',     kana: 'ひゃくど',     romaji: 'hyakudo'   },
     ],
-    example: { japanese: '今日の気温は三十度です。', vietnamese: 'Nhiệt độ hôm nay là 30 độ.' },
+    example: { japanese: '今日の気温は三十度です。', vietnamese: 'Today\'s temperature is 30 degrees.' },
   },
   {
     counter: '年間', kana: 'ねんかん', romaji: 'nenkan',
-    vietnamese: 'Năm (thời lượng)',
+    vietnamese: 'Years (duration)',
     lesson: null,
     readings: [
       { number: 1,  form: '一年間',   kana: 'いちねんかん',   romaji: 'ichinenkan'  },
@@ -488,12 +488,12 @@ export const COUNTERS_DATA: CounterType[] = [
       { number: 9,  form: '九年間',   kana: 'きゅうねんかん', romaji: 'kyuunenkan'  },
       { number: 10, form: '十年間',   kana: 'じゅうねんかん', romaji: 'juunenkan'   },
     ],
-    example: { japanese: '三年間日本に住んでいました。', vietnamese: 'Tôi đã sống ở Nhật 3 năm.' },
+    example: { japanese: '三年間日本に住んでいました。', vietnamese: 'I lived in Japan for 3 years.' },
   },
   // ── Priority 2 Counters ──────────────────────────────────
   {
     counter: '円', kana: 'えん', romaji: 'en',
-    vietnamese: 'Yên (tiền tệ Nhật Bản)',
+    vietnamese: 'Yen (Japanese currency)',
     lesson: 2,
     readings: [
       { number: 10,    form: '十円',       kana: 'じゅうえん',       romaji: 'juuen'        },
@@ -503,11 +503,11 @@ export const COUNTERS_DATA: CounterType[] = [
       { number: 100000,form: '十万円',     kana: 'じゅうまんえん',   romaji: 'juuman\'en'   },
       { number: 1000000,form:'百万円',     kana: 'ひゃくまんえん',   romaji: 'hyakuman\'en' },
     ],
-    example: { japanese: 'これは千円です。', vietnamese: 'Cái này là 1000 yên.' },
+    example: { japanese: 'これは千円です。', vietnamese: 'This is 1000 yen.' },
   },
   {
     counter: '軒', kana: 'けん', romaji: 'ken',
-    vietnamese: 'Nhà, cửa hàng (buildings)',
+    vietnamese: 'Houses, shops (buildings)',
     lesson: null,
     readings: [
       { number: 1,  form: '一軒',   kana: 'いっけん',   romaji: 'ikken',   irregular: true },
@@ -521,11 +521,11 @@ export const COUNTERS_DATA: CounterType[] = [
       { number: 9,  form: '九軒',   kana: 'きゅうけん', romaji: 'kyuuken' },
       { number: 10, form: '十軒',   kana: 'じゅっけん', romaji: 'jukken',  irregular: true },
     ],
-    example: { japanese: 'この通りに店が三軒あります。', vietnamese: 'Trên con phố này có 3 cửa hàng.' },
+    example: { japanese: 'この通りに店が三軒あります。', vietnamese: 'There are 3 shops on this street.' },
   },
   {
     counter: '足', kana: 'そく', romaji: 'soku',
-    vietnamese: 'Đôi (giày, tất)',
+    vietnamese: 'Pairs (shoes, socks)',
     lesson: null,
     readings: [
       { number: 1,  form: '一足',   kana: 'いっそく',   romaji: 'issoku',  irregular: true },
@@ -539,6 +539,6 @@ export const COUNTERS_DATA: CounterType[] = [
       { number: 9,  form: '九足',   kana: 'きゅうそく', romaji: 'kyuusoku'},
       { number: 10, form: '十足',   kana: 'じゅっそく', romaji: 'jussoku', irregular: true },
     ],
-    example: { japanese: '靴を二足買いました。', vietnamese: 'Tôi đã mua 2 đôi giày.' },
+    example: { japanese: '靴を二足買いました。', vietnamese: 'I bought 2 pairs of shoes.' },
   },
 ];

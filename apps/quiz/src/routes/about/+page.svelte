@@ -10,17 +10,17 @@
 </script>
 
 <svelte:head>
-  <title>About - Smart Quiz</title>
+  <title>About - YatoGaku</title>
 </svelte:head>
 
 <PageWorkspace size="md">
   <PageHero
     eyebrow={`v${info.version}`}
     title={info.name}
-    subtitle={`${info.description} Ứng dụng offline-first: nội dung học và tiến trình cốt lõi nằm trên thiết bị; liên kết cộng đồng là phần trực tuyến tùy chọn.`}
+    subtitle={`${info.description} Offline-first: study content and core progress live on the device; community links are an optional online extra.`}
   >
     {#snippet actions()}
-      <img src="{base}/logo.svg" alt="Smart Quiz" height="32" />
+      <img src="{base}/yatogaku-logo.png" alt="YatoGaku" height="48" />
     {/snippet}
   </PageHero>
 

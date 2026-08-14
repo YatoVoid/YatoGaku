@@ -51,14 +51,14 @@ describe('ExamQuestionView', () => {
     // Explanation is revealed only in review.
     expect(screen.getByText(/marks the topic/)).toBeInTheDocument();
     // Verdict mentions the user's wrong pick + the right answer.
-    expect(screen.getByText(/Bạn chọn 2, đáp án đúng là 1/)).toBeInTheDocument();
+    expect(screen.getByText(/You chose 2, the correct answer is 1/)).toBeInTheDocument();
   });
 
-  it('shows "chưa trả lời" in review when unanswered', () => {
+  it('shows the not-answered note in review when unanswered', () => {
     render(ExamQuestionView, {
       props: { question, number: 1, selected: undefined, review: true }
     });
-    expect(screen.getByText(/Chưa trả lời/)).toBeInTheDocument();
+    expect(screen.getByText(/Not answered/)).toBeInTheDocument();
   });
 
   it('does not trigger onselect in review mode', async () => {

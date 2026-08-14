@@ -5,6 +5,7 @@
   import PageHero from '$lib/components/common/PageHero.svelte';
   import PageWorkspace from '$lib/components/common/PageWorkspace.svelte';
   import type { NumberData, CounterType } from '$lib/types/lesson';
+  import { Volume2 } from 'lucide-svelte';
 
   let activeTab: 'numbers' | 'counters' = 'counters';
   let expandedCounters = new Set<number>();
@@ -23,14 +24,14 @@
 </script>
 
 <svelte:head>
-  <title>Trợ số từ - Japanese Counters</title>
+  <title>Japanese Counters - YatoGaku</title>
 </svelte:head>
 
 <PageWorkspace size="xl">
   <PageHero
     eyebrow="Reference"
-    title="Số đếm & Trợ số từ"
-    subtitle="Numbers & Japanese Counter Words — tra nhanh cách đọc số và counter trong tiếng Nhật."
+    title="Numbers &amp; Counters"
+    subtitle="Numbers and Japanese counter words: quick reference for how to read numbers and counters in Japanese."
     script="japanese"
   />
 
@@ -40,15 +41,15 @@
     ariaLabel="Counters reference section"
     class="sm:w-fit"
     options={[
-      { id: 'numbers', label: '📊 Số cơ bản' },
-      { id: 'counters', label: `🔢 Trợ số từ (${COUNTERS_DATA.length})` }
+      { id: 'numbers', label: 'Basic Numbers' },
+      { id: 'counters', label: `Counters (${COUNTERS_DATA.length})` }
     ]}
   />
 
   {#if activeTab === 'numbers'}
     <section class="mb-6">
-      <h2 class="text-xl font-semibold mb-2">Số cơ bản (Basic Numbers)</h2>
-      <p class="text-sm text-muted-foreground mb-4">Hệ thống số trong tiếng Nhật từ 0 đến 兆 (trillion)</p>
+      <h2 class="text-xl font-semibold mb-2">Basic Numbers</h2>
+      <p class="text-sm text-muted-foreground mb-4">The Japanese number system from 0 to 兆 (trillion)</p>
 
       <div class="overflow-x-auto rounded-lg shadow-sm">
         <table class="numbers-table">
@@ -73,7 +74,7 @@
                 </td>
                 {#if hasAudio}
                   <td>
-                    <button class="border border-border rounded px-2 py-1 cursor-pointer text-base hover:border-primary hover:bg-muted transition-colors bg-transparent" on:click={() => speak(num.kanji)} title="Phát âm">🔊</button>
+                    <button class="border border-border rounded px-2 py-1 cursor-pointer hover:border-primary hover:bg-muted transition-colors bg-transparent flex items-center" on:click={() => speak(num.kanji)} title="Play pronunciation"><Volume2 size={16} aria-hidden="true" /></button>
                   </td>
                 {/if}
               </tr>
@@ -84,8 +85,8 @@
     </section>
   {:else}
     <section class="mb-6">
-      <h2 class="text-xl font-semibold mb-2">Trợ số từ (Counter Words)</h2>
-      <p class="text-sm text-muted-foreground mb-4">Từ đếm đặc biệt dùng để đếm các loại vật khác nhau trong tiếng Nhật</p>
+      <h2 class="text-xl font-semibold mb-2">Counter Words</h2>
+      <p class="text-sm text-muted-foreground mb-4">Special counting words used to count different types of things in Japanese</p>
 
       <div class="flex flex-col gap-3">
         {#each COUNTERS_DATA as counter, index}
@@ -98,20 +99,20 @@
                   <span class="text-lg font-medium">{counter.kana} ({counter.romaji})</span>
                   <span class="text-sm text-muted-foreground">{counter.vietnamese}</span>
                   {#if counter.lesson}
-                    <span class="inline-block w-fit bg-primary text-white text-xs font-semibold px-2 py-0.5 rounded-full mt-0.5">Bài {counter.lesson}</span>
+                    <span class="inline-block w-fit bg-primary text-white text-xs font-semibold px-2 py-0.5 rounded-full mt-0.5">Lesson {counter.lesson}</span>
                   {/if}
                 </div>
               </div>
               {#if hasAudio}
                 <!-- svelte-ignore a11y_no_static_element_interactions a11y_click_events_have_key_events -->
-                <span class="border border-border rounded-lg px-2 py-1.5 cursor-pointer hover:border-primary transition-colors text-base" on:click|stopPropagation={() => speak(counter.counter)} title="Phát âm">🔊</span>
+                <span class="border border-border rounded-lg px-2 py-1.5 cursor-pointer hover:border-primary transition-colors flex items-center" on:click|stopPropagation={() => speak(counter.counter)} title="Play pronunciation"><Volume2 size={16} aria-hidden="true" /></span>
               {/if}
               <span class="text-sm text-muted-foreground">{isExpanded ? '▼' : '▶'}</span>
             </button>
 
             {#if isExpanded}
               <div class="p-5 border-t border-border bg-muted">
-                <h4 class="text-base font-semibold mb-3">Cách đọc (1-10{counter.readings.length > 10 ? '+' : ''})</h4>
+                <h4 class="text-base font-semibold mb-3">Readings (1-10{counter.readings.length > 10 ? '+' : ''})</h4>
                 <div class="readings-grid mb-4">
                   {#each counter.readings as reading}
                     <div class="reading-item" class:irregular={reading.irregular}>
@@ -120,14 +121,14 @@
                       <span class="text-sm">{reading.kana}</span>
                       <span class="text-xs text-muted-foreground col-span-full">({reading.romaji})</span>
                       {#if hasAudio}
-                        <button class="border border-border rounded px-1.5 py-0.5 cursor-pointer text-xs hover:border-primary bg-transparent transition-colors" on:click={() => speak(reading.form)} title="Phát âm">🔊</button>
+                        <button class="border border-border rounded px-1.5 py-0.5 cursor-pointer hover:border-primary bg-transparent transition-colors flex items-center" on:click={() => speak(reading.form)} title="Play pronunciation"><Volume2 size={12} aria-hidden="true" /></button>
                       {/if}
                     </div>
                   {/each}
                 </div>
 
                 <div class="p-3 bg-card rounded-lg mb-3">
-                  <h4 class="text-base font-semibold mb-2">Ví dụ:</h4>
+                  <h4 class="text-base font-semibold mb-2">Example:</h4>
                   <p class="text-lg mb-1" style="font-family: var(--font-japanese)">{counter.example.japanese}</p>
                   <p class="text-sm text-muted-foreground">{counter.example.vietnamese}</p>
                 </div>
@@ -135,7 +136,7 @@
                 {#if counter.readings.some(r => r.irregular)}
                   <div class="flex items-center gap-2 text-sm text-muted-foreground">
                     <span class="w-3 h-3 bg-destructive/20 border-2 border-destructive rounded-sm"></span>
-                    Bất quy tắc (Irregular)
+                    Irregular
                   </div>
                 {/if}
               </div>
@@ -148,12 +149,12 @@
 
   <!-- Info Panel -->
   <div class="bg-muted border border-border p-5 rounded-surface mt-6">
-    <h3 class="text-lg font-bold mb-3">💡 Ghi chú</h3>
+    <h3 class="text-lg font-bold mb-3">Notes</h3>
     <ul class="list-none p-0 space-y-3 text-sm leading-relaxed">
-      <li><strong>Trợ số từ (Counter words)</strong> là từ đặc biệt dùng khi đếm vật trong tiếng Nhật</li>
-      <li>Mỗi loại vật dùng counter khác nhau (vật phẳng, vật dài, động vật, người...)</li>
-      <li><strong>Màu đỏ</strong> chỉ các cách đọc bất quy tắc cần học thuộc</li>
-      <li>Click vào mỗi counter để xem chi tiết cách đọc từ 1-10</li>
+      <li><strong>Counter words</strong> are special words used when counting things in Japanese</li>
+      <li>Different types of things use different counters (flat items, long items, animals, people...)</li>
+      <li><strong>Red highlighting</strong> marks irregular readings that need to be memorized</li>
+      <li>Click each counter to see the full 1-10 readings</li>
     </ul>
   </div>
 </PageWorkspace>

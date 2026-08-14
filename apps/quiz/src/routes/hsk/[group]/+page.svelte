@@ -136,7 +136,7 @@
                     <button
                       class="btn-speak"
                       on:click={() => speak(word.chinese)}
-                      title="Phát âm"
+                      title="Play pronunciation"
                     >
                       🔊
                     </button>

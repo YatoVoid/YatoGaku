@@ -29,50 +29,50 @@
   }
 </script>
 
-<svelte:head><title>Bàn học Kanji · Bài {lessonId} · Smart Quiz</title></svelte:head>
+<svelte:head><title>Kanji Study Desk · Lesson {lessonId} · YatoGaku</title></svelte:head>
 
 {#if lessonData && selected}
   <div class="kanji-desk">
-    <aside class="lesson-timeline" aria-label="Kanji trong bài">
-      <div class="timeline-heading"><p>Bài {lessonData.lessonNumber}</p><h1>{lessonData.title}</h1><span>{kanjiList.length} chữ</span></div>
-      <label class="search"><Search size={16} aria-hidden="true" /><span class="sr-only">Tìm Kanji</span><input bind:value={searchTerm} placeholder="Chữ, âm đọc, nghĩa..." /></label>
+    <aside class="lesson-timeline" aria-label="Kanji in this lesson">
+      <div class="timeline-heading"><p>Lesson {lessonData.lessonNumber}</p><h1>{lessonData.title}</h1><span>{kanjiList.length} kanji</span></div>
+      <label class="search"><Search size={16} aria-hidden="true" /><span class="sr-only">Search kanji</span><input bind:value={searchTerm} placeholder="Character, reading, meaning..." /></label>
       <div class="glyph-list">
         {#each filteredKanji as item, index}
           <button class:active={selected.character === item.character} on:click={() => selectedCharacter = item.character} aria-current={selected.character === item.character ? 'true' : undefined}>
             <span class="glyph">{item.character}</span><span><strong>{item.vietnamese}</strong><small>{item.onyomi[0] || item.kunyomi[0] || '—'}</small></span><em>{index + 1}</em>
           </button>
         {/each}
-        {#if filteredKanji.length === 0}<p class="no-result">Không tìm thấy Kanji phù hợp.</p>{/if}
+        {#if filteredKanji.length === 0}<p class="no-result">No matching kanji found.</p>{/if}
       </div>
     </aside>
 
     <main class="glyph-focus">
       <div class="focus-nav">
-        <button on:click={() => move(-1)} disabled={selectedIndex <= 0} aria-label="Kanji trước"><ArrowLeft size={20} aria-hidden="true" /></button>
+        <button on:click={() => move(-1)} disabled={selectedIndex <= 0} aria-label="Previous kanji"><ArrowLeft size={20} aria-hidden="true" /></button>
         <span>{selectedIndex + 1} / {kanjiList.length}</span>
-        <button on:click={() => move(1)} disabled={selectedIndex >= kanjiList.length - 1} aria-label="Kanji tiếp theo"><ArrowRight size={20} aria-hidden="true" /></button>
+        <button on:click={() => move(1)} disabled={selectedIndex >= kanjiList.length - 1} aria-label="Next kanji"><ArrowRight size={20} aria-hidden="true" /></button>
       </div>
       <div class="hero-glyph" aria-label={`Kanji ${selected.character}`}>{selected.character}</div>
-      <button class="speak" on:click={() => playJapaneseAudio(selected.character)}><Volume2 size={20} aria-hidden="true" /> Nghe chữ này</button>
+      <button class="speak" on:click={() => playJapaneseAudio(selected.character)}><Volume2 size={20} aria-hidden="true" /> Listen to this character</button>
       <dl class="readings">
         <div><dt>Âm On</dt><dd>{selected.onyomi.join('、') || '—'}</dd></div>
         <div><dt>Âm Kun</dt><dd>{selected.kunyomi.join('、') || '—'}</dd></div>
-        <div><dt>Số nét</dt><dd>{selected.strokeCount}</dd></div>
+        <div><dt>Stroke count</dt><dd>{selected.strokeCount}</dd></div>
       </dl>
       <div class="meaning"><strong>{selected.vietnamese}</strong><span>{selected.english}</span></div>
-      <div class="mobile-actions"><a href="{base}/kanji/{lessonId}/quiz/flashcard?direction=kanji-vi">Luyện chữ này <ArrowRight size={16} aria-hidden="true" /></a></div>
+      <div class="mobile-actions"><a href="{base}/kanji/{lessonId}/quiz/flashcard?direction=kanji-en">Practice this character <ArrowRight size={16} aria-hidden="true" /></a></div>
     </main>
 
-    <section class="study-panel" aria-label="Chi tiết Kanji">
-      <section><div class="panel-heading"><p>Thứ tự nét</p><span>{selected.strokeCount} nét</span></div><StrokeOrder character={selected.character} size={180} /></section>
-      <section><div class="panel-heading"><p>Thành phần</p></div><RadicalBreakdown character={selected.character} /></section>
+    <section class="study-panel" aria-label="Kanji details">
+      <section><div class="panel-heading"><p>Stroke order</p><span>{selected.strokeCount} strokes</span></div><StrokeOrder character={selected.character} size={180} /></section>
+      <section><div class="panel-heading"><p>Components</p></div><RadicalBreakdown character={selected.character} /></section>
       {#if selected.examples.length}
-        <section><div class="panel-heading"><p>Từ ví dụ</p><span>{selected.examples.length} từ</span></div><div class="examples">{#each selected.examples as example}<article><button on:click={() => playJapaneseAudio(example.kana)} aria-label={`Phát âm ${example.word}`}><Volume2 size={16} aria-hidden="true" /></button><div><strong>{example.word}</strong><span>{example.kana} · {kanaToRomaji(example.kana)}</span></div><p>{example.vietnamese || example.meaning}</p></article>{/each}</div></section>
+        <section><div class="panel-heading"><p>Example words</p><span>{selected.examples.length} words</span></div><div class="examples">{#each selected.examples as example}<article><button on:click={() => playJapaneseAudio(example.kana)} aria-label={`Play pronunciation of ${example.word}`}><Volume2 size={16} aria-hidden="true" /></button><div><strong>{example.word}</strong><span>{example.kana} · {kanaToRomaji(example.kana)}</span></div><p>{example.meaning}</p></article>{/each}</div></section>
       {/if}
     </section>
   </div>
 {:else}
-  <PageEmpty title="Không tìm thấy bài Kanji" description={`Bài ${lessonId} chưa có dữ liệu Kanji.`} action={{ label: 'Về danh sách Kanji', href: '/kanji' }} />
+  <PageEmpty title="Kanji lesson not found" description={`Lesson ${lessonId} has no kanji data yet.`} action={{ label: 'Back to kanji list', href: '/kanji' }} />
 {/if}
 
 <style>

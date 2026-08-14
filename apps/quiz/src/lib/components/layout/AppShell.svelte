@@ -55,13 +55,13 @@
 
 <svelte:window on:online={updateConnection} on:offline={updateConnection} />
 
-<svelte:head><title>{meta.title} · Smart Quiz</title></svelte:head>
+<svelte:head><title>{meta.title} · YatoGaku</title></svelte:head>
 
 <div class:focus-shell={meta.mode === 'focus'} class="app-shell" data-hydrated={hydrated}>
   {#if meta.mode === 'workspace'}
     <aside class="desktop-rail" aria-label="Main navigation">
-      <a class="brand" href="{base}/" aria-label="Smart Quiz — Home">
-        <img src="{base}/logo.svg" alt="" width="126" height="24" class="dark:brightness-0 dark:invert" />
+      <a class="brand" href="{base}/" aria-label="YatoGaku Home">
+        <img src="{base}/yatogaku-logo.png" alt="YatoGaku" width="28" height="28" />
       </a>
 
       <nav class="rail-nav">
@@ -100,7 +100,7 @@
         {#if meta.mode === 'focus'}
           <IconButton icon={X} label="Exit session" onclick={requestExit} />
         {:else}
-          <a class="mobile-brand" href="{base}/" aria-label="Smart Quiz — Home"><CircleUserRound size={24} aria-hidden="true" /></a>
+          <a class="mobile-brand" href="{base}/" aria-label="YatoGaku Home"><CircleUserRound size={24} aria-hidden="true" /></a>
         {/if}
         <div class="title-block">
           {#if meta.mode === 'workspace' && meta.breadcrumbs.length > 1}
@@ -171,7 +171,7 @@
     .app-shell:not(.focus-shell) { display: grid; grid-template-columns: 248px minmax(0, 1fr); }
     .desktop-rail { position: sticky; top: 0; height: 100svh; display: flex; flex-direction: column; padding: var(--spacing-lg) var(--spacing-md); background: var(--color-shell); color: var(--color-shell-foreground); border-right: 1px solid color-mix(in srgb, white 10%, transparent); }
     .brand { display: block; min-height: 44px; padding: 8px; margin-bottom: var(--spacing-lg); }
-    .brand img { display: block; filter: brightness(0) invert(1); }
+    .brand img { display: block; border-radius: 6px; }
     .rail-nav { display: grid; gap: var(--spacing-xs); }
     .rail-nav a, .rail-settings { min-height: 44px; display: flex; align-items: center; gap: var(--spacing-sm); padding: 0 12px; color: color-mix(in srgb, var(--color-shell-foreground) 70%, transparent); border-radius: var(--radius-control); text-decoration: none; font-size: .9rem; font-weight: 600; }
     .rail-nav a:hover, .rail-settings:hover { color: var(--color-shell-foreground); background: color-mix(in srgb, white 7%, transparent); }

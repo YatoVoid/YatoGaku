@@ -41,15 +41,15 @@
 </script>
 
 <svelte:head>
-  <title>Grammar - {lessonData?.title || 'Lesson'} | {course?.metadata.title || 'Smart Quiz'}</title>
+  <title>Grammar - {lessonData?.title || 'Lesson'} | {course?.metadata.title || 'YatoGaku'}</title>
 </svelte:head>
 
 {#if lessonData && course}
   <PageWorkspace size="lg">
     <PageHero
-      eyebrow={`${course.metadata.level} · Bài ${lessonData.lessonNumber}`}
+      eyebrow={`${course.metadata.level} · Lesson ${lessonData.lessonNumber}`}
       title="Grammar"
-      subtitle={`${lessonData.title} · ${grammar.length} mẫu ngữ pháp`}
+      subtitle={`${lessonData.title} · ${grammar.length} grammar points`}
     >
       {#snippet actions()}
         <BackButton href={`/course/${courseId}/lesson/${lessonId}`} text="Back to Lesson" />

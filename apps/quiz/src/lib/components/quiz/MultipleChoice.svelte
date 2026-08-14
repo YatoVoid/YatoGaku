@@ -106,8 +106,8 @@
       <X size={16} aria-hidden="true" /> Wrong! The correct answer is: {answer}
     {/if}
   </div>
-  <button class="ui-button next-action" data-variant="default" data-size="lg" on:click={advance}>Câu tiếp theo</button>
-  <div class="hint-text">Nhấn Enter để tiếp tục</div>
+  <button class="ui-button next-action" data-variant="default" data-size="lg" on:click={advance}>Next question</button>
+  <div class="hint-text">Press Enter to continue</div>
 {/if}
 
 {#if !answered}

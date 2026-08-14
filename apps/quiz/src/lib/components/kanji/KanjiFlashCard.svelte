@@ -83,7 +83,7 @@
           <span>{item.examples[0].word} ({item.examples[0].kana})</span>
           <span class="fc-romaji">{kanaToRomaji(item.examples[0].kana)}</span>
           <span class="fc-ex-meaning">— {item.examples[0].vietnamese ?? item.examples[0].meaning}</span>
-          <button class="fc-ex-audio" on:click|stopPropagation={() => playJapaneseAudio(item.examples[0].kana)} aria-label="Phát âm {item.examples[0].word}">
+          <button class="fc-ex-audio" on:click|stopPropagation={() => playJapaneseAudio(item.examples[0].kana)} aria-label="Play pronunciation of {item.examples[0].word}">
             🔊
           </button>
         </div>

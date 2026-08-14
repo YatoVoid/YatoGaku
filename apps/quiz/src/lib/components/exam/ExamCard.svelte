@@ -30,9 +30,9 @@
     </div>
 
     <div class="exam-card__meta">
-      <span class="meta"><FileText size={16} aria-hidden="true" /> {summary.questionCount} câu</span>
-      <span class="meta"><Clock size={16} aria-hidden="true" /> {summary.durationMinutes} phút</span>
-      <span class="meta"><ListChecks size={16} aria-hidden="true" /> {uniqueTypes.length} phần</span>
+      <span class="meta"><FileText size={16} aria-hidden="true" /> {summary.questionCount} questions</span>
+      <span class="meta"><Clock size={16} aria-hidden="true" /> {summary.durationMinutes} min</span>
+      <span class="meta"><ListChecks size={16} aria-hidden="true" /> {uniqueTypes.length} sections</span>
     </div>
 
     <div class="exam-card__types">
@@ -42,7 +42,7 @@
     </div>
 
     {#if sourceLabel}
-      <p class="exam-card__source">Nguồn: {sourceLabel}</p>
+      <p class="exam-card__source">Source: {sourceLabel}</p>
     {/if}
   </div>
 

@@ -22,7 +22,7 @@
       tagList.push({ text: pattern.meta.jlptLevel, className: 'tag-jlpt' });
     }
     if (pattern.lessonNumber) {
-      tagList.push({ text: `Bài ${pattern.lessonNumber}`, className: 'tag-lesson' });
+      tagList.push({ text: `Lesson ${pattern.lessonNumber}`, className: 'tag-lesson' });
     }
     return tagList;
   })();
@@ -56,7 +56,7 @@
 
   <div class="pattern-card-actions">
     <button class="btn-text" on:click={handleDetail}>
-      <Lightbulb size={16} aria-hidden="true" /> Chi tiết
+      <Lightbulb size={16} aria-hidden="true" /> Details
     </button>
     {#if pattern.meta?.tips}
       <button class="btn-text btn-tips">

@@ -44,15 +44,15 @@
 </script>
 
 <svelte:head>
-  <title>Vocabulary - Bài {lessonId} | Smart Quiz</title>
+  <title>Vocabulary - Lesson {lessonId} | YatoGaku</title>
 </svelte:head>
 
 {#if lessonData}
   <div class="vocab-page">
     <div class="page-header">
-      <h2>📚 Vocabulary - Bài {lessonData.lessonNumber}</h2>
+      <h2>Vocabulary - Lesson {lessonData.lessonNumber}</h2>
       <p class="subtitle">{lessonData.title}</p>
-      <p class="word-count">{vocabulary.length} từ vựng</p>
+      <p class="word-count">{vocabulary.length} vocabulary words</p>
     </div>
 
     <!-- Controls -->

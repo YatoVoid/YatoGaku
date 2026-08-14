@@ -19,7 +19,7 @@ describe('StrokeOrder', () => {
 
   it('should have Play button with aria-label', () => {
     const { container } = render(StrokeOrder, { props: { character: '一' } });
-    expect(container.querySelector('[aria-label="Phát thứ tự nét"]')).toBeInTheDocument();
+    expect(container.querySelector('[aria-label="Play stroke order"]')).toBeInTheDocument();
   });
 
   it('should have speed control with 3 options', () => {
@@ -30,12 +30,12 @@ describe('StrokeOrder', () => {
 
   it('should have step forward button', () => {
     const { container } = render(StrokeOrder, { props: { character: '一' } });
-    expect(container.querySelector('[aria-label="Nét tiếp theo"]')).toBeInTheDocument();
+    expect(container.querySelector('[aria-label="Next stroke"]')).toBeInTheDocument();
   });
 
   it('should have step back button', () => {
     const { container } = render(StrokeOrder, { props: { character: '一' } });
-    expect(container.querySelector('[aria-label="Nét trước"]')).toBeInTheDocument();
+    expect(container.querySelector('[aria-label="Previous stroke"]')).toBeInTheDocument();
   });
 
   it('should show fallback for invalid character', () => {

@@ -68,7 +68,7 @@
 
   {#if showInstallBanner}
     <div class="install-banner">
-      <span>Install Smart Quiz for offline access</span>
+      <span>Install YatoGaku Quiz for offline access</span>
       <div class="banner-actions">
         <Button size="sm" variant="ghost" class="text-primary-foreground hover:bg-primary-foreground/15" onclick={handleInstall}>Install</Button>
         <Button size="icon" variant="ghost" class="text-primary-foreground hover:bg-primary-foreground/15" onclick={dismissInstall} aria-label="Dismiss install prompt"><X class="size-4" strokeWidth={2} aria-hidden="true" /></Button>

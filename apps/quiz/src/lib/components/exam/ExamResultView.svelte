@@ -46,7 +46,7 @@
   <div class="summary {result.passed ? 'summary--pass' : 'summary--fail'}">
     <div class="summary__emoji">{result.passed ? '🎉' : '📚'}</div>
     <h2 class="summary__title">
-      {result.passed ? 'Đạt!' : 'Chưa đạt'}
+      {result.passed ? 'Passed!' : 'Not yet'}
     </h2>
     <div class="summary__score">
       <span class="summary__percent">{result.scorePercent}%</span>
@@ -55,9 +55,9 @@
       </Badge>
     </div>
     <p class="summary__detail">
-      {result.correct}/{result.total} câu đúng · Thời gian {formatDuration(result.durationSeconds)}
+      {result.correct}/{result.total} correct · Time {formatDuration(result.durationSeconds)}
     </p>
-    <p class="summary__note">Cần ≥ 60% để đạt.</p>
+    <p class="summary__note">Need ≥ 60% to pass.</p>
   </div>
 
   <!-- Per-section breakdown -->
@@ -76,15 +76,15 @@
   <!-- Actions -->
   <div class="actions">
     {#if onretake}
-      <Button onclick={onretake}>Làm lại</Button>
+      <Button onclick={onretake}>Retry</Button>
     {/if}
     <Button variant="secondary" onclick={() => (window.location.href = `${base}/exams`)}>
-      Về danh sách đề
+      Back to exam list
     </Button>
   </div>
 
   <!-- Review -->
-  <h3 class="review-heading">Xem lại bài làm</h3>
+  <h3 class="review-heading">Review Your Answers</h3>
   {#each reviewSections as { section, startNumber }, si (si)}
     <section class="review-section">
       <h4 class="review-section__title" style="font-family: var(--font-japanese)">{section.title}</h4>

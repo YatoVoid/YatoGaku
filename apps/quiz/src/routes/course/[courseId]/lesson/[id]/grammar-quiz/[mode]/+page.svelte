@@ -116,12 +116,12 @@
 
 <div class="quiz-page">
 {#if isComplete}
-    <QuizSummary title="Hoàn thành luyện ngữ pháp" {score} total={questions.length}>
+    <QuizSummary title="Grammar Practice Complete" {score} total={questions.length}>
         <button class="ui-button" data-variant="default" on:click={restart}>Try Again</button>
         <a href="{base}/course/{courseId}/lesson/{lessonId}" class="ui-button" data-variant="secondary">Back to Lesson</a>
     </QuizSummary>
   {:else if currentQ}
-    <QuizFrame title={currentQ.type === 'fill-blank' ? 'Điền mẫu ngữ pháp' : 'Chọn mẫu ngữ pháp'} context={`${courseId.toUpperCase()} · Bài ${lessonId}`} current={currentIndex + 1} total={questions.length} shortcuts={currentQ.type === 'fill-blank' ? ['Enter: trả lời / tiếp tục'] : ['1–4: chọn đáp án']}>
+    <QuizFrame title={currentQ.type === 'fill-blank' ? 'Fill in the Grammar' : 'Choose the Grammar'} context={`${courseId.toUpperCase()} · Lesson ${lessonId}`} current={currentIndex + 1} total={questions.length} shortcuts={currentQ.type === 'fill-blank' ? ['Enter: answer / continue'] : ['1-4: choose answer']}>
     <div class="question-card">
       {#if currentQ.type === 'fill-blank'}
         <div class="q-label">Fill in the blank:</div>
@@ -179,9 +179,9 @@
 
         {#if answered}
           <div class="feedback" class:correct={selectedOption === currentQ.answer} class:wrong={selectedOption !== currentQ.answer} aria-live="polite">
-            {selectedOption === currentQ.answer ? 'Chính xác.' : `Đáp án đúng: ${currentQ.answer}`}
+            {selectedOption === currentQ.answer ? 'Correct.' : `Correct answer: ${currentQ.answer}`}
           </div>
-          <button class="ui-button" data-variant="default" on:click={advance}>Câu tiếp theo</button>
+          <button class="ui-button" data-variant="default" on:click={advance}>Next question</button>
         {/if}
 
         {#if !answered}

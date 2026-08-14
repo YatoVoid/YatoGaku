@@ -21,34 +21,33 @@
 
   const directions: { value: QuizDirection; label: string; description: string }[] = [
     { value: 'ja-en', label: 'Japanese → English', description: 'Recognize meaning' },
-    { value: 'ja-vi', label: 'Nhật → Việt', description: 'Nhận diện nghĩa' },
-    { value: 'vi-ja', label: 'Việt → Nhật', description: 'Gợi nhớ từ Nhật' },
-    { value: 'vi-romaji', label: 'Việt → Romaji', description: 'Luyện cách đọc' }
+    { value: 'en-ja', label: 'English → Japanese', description: 'Recall the Japanese word' },
+    { value: 'ja-romaji', label: 'Japanese → Romaji', description: 'Practice reading' }
   ];
 
   function startQuiz(mode: string) { goto(buildQuizUrl(courseId, mode, lessonId, selectedDirection)); }
 </script>
 
-<svelte:head><title>{lesson?.title || 'Bài học'} · {course?.metadata.title || 'Smart Quiz'}</title></svelte:head>
+<svelte:head><title>{lesson?.title || 'Lesson'} · {course?.metadata.title || 'YatoGaku'}</title></svelte:head>
 
 {#if lesson && course}
   <div class="lesson-workspace">
     <header class="lesson-heading">
-      <p class="eyebrow">{course.metadata.level} · Bài {lesson.lessonNumber}</p>
+      <p class="eyebrow">{course.metadata.level} · Lesson {lesson.lessonNumber}</p>
       <h1>{lesson.title}</h1>
-      <p>{lesson.vocabulary.length} từ vựng · {lesson.grammar.length} mẫu ngữ pháp</p>
-      <div class="mastery"><span>Tiến trình bài học</span><strong>{mastery}%</strong></div>
-      <Progress value={mastery} label={`Tiến trình bài ${lesson.lessonNumber}: ${mastery}%`} />
+      <p>{lesson.vocabulary.length} vocabulary words · {lesson.grammar.length} grammar points</p>
+      <div class="mastery"><span>Lesson progress</span><strong>{mastery}%</strong></div>
+      <Progress value={mastery} label={`Lesson ${lesson.lessonNumber} progress: ${mastery}%`} />
     </header>
 
     <section class="next-step" aria-labelledby="next-title">
-      <div><p class="eyebrow">Nên học tiếp</p><h2 id="next-title">{mastery === 0 ? 'Làm quen từ vựng bằng flashcard' : 'Củng cố phần đang học'}</h2><p>{mastery === 0 ? 'Xem từng từ trước, chưa cần nhớ hoàn hảo.' : 'Một lượt ngắn giúp xác định chính xác phần cần ôn.'}</p></div>
-      <button class="primary-study" on:click={() => startQuiz('flashcard')}>Bắt đầu flashcard <ArrowRight size={20} aria-hidden="true" /></button>
+      <div><p class="eyebrow">Recommended next</p><h2 id="next-title">{mastery === 0 ? 'Get familiar with the vocabulary via flashcards' : 'Reinforce what you\'re studying'}</h2><p>{mastery === 0 ? 'Look through each word first, no need to memorize perfectly yet.' : 'A short round helps pinpoint what needs review.'}</p></div>
+      <button class="primary-study" on:click={() => startQuiz('flashcard')}>Start flashcards <ArrowRight size={20} aria-hidden="true" /></button>
     </section>
 
     <section class="direction" aria-labelledby="direction-title">
-      <div class="section-title"><Languages size={20} aria-hidden="true" /><div><h2 id="direction-title">Chiều luyện tập</h2><p>Áp dụng cho các quiz bên dưới</p></div></div>
-      <div class="direction-options" role="radiogroup" aria-label="Chiều luyện tập">
+      <div class="section-title"><Languages size={20} aria-hidden="true" /><div><h2 id="direction-title">Practice direction</h2><p>Applies to the quizzes below</p></div></div>
+      <div class="direction-options" role="radiogroup" aria-label="Practice direction">
         {#each directions as direction}
           <button role="radio" aria-checked={selectedDirection === direction.value} class:active={selectedDirection === direction.value} on:click={() => selectedDirection = direction.value}>
             <strong>{direction.label}</strong><span>{direction.description}</span>
@@ -58,26 +57,26 @@
     </section>
 
     <section class="study-sections" aria-labelledby="materials-title">
-      <div class="section-title"><BookOpen size={20} aria-hidden="true" /><div><h2 id="materials-title">Nội dung bài học</h2><p>Đọc trước, luyện tập sau</p></div></div>
+      <div class="section-title"><BookOpen size={20} aria-hidden="true" /><div><h2 id="materials-title">Lesson materials</h2><p>Read first, practice after</p></div></div>
       <div class="study-list">
-        <button on:click={() => goto(buildVocabularyUrl(courseId, lessonId))}><Library size={20} aria-hidden="true" /><span><strong>Từ vựng</strong><small>{lesson.vocabulary.length} từ · nghe, tìm kiếm và chọn để luyện</small></span><ArrowRight size={16} aria-hidden="true" /></button>
-        <button on:click={() => goto(buildGrammarUrl(courseId, lessonId))}><PenLine size={20} aria-hidden="true" /><span><strong>Ngữ pháp</strong><small>{lesson.grammar.length} mẫu · giải thích và ví dụ</small></span><ArrowRight size={16} aria-hidden="true" /></button>
-        <a href="{base}/kanji"><Layers size={20} aria-hidden="true" /><span><strong>Kanji liên quan</strong><small>Mở bàn học Kanji theo cấp độ</small></span><ArrowRight size={16} aria-hidden="true" /></a>
-        <a href="{base}/conversations"><MessageCircle size={20} aria-hidden="true" /><span><strong>Hội thoại</strong><small>Đặt từ và mẫu câu vào ngữ cảnh</small></span><ArrowRight size={16} aria-hidden="true" /></a>
+        <button on:click={() => goto(buildVocabularyUrl(courseId, lessonId))}><Library size={20} aria-hidden="true" /><span><strong>Vocabulary</strong><small>{lesson.vocabulary.length} words: listen, search, and select to practice</small></span><ArrowRight size={16} aria-hidden="true" /></button>
+        <button on:click={() => goto(buildGrammarUrl(courseId, lessonId))}><PenLine size={20} aria-hidden="true" /><span><strong>Grammar</strong><small>{lesson.grammar.length} patterns: explanations and examples</small></span><ArrowRight size={16} aria-hidden="true" /></button>
+        <a href="{base}/kanji"><Layers size={20} aria-hidden="true" /><span><strong>Related kanji</strong><small>Open the kanji study desk by level</small></span><ArrowRight size={16} aria-hidden="true" /></a>
+        <a href="{base}/conversations"><MessageCircle size={20} aria-hidden="true" /><span><strong>Conversations</strong><small>See words and patterns used in context</small></span><ArrowRight size={16} aria-hidden="true" /></a>
       </div>
     </section>
 
     <section class="practice" aria-labelledby="practice-title">
-      <div class="section-title"><CheckCircle2 size={20} aria-hidden="true" /><div><h2 id="practice-title">Luyện tập</h2><p>Chọn cách nhớ phù hợp</p></div></div>
+      <div class="section-title"><CheckCircle2 size={20} aria-hidden="true" /><div><h2 id="practice-title">Practice</h2><p>Pick the way you remember best</p></div></div>
       <div class="practice-list">
-        <button on:click={() => startQuiz('multiple-choice')}><CheckCircle2 size={20} aria-hidden="true" /><span><strong>Chọn đáp án</strong><small>Nhận phản hồi ngay, dùng phím 1–4</small></span><ArrowRight size={16} aria-hidden="true" /></button>
-        <button on:click={() => startQuiz('typing')}><Keyboard size={20} aria-hidden="true" /><span><strong>Nhập câu trả lời</strong><small>Gợi nhớ chủ động bằng bàn phím</small></span><ArrowRight size={16} aria-hidden="true" /></button>
-        {#if lesson.grammar.length > 0}<button on:click={() => goto(`${base}/course/${courseId}/lesson/${lessonId}/grammar-quiz/mixed`)}><PenLine size={20} aria-hidden="true" /><span><strong>Quiz ngữ pháp</strong><small>Điền chỗ trống và nhận diện mẫu câu</small></span><ArrowRight size={16} aria-hidden="true" /></button>{/if}
+        <button on:click={() => startQuiz('multiple-choice')}><CheckCircle2 size={20} aria-hidden="true" /><span><strong>Multiple choice</strong><small>Instant feedback, use keys 1-4</small></span><ArrowRight size={16} aria-hidden="true" /></button>
+        <button on:click={() => startQuiz('typing')}><Keyboard size={20} aria-hidden="true" /><span><strong>Type the answer</strong><small>Active recall using the keyboard</small></span><ArrowRight size={16} aria-hidden="true" /></button>
+        {#if lesson.grammar.length > 0}<button on:click={() => goto(`${base}/course/${courseId}/lesson/${lessonId}/grammar-quiz/mixed`)}><PenLine size={20} aria-hidden="true" /><span><strong>Grammar quiz</strong><small>Fill in the blank and identify patterns</small></span><ArrowRight size={16} aria-hidden="true" /></button>{/if}
       </div>
     </section>
   </div>
 {:else}
-  <PageEmpty title="Không tìm thấy bài học" description="Bài học này không tồn tại hoặc chưa sẵn sàng." action={{ label: 'Về danh sách khóa học', href: '/courses' }} />
+  <PageEmpty title="Lesson not found" description="This lesson doesn't exist or isn't ready yet." action={{ label: 'Back to courses', href: '/courses' }} />
 {/if}
 
 <style>

@@ -21,11 +21,11 @@
   onMount(() => { hasAudioSupport = 'speechSynthesis' in window; });
 
   const levels = [
-    { id: 'n5', label: 'N5', desc: 'Cơ bản' },
-    { id: 'n4', label: 'N4', desc: 'Sơ cấp' },
-    { id: 'n3', label: 'N3', desc: 'Trung cấp' },
-    { id: 'n2', label: 'N2', desc: 'Trung cao' },
-    { id: 'n1', label: 'N1', desc: 'Cao cấp' },
+    { id: 'n5', label: 'N5', desc: 'Beginner' },
+    { id: 'n4', label: 'N4', desc: 'Elementary' },
+    { id: 'n3', label: 'N3', desc: 'Intermediate' },
+    { id: 'n2', label: 'N2', desc: 'Upper-intermediate' },
+    { id: 'n1', label: 'N1', desc: 'Advanced' },
   ];
 
   $: conversations = getConversations(selectedLevel);
@@ -36,20 +36,20 @@
 </script>
 
 <svelte:head>
-  <title>Mẫu câu giao tiếp — Smart Quiz</title>
+  <title>Conversation Patterns — YatoGaku</title>
 </svelte:head>
 
 <PageWorkspace size="lg">
   <PageHero
     eyebrow="Conversation patterns"
-    title="Mẫu câu giao tiếp"
-    subtitle="Hội thoại thực tế, mẫu câu, mẹo ghi nhớ và phát âm để biến kiến thức bài học thành phản xạ."
+    title="Conversation Patterns"
+    subtitle="Real conversations, sentence patterns, memory tips, and pronunciation to turn lesson knowledge into reflex."
   />
 
   <div class="flex flex-col gap-6">
 
     <p class="text-sm text-muted-foreground" role="status">
-      {hasAudioSupport ? 'Hội thoại dùng giọng đọc trên thiết bị; khả năng ngoại tuyến phụ thuộc gói giọng tiếng Nhật đã cài.' : 'Thiết bị này không hỗ trợ phát âm tự động; nội dung hội thoại vẫn khả dụng ngoại tuyến.'}
+      {hasAudioSupport ? 'Conversations use the device\'s built-in voice; offline availability depends on the installed Japanese voice pack.' : 'This device does not support automatic pronunciation; conversation content is still available offline.'}
     </p>
 
     <FilterTabs
@@ -88,7 +88,7 @@
               <!-- Sentence Patterns -->
               <div>
                 <h4 class="text-xs font-semibold uppercase tracking-wider text-foreground/70 mb-3 flex items-center gap-1.5">
-                  <Globe size={12} aria-hidden="true" /> Mẫu câu
+                  <Globe size={12} aria-hidden="true" /> Patterns
                 </h4>
                 <div class="flex flex-col gap-3">
                   {#each conv.patterns as pat}
@@ -98,7 +98,7 @@
                         <button
                           class="flex-shrink-0 p-1 rounded hover:bg-muted transition-colors"
                           on:click|stopPropagation={() => playJapaneseAudio(pat.kana)}
-                          aria-label="Phát âm"
+                          aria-label="Play pronunciation"
                         >
                           <Volume2 size={16} class="text-muted-foreground" aria-hidden="true" />
                         </button>
@@ -117,7 +117,7 @@
               <!-- Dialogue -->
               <div>
                 <h4 class="text-xs font-semibold uppercase tracking-wider text-foreground/70 mb-3 flex items-center gap-1.5">
-                  <MessageCircle size={12} aria-hidden="true" /> Hội thoại
+                  <MessageCircle size={12} aria-hidden="true" /> Conversations
                 </h4>
                 <div class="bg-muted/20 rounded-xl p-4 space-y-3">
                   {#each conv.dialogue as line}
@@ -129,7 +129,7 @@
                           <button
                             class="flex-shrink-0 p-0.5 rounded hover:bg-muted transition-colors"
                             on:click|stopPropagation={() => playJapaneseAudio(line.kana)}
-                            aria-label="Phát âm"
+                            aria-label="Play pronunciation"
                           >
                             <Volume2 size={12} class="text-muted-foreground" aria-hidden="true" />
                           </button>
@@ -145,7 +145,6 @@
               <!-- Cultural Note -->
               {#if conv.culturalNote}
                 <div class="flex items-start gap-2 bg-primary/5 border border-primary/10 rounded-xl p-4">
-                  <span class="text-base flex-shrink-0">🇯🇵</span>
                   <p class="text-xs text-foreground/80 leading-relaxed">{conv.culturalNote}</p>
                 </div>
               {/if}

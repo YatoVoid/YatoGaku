@@ -75,7 +75,7 @@
         <!-- Tips/Introduction Section -->
         {#if comparison.tips}
           <div class="comparison-intro">
-            <div class="comparison-intro-title"><Lightbulb size={16} aria-hidden="true" /> Mẹo phân biệt</div>
+            <div class="comparison-intro-title"><Lightbulb size={16} aria-hidden="true" /> Distinguishing tip</div>
             <div class="comparison-intro-text">{comparison.tips}</div>
           </div>
         {/if}
@@ -107,7 +107,7 @@
         <!-- Examples Section -->
         {#if comparison.examples && comparison.examples.length > 0}
           <div class="comparison-examples-section">
-            <div class="comparison-examples-title"><Edit3 size={16} aria-hidden="true" /> Ví dụ minh họa</div>
+            <div class="comparison-examples-title"><Edit3 size={16} aria-hidden="true" /> Example sentences</div>
             <div class="comparison-examples-grid">
               {#each comparison.examples as example}
                 <div class="comparison-example-card">
@@ -126,7 +126,7 @@
         <!-- Common Mistakes Section -->
         {#if comparison.commonMistakes && comparison.commonMistakes.length > 0}
           <div class="comparison-mistakes">
-            <div class="comparison-mistakes-title"><AlertTriangle size={16} aria-hidden="true" /> Lỗi thường gặp</div>
+            <div class="comparison-mistakes-title"><AlertTriangle size={16} aria-hidden="true" /> Common mistakes</div>
             <ul class="comparison-mistakes-list">
               {#each comparison.commonMistakes as mistake}
                 <li>{mistake}</li>

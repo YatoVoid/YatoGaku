@@ -104,7 +104,7 @@
     bind:this={canvas}
     width={size}
     height={size}
-    aria-label={character ? `Vùng luyện viết Kanji ${character}` : 'Vùng luyện viết Kanji'}
+    aria-label={character ? `Kanji writing practice area for ${character}` : 'Kanji writing practice area'}
     aria-describedby="canvas-alternative"
     on:mousedown={startDraw}
     on:mousemove={draw}
@@ -115,8 +115,8 @@
     on:touchend={endDraw}
   ></canvas>
   <p id="canvas-alternative" class="canvas-alternative">
-    {#if character}Mẫu cần viết: <strong>{character}</strong>.{/if}
-    Canvas là bài luyện tùy chọn; người dùng bàn phím có thể học thứ tự nét trong phần mô tả nét. Đã vẽ {strokes.length} nét.
+    {#if character}Character to write: <strong>{character}</strong>.{/if}
+    The canvas is an optional exercise; keyboard users can learn the stroke order from the description above. {strokes.length} strokes drawn.
   </p>
   <div class="canvas-controls">
     <button class="ctrl-btn" on:click={undo} disabled={strokes.length === 0}>Undo</button>

@@ -15,12 +15,12 @@ describe('Wave 3 shared quiz contract', () => {
   it('defines one progress, direction and shortcut frame', () => {
     expect(frame).toContain('<Progress');
     expect(frame).toContain('quiz-direction');
-    expect(frame).toContain('aria-label="Phím tắt"');
+    expect(frame).toContain('aria-label="Shortcuts"');
   });
 
   it('defines an actionable shared result vocabulary', () => {
-    expect(summary).toContain('Kết quả phiên học');
-    expect(summary).toContain('Ưu tiên ôn lại câu sai');
+    expect(summary).toContain('Session Results');
+    expect(summary).toContain('Review missed questions first');
   });
 
   it('migrates every learning quiz family to the shared frame', () => {

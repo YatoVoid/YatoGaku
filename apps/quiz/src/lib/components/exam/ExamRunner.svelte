@@ -1,6 +1,6 @@
 <script lang="ts">
   /**
-   * Exam runner — the "làm đề" experience for one paper.
+   * Exam runner — the exam-taking experience for one paper.
    *
    * Phases: intro -> running -> result.
    * Section-by-section navigation, a countdown timer that auto-submits at 0,
@@ -23,7 +23,7 @@
   type Phase = 'intro' | 'running' | 'result';
 
   const totalQuestions = $derived(paper.sections.reduce((n, s) => n + s.questions.length, 0));
-  // Global 1-based start number for each section (for "Câu N" labels).
+  // Global 1-based start number for each section (for "Question N" labels).
   const sectionStart = $derived(
     (() => {
       let offset = 0;
@@ -167,9 +167,9 @@
       <Badge variant="secondary" class="font-bold mb-2">{paper.level}</Badge>
       <h1 class="intro__title">{paper.title}</h1>
       <div class="intro__meta">
-        <span>{totalQuestions} câu hỏi</span>
+        <span>{totalQuestions} questions</span>
         <span aria-hidden="true">·</span>
-        <span>{paper.durationMinutes} phút</span>
+        <span>{paper.durationMinutes} min</span>
       </div>
 
       <ul class="intro__sections">
@@ -177,23 +177,23 @@
           <li>
             <span class="intro__sec-label">{sectionTypeLabel(s.type)}</span>
             <span class="intro__sec-title" style="font-family: var(--font-japanese)">{s.title}</span>
-            <span class="intro__sec-count">{s.questions.length} câu</span>
+            <span class="intro__sec-count">{s.questions.length} questions</span>
           </li>
         {/each}
       </ul>
 
       {#if paper.source?.name}
         <p class="intro__source">
-          Nguồn: {[paper.source.name, paper.source.license].filter(Boolean).join(' · ')}
+          Source: {[paper.source.name, paper.source.license].filter(Boolean).join(' · ')}
         </p>
       {/if}
 
       <div class="intro__actions">
-        {#if resumable}<Button size="lg" onclick={resume}>Tiếp tục bài đang làm</Button>{/if}
-        <Button size="lg" onclick={start}>Bắt đầu làm bài</Button>
-        <a class="intro__back" href="{base}/exams">Quay lại danh sách</a>
+        {#if resumable}<Button size="lg" onclick={resume}>Resume in-progress exam</Button>{/if}
+        <Button size="lg" onclick={start}>Start exam</Button>
+        <a class="intro__back" href="{base}/exams">Back to list</a>
       </div>
-      <p class="intro__hint">Hết giờ sẽ tự động nộp bài. Cần ≥ 60% để đạt.</p>
+      <p class="intro__hint">Submits automatically when time runs out. Need ≥ 60% to pass.</p>
     </div>
   {:else if phase === 'result' && result}
     <ExamResultView {paper} {result} {answers} onretake={retake} />
@@ -204,19 +204,19 @@
         class="timer {lowTime ? 'timer--low' : ''}"
         role="timer"
         aria-live="off"
-        aria-label="Thời gian còn lại"
+        aria-label="Time remaining"
       >
         <Clock size={16} aria-hidden="true" />
         <span class="timer__value">{minutes}:{seconds.toString().padStart(2, '0')}</span>
       </div>
       <div class="topbar__progress">
         <Progress value={answeredCount} max={totalQuestions} class="h-2" />
-        <span class="topbar__count">{answeredCount}/{totalQuestions} đã trả lời</span>
+        <span class="topbar__count">{answeredCount}/{totalQuestions} answered</span>
       </div>
     </div>
 
     <!-- Section chips -->
-    <div class="chips" role="tablist" aria-label="Các phần thi">
+    <div class="chips" role="tablist" aria-label="Exam sections">
       {#each paper.sections as s, i (i)}
         <button
           type="button"
@@ -259,20 +259,20 @@
     <!-- Bottom nav -->
     <div class="nav">
       <Button variant="outline" onclick={goPrev} disabled={isFirstSection}>
-        <ChevronLeft size={16} aria-hidden="true" /> Phần trước
+        <ChevronLeft size={16} aria-hidden="true" /> Previous section
       </Button>
       {#if isLastSection}
-        <Button onclick={requestSubmit}>Nộp bài</Button>
+        <Button onclick={requestSubmit}>Submit</Button>
       {:else}
         <Button onclick={goNext}>
-          Phần sau <ChevronRight size={16} aria-hidden="true" />
+          Next section <ChevronRight size={16} aria-hidden="true" />
         </Button>
       {/if}
     </div>
 
     {#if !isLastSection}
       <button type="button" class="submit-anywhere" onclick={requestSubmit}>
-        Nộp bài ngay
+        Submit now
       </button>
     {/if}
   {/if}
@@ -281,16 +281,16 @@
   {#if showConfirm}
     <div class="confirm-overlay" role="dialog" aria-modal="true" aria-labelledby="confirm-title">
       <div class="confirm">
-        <h3 id="confirm-title" class="confirm__title">Nộp bài?</h3>
+        <h3 id="confirm-title" class="confirm__title">Submit exam?</h3>
         <p class="confirm__body">
-          Bạn đã trả lời {answeredCount}/{totalQuestions} câu.
+          You've answered {answeredCount}/{totalQuestions} questions.
           {#if answeredCount < totalQuestions}
-            Các câu chưa trả lời sẽ bị tính sai.
+            Unanswered questions will be marked incorrect.
           {/if}
         </p>
         <div class="confirm__actions">
-          <Button variant="secondary" onclick={cancelSubmit}>Tiếp tục làm</Button>
-          <Button onclick={submit}>Nộp bài</Button>
+          <Button variant="secondary" onclick={cancelSubmit}>Keep going</Button>
+          <Button onclick={submit}>Submit</Button>
         </div>
       </div>
     </div>

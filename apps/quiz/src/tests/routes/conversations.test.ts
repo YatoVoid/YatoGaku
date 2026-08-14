@@ -103,7 +103,7 @@ describe('Conversations Page', () => {
   describe('initial render', () => {
     it('renders the page title', () => {
       render(ConversationsPage);
-      expect(screen.getByText('Mẫu câu giao tiếp')).toBeInTheDocument();
+      expect(screen.getByText('Conversation Patterns')).toBeInTheDocument();
     });
 
     it('renders all 5 level buttons', () => {
@@ -158,7 +158,7 @@ describe('Conversations Page', () => {
 
       // Expand a card
       await user.click(screen.getByText('Tự giới thiệu'));
-      expect(screen.getByText('Mẫu câu')).toBeInTheDocument();
+      expect(screen.getByText('Patterns')).toBeInTheDocument();
 
       // Switch level
       await user.click(screen.getByRole('radio', { name: /N4/ }));
@@ -175,8 +175,8 @@ describe('Conversations Page', () => {
 
       await user.click(screen.getByText('Tự giới thiệu'));
 
-      expect(screen.getByText('Mẫu câu')).toBeInTheDocument();
-      expect(screen.getByText('Hội thoại')).toBeInTheDocument();
+      expect(screen.getByText('Patterns')).toBeInTheDocument();
+      expect(screen.getByText('Conversations')).toBeInTheDocument();
     });
 
     it('sets aria-expanded on the toggle button', async () => {
@@ -207,8 +207,8 @@ describe('Conversations Page', () => {
       await user.click(screen.getByText('Tự giới thiệu'));
       await user.click(screen.getByText('Hỏi đường'));
 
-      // Count "Mẫu câu" section headers — should be exactly 1
-      expect(screen.getAllByText('Mẫu câu')).toHaveLength(1);
+      // Count "Patterns" section headers — should be exactly 1
+      expect(screen.getAllByText('Patterns')).toHaveLength(1);
     });
   });
 

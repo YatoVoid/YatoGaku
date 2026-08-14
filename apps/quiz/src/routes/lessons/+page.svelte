@@ -16,7 +16,7 @@
 </script>
 
 <svelte:head>
-  <title>Minna no Nihongo - Lessons | Smart Quiz</title>
+  <title>Minna no Nihongo - Lessons | YatoGaku</title>
 </svelte:head>
 
 <div class="lessons-page">
@@ -30,10 +30,10 @@
   <div class="lesson-grid">
     {#each lessons as lesson}
       <Card hover clickable onclick={() => handleLessonClick(lesson.lessonNumber)}>
-        <div class="lesson-number">Bài {lesson.lessonNumber}</div>
+        <div class="lesson-number">Lesson {lesson.lessonNumber}</div>
         <div class="lesson-title">{lesson.title}</div>
         <div class="lesson-meta">
-          {lesson.vocabCount} từ • {lesson.grammarCount} ngữ pháp
+          {lesson.vocabCount} words • {lesson.grammarCount} grammar points
         </div>
         <div class="lesson-progress-bar">
           <div class="fill" style="width: 0%"></div>

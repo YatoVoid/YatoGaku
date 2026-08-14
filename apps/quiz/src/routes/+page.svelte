@@ -23,7 +23,7 @@
   ];
 </script>
 
-<svelte:head><title>What do you want to study today? · Smart Quiz</title></svelte:head>
+<svelte:head><title>What do you want to study today? · YatoGaku</title></svelte:head>
 
 {#if dataError}
   <PageError message="Couldn't load study data." retry={() => location.reload()} />

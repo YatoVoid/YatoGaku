@@ -20,12 +20,12 @@
   $: mode = $page.params.mode as QuizMode;
   $: courseId = parseCourseFromUrl($page.url.searchParams);
   $: lessonId = parseInt($page.url.searchParams.get('lesson') || '0');
-  $: direction = ($page.url.searchParams.get('direction') || 'ja-vi') as QuizDirection;
+  $: direction = ($page.url.searchParams.get('direction') || 'ja-en') as QuizDirection;
 
   $: course = getCourse(courseId);
   $: lessonData = course?.getLessonData(lessonId) ?? null;
-  $: directionLabel = direction === 'ja-vi' ? 'Nhật → Việt' : direction === 'vi-ja' ? 'Việt → Nhật' : direction === 'vi-romaji' ? 'Việt → Romaji' : direction === 'ja-en' ? 'Japanese → English' : direction === 'en-ja' ? 'English → Japanese' : direction === 'ja-romaji' ? 'Nhật → Romaji' : direction;
-  $: shortcutLabels = mode === 'flashcard' ? ['Space / Enter: lật thẻ', 'F1: nghe'] : mode === 'multiple-choice' ? ['1–4: chọn đáp án', 'F1: nghe'] : ['Enter: trả lời / tiếp tục', 'F1: nghe'];
+  $: directionLabel = direction === 'ja-en' ? 'Japanese → English' : direction === 'en-ja' ? 'English → Japanese' : direction === 'ja-romaji' ? 'Japanese → Romaji' : direction;
+  $: shortcutLabels = mode === 'flashcard' ? ['Space / Enter: flip card', 'F1: listen'] : mode === 'multiple-choice' ? ['1–4: choose answer', 'F1: listen'] : ['Enter: answer / continue', 'F1: listen'];
 
   let mcOptions: string[] = [];
   let flipped = false;
@@ -83,11 +83,11 @@
 </script>
 
 <svelte:head>
-  <title>Quiz - {lessonData?.title || 'Smart Quiz'}</title>
+  <title>Quiz - {lessonData?.title || 'YatoGaku'}</title>
 </svelte:head>
 
 {#if lessonData && $currentQuestion}
-  <QuizFrame title={mode === 'flashcard' ? 'Flashcard' : mode === 'multiple-choice' ? 'Chọn đáp án' : 'Nhập câu trả lời'} context={`${course?.metadata.level ?? courseId.toUpperCase()} · Bài ${lessonId}`} direction={directionLabel} current={$progress.current} total={$progress.total} shortcuts={shortcutLabels}>
+  <QuizFrame title={mode === 'flashcard' ? 'Flashcard' : mode === 'multiple-choice' ? 'Multiple Choice' : 'Type the Answer'} context={`${course?.metadata.level ?? courseId.toUpperCase()} · Lesson ${lessonId}`} direction={directionLabel} current={$progress.current} total={$progress.total} shortcuts={shortcutLabels}>
     {#if mode === 'flashcard' && 'japanese' in $currentQuestion.item}
       <FlashCard
         item={$currentQuestion.item}

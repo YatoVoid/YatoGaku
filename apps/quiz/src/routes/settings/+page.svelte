@@ -50,10 +50,9 @@
   $: settings = $progressStore.settings;
 
   const directions: { value: QuizDirection; label: string }[] = [
-    { value: 'ja-vi', label: 'Japanese → Vietnamese' },
-    { value: 'vi-ja', label: 'Vietnamese → Japanese' },
     { value: 'ja-en', label: 'Japanese → English' },
-    { value: 'en-ja', label: 'English → Japanese' }
+    { value: 'en-ja', label: 'English → Japanese' },
+    { value: 'ja-romaji', label: 'Japanese → Romaji' }
   ];
 
   function handleDirectionChange(e: Event) {
@@ -114,7 +113,7 @@
 </script>
 
 <svelte:head>
-  <title>Settings - Smart Quiz</title>
+  <title>Settings - YatoGaku</title>
 </svelte:head>
 
 <PageWorkspace size="md">

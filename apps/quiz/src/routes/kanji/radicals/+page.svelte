@@ -26,27 +26,27 @@
 </script>
 
 <svelte:head>
-  <title>214 Bộ Thủ - Smart Quiz</title>
+  <title>214 Radicals - YatoGaku</title>
 </svelte:head>
 
 <PageWorkspace size="xl">
   <PageHero
     eyebrow="Kanji building blocks"
-    title="214 Bộ Thủ"
-    subtitle="Tra cứu Kangxi radicals để nhận diện cấu trúc chữ Hán nhanh hơn trước khi học Kanji theo bài."
+    title="214 Radicals"
+    subtitle="Look up Kangxi radicals to recognize kanji structure faster before studying kanji by lesson."
     script="japanese"
   />
 
-  <SearchInput bind:value={searchTerm} placeholder="Tìm bộ thủ theo chữ, nghĩa Việt hoặc English..." />
+  <SearchInput bind:value={searchTerm} placeholder="Search radicals by character or meaning..." />
 
   {#if selectedRadical}
-    <section class="grid gap-4 rounded-surface border border-border bg-card p-5" aria-label="Kanji chứa bộ thủ đã chọn">
+    <section class="grid gap-4 rounded-surface border border-border bg-card p-5" aria-label="Kanji containing the selected radical">
       <div class="flex flex-wrap items-center justify-between gap-3">
         <div>
-          <p class="text-xs font-bold uppercase tracking-[0.12em] text-primary">Đang chọn</p>
+          <p class="text-xs font-bold uppercase tracking-[0.12em] text-primary">Selected</p>
           <h2 class="font-japanese text-3xl font-bold text-foreground">{selectedRadical}</h2>
         </div>
-        <UiButton variant="secondary" size="sm" onclick={() => selectedRadical = null}>Xem tất cả bộ thủ</UiButton>
+        <UiButton variant="secondary" size="sm" onclick={() => selectedRadical = null}>View all radicals</UiButton>
       </div>
 
       <div class="flex flex-wrap gap-2">
@@ -54,13 +54,13 @@
           <span class="font-japanese rounded-control bg-muted px-3 py-2 text-xl font-bold text-foreground">{k}</span>
         {/each}
         {#if kanjiList.length === 0}
-          <p class="text-sm text-muted-foreground">Chưa có Kanji trong dữ liệu hiện tại.</p>
+          <p class="text-sm text-muted-foreground">No kanji in the current data yet.</p>
         {/if}
       </div>
     </section>
   {/if}
 
-  <section class="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6" aria-label="Danh sách bộ thủ">
+  <section class="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6" aria-label="Radical list">
     {#each filtered as r}
       <a
         href="{base}/kanji/radicals/{encodeURIComponent(r.character)}"
@@ -69,9 +69,8 @@
         class:bg-primary-subtle={selectedRadical === r.character}
       >
         <span class="font-japanese text-4xl font-bold leading-none text-primary">{r.character}</span>
-        <span class="text-xs font-bold">{r.meaningVi}</span>
-        <span class="max-w-full truncate text-[0.7rem] text-muted-foreground">{r.meaningEn}</span>
-        <span class="text-[0.65rem] text-muted-foreground">{r.strokeCount} nét</span>
+        <span class="text-xs font-bold">{r.meaningEn}</span>
+        <span class="text-[0.65rem] text-muted-foreground">{r.strokeCount} strokes</span>
       </a>
     {/each}
   </section>

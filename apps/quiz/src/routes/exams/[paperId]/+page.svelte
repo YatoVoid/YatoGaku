@@ -14,7 +14,7 @@
 </script>
 
 <svelte:head>
-  <title>{paper ? `${paper.title} - Smart Quiz` : 'Đề không tồn tại - Smart Quiz'}</title>
+  <title>{paper ? `${paper.title} - YatoGaku` : 'Paper not found - YatoGaku'}</title>
 </svelte:head>
 
 <PageWorkspace size="lg">
@@ -24,16 +24,15 @@
     {/key}
   {:else}
     <div class="rounded-surface border border-border bg-card p-8 text-center">
-      <div class="text-3xl mb-2">🔍</div>
-      <p class="text-sm font-bold mb-1">Không tìm thấy đề thi</p>
+      <p class="text-sm font-bold mb-1">Exam not found</p>
       <p class="text-xs text-muted-foreground mb-4">
-        Đề <code>{paperId}</code> không tồn tại hoặc đã bị gỡ.
+        Paper <code>{paperId}</code> doesn't exist or has been removed.
       </p>
       <a
         href="{base}/exams"
         class="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground no-underline hover:bg-primary/90"
       >
-        Về danh sách đề
+        Back to exam list
       </a>
     </div>
   {/if}

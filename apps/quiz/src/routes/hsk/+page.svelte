@@ -16,27 +16,27 @@
   $: levelOptions = levels.map(lvl => ({
     id: lvl.level,
     label: `HSK ${lvl.level}`,
-    description: `${lvl.wordCount} từ`
+    description: `${lvl.wordCount} words`
   }));
 
   const groupDescriptions: Record<string, string> = {
-    a: 'Từ phổ biến nhất',
-    b: 'Giao tiếp hằng ngày',
-    c: 'Học thuật & công việc',
-    d: 'Chuyên ngành',
-    e: 'Nâng cao'
+    a: 'Most common words',
+    b: 'Everyday communication',
+    c: 'Academic & work',
+    d: 'Specialized',
+    e: 'Advanced'
   };
 </script>
 
 <svelte:head>
-  <title>HSK {selectedLevel} — {totalWords} từ | Smart Quiz</title>
+  <title>HSK {selectedLevel} — {totalWords} words | YatoGaku</title>
 </svelte:head>
 
 <PageWorkspace size="lg">
   <PageHero
     eyebrow="Chinese vocabulary"
     title="HSK 汉语水平考试"
-    subtitle="Chinese Proficiency Test — {levels.reduce((s, l) => s + l.wordCount, 0)}+ từ vựng được chia theo cấp độ và nhóm học."
+    subtitle="Chinese Proficiency Test — {levels.reduce((s, l) => s + l.wordCount, 0)}+ vocabulary words organized by level and group."
     script="chinese"
   />
 
@@ -44,7 +44,7 @@
 
   <section class="grid gap-3" aria-label="HSK {selectedLevel} groups">
     <p class="text-sm text-muted-foreground">
-      HSK {selectedLevelData?.level ?? selectedLevel} — {totalWords} từ vựng, {groups.length} nhóm
+      HSK {selectedLevelData?.level ?? selectedLevel} — {totalWords} words, {groups.length} groups
     </p>
 
     {#each groups as group}
@@ -53,7 +53,7 @@
         href="{base}/hsk/{group.id}"
         title={group.title}
         subtitle={desc}
-        meta={`${group.words.length} từ`}
+        meta={`${group.words.length} words`}
       >
         {#snippet leading()}
           <span class="text-lg font-bold font-chinese">{group.id.toUpperCase()}</span>

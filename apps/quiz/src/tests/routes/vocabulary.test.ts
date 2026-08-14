@@ -172,8 +172,8 @@ describe('Vocabulary Page - Selection Feature', () => {
       await user.click(getVocabCards(container)[0]);
 
       expect(screen.getByText('Flashcard')).toBeInTheDocument();
-      expect(screen.getByText('Trắc nghiệm')).toBeInTheDocument();
-      expect(screen.getByText('Nhập chữ')).toBeInTheDocument();
+      expect(screen.getByText('Multiple choice')).toBeInTheDocument();
+      expect(screen.getByText('Type it')).toBeInTheDocument();
     });
 
     it('shows correct count in practice bar', async () => {
@@ -183,7 +183,7 @@ describe('Vocabulary Page - Selection Feature', () => {
       await user.click(getVocabCards(container)[0]);
       await user.click(getVocabCards(container)[1]);
 
-      const practiceBar = screen.getByTitle('Bỏ chọn tất cả').closest('.practice-bar')!;
+      const practiceBar = screen.getByTitle('Deselect all').closest('.practice-bar')!;
       expect(within(practiceBar as HTMLElement).getByText('2')).toBeInTheDocument();
     });
 
@@ -200,11 +200,11 @@ describe('Vocabulary Page - Selection Feature', () => {
   });
 
   describe('toggleFiltered — select/deselect all', () => {
-    it('selects all visible items on "Chọn tất cả" click', async () => {
+    it('selects all visible items on "Select all" click', async () => {
       const user = userEvent.setup();
       const { container } = renderPage();
 
-      await user.click(screen.getByText(/Chọn tất cả/));
+      await user.click(screen.getByText(/Select all/));
 
       getVocabCards(container).forEach(card => {
         expect(card).toHaveAttribute('aria-checked', 'true');
@@ -215,43 +215,43 @@ describe('Vocabulary Page - Selection Feature', () => {
       const user = userEvent.setup();
       const { container } = renderPage();
 
-      await user.click(screen.getByText(/Chọn tất cả/));
-      await user.click(screen.getByText(/Bỏ chọn/));
+      await user.click(screen.getByText(/Select all/));
+      await user.click(screen.getByText(/Deselect/));
 
       getVocabCards(container).forEach(card => {
         expect(card).toHaveAttribute('aria-checked', 'false');
       });
     });
 
-    it('button label changes to "Bỏ chọn" when all items selected', async () => {
+    it('button label changes to "Deselect" when all items selected', async () => {
       const user = userEvent.setup();
       renderPage();
 
-      await user.click(screen.getByText(/Chọn tất cả/));
+      await user.click(screen.getByText(/Select all/));
 
-      expect(screen.getByText(/Bỏ chọn/)).toBeInTheDocument();
+      expect(screen.getByText(/Deselect/)).toBeInTheDocument();
     });
 
-    it('button label reverts to "Chọn tất cả" after partial deselect', async () => {
+    it('button label reverts to "Select all" after partial deselect', async () => {
       const user = userEvent.setup();
       const { container } = renderPage();
 
-      await user.click(screen.getByText(/Chọn tất cả/));
+      await user.click(screen.getByText(/Select all/));
 
       // Deselect one card to make it partial
       await user.click(getVocabCards(container)[0]);
 
-      expect(screen.getByText(/Chọn tất cả/)).toBeInTheDocument();
+      expect(screen.getByText(/Select all/)).toBeInTheDocument();
     });
   });
 
   describe('clearSelection', () => {
-    it('"Xóa chọn" button clears all selected', async () => {
+    it('"Clear selection" button clears all selected', async () => {
       const user = userEvent.setup();
       const { container } = renderPage();
 
-      await user.click(screen.getByText(/Chọn tất cả/));
-      await user.click(screen.getByText('Xóa chọn'));
+      await user.click(screen.getByText(/Select all/));
+      await user.click(screen.getByText('Clear selection'));
 
       getVocabCards(container).forEach(card => {
         expect(card).toHaveAttribute('aria-checked', 'false');
@@ -263,14 +263,14 @@ describe('Vocabulary Page - Selection Feature', () => {
       const { container } = renderPage();
 
       await user.click(getVocabCards(container)[0]);
-      await user.click(screen.getByTitle('Bỏ chọn tất cả'));
+      await user.click(screen.getByTitle('Deselect all'));
 
       expect(screen.queryByText('Flashcard')).not.toBeInTheDocument();
     });
 
-    it('"Xóa chọn" button is only visible when something is selected', async () => {
+    it('"Clear selection" button is only visible when something is selected', async () => {
       renderPage();
-      expect(screen.queryByText('Xóa chọn')).not.toBeInTheDocument();
+      expect(screen.queryByText('Clear selection')).not.toBeInTheDocument();
     });
   });
 
@@ -293,7 +293,7 @@ describe('Vocabulary Page - Selection Feature', () => {
       const { container } = renderPage();
 
       await user.click(getVocabCards(container)[0]);
-      await user.click(screen.getByText('Trắc nghiệm'));
+      await user.click(screen.getByText('Multiple choice'));
 
       expect(goto).toHaveBeenCalledWith(expect.stringContaining('/quiz/multiple-choice'));
     });
@@ -303,7 +303,7 @@ describe('Vocabulary Page - Selection Feature', () => {
       const { container } = renderPage();
 
       await user.click(getVocabCards(container)[0]);
-      await user.click(screen.getByText('Nhập chữ'));
+      await user.click(screen.getByText('Type it'));
 
       expect(goto).toHaveBeenCalledWith(expect.stringContaining('/quiz/typing'));
     });
@@ -329,7 +329,7 @@ describe('Vocabulary Page - Selection Feature', () => {
       await user.click(getVocabCards(container)[0]);
       await user.click(getVocabCards(container)[1]);
 
-      expect(screen.getByText('2 đã chọn')).toBeInTheDocument();
+      expect(screen.getByText('2 selected')).toBeInTheDocument();
     });
 
     it('selected count updates on deselect', async () => {
@@ -340,7 +340,7 @@ describe('Vocabulary Page - Selection Feature', () => {
       await user.click(getVocabCards(container)[1]);
       await user.click(getVocabCards(container)[0]); // deselect first
 
-      expect(screen.getByText('1 đã chọn')).toBeInTheDocument();
+      expect(screen.getByText('1 selected')).toBeInTheDocument();
     });
   });
 });

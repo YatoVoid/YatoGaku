@@ -125,19 +125,19 @@
 </script>
 
 <svelte:head>
-  <title>HSK Quiz - Smart Quiz</title>
+  <title>HSK Quiz - YatoGaku</title>
 </svelte:head>
 
 <svelte:window on:keydown={handleKeydown} />
 
 <div class="quiz-page">
   {#if isComplete}
-    <QuizSummary title="Hoàn thành luyện HSK" {score} total={questions.length}>
-      <button class="ui-button" data-variant="default" on:click={restart}>Làm lại</button>
-      <a href="{base}/hsk/{groupId}" class="ui-button" data-variant="secondary">Về nhóm từ</a>
+    <QuizSummary title="HSK Practice Complete" {score} total={questions.length}>
+      <button class="ui-button" data-variant="default" on:click={restart}>Retry</button>
+      <a href="{base}/hsk/{groupId}" class="ui-button" data-variant="secondary">Back to group</a>
     </QuizSummary>
   {:else if currentQ}
-    <QuizFrame title={mode === 'flashcard' ? 'Flashcard HSK' : mode === 'mc' ? 'Chọn đáp án HSK' : 'Nhập đáp án HSK'} context={`HSK 5 · ${groupId}`} direction={direction} current={currentIndex + 1} total={questions.length} shortcuts={mode === 'mc' ? ['1–4: chọn đáp án', 'F1: nghe'] : mode === 'flashcard' ? ['Space / Enter: lật thẻ', 'F1: nghe'] : ['Enter: trả lời / tiếp tục', 'F1: nghe']}>
+    <QuizFrame title={mode === 'flashcard' ? 'HSK Flashcards' : mode === 'mc' ? 'HSK Multiple Choice' : 'HSK Typing'} context={`HSK 5 · ${groupId}`} direction={direction} current={currentIndex + 1} total={questions.length} shortcuts={mode === 'mc' ? ['1-4: choose answer', 'F1: listen'] : mode === 'flashcard' ? ['Space / Enter: flip card', 'F1: listen'] : ['Enter: answer / continue', 'F1: listen']}>
 
     {#if mode === 'flashcard'}
       <div class="flashcard" class:flipped tabindex="0" role="button" aria-label="Flip card" on:click={toggleFlip} on:keydown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleFlip(); } }}>
@@ -172,9 +172,9 @@
       </div>
       {#if answered}
         <div class="feedback" class:correct={selectedOption === currentQ.answer} class:wrong={selectedOption !== currentQ.answer} aria-live="polite">
-          {selectedOption === currentQ.answer ? 'Chính xác.' : `Đáp án đúng: ${currentQ.answer}`}
+          {selectedOption === currentQ.answer ? 'Correct.' : `Correct answer: ${currentQ.answer}`}
         </div>
-        <button class="ui-button" data-variant="default" on:click={advance}>Câu tiếp theo</button>
+        <button class="ui-button" data-variant="default" on:click={advance}>Next question</button>
       {/if}
 
     {:else if mode === 'typing'}

@@ -50,7 +50,7 @@
 </script>
 
 <svelte:head>
-  <title>Alphabet - Smart Quiz</title>
+  <title>Alphabet - YatoGaku</title>
 </svelte:head>
 
 <div class="min-h-screen pb-8">
@@ -58,7 +58,7 @@
   <div class="p-6 bg-secondary border-b border-border">
     <div class="flex items-center gap-4">
       <BackButton />
-      <h1 class="text-2xl font-bold text-foreground">🔤 Bảng chữ cái</h1>
+      <h1 class="text-2xl font-bold text-foreground">Alphabet</h1>
     </div>
   </div>
 
@@ -83,11 +83,11 @@
   <!-- Content -->
   <div class="p-6">
     <p class="mb-4 text-sm text-muted-foreground" role="status">
-      {hasAudioSupport ? 'Phát âm dùng giọng đọc trên thiết bị và có thể hoạt động ngoại tuyến.' : 'Thiết bị này không hỗ trợ phát âm tự động; bảng chữ vẫn dùng được đầy đủ.'}
+      {hasAudioSupport ? 'Pronunciation uses the device\'s built-in voice and can work offline.' : 'This device does not support automatic pronunciation; the chart is still fully usable.'}
     </p>
     <!-- Basic Characters Table -->
     <div class="mb-12">
-      <h2 class="text-xl font-bold text-foreground mb-6">Bảng cơ bản (46 ký tự)</h2>
+      <h2 class="text-xl font-bold text-foreground mb-6">Basic Chart (46 characters)</h2>
 
       <div class="overflow-x-auto rounded-lg bg-secondary p-4">
         <table class="w-full border-collapse text-base">
@@ -112,7 +112,7 @@
                       <td
                         class="alpha-cell py-4 px-2 text-center border border-border bg-background transition-colors duration-200"
                         class:alpha-cell--audio={hasAudioSupport}
-                        title={hasAudioSupport ? `Phát âm: ${cell.romaji}` : cell.romaji}
+                        title={hasAudioSupport ? `Pronounce: ${cell.romaji}` : cell.romaji}
                         on:click={() => speakKana(cell.kana)}
                         on:keydown={(e) => e.key === 'Enter' && speakKana(cell.kana)}
                         tabindex={hasAudioSupport ? 0 : -1}
@@ -146,7 +146,7 @@
             <div
               class="alpha-cell py-5 px-3 text-center border border-border bg-background rounded-lg transition-colors duration-200"
               class:alpha-cell--audio={hasAudioSupport}
-              title={hasAudioSupport ? `Phát âm: ${cell.romaji}` : cell.romaji}
+              title={hasAudioSupport ? `Pronounce: ${cell.romaji}` : cell.romaji}
               on:click={() => speakKana(cell.kana)}
               on:keydown={(e) => e.key === 'Enter' && speakKana(cell.kana)}
               tabindex={hasAudioSupport ? 0 : -1}
@@ -162,13 +162,13 @@
 
     <!-- Quiz Actions -->
     <div class="my-12 p-8 bg-secondary rounded-xl border-2 border-dashed border-border">
-      <h3 class="text-lg font-bold text-foreground mb-6 text-center">Luyện tập</h3>
+      <h3 class="text-lg font-bold text-foreground mb-6 text-center">Practice</h3>
       <div class="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-4">
         <Button variant="primary" size="lg">
-          🎯 Quiz {currentScript === 'hiragana' ? 'Hiragana' : 'Katakana'}
+          Quiz {currentScript === 'hiragana' ? 'Hiragana' : 'Katakana'}
         </Button>
         <Button variant="outline" size="lg">
-          🎲 Quiz cả hai
+          Quiz Both
         </Button>
       </div>
     </div>
@@ -176,7 +176,7 @@
     <!-- Audio Note -->
     {#if hasAudioSupport}
       <p class="text-center text-muted-foreground text-sm mt-8 italic">
-        💡 Nhấp vào ký tự để nghe phát âm
+        Click a character to hear its pronunciation
       </p>
     {/if}
   </div>

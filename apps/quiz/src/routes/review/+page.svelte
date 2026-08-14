@@ -126,7 +126,7 @@
 </script>
 
 <svelte:head>
-  <title>Review - Smart Quiz</title>
+  <title>Review - YatoGaku</title>
 </svelte:head>
 
 <svelte:window on:keydown={handleKeydown} />
@@ -134,8 +134,8 @@
 <PageWorkspace size="md">
   <PageHero
     eyebrow="Spaced repetition"
-    title="Ôn tập"
-    subtitle="Ôn những mục đến hạn, lật thẻ bằng Space/Enter và nghe phát âm bằng F1."
+    title="Review"
+    subtitle="Review items that are due, flip cards with Space/Enter, and hear pronunciation with F1."
   />
 
   <!-- Stats Bar -->
@@ -152,7 +152,7 @@
       {#if leechCount > 0}
         <div>
           <div class="text-[0.65rem] uppercase text-muted-foreground tracking-wider">Leeches</div>
-          <div class="text-sm font-semibold text-warning-text">🔁 {leechCount}</div>
+          <div class="text-sm font-semibold text-warning-text">{leechCount}</div>
         </div>
       {/if}
     </CardContent>
@@ -175,7 +175,6 @@
     <div class="space-y-3"><SkeletonCard /><SkeletonCard /></div>
   {:else if cards.length === 0}
     <div class="text-center py-12 text-muted-foreground">
-      <div class="text-5xl mb-3">🎉</div>
       <h2 class="text-lg font-bold text-foreground mb-2">All caught up!</h2>
       <p class="text-sm mb-4">No items due for review. Keep studying to build your review queue.</p>
       <UiButton onclick={() => goto(`${base}/courses`)}>Go to Courses</UiButton>
@@ -191,7 +190,7 @@
         </div>
         <div class="text-lg text-primary font-semibold mb-2">{Math.round((score / total) * 100)}%</div>
         {#if stats.streak > 0}
-          <div class="text-base font-semibold text-warning-text mb-4">🔥 {stats.streak} day streak!</div>
+          <div class="text-base font-semibold text-warning-text mb-4">{stats.streak} day streak!</div>
         {/if}
         <div class="flex gap-3 justify-center flex-wrap">
           <UiButton onclick={() => goto(`${base}/stats`)}>View Stats</UiButton>
@@ -247,11 +246,11 @@
     </div>
 
     <!-- Nav buttons -->
-    <div class="rating-grid mt-4" aria-label="Mức độ ghi nhớ">
-      <button class="ui-button" data-variant="destructive" on:click={handleWrong}><strong>Chưa nhớ</strong><small>Ôn lại sớm</small></button>
-      <button class="ui-button" data-variant="secondary" on:click={() => handleRating(3)}><strong>Khó</strong><small>Cần củng cố</small></button>
-      <button class="ui-button" data-variant="default" on:click={() => handleRating(4)}><strong>Nhớ</strong><small>Đúng nhịp</small></button>
-      <button class="ui-button" data-variant="success" on:click={() => handleRating(5)}><strong>Dễ</strong><small>Giãn lịch ôn</small></button>
+    <div class="rating-grid mt-4" aria-label="Memory rating">
+      <button class="ui-button" data-variant="destructive" on:click={handleWrong}><strong>Forgot</strong><small>Review again soon</small></button>
+      <button class="ui-button" data-variant="secondary" on:click={() => handleRating(3)}><strong>Hard</strong><small>Needs reinforcement</small></button>
+      <button class="ui-button" data-variant="default" on:click={() => handleRating(4)}><strong>Remembered</strong><small>Right on pace</small></button>
+      <button class="ui-button" data-variant="success" on:click={() => handleRating(5)}><strong>Easy</strong><small>Space out review</small></button>
     </div>
   {/if}
 </PageWorkspace>

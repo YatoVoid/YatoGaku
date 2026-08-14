@@ -63,7 +63,7 @@ describe('GrammarCard Component', () => {
     it('should render detail button', () => {
       render(GrammarCard, { props: { pattern: createMockPattern() } });
 
-      expect(screen.getByText(/Chi tiết/)).toBeInTheDocument();
+      expect(screen.getByText(/Details/)).toBeInTheDocument();
     });
   });
 
@@ -81,7 +81,7 @@ describe('GrammarCard Component', () => {
         props: { pattern: createMockPattern({ lessonNumber: 5 }) }
       });
 
-      expect(screen.getByText('Bài 5')).toBeInTheDocument();
+      expect(screen.getByText('Lesson 5')).toBeInTheDocument();
     });
 
     it('should render both JLPT and lesson tags', () => {
@@ -90,7 +90,7 @@ describe('GrammarCard Component', () => {
       });
 
       expect(screen.getByText('N4')).toBeInTheDocument();
-      expect(screen.getByText('Bài 3')).toBeInTheDocument();
+      expect(screen.getByText('Lesson 3')).toBeInTheDocument();
     });
 
     it('should not render JLPT tag when not provided', () => {
@@ -106,7 +106,7 @@ describe('GrammarCard Component', () => {
         props: { pattern: createMockPattern({ lessonNumber: undefined }) }
       });
 
-      expect(screen.queryByText(/Bài/)).not.toBeInTheDocument();
+      expect(screen.queryByText(/Lesson/)).not.toBeInTheDocument();
     });
 
     it('should have correct tag classes', () => {
@@ -181,7 +181,7 @@ describe('GrammarCard Component', () => {
         props: { pattern: createMockPattern() }
       });
 
-      const detailBtn = screen.getByText(/Chi tiết/);
+      const detailBtn = screen.getByText(/Details/);
       expect(detailBtn.tagName).toBe('BUTTON');
       // Should not throw when clicked
       await user.click(detailBtn);

@@ -49,7 +49,7 @@ export function getRouteMeta(pathname: string, base = ''): RouteMeta {
   const queryCourseMatch = path.match(/^\/quiz\//);
   const courseId = courseMatch?.[1] as CourseId | undefined;
   const lessonId = courseMatch?.[2] ? Number(courseMatch[2]) : undefined;
-  let title = path === '/' ? 'What do you want to study today?' : LABELS[segments.at(-1) ?? ''] ?? 'Smart Quiz';
+  let title = path === '/' ? 'What do you want to study today?' : LABELS[segments.at(-1) ?? ''] ?? 'YatoGaku';
 
   if (courseId && lessonId) {
     if (path.includes('/vocabulary')) title = 'Vocabulary';

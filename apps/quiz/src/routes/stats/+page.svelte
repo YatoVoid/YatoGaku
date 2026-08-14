@@ -29,30 +29,29 @@
 </script>
 
 <svelte:head>
-  <title>Statistics - Smart Quiz</title>
+  <title>Statistics - YatoGaku</title>
 </svelte:head>
 
 <PageWorkspace size="md">
   <PageHero
     eyebrow="Learning analytics"
-    title="Tiến trình"
-    subtitle="Theo dõi độ chính xác, streak, mastery và bài học nên ôn tiếp."
+    title="Progress"
+    subtitle="Track accuracy, streaks, mastery, and which lessons to review next."
   />
 
   {#if !hasData}
     <div class="text-center py-12 text-muted-foreground">
-      <div class="text-5xl mb-3">📊</div>
       <h2 class="text-lg font-bold text-foreground mb-2">No data yet</h2>
       <p class="text-sm">Start studying to see your statistics here!</p>
-      <a class="ui-button mt-4" data-variant="default" href="{base}/courses">Chọn bài để học</a>
+      <a class="ui-button mt-4" data-variant="default" href="{base}/courses">Choose a Lesson</a>
     </div>
   {:else}
     {#if weakestLesson}
       <section class="mb-4 rounded-surface border border-border bg-card p-4" aria-labelledby="next-action-title">
-        <p class="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Nên học tiếp</p>
-        <h2 id="next-action-title" class="text-lg font-bold">Củng cố bài {weakestLesson.lessonNumber}</h2>
-        <p class="text-sm text-muted-foreground mb-3">Độ chính xác hiện tại {weakestLesson.accuracy}%. Một lượt flashcard ngắn sẽ giúp tìm phần cần ôn.</p>
-        <a class="ui-button" data-variant="default" href="{base}/quiz/flashcard?lesson={weakestLesson.lessonNumber}">Ôn bài này</a>
+        <p class="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Recommended next</p>
+        <h2 id="next-action-title" class="text-lg font-bold">Reinforce Lesson {weakestLesson.lessonNumber}</h2>
+        <p class="text-sm text-muted-foreground mb-3">Current accuracy {weakestLesson.accuracy}%. A short flashcard round will help pinpoint what to review.</p>
+        <a class="ui-button" data-variant="default" href="{base}/quiz/flashcard?lesson={weakestLesson.lessonNumber}">Review This Lesson</a>
       </section>
     {/if}
     <!-- Overview Cards -->
@@ -76,7 +75,6 @@
     <Card class="mb-4">
       <CardContent class="py-4 flex items-center justify-between">
         <div class="flex items-center gap-3">
-          <span class="text-3xl">{streak.currentStreak > 0 ? '🔥' : '❄️'}</span>
           <div>
             <div class="text-2xl font-bold text-primary leading-none">{streak.currentStreak}</div>
             <div class="text-xs text-muted-foreground">day streak</div>
@@ -120,7 +118,7 @@
               <div class="h-4 bg-muted rounded-full overflow-hidden">
               <div
                   role="img"
-                  aria-label={`${getMasteryLabel(level)}: ${count} từ`}
+                  aria-label={`${getMasteryLabel(level)}: ${count} words`}
                   class="h-full rounded-full transition-colors duration-500"
                   style="width: {(count / maxMastery) * 100}%; background: {getMasteryColor(level)}; min-width: 2px"
                 ></div>

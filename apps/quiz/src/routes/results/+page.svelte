@@ -69,7 +69,7 @@
 </script>
 
 <svelte:head>
-  <title>Quiz Results - Smart Quiz</title>
+  <title>Quiz Results - YatoGaku</title>
 </svelte:head>
 
 {#if $quizStore.questions.length > 0}

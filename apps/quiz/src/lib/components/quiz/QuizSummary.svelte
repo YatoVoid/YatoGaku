@@ -10,23 +10,23 @@
     children: Snippet;
   }
 
-  let { title = 'Hoàn thành phiên học', score, total, message, children }: Props = $props();
+  let { title = 'Session Complete', score, total, message, children }: Props = $props();
   let percentage = $derived(total > 0 ? Math.round((score / total) * 100) : 0);
   let recovery = $derived(message ?? (percentage >= 80
-    ? 'Bạn đã nắm khá chắc. Tiếp tục bài kế tiếp khi sẵn sàng.'
-    : 'Những câu sai chính là danh sách ôn tập tốt nhất cho lượt tiếp theo.'));
+    ? 'You have a solid grasp of this. Continue to the next lesson when ready.'
+    : 'Missed questions make the best review list for next time.'));
 </script>
 
 <section class="quiz-summary" aria-labelledby="summary-title">
   <div class="summary-icon" class:strong={percentage >= 80}>
     {#if percentage >= 80}<CheckCircle2 size={24} aria-hidden="true" />{:else}<Target size={24} aria-hidden="true" />{/if}
   </div>
-  <p class="summary-eyebrow">Kết quả phiên học</p>
+  <p class="summary-eyebrow">Session Results</p>
   <h1 id="summary-title">{title}</h1>
-  <div class="score-line"><strong>{percentage}%</strong><span>{score}/{total} câu đúng</span></div>
+  <div class="score-line"><strong>{percentage}%</strong><span>{score}/{total} correct</span></div>
   <p class="summary-message">{recovery}</p>
   <div class="summary-actions">{@render children()}</div>
-  {#if percentage < 80}<p class="retry-note"><RotateCcw size={16} aria-hidden="true" /> Ưu tiên ôn lại câu sai trước khi làm lại toàn bộ.</p>{/if}
+  {#if percentage < 80}<p class="retry-note"><RotateCcw size={16} aria-hidden="true" /> Review missed questions first before retaking the whole thing.</p>{/if}
 </section>
 
 <style>

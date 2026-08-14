@@ -51,7 +51,7 @@
       tagList.push({ text: pattern.meta.difficulty, className: 'tag-difficulty' });
     }
     if (pattern.lessonNumber) {
-      tagList.push({ text: `Bài ${pattern.lessonNumber}`, className: 'tag-lesson' });
+      tagList.push({ text: `Lesson ${pattern.lessonNumber}`, className: 'tag-lesson' });
     }
     return tagList;
   })();
@@ -96,7 +96,7 @@
         <!-- Explanation -->
         {#if pattern.explanation}
           <div class="detail-section">
-            <div class="detail-section-title"><BookOpen size={16} aria-hidden="true" /> Giải thích</div>
+            <div class="detail-section-title"><BookOpen size={16} aria-hidden="true" /> Explanation</div>
             <div class="detail-explanation">{pattern.explanation}</div>
           </div>
         {/if}
@@ -104,7 +104,7 @@
         <!-- Tips -->
         {#if pattern.meta?.tips}
           <div class="detail-section">
-            <div class="detail-section-title"><Lightbulb size={16} aria-hidden="true" /> Mẹo ghi nhớ</div>
+            <div class="detail-section-title"><Lightbulb size={16} aria-hidden="true" /> Memory tip</div>
             <div class="detail-tip">{pattern.meta.tips}</div>
           </div>
         {/if}
@@ -112,7 +112,7 @@
         <!-- Mnemonics -->
         {#if pattern.meta?.mnemonics}
           <div class="detail-section">
-            <div class="detail-section-title"><Brain size={16} aria-hidden="true" /> Cách nhớ</div>
+            <div class="detail-section-title"><Brain size={16} aria-hidden="true" /> How to remember</div>
             <div class="detail-mnemonic">{pattern.meta.mnemonics}</div>
           </div>
         {/if}
@@ -120,7 +120,7 @@
         <!-- Common Mistakes -->
         {#if pattern.meta?.commonMistakes}
           <div class="detail-section">
-            <div class="detail-section-title"><AlertTriangle size={16} aria-hidden="true" /> Lỗi thường gặp</div>
+            <div class="detail-section-title"><AlertTriangle size={16} aria-hidden="true" /> Common mistakes</div>
             <div class="detail-mistake">{pattern.meta.commonMistakes}</div>
           </div>
         {/if}
@@ -128,7 +128,7 @@
         <!-- Usage Notes -->
         {#if pattern.meta?.usageNotes}
           <div class="detail-section">
-            <div class="detail-section-title"><PenLine size={16} aria-hidden="true" /> Ghi chú sử dụng</div>
+            <div class="detail-section-title"><PenLine size={16} aria-hidden="true" /> Usage notes</div>
             <div class="detail-explanation">{pattern.meta.usageNotes}</div>
           </div>
         {/if}
@@ -136,7 +136,7 @@
         <!-- Examples -->
         {#if pattern.examples && pattern.examples.length > 0}
           <div class="detail-section">
-            <div class="detail-section-title"><Edit3 size={16} aria-hidden="true" /> Ví dụ</div>
+            <div class="detail-section-title"><Edit3 size={16} aria-hidden="true" /> Examples</div>
             <div class="detail-examples">
               {#each pattern.examples as example}
                 <div class="detail-example">
@@ -154,7 +154,7 @@
         <!-- Related Patterns -->
         {#if pattern.meta?.relatedPatterns && pattern.meta.relatedPatterns.length > 0}
           <div class="detail-section">
-            <div class="detail-section-title"><Link size={16} aria-hidden="true" /> Ngữ pháp liên quan</div>
+            <div class="detail-section-title"><Link size={16} aria-hidden="true" /> Related grammar</div>
             <div class="detail-related-patterns">
               {#each pattern.meta.relatedPatterns as relatedPattern}
                 <button
