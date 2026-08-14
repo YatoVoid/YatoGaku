@@ -48,7 +48,7 @@
     return (
       item.japanese.toLowerCase().includes(search) ||
       item.kana.toLowerCase().includes(search) ||
-      item.vietnamese.toLowerCase().includes(search) ||
+      item.english.toLowerCase().includes(search) ||
       item.english.toLowerCase().includes(search)
     );
   });
@@ -135,7 +135,7 @@
               <td class="col-num">{i + 1}</td>
               <td class="col-jp">{item.japanese}</td>
               <td class="col-kana">{item.kana}</td>
-              <td class="col-vi">{item.vietnamese}</td>
+              <td class="col-vi">{item.english}</td>
               <td class="col-en">{item.english}</td>
               {#if hasAudio}
                 <td class="col-audio">

@@ -4,1426 +4,1426 @@ export const N4_CONVERSATIONS: ConversationPattern[] = [
   // ─── 1. Making Plans (約束) ───────────────────────────────────────────
   {
     id: 'n4-conv-01',
-    title: 'Lên kế hoạch',
+    title: 'Making plans',
     titleJp: '約束',
     level: 'N4',
-    situation: 'Hai đồng nghiệp đang bàn kế hoạch cuối tuần cùng nhau',
+    situation: 'Two coworkers discussing weekend plans together',
     patterns: [
       {
         japanese: '〜ましょうか。',
         kana: '〜ましょうか。',
-        vietnamese: 'Chúng ta ~ nhé? (đề nghị cùng làm gì đó)',
+        vietnamese: 'Shall we ~? (suggesting doing something together)',
         memoryTip:
-          'Nhớ: mashō ka = "ma" (mà) + "shō" (show) → "Mà show này hay quá, đi xem nhé?" — dùng khi rủ ai cùng làm gì đó'
+          'Remember: mashou ka is used to invite someone to do something together.'
       },
       {
         japanese: '〜たいです。',
         kana: '〜たいです。',
-        vietnamese: 'Tôi muốn ~ (diễn tả mong muốn)',
+        vietnamese: 'I want to ~ (expressing a desire)',
         memoryTip:
-          'Nhớ: tai = "thái" → "Thái Lan đẹp quá, tôi muốn đi!" — gắn âm "tai" với "muốn làm gì đó"'
+          'Remember: ~tai attaches to a verb stem to mean "want to do".'
       },
       {
         japanese: 'いつがいいですか。',
         kana: 'いつがいいですか。',
-        vietnamese: 'Khi nào thì tốt ạ? (hỏi thời gian phù hợp)',
+        vietnamese: 'When is good for you? (asking about a suitable time)',
         memoryTip:
-          'Nhớ: itsu ga ii = "ít sự" + "gà" + "đi" → "Ít sự bận rộn, gà rảnh lúc nào thì đi?" — hỏi lịch trống'
+          'Remember: itsu = when, ga ii desu ka = is good? Used to find an open slot in someone\'s schedule.'
       }
     ],
     dialogue: [
       {
-        speaker: 'たなか',
+        speaker: 'Tanaka',
         japanese: '週末、何かしませんか。',
         kana: 'しゅうまつ、なにかしませんか。',
-        vietnamese: 'Cuối tuần, làm gì đó không?'
+        vietnamese: 'Would you like to do something this weekend?'
       },
       {
-        speaker: 'リン',
+        speaker: 'Lin',
         japanese: 'いいですね。映画を見たいです。',
         kana: 'いいですね。えいがをみたいです。',
-        vietnamese: 'Hay đấy. Tôi muốn xem phim.'
+        vietnamese: 'Sounds good. I want to watch a movie.'
       },
       {
-        speaker: 'たなか',
+        speaker: 'Tanaka',
         japanese: 'じゃ、いっしょに見ましょうか。いつがいいですか。',
         kana: 'じゃ、いっしょにみましょうか。いつがいいですか。',
-        vietnamese: 'Vậy, cùng đi xem nhé? Khi nào thì tốt?'
+        vietnamese: 'Then shall we watch it together? When is good for you?'
       },
       {
-        speaker: 'リン',
+        speaker: 'Lin',
         japanese: '土曜日の午後はどうですか。',
         kana: 'どようびのごごはどうですか。',
-        vietnamese: 'Chiều thứ bảy thì sao?'
+        vietnamese: 'How about Saturday afternoon?'
       },
       {
-        speaker: 'たなか',
+        speaker: 'Tanaka',
         japanese: '土曜日の午後ですね。じゃ、二時に駅で会いましょう。',
         kana: 'どようびのごごですね。じゃ、にじにえきであいましょう。',
-        vietnamese: 'Chiều thứ bảy nhé. Vậy, gặp nhau ở ga lúc 2 giờ.'
+        vietnamese: 'Saturday afternoon, got it. Let\'s meet at the station at 2 o\'clock.'
       },
       {
-        speaker: 'リン',
+        speaker: 'Lin',
         japanese: 'はい、楽しみにしています。',
         kana: 'はい、たのしみにしています。',
-        vietnamese: 'Vâng, tôi rất mong chờ.'
+        vietnamese: 'Sure, I\'m looking forward to it.'
       }
     ],
     culturalNote:
-      'Người Nhật thường hẹn gặp ở ga tàu vì đây là điểm dễ tìm nhất. Đến đúng giờ (hoặc sớm 5 phút) được coi là phép lịch sự cơ bản — đến muộn dù chỉ vài phút cũng cần xin lỗi.'
+      'Japanese people often meet at train stations since they\'re the easiest landmarks to find. Being on time (or 5 minutes early) is considered basic courtesy — being even a few minutes late calls for an apology.'
   },
 
   // ─── 2. Asking for Directions (道案内) ────────────────────────────────
   {
     id: 'n4-conv-02',
-    title: 'Hỏi đường',
+    title: 'Asking for directions',
     titleJp: '道案内',
     level: 'N4',
-    situation: 'Du khách hỏi đường đến bưu điện trên phố',
+    situation: 'A tourist asks for directions to the post office on the street',
     patterns: [
       {
         japanese: '〜はどこですか。',
         kana: '〜はどこですか。',
-        vietnamese: '~ ở đâu ạ? (hỏi vị trí)',
+        vietnamese: 'Where is ~? (asking for a location)',
         memoryTip:
-          'Nhớ: doko = "đô kô" → "Đô thị này kô biết chỗ nào!" — doko luôn đi kèm câu hỏi nơi chốn'
+          'Remember: doko = where. Always paired with a place-asking question.'
       },
       {
         japanese: '右にまがってください。',
         kana: 'みぎにまがってください。',
-        vietnamese: 'Xin hãy rẽ phải.',
+        vietnamese: 'Please turn right.',
         memoryTip:
-          'Nhớ: migi = "mi" (mình) + "gi" (gì) → tay phải là tay mình hay viết → "Migi = phải" | hidari = "hi" + "đa" + "ri" → tay trái ít dùng → "Hidari = trái"'
+          'Remember: migi = right, hidari = left. Easy to mix up at first!'
       },
       {
         japanese: 'まっすぐ行ってください。',
         kana: 'まっすぐいってください。',
-        vietnamese: 'Xin hãy đi thẳng.',
+        vietnamese: 'Please go straight ahead.',
         memoryTip:
-          'Nhớ: massugu = "mát sư gù" → "Nhà sư đi thẳng lưng, không gù" — massugu = thẳng, không rẽ'
+          'Remember: massugu = straight, no turns.'
       }
     ],
     dialogue: [
       {
-        speaker: 'リン',
+        speaker: 'Lin',
         japanese: 'すみません、郵便局はどこですか。',
         kana: 'すみません、ゆうびんきょくはどこですか。',
-        vietnamese: 'Xin lỗi, bưu điện ở đâu ạ?'
+        vietnamese: 'Excuse me, where is the post office?'
       },
       {
-        speaker: 'おじさん',
+        speaker: 'Passerby',
         japanese: '郵便局ですか。この道をまっすぐ行ってください。',
         kana: 'ゆうびんきょくですか。このみちをまっすぐいってください。',
-        vietnamese: 'Bưu điện à? Hãy đi thẳng con đường này.'
+        vietnamese: 'The post office? Please go straight down this road.'
       },
       {
-        speaker: 'リン',
+        speaker: 'Lin',
         japanese: 'まっすぐですね。それから？',
         kana: 'まっすぐですね。それから？',
-        vietnamese: 'Đi thẳng nhé. Rồi sao ạ?'
+        vietnamese: 'Straight ahead, got it. And then?'
       },
       {
-        speaker: 'おじさん',
+        speaker: 'Passerby',
         japanese: '二つ目の信号を右にまがってください。左に郵便局がありますよ。',
         kana: 'ふたつめのしんごうをみぎにまがってください。ひだりにゆうびんきょくがありますよ。',
-        vietnamese: 'Rẽ phải ở đèn giao thông thứ hai. Bưu điện sẽ ở bên trái.'
+        vietnamese: 'Turn right at the second traffic light. The post office will be on your left.'
       },
       {
-        speaker: 'リン',
+        speaker: 'Lin',
         japanese: 'ここから遠いですか。',
         kana: 'ここからとおいですか。',
-        vietnamese: 'Từ đây có xa không ạ?'
+        vietnamese: 'Is it far from here?'
       },
       {
-        speaker: 'おじさん',
+        speaker: 'Passerby',
         japanese: 'いいえ、歩いて五分ぐらいですよ。',
         kana: 'いいえ、あるいてごふんぐらいですよ。',
-        vietnamese: 'Không, đi bộ khoảng 5 phút thôi.'
+        vietnamese: 'No, about a 5-minute walk.'
       }
     ],
     culturalNote:
-      'Khi hỏi đường ở Nhật, hãy bắt đầu bằng "sumimasen" (xin lỗi) để tỏ ý lịch sự trước khi hỏi. Người Nhật thường rất nhiệt tình chỉ đường, đôi khi còn đi cùng bạn đến tận nơi nếu tiện đường.'
+      'When asking for directions in Japan, start with "sumimasen" (excuse me) to be polite before asking. Japanese people are usually very enthusiastic about giving directions, sometimes even walking you there themselves if it\'s on their way.'
   },
 
   // ─── 3. Describing Experiences (経験) ─────────────────────────────────
   {
     id: 'n4-conv-03',
-    title: 'Kể về trải nghiệm',
+    title: 'Talking about experiences',
     titleJp: '経験',
     level: 'N4',
-    situation: 'Hai người bạn nói chuyện về những trải nghiệm du lịch ở Nhật',
+    situation: 'Two friends talk about their travel experiences in Japan',
     patterns: [
       {
         japanese: '〜たことがあります。',
         kana: '〜たことがあります。',
-        vietnamese: 'Tôi đã từng ~ (diễn tả kinh nghiệm)',
+        vietnamese: 'I have ~ before (describing an experience)',
         memoryTip:
-          'Nhớ: ~ta koto ga arimasu = "ta" (đã) + "koto" (việc) + "ga arimasu" (có) → "Có việc đã làm" = đã từng trải qua — giống cấu trúc "have done" trong tiếng Anh'
+          'Remember: ~ta koto ga arimasu — similar to the English "have done" structure, used for past experiences.'
       },
       {
         japanese: '〜たら、〜。',
         kana: '〜たら、〜。',
-        vietnamese: 'Nếu/Khi ~, thì ~ (điều kiện)',
+        vietnamese: 'If/When ~, then ~ (a conditional)',
         memoryTip:
-          'Nhớ: ~tara = "ta" (đã) + "ra" (ra) → "Làm xong ta ra kết quả" — dùng cho điều kiện: khi A xảy ra thì B theo sau'
+          'Remember: ~tara is used for conditions: when A happens, B follows.'
       },
       {
         japanese: '〜てみたいです。',
         kana: '〜てみたいです。',
-        vietnamese: 'Tôi muốn thử ~ (mong muốn trải nghiệm)',
+        vietnamese: 'I want to try ~ (wanting to experience something)',
         memoryTip:
-          'Nhớ: ~te mitai = "te" (rồi) + "mitai" (muốn xem) → "Làm rồi xem thử sao" — diễn tả muốn thử nghiệm điều gì mới'
+          'Remember: ~te mitai expresses wanting to try something new.'
       }
     ],
     dialogue: [
       {
-        speaker: 'リン',
+        speaker: 'Lin',
         japanese: '田中さんは富士山に登ったことがありますか。',
         kana: 'たなかさんはふじさんにのぼったことがありますか。',
-        vietnamese: 'Anh Tanaka đã từng leo núi Phú Sĩ chưa?'
+        vietnamese: 'Tanaka, have you ever climbed Mt. Fuji?'
       },
       {
-        speaker: 'たなか',
+        speaker: 'Tanaka',
         japanese: 'はい、一度あります。去年の夏に登りました。',
         kana: 'はい、いちどあります。きょねんのなつにのぼりました。',
-        vietnamese: 'Rồi, một lần. Tôi leo vào mùa hè năm ngoái.'
+        vietnamese: 'Yes, once. I climbed it last summer.'
       },
       {
-        speaker: 'リン',
+        speaker: 'Lin',
         japanese: 'どうでしたか。',
         kana: 'どうでしたか。',
-        vietnamese: 'Thế nào ạ?'
+        vietnamese: 'How was it?'
       },
       {
-        speaker: 'たなか',
+        speaker: 'Tanaka',
         japanese: '大変でしたが、頂上に着いたら、景色がすばらしかったです。',
         kana: 'たいへんでしたが、ちょうじょうについたら、けしきがすばらしかったです。',
-        vietnamese: 'Vất vả lắm, nhưng khi lên đến đỉnh thì cảnh đẹp tuyệt vời.'
+        vietnamese: 'It was tough, but once I reached the summit, the view was amazing.'
       },
       {
-        speaker: 'リン',
+        speaker: 'Lin',
         japanese: 'いいですね。私も登ってみたいです。',
         kana: 'いいですね。わたしものぼってみたいです。',
-        vietnamese: 'Hay quá. Tôi cũng muốn thử leo.'
+        vietnamese: 'Nice. I want to try climbing it too.'
       },
       {
-        speaker: 'たなか',
+        speaker: 'Tanaka',
         japanese: '夏に行ったら、いっしょに行きましょう。',
         kana: 'なつにいったら、いっしょにいきましょう。',
-        vietnamese: 'Nếu đi vào mùa hè, cùng đi nhé.'
+        vietnamese: 'If we go in summer, let\'s go together.'
       }
     ],
     culturalNote:
-      'Leo núi Phú Sĩ là trải nghiệm "nhất sinh nhất đại" (一生一代) của nhiều người Nhật. Mùa leo chính thức chỉ kéo dài từ tháng 7 đến giữa tháng 9. Có câu nói nổi tiếng: "Người khôn ngoan leo Phú Sĩ một lần, người ngu ngốc leo hai lần" — nhưng thực tế nhiều người vẫn quay lại!'
+      'Climbing Mt. Fuji is a "once in a lifetime" experience for many Japanese people. The official climbing season only lasts from July to mid-September. There\'s a famous saying: "A wise man climbs Fuji once, a fool climbs it twice" — but in practice, many people still go back!'
   },
 
   // ─── 4. Giving Reasons (理由) ────────────────────────────────────────
   {
     id: 'n4-conv-04',
-    title: 'Đưa ra lý do',
+    title: 'Giving reasons',
     titleJp: '理由',
     level: 'N4',
-    situation: 'Sinh viên giải thích lý do nghỉ học và đến muộn với giáo viên',
+    situation: 'A student explains to their teacher why they missed class and arrived late',
     patterns: [
       {
         japanese: '〜から、〜。',
         kana: '〜から、〜。',
-        vietnamese: 'Vì ~ nên ~ (lý do, dùng trong văn nói)',
+        vietnamese: 'Because ~, ~ (a reason, used in casual speech)',
         memoryTip:
-          'Nhớ: kara = "ca ra" → "Ca ra lý do" — kara đặt sau nguyên nhân, nối với kết quả. Dùng thoải mái trong hội thoại thường ngày'
+          'Remember: kara follows the cause and connects to the result. Used freely in everyday conversation.'
       },
       {
         japanese: '〜ので、〜。',
         kana: '〜ので、〜。',
-        vietnamese: 'Vì ~ nên ~ (lý do, lịch sự hơn ~から)',
+        vietnamese: 'Because ~, ~ (a reason, more polite than ~から)',
         memoryTip:
-          'Nhớ: node = "nô đê" → lịch sự như "quý nô đê" (quý tộc) — node lịch sự hơn kara, dùng với sếp/giáo viên/người lớn tuổi'
+          'Remember: node is more polite than kara, used with a boss, teacher, or an elder.'
       },
       {
         japanese: '〜て、〜。',
         kana: '〜て、〜。',
-        vietnamese: '~ rồi ~ / Vì ~ nên ~ (nối nguyên nhân-kết quả)',
+        vietnamese: '~ so ~ / because ~, ~ (a lighter cause-and-effect link)',
         memoryTip:
-          'Nhớ: dạng ~te nối câu = "tê" chân → "Tê chân rồi ngã" — nguyên nhân (tê) dẫn đến kết quả (ngã). Nhẹ nhàng hơn kara/node'
+          'Remember: the ~te form connecting sentences is a gentler cause-and-effect link than kara/node.'
       }
     ],
     dialogue: [
       {
-        speaker: 'リン',
+        speaker: 'Lin',
         japanese: '先生、昨日休んですみませんでした。',
         kana: 'せんせい、きのうやすんですみませんでした。',
-        vietnamese: 'Thưa thầy, xin lỗi vì hôm qua em nghỉ học.'
+        vietnamese: 'Teacher, I\'m sorry for missing class yesterday.'
       },
       {
-        speaker: 'せんせい',
+        speaker: 'Teacher',
         japanese: 'どうしましたか。',
         kana: 'どうしましたか。',
-        vietnamese: 'Có chuyện gì vậy?'
+        vietnamese: 'What happened?'
       },
       {
-        speaker: 'リン',
+        speaker: 'Lin',
         japanese: '熱があったので、病院に行きました。',
         kana: 'ねつがあったので、びょういんにいきました。',
-        vietnamese: 'Vì bị sốt nên em đã đi bệnh viện.'
+        vietnamese: 'I had a fever, so I went to the hospital.'
       },
       {
-        speaker: 'せんせい',
+        speaker: 'Teacher',
         japanese: 'そうですか。今日は大丈夫ですか。',
         kana: 'そうですか。きょうはだいじょうぶですか。',
-        vietnamese: 'Vậy à. Hôm nay ổn chưa?'
+        vietnamese: 'I see. Are you okay today?'
       },
       {
-        speaker: 'リン',
+        speaker: 'Lin',
         japanese: 'はい、薬を飲んだから、もう元気です。でも今朝バスが遅れて、遅刻してしまいました。',
         kana: 'はい、くすりをのんだから、もうげんきです。でもけさバスがおくれて、ちこくしてしまいました。',
-        vietnamese: 'Vâng, vì đã uống thuốc nên em khỏe rồi. Nhưng sáng nay xe buýt bị trễ nên em đã đến muộn mất.'
+        vietnamese: 'Yes, I took medicine, so I feel fine now. But the bus was delayed this morning, so I ended up being late.'
       },
       {
-        speaker: 'せんせい',
+        speaker: 'Teacher',
         japanese: '分かりました。体に気をつけてくださいね。',
         kana: 'わかりました。からだにきをつけてくださいね。',
-        vietnamese: 'Thầy hiểu rồi. Hãy giữ gìn sức khỏe nhé.'
+        vietnamese: 'I understand. Please take care of yourself.'
       }
     ],
     culturalNote:
-      'Trong văn hóa Nhật, khi giải thích lý do với người trên (thầy/cô, sếp), nên dùng "~node" thay vì "~kara" vì node lịch sự hơn. Ngoài ra, việc xin lỗi trước rồi mới giải thích lý do sau là quy tắc quan trọng — thể hiện sự tôn trọng và trách nhiệm.'
+      'In Japanese culture, when explaining a reason to a superior (a teacher, boss), it\'s better to use "~node" instead of "~kara" since node is more polite. Also, apologizing first and explaining the reason afterward is an important rule — it shows respect and responsibility.'
   },
 
   // ─── 5. At the Hospital (病院) ────────────────────────────────────────
   {
     id: 'n4-conv-05',
-    title: 'Ở bệnh viện',
+    title: 'At the hospital',
     titleJp: '病院',
     level: 'N4',
-    situation: 'Bệnh nhân đến khám bác sĩ vì bị đau bụng và đau đầu',
+    situation: 'A patient visits a doctor for a stomachache and headache',
     patterns: [
       {
         japanese: '頭が痛いです。/ おなかが痛いです。',
         kana: 'あたまがいたいです。/ おなかがいたいです。',
-        vietnamese: 'Đau đầu. / Đau bụng. (mô tả triệu chứng)',
+        vietnamese: 'I have a headache. / I have a stomachache. (describing symptoms)',
         memoryTip:
-          'Nhớ: itai = "i tai" → "Ì tai, đau quá!" — itai là đau. Ghép với bộ phận: atama (đầu) ga itai = đau đầu, onaka (bụng) ga itai = đau bụng'
+          'Remember: itai = painful. Combine with a body part: atama (head) ga itai = headache, onaka (stomach) ga itai = stomachache.'
       },
       {
         japanese: '薬を飲んでください。',
         kana: 'くすりをのんでください。',
-        vietnamese: 'Xin hãy uống thuốc.',
+        vietnamese: 'Please take this medicine.',
         memoryTip:
-          'Nhớ: kusuri = "cú sư ri" → "Cú sư tử uống thuốc ri ri (rủ rỉ)" — kusuri = thuốc. Nonde kudasai = hãy uống (lời chỉ dẫn từ bác sĩ)'
+          'Remember: kusuri = medicine. Nonde kudasai = please take (a doctor\'s instruction).'
       },
       {
         japanese: 'いつから痛いですか。',
         kana: 'いつからいたいですか。',
-        vietnamese: 'Đau từ khi nào ạ? (bác sĩ hỏi bệnh nhân)',
+        vietnamese: 'Since when has it hurt? (a doctor asking a patient)',
         memoryTip:
-          'Nhớ: itsu kara = "ít sự" + "ca ra" → "Ít sự đau ca ra từ lúc nào?" — itsu kara hỏi thời điểm bắt đầu'
+          'Remember: itsu kara asks about when something started.'
       }
     ],
     dialogue: [
       {
-        speaker: 'いしゃ',
+        speaker: 'Doctor',
         japanese: 'どうしましたか。',
         kana: 'どうしましたか。',
-        vietnamese: 'Bạn bị làm sao?'
+        vietnamese: 'What seems to be the problem?'
       },
       {
-        speaker: 'リン',
+        speaker: 'Lin',
         japanese: '昨日からおなかが痛いです。頭も少し痛いです。',
         kana: 'きのうからおなかがいたいです。あたまもすこしいたいです。',
-        vietnamese: 'Từ hôm qua em bị đau bụng. Đầu cũng hơi đau.'
+        vietnamese: 'I\'ve had a stomachache since yesterday. My head hurts a bit too.'
       },
       {
-        speaker: 'いしゃ',
+        speaker: 'Doctor',
         japanese: '熱はありますか。',
         kana: 'ねつはありますか。',
-        vietnamese: 'Có bị sốt không?'
+        vietnamese: 'Do you have a fever?'
       },
       {
-        speaker: 'リン',
+        speaker: 'Lin',
         japanese: 'はい、今朝三十八度ありました。',
         kana: 'はい、けさ さんじゅうはちど ありました。',
-        vietnamese: 'Dạ có, sáng nay 38 độ ạ.'
+        vietnamese: 'Yes, it was 38 degrees this morning.'
       },
       {
-        speaker: 'いしゃ',
+        speaker: 'Doctor',
         japanese: '分かりました。この薬を一日三回、食後に飲んでください。',
         kana: 'わかりました。このくすりをいちにちさんかい、しょくごにのんでください。',
-        vietnamese: 'Tôi hiểu rồi. Hãy uống thuốc này ngày 3 lần, sau bữa ăn.'
+        vietnamese: 'I understand. Please take this medicine three times a day, after meals.'
       },
       {
-        speaker: 'リン',
+        speaker: 'Lin',
         japanese: 'はい、分かりました。ありがとうございます。',
         kana: 'はい、わかりました。ありがとうございます。',
-        vietnamese: 'Vâng, em hiểu rồi. Cảm ơn bác sĩ ạ.'
+        vietnamese: 'Yes, understood. Thank you, doctor.'
       }
     ],
     culturalNote:
-      'Ở Nhật, khi đi khám bệnh lần đầu tại một phòng khám, bạn cần điền "monshin-hyō" (問診票 — phiếu hỏi bệnh). Hệ thống y tế Nhật yêu cầu thẻ bảo hiểm sức khỏe (hokenshō), bao gồm cả du học sinh. Thuốc thường được kê ở phòng khám riêng (yakkyoku — nhà thuốc), không phải tại bệnh viện.'
+      'In Japan, when visiting a clinic for the first time, you\'ll need to fill out a "monshin-hyou" (問診票 — a medical questionnaire). Japan\'s healthcare system requires a health insurance card (hokenshou), including for international students. Medicine is usually dispensed at a separate pharmacy (yakkyoku), not at the hospital itself.'
   },
 
   // ─── 6. Part-time Job (アルバイト) ────────────────────────────────────
   {
     id: 'n4-conv-06',
-    title: 'Làm thêm',
+    title: 'Part-time job',
     titleJp: 'アルバイト',
     level: 'N4',
-    situation: 'Hai du học sinh nói chuyện về công việc làm thêm tại nhà hàng',
+    situation: 'Two international students talk about a part-time restaurant job',
     patterns: [
       {
         japanese: 'アルバイトをしています。',
         kana: 'あるばいとをしています。',
-        vietnamese: 'Tôi đang làm thêm. (diễn tả công việc hiện tại)',
+        vietnamese: 'I have a part-time job. (describing a current job)',
         memoryTip:
-          'Nhớ: arubaito = từ tiếng Đức "Arbeit" (công việc) → người Nhật mượn từ này để chỉ việc làm thêm bán thời gian. Ngắn gọn gọi là "baito"'
+          'Remember: arubaito comes from the German word "Arbeit" (work) — Japanese borrowed it to mean a part-time job. Often shortened to "baito".'
       },
       {
         japanese: 'シフトに入る。',
         kana: 'しふとにはいる。',
-        vietnamese: 'Vào ca làm. (đăng ký ca)',
+        vietnamese: 'To work a shift. (signing up for a shift)',
         memoryTip:
-          'Nhớ: shifuto = "shift" tiếng Anh → ca làm việc. "Shifuto ni hairu" = nhảy vào ca — tưởng tượng nhảy vào vòng xoay ca làm'
+          'Remember: shifuto comes from English "shift". "Shifuto ni hairu" = to take a shift.'
       },
       {
         japanese: '給料はいくらですか。',
         kana: 'きゅうりょうはいくらですか。',
-        vietnamese: 'Lương bao nhiêu ạ? (hỏi mức lương)',
+        vietnamese: 'How much is the pay? (asking about wages)',
         memoryTip:
-          'Nhớ: kyuuryou = "cứu liệu" → "Cứu liệu tài chính = lương" — kyuuryou là tiền lương, ikura = bao nhiêu'
+          'Remember: kyuuryou = wages/salary, ikura = how much.'
       }
     ],
     dialogue: [
       {
-        speaker: 'リン',
+        speaker: 'Lin',
         japanese: '最近アルバイトを始めたんですよ。',
         kana: 'さいきんあるばいとをはじめたんですよ。',
-        vietnamese: 'Gần đây mình bắt đầu làm thêm rồi đấy.'
+        vietnamese: 'I started a part-time job recently.'
       },
       {
-        speaker: 'マイ',
+        speaker: 'Mai',
         japanese: 'へえ、どこで働いているんですか。',
         kana: 'へえ、どこではたらいているんですか。',
-        vietnamese: 'Ồ, làm ở đâu thế?'
+        vietnamese: 'Oh, where do you work?'
       },
       {
-        speaker: 'リン',
+        speaker: 'Lin',
         japanese: '駅の近くのレストランです。週に三回シフトに入っています。',
         kana: 'えきのちかくのれすとらんです。しゅうにさんかいしふとにはいっています。',
-        vietnamese: 'Nhà hàng gần ga. Mình vào ca 3 lần một tuần.'
+        vietnamese: 'A restaurant near the station. I work shifts three times a week.'
       },
       {
-        speaker: 'マイ',
+        speaker: 'Mai',
         japanese: '給料はいくらですか。',
         kana: 'きゅうりょうはいくらですか。',
-        vietnamese: 'Lương bao nhiêu?'
+        vietnamese: 'How much do you get paid?'
       },
       {
-        speaker: 'リン',
+        speaker: 'Lin',
         japanese: '時給千百円です。まだ少ないですが、勉強になります。',
         kana: 'じきゅうせんひゃくえんです。まだすくないですが、べんきょうになります。',
-        vietnamese: 'Lương giờ 1100 yên. Còn ít nhưng được học hỏi nhiều.'
+        vietnamese: '1,100 yen an hour. It\'s still not much, but I\'m learning a lot.'
       },
       {
-        speaker: 'マイ',
+        speaker: 'Mai',
         japanese: '大変じゃないですか。授業もあるのに。',
         kana: 'たいへんじゃないですか。じゅぎょうもあるのに。',
-        vietnamese: 'Không vất vả sao? Còn có cả lớp học nữa mà.'
+        vietnamese: 'Isn\'t that tough? You have classes too.'
       }
     ],
     culturalNote:
-      'Du học sinh ở Nhật được phép làm thêm tối đa 28 giờ/tuần trong kỳ học và 40 giờ/tuần trong kỳ nghỉ. Lương tối thiểu khác nhau theo từng tỉnh — Tokyo cao nhất (~1113 yên/giờ năm 2024). Từ "baito" (バイト) được dùng phổ biến hơn "arubaito" trong hội thoại.'
+      'International students in Japan are allowed to work up to 28 hours a week during the school term and 40 hours a week during vacation. Minimum wage varies by prefecture — Tokyo has the highest (~1,113 yen/hour as of 2024). The word "baito" (バイト) is used more often than "arubaito" in everyday conversation.'
   },
 
   // ─── 7. Travel Planning (旅行) ───────────────────────────────────────
   {
     id: 'n4-conv-07',
-    title: 'Lên kế hoạch du lịch',
+    title: 'Planning a trip',
     titleJp: '旅行',
     level: 'N4',
-    situation: 'Hai người bạn lên kế hoạch chuyến đi Kyoto vào kỳ nghỉ',
+    situation: 'Two friends plan a trip to Kyoto for a break',
     patterns: [
       {
         japanese: '予約をしたいです。',
         kana: 'よやくをしたいです。',
-        vietnamese: 'Tôi muốn đặt chỗ. (đặt phòng/vé)',
+        vietnamese: 'I\'d like to make a reservation. (booking a room/ticket)',
         memoryTip:
-          'Nhớ: yoyaku = "yô yá cú" → "Yô, đặt cú này đi!" — yoyaku = đặt trước (phòng khách sạn, nhà hàng, vé)'
+          'Remember: yoyaku = to book/reserve in advance (a hotel room, restaurant, ticket).'
       },
       {
         japanese: '切符を買います。',
         kana: 'きっぷをかいます。',
-        vietnamese: 'Mua vé. (vé tàu/xe buýt)',
+        vietnamese: 'To buy a ticket. (train/bus ticket)',
         memoryTip:
-          'Nhớ: kippu = "kíp pú" → "Kịp mua vé pú (phút chót)" — kippu = vé (tàu, xe buýt). Khác với chiketto (チケット) dùng cho vé xem phim/concert'
+          'Remember: kippu = a ticket (train, bus). Different from "chiketto" (チケット), used for movie/concert tickets.'
       },
       {
         japanese: '旅館に泊まりたいです。',
         kana: 'りょかんにとまりたいです。',
-        vietnamese: 'Tôi muốn ở nhà trọ kiểu Nhật.',
+        vietnamese: 'I want to stay at a traditional Japanese inn.',
         memoryTip:
-          'Nhớ: ryokan = "liệu quán" (Hán Việt: lữ quán) → nhà trọ truyền thống Nhật, có futon, onsen, ăn kaiseki. Khác "hoteru" (hotel) phong cách phương Tây'
+          'Remember: ryokan is a traditional Japanese inn with futon, onsen, and kaiseki meals. Different from "hoteru" (hotel), which is Western-style.'
       }
     ],
     dialogue: [
       {
-        speaker: 'リン',
+        speaker: 'Lin',
         japanese: '夏休みに京都に行きたいんですが。',
         kana: 'なつやすみにきょうとにいきたいんですが。',
-        vietnamese: 'Kỳ nghỉ hè mình muốn đi Kyoto.'
+        vietnamese: 'I want to go to Kyoto over summer break.'
       },
       {
-        speaker: 'たなか',
+        speaker: 'Tanaka',
         japanese: 'いいですね。新幹線の切符はもう買いましたか。',
         kana: 'いいですね。しんかんせんのきっぷはもうかいましたか。',
-        vietnamese: 'Hay đấy. Đã mua vé shinkansen chưa?'
+        vietnamese: 'Nice. Have you bought your shinkansen ticket yet?'
       },
       {
-        speaker: 'リン',
+        speaker: 'Lin',
         japanese: 'まだです。いくらぐらいかかりますか。',
         kana: 'まだです。いくらぐらいかかりますか。',
-        vietnamese: 'Chưa. Tốn khoảng bao nhiêu?'
+        vietnamese: 'Not yet. About how much does it cost?'
       },
       {
-        speaker: 'たなか',
+        speaker: 'Tanaka',
         japanese: '東京から片道約一万四千円です。旅館の予約はしましたか。',
         kana: 'とうきょうからかたみちやくいちまんよんせんえんです。りょかんのよやくはしましたか。',
-        vietnamese: 'Từ Tokyo một chiều khoảng 14,000 yên. Đã đặt ryokan chưa?'
+        vietnamese: 'About 14,000 yen one-way from Tokyo. Have you booked a ryokan?'
       },
       {
-        speaker: 'リン',
+        speaker: 'Lin',
         japanese: '旅館に泊まりたいですが、どうやって予約しますか。',
         kana: 'りょかんにとまりたいですが、どうやってよやくしますか。',
-        vietnamese: 'Muốn ở ryokan, nhưng đặt bằng cách nào?'
+        vietnamese: 'I want to stay at a ryokan, but how do I book it?'
       },
       {
-        speaker: 'たなか',
+        speaker: 'Tanaka',
         japanese: 'インターネットで予約できますよ。手伝いましょうか。',
         kana: 'いんたーねっとでよやくできますよ。てつだいましょうか。',
-        vietnamese: 'Đặt qua internet được. Để mình giúp nhé?'
+        vietnamese: 'You can book online. Want me to help?'
       }
     ],
     culturalNote:
-      'Ryokan (旅館) là nhà trọ truyền thống Nhật với phòng tatami, futon, và thường bao gồm bữa tối kaiseki. Khách được mặc yukata và tắm onsen. Khi đặt ryokan nên đặt sớm vào mùa cao điểm (hoa anh đào tháng 4, lá đỏ tháng 11). JR Pass là lựa chọn tiết kiệm cho du khách nước ngoài.'
+      'A ryokan (旅館) is a traditional Japanese inn with tatami rooms, futon bedding, and usually includes a kaiseki dinner. Guests wear a yukata and bathe in an onsen. It\'s best to book a ryokan early during peak season (cherry blossoms in April, autumn leaves in November). A JR Pass is a cost-effective option for foreign tourists.'
   },
 
   // ─── 8. Sports/Exercise (スポーツ) ───────────────────────────────────
   {
     id: 'n4-conv-08',
-    title: 'Thể thao',
+    title: 'Sports',
     titleJp: 'スポーツ',
     level: 'N4',
-    situation: 'Hai người bạn nói về sở thích thể thao và rủ nhau đi tập',
+    situation: 'Two friends talk about their favorite sports and invite each other to work out',
     patterns: [
       {
         japanese: '運動をしています。',
         kana: 'うんどうをしています。',
-        vietnamese: 'Tôi đang tập thể dục. (thói quen hiện tại)',
+        vietnamese: 'I exercise. (a current habit)',
         memoryTip:
-          'Nhớ: undou = "ùn đồ" → "Ùn đồ thể thao ra tập" — undou = vận động, tập thể dục. Undou suru = tập luyện'
+          'Remember: undou = exercise/physical activity. Undou suru = to exercise.'
       },
       {
         japanese: '野球が好きです。',
         kana: 'やきゅうがすきです。',
-        vietnamese: 'Tôi thích bóng chày.',
+        vietnamese: 'I like baseball.',
         memoryTip:
-          'Nhớ: yakyuu = "dã cầu" (Hán Việt) → bóng chày. Ya (dã = đồng) + kyuu (cầu = bóng) = môn bóng trên đồng cỏ. Bóng chày rất phổ biến ở Nhật!'
+          'Remember: yakyuu = baseball. An extremely popular sport in Japan!'
       },
       {
         japanese: '泳ぐことができます。',
         kana: 'およぐことができます。',
-        vietnamese: 'Tôi có thể bơi. (diễn tả khả năng)',
+        vietnamese: 'I can swim. (describing an ability)',
         memoryTip:
-          'Nhớ: oyogu = "ô yô gù" → "Ô, yô (bơi) lội gù lưng" — oyogu = bơi. Koto ga dekimasu = có thể làm được (khả năng)'
+          'Remember: oyogu = to swim. Koto ga dekimasu = to be able to (ability).'
       }
     ],
     dialogue: [
       {
-        speaker: 'たなか',
+        speaker: 'Tanaka',
         japanese: 'リンさん、何かスポーツをしていますか。',
         kana: 'りんさん、なにかすぽーつをしていますか。',
-        vietnamese: 'Lin, bạn có chơi môn thể thao nào không?'
+        vietnamese: 'Lin, do you play any sports?'
       },
       {
-        speaker: 'リン',
+        speaker: 'Lin',
         japanese: '毎朝ジョギングをしています。田中さんは？',
         kana: 'まいあさじょぎんぐをしています。たなかさんは？',
-        vietnamese: 'Mình chạy bộ mỗi sáng. Còn Tanaka?'
+        vietnamese: 'I go jogging every morning. What about you, Tanaka?'
       },
       {
-        speaker: 'たなか',
+        speaker: 'Tanaka',
         japanese: '僕は野球が好きです。週末にチームで練習しています。',
         kana: 'ぼくはやきゅうがすきです。しゅうまつにちーむでれんしゅうしています。',
-        vietnamese: 'Mình thích bóng chày. Cuối tuần tập với đội.'
+        vietnamese: 'I like baseball. I practice with my team on weekends.'
       },
       {
-        speaker: 'リン',
+        speaker: 'Lin',
         japanese: 'いいですね。泳ぐこともできますか。',
         kana: 'いいですね。およぐこともできますか。',
-        vietnamese: 'Hay quá. Bạn cũng biết bơi không?'
+        vietnamese: 'Nice. Can you swim too?'
       },
       {
-        speaker: 'たなか',
+        speaker: 'Tanaka',
         japanese: 'はい、少しできます。今度いっしょにプールに行きませんか。',
         kana: 'はい、すこしできます。こんどいっしょにぷーるにいきませんか。',
-        vietnamese: 'Có, bơi được chút. Lần tới cùng đi bể bơi không?'
+        vietnamese: 'Yes, a little. Want to go to the pool together sometime?'
       },
       {
-        speaker: 'リン',
+        speaker: 'Lin',
         japanese: 'ぜひ！運動した後、おいしいものを食べましょう。',
         kana: 'ぜひ！うんどうしたあと、おいしいものをたべましょう。',
-        vietnamese: 'Chắc chắn rồi! Tập xong đi ăn ngon nhé.'
+        vietnamese: 'Definitely! Let\'s get something tasty to eat after exercising.'
       }
     ],
     culturalNote:
-      'Bóng chày (yakyuu) là môn thể thao phổ biến nhất ở Nhật, được gọi là "quốc dân thể thao". Giải Koshien (甲子園) dành cho học sinh cấp 3 thu hút hàng triệu người xem mỗi năm. Ngoài ra, sumo, judo và bóng đá (sakkaa) cũng rất được yêu thích.'
+      'Baseball (yakyuu) is the most popular sport in Japan, often called the "national sport". The Koshien (甲子園) high school tournament draws millions of viewers every year. Sumo, judo, and soccer (sakkaa) are also very popular.'
   },
 
   // ─── 9. Moving House (引っ越し) ──────────────────────────────────────
   {
     id: 'n4-conv-09',
-    title: 'Chuyển nhà',
+    title: 'Moving house',
     titleJp: '引っ越し',
     level: 'N4',
-    situation: 'Sinh viên chuẩn bị chuyển đến căn hộ mới và nhờ bạn giúp đỡ',
+    situation: 'A student is preparing to move to a new apartment and asks a friend for help',
     patterns: [
       {
         japanese: '引っ越しをします。',
         kana: 'ひっこしをします。',
-        vietnamese: 'Tôi sẽ chuyển nhà.',
+        vietnamese: 'I\'m going to move (house).',
         memoryTip:
-          'Nhớ: hikkoshi = "híc cô shi" → "Híc, cô ấy dọn đi mất rồi!" — hikkoshi = chuyển nhà, từ động từ hikkosu (kéo đồ đi)'
+          'Remember: hikkoshi = moving house, from the verb hikkosu (to relocate).'
       },
       {
         japanese: '荷物が多いです。',
         kana: 'にもつがおおいです。',
-        vietnamese: 'Hành lý/đồ đạc nhiều. (mô tả số lượng)',
+        vietnamese: 'I have a lot of luggage/belongings. (describing quantity)',
         memoryTip:
-          'Nhớ: nimotsu = "ni mốt sư" → "Ni (hai) mốt (một) = 21 kiện hành lý — nhiều quá!" — nimotsu = hành lý, đồ đạc'
+          'Remember: nimotsu = luggage/belongings.'
       },
       {
         japanese: 'アパートを探しています。',
         kana: 'あぱーとをさがしています。',
-        vietnamese: 'Tôi đang tìm căn hộ.',
+        vietnamese: 'I\'m looking for an apartment.',
         memoryTip:
-          'Nhớ: apaato = "apartment" tiếng Anh → căn hộ (thường 2 tầng, bằng gỗ). Khác "manshon" (マンション) = chung cư cao tầng bê tông — đừng nhầm với "mansion" tiếng Anh!'
+          'Remember: apaato comes from English "apartment" (usually a 2-story wooden building). Different from "manshon" (マンション) = a concrete high-rise — don\'t confuse it with the English "mansion"!'
       }
     ],
     dialogue: [
       {
-        speaker: 'リン',
+        speaker: 'Lin',
         japanese: '来月引っ越しをするんです。',
         kana: 'らいげつひっこしをするんです。',
-        vietnamese: 'Tháng sau mình sẽ chuyển nhà.'
+        vietnamese: 'I\'m moving house next month.'
       },
       {
-        speaker: 'たなか',
+        speaker: 'Tanaka',
         japanese: 'そうですか。新しいアパートはもう見つかりましたか。',
         kana: 'そうですか。あたらしいあぱーとはもうみつかりましたか。',
-        vietnamese: 'Vậy à? Đã tìm được căn hộ mới chưa?'
+        vietnamese: 'Really? Have you found a new apartment yet?'
       },
       {
-        speaker: 'リン',
+        speaker: 'Lin',
         japanese: 'はい、駅から歩いて十分のところに見つけました。',
         kana: 'はい、えきからあるいてじゅっぷんのところにみつけました。',
-        vietnamese: 'Rồi, tìm được chỗ cách ga 10 phút đi bộ.'
+        vietnamese: 'Yes, I found a place a 10-minute walk from the station.'
       },
       {
-        speaker: 'たなか',
+        speaker: 'Tanaka',
         japanese: '荷物は多いですか。手伝いましょうか。',
         kana: 'にもつはおおいですか。てつだいましょうか。',
-        vietnamese: 'Đồ đạc nhiều không? Để mình giúp nhé?'
+        vietnamese: 'Do you have a lot of belongings? Want me to help?'
       },
       {
-        speaker: 'リン',
+        speaker: 'Lin',
         japanese: '本当ですか。荷物が多くて困っているんです。',
         kana: 'ほんとうですか。にもつがおおくてこまっているんです。',
-        vietnamese: 'Thật sao? Đồ nhiều quá đang khổ sở lắm.'
+        vietnamese: 'Really? I have so much stuff, I\'m a bit stuck.'
       },
       {
-        speaker: 'たなか',
+        speaker: 'Tanaka',
         japanese: '大丈夫ですよ。日曜日に手伝いに行きますね。',
         kana: 'だいじょうぶですよ。にちようびにてつだいにいきますね。',
-        vietnamese: 'Không sao đâu. Chủ nhật mình qua giúp nhé.'
+        vietnamese: 'No worries. I\'ll come help on Sunday.'
       }
     ],
     culturalNote:
-      'Ở Nhật, khi chuyển nhà thường phải trả "reikin" (礼金 — tiền cảm ơn cho chủ nhà, không hoàn lại) và "shikikin" (敷金 — tiền đặt cọc). Mỗi khoản thường bằng 1-2 tháng tiền thuê. Ngoài ra, phong tục "hikkoshi soba" — tặng mì soba cho hàng xóm mới — vẫn còn phổ biến ở một số vùng.'
+      'In Japan, moving usually requires paying "reikin" (礼金 — a non-refundable "thank you" payment to the landlord) and "shikikin" (敷金 — a security deposit). Each is often worth 1-2 months\' rent. The custom of "hikkoshi soba" — giving soba noodles to new neighbors — is still common in some regions.'
   },
 
   // ─── 10. Birthday Party (誕生日) ─────────────────────────────────────
   {
     id: 'n4-conv-10',
-    title: 'Tiệc sinh nhật',
+    title: 'Birthday party',
     titleJp: '誕生日',
     level: 'N4',
-    situation: 'Nhóm bạn lên kế hoạch tổ chức sinh nhật bất ngờ cho bạn',
+    situation: 'A group of friends plan a surprise birthday party',
     patterns: [
       {
         japanese: 'お誕生日おめでとうございます。',
         kana: 'おたんじょうびおめでとうございます。',
-        vietnamese: 'Chúc mừng sinh nhật! (lịch sự)',
+        vietnamese: 'Happy birthday! (polite)',
         memoryTip:
-          'Nhớ: otanjoubi = "ô tản giò bi" → "Ô, tản bộ mua giò bì mừng sinh nhật!" — otanjoubi = sinh nhật. Omedetou = chúc mừng'
+          'Remember: otanjoubi = birthday. Omedetou = congratulations.'
       },
       {
         japanese: 'プレゼントを買いました。',
         kana: 'ぷれぜんとをかいました。',
-        vietnamese: 'Tôi đã mua quà.',
+        vietnamese: 'I bought a gift.',
         memoryTip:
-          'Nhớ: purezento = "present" tiếng Anh → quà tặng. Ở Nhật, tặng quà rất coi trọng — cách gói quà (tsutsumi) cũng quan trọng như món quà!'
+          'Remember: purezento comes from English "present". Gift-giving in Japan is taken seriously — how you wrap it (tsutsumi) matters as much as the gift itself!'
       },
       {
         japanese: 'ケーキを作りましょう。',
         kana: 'けーきをつくりましょう。',
-        vietnamese: 'Hãy cùng làm bánh nhé.',
+        vietnamese: 'Let\'s make a cake.',
         memoryTip:
-          'Nhớ: keeki = "cake" tiếng Anh → bánh kem. Tsukurimashou = cùng làm nhé — "mashou" ở đây là "cùng nhau làm" (đề nghị)'
+          'Remember: keeki comes from English "cake". Tsukurimashou = let\'s make it — "mashou" here suggests doing it together.'
       }
     ],
     dialogue: [
       {
-        speaker: 'マイ',
+        speaker: 'Mai',
         japanese: '来週の土曜日はリンさんの誕生日ですよ。',
         kana: 'らいしゅうのどようびはりんさんのたんじょうびですよ。',
-        vietnamese: 'Thứ bảy tuần sau là sinh nhật Lin đấy.'
+        vietnamese: 'Next Saturday is Lin\'s birthday, you know.'
       },
       {
-        speaker: 'たなか',
+        speaker: 'Tanaka',
         japanese: 'サプライズパーティーをしませんか。',
         kana: 'さぷらいずぱーてぃーをしませんか。',
-        vietnamese: 'Tổ chức tiệc bất ngờ không?'
+        vietnamese: 'Shall we throw a surprise party?'
       },
       {
-        speaker: 'マイ',
+        speaker: 'Mai',
         japanese: 'いいですね！私はケーキを作ります。',
         kana: 'いいですね！わたしはけーきをつくります。',
-        vietnamese: 'Hay đấy! Mình sẽ làm bánh.'
+        vietnamese: 'Great idea! I\'ll make a cake.'
       },
       {
-        speaker: 'たなか',
+        speaker: 'Tanaka',
         japanese: 'じゃ、僕はプレゼントを買いに行きます。何がいいかな。',
         kana: 'じゃ、ぼくはぷれぜんとをかいにいきます。なにがいいかな。',
-        vietnamese: 'Vậy mình đi mua quà. Mua gì hay nhỉ?'
+        vietnamese: 'Then I\'ll go buy a present. I wonder what would be good.'
       },
       {
-        speaker: 'マイ',
+        speaker: 'Mai',
         japanese: 'リンさんは日本語の本が好きだから、辞書はどうですか。',
         kana: 'りんさんはにほんごのほんがすきだから、じしょはどうですか。',
-        vietnamese: 'Lin thích sách tiếng Nhật, tặng từ điển thì sao?'
+        vietnamese: 'Lin likes Japanese books, so how about a dictionary?'
       },
       {
-        speaker: 'たなか',
+        speaker: 'Tanaka',
         japanese: 'いいアイデアですね。じゃ、土曜日の五時にリンさんの家で会いましょう。',
         kana: 'いいあいであですね。じゃ、どようびのごじにりんさんのいえであいましょう。',
-        vietnamese: 'Ý hay đấy. Vậy thứ bảy 5 giờ gặp ở nhà Lin nhé.'
+        vietnamese: 'Good idea. Let\'s meet at Lin\'s place at 5 on Saturday.'
       }
     ],
     culturalNote:
-      'Ở Nhật, người tổ chức sinh nhật thường là bạn bè chứ không phải người được chúc mừng. Trong trường học, cả lớp sẽ hát "Happy Birthday" bằng tiếng Anh. Bánh kem Nhật (keeki) thường nhẹ và ít ngọt hơn bánh phương Tây, phổ biến nhất là Strawberry Shortcake.'
+      'In Japan, birthday parties are usually organized by friends rather than the person being celebrated. In schools, the whole class will sing "Happy Birthday" in English. Japanese cakes (keeki) tend to be lighter and less sweet than Western ones; the Strawberry Shortcake is the most popular.'
   },
 
   // ─── 11. Studying Abroad (留学) ──────────────────────────────────────
   {
     id: 'n4-conv-11',
-    title: 'Du học',
+    title: 'Studying abroad',
     titleJp: '留学',
     level: 'N4',
-    situation: 'Sinh viên chia sẻ về trải nghiệm du học và sự khác biệt văn hóa',
+    situation: 'A student shares their study-abroad experience and cultural differences',
     patterns: [
       {
         japanese: '留学しています。',
         kana: 'りゅうがくしています。',
-        vietnamese: 'Tôi đang du học.',
+        vietnamese: 'I am studying abroad.',
         memoryTip:
-          'Nhớ: ryuugaku = "lưu học" (Hán Việt) → du học. Ryuu (lưu = ở lại) + gaku (học) = ở lại nước khác để học. Giống "lưu học sinh" trong tiếng Việt!'
+          'Remember: ryuugaku = studying abroad.'
       },
       {
         japanese: '外国語を勉強しています。',
         kana: 'がいこくごをべんきょうしています。',
-        vietnamese: 'Tôi đang học ngoại ngữ.',
+        vietnamese: 'I am studying a foreign language.',
         memoryTip:
-          'Nhớ: gaikokugo = "ngoại quốc ngữ" (Hán Việt) → tiếng nước ngoài. Gai (ngoại) + koku (quốc) + go (ngữ) = ngoại ngữ — quen thuộc với người Việt!'
+          'Remember: gaikokugo = foreign language (gai = outside, koku = country, go = language).'
       },
       {
         japanese: '文化が違います。',
         kana: 'ぶんかがちがいます。',
-        vietnamese: 'Văn hóa khác nhau.',
+        vietnamese: 'The culture is different.',
         memoryTip:
-          'Nhớ: bunka = "văn hóa" (Hán Việt). Chigaimasu = "chi gai mà sư" → "Chi (chỉ) gai (khác) mà sư (sự)" = khác nhau — dùng để nói sự khác biệt'
+          'Remember: bunka = culture. Chigaimasu = to differ, used to point out a difference.'
       }
     ],
     dialogue: [
       {
-        speaker: 'せんせい',
+        speaker: 'Teacher',
         japanese: 'リンさんはどうして日本に留学しましたか。',
         kana: 'りんさんはどうしてにほんにりゅうがくしましたか。',
-        vietnamese: 'Lin, tại sao bạn du học Nhật Bản?'
+        vietnamese: 'Lin, why did you decide to study in Japan?'
       },
       {
-        speaker: 'リン',
+        speaker: 'Lin',
         japanese: '日本語と日本の文化に興味があったからです。',
         kana: 'にほんごとにほんのぶんかにきょうみがあったからです。',
-        vietnamese: 'Vì em thích tiếng Nhật và văn hóa Nhật ạ.'
+        vietnamese: 'Because I was interested in Japanese and Japanese culture.'
       },
       {
-        speaker: 'せんせい',
+        speaker: 'Teacher',
         japanese: '日本の生活はどうですか。',
         kana: 'にほんのせいかつはどうですか。',
-        vietnamese: 'Cuộc sống ở Nhật thế nào?'
+        vietnamese: 'How is life in Japan?'
       },
       {
-        speaker: 'リン',
+        speaker: 'Lin',
         japanese: '楽しいですが、文化が違うので、時々大変です。',
         kana: 'たのしいですが、ぶんかがちがうので、ときどきたいへんです。',
-        vietnamese: 'Vui nhưng văn hóa khác nên thỉnh thoảng vất vả.'
+        vietnamese: 'It\'s fun, but the culture is different, so it\'s sometimes hard.'
       },
       {
-        speaker: 'せんせい',
+        speaker: 'Teacher',
         japanese: 'どんなところが違いますか。',
         kana: 'どんなところがちがいますか。',
-        vietnamese: 'Khác ở điểm nào?'
+        vietnamese: 'What kind of things are different?'
       },
       {
-        speaker: 'リン',
+        speaker: 'Lin',
         japanese: 'ゴミの分別が難しいです。ベトナムではそんなに分けませんから。',
         kana: 'ごみのぶんべつがむずかしいです。べとなむではそんなにわけませんから。',
-        vietnamese: 'Phân loại rác khó lắm. Ở Việt Nam không phân loại nhiều thế.'
+        vietnamese: 'Sorting trash is difficult. In Vietnam we don\'t separate it that much.'
       }
     ],
     culturalNote:
-      'Phân loại rác (gomi no bunbetsu) là một trong những "cú sốc văn hóa" lớn nhất với du học sinh tại Nhật. Rác được chia thành: rác cháy (moeru gomi), rác không cháy (moenai gomi), rác tái chế (shigen gomi), và rác cỡ lớn (sodai gomi). Mỗi loại có ngày thu gom riêng.'
+      'Sorting trash (gomi no bunbetsu) is one of the biggest culture shocks for international students in Japan. Trash is divided into: burnable (moeru gomi), non-burnable (moenai gomi), recyclables (shigen gomi), and large items (sodai gomi). Each type has its own collection day.'
   },
 
   // ─── 12. Cooking (料理) ──────────────────────────────────────────────
   {
     id: 'n4-conv-12',
-    title: 'Nấu ăn',
+    title: 'Cooking',
     titleJp: '料理',
     level: 'N4',
-    situation: 'Hai người bạn nấu ăn cùng nhau tại nhà, thử làm món Nhật',
+    situation: 'Two friends cook together at home, trying a Japanese dish',
     patterns: [
       {
         japanese: '料理を作ります。',
         kana: 'りょうりをつくります。',
-        vietnamese: 'Tôi nấu ăn / làm món ăn.',
+        vietnamese: 'I cook / make food.',
         memoryTip:
-          'Nhớ: ryouri = "liệu lý" (Hán Việt) → nấu ăn, món ăn. Tsukurimasu = làm, tạo ra. "Ryouri wo tsukuru" = chế biến món ăn — dùng "tsukuru" chứ không dùng "suru"'
+          'Remember: ryouri = cooking/a dish. Tsukurimasu = to make. "Ryouri wo tsukuru" uses "tsukuru", not "suru".'
       },
       {
         japanese: 'おいしいです。/ おいしくないです。',
         kana: 'おいしいです。/ おいしくないです。',
-        vietnamese: 'Ngon. / Không ngon.',
+        vietnamese: 'Delicious. / Not delicious.',
         memoryTip:
-          'Nhớ: oishii = "ôi shi" → "Ôi, ngon shi (thế)!" — oishii là tính từ -i, phủ định đổi thành oishikunai. Mazui = dở (nhưng nói thẳng thế bất lịch sự!)'
+          'Remember: oishii is an i-adjective, and its negative is oishikunai. Mazui = tastes bad (but blunt to say directly!).'
       },
       {
         japanese: '〜を入れてください。',
         kana: '〜をいれてください。',
-        vietnamese: 'Xin hãy cho ~ vào. (chỉ dẫn nấu ăn)',
+        vietnamese: 'Please add ~. (a cooking instruction)',
         memoryTip:
-          'Nhớ: irete kudasai = "i rê tê" → "I (cho) rê tê (vào nồi)" — ireru = bỏ vào, cho vào. Dùng nhiều trong công thức nấu ăn'
+          'Remember: ireru = to put in/add. Used a lot in recipes.'
       }
     ],
     dialogue: [
       {
-        speaker: 'リン',
+        speaker: 'Lin',
         japanese: '今日はカレーライスを作りましょう。',
         kana: 'きょうはかれーらいすをつくりましょう。',
-        vietnamese: 'Hôm nay cùng làm cơm cà ri nhé.'
+        vietnamese: 'Let\'s make curry rice today.'
       },
       {
-        speaker: 'マイ',
+        speaker: 'Mai',
         japanese: 'いいですね。何を買いますか。',
         kana: 'いいですね。なにをかいますか。',
-        vietnamese: 'Hay đấy. Cần mua gì?'
+        vietnamese: 'Sounds good. What do we need to buy?'
       },
       {
-        speaker: 'リン',
+        speaker: 'Lin',
         japanese: 'にんじんと玉ねぎと肉を買います。カレーのルーはもうあります。',
         kana: 'にんじんとたまねぎとにくをかいます。かれーのるーはもうあります。',
-        vietnamese: 'Cà rốt, hành tây và thịt. Viên cà ri thì có rồi.'
+        vietnamese: 'Carrots, onions, and meat. We already have the curry roux.'
       },
       {
-        speaker: 'マイ',
+        speaker: 'Mai',
         japanese: '野菜を切りましたよ。次は何をしますか。',
         kana: 'やさいをきりましたよ。つぎはなにをしますか。',
-        vietnamese: 'Mình cắt rau xong rồi. Tiếp theo làm gì?'
+        vietnamese: 'I finished cutting the vegetables. What\'s next?'
       },
       {
-        speaker: 'リン',
+        speaker: 'Lin',
         japanese: '鍋に油を入れてください。それから肉を入れて炒めます。',
         kana: 'なべにあぶらをいれてください。それからにくをいれていためます。',
-        vietnamese: 'Cho dầu vào nồi. Rồi cho thịt vào xào.'
+        vietnamese: 'Please add oil to the pot. Then add the meat and stir-fry it.'
       },
       {
-        speaker: 'マイ',
+        speaker: 'Mai',
         japanese: 'わあ、おいしそう！早く食べたいです。',
         kana: 'わあ、おいしそう！はやくたべたいです。',
-        vietnamese: 'Waa, có vẻ ngon quá! Muốn ăn nhanh thôi.'
+        vietnamese: 'Wow, that looks tasty! I want to eat it soon.'
       }
     ],
     culturalNote:
-      'Cơm cà ri Nhật (karee raisu) là một trong những món "quốc dân" phổ biến nhất, được nấu đơn giản bằng viên cà ri đóng hộp (ruu). Cà ri Nhật ngọt và đặc hơn cà ri Ấn Độ. Thương hiệu nổi tiếng: Vermont Curry, Java Curry, Golden Curry. Đây là món dễ nấu nhất cho du học sinh mới bắt đầu tự nấu.'
+      'Japanese curry rice (karee raisu) is one of the most popular "national" dishes, usually made simply from boxed curry roux. Japanese curry is sweeter and thicker than Indian curry. Famous brands include Vermont Curry, Java Curry, and Golden Curry — an easy dish for international students to cook for the first time.'
   },
 
   // ─── 13. Lost & Found (忘れ物) ───────────────────────────────────────
   {
     id: 'n4-conv-13',
-    title: 'Đồ thất lạc',
+    title: 'Lost and found',
     titleJp: '忘れ物',
     level: 'N4',
-    situation: 'Hành khách đến quầy hỗ trợ ga tàu để tìm ô quên trên tàu',
+    situation: 'A passenger goes to a station help desk to find an umbrella left on the train',
     patterns: [
       {
         japanese: '忘れ物をしました。',
         kana: 'わすれものをしました。',
-        vietnamese: 'Tôi đã quên đồ. (để quên vật gì đó)',
+        vietnamese: 'I left something behind. (forgetting an item)',
         memoryTip:
-          'Nhớ: wasuremono = "wa sư rê mô nô" → "Wa (ôi), sư rê mô nô (sơ ý quên đồ)!" — wasureru = quên, mono = đồ vật → wasuremono = đồ bị quên'
+          'Remember: wasureru = to forget, mono = thing → wasuremono = something forgotten.'
       },
       {
         japanese: '落とし物をしました。',
         kana: 'おとしものをしました。',
-        vietnamese: 'Tôi đã đánh rơi đồ.',
+        vietnamese: 'I dropped something.',
         memoryTip:
-          'Nhớ: otoshimono = "ô tô shi mô nô" → "Ô tô chạy, rơi đồ mô nô (mà không biết)!" — otosu = làm rơi, mono = đồ vật → otoshimono = đồ bị rơi'
+          'Remember: otosu = to drop, mono = thing → otoshimono = something dropped.'
       },
       {
         japanese: '〜を探しています。',
         kana: '〜をさがしています。',
-        vietnamese: 'Tôi đang tìm ~.',
+        vietnamese: 'I am looking for ~.',
         memoryTip:
-          'Nhớ: sagashite imasu = "sa ga shi tê" → "Sa (rơi) ga (cái) shi tê (đi tìm)" — sagasu = tìm kiếm, dùng khi đang tìm đồ hoặc tìm người'
+          'Remember: sagasu = to search, used when looking for an item or a person.'
       }
     ],
     dialogue: [
       {
-        speaker: 'リン',
+        speaker: 'Lin',
         japanese: 'すみません、忘れ物をしてしまいました。',
         kana: 'すみません、わすれものをしてしまいました。',
-        vietnamese: 'Xin lỗi, tôi quên đồ mất rồi.'
+        vietnamese: 'Excuse me, I left something behind.'
       },
       {
-        speaker: 'えきいん',
+        speaker: 'Station staff',
         japanese: '何を忘れましたか。',
         kana: 'なにをわすれましたか。',
-        vietnamese: 'Bạn quên gì?'
+        vietnamese: 'What did you leave?'
       },
       {
-        speaker: 'リン',
+        speaker: 'Lin',
         japanese: '黒い傘を電車の中に忘れました。',
         kana: 'くろいかさをでんしゃのなかにわすれました。',
-        vietnamese: 'Tôi quên cái ô đen ở trên tàu.'
+        vietnamese: 'I left a black umbrella on the train.'
       },
       {
-        speaker: 'えきいん',
+        speaker: 'Station staff',
         japanese: '何線に乗りましたか。何時ごろでしたか。',
         kana: 'なにせんにのりましたか。なんじごろでしたか。',
-        vietnamese: 'Bạn đi tuyến nào? Khoảng mấy giờ?'
+        vietnamese: 'Which line did you take? About what time was it?'
       },
       {
-        speaker: 'リン',
+        speaker: 'Lin',
         japanese: '中央線の三時ごろの電車です。',
         kana: 'ちゅうおうせんのさんじごろのでんしゃです。',
-        vietnamese: 'Tàu tuyến Chuo khoảng 3 giờ.'
+        vietnamese: 'A Chuo Line train around 3 o\'clock.'
       },
       {
-        speaker: 'えきいん',
+        speaker: 'Station staff',
         japanese: '分かりました。見つかったらお電話しますね。こちらに名前と電話番号を書いてください。',
         kana: 'わかりました。みつかったらおでんわしますね。こちらになまえとでんわばんごうをかいてください。',
-        vietnamese: 'Tôi hiểu rồi. Nếu tìm thấy sẽ gọi điện. Xin viết tên và số điện thoại vào đây.'
+        vietnamese: 'I understand. I\'ll call you if it\'s found. Please write your name and phone number here.'
       }
     ],
     culturalNote:
-      'Nhật Bản nổi tiếng với tỷ lệ trả lại đồ thất lạc cực cao. Mỗi ga tàu lớn đều có quầy "wasuremono" (忘れ物) chuyên xử lý đồ bỏ quên. Nếu không tìm thấy tại ga, bạn có thể gọi đến trung tâm xử lý đồ thất lạc (Lost & Found Center). Mỗi năm, cảnh sát Tokyo nhận hơn 3 triệu món đồ nhặt được!'
+      'Japan is famous for its extremely high rate of returning lost items. Every major train station has a "wasuremono" (忘れ物) counter that handles lost property. If it isn\'t found at the station, you can call the Lost & Found Center. Tokyo police receive over 3 million found items every year!'
   },
 
   // ─── 14. Seasonal Events (季節の行事) ────────────────────────────────
   {
     id: 'n4-conv-14',
-    title: 'Sự kiện theo mùa',
+    title: 'Seasonal events',
     titleJp: '季節の行事',
     level: 'N4',
-    situation: 'Nhóm bạn bàn về các hoạt động mùa xuân và mùa hè sắp tới',
+    situation: 'A group of friends discuss upcoming spring and summer activities',
     patterns: [
       {
         japanese: '花見に行きましょう。',
         kana: 'はなみにいきましょう。',
-        vietnamese: 'Cùng đi ngắm hoa nhé.',
+        vietnamese: 'Let\'s go flower viewing.',
         memoryTip:
-          'Nhớ: hanami = "hana" (hoa) + "mi" (xem) → ngắm hoa anh đào. Hanami là truyền thống mùa xuân, mọi người trải chiếu dưới gốc cây sakura ăn uống vui vẻ'
+          'Remember: hanami = hana (flower) + mi (viewing) → cherry blossom viewing. A spring tradition where people lay out mats under sakura trees to eat and drink together.'
       },
       {
         japanese: 'お祭りがあります。',
         kana: 'おまつりがあります。',
-        vietnamese: 'Có lễ hội.',
+        vietnamese: 'There is a festival.',
         memoryTip:
-          'Nhớ: matsuri = "mát sư ri" → "Mát vì sư ri (rước kiệu) giữa mùa hè!" — matsuri = lễ hội, thường có kiệu rước (mikoshi), quầy ăn (yatai), pháo hoa (hanabi)'
+          'Remember: matsuri = festival, often featuring a portable shrine (mikoshi), food stalls (yatai), and fireworks (hanabi).'
       },
       {
         japanese: '夏休みに〜するつもりです。',
         kana: 'なつやすみに〜するつもりです。',
-        vietnamese: 'Kỳ nghỉ hè tôi định ~. (kế hoạch)',
+        vietnamese: 'I plan to ~ during summer vacation. (a plan)',
         memoryTip:
-          'Nhớ: natsu yasumi = "nát sư" + "ya sư mi" → "Nát sức ya (nghỉ) sư mi (smile)" — nghỉ hè. Tsumori = dự định, ý định — dùng cho kế hoạch cá nhân'
+          'Remember: natsu yasumi = summer vacation. Tsumori = intention/plan, used for personal plans.'
       }
     ],
     dialogue: [
       {
-        speaker: 'マイ',
+        speaker: 'Mai',
         japanese: 'もうすぐ春ですね。花見に行きませんか。',
         kana: 'もうすぐはるですね。はなみにいきませんか。',
-        vietnamese: 'Sắp xuân rồi nhỉ. Đi ngắm hoa không?'
+        vietnamese: 'Spring is almost here. Want to go flower viewing?'
       },
       {
-        speaker: 'リン',
+        speaker: 'Lin',
         japanese: 'いいですね。どこがいいですか。',
         kana: 'いいですね。どこがいいですか。',
-        vietnamese: 'Hay đấy. Ở đâu tốt nhỉ?'
+        vietnamese: 'Sounds good. Where should we go?'
       },
       {
-        speaker: 'たなか',
+        speaker: 'Tanaka',
         japanese: '上野公園はどうですか。桜がとてもきれいですよ。',
         kana: 'うえのこうえんはどうですか。さくらがとてもきれいですよ。',
-        vietnamese: 'Công viên Ueno thì sao? Hoa anh đào đẹp lắm.'
+        vietnamese: 'How about Ueno Park? The cherry blossoms are really beautiful there.'
       },
       {
-        speaker: 'マイ',
+        speaker: 'Mai',
         japanese: 'じゃ、上野にしましょう。夏はお祭りもありますよね。',
         kana: 'じゃ、うえのにしましょう。なつはおまつりもありますよね。',
-        vietnamese: 'Vậy chọn Ueno đi. Mùa hè cũng có lễ hội nhỉ?'
+        vietnamese: 'Let\'s go with Ueno then. There are summer festivals too, right?'
       },
       {
-        speaker: 'たなか',
+        speaker: 'Tanaka',
         japanese: 'はい、七月に隅田川の花火大会がありますよ。',
         kana: 'はい、しちがつにすみだがわのはなびたいかいがありますよ。',
-        vietnamese: 'Có, tháng 7 có lễ hội pháo hoa sông Sumida.'
+        vietnamese: 'Yes, there\'s the Sumida River fireworks festival in July.'
       },
       {
-        speaker: 'リン',
+        speaker: 'Lin',
         japanese: '花火大会！夏休みにぜひ行くつもりです。浴衣を着てみたいです。',
         kana: 'はなびたいかい！なつやすみにぜひいくつもりです。ゆかたをきてみたいです。',
-        vietnamese: 'Lễ hội pháo hoa! Kỳ nghỉ hè nhất định đi. Muốn thử mặc yukata nữa.'
+        vietnamese: 'A fireworks festival! I definitely plan to go over summer break. I want to try wearing a yukata too.'
       }
     ],
     culturalNote:
-      'Nhật Bản có rất nhiều sự kiện theo mùa: mùa xuân có hanami (ngắm hoa), mùa hè có hanabi taikai (lễ hội pháo hoa) và bon odori (nhảy múa Obon), mùa thu có momijigari (ngắm lá đỏ), mùa đông có hatsumoude (viếng đền đầu năm). Lễ hội pháo hoa Sumidagawa ở Tokyo thu hút hơn 1 triệu người mỗi năm.'
+      'Japan has many seasonal events: hanami (flower viewing) in spring, hanabi taikai (fireworks festivals) and bon odori (Obon dancing) in summer, momijigari (autumn leaf viewing) in fall, and hatsumoude (New Year shrine visit) in winter. The Sumidagawa fireworks festival in Tokyo draws over a million visitors every year.'
   },
 
   // ─── 15. Comparing Things (比較) ─────────────────────────────────────
   {
     id: 'n4-conv-15',
-    title: 'So sánh',
+    title: 'Comparing things',
     titleJp: '比較',
     level: 'N4',
-    situation: 'Hai bạn đang chọn mua điện thoại mới, so sánh các sản phẩm',
+    situation: 'Two friends are choosing a new phone and comparing products',
     patterns: [
       {
         japanese: 'AよりBの方がいいです。',
         kana: 'AよりBのほうがいいです。',
-        vietnamese: 'B tốt hơn A. (so sánh hơn)',
+        vietnamese: 'B is better than A. (a comparison)',
         memoryTip:
-          'Nhớ: yori = "hơi rì" → "A hơi rì (kém), B hou (hơn)" — yori đánh dấu cái kém hơn, hou ga đánh dấu cái hơn. Ngược với tiếng Anh: "A yori B" = "B more than A"'
+          'Remember: yori marks the thing being compared against, hou ga marks the winner. Unlike English, "A yori B" means "B, more than A".'
       },
       {
         japanese: 'Bの方が〜です。',
         kana: 'Bのほうが〜です。',
-        vietnamese: 'B thì ~ hơn. (nhấn mạnh bên hơn)',
+        vietnamese: 'B is more ~. (emphasizing the "more" side)',
         memoryTip:
-          'Nhớ: hou = "hô" → "Hô B hơn!" — no hou ga luôn đi với cái tốt hơn/nhiều hơn. Bỏ "A yori" khi ngữ cảnh rõ ràng'
+          'Remember: no hou ga always goes with the better/more option. "A yori" can be dropped when it\'s clear from context.'
       },
       {
         japanese: '〜の中で〜が一番です。',
         kana: '〜のなかで〜がいちばんです。',
-        vietnamese: 'Trong ~ thì ~ là nhất. (so sánh nhất)',
+        vietnamese: 'Among ~, ~ is the best. (a superlative)',
         memoryTip:
-          'Nhớ: ichiban = "ichi" (một) + "ban" (bận → vị trí) → số 1, nhất. "No naka de" = trong (phạm vi). VD: "Quả trong rổ, cái nào ichiban (nhất)?"'
+          'Remember: ichiban = number one, the best. "No naka de" = among/within a set.'
       }
     ],
     dialogue: [
       {
-        speaker: 'リン',
+        speaker: 'Lin',
         japanese: '新しいスマホがほしいんですが、どれがいいですか。',
         kana: 'あたらしいすまほがほしいんですが、どれがいいですか。',
-        vietnamese: 'Mình muốn mua smartphone mới, cái nào tốt nhỉ?'
+        vietnamese: 'I want a new smartphone. Which one is good?'
       },
       {
-        speaker: 'たなか',
+        speaker: 'Tanaka',
         japanese: 'このAとBを比べましょう。Aの方が安いですよ。',
         kana: 'このAとBをくらべましょう。Aのほうがやすいですよ。',
-        vietnamese: 'So sánh A với B nha. A rẻ hơn đấy.'
+        vietnamese: 'Let\'s compare A and B. A is cheaper.'
       },
       {
-        speaker: 'リン',
+        speaker: 'Lin',
         japanese: 'でも、AよりBの方がカメラがいいですよね。',
         kana: 'でも、AよりBのほうがかめらがいいですよね。',
-        vietnamese: 'Nhưng camera B tốt hơn A nhỉ.'
+        vietnamese: 'But B has a better camera than A, right?'
       },
       {
-        speaker: 'たなか',
+        speaker: 'Tanaka',
         japanese: 'そうですね。A、B、Cの中で、どれが一番人気ですか。',
         kana: 'そうですね。A、B、Cのなかで、どれがいちばんにんきですか。',
-        vietnamese: 'Đúng rồi. Trong A, B, C thì cái nào được ưa chuộng nhất?'
+        vietnamese: 'True. Among A, B, and C, which is the most popular?'
       },
       {
-        speaker: 'てんいん',
+        speaker: 'Shop staff',
         japanese: 'Bが一番人気がありますよ。カメラも画面も一番きれいです。',
         kana: 'Bがいちばんにんきがありますよ。かめらもがめんもいちばんきれいです。',
-        vietnamese: 'B phổ biến nhất ạ. Camera và màn hình cũng đẹp nhất.'
+        vietnamese: 'B is the most popular. It has the best camera and the best screen too.'
       },
       {
-        speaker: 'リン',
+        speaker: 'Lin',
         japanese: 'じゃ、Bにします。少し高いですが、長く使いたいですから。',
         kana: 'じゃ、Bにします。すこしたかいですが、ながくつかいたいですから。',
-        vietnamese: 'Vậy mình chọn B. Hơi đắt nhưng muốn dùng lâu dài.'
+        vietnamese: 'Then I\'ll go with B. It\'s a bit pricier, but I want to use it for a long time.'
       }
     ],
     culturalNote:
-      'Người Nhật có xu hướng tránh so sánh trực tiếp theo kiểu "cái này xấu" mà thay bằng "cái kia tốt hơn" (hou ga ii). Khi mua đồ điện tử ở Nhật, nên đến các cửa hàng lớn như Yodobashi Camera hoặc Bic Camera — nhân viên rất am hiểu và có thể so sánh chi tiết sản phẩm cho bạn.'
+      'Japanese people tend to avoid direct comparisons like "this one is bad", preferring "that one is better" (hou ga ii). When buying electronics in Japan, big stores like Yodobashi Camera or Bic Camera are a good bet — staff are very knowledgeable and can compare products in detail for you.'
   },
 
   // ─── 16. Permission (許可) ───────────────────────────────────────────
   {
     id: 'n4-conv-16',
-    title: 'Xin phép',
+    title: 'Asking permission',
     titleJp: '許可',
     level: 'N4',
-    situation: 'Sinh viên xin phép giáo viên trong lớp học và ở thư viện',
+    situation: 'A student asks the teacher for permission in class and at the library',
     patterns: [
       {
         japanese: '〜てもいいですか。',
         kana: '〜てもいいですか。',
-        vietnamese: 'Có được ~ không ạ? (xin phép)',
+        vietnamese: 'May I ~? (asking permission)',
         memoryTip:
-          'Nhớ: ~te mo ii desu ka = "tê mô i" → "Tê (làm) mô (cũng) i (được) không?" — cấu trúc xin phép chuẩn. Trả lời OK: "Ii desu yo". Trả lời từ chối: "Chotto..."'
+          'Remember: ~te mo ii desu ka is the standard permission structure. A yes reply: "Ii desu yo". A no reply: "Chotto..."'
       },
       {
         japanese: '〜ないでください。',
         kana: '〜ないでください。',
-        vietnamese: 'Xin đừng ~. (yêu cầu không làm gì)',
+        vietnamese: 'Please don\'t ~. (asking someone not to do something)',
         memoryTip:
-          'Nhớ: ~naide kudasai = "nai đê" → "Nài đê (đừng) làm!" — nai = phủ định, de kudasai = xin hãy. Lịch sự hơn cấm thẳng, thường dùng trong lớp học, thư viện'
+          'Remember: ~naide kudasai is a polite way to ask someone not to do something, gentler than an outright ban — often used in classrooms and libraries.'
       }
     ],
     dialogue: [
       {
-        speaker: 'リン',
+        speaker: 'Lin',
         japanese: '先生、窓を開けてもいいですか。暑いですから。',
         kana: 'せんせい、まどをあけてもいいですか。あついですから。',
-        vietnamese: 'Thưa thầy, em mở cửa sổ được không ạ? Vì nóng quá.'
+        vietnamese: 'Teacher, may I open the window? It\'s hot.'
       },
       {
-        speaker: 'せんせい',
+        speaker: 'Teacher',
         japanese: 'はい、いいですよ。どうぞ。',
         kana: 'はい、いいですよ。どうぞ。',
-        vietnamese: 'Được, mở đi.'
+        vietnamese: 'Yes, go ahead.'
       },
       {
-        speaker: 'リン',
+        speaker: 'Lin',
         japanese: 'あと、辞書を使ってもいいですか。',
         kana: 'あと、じしょをつかってもいいですか。',
-        vietnamese: 'Thêm nữa, em dùng từ điển được không ạ?'
+        vietnamese: 'Also, may I use a dictionary?'
       },
       {
-        speaker: 'せんせい',
+        speaker: 'Teacher',
         japanese: 'テストの時は使わないでください。でも、今は大丈夫ですよ。',
         kana: 'てすとのときはつかわないでください。でも、いまはだいじょうぶですよ。',
-        vietnamese: 'Lúc thi thì đừng dùng. Nhưng bây giờ thì được.'
+        vietnamese: 'Please don\'t use one during a test. But it\'s fine right now.'
       },
       {
-        speaker: 'リン',
+        speaker: 'Lin',
         japanese: 'はい、分かりました。写真を撮ってもいいですか。',
         kana: 'はい、わかりました。しゃしんをとってもいいですか。',
-        vietnamese: 'Vâng, em hiểu rồi. Em chụp ảnh (bảng) được không ạ?'
+        vietnamese: 'Okay, understood. May I take a photo (of the board)?'
       },
       {
-        speaker: 'せんせい',
+        speaker: 'Teacher',
         japanese: 'いいですよ。でも授業中はスマホを見ないでくださいね。',
         kana: 'いいですよ。でもじゅぎょうちゅうはすまほをみないでくださいね。',
-        vietnamese: 'Được. Nhưng đừng xem điện thoại trong giờ học nhé.'
+        vietnamese: 'That\'s fine. But please don\'t look at your phone during class.'
       }
     ],
     culturalNote:
-      'Trong văn hóa Nhật, xin phép trước khi làm gì là rất quan trọng, kể cả những việc nhỏ. Câu "~te mo ii desu ka" rất hay dùng hàng ngày: xin phép ngồi (suwatte mo ii desu ka), xin phép vào (haitte mo ii desu ka). Khi bị từ chối, người Nhật thường không nói thẳng "dame" mà nói "chotto..." (hơi...) để giữ không khí hài hòa.'
+      'In Japanese culture, asking permission before doing something is very important, even for small things. The phrase "~te mo ii desu ka" is used constantly in daily life: asking to sit down (suwatte mo ii desu ka), asking to enter (haitte mo ii desu ka). When declining, Japanese people rarely say "dame" (no) outright — they say "chotto..." (a bit...) to keep the atmosphere harmonious.'
   },
 
   // ─── 17. Inviting Someone (誘い) ─────────────────────────────────────
   {
     id: 'n4-conv-17',
-    title: 'Rủ ai đó',
+    title: 'Inviting someone',
     titleJp: '誘い',
     level: 'N4',
-    situation: 'Đồng nghiệp rủ nhau đi karaoke sau giờ làm',
+    situation: 'Coworkers invite each other to karaoke after work',
     patterns: [
       {
         japanese: '〜ませんか。',
         kana: '〜ませんか。',
-        vietnamese: 'Bạn có muốn ~ không? (mời/rủ lịch sự)',
+        vietnamese: 'Would you like to ~? (a polite invitation)',
         memoryTip:
-          'Nhớ: ~masen ka = phủ định + hỏi → "Không làm ~ sao?" = lời mời. Giống tiếng Anh "Won\'t you ~?" — hỏi phủ định nhưng ý là mời. Lịch sự hơn "~mashou"'
+          'Remember: ~masen ka is a negative question that functions as an invitation — like the English "Won\'t you ~?" More polite than "~mashou".'
       },
       {
         japanese: '〜ましょう。',
         kana: '〜ましょう。',
-        vietnamese: 'Cùng ~ nào! (đề nghị hành động chung)',
+        vietnamese: 'Let\'s ~! (suggesting a shared action)',
         memoryTip:
-          'Nhớ: ~mashou = "ma show" → "Mà show (chương trình) hay quá, cùng đi!" — mashou dùng khi cả hai đã đồng ý, mang tính quyết định hơn "masen ka"'
+          'Remember: ~mashou is used once both sides have already agreed, more decisive than "masen ka".'
       },
       {
         japanese: 'いっしょに〜。',
         kana: 'いっしょに〜。',
-        vietnamese: 'Cùng nhau ~.',
+        vietnamese: 'Together ~.',
         memoryTip:
-          'Nhớ: issho ni = "ít sô ni" → "Ít sô (cô đơn) ni (nên) cùng nhau đi!" — issho ni = cùng nhau, đi kèm động từ để mời ai làm gì chung'
+          'Remember: issho ni = together, paired with a verb to invite someone to do something jointly.'
       }
     ],
     dialogue: [
       {
-        speaker: 'たなか',
+        speaker: 'Tanaka',
         japanese: '今日仕事の後、カラオケに行きませんか。',
         kana: 'きょうしごとのあと、からおけにいきませんか。',
-        vietnamese: 'Hôm nay sau giờ làm, đi karaoke không?'
+        vietnamese: 'Want to go to karaoke after work today?'
       },
       {
-        speaker: 'リン',
+        speaker: 'Lin',
         japanese: 'カラオケですか。いいですね。マイさんも誘いましょう。',
         kana: 'からおけですか。いいですね。まいさんもさそいましょう。',
-        vietnamese: 'Karaoke à? Hay đấy. Rủ Mai nữa nhé.'
+        vietnamese: 'Karaoke? Sounds good. Let\'s invite Mai too.'
       },
       {
-        speaker: 'たなか',
+        speaker: 'Tanaka',
         japanese: 'マイさん、いっしょにカラオケに行きませんか。',
         kana: 'まいさん、いっしょにからおけにいきませんか。',
-        vietnamese: 'Mai, cùng đi karaoke không?'
+        vietnamese: 'Mai, want to come to karaoke with us?'
       },
       {
-        speaker: 'マイ',
+        speaker: 'Mai',
         japanese: 'すみません、今日はちょっと用事があって…。',
         kana: 'すみません、きょうはちょっとようじがあって…。',
-        vietnamese: 'Xin lỗi, hôm nay mình hơi có việc...'
+        vietnamese: 'Sorry, I have something to take care of today...'
       },
       {
-        speaker: 'たなか',
+        speaker: 'Tanaka',
         japanese: 'そうですか。残念ですね。また今度いっしょに行きましょう。',
         kana: 'そうですか。ざんねんですね。またこんどいっしょにいきましょう。',
-        vietnamese: 'Vậy à. Tiếc nhỉ. Lần sau cùng đi nhé.'
+        vietnamese: 'I see, that\'s too bad. Let\'s go together another time.'
       },
       {
-        speaker: 'マイ',
+        speaker: 'Mai',
         japanese: 'はい、ぜひ！楽しんできてくださいね。',
         kana: 'はい、ぜひ！たのしんできてくださいね。',
-        vietnamese: 'Vâng, nhất định! Đi vui nhé.'
+        vietnamese: 'Yes, definitely! Have fun.'
       }
     ],
     culturalNote:
-      'Trong văn hóa Nhật, từ chối lời mời trực tiếp được coi là thất lễ. Thay vào đó, người ta nói "chotto..." (hơi khó), "youji ga atte..." (có việc), hoặc hít một hơi qua răng rồi nói "sore wa chotto..." — người nghe sẽ hiểu là từ chối. Karaoke ở Nhật là hoạt động xã hội phổ biến, có phòng riêng (không phải sân khấu chung) nên ai cũng thoải mái hát.'
+      'In Japanese culture, refusing an invitation directly is considered impolite. Instead, people say "chotto..." (it\'s a bit tricky), "youji ga atte..." (I have something to do), or draw a breath through their teeth before saying "sore wa chotto..." — the listener understands this as a refusal. Karaoke in Japan is a common social activity with private rooms (not a shared stage), so everyone feels comfortable singing.'
   },
 
   // ─── 18. At the Convenience Store (コンビニ) ────────────────────────
   {
     id: 'n4-conv-18',
-    title: 'Ở cửa hàng tiện lợi',
+    title: 'At the convenience store',
     titleJp: 'コンビニ',
     level: 'N4',
-    situation: 'Khách mua đồ ăn trưa tại konbini và thanh toán',
+    situation: 'A customer buys lunch at a konbini and pays',
     patterns: [
       {
         japanese: 'お弁当をください。',
         kana: 'おべんとうをください。',
-        vietnamese: 'Cho tôi hộp cơm.',
+        vietnamese: 'A boxed lunch, please.',
         memoryTip:
-          'Nhớ: bentou = "bên tô" → "Bên tô (cơm) này ngon quá!" — bentou = hộp cơm, obentou (thêm "o" lịch sự). Konbini bentou là bữa trưa phổ biến nhất ở Nhật'
+          'Remember: bentou = a boxed meal, obentou (with the polite "o"). Konbini bentou is the most common lunch in Japan.'
       },
       {
         japanese: '温めますか。',
         kana: 'あたためますか。',
-        vietnamese: 'Hâm nóng không ạ? (nhân viên hỏi khách)',
+        vietnamese: 'Would you like it heated up? (staff asking a customer)',
         memoryTip:
-          'Nhớ: atatamemasu ka = "a ta ta mê" → "A, ta ta (nóng nóng) mê (ăn)!" — câu nhân viên konbini hay hỏi nhất. Trả lời: "Hai, onegaishimasu" (vâng, nhờ anh/chị)'
+          'Remember: atatamemasu ka is the question konbini staff ask most often. Reply: "Hai, onegaishimasu" (yes, please).'
       }
     ],
     dialogue: [
       {
-        speaker: 'てんいん',
+        speaker: 'Staff',
         japanese: 'いらっしゃいませ。',
         kana: 'いらっしゃいませ。',
-        vietnamese: 'Xin chào quý khách.'
+        vietnamese: 'Welcome.'
       },
       {
-        speaker: 'リン',
+        speaker: 'Lin',
         japanese: 'このお弁当と、おにぎりを二つください。',
         kana: 'このおべんとうと、おにぎりをふたつください。',
-        vietnamese: 'Cho tôi hộp cơm này và 2 cơm nắm.'
+        vietnamese: 'This boxed lunch and two rice balls, please.'
       },
       {
-        speaker: 'てんいん',
+        speaker: 'Staff',
         japanese: 'お弁当は温めますか。',
         kana: 'おべんとうはあたためますか。',
-        vietnamese: 'Hộp cơm hâm nóng không ạ?'
+        vietnamese: 'Would you like the boxed lunch heated up?'
       },
       {
-        speaker: 'リン',
+        speaker: 'Lin',
         japanese: 'はい、お願いします。あと、お箸をつけてください。',
         kana: 'はい、おねがいします。あと、おはしをつけてください。',
-        vietnamese: 'Vâng, nhờ anh. Thêm đũa nữa nhé.'
+        vietnamese: 'Yes, please. Also, could I get chopsticks?'
       },
       {
-        speaker: 'てんいん',
+        speaker: 'Staff',
         japanese: '全部で七百五十円です。袋は要りますか。',
         kana: 'ぜんぶでななひゃくごじゅうえんです。ふくろはいりますか。',
-        vietnamese: 'Tổng cộng 750 yên. Cần túi không ạ?'
+        vietnamese: 'That comes to 750 yen. Would you like a bag?'
       },
       {
-        speaker: 'リン',
+        speaker: 'Lin',
         japanese: '袋は大丈夫です。カードで払えますか。',
         kana: 'ふくろはだいじょうぶです。かーどではらえますか。',
-        vietnamese: 'Túi không cần. Trả bằng thẻ được không?'
+        vietnamese: 'No bag needed. Can I pay by card?'
       }
     ],
     culturalNote:
-      'Konbini (convenience store) ở Nhật không chỉ bán đồ ăn mà còn có dịch vụ ATM, photocopy, gửi bưu kiện (takuhaibin), thanh toán hóa đơn điện nước, và mua vé concert. Ba chuỗi lớn nhất: 7-Eleven, FamilyMart, Lawson. Từ 2020, túi nilon phải trả thêm tiền (~3-5 yên) theo chính sách giảm nhựa.'
+      'Konbini in Japan don\'t just sell food — they also offer ATM service, photocopying, package delivery (takuhaibin), utility bill payment, and concert ticket sales. The three biggest chains are 7-Eleven, FamilyMart, and Lawson. Since 2020, plastic bags come with an extra charge (~3-5 yen) as part of a plastic-reduction policy.'
   },
 
   // ─── 19. Talking About Future (将来) ─────────────────────────────────
   {
     id: 'n4-conv-19',
-    title: 'Nói về tương lai',
+    title: 'Talking about the future',
     titleJp: '将来',
     level: 'N4',
-    situation: 'Sinh viên chia sẻ ước mơ và kế hoạch tương lai với bạn bè',
+    situation: 'Students share their dreams and future plans with friends',
     patterns: [
       {
         japanese: '将来〜たいです。',
         kana: 'しょうらい〜たいです。',
-        vietnamese: 'Tương lai tôi muốn ~.',
+        vietnamese: 'In the future, I want to ~.',
         memoryTip:
-          'Nhớ: shourai = "tương lai" (Hán Việt: tướng lai). Shou (tướng = sắp) + rai (lai = đến) = sắp đến = tương lai. Kết hợp với ~tai desu để nói ước mơ'
+          'Remember: shourai = the future. Combines with ~tai desu to talk about a dream.'
       },
       {
         japanese: '夢は〜ことです。',
         kana: 'ゆめは〜ことです。',
-        vietnamese: 'Ước mơ của tôi là ~.',
+        vietnamese: 'My dream is to ~.',
         memoryTip:
-          'Nhớ: yume = "du mê" → "Du (mơ) mê (mộng)" — yume = giấc mơ, ước mơ. "Yume wa ~ koto desu" = ước mơ là việc làm ~'
+          'Remember: yume = a dream. "Yume wa ~ koto desu" = my dream is to do ~.'
       },
       {
         japanese: '〜になりたいです。',
         kana: '〜になりたいです。',
-        vietnamese: 'Tôi muốn trở thành ~.',
+        vietnamese: 'I want to become ~.',
         memoryTip:
-          'Nhớ: ni naritai = "ni" (thành) + "naritai" (muốn trở thành) → dùng với nghề nghiệp hoặc trạng thái. VD: "Sensei ni naritai" = muốn trở thành giáo viên'
+          'Remember: ni naritai = want to become, used with a profession or a state. E.g. "Sensei ni naritai" = I want to become a teacher.'
       }
     ],
     dialogue: [
       {
-        speaker: 'マイ',
+        speaker: 'Mai',
         japanese: 'リンさん、将来何になりたいですか。',
         kana: 'りんさん、しょうらいなにになりたいですか。',
-        vietnamese: 'Lin, tương lai bạn muốn trở thành gì?'
+        vietnamese: 'Lin, what do you want to become in the future?'
       },
       {
-        speaker: 'リン',
+        speaker: 'Lin',
         japanese: '通訳になりたいです。日本語とベトナム語の通訳です。',
         kana: 'つうやくになりたいです。にほんごとべとなむごのつうやくです。',
-        vietnamese: 'Mình muốn trở thành phiên dịch. Phiên dịch Nhật-Việt.'
+        vietnamese: 'I want to become an interpreter — a Japanese-Vietnamese interpreter.'
       },
       {
-        speaker: 'マイ',
+        speaker: 'Mai',
         japanese: 'すごいですね。夢は何ですか。',
         kana: 'すごいですね。ゆめはなんですか。',
-        vietnamese: 'Tuyệt nhỉ. Ước mơ của bạn là gì?'
+        vietnamese: 'That\'s amazing. What is your dream?'
       },
       {
-        speaker: 'リン',
+        speaker: 'Lin',
         japanese: '夢は自分の会社を作ることです。マイさんは？',
         kana: 'ゆめはじぶんのかいしゃをつくることです。まいさんは？',
-        vietnamese: 'Ước mơ là mở công ty riêng. Còn Mai?'
+        vietnamese: 'My dream is to start my own company. What about you, Mai?'
       },
       {
-        speaker: 'マイ',
+        speaker: 'Mai',
         japanese: '私は将来日本語の先生になりたいです。',
         kana: 'わたしはしょうらいにほんごのせんせいになりたいです。',
-        vietnamese: 'Mình muốn trở thành giáo viên tiếng Nhật.'
+        vietnamese: 'I want to become a Japanese teacher in the future.'
       },
       {
-        speaker: 'リン',
+        speaker: 'Lin',
         japanese: 'マイさんは教えるのが上手だから、きっといい先生になりますよ。',
         kana: 'まいさんはおしえるのがじょうずだから、きっといいせんせいになりますよ。',
-        vietnamese: 'Mai dạy giỏi, chắc chắn sẽ trở thành giáo viên tốt.'
+        vietnamese: 'You\'re good at teaching, Mai, so you\'ll surely become a great teacher.'
       }
     ],
     culturalNote:
-      'Ở Nhật, câu hỏi "shourai no yume" (ước mơ tương lai) rất phổ biến từ tiểu học. Học sinh viết về ước mơ trong bài tập "shourai no yume sakubun" (bài luận về ước mơ). Nghề phổ biến nhất mà trẻ em Nhật mơ ước: YouTuber (nam), tiệm bánh (nữ) — thay đổi nhiều so với ngày xưa là cầu thủ bóng chày và tiếp viên hàng không!'
+      'In Japan, the question "shourai no yume" (future dream) is a common one starting in elementary school. Students write about their dreams in an essay called "shourai no yume sakubun". The most popular career dreams among Japanese children today: YouTuber (boys), bakery owner (girls) — quite different from the old days, when it was baseball players and flight attendants!'
   },
 
   // ─── 20. Thanking Properly (お礼) ───────────────────────────────────
   {
     id: 'n4-conv-20',
-    title: 'Cảm ơn đúng cách',
+    title: 'Thanking someone properly',
     titleJp: 'お礼',
     level: 'N4',
-    situation: 'Sinh viên cảm ơn giáo viên và đồng nghiệp sau khi được giúp đỡ',
+    situation: 'A student thanks their teacher and coworkers after receiving help',
     patterns: [
       {
         japanese: 'ありがとうございます。/ ありがとうございました。',
         kana: 'ありがとうございます。/ ありがとうございました。',
-        vietnamese: 'Cảm ơn (hiện tại). / Cảm ơn (đã xong). (hai mức thời gian)',
+        vietnamese: 'Thank you (ongoing). / Thank you (for something finished). (two tenses)',
         memoryTip:
-          'Nhớ: arigatou gozaimasu = đang cảm ơn (việc đang diễn ra). Arigatou gozaimashita = cảm ơn (việc đã kết thúc). VD: giúp xong việc → dùng "~mashita" (quá khứ)'
+          'Remember: arigatou gozaimasu is used for an ongoing situation. Arigatou gozaimashita is used once the matter is finished — e.g. after someone has helped you with something.'
       },
       {
         japanese: 'お世話になりました。',
         kana: 'おせわになりました。',
-        vietnamese: 'Đã được anh/chị giúp đỡ rất nhiều. (cảm ơn sâu sắc)',
+        vietnamese: 'Thank you for taking care of me. (a deep thank-you)',
         memoryTip:
-          'Nhớ: osewa ni narimashita = "ô se wa ni" → "Ô, se (chăm sóc) wa (quá) ni (nè)!" — osewa = chăm sóc, giúp đỡ. Dùng khi kết thúc mối quan hệ công việc/học tập, nghỉ việc, ra trường'
+          'Remember: osewa ni narimashita — osewa means care/help. Used when ending a work or study relationship, leaving a job, or graduating.'
       },
       {
         japanese: 'おかげさまで〜。',
         kana: 'おかげさまで〜。',
-        vietnamese: 'Nhờ có (anh/chị) mà ~. (biết ơn ai giúp)',
+        vietnamese: 'Thanks to you, ~. (acknowledging someone\'s help)',
         memoryTip:
-          'Nhớ: okagesama de = "ô ka gê sa ma" → "Ô, cá gê (kết quả) sa ma (nhờ mà có)" — dùng để nói thành công là nhờ sự giúp đỡ của người khác. Rất lịch sự và khiêm tốn'
+          'Remember: okagesama de is used to say that a success is thanks to someone else\'s help. Very polite and humble.'
       }
     ],
     dialogue: [
       {
-        speaker: 'リン',
+        speaker: 'Lin',
         japanese: '先生、一年間お世話になりました。',
         kana: 'せんせい、いちねんかんおせわになりました。',
-        vietnamese: 'Thưa thầy, một năm qua em đã được thầy giúp đỡ rất nhiều.'
+        vietnamese: 'Teacher, thank you for everything this past year.'
       },
       {
-        speaker: 'せんせい',
+        speaker: 'Teacher',
         japanese: 'リンさんもよくがんばりましたね。',
         kana: 'りんさんもよくがんばりましたね。',
-        vietnamese: 'Lin cũng đã rất cố gắng.'
+        vietnamese: 'You worked really hard too, Lin.'
       },
       {
-        speaker: 'リン',
+        speaker: 'Lin',
         japanese: 'おかげさまで、N4に合格できました。本当にありがとうございました。',
         kana: 'おかげさまで、N4にごうかくできました。ほんとうにありがとうございました。',
-        vietnamese: 'Nhờ có thầy mà em đậu N4 rồi. Thật sự cảm ơn thầy rất nhiều.'
+        vietnamese: 'Thanks to you, I passed N4. Thank you so much.'
       },
       {
-        speaker: 'せんせい',
+        speaker: 'Teacher',
         japanese: 'それはリンさん自身の努力ですよ。おめでとう。',
         kana: 'それはりんさんじしんのどりょくですよ。おめでとう。',
-        vietnamese: 'Đó là nhờ nỗ lực của chính Lin. Chúc mừng.'
+        vietnamese: 'That was your own effort, Lin. Congratulations.'
       },
       {
-        speaker: 'リン',
+        speaker: 'Lin',
         japanese: 'これからもよろしくお願いします。',
         kana: 'これからもよろしくおねがいします。',
-        vietnamese: 'Từ nay về sau cũng xin thầy chỉ bảo ạ.'
+        vietnamese: 'Please continue to guide me going forward.'
       },
       {
-        speaker: 'せんせい',
+        speaker: 'Teacher',
         japanese: 'こちらこそ。N3もがんばってくださいね。',
         kana: 'こちらこそ。N3もがんばってくださいね。',
-        vietnamese: 'Tôi mới phải cảm ơn. N3 cũng cố gắng nhé.'
+        vietnamese: 'Likewise. Good luck with N3 too.'
       }
     ],
     culturalNote:
-      'Nhật Bản có hệ thống cảm ơn phức tạp theo mức độ trang trọng: "domo" (bạn bè) → "arigatou" (thân mật) → "arigatou gozaimasu" (lịch sự) → "osewa ni narimashita" (rất trang trọng). "Okagesama de" thể hiện tinh thần khiêm tốn — thành công không phải của riêng mình mà nhờ có người xung quanh. Đây là giá trị cốt lõi trong văn hóa Nhật.'
+      'Japan has a layered system of thanking depending on formality: "domo" (friends) → "arigatou" (casual) → "arigatou gozaimasu" (polite) → "osewa ni narimashita" (very formal). "Okagesama de" expresses humility — success isn\'t seen as purely your own but thanks to the people around you. This is a core value in Japanese culture.'
   }
 ];

@@ -17,7 +17,7 @@
   export let answer: string;
   export let isRomaji = false;
 
-  $: displayText = questionText || question.japanese || question.vietnamese;
+  $: displayText = questionText || question.japanese || question.english;
 
   const dispatch = createEventDispatcher();
 

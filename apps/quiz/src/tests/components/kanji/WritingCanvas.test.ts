@@ -44,7 +44,7 @@ describe('KanjiWritingQuiz', () => {
 
   it('should show target meaning as question', () => {
     const { container } = render(KanjiWritingQuiz, { props: { item: mockItem, answer: 'nhất' } });
-    expect(container.textContent).toContain('nhất');
+    expect(container.textContent).toContain('one');
   });
 
   it('should render WritingCanvas', () => {

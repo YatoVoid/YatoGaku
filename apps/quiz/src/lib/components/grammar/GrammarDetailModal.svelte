@@ -76,7 +76,7 @@
       <div class="modal-body">
         <!-- Meaning Section -->
         <div class="detail-section">
-          <div class="detail-meaning">{pattern.vietnamese}</div>
+          <div class="detail-meaning">{pattern.english}</div>
           {#if pattern.english}
             <div class="detail-meaning-en">{pattern.english}</div>
           {/if}
@@ -141,7 +141,7 @@
               {#each pattern.examples as example}
                 <div class="detail-example">
                   <div class="detail-example-jp">{example.japanese}</div>
-                  <div class="detail-example-vi">{example.vietnamese}</div>
+                  <div class="detail-example-vi">{example.english}</div>
                   {#if example.english}
                     <div class="detail-example-en">{example.english}</div>
                   {/if}

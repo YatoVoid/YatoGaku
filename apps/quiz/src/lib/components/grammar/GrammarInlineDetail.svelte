@@ -9,7 +9,7 @@
   <button class="close" on:click={onclose} aria-label="Close details"><X size={20} aria-hidden="true" /></button>
   <p class="eyebrow">Grammar Details</p>
   <h3 id="grammar-detail-title">{pattern.pattern}</h3>
-  <p class="meaning">{pattern.vietnamese}{#if pattern.english}<span>{pattern.english}</span>{/if}</p>
+  <p class="meaning">{pattern.english}</p>
   {#if pattern.explanation}<div class="explanation"><h4>Usage</h4><p>{pattern.explanation}</p></div>{/if}
   {#if pattern.examples?.length}
     <div class="examples"><h4>Examples in Context</h4>{#each pattern.examples as example}<article><p class="japanese">{example.japanese}</p><p>{example.english}</p></article>{/each}</div>
@@ -24,7 +24,6 @@
   .eyebrow { margin: 0 0 4px; color: var(--color-primary); font-size: .7rem; font-weight: 750; letter-spacing: .08em; text-transform: uppercase; }
   h3 { margin: 0; padding-right: 48px; font-family: var(--font-japanese); font-size: 1.4rem; }
   .meaning { display: grid; margin: var(--spacing-sm) 0 var(--spacing-lg); font-weight: 650; }
-  .meaning span { color: var(--color-muted-foreground); font-size: .8rem; font-weight: 400; }
   h4 { margin: 0 0 var(--spacing-sm); font-size: .85rem; }
   .explanation p, aside p { margin: 0; line-height: 1.65; }
   .examples { margin-top: var(--spacing-lg); }

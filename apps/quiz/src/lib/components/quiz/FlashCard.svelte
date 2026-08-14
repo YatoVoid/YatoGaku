@@ -17,7 +17,7 @@
   export let flipped = false;
 
   $: frontText = questionText || item.japanese;
-  $: backText = answerText || item.vietnamese;
+  $: backText = answerText || item.english;
 
   const dispatch = createEventDispatcher();
 

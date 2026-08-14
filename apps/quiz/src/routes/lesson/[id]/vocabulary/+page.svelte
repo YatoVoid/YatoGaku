@@ -26,7 +26,7 @@
     return (
       item.japanese.toLowerCase().includes(search) ||
       item.kana.toLowerCase().includes(search) ||
-      item.vietnamese.toLowerCase().includes(search) ||
+      item.english.toLowerCase().includes(search) ||
       item.english.toLowerCase().includes(search)
     );
   });
@@ -101,7 +101,7 @@
             <div class="vocab-romaji" aria-hidden="true">{kanaToRomaji(item.kana)}</div>
           </div>
           <div class="vocab-meanings">
-            <div class="vocab-vietnamese">{item.vietnamese}</div>
+            <div class="vocab-vietnamese">{item.english}</div>
             <div class="vocab-english">{item.english}</div>
           </div>
           <div class="vocab-meta">

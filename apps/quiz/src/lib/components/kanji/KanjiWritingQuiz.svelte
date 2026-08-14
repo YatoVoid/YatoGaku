@@ -35,7 +35,7 @@
 <div class="writing-quiz">
   <div class="question-card">
     <div class="q-label">Write this kanji:</div>
-    <div class="q-meaning">{item.vietnamese} / {item.english}</div>
+    <div class="q-meaning">{item.english}</div>
     <div class="q-hint">{item.strokeCount} stroke{item.strokeCount > 1 ? 's' : ''}</div>
   </div>
 

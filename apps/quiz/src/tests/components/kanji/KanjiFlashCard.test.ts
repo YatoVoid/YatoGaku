@@ -67,13 +67,6 @@ describe('KanjiFlashCard — flip behaviour', () => {
     expect(card).toHaveClass('flipped');
   });
 
-  it('reveals vietnamese meaning after flip', async () => {
-    const user = userEvent.setup();
-    render(KanjiFlashCard, { props: { item: mockKanji } });
-    await user.click(document.querySelector('.flashcard') as HTMLElement);
-    expect(screen.getByText('hội')).toBeInTheDocument();
-  });
-
   it('shows onyomi on back', async () => {
     const user = userEvent.setup();
     render(KanjiFlashCard, { props: { item: mockKanji } });

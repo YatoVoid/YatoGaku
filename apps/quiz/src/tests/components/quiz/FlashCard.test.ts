@@ -67,11 +67,11 @@ describe('FlashCard Component', () => {
   });
 
   describe('Rendering - Back Side', () => {
-    it('should render Vietnamese meaning', () => {
+    it('should render English meaning', () => {
       const item = createMockItem();
       render(FlashCard, { props: { item } });
 
-      expect(screen.getByText('Ăn')).toBeInTheDocument();
+      expect(screen.getByText('to eat')).toBeInTheDocument();
     });
 
     it('should render custom answerText when provided', () => {

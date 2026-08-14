@@ -76,13 +76,12 @@
           </div>
         {/if}
       </div>
-      <div class="fc-meaning">{item.vietnamese}</div>
-      <div class="fc-english">{item.english}</div>
+      <div class="fc-meaning">{item.english}</div>
       {#if item.examples.length > 0}
         <div class="fc-example">
           <span>{item.examples[0].word} ({item.examples[0].kana})</span>
           <span class="fc-romaji">{kanaToRomaji(item.examples[0].kana)}</span>
-          <span class="fc-ex-meaning">— {item.examples[0].vietnamese ?? item.examples[0].meaning}</span>
+          <span class="fc-ex-meaning">— {item.examples[0].meaning}</span>
           <button class="fc-ex-audio" on:click|stopPropagation={() => playJapaneseAudio(item.examples[0].kana)} aria-label="Play pronunciation of {item.examples[0].word}">
             🔊
           </button>
@@ -206,13 +205,6 @@
     font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 0.3rem;
-    text-align: center;
-  }
-
-  .fc-english {
-    font-size: 0.9rem;
-    color: var(--color-muted-foreground);
-    margin-bottom: 0.5rem;
     text-align: center;
   }
 

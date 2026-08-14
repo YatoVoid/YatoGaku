@@ -40,7 +40,7 @@
     return (
       item.japanese.toLowerCase().includes(search) ||
       item.kana.toLowerCase().includes(search) ||
-      item.vietnamese.toLowerCase().includes(search) ||
+      item.english.toLowerCase().includes(search) ||
       item.english.toLowerCase().includes(search)
     );
   });
@@ -167,7 +167,7 @@
             <div class="text-xs text-muted-foreground italic">{kanaToRomaji(item.kana)}</div>
           </div>
           <div class="flex flex-col gap-0.5">
-            <div class="text-sm font-semibold text-foreground">{item.vietnamese}</div>
+            <div class="text-sm font-semibold text-foreground">{item.english}</div>
             <div class="text-sm text-muted-foreground">{item.english}</div>
           </div>
           <div class="flex flex-col items-end gap-2">

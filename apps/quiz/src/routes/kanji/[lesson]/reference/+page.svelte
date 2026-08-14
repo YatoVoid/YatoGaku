@@ -39,7 +39,7 @@
       <div class="glyph-list">
         {#each filteredKanji as item, index}
           <button class:active={selected.character === item.character} on:click={() => selectedCharacter = item.character} aria-current={selected.character === item.character ? 'true' : undefined}>
-            <span class="glyph">{item.character}</span><span><strong>{item.vietnamese}</strong><small>{item.onyomi[0] || item.kunyomi[0] || '—'}</small></span><em>{index + 1}</em>
+            <span class="glyph">{item.character}</span><span><strong>{item.english}</strong><small>{item.onyomi[0] || item.kunyomi[0] || '—'}</small></span><em>{index + 1}</em>
           </button>
         {/each}
         {#if filteredKanji.length === 0}<p class="no-result">No matching kanji found.</p>{/if}
@@ -59,7 +59,7 @@
         <div><dt>Âm Kun</dt><dd>{selected.kunyomi.join('、') || '—'}</dd></div>
         <div><dt>Stroke count</dt><dd>{selected.strokeCount}</dd></div>
       </dl>
-      <div class="meaning"><strong>{selected.vietnamese}</strong><span>{selected.english}</span></div>
+      <div class="meaning"><strong>{selected.english}</strong></div>
       <div class="mobile-actions"><a href="{base}/kanji/{lessonId}/quiz/flashcard?direction=kanji-en">Practice this character <ArrowRight size={16} aria-hidden="true" /></a></div>
     </main>
 
@@ -106,7 +106,6 @@
   .readings dd { margin: 4px 0 0; font-family: var(--font-japanese); font-size: .9rem; font-weight: 650; }
   .meaning { display: grid; }
   .meaning strong { font-size: 1.25rem; }
-  .meaning span { color: var(--color-muted-foreground); }
   .mobile-actions { margin-top: var(--spacing-lg); }
   .mobile-actions a { min-height: 44px; display: inline-flex; align-items: center; gap: var(--spacing-sm); color: var(--color-primary); font-weight: 700; text-decoration: none; }
   .study-panel { display: grid; align-content: start; gap: var(--spacing-xl); overflow-y: auto; }

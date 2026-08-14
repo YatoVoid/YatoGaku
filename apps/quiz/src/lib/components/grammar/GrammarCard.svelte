@@ -41,10 +41,7 @@
 
     <div class="pattern-main">
       <h4 class="pattern-text">{pattern.pattern}</h4>
-      <p class="pattern-meaning">{pattern.vietnamese}</p>
-      {#if pattern.english}
-        <p class="pattern-meaning-en">{pattern.english}</p>
-      {/if}
+      <p class="pattern-meaning">{pattern.english}</p>
     </div>
 
     <div class="pattern-tags">

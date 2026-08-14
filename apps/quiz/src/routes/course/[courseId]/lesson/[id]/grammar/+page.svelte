@@ -29,7 +29,7 @@
     const search = searchTerm.toLowerCase();
     return (
       item.pattern.toLowerCase().includes(search) ||
-      item.vietnamese.toLowerCase().includes(search) ||
+      item.english.toLowerCase().includes(search) ||
       item.english.toLowerCase().includes(search) ||
       item.explanation.toLowerCase().includes(search)
     );
@@ -74,7 +74,7 @@
           <div class="p-4 cursor-pointer flex justify-between items-start gap-4" on:click={() => toggleExpand(index)}>
             <div class="flex-1 flex flex-col gap-1">
               <div class="text-lg font-bold text-primary" style="font-family: var(--font-japanese)">{item.pattern}</div>
-              <div class="text-sm font-semibold text-foreground">{item.vietnamese}</div>
+              <div class="text-sm font-semibold text-foreground">{item.english}</div>
               <div class="text-sm text-muted-foreground">{item.english}</div>
             </div>
             <div class="flex flex-col items-end gap-2">
@@ -96,7 +96,7 @@
                   {#each item.examples as example}
                     <div class="p-3 bg-card rounded-lg mb-2 last:mb-0">
                       <div class="text-sm font-semibold text-foreground mb-1" style="font-family: var(--font-japanese)">{example.japanese}</div>
-                      <div class="text-sm text-foreground mb-0.5">{example.vietnamese}</div>
+                      <div class="text-sm text-foreground mb-0.5">{example.english}</div>
                       <div class="text-xs text-muted-foreground">{example.english}</div>
                     </div>
                   {/each}

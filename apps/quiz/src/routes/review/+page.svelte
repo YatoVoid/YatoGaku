@@ -12,6 +12,7 @@
   import SkeletonCard from '$lib/components/common/SkeletonCard.svelte';
   import { recordStudySession } from '$lib/utils/achievementUtils';
   import { playJapaneseAudio } from '$lib/utils/audioUtils';
+  import { Volume2 } from 'lucide-svelte';
   import { getAllCourses } from '$lib/data/courses';
   import { Card, CardContent } from '$lib/components/ui/card';
   import Badge from '$lib/components/ui/badge/badge.svelte';
@@ -235,12 +236,11 @@
           <div class="text-xs text-muted-foreground mb-2">Lesson {currentCard.lessonNumber}</div>
           <div class="text-xs text-muted-foreground mt-2">Space to flip · F1 to speak</div>
           <button class="btn-speak btn-speak--fc mt-1" on:click|stopPropagation={() => playJapaneseAudio(currentCard?.item?.kana || currentCard?.item?.japanese || '')}>
-            🔊 Speak (F1)
+            <Volume2 size={16} aria-hidden="true" /> Speak (F1)
           </button>
         </div>
         <div class="flashcard-back" aria-hidden={!flipped}>
-          <div class="text-xl font-semibold mb-2 text-center">{currentCard.item.vietnamese}</div>
-          <div class="text-sm text-muted-foreground text-center">{currentCard.item.english}</div>
+          <div class="text-xl font-semibold mb-2 text-center">{currentCard.item.english}</div>
         </div>
       </div>
     </div>

@@ -6,31 +6,31 @@ export const N5_CONVERSATIONS: ConversationPattern[] = [
   // ─────────────────────────────────────────────
   {
     id: 'n5-conv-01',
-    title: 'Tự giới thiệu',
+    title: 'Self-introduction',
     titleJp: '自己紹介',
     level: 'N5',
-    situation: 'Gặp người mới lần đầu tại lớp học tiếng Nhật',
+    situation: 'Meeting someone new for the first time in Japanese class',
     patterns: [
       {
         japanese: 'はじめまして、〜です。よろしくおねがいします。',
         kana: 'はじめまして、〜です。よろしくおねがいします。',
-        vietnamese: 'Xin chào (lần đầu gặp), tôi là ~. Rất vui được gặp bạn.',
+        vietnamese: 'Nice to meet you, I am ~. Please treat me well.',
         memoryTip:
-          'Nhớ: "hajimemashite" = "bắt đầu gặp" → lần đầu gặp mặt. Tưởng tượng bạn mở trang đầu tiên (hajime) cuốn sách tình bạn mới!'
+          'Remember: "hajimemashite" = "beginning to meet" → the first time you meet someone. Picture opening the first page (hajime) of a new friendship book!'
       },
       {
         japanese: 'わたしは 〜じん です。',
         kana: 'わたしは 〜じん です。',
-        vietnamese: 'Tôi là người ~. (quốc tịch)',
+        vietnamese: 'I am from ~. (nationality)',
         memoryTip:
-          'Nhớ: "~jin" = người nước ~. "Việt Nam jin" = người Việt Nam. Jin nghe như "nhân" (人) trong Hán Việt → con người!'
+          'Remember: "~jin" = person from ~. "Vietnam jin" = a Vietnamese person. Jin sounds like the character 人 (person) in Sino-Vietnamese readings → a human being!'
       },
       {
         japanese: 'おなまえは なんですか。',
         kana: 'おなまえは なんですか。',
-        vietnamese: 'Tên bạn là gì?',
+        vietnamese: 'What is your name?',
         memoryTip:
-          'Nhớ: "onamae" = tên (lịch sự). "O" ở đầu là kính ngữ, "namae" = tên. Nghe như "o-na-mae" → "ồ, nà, mày tên gì?" (hài hước để nhớ!)'
+          'Remember: "onamae" = name (polite). The "o" at the front is an honorific, "namae" = name. Say it slowly: "o-na-mae" and it sticks after a couple of tries.'
       }
     ],
     dialogue: [
@@ -38,41 +38,41 @@ export const N5_CONVERSATIONS: ConversationPattern[] = [
         speaker: 'A (Tanaka)',
         japanese: 'はじめまして。たなかです。',
         kana: 'はじめまして。たなかです。',
-        vietnamese: 'Xin chào lần đầu. Tôi là Tanaka.'
+        vietnamese: 'Nice to meet you. I am Tanaka.'
       },
       {
         speaker: 'B (Lan)',
         japanese: 'はじめまして。ランです。ベトナムじんです。',
         kana: 'はじめまして。らんです。べとなむじんです。',
-        vietnamese: 'Xin chào lần đầu. Tôi là Lan. Tôi là người Việt Nam.'
+        vietnamese: 'Nice to meet you. I am Lan. I am Vietnamese.'
       },
       {
         speaker: 'A (Tanaka)',
         japanese: 'がくせいですか。',
         kana: 'がくせいですか。',
-        vietnamese: 'Bạn là sinh viên à?'
+        vietnamese: 'Are you a student?'
       },
       {
         speaker: 'B (Lan)',
         japanese: 'はい、がくせいです。たなかさんは？',
         kana: 'はい、がくせいです。たなかさんは？',
-        vietnamese: 'Vâng, tôi là sinh viên. Còn anh Tanaka?'
+        vietnamese: 'Yes, I am a student. What about you, Tanaka?'
       },
       {
         speaker: 'A (Tanaka)',
         japanese: 'かいしゃいんです。よろしくおねがいします。',
         kana: 'かいしゃいんです。よろしくおねがいします。',
-        vietnamese: 'Tôi là nhân viên công ty. Rất vui được làm quen.'
+        vietnamese: 'I am a company employee. Nice to meet you.'
       },
       {
         speaker: 'B (Lan)',
         japanese: 'こちらこそ、よろしくおねがいします。',
         kana: 'こちらこそ、よろしくおねがいします。',
-        vietnamese: 'Tôi mới là người vui được làm quen ạ.'
+        vietnamese: 'The pleasure is mine.'
       }
     ],
     culturalNote:
-      'Người Nhật thường cúi đầu (おじぎ - ojigi) khi chào hỏi. Câu "よろしくお願いします" là câu không thể thiếu khi gặp lần đầu — nó thể hiện sự tôn trọng và mong muốn xây dựng mối quan hệ tốt đẹp. Cúi đầu càng thấp thì càng lịch sự!'
+      'Japanese people usually bow (おじぎ - ojigi) when greeting each other. The phrase "よろしくお願いします" is essential when meeting someone for the first time — it expresses respect and a wish to build a good relationship. The deeper the bow, the more polite it is!'
   },
 
   // ─────────────────────────────────────────────
@@ -80,73 +80,73 @@ export const N5_CONVERSATIONS: ConversationPattern[] = [
   // ─────────────────────────────────────────────
   {
     id: 'n5-conv-02',
-    title: 'Mua sắm',
+    title: 'Shopping',
     titleJp: '買い物',
     level: 'N5',
-    situation: 'Mua đồ tại cửa hàng tiện lợi (コンビニ) ở Nhật',
+    situation: 'Buying things at a convenience store (コンビニ) in Japan',
     patterns: [
       {
         japanese: 'これは いくらですか。',
         kana: 'これは いくらですか。',
-        vietnamese: 'Cái này giá bao nhiêu?',
+        vietnamese: 'How much is this?',
         memoryTip:
-          'Nhớ: "ikura" = bao nhiêu tiền. Nghe giống "i-cu-ra" → tưởng tượng bạn hỏi "ị cú ra... bao nhiêu tiền vậy?" khi thấy giá đắt!'
+          'Remember: "ikura" = how much money. It is also the name of salmon roe (ikura) — pricey either way!'
       },
       {
         japanese: 'これ／それ／あれ を ください。',
         kana: 'これ／それ／あれ を ください。',
-        vietnamese: 'Cho tôi cái này / cái đó / cái kia.',
+        vietnamese: 'Please give me this / that (near you) / that (over there).',
         memoryTip:
-          'Nhớ bộ ba KO-SO-A: Kore (gần mình), Sore (gần người nghe), Are (xa cả hai). Nghĩ "KSA" như tên nước → KSA = Ko-So-A!'
+          'Remember the KO-SO-A set: Kore (near me), Sore (near listener), Are (far from both). Think of it as a little three-step ladder of distance.'
       },
       {
         japanese: 'すみません、〜は ありますか。',
         kana: 'すみません、〜は ありますか。',
-        vietnamese: 'Xin lỗi, có ~ không ạ?',
+        vietnamese: 'Excuse me, do you have ~?',
         memoryTip:
-          'Nhớ: "arimasu ka" = có không? "Aru" = tồn tại (đồ vật). Nghĩ "a-ri-ma-su" → "à, ri (lý), mà sự" → à, lẽ ra mà có sự tồn tại!'
+          'Remember: "arimasu ka" = is there/do you have? "Aru" = to exist (for objects). Very useful for asking if a store carries something.'
       }
     ],
     dialogue: [
       {
-        speaker: 'A (Khách)',
+        speaker: 'A (Customer)',
         japanese: 'すみません。これは いくらですか。',
         kana: 'すみません。これは いくらですか。',
-        vietnamese: 'Xin lỗi. Cái này giá bao nhiêu?'
+        vietnamese: 'Excuse me. How much is this?'
       },
       {
-        speaker: 'B (Nhân viên)',
+        speaker: 'B (Staff)',
         japanese: 'それは ひゃくえん です。',
         kana: 'それは ひゃくえん です。',
-        vietnamese: 'Cái đó 100 yên ạ.'
+        vietnamese: 'That is 100 yen.'
       },
       {
-        speaker: 'A (Khách)',
+        speaker: 'A (Customer)',
         japanese: 'じゃ、これを ふたつ ください。',
         kana: 'じゃ、これを ふたつ ください。',
-        vietnamese: 'Vậy, cho tôi hai cái này.'
+        vietnamese: 'Then please give me two of these.'
       },
       {
-        speaker: 'B (Nhân viên)',
+        speaker: 'B (Staff)',
         japanese: 'はい。にひゃくえん です。',
         kana: 'はい。にひゃくえん です。',
-        vietnamese: 'Vâng. 200 yên ạ.'
+        vietnamese: 'Sure. That is 200 yen.'
       },
       {
-        speaker: 'A (Khách)',
+        speaker: 'A (Customer)',
         japanese: 'これも ください。',
         kana: 'これも ください。',
-        vietnamese: 'Cho tôi cái này nữa.'
+        vietnamese: 'This one too, please.'
       },
       {
-        speaker: 'B (Nhân viên)',
+        speaker: 'B (Staff)',
         japanese: 'ぜんぶで さんびゃくごじゅうえん です。ありがとうございます。',
         kana: 'ぜんぶで さんびゃくごじゅうえん です。ありがとうございます。',
-        vietnamese: 'Tổng cộng 350 yên ạ. Cảm ơn quý khách.'
+        vietnamese: 'That comes to 350 yen in total. Thank you very much.'
       }
     ],
     culturalNote:
-      'Ở Nhật, khi mua hàng bạn sẽ thấy nhân viên rất lịch sự, luôn dùng kính ngữ. Tiền được đặt vào khay nhỏ (お釣りトレイ), không đưa tay trực tiếp. Đừng quên nói "ありがとうございます" khi nhận hàng — đó là phép lịch sự cơ bản!'
+      'In Japan, store staff are usually very polite and always use honorific language when serving customers. Money is placed on a small tray rather than handed over directly. Don\'t forget to say "ありがとうございます" when receiving your goods — it is basic courtesy!'
   },
 
   // ─────────────────────────────────────────────
@@ -154,31 +154,31 @@ export const N5_CONVERSATIONS: ConversationPattern[] = [
   // ─────────────────────────────────────────────
   {
     id: 'n5-conv-03',
-    title: 'Hỏi giờ',
+    title: 'Asking the time',
     titleJp: '時間',
     level: 'N5',
-    situation: 'Hỏi giờ ở ga tàu và sắp xếp lịch hẹn',
+    situation: 'Asking the time at a train station and arranging a schedule',
     patterns: [
       {
         japanese: 'いま なんじ ですか。',
         kana: 'いま なんじ ですか。',
-        vietnamese: 'Bây giờ mấy giờ?',
+        vietnamese: 'What time is it now?',
         memoryTip:
-          'Nhớ: "ima" = bây giờ, "nanji" = mấy giờ. "Nan" = mấy/bao nhiêu, "ji" = giờ. Nghĩ: "I-ma nan-ji" → "Ì mà, nản chỉ vì không biết mấy giờ!"'
+          'Remember: "ima" = now, "nanji" = what time. "Nan" = what/how many, "ji" = o\'clock. A classic phrase for whenever you glance at your wrist and find no watch there.'
       },
       {
         japanese: '〜じ 〜ふん です。',
         kana: '〜じ 〜ふん です。',
-        vietnamese: '~ giờ ~ phút.',
+        vietnamese: 'It is ~ o\'clock ~ minutes.',
         memoryTip:
-          'Nhớ: "ji" = giờ, "fun/pun" = phút. Cẩn thận: 1 phút = "ippun", 3 phút = "sanpun", 6 phút = "roppun" — âm thay đổi theo số đếm!'
+          'Remember: "ji" = o\'clock, "fun/pun" = minutes. Careful: 1 minute = "ippun", 3 minutes = "sanpun", 6 minutes = "roppun" — the sound shifts depending on the number!'
       },
       {
         japanese: '〜から 〜まで です。',
         kana: '〜から 〜まで です。',
-        vietnamese: 'Từ ~ đến ~.',
+        vietnamese: 'From ~ to ~.',
         memoryTip:
-          'Nhớ: "kara" = từ (bắt đầu), "made" = đến (kết thúc). Nghĩ "kara-made" → "ca-ra ma-đê" → "ca ra rồi mà deadline đến rồi!" — từ lúc bắt đầu đến lúc kết thúc!'
+          'Remember: "kara" = from (start), "made" = until (end). Think of "kara" as the starting gun and "made" as the finish line.'
       }
     ],
     dialogue: [
@@ -186,41 +186,41 @@ export const N5_CONVERSATIONS: ConversationPattern[] = [
         speaker: 'A (Minh)',
         japanese: 'すみません、いま なんじですか。',
         kana: 'すみません、いま なんじですか。',
-        vietnamese: 'Xin lỗi, bây giờ mấy giờ rồi ạ?'
+        vietnamese: 'Excuse me, what time is it now?'
       },
       {
-        speaker: 'B (Người qua đường)',
+        speaker: 'B (Passerby)',
         japanese: 'いま くじ じゅうごふん です。',
         kana: 'いま くじ じゅうごふん です。',
-        vietnamese: 'Bây giờ 9 giờ 15 phút.'
+        vietnamese: 'It is 9:15 now.'
       },
       {
         speaker: 'A (Minh)',
         japanese: 'ありがとうございます。でんしゃは なんじですか。',
         kana: 'ありがとうございます。でんしゃは なんじですか。',
-        vietnamese: 'Cảm ơn ạ. Tàu điện mấy giờ ạ?'
+        vietnamese: 'Thank you. What time is the train?'
       },
       {
-        speaker: 'B (Người qua đường)',
+        speaker: 'B (Passerby)',
         japanese: 'くじ はん です。',
         kana: 'くじ はん です。',
-        vietnamese: '9 giờ rưỡi.'
+        vietnamese: 'It\'s at 9:30.'
       },
       {
         speaker: 'A (Minh)',
         japanese: 'くじはんから じゅうじまで ですか。',
         kana: 'くじはんから じゅうじまで ですか。',
-        vietnamese: 'Từ 9 giờ rưỡi đến 10 giờ ạ?'
+        vietnamese: 'From 9:30 to 10:00?'
       },
       {
-        speaker: 'B (Người qua đường)',
+        speaker: 'B (Passerby)',
         japanese: 'はい、そうです。がんばってください。',
         kana: 'はい、そうです。がんばってください。',
-        vietnamese: 'Vâng, đúng vậy. Cố lên nhé!'
+        vietnamese: 'Yes, that\'s right. Good luck!'
       }
     ],
     culturalNote:
-      'Người Nhật cực kỳ coi trọng đúng giờ (時間厳守 - jikan genshu). Tàu điện Nhật nổi tiếng chính xác đến từng giây — nếu trễ dù chỉ 1 phút, nhà ga sẽ phát giấy xin lỗi cho hành khách! Khi hẹn ai, hãy đến sớm 5 phút là phép lịch sự.'
+      'Japanese people place huge importance on punctuality (時間厳守 - jikan genshu). Japan\'s trains are famous for being accurate down to the second — if a train is even one minute late, the station will hand out written apology slips for passengers! When meeting someone, arriving 5 minutes early is considered polite.'
   },
 
   // ─────────────────────────────────────────────
@@ -228,73 +228,73 @@ export const N5_CONVERSATIONS: ConversationPattern[] = [
   // ─────────────────────────────────────────────
   {
     id: 'n5-conv-04',
-    title: 'Tại nhà hàng',
+    title: 'At a restaurant',
     titleJp: 'レストラン',
     level: 'N5',
-    situation: 'Gọi món tại một quán ăn Nhật',
+    situation: 'Ordering food at a Japanese restaurant',
     patterns: [
       {
         japanese: 'すみません、メニューを おねがいします。',
         kana: 'すみません、めにゅーを おねがいします。',
-        vietnamese: 'Xin lỗi, cho tôi xem thực đơn.',
+        vietnamese: 'Excuse me, could I have the menu, please?',
         memoryTip:
-          'Nhớ: "sumimasen" nghe như "xin miễn thứ" → xin lỗi / xin phép. "Onegaishimasu" = làm ơn. Hai câu thần chú sống còn ở Nhật!'
+          'Remember: "sumimasen" sounds a bit like "excuse me". "Onegaishimasu" = please. Two survival phrases in Japan!'
       },
       {
         japanese: '〜を おねがいします。/ 〜を ください。',
         kana: '〜を おねがいします。/ 〜を ください。',
-        vietnamese: 'Cho tôi ~. (lịch sự / thường)',
+        vietnamese: 'I would like ~. (polite / plain)',
         memoryTip:
-          'Nhớ: "onegaishimasu" lịch sự hơn "kudasai". Nghĩ: "o-ne-gai" → "ô, nè, gái/trai ơi cho tôi cái này!" — cách nhớ vui mà không bao giờ quên!'
+          'Remember: "onegaishimasu" is more polite than "kudasai". Both mean "please give me ~", just with different levels of formality.'
       },
       {
         japanese: 'おかんじょう を おねがいします。',
         kana: 'おかんじょう を おねがいします。',
-        vietnamese: 'Cho tôi tính tiền.',
+        vietnamese: 'Could I have the bill, please?',
         memoryTip:
-          'Nhớ: "okanjou" = hóa đơn/tính tiền. Nghe như "o-kan-jou" → "ô, cạn tiền rồi!" — đúng lúc cần tính tiền!'
+          'Remember: "okanjou" = the bill/check. Useful the moment you\'re ready to leave!'
       }
     ],
     dialogue: [
       {
-        speaker: 'A (Khách - Hoa)',
+        speaker: 'A (Customer - Hoa)',
         japanese: 'すみません。',
         kana: 'すみません。',
-        vietnamese: 'Xin lỗi (gọi nhân viên).'
+        vietnamese: 'Excuse me (calling the staff over).'
       },
       {
-        speaker: 'B (Nhân viên)',
+        speaker: 'B (Staff)',
         japanese: 'いらっしゃいませ。なんめいさま ですか。',
         kana: 'いらっしゃいませ。なんめいさま ですか。',
-        vietnamese: 'Xin chào quý khách. Mấy người ạ?'
+        vietnamese: 'Welcome. How many people?'
       },
       {
-        speaker: 'A (Khách - Hoa)',
+        speaker: 'A (Customer - Hoa)',
         japanese: 'ふたりです。めにゅーを おねがいします。',
         kana: 'ふたりです。めにゅーを おねがいします。',
-        vietnamese: 'Hai người. Cho tôi xem thực đơn ạ.'
+        vietnamese: 'Two people. Could I have the menu, please?'
       },
       {
-        speaker: 'B (Nhân viên)',
+        speaker: 'B (Staff)',
         japanese: 'はい、どうぞ。',
         kana: 'はい、どうぞ。',
-        vietnamese: 'Vâng, mời ạ.'
+        vietnamese: 'Here you go.'
       },
       {
-        speaker: 'A (Khách - Hoa)',
+        speaker: 'A (Customer - Hoa)',
         japanese: 'ラーメンと ぎょうざを おねがいします。',
         kana: 'らーめんと ぎょうざを おねがいします。',
-        vietnamese: 'Cho tôi ramen và gyoza ạ.'
+        vietnamese: 'I\'ll have ramen and gyoza, please.'
       },
       {
-        speaker: 'B (Nhân viên)',
+        speaker: 'B (Staff)',
         japanese: 'おのみものは？',
         kana: 'おのみものは？',
-        vietnamese: 'Đồ uống ạ?'
+        vietnamese: 'And to drink?'
       }
     ],
     culturalNote:
-      'Ở Nhật, bạn gọi nhân viên bằng cách nói "すみません" hoặc bấm nút gọi trên bàn — KHÔNG vẫy tay ầm ĩ. Trước khi ăn nói "いただきます" (itadakimasu = tôi xin phép nhận), ăn xong nói "ごちそうさまでした" (gochisousama deshita = cảm ơn bữa ăn). Và nhớ: ở Nhật KHÔNG cần tip!'
+      'In Japan, you call staff over by saying "すみません" or pressing a call button on the table — not by waving loudly. Before eating you say "いただきます" (itadakimasu = a humble expression of gratitude before a meal), and after finishing you say "ごちそうさまでした" (gochisousama deshita = thank you for the meal). And remember: tipping is not expected in Japan!'
   },
 
   // ─────────────────────────────────────────────
@@ -302,31 +302,31 @@ export const N5_CONVERSATIONS: ConversationPattern[] = [
   // ─────────────────────────────────────────────
   {
     id: 'n5-conv-05',
-    title: 'Chào hỏi hằng ngày',
+    title: 'Everyday greetings',
     titleJp: '挨拶',
     level: 'N5',
-    situation: 'Chào hỏi hàng xóm, đồng nghiệp trong các thời điểm khác nhau trong ngày',
+    situation: 'Greeting neighbors and coworkers at different times of day',
     patterns: [
       {
         japanese: 'おはようございます。/ こんにちは。/ こんばんは。',
         kana: 'おはようございます。/ こんにちは。/ こんばんは。',
-        vietnamese: 'Chào buổi sáng. / Chào buổi chiều. / Chào buổi tối.',
+        vietnamese: 'Good morning. / Good afternoon. / Good evening.',
         memoryTip:
-          'Nhớ bộ ba chào: "Ohayou" (sáng) nghe như "Ohio" bang Mỹ → mỗi sáng thức dậy ở Ohio! "Konnichiwa" (chiều) → "con-ni-chi-wa" = "con nì chỉ wá!" (con này chỉ nói chào!). "Konbanwa" (tối) → "con bàn wá" = bàn chuyện buổi tối!'
+          'Remember the three greetings: "Ohayou" (morning) sounds like the US state "Ohio". "Konnichiwa" (afternoon/daytime) and "Konbanwa" (evening) share the same "wa" ending, both used once the day is underway.'
       },
       {
         japanese: 'おげんきですか。— はい、げんきです。',
         kana: 'おげんきですか。— はい、げんきです。',
-        vietnamese: 'Bạn khỏe không? — Vâng, tôi khỏe.',
+        vietnamese: 'How are you? — I\'m fine, thanks.',
         memoryTip:
-          'Nhớ: "genki" = khỏe/vui/năng lượng. Nghĩ đến nhân vật Goku hét "GENKI DAMA!" (bom năng lượng) → genki = đầy năng lượng = khỏe mạnh!'
+          'Remember: "genki" = healthy/energetic/well. Think of the anime move "GENKI DAMA" (spirit bomb) → genki = full of energy = doing well!'
       },
       {
         japanese: 'さようなら。/ じゃ、また。',
         kana: 'さようなら。/ じゃ、また。',
-        vietnamese: 'Tạm biệt. / Vậy, hẹn gặp lại.',
+        vietnamese: 'Goodbye. / See you then.',
         memoryTip:
-          'Nhớ: "sayounara" trang trọng (tạm biệt lâu), "ja mata" thân mật (hẹn gặp lại sớm). "Ja mata" → "cha má ta" → "cha má ta gặp lại nha!" — dùng với bạn bè!'
+          'Remember: "sayounara" is formal (a longer goodbye), "ja mata" is casual (see you again soon). Use "ja mata" with friends!'
       }
     ],
     dialogue: [
@@ -334,41 +334,41 @@ export const N5_CONVERSATIONS: ConversationPattern[] = [
         speaker: 'A (Yuki)',
         japanese: 'おはようございます、たなかさん。',
         kana: 'おはようございます、たなかさん。',
-        vietnamese: 'Chào buổi sáng, anh Tanaka.'
+        vietnamese: 'Good morning, Tanaka.'
       },
       {
         speaker: 'B (Tanaka)',
         japanese: 'おはようございます。おげんきですか。',
         kana: 'おはようございます。おげんきですか。',
-        vietnamese: 'Chào buổi sáng. Bạn khỏe không?'
+        vietnamese: 'Good morning. How are you?'
       },
       {
         speaker: 'A (Yuki)',
         japanese: 'はい、げんきです。たなかさんは？',
         kana: 'はい、げんきです。たなかさんは？',
-        vietnamese: 'Vâng, tôi khỏe. Còn anh Tanaka?'
+        vietnamese: 'I\'m fine, thanks. And you, Tanaka?'
       },
       {
         speaker: 'B (Tanaka)',
         japanese: 'げんきです。きょうは いいてんきですね。',
         kana: 'げんきです。きょうは いいてんきですね。',
-        vietnamese: 'Tôi khỏe. Hôm nay thời tiết đẹp nhỉ.'
+        vietnamese: 'I\'m well. The weather is nice today, isn\'t it?'
       },
       {
         speaker: 'A (Yuki)',
         japanese: 'そうですね。じゃ、いってきます。',
         kana: 'そうですね。じゃ、いってきます。',
-        vietnamese: 'Đúng vậy nhỉ. Vậy, tôi đi đây.'
+        vietnamese: 'It really is. Well then, I\'m off.'
       },
       {
         speaker: 'B (Tanaka)',
         japanese: 'いってらっしゃい。きをつけて。',
         kana: 'いってらっしゃい。きをつけて。',
-        vietnamese: 'Đi nhé. Cẩn thận nha.'
+        vietnamese: 'Take care, see you later.'
       }
     ],
     culturalNote:
-      'Cặp đôi câu "いってきます" (tôi đi đây) và "いってらっしゃい" (đi rồi về nhé) là nét văn hóa đặc trưng Nhật Bản — luôn được nói khi ra khỏi nhà. Tương tự, khi về nhà sẽ nói "ただいま" (tôi về rồi) và người ở nhà đáp "おかえりなさい" (chào mừng về nhà). Đây là cách người Nhật thể hiện sự quan tâm trong gia đình.'
+      'The pair "いってきます" (I\'m off) and "いってらっしゃい" (take care, see you later) is a distinctive feature of Japanese culture — always said when leaving the house. Likewise, when returning home you say "ただいま" (I\'m home) and the person at home replies "おかえりなさい" (welcome home). This is how Japanese families show care for one another.'
   },
 
   // ─────────────────────────────────────────────
@@ -376,73 +376,73 @@ export const N5_CONVERSATIONS: ConversationPattern[] = [
   // ─────────────────────────────────────────────
   {
     id: 'n5-conv-06',
-    title: 'Tại bưu điện',
+    title: 'At the post office',
     titleJp: '郵便局',
     level: 'N5',
-    situation: 'Gửi thư và mua tem tại bưu điện Nhật',
+    situation: 'Sending mail and buying stamps at a Japanese post office',
     patterns: [
       {
         japanese: 'きってを ください。',
         kana: 'きってを ください。',
-        vietnamese: 'Cho tôi tem.',
+        vietnamese: 'Stamps, please.',
         memoryTip:
-          'Nhớ: "kitte" = tem thư. Nghe như "kit-te" → "kít te" → tưởng tượng tờ tem bé xíu bị kẹt (kít) vào tay te tua! Một khi dán vào phong bì thì không gỡ ra được!'
+          'Remember: "kitte" = postage stamp. A small word for a small sticky piece of paper.'
       },
       {
         japanese: 'はがきを にまい おねがいします。',
         kana: 'はがきを にまい おねがいします。',
-        vietnamese: 'Cho tôi hai tấm bưu thiếp.',
+        vietnamese: 'Two postcards, please.',
         memoryTip:
-          'Nhớ: "hagaki" = bưu thiếp, "nimai" = hai tấm. "Mai" là đơn vị đếm vật phẳng (tem, giấy, áo). Nghĩ "ha-ga-ki" → "hà, gà kí tên lên bưu thiếp" — gà biết viết thư!'
+          'Remember: "hagaki" = postcard, "nimai" = two (flat items). "Mai" is the counter for flat things (stamps, paper, shirts).'
       },
       {
         japanese: 'ベトナムに おくりたいです。',
         kana: 'べとなむに おくりたいです。',
-        vietnamese: 'Tôi muốn gửi đến Việt Nam.',
+        vietnamese: 'I want to send this to Vietnam.',
         memoryTip:
-          'Nhớ: "okurimasu" = gửi, "okuritai" = muốn gửi. "Okuri" nghe như "ô ku ri" → "ồ, cú rì (free) ship đến Việt Nam!" — ước gì gửi miễn phí!'
+          'Remember: "okurimasu" = to send, "okuritai" = want to send. Handy when mailing something abroad.'
       }
     ],
     dialogue: [
       {
-        speaker: 'A (Khách - Trang)',
+        speaker: 'A (Customer - Trang)',
         japanese: 'すみません、きってを ください。',
         kana: 'すみません、きってを ください。',
-        vietnamese: 'Xin lỗi, cho tôi tem ạ.'
+        vietnamese: 'Excuse me, stamps please.'
       },
       {
-        speaker: 'B (Nhân viên)',
+        speaker: 'B (Staff)',
         japanese: 'なんまい ですか。',
         kana: 'なんまい ですか。',
-        vietnamese: 'Mấy tấm ạ?'
+        vietnamese: 'How many would you like?'
       },
       {
-        speaker: 'A (Khách - Trang)',
+        speaker: 'A (Customer - Trang)',
         japanese: 'さんまい おねがいします。はがきも にまい ください。',
         kana: 'さんまい おねがいします。はがきも にまい ください。',
-        vietnamese: 'Ba tấm ạ. Cho tôi thêm hai tấm bưu thiếp nữa.'
+        vietnamese: 'Three, please. And two postcards as well.'
       },
       {
-        speaker: 'B (Nhân viên)',
+        speaker: 'B (Staff)',
         japanese: 'はい。どこに おくりますか。',
         kana: 'はい。どこに おくりますか。',
-        vietnamese: 'Vâng. Gửi đến đâu ạ?'
+        vietnamese: 'Sure. Where are you sending them to?'
       },
       {
-        speaker: 'A (Khách - Trang)',
+        speaker: 'A (Customer - Trang)',
         japanese: 'ベトナムに おくりたいです。いくらですか。',
         kana: 'べとなむに おくりたいです。いくらですか。',
-        vietnamese: 'Tôi muốn gửi đến Việt Nam. Bao nhiêu tiền ạ?'
+        vietnamese: 'I want to send them to Vietnam. How much will it be?'
       },
       {
-        speaker: 'B (Nhân viên)',
+        speaker: 'B (Staff)',
         japanese: 'ぜんぶで ごひゃくえん です。',
         kana: 'ぜんぶで ごひゃくえん です。',
-        vietnamese: 'Tổng cộng 500 yên ạ.'
+        vietnamese: 'That will be 500 yen in total.'
       }
     ],
     culturalNote:
-      'Bưu điện Nhật (郵便局 - yuubinkyoku) có biểu tượng 〒 rất dễ nhận biết. Ngoài gửi thư, bưu điện Nhật còn có dịch vụ ngân hàng (ゆうちょ銀行) và bảo hiểm. Bưu thiếp năm mới (年賀状 - nengajou) là truyền thống quan trọng — người Nhật gửi hàng trăm tấm mỗi dịp Tết!'
+      'Japan\'s post office (郵便局 - yuubinkyoku) is easy to recognize by its 〒 symbol. Besides mail, Japanese post offices also offer banking (ゆうちょ銀行) and insurance services. New Year\'s postcards (年賀状 - nengajou) are an important tradition — Japanese people send hundreds of them every New Year!'
   },
 
   // ─────────────────────────────────────────────
@@ -450,31 +450,31 @@ export const N5_CONVERSATIONS: ConversationPattern[] = [
   // ─────────────────────────────────────────────
   {
     id: 'n5-conv-07',
-    title: 'Thời tiết',
+    title: 'Weather',
     titleJp: '天気',
     level: 'N5',
-    situation: 'Nói chuyện về thời tiết với đồng nghiệp vào buổi sáng',
+    situation: 'Chatting about the weather with a coworker in the morning',
     patterns: [
       {
         japanese: 'きょうは いい てんきですね。',
         kana: 'きょうは いい てんきですね。',
-        vietnamese: 'Hôm nay thời tiết đẹp nhỉ.',
+        vietnamese: 'The weather is nice today, isn\'t it?',
         memoryTip:
-          'Nhớ: "tenki" = thời tiết. "Ten" (天) = trời, "ki" (気) = khí. Đúng nghĩa Hán Việt "thiên khí" → thời tiết! "Ii tenki" = thời tiết tốt. Câu mở đầu small-talk kinh điển của người Nhật!'
+          'Remember: "tenki" = weather. "Ten" (天) = sky/heaven, "ki" (気) = air/energy. A classic Japanese small-talk opener!'
       },
       {
         japanese: 'あめが ふっています。',
         kana: 'あめが ふっています。',
-        vietnamese: 'Trời đang mưa.',
+        vietnamese: 'It\'s raining.',
         memoryTip:
-          'Nhớ: "ame" = mưa, "futte imasu" = đang rơi/rớt. "Ame" nghe như "a mê" → "a, mê mưa quá!" Còn "futte" nghe như "phụt" → nước phụt từ trời xuống = mưa!'
+          'Remember: "ame" = rain, "futte imasu" = is falling. Useful when you step outside and immediately regret it.'
       },
       {
         japanese: 'あしたは はれですか、くもりですか。',
         kana: 'あしたは はれですか、くもりですか。',
-        vietnamese: 'Ngày mai trời nắng hay u ám?',
+        vietnamese: 'Will it be sunny or cloudy tomorrow?',
         memoryTip:
-          'Nhớ ba trạng thái trời: "hare" (晴れ) = nắng → "ha-rê" = "hả, rê chân ra ngoài đi!". "Kumori" (曇り) = u ám → "ku-mo-ri" = "cũ mờ rì" = trời cũ kỹ mờ mịt. "Ame" (雨) = mưa!'
+          'Remember three weather states: "hare" (晴れ) = sunny, "kumori" (曇り) = cloudy, "ame" (雨) = rain.'
       }
     ],
     dialogue: [
@@ -482,41 +482,41 @@ export const N5_CONVERSATIONS: ConversationPattern[] = [
         speaker: 'A (Suzuki)',
         japanese: 'おはようございます。きょうは いい てんきですね。',
         kana: 'おはようございます。きょうは いい てんきですね。',
-        vietnamese: 'Chào buổi sáng. Hôm nay thời tiết đẹp nhỉ.'
+        vietnamese: 'Good morning. Nice weather today, isn\'t it?'
       },
       {
         speaker: 'B (Mai)',
         japanese: 'そうですね。でも、あしたは あめですよ。',
         kana: 'そうですね。でも、あしたは あめですよ。',
-        vietnamese: 'Đúng vậy nhỉ. Nhưng ngày mai mưa đấy.'
+        vietnamese: 'It really is. But it will rain tomorrow, apparently.'
       },
       {
         speaker: 'A (Suzuki)',
         japanese: 'ほんとうですか。かさを もっていきますか。',
         kana: 'ほんとうですか。かさを もっていきますか。',
-        vietnamese: 'Thật á? Mang ô đi không?'
+        vietnamese: 'Really? Should I bring an umbrella?'
       },
       {
         speaker: 'B (Mai)',
         japanese: 'はい、もっていったほうが いいですよ。',
         kana: 'はい、もっていったほうが いいですよ。',
-        vietnamese: 'Vâng, mang theo thì tốt hơn đấy.'
+        vietnamese: 'Yes, you\'d better bring one.'
       },
       {
         speaker: 'A (Suzuki)',
         japanese: 'さむいですか。',
         kana: 'さむいですか。',
-        vietnamese: 'Lạnh không?'
+        vietnamese: 'Is it cold?'
       },
       {
         speaker: 'B (Mai)',
         japanese: 'ちょっと さむいですね。コートを きてください。',
         kana: 'ちょっと さむいですね。こーとを きてください。',
-        vietnamese: 'Hơi lạnh đấy. Mặc áo khoác nhé.'
+        vietnamese: 'It\'s a bit cold. Wear a coat.'
       }
     ],
     culturalNote:
-      'Nói chuyện thời tiết là cách small-talk phổ biến nhất ở Nhật. Nhật Bản có 4 mùa rõ rệt và người Nhật rất tự hào về điều này. Mùa mưa (梅雨 - tsuyu) kéo dài khoảng tháng 6-7. Người Nhật luôn mang ô (傘) phòng khi — bạn sẽ thấy giá ô ở khắp nơi, từ cửa hàng tiện lợi đến nhà ga!'
+      'Talking about the weather is the most common small talk in Japan. Japan has four distinct seasons and Japanese people take great pride in this. The rainy season (梅雨 - tsuyu) runs roughly from June to July. Japanese people always carry an umbrella just in case — you\'ll see umbrellas for sale everywhere, from convenience stores to train stations!'
   },
 
   // ─────────────────────────────────────────────
@@ -524,31 +524,31 @@ export const N5_CONVERSATIONS: ConversationPattern[] = [
   // ─────────────────────────────────────────────
   {
     id: 'n5-conv-08',
-    title: 'Giới thiệu gia đình',
+    title: 'Introducing family',
     titleJp: '家族',
     level: 'N5',
-    situation: 'Giới thiệu các thành viên gia đình với bạn mới',
+    situation: 'Introducing family members to a new friend',
     patterns: [
       {
         japanese: 'かぞくは ごにん です。',
         kana: 'かぞくは ごにん です。',
-        vietnamese: 'Gia đình tôi có 5 người.',
+        vietnamese: 'There are 5 people in my family.',
         memoryTip:
-          'Nhớ: "kazoku" = gia đình. "Ka" (家) = nhà, "zoku" (族) = tộc. Hán Việt "gia tộc" → gia đình! "Kazoku" nghe như "ca-dọc" → cả nhà đọc sách dọc theo hàng!'
+          'Remember: "kazoku" = family. "Ka" (家) = house, "zoku" (族) = clan/tribe.'
       },
       {
         japanese: 'ちちは かいしゃいん です。ははは せんせい です。',
         kana: 'ちちは かいしゃいん です。ははは せんせい です。',
-        vietnamese: 'Bố tôi là nhân viên công ty. Mẹ tôi là giáo viên.',
+        vietnamese: 'My father is a company employee. My mother is a teacher.',
         memoryTip:
-          'Nhớ: "chichi" = bố (của mình), "haha" = mẹ (của mình). Bố người khác = "otousan", mẹ người khác = "okaasan". "Chichi" → "chí chí" = ông bố hay chí chí cười. "Haha" → tiếng cười "haha" = mẹ lúc nào cũng vui cười!'
+          'Remember: "chichi" = my own father, "haha" = my own mother. Someone else\'s father/mother = "otousan"/"okaasan". Japanese has separate vocabulary for your own family vs. someone else\'s.'
       },
       {
         japanese: 'あにが ひとり、あねが ひとり います。',
         kana: 'あにが ひとり、あねが ひとり います。',
-        vietnamese: 'Tôi có một anh trai và một chị gái.',
+        vietnamese: 'I have one older brother and one older sister.',
         memoryTip:
-          'Nhớ: "ani" = anh trai (của mình), "ane" = chị gái (của mình). Anh/chị người khác = "oniisan/oneesan". "Ani" → "a ni" = "à, anh NI (này)!". "Ane" → "a nê" = "à, chị NÊ (nè)!"'
+          'Remember: "ani" = my own older brother, "ane" = my own older sister. Someone else\'s older brother/sister = "oniisan"/"oneesan".'
       }
     ],
     dialogue: [
@@ -556,41 +556,41 @@ export const N5_CONVERSATIONS: ConversationPattern[] = [
         speaker: 'A (Yamada)',
         japanese: 'ランさんの かぞくは なんにん ですか。',
         kana: 'らんさんの かぞくは なんにん ですか。',
-        vietnamese: 'Gia đình bạn Lan có mấy người?'
+        vietnamese: 'How many people are in your family, Lan?'
       },
       {
         speaker: 'B (Lan)',
         japanese: 'ごにんです。ちちと ははと あにと いもうとと わたしです。',
         kana: 'ごにんです。ちちと ははと あにと いもうとと わたしです。',
-        vietnamese: 'Năm người. Bố, mẹ, anh trai, em gái và tôi.'
+        vietnamese: 'Five people. My father, mother, older brother, younger sister, and me.'
       },
       {
         speaker: 'A (Yamada)',
         japanese: 'おにいさんは なにを していますか。',
         kana: 'おにいさんは なにを していますか。',
-        vietnamese: 'Anh trai bạn làm gì?'
+        vietnamese: 'What does your older brother do?'
       },
       {
         speaker: 'B (Lan)',
         japanese: 'あには だいがくせいです。にほんごを べんきょうしています。',
         kana: 'あには だいがくせいです。にほんごを べんきょうしています。',
-        vietnamese: 'Anh trai tôi là sinh viên đại học. Anh ấy đang học tiếng Nhật.'
+        vietnamese: 'My older brother is a university student. He is studying Japanese.'
       },
       {
         speaker: 'A (Yamada)',
         japanese: 'いいですね！いもうとさんは？',
         kana: 'いいですね！いもうとさんは？',
-        vietnamese: 'Tốt quá nhỉ! Còn em gái?'
+        vietnamese: 'Nice! And your younger sister?'
       },
       {
         speaker: 'B (Lan)',
         japanese: 'いもうとは こうこうせいです。じゅうろくさいです。',
         kana: 'いもうとは こうこうせいです。じゅうろくさいです。',
-        vietnamese: 'Em gái tôi là học sinh cấp 3. Em ấy 16 tuổi.'
+        vietnamese: 'My younger sister is a high schooler. She is 16.'
       }
     ],
     culturalNote:
-      'Tiếng Nhật có 2 bộ từ vựng gia đình: một cho gia đình MÌNH (chichi, haha, ani, ane) và một cho gia đình NGƯỜI KHÁC (otousan, okaasan, oniisan, oneesan). Nói về bố mình mà dùng "otousan" là sai — vì đó là kính ngữ dùng cho bố người khác. Đây là quy tắc uchi-soto (trong-ngoài) rất quan trọng trong văn hóa Nhật!'
+      'Japanese has two family vocabularies: one for your OWN family (chichi, haha, ani, ane) and one for SOMEONE ELSE\'S family (otousan, okaasan, oniisan, oneesan). Using "otousan" to describe your own father would be incorrect, since that\'s an honorific reserved for someone else\'s father. This is the important uchi-soto (inside-outside) principle in Japanese culture!'
   },
 
   // ─────────────────────────────────────────────
@@ -598,73 +598,73 @@ export const N5_CONVERSATIONS: ConversationPattern[] = [
   // ─────────────────────────────────────────────
   {
     id: 'n5-conv-09',
-    title: 'Phương tiện giao thông',
+    title: 'Transportation',
     titleJp: '交通',
     level: 'N5',
-    situation: 'Hỏi đường đến ga tàu và đi phương tiện công cộng',
+    situation: 'Asking directions to the train station and using public transportation',
     patterns: [
       {
         japanese: 'えきは どこですか。',
         kana: 'えきは どこですか。',
-        vietnamese: 'Ga tàu ở đâu?',
+        vietnamese: 'Where is the train station?',
         memoryTip:
-          'Nhớ: "eki" = ga tàu. Nghe như "ê ki" → "ê, kì lạ, ga tàu ở đâu?" Còn "doko" = ở đâu → "đô-cô" = "đô thị cô đơn, không biết đường đi!"'
+          'Remember: "eki" = train station. "Doko" = where.'
       },
       {
         japanese: 'でんしゃで いきます。/ バスで いきます。',
         kana: 'でんしゃで いきます。/ ばすで いきます。',
-        vietnamese: 'Tôi đi bằng tàu điện. / Tôi đi bằng xe buýt.',
+        vietnamese: 'I\'ll go by train. / I\'ll go by bus.',
         memoryTip:
-          'Nhớ: "densha" = tàu điện. "Den" (電) = điện, "sha" (車) = xe. Hán Việt "điện xa" → xe điện! "Basu" = bus, từ tiếng Anh. Trợ từ "de" = bằng (phương tiện).'
+          'Remember: "densha" = train. "Den" (電) = electricity, "sha" (車) = vehicle → "electric vehicle". "Basu" comes straight from the English "bus". The particle "de" = by (means of transport).'
       },
       {
         japanese: 'つぎの でんしゃは なんじですか。',
         kana: 'つぎの でんしゃは なんじですか。',
-        vietnamese: 'Chuyến tàu tiếp theo mấy giờ?',
+        vietnamese: 'What time is the next train?',
         memoryTip:
-          'Nhớ: "tsugi" = tiếp theo. Nghe như "xu-ghi" → "xù ghi chép lại chuyến tàu kế tiếp!" Câu rất hữu ích khi đứng ở sân ga đợi tàu.'
+          'Remember: "tsugi" = next. A very useful phrase when standing on the platform waiting.'
       }
     ],
     dialogue: [
       {
-        speaker: 'A (Hùng)',
+        speaker: 'A (Hung)',
         japanese: 'すみません、えきは どこですか。',
         kana: 'すみません、えきは どこですか。',
-        vietnamese: 'Xin lỗi, ga tàu ở đâu ạ?'
+        vietnamese: 'Excuse me, where is the train station?'
       },
       {
-        speaker: 'B (Người qua đường)',
+        speaker: 'B (Passerby)',
         japanese: 'まっすぐ いってください。みぎに あります。',
         kana: 'まっすぐ いってください。みぎに あります。',
-        vietnamese: 'Đi thẳng ạ. Ở bên phải.'
+        vietnamese: 'Please go straight ahead. It\'s on the right.'
       },
       {
-        speaker: 'A (Hùng)',
+        speaker: 'A (Hung)',
         japanese: 'ありがとうございます。とうきょうえきまで いくらですか。',
         kana: 'ありがとうございます。とうきょうえきまで いくらですか。',
-        vietnamese: 'Cảm ơn ạ. Đến ga Tokyo bao nhiêu tiền?'
+        vietnamese: 'Thank you. How much is it to Tokyo Station?'
       },
       {
-        speaker: 'B (Người qua đường)',
+        speaker: 'B (Passerby)',
         japanese: 'にひゃくえん ぐらいですよ。',
         kana: 'にひゃくえん ぐらいですよ。',
-        vietnamese: 'Khoảng 200 yên đấy.'
+        vietnamese: 'Around 200 yen.'
       },
       {
-        speaker: 'A (Hùng)',
+        speaker: 'A (Hung)',
         japanese: 'でんしゃと バスと、どちらが はやいですか。',
         kana: 'でんしゃと ばすと、どちらが はやいですか。',
-        vietnamese: 'Tàu điện và xe buýt, cái nào nhanh hơn?'
+        vietnamese: 'Which is faster, the train or the bus?'
       },
       {
-        speaker: 'B (Người qua đường)',
+        speaker: 'B (Passerby)',
         japanese: 'でんしゃの ほうが はやいです。じゅっぷんぐらい ですよ。',
         kana: 'でんしゃの ほうが はやいです。じゅっぷんぐらい ですよ。',
-        vietnamese: 'Tàu điện nhanh hơn. Khoảng 10 phút thôi.'
+        vietnamese: 'The train is faster. It takes about 10 minutes.'
       }
     ],
     culturalNote:
-      'Hệ thống tàu điện Nhật Bản là một trong những hệ thống tốt nhất thế giới — chính xác, sạch sẽ và an toàn. Thẻ IC (Suica, Pasmo) giúp thanh toán nhanh không cần mua vé. Trên tàu, hãy để điện thoại ở chế độ im lặng (マナーモード) và KHÔNG nói chuyện điện thoại — đó là quy tắc bất thành văn!'
+      'Japan\'s train system is one of the best in the world — precise, clean, and safe. IC cards (Suica, Pasmo) let you pay quickly without buying a paper ticket. On trains, keep your phone on silent mode (マナーモード) and do not make phone calls — that\'s an unwritten rule!'
   },
 
   // ─────────────────────────────────────────────
@@ -672,31 +672,31 @@ export const N5_CONVERSATIONS: ConversationPattern[] = [
   // ─────────────────────────────────────────────
   {
     id: 'n5-conv-10',
-    title: 'Sở thích',
+    title: 'Hobbies',
     titleJp: '趣味',
     level: 'N5',
-    situation: 'Nói chuyện về sở thích với bạn mới quen trong buổi giao lưu',
+    situation: 'Talking about hobbies with a new acquaintance at a social gathering',
     patterns: [
       {
         japanese: 'しゅみは なんですか。',
         kana: 'しゅみは なんですか。',
-        vietnamese: 'Sở thích của bạn là gì?',
+        vietnamese: 'What is your hobby?',
         memoryTip:
-          'Nhớ: "shumi" = sở thích. Nghe gần giống "thú mí" → "thú vị, mí ơi sở thích gì?" Hán Việt: "thú vị" — đúng nghĩa luôn!'
+          'Remember: "shumi" = hobby/interest.'
       },
       {
         japanese: '〜が すきです。/ 〜が きらいです。',
         kana: '〜が すきです。/ 〜が きらいです。',
-        vietnamese: 'Tôi thích ~. / Tôi ghét ~.',
+        vietnamese: 'I like ~. / I dislike ~.',
         memoryTip:
-          'Nhớ: "suki" = thích. Nghe như "su-ki" → "xúc kích" = xúc động thích thú! "Kirai" = ghét → "ki-rai" → "kì, rài" = kì cục, rải rác ghét đủ thứ!'
+          'Remember: "suki" = like, "kirai" = dislike. Two of the most useful adjectives you\'ll learn early on.'
       },
       {
         japanese: 'わたしも 〜が すきです。',
         kana: 'わたしも 〜が すきです。',
-        vietnamese: 'Tôi cũng thích ~.',
+        vietnamese: 'I like ~ too.',
         memoryTip:
-          'Nhớ: "mo" = cũng. Trợ từ nhỏ nhưng rất quan trọng! "Watashi MO" = tôi CŨNG. Nghĩ "mô" → "mô phỏng" = bắt chước = cũng giống vậy!'
+          'Remember: "mo" = too/also. A tiny particle, but a very important one! "Watashi MO" = I TOO.'
       }
     ],
     dialogue: [
@@ -704,41 +704,41 @@ export const N5_CONVERSATIONS: ConversationPattern[] = [
         speaker: 'A (Kenji)',
         japanese: 'しゅみは なんですか。',
         kana: 'しゅみは なんですか。',
-        vietnamese: 'Sở thích của bạn là gì?'
+        vietnamese: 'What is your hobby?'
       },
       {
-        speaker: 'B (Thảo)',
+        speaker: 'B (Thao)',
         japanese: 'おんがくが すきです。ギターを ひきます。',
         kana: 'おんがくが すきです。ぎたーを ひきます。',
-        vietnamese: 'Tôi thích âm nhạc. Tôi chơi guitar.'
+        vietnamese: 'I like music. I play the guitar.'
       },
       {
         speaker: 'A (Kenji)',
         japanese: 'いいですね！わたしも おんがくが すきです。',
         kana: 'いいですね！わたしも おんがくが すきです。',
-        vietnamese: 'Hay quá! Tôi cũng thích âm nhạc.'
+        vietnamese: 'That\'s great! I like music too.'
       },
       {
-        speaker: 'B (Thảo)',
+        speaker: 'B (Thao)',
         japanese: 'けんじさんの しゅみは なんですか。',
         kana: 'けんじさんの しゅみは なんですか。',
-        vietnamese: 'Sở thích của Kenji là gì?'
+        vietnamese: 'What is your hobby, Kenji?'
       },
       {
         speaker: 'A (Kenji)',
         japanese: 'りょうりが すきです。にほんりょうりを つくります。',
         kana: 'りょうりが すきです。にほんりょうりを つくります。',
-        vietnamese: 'Tôi thích nấu ăn. Tôi nấu món Nhật.'
+        vietnamese: 'I like cooking. I make Japanese food.'
       },
       {
-        speaker: 'B (Thảo)',
+        speaker: 'B (Thao)',
         japanese: 'すごいですね！わたしは りょうりが ちょっと にがてです。',
         kana: 'すごいですね！わたしは りょうりが ちょっと にがてです。',
-        vietnamese: 'Giỏi quá nhỉ! Tôi hơi không giỏi nấu ăn.'
+        vietnamese: 'That\'s impressive! I\'m not very good at cooking.'
       }
     ],
     culturalNote:
-      'Người Nhật thường khiêm tốn về sở thích của mình. Thay vì nói "tôi giỏi lắm", họ sẽ nói "mada mada desu" (vẫn còn kém lắm). Câu "にがてです" (nigate desu = không giỏi/không thích) là cách từ chối nhẹ nhàng hơn "きらいです" (kirai = ghét). Trong văn hóa Nhật, nói thẳng "ghét" được coi là hơi thô!'
+      'Japanese people tend to be modest about their own abilities. Instead of saying "I\'m great at it", they will say "mada mada desu" (I still have a long way to go). The phrase "にがてです" (nigate desu = not good at/not fond of) is a gentler way to decline than "きらいです" (kirai = dislike/hate). Saying "hate" outright is considered a bit blunt in Japanese culture!'
   },
 
   // ─────────────────────────────────────────────
@@ -746,73 +746,73 @@ export const N5_CONVERSATIONS: ConversationPattern[] = [
   // ─────────────────────────────────────────────
   {
     id: 'n5-conv-11',
-    title: 'Đếm đồ vật',
+    title: 'Counting things',
     titleJp: '数え方',
     level: 'N5',
-    situation: 'Mua trái cây ở chợ và đếm số lượng',
+    situation: 'Buying fruit at a market and counting quantities',
     patterns: [
       {
         japanese: 'ひとつ、ふたつ、みっつ… いくつですか。',
         kana: 'ひとつ、ふたつ、みっつ… いくつですか。',
-        vietnamese: 'Một cái, hai cái, ba cái... Mấy cái?',
+        vietnamese: 'One, two, three... how many?',
         memoryTip:
-          'Nhớ: hệ đếm Nhật gốc "hitotsu, futatsu, mittsu..." dùng cho đồ vật chung. "Ikutsu" = mấy cái. Mẹo: đếm 1-3 → "hí-tốt-su, phú-tát-su, mít-su" → tưởng tượng đếm quả mít: một mít, hai mít, ba mít!'
+          'Remember: the native Japanese counting set "hitotsu, futatsu, mittsu..." is used for general objects. "Ikutsu" = how many.'
       },
       {
         japanese: 'りんごを みっつ ください。',
         kana: 'りんごを みっつ ください。',
-        vietnamese: 'Cho tôi ba quả táo.',
+        vietnamese: 'Three apples, please.',
         memoryTip:
-          'Nhớ: "ringo" = táo. Nghe giống "Ringo Starr" (thành viên Beatles) → Ringo ăn táo! Đặt số đếm SAU đồ vật: "ringo wo mittsu" = táo + 3 cái.'
+          'Remember: "ringo" = apple. The counter comes AFTER the item: "ringo wo mittsu" = apple + three (of them).'
       },
       {
         japanese: 'ぜんぶで いくつ ありますか。',
         kana: 'ぜんぶで いくつ ありますか。',
-        vietnamese: 'Tổng cộng có mấy cái?',
+        vietnamese: 'How many are there in total?',
         memoryTip:
-          'Nhớ: "zenbu de" = tổng cộng. "Zen" (全) = toàn bộ, "bu" (部) = phần. Hán Việt "toàn bộ" → tất cả! "Ikutsu arimasu ka" = có mấy cái?'
+          'Remember: "zenbu de" = in total. "Zen" (全) = whole, "bu" (部) = part.'
       }
     ],
     dialogue: [
       {
-        speaker: 'A (Khách - Dũng)',
+        speaker: 'A (Customer - Dung)',
         japanese: 'すみません、このりんごは いくらですか。',
         kana: 'すみません、このりんごは いくらですか。',
-        vietnamese: 'Xin lỗi, táo này bao nhiêu tiền?'
+        vietnamese: 'Excuse me, how much are these apples?'
       },
       {
-        speaker: 'B (Người bán)',
+        speaker: 'B (Vendor)',
         japanese: 'ひとつ ひゃくえん です。',
         kana: 'ひとつ ひゃくえん です。',
-        vietnamese: 'Một quả 100 yên.'
+        vietnamese: 'One is 100 yen.'
       },
       {
-        speaker: 'A (Khách - Dũng)',
+        speaker: 'A (Customer - Dung)',
         japanese: 'じゃ、いつつ ください。みかんは いくつ ありますか。',
         kana: 'じゃ、いつつ ください。みかんは いくつ ありますか。',
-        vietnamese: 'Vậy, cho tôi năm quả. Quýt có mấy quả?'
+        vietnamese: 'Then five, please. How many mandarins do you have?'
       },
       {
-        speaker: 'B (Người bán)',
+        speaker: 'B (Vendor)',
         japanese: 'みかんは ここのつ あります。',
         kana: 'みかんは ここのつ あります。',
-        vietnamese: 'Quýt có chín quả.'
+        vietnamese: 'There are nine mandarins.'
       },
       {
-        speaker: 'A (Khách - Dũng)',
+        speaker: 'A (Customer - Dung)',
         japanese: 'みかんも みっつ おねがいします。',
         kana: 'みかんも みっつ おねがいします。',
-        vietnamese: 'Cho tôi thêm ba quả quýt nữa ạ.'
+        vietnamese: 'Three mandarins too, please.'
       },
       {
-        speaker: 'B (Người bán)',
+        speaker: 'B (Vendor)',
         japanese: 'はい。ぜんぶで はっぴゃくえん です。',
         kana: 'はい。ぜんぶで はっぴゃくえん です。',
-        vietnamese: 'Vâng. Tổng cộng 800 yên ạ.'
+        vietnamese: 'Sure. That comes to 800 yen in total.'
       }
     ],
     culturalNote:
-      'Hệ thống đếm tiếng Nhật là một trong những phần khó nhất cho người mới học! Ngoài hệ đếm gốc Nhật (hitotsu, futatsu...), còn có hàng chục "trợ từ đếm" (助数詞) tùy loại vật: "mai" (枚) cho vật phẳng, "hon" (本) cho vật dài, "hiki" (匹) cho động vật nhỏ, "satsu" (冊) cho sách. Bí quyết: học dần, bắt đầu từ hệ đếm gốc Nhật (dùng được cho hầu hết đồ vật)!'
+      'The Japanese counting system is one of the trickiest parts for beginners! Besides the native counting set (hitotsu, futatsu...), there are dozens of "counter words" (助数詞) depending on the type of object: "mai" (枚) for flat things, "hon" (本) for long things, "hiki" (匹) for small animals, "satsu" (冊) for books. Tip: start with the native counting set, which works for most everyday objects!'
   },
 
   // ─────────────────────────────────────────────
@@ -820,31 +820,31 @@ export const N5_CONVERSATIONS: ConversationPattern[] = [
   // ─────────────────────────────────────────────
   {
     id: 'n5-conv-12',
-    title: 'Trường học',
+    title: 'School',
     titleJp: '学校',
     level: 'N5',
-    situation: 'Ngày đầu tiên đến lớp học tiếng Nhật, nói chuyện với bạn cùng lớp',
+    situation: 'First day at Japanese class, talking with a classmate',
     patterns: [
       {
         japanese: 'せんせい、しつもんが あります。',
         kana: 'せんせい、しつもんが あります。',
-        vietnamese: 'Thưa thầy/cô, em có câu hỏi.',
+        vietnamese: 'Teacher, I have a question.',
         memoryTip:
-          'Nhớ: "sensei" = thầy/cô giáo. "Sen" (先) = trước, "sei" (生) = sinh. Người "sinh ra trước" = người dẫn đường = thầy cô! "Shitsumon" = câu hỏi → "sít-su-mon" → "xít xịt hỏi suốt!"'
+          'Remember: "sensei" = teacher. "Sen" (先) = before, "sei" (生) = born → literally "born before" = someone who leads the way. "Shitsumon" = question.'
       },
       {
         japanese: 'じゅぎょうは なんじから ですか。',
         kana: 'じゅぎょうは なんじから ですか。',
-        vietnamese: 'Tiết học bắt đầu mấy giờ?',
+        vietnamese: 'What time does class start?',
         memoryTip:
-          'Nhớ: "jugyou" = tiết học/bài giảng. "Ju" (授) = trao, "gyou" (業) = nghiệp. Hán Việt "thụ nghiệp" → nhận bài học! Nghe như "dìu-giâu" → thầy dìu dắt học sinh giàu kiến thức!'
+          'Remember: "jugyou" = class/lesson. "Ju" (授) = to give, "gyou" (業) = studies → to receive instruction.'
       },
       {
         japanese: 'にほんごは たのしいです。',
         kana: 'にほんごは たのしいです。',
-        vietnamese: 'Tiếng Nhật thú vị.',
+        vietnamese: 'Japanese is fun.',
         memoryTip:
-          'Nhớ: "tanoshii" = vui/thú vị. Nghe như "ta-no-shii" → "ta nó sì (thích)" → ta và nó đều thích = vui! Tính từ -i, đuôi thay đổi: tanoshikunai (không vui), tanoshikatta (đã vui).'
+          'Remember: "tanoshii" = fun/enjoyable. An i-adjective: it changes form as tanoshikunai (not fun), tanoshikatta (was fun).'
       }
     ],
     dialogue: [
@@ -852,41 +852,41 @@ export const N5_CONVERSATIONS: ConversationPattern[] = [
         speaker: 'A (Linh)',
         japanese: 'すみません、にほんごの じゅぎょうは どこですか。',
         kana: 'すみません、にほんごの じゅぎょうは どこですか。',
-        vietnamese: 'Xin lỗi, lớp tiếng Nhật ở đâu ạ?'
+        vietnamese: 'Excuse me, where is the Japanese class?'
       },
       {
-        speaker: 'B (Gakusei)',
+        speaker: 'B (Classmate)',
         japanese: 'さんがいの 301きょうしつ ですよ。いっしょに いきましょう。',
         kana: 'さんがいの さんまるいちきょうしつ ですよ。いっしょに いきましょう。',
-        vietnamese: 'Phòng 301 tầng 3 đấy. Đi cùng nhé.'
+        vietnamese: 'It\'s Room 301 on the 3rd floor. Let\'s go together.'
       },
       {
         speaker: 'A (Linh)',
         japanese: 'ありがとうございます。じゅぎょうは なんじから ですか。',
         kana: 'ありがとうございます。じゅぎょうは なんじから ですか。',
-        vietnamese: 'Cảm ơn ạ. Tiết học bắt đầu mấy giờ?'
+        vietnamese: 'Thank you. What time does class start?'
       },
       {
-        speaker: 'B (Gakusei)',
+        speaker: 'B (Classmate)',
         japanese: 'くじから じゅうにじまで です。',
         kana: 'くじから じゅうにじまで です。',
-        vietnamese: 'Từ 9 giờ đến 12 giờ.'
+        vietnamese: 'From 9:00 to 12:00.'
       },
       {
         speaker: 'A (Linh)',
         japanese: 'せんせいは だれですか。',
         kana: 'せんせいは だれですか。',
-        vietnamese: 'Thầy/cô là ai?'
+        vietnamese: 'Who is the teacher?'
       },
       {
-        speaker: 'B (Gakusei)',
+        speaker: 'B (Classmate)',
         japanese: 'やまもとせんせいです。とても やさしい せんせいですよ。にほんごは たのしいですよ！',
         kana: 'やまもとせんせいです。とても やさしい せんせいですよ。にほんごは たのしいですよ！',
-        vietnamese: 'Thầy Yamamoto. Thầy rất hiền đấy. Tiếng Nhật vui lắm!'
+        vietnamese: 'It\'s Yamamoto-sensei. A very kind teacher. Japanese class is fun!'
       }
     ],
     culturalNote:
-      'Trong lớp học Nhật, học sinh đứng dậy cúi chào thầy cô đầu giờ: "きりつ、れい" (kiritsu, rei = đứng dậy, cúi chào). Trước tiết học nói "おねがいします" (xin thầy/cô chỉ dạy), cuối tiết nói "ありがとうございました" (cảm ơn đã dạy). Thầy cô được gọi là "sensei" — chức danh rất được tôn trọng, dùng cả cho bác sĩ và luật sư!'
+      'In a Japanese classroom, students stand and bow to greet the teacher at the start of the lesson: "きりつ、れい" (kiritsu, rei = stand, bow). Before class begins, they say "おねがいします" (please guide us), and at the end, "ありがとうございました" (thank you for teaching us). "Sensei" is a highly respected title, also used for doctors and lawyers!'
   },
 
   // ─────────────────────────────────────────────
@@ -894,31 +894,31 @@ export const N5_CONVERSATIONS: ConversationPattern[] = [
   // ─────────────────────────────────────────────
   {
     id: 'n5-conv-13',
-    title: 'Gọi điện thoại',
+    title: 'Making a phone call',
     titleJp: '電話',
     level: 'N5',
-    situation: 'Gọi điện đến công ty để tìm người cần gặp',
+    situation: 'Calling a company to reach someone',
     patterns: [
       {
         japanese: 'もしもし、〜です。',
         kana: 'もしもし、〜です。',
-        vietnamese: 'A-lô, tôi là ~.',
+        vietnamese: 'Hello, this is ~.',
         memoryTip:
-          'Nhớ: "moshi moshi" = a-lô (chỉ dùng khi nghe điện thoại). Nguồn gốc từ "mousu" (nói) → "moushimasu, moushimasu" → rút gọn thành "moshi moshi". Nghĩ: "mò sì mò sì" → mò mẫm bắt máy!'
+          'Remember: "moshi moshi" = hello (only used when answering the phone). It comes from "mousu" (to say) repeated → "moushimasu, moushimasu" shortened to "moshi moshi".'
       },
       {
         japanese: '〜さんは いらっしゃいますか。',
         kana: '〜さんは いらっしゃいますか。',
-        vietnamese: '~ có ở đó không ạ? (kính ngữ)',
+        vietnamese: 'Is ~ there, please? (honorific)',
         memoryTip:
-          'Nhớ: "irasshaimasu" = có mặt/ở đây (kính ngữ của "imasu"). Rất lịch sự, dùng khi gọi điện hỏi thăm. Nghe như "i-rát-shai-masu" → "ì rạt sai ma sứ" = ông ấy đang ở không?'
+          'Remember: "irasshaimasu" = to be present (honorific form of "imasu"). Very polite, used when asking for someone on the phone.'
       },
       {
         japanese: 'すみません、でんわばんごうを おねがいします。',
         kana: 'すみません、でんわばんごうを おねがいします。',
-        vietnamese: 'Xin lỗi, cho tôi số điện thoại.',
+        vietnamese: 'Excuse me, could I have the phone number, please?',
         memoryTip:
-          'Nhớ: "denwa" = điện thoại ("den" = điện, "wa" = nói). "Bangou" = số. Hán Việt: "điện thoại" = nói bằng điện, và "番号" = "phiên hiệu" = con số!'
+          'Remember: "denwa" = telephone ("den" = electricity, "wa" = talk). "Bangou" = number.'
       }
     ],
     dialogue: [
@@ -926,41 +926,41 @@ export const N5_CONVERSATIONS: ConversationPattern[] = [
         speaker: 'A (Phong)',
         japanese: 'もしもし、ABCかいしゃですか。',
         kana: 'もしもし、えーびーしーかいしゃですか。',
-        vietnamese: 'A-lô, công ty ABC phải không ạ?'
+        vietnamese: 'Hello, is this ABC Company?'
       },
       {
-        speaker: 'B (Nhân viên)',
+        speaker: 'B (Staff)',
         japanese: 'はい、ABCかいしゃ です。',
         kana: 'はい、えーびーしーかいしゃ です。',
-        vietnamese: 'Vâng, đây là công ty ABC.'
+        vietnamese: 'Yes, this is ABC Company.'
       },
       {
         speaker: 'A (Phong)',
         japanese: 'たなかさんは いらっしゃいますか。',
         kana: 'たなかさんは いらっしゃいますか。',
-        vietnamese: 'Anh Tanaka có ở đó không ạ?'
+        vietnamese: 'Is Tanaka there, please?'
       },
       {
-        speaker: 'B (Nhân viên)',
+        speaker: 'B (Staff)',
         japanese: 'すみません、たなかは いま でかけています。',
         kana: 'すみません、たなかは いま でかけています。',
-        vietnamese: 'Xin lỗi, Tanaka hiện đang ra ngoài.'
+        vietnamese: 'I\'m sorry, Tanaka is out at the moment.'
       },
       {
         speaker: 'A (Phong)',
         japanese: 'そうですか。なんじに もどりますか。',
         kana: 'そうですか。なんじに もどりますか。',
-        vietnamese: 'Vậy ạ. Mấy giờ anh ấy về?'
+        vietnamese: 'I see. What time will he be back?'
       },
       {
-        speaker: 'B (Nhân viên)',
+        speaker: 'B (Staff)',
         japanese: 'さんじごろ もどります。でんわばんごうを おねがいします。',
         kana: 'さんじごろ もどります。でんわばんごうを おねがいします。',
-        vietnamese: 'Khoảng 3 giờ sẽ về. Cho tôi số điện thoại ạ.'
+        vietnamese: 'He will be back around 3 o\'clock. Could I have your phone number, please?'
       }
     ],
     culturalNote:
-      'Khi nghe điện thoại ở Nhật, luôn bắt đầu bằng "もしもし". Nhưng trong công ty, nhân viên thường nói "はい、〜会社です" (vâng, đây là công ty ~) thay vì "moshi moshi". Khi người cần gặp vắng mặt, sẽ hỏi "伝言をお願いできますか" (có thể nhờ nhắn lại không?). Lưu ý: nói "san" khi gọi tên người ngoài công ty, nhưng KHÔNG dùng "san" cho đồng nghiệp mình khi nói với khách!'
+      'When answering the phone in Japan, people always start with "もしもし". But within a company, employees usually say "はい、〜会社です" (Yes, this is ~ Company) instead of "moshi moshi". When the person being asked for is absent, the caller might be asked "伝言をお願いできますか" (may I take a message?). Note: use "san" when referring to someone outside the company, but drop "san" for your own coworkers when speaking to an outside caller!'
   },
 
   // ─────────────────────────────────────────────
@@ -968,73 +968,73 @@ export const N5_CONVERSATIONS: ConversationPattern[] = [
   // ─────────────────────────────────────────────
   {
     id: 'n5-conv-14',
-    title: 'Tại ngân hàng',
+    title: 'At the bank',
     titleJp: '銀行',
     level: 'N5',
-    situation: 'Đổi tiền và mở tài khoản tại ngân hàng Nhật',
+    situation: 'Exchanging money and opening an account at a Japanese bank',
     patterns: [
       {
         japanese: 'りょうがえ を おねがいします。',
         kana: 'りょうがえ を おねがいします。',
-        vietnamese: 'Cho tôi đổi tiền.',
+        vietnamese: 'I\'d like to exchange money, please.',
         memoryTip:
-          'Nhớ: "ryougae" = đổi tiền. "Ryou" = hai bên, "gae/kae" = đổi. Nghe như "riêu ga ê" → "riêu (tiền) ga (nhà ga) ê (hết)" → hết tiền ở nhà ga, phải đổi thêm!'
+          'Remember: "ryougae" = currency exchange. "Ryou" = both sides, "gae/kae" = to change.'
       },
       {
         japanese: 'こうざを つくりたいです。',
         kana: 'こうざを つくりたいです。',
-        vietnamese: 'Tôi muốn mở tài khoản.',
+        vietnamese: 'I want to open an account.',
         memoryTip:
-          'Nhớ: "kouza" = tài khoản. "Kou" (口) = miệng/cửa, "za" (座) = chỗ ngồi. Hán Việt "khẩu tọa" → cái "cửa" để tiền "ngồi"! "Tsukuritai" = muốn tạo/mở.'
+          'Remember: "kouza" = account. "Kou" (口) = opening, "za" (座) = seat. "Tsukuritai" = want to make/open.'
       },
       {
         japanese: 'おかねを おろしたいです。',
         kana: 'おかねを おろしたいです。',
-        vietnamese: 'Tôi muốn rút tiền.',
+        vietnamese: 'I want to withdraw money.',
         memoryTip:
-          'Nhớ: "okane" = tiền. "O" = kính ngữ, "kane" (金) = vàng/tiền. Hán Việt "kim" → tiền! "Oroshitai" = muốn rút (nghĩa gốc: hạ xuống). Tiền "rớt" xuống từ tài khoản vào tay mình!'
+          'Remember: "okane" = money. "O" is an honorific, "kane" (金) = gold/money. "Oroshitai" = want to withdraw (literally: bring down).'
       }
     ],
     dialogue: [
       {
-        speaker: 'A (Khách - Thanh)',
+        speaker: 'A (Customer - Thanh)',
         japanese: 'すみません、りょうがえ を おねがいします。',
         kana: 'すみません、りょうがえ を おねがいします。',
-        vietnamese: 'Xin lỗi, cho tôi đổi tiền ạ.'
+        vietnamese: 'Excuse me, I\'d like to exchange money, please.'
       },
       {
-        speaker: 'B (Nhân viên)',
+        speaker: 'B (Staff)',
         japanese: 'はい。なにを えんに かえますか。',
         kana: 'はい。なにを えんに かえますか。',
-        vietnamese: 'Vâng. Đổi gì sang yên ạ?'
+        vietnamese: 'Sure. What would you like to exchange into yen?'
       },
       {
-        speaker: 'A (Khách - Thanh)',
+        speaker: 'A (Customer - Thanh)',
         japanese: 'ドルを えんに おねがいします。ひゃくドルです。',
         kana: 'どるを えんに おねがいします。ひゃくどるです。',
-        vietnamese: 'Đổi đô-la sang yên ạ. 100 đô.'
+        vietnamese: 'Dollars into yen, please. It\'s 100 dollars.'
       },
       {
-        speaker: 'B (Nhân viên)',
+        speaker: 'B (Staff)',
         japanese: 'はい、パスポートを みせてください。',
         kana: 'はい、ぱすぽーとを みせてください。',
-        vietnamese: 'Vâng, cho tôi xem hộ chiếu ạ.'
+        vietnamese: 'Sure, could I see your passport, please?'
       },
       {
-        speaker: 'A (Khách - Thanh)',
+        speaker: 'A (Customer - Thanh)',
         japanese: 'はい、どうぞ。こうざも つくりたいですが…',
         kana: 'はい、どうぞ。こうざも つくりたいですが…',
-        vietnamese: 'Vâng, mời ạ. Tôi cũng muốn mở tài khoản...'
+        vietnamese: 'Here you go. I\'d also like to open an account...'
       },
       {
-        speaker: 'B (Nhân viên)',
+        speaker: 'B (Staff)',
         japanese: 'こうざは こちらの ようしに きにゅうしてください。',
         kana: 'こうざは こちらの ようしに きにゅうしてください。',
-        vietnamese: 'Về tài khoản, xin điền vào mẫu đơn này ạ.'
+        vietnamese: 'For an account, please fill out this form.'
       }
     ],
     culturalNote:
-      'Nhật Bản vẫn là xã hội dùng tiền mặt nhiều, dù đang dần chuyển sang cashless. ATM ở bưu điện (ゆうちょ) và konbini (7-Eleven, Lawson) hỗ trợ thẻ quốc tế. Lưu ý: nhiều ATM Nhật ĐÓNG CỬA ban đêm! Mở tài khoản ngân hàng khi là người nước ngoài cần: thẻ cư trú (在留カード), hộ chiếu, và chứng minh địa chỉ. Một số ngân hàng yêu cầu đã ở Nhật ít nhất 6 tháng.'
+      'Japan is still a fairly cash-heavy society, though it is slowly moving toward cashless payments. ATMs at post offices (ゆうちょ) and convenience stores (7-Eleven, Lawson) support international cards. Note: many Japanese ATMs CLOSE at night! Opening a bank account as a foreigner requires: a residence card (在留カード), passport, and proof of address. Some banks require you to have lived in Japan for at least 6 months.'
   },
 
   // ─────────────────────────────────────────────
@@ -1042,72 +1042,72 @@ export const N5_CONVERSATIONS: ConversationPattern[] = [
   // ─────────────────────────────────────────────
   {
     id: 'n5-conv-15',
-    title: 'Xin lỗi',
+    title: 'Apologizing',
     titleJp: '謝る',
     level: 'N5',
-    situation: 'Các tình huống cần xin lỗi: đến muộn, làm phiền, mắc lỗi',
+    situation: 'Situations that call for an apology: being late, causing trouble, making a mistake',
     patterns: [
       {
         japanese: 'ごめんなさい。おそくなって すみません。',
         kana: 'ごめんなさい。おそくなって すみません。',
-        vietnamese: 'Xin lỗi. Xin lỗi vì đến muộn.',
+        vietnamese: 'I\'m sorry. Sorry for being late.',
         memoryTip:
-          'Nhớ: "gomen nasai" = xin lỗi (thân mật). "Gomen" nghe như "go-men" → "gỡ mền" → "gỡ tấm mền tội lỗi"! "Osoku natte" = trở nên muộn. "Osoi" = chậm/muộn.'
+          'Remember: "gomen nasai" = sorry (casual/friendly). "Osoku natte" = having become late. "Osoi" = slow/late.'
       },
       {
         japanese: 'すみません、まちがえました。',
         kana: 'すみません、まちがえました。',
-        vietnamese: 'Xin lỗi, tôi nhầm rồi.',
+        vietnamese: 'Sorry, I made a mistake.',
         memoryTip:
-          'Nhớ: "machigaemashita" = đã nhầm. "Machigaeru" = nhầm lẫn. Nghe như "ma-chi-ga-ê" → "ma chỉ ga ê" → con ma chỉ ga ế khách → chỉ nhầm đường!'
+          'Remember: "machigaemashita" = made a mistake. "Machigaeru" = to be mistaken.'
       },
       {
         japanese: 'もうしわけ ありません。',
         kana: 'もうしわけ ありません。',
-        vietnamese: 'Vô cùng xin lỗi. (rất trang trọng)',
+        vietnamese: 'I am deeply sorry. (very formal)',
         memoryTip:
-          'Nhớ: "moushiwake arimasen" = không có lời biện hộ. Lịch sự nhất trong các cách xin lỗi. "Moushi" = nói, "wake" = lý do. Nghĩa: không tìm được lý do nào biện minh! Dùng với sếp, khách hàng, người lớn tuổi.'
+          'Remember: "moushiwake arimasen" = literally "there is no excuse". The most formal way to apologize. "Moushi" = to say, "wake" = reason. Used with a boss, customer, or elders.'
       }
     ],
     dialogue: [
       {
-        speaker: 'A (Nhân viên - Tuấn)',
+        speaker: 'A (Employee - Tuan)',
         japanese: 'すみません、おそくなりました。',
         kana: 'すみません、おそくなりました。',
-        vietnamese: 'Xin lỗi, tôi đến muộn rồi.'
+        vietnamese: 'Sorry, I\'m late.'
       },
       {
-        speaker: 'B (Sếp - Sato)',
+        speaker: 'B (Boss - Sato)',
         japanese: 'きょうは じゅっぷん おそいですよ。',
         kana: 'きょうは じゅっぷん おそいですよ。',
-        vietnamese: 'Hôm nay muộn 10 phút đấy.'
+        vietnamese: 'You\'re 10 minutes late today.'
       },
       {
-        speaker: 'A (Nhân viên - Tuấn)',
+        speaker: 'A (Employee - Tuan)',
         japanese: 'もうしわけ ありません。でんしゃが おくれました。',
         kana: 'もうしわけ ありません。でんしゃが おくれました。',
-        vietnamese: 'Vô cùng xin lỗi. Tàu điện bị trễ ạ.'
+        vietnamese: 'I am deeply sorry. The train was delayed.'
       },
       {
-        speaker: 'B (Sếp - Sato)',
+        speaker: 'B (Boss - Sato)',
         japanese: 'そうですか。きをつけてください。',
         kana: 'そうですか。きをつけてください。',
-        vietnamese: 'Vậy à. Cẩn thận nhé.'
+        vietnamese: 'I see. Please be careful next time.'
       },
       {
-        speaker: 'A (Nhân viên - Tuấn)',
+        speaker: 'A (Employee - Tuan)',
         japanese: 'はい、もう おそくなりません。ほんとうに すみませんでした。',
         kana: 'はい、もう おそくなりません。ほんとうに すみませんでした。',
-        vietnamese: 'Vâng, sẽ không muộn nữa. Thực sự xin lỗi ạ.'
+        vietnamese: 'Yes, I won\'t be late again. I\'m really sorry.'
       },
       {
-        speaker: 'B (Sếp - Sato)',
+        speaker: 'B (Boss - Sato)',
         japanese: 'わかりました。さ、しごとを はじめましょう。',
         kana: 'わかりました。さ、しごとを はじめましょう。',
-        vietnamese: 'Tôi hiểu rồi. Nào, bắt đầu làm việc thôi.'
+        vietnamese: 'Understood. Now, let\'s get to work.'
       }
     ],
     culturalNote:
-      'Xin lỗi là một nghệ thuật trong văn hóa Nhật! Có nhiều cấp độ: "gomen/gomen ne" (thân mật, bạn bè), "gomen nasai" (lịch sự vừa), "sumimasen" (lịch sự, đa dụng — vừa xin lỗi vừa cảm ơn), "moushiwake arimasen" (rất trang trọng, dùng trong công việc). Người Nhật thường xin lỗi nhiều hơn cần thiết — đó được coi là phép lịch sự, không phải yếu đuối. Khi xin lỗi nghiêm trọng, họ cúi đầu rất thấp (tới 45° hoặc 90°)!'
+      'Apologizing is an art in Japanese culture! There are several levels: "gomen/gomen ne" (casual, among friends), "gomen nasai" (moderately polite), "sumimasen" (polite, versatile — used for both apologizing and thanking), "moushiwake arimasen" (very formal, used at work). Japanese people often apologize more than seems necessary — it is considered courteous, not a sign of weakness. For a serious apology, they bow very deeply (up to 45° or even 90°)!'
   }
 ];

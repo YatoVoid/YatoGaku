@@ -27,41 +27,41 @@ vi.mock('$lib/data/conversations', () => ({
     if (level === 'n5') return [
       {
         id: 'n5-conv-01',
-        title: 'Tự giới thiệu',
+        title: 'Self-introduction',
         titleJp: '自己紹介',
         level: 'N5',
-        situation: 'Gặp người mới',
+        situation: 'Meeting someone new',
         patterns: [
           {
             japanese: 'はじめまして',
             kana: 'はじめまして',
-            vietnamese: 'Xin chào lần đầu',
-            memoryTip: 'Nhớ: hajimemashite'
+            vietnamese: 'Nice to meet you (pattern)',
+            memoryTip: 'Remember: hajimemashite'
           }
         ],
         dialogue: [
-          { speaker: 'A', japanese: 'はじめまして', kana: 'はじめまして', vietnamese: 'Xin chào' },
-          { speaker: 'B', japanese: 'こちらこそ', kana: 'こちらこそ', vietnamese: 'Tôi cũng vậy' }
+          { speaker: 'A', japanese: 'はじめまして', kana: 'はじめまして', vietnamese: 'Nice to meet you' },
+          { speaker: 'B', japanese: 'こちらこそ', kana: 'こちらこそ', vietnamese: 'Likewise' }
         ],
-        culturalNote: 'Người Nhật cúi đầu khi chào'
+        culturalNote: 'Japanese people bow when greeting'
       },
       {
         id: 'n5-conv-02',
-        title: 'Hỏi đường',
+        title: 'Asking for directions',
         titleJp: '道を聞く',
         level: 'N5',
-        situation: 'Đứng trên đường phố',
+        situation: 'Standing on the street',
         patterns: [
           {
             japanese: '〜はどこですか',
             kana: '〜はどこですか',
-            vietnamese: '~ ở đâu?',
-            memoryTip: 'Nhớ: doko = đâu'
+            vietnamese: 'Where is ~?',
+            memoryTip: 'Remember: doko = where'
           }
         ],
         dialogue: [
-          { speaker: 'A', japanese: 'すみません', kana: 'すみません', vietnamese: 'Xin lỗi' },
-          { speaker: 'B', japanese: 'はい', kana: 'はい', vietnamese: 'Vâng' }
+          { speaker: 'A', japanese: 'すみません', kana: 'すみません', vietnamese: 'Excuse me' },
+          { speaker: 'B', japanese: 'はい', kana: 'はい', vietnamese: 'Yes' }
         ]
         // No culturalNote — tests the optional branch
       }
@@ -69,16 +69,16 @@ vi.mock('$lib/data/conversations', () => ({
     if (level === 'n4') return [
       {
         id: 'n4-conv-01',
-        title: 'Đặt vé tàu',
+        title: 'Buying a ticket',
         titleJp: '切符を買う',
         level: 'N4',
-        situation: 'Tại ga tàu',
+        situation: 'At the train station',
         patterns: [
-          { japanese: '〜まで', kana: '〜まで', vietnamese: 'Đến ~', memoryTip: 'made = đến' }
+          { japanese: '〜まで', kana: '〜まで', vietnamese: 'To ~', memoryTip: 'made = to/until' }
         ],
         dialogue: [
-          { speaker: 'A', japanese: 'すみません', kana: 'すみません', vietnamese: 'Xin lỗi' },
-          { speaker: 'B', japanese: 'はい', kana: 'はい', vietnamese: 'Vâng' }
+          { speaker: 'A', japanese: 'すみません', kana: 'すみません', vietnamese: 'Excuse me' },
+          { speaker: 'B', japanese: 'はい', kana: 'はい', vietnamese: 'Yes' }
         ]
       }
     ];
@@ -115,8 +115,8 @@ describe('Conversations Page', () => {
 
     it('shows N5 conversations by default', () => {
       render(ConversationsPage);
-      expect(screen.getByText('Tự giới thiệu')).toBeInTheDocument();
-      expect(screen.getByText('Hỏi đường')).toBeInTheDocument();
+      expect(screen.getByText('Self-introduction')).toBeInTheDocument();
+      expect(screen.getByText('Asking for directions')).toBeInTheDocument();
     });
 
     it('N5 is selected by default (aria-checked)', () => {
@@ -127,7 +127,7 @@ describe('Conversations Page', () => {
 
     it('all cards start collapsed (no pattern content visible)', () => {
       render(ConversationsPage);
-      expect(screen.queryByText('Mẫu câu')).not.toBeInTheDocument();
+      expect(screen.queryByText('Patterns')).not.toBeInTheDocument();
     });
   });
 
@@ -138,8 +138,8 @@ describe('Conversations Page', () => {
 
       await user.click(screen.getByRole('radio', { name: /N4/ }));
 
-      expect(screen.getByText('Đặt vé tàu')).toBeInTheDocument();
-      expect(screen.queryByText('Tự giới thiệu')).not.toBeInTheDocument();
+      expect(screen.getByText('Buying a ticket')).toBeInTheDocument();
+      expect(screen.queryByText('Self-introduction')).not.toBeInTheDocument();
     });
 
     it('N4 button becomes aria-checked after click', async () => {
@@ -157,14 +157,14 @@ describe('Conversations Page', () => {
       render(ConversationsPage);
 
       // Expand a card
-      await user.click(screen.getByText('Tự giới thiệu'));
+      await user.click(screen.getByText('Self-introduction'));
       expect(screen.getByText('Patterns')).toBeInTheDocument();
 
       // Switch level
       await user.click(screen.getByRole('radio', { name: /N4/ }));
 
       // Expanded content should be gone
-      expect(screen.queryByText('Mẫu câu')).not.toBeInTheDocument();
+      expect(screen.queryByText('Patterns')).not.toBeInTheDocument();
     });
   });
 
@@ -173,7 +173,7 @@ describe('Conversations Page', () => {
       const user = userEvent.setup();
       render(ConversationsPage);
 
-      await user.click(screen.getByText('Tự giới thiệu'));
+      await user.click(screen.getByText('Self-introduction'));
 
       expect(screen.getByText('Patterns')).toBeInTheDocument();
       expect(screen.getByText('Conversations')).toBeInTheDocument();
@@ -194,18 +194,18 @@ describe('Conversations Page', () => {
       const user = userEvent.setup();
       render(ConversationsPage);
 
-      await user.click(screen.getByText('Tự giới thiệu'));
-      await user.click(screen.getByText('Tự giới thiệu'));
+      await user.click(screen.getByText('Self-introduction'));
+      await user.click(screen.getByText('Self-introduction'));
 
-      expect(screen.queryByText('Mẫu câu')).not.toBeInTheDocument();
+      expect(screen.queryByText('Patterns')).not.toBeInTheDocument();
     });
 
     it('only one card is expanded at a time', async () => {
       const user = userEvent.setup();
       render(ConversationsPage);
 
-      await user.click(screen.getByText('Tự giới thiệu'));
-      await user.click(screen.getByText('Hỏi đường'));
+      await user.click(screen.getByText('Self-introduction'));
+      await user.click(screen.getByText('Asking for directions'));
 
       // Count "Patterns" section headers — should be exactly 1
       expect(screen.getAllByText('Patterns')).toHaveLength(1);
@@ -217,18 +217,18 @@ describe('Conversations Page', () => {
       const user = userEvent.setup();
       render(ConversationsPage);
 
-      await user.click(screen.getByText('Tự giới thiệu'));
+      await user.click(screen.getByText('Self-introduction'));
 
       // Japanese text appears in both pattern and dialogue — use getAllByText
       expect(screen.getAllByText('はじめまして').length).toBeGreaterThanOrEqual(1);
-      expect(screen.getByText('Xin chào lần đầu')).toBeInTheDocument();
+      expect(screen.getByText('Nice to meet you')).toBeInTheDocument();
     });
 
     it('renders romaji via kanaToRomaji', async () => {
       const user = userEvent.setup();
       render(ConversationsPage);
 
-      await user.click(screen.getByText('Tự giới thiệu'));
+      await user.click(screen.getByText('Self-introduction'));
 
       expect(screen.getAllByText('romaji:はじめまして').length).toBeGreaterThanOrEqual(1);
     });
@@ -237,38 +237,38 @@ describe('Conversations Page', () => {
       const user = userEvent.setup();
       render(ConversationsPage);
 
-      await user.click(screen.getByText('Tự giới thiệu'));
+      await user.click(screen.getByText('Self-introduction'));
 
-      expect(screen.getByText('Nhớ: hajimemashite')).toBeInTheDocument();
+      expect(screen.getByText('Remember: hajimemashite')).toBeInTheDocument();
     });
 
     it('renders dialogue speakers and lines', async () => {
       const user = userEvent.setup();
       render(ConversationsPage);
 
-      await user.click(screen.getByText('Tự giới thiệu'));
+      await user.click(screen.getByText('Self-introduction'));
 
       expect(screen.getByText('A:')).toBeInTheDocument();
       expect(screen.getByText('B:')).toBeInTheDocument();
-      expect(screen.getByText('Xin chào')).toBeInTheDocument();
+      expect(screen.getByText('Nice to meet you')).toBeInTheDocument();
     });
 
     it('renders cultural note when present', async () => {
       const user = userEvent.setup();
       render(ConversationsPage);
 
-      await user.click(screen.getByText('Tự giới thiệu'));
+      await user.click(screen.getByText('Self-introduction'));
 
-      expect(screen.getByText('Người Nhật cúi đầu khi chào')).toBeInTheDocument();
+      expect(screen.getByText('Japanese people bow when greeting')).toBeInTheDocument();
     });
 
     it('does not render cultural note section when absent', async () => {
       const user = userEvent.setup();
       render(ConversationsPage);
 
-      await user.click(screen.getByText('Hỏi đường')); // no culturalNote
+      await user.click(screen.getByText('Asking for directions')); // no culturalNote
 
-      expect(screen.queryByText('Người Nhật cúi đầu khi chào')).not.toBeInTheDocument();
+      expect(screen.queryByText('Japanese people bow when greeting')).not.toBeInTheDocument();
     });
   });
 });

@@ -34,12 +34,6 @@ describe('ComparisonCard Component', () => {
       expect(screen.getByText('は vs が')).toBeInTheDocument();
     });
 
-    it('should render the Vietnamese description', () => {
-      render(ComparisonCard, { props: { comparison: createMockComparison() } });
-
-      expect(screen.getByText('Phân biệt trợ từ は và が')).toBeInTheDocument();
-    });
-
     it('should render the English description when available', () => {
       render(ComparisonCard, { props: { comparison: createMockComparison() } });
 

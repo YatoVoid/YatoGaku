@@ -22,7 +22,7 @@
     const search = searchTerm.toLowerCase();
     return (
       item.pattern.toLowerCase().includes(search) ||
-      item.vietnamese.toLowerCase().includes(search) ||
+      item.english.toLowerCase().includes(search) ||
       item.english.toLowerCase().includes(search) ||
       item.explanation.toLowerCase().includes(search)
     );
@@ -79,7 +79,7 @@
           <div class="grammar-header" on:click={() => toggleExpand(index)}>
             <div class="grammar-main">
               <div class="grammar-pattern">{item.pattern}</div>
-              <div class="grammar-meaning">{item.vietnamese}</div>
+              <div class="grammar-meaning">{item.english}</div>
               <div class="grammar-english">{item.english}</div>
             </div>
             <div class="grammar-meta">
@@ -101,7 +101,7 @@
                   {#each item.examples as example}
                     <div class="example-item">
                       <div class="example-jp">{example.japanese}</div>
-                      <div class="example-vi">{example.vietnamese}</div>
+                      <div class="example-vi">{example.english}</div>
                       {#if example.english}
                         <div class="example-en">{example.english}</div>
                       {/if}

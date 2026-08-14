@@ -45,12 +45,7 @@
     {/each}
   </div>
 
-  <p class="comparison-card-description">{comparison.vietnamese}</p>
-  {#if comparison.english}
-    <p class="comparison-card-description comparison-card-description-en">
-      {comparison.english}
-    </p>
-  {/if}
+  <p class="comparison-card-description">{comparison.english}</p>
 
   {#if tags.length > 0}
     <div class="comparison-card-meta">

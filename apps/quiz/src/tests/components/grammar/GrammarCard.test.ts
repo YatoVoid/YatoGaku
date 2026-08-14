@@ -42,12 +42,6 @@ describe('GrammarCard Component', () => {
       expect(screen.getByText('～てください')).toBeInTheDocument();
     });
 
-    it('should render the Vietnamese meaning', () => {
-      render(GrammarCard, { props: { pattern: createMockPattern() } });
-
-      expect(screen.getByText('Xin hãy...')).toBeInTheDocument();
-    });
-
     it('should render the English meaning when available', () => {
       render(GrammarCard, { props: { pattern: createMockPattern() } });
 

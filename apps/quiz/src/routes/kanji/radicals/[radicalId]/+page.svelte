@@ -52,7 +52,7 @@
           >
             <div class="kanji-char">{item.character}</div>
             <div class="kanji-en">{item.english}</div>
-            <div class="kanji-vi">{item.vietnamese}</div>
+            <div class="kanji-vi">{item.english}</div>
           </a>
         {/each}
       </div>
