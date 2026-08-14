@@ -11,13 +11,22 @@
 // titles taken from each lesson's own <h2> heading. Erin's Challenge
 // likewise has individual lessons beyond lesson 1; lessons 2-5 added,
 // titles taken from each page's own <title> tag.
+//
+// N4-N1 resources added in a later key result: until this point the
+// list only covered absolute-beginner/N5, leaving nothing for a reader
+// who progresses past N5 grammar. japanesetest4you.com was considered
+// and rejected: it returns a Cloudflare challenge page (HTTP 403) even
+// to a real headless browser, not just curl, so it could not be
+// verified as reliably reachable. dokushoclub.com's N3 URL uses a
+// French-spelling typo in its own path ("ressources", not "resources")
+// verified against the live site rather than assumed a typo on this end.
 
 export interface ListeningReadingResource {
   id: string;
   name: string;
   description: string;
   url: string;
-  level: 'absolute-beginner' | 'n5';
+  level: 'absolute-beginner' | 'n5' | 'n4' | 'n3' | 'n2' | 'n1';
   kind: 'listening' | 'reading' | 'listening-and-reading';
 }
 
@@ -125,5 +134,61 @@ export const listeningReadingResources: ListeningReadingResource[] = [
     url: 'https://www.erin.jpf.go.jp/en/lesson/05/',
     level: 'n5',
     kind: 'listening',
+  },
+  {
+    id: 'dokushoclub-n4',
+    name: 'Dokusho Club: N4 free reading resources',
+    description: 'A curated list of free N4-level reading material (graded readers, news, blogs), maintained by a Japanese extensive-reading community.',
+    url: 'https://dokushoclub.com/free-reading-resources/n4-free-reading-resources/',
+    level: 'n4',
+    kind: 'reading',
+  },
+  {
+    id: 'nihongo-con-teppei',
+    name: 'Nihongo con Teppei',
+    description: 'A slow, natural-speed Japanese podcast with no subtitles, told in short story episodes; commonly used by learners around the N4-N3 range for real listening immersion.',
+    url: 'https://nihongoconteppei.com/',
+    level: 'n4',
+    kind: 'listening',
+  },
+  {
+    id: 'dokushoclub-n3',
+    name: 'Dokusho Club: N3 free reading resources',
+    description: 'A curated list of free N3-level reading material, maintained by a Japanese extensive-reading community.',
+    url: 'https://dokushoclub.com/free-reading-resources/n3-free-reading-ressources/',
+    level: 'n3',
+    kind: 'reading',
+  },
+  {
+    id: 'hanabira-reading',
+    name: 'Hanabira graded reading',
+    description: 'Graded Japanese short stories with furigana and audio, spanning N5 through N2, with a built-in vocabulary lookup.',
+    url: 'https://hanabira.org/japanese/reading',
+    level: 'n3',
+    kind: 'listening-and-reading',
+  },
+  {
+    id: 'dokushoclub-n2',
+    name: 'Dokusho Club: N2 free reading resources',
+    description: 'A curated list of free N2-level reading material, maintained by a Japanese extensive-reading community.',
+    url: 'https://dokushoclub.com/free-reading-resources/n2-free-reading-resources/',
+    level: 'n2',
+    kind: 'reading',
+  },
+  {
+    id: 'nhk-news-web',
+    name: 'NHK News Web',
+    description: "NHK's regular, unsimplified news site: real native-level written Japanese, with video for many stories, no furigana or simplification.",
+    url: 'https://www3.nhk.or.jp/news/',
+    level: 'n2',
+    kind: 'listening-and-reading',
+  },
+  {
+    id: 'aozora-bunko',
+    name: 'Aozora Bunko',
+    description: 'A free digital library of out-of-copyright Japanese literature: thousands of full novels, short stories, and essays in native, unmodified Japanese.',
+    url: 'https://www.aozora.gr.jp/',
+    level: 'n1',
+    kind: 'reading',
   },
 ];
