@@ -40,6 +40,12 @@ export default function Home(): ReactNode {
       internal: true,
     },
     {
+      label: 'N2 Grammar',
+      description: 'N2 grammar points: concession, reasoning, obligation, and register.',
+      href: '/docs/grammar-n2',
+      internal: true,
+    },
+    {
       label: 'Kana Practice',
       description: 'Hiragana and katakana drilling.',
       href: kanaAppUrl,
