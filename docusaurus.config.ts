@@ -167,6 +167,15 @@ const config: Config = {
             },
           ],
         },
+        {
+          title: 'Support',
+          items: [
+            {
+              label: 'Buy me a coffee',
+              href: 'https://buymeacoffee.com/walilambere',
+            },
+          ],
+        },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} YatoGaku. Built with Docusaurus.`,
     },
