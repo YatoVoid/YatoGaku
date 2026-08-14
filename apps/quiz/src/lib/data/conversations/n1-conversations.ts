@@ -4,1434 +4,1434 @@ export const N1_CONVERSATIONS: ConversationPattern[] = [
   // ── 1. Debate / Argumentation (討論) ─────────────────────────
   {
     id: 'n1-conv-01',
-    title: 'Tranh luận học thuật',
+    title: 'Academic debate',
     titleJp: '討論',
     level: 'N1',
-    situation: 'Hai nghiên cứu sinh tranh luận về tác động của AI đối với thị trường lao động trong seminar đại học',
+    situation: 'Two graduate students debate AI\'s impact on the labor market in a university seminar',
     patterns: [
       {
         japanese: '〜とは限らない',
         kana: '〜とはかぎらない',
-        vietnamese: 'Không hẳn là ~, chưa chắc ~.',
+        vietnamese: 'Not necessarily ~, it\'s not always the case that ~.',
         memoryTip:
-          'Nhớ: かぎらない = "khóa giới hạn" bị phá → không bị giới hạn trong một kết luận duy nhất. Dùng để phản bác nhẹ nhàng mà không phủ nhận hoàn toàn.'
+          'Remember: かぎらない = the "limit" is broken → not confined to a single conclusion. Used to gently refute a claim without flatly denying it.'
       },
       {
         japanese: '〜に過ぎない',
         kana: '〜にすぎない',
-        vietnamese: 'Chỉ là ~, không hơn không kém.',
+        vietnamese: 'It\'s merely ~, nothing more, nothing less.',
         memoryTip:
-          'Nhớ: すぎない = "không đi quá" → đánh giá thấp đối tượng, nói rằng nó chỉ ở mức đó thôi. Vũ khí phản biện sắc bén trong tranh luận.'
+          'Remember: すぎない = "doesn\'t exceed" → downplays the subject, saying it amounts to no more than that. A sharp rebuttal tool in debate.'
       },
       {
         japanese: '〜反面、〜',
         kana: '〜はんめん、〜',
-        vietnamese: 'Mặt khác, ngược lại ~.',
+        vietnamese: 'On the other hand, ~ / conversely, ~.',
         memoryTip:
-          'Nhớ: はんめん = "phản diện" (Hán Việt) → lật mặt sau của đồng xu để thấy khía cạnh đối lập. Luôn đi với hai mệnh đề trái ngược.'
+          'Remember: 反面 (hanmen) = "the reverse side" → flip the coin to see the opposing angle. Always pairs two contrasting clauses.'
       }
     ],
     dialogue: [
       {
-        speaker: '田中',
+        speaker: 'Tanaka',
         japanese: 'AIの発展により、多くの職業が消滅するという見方がありますが、必ずしもそうとは限らないと思います。',
         kana: 'エーアイのはってんにより、おおくのしょくぎょうがしょうめつするというみかたがありますが、かならずしもそうとはかぎらないとおもいます。',
-        vietnamese: 'Có quan điểm cho rằng sự phát triển của AI sẽ khiến nhiều nghề nghiệp biến mất, nhưng tôi nghĩ không hẳn là vậy.'
+        vietnamese: 'There\'s a view that AI\'s development will make many jobs disappear, but I don\'t think that\'s necessarily the case.'
       },
       {
-        speaker: '山本',
+        speaker: 'Yamamoto',
         japanese: 'しかし、現在のAIの能力は単なる補助ツールに過ぎないという主張は、楽観的すぎるのではないでしょうか。',
         kana: 'しかし、げんざいのエーアイののうりょくはたんなるほじょツールにすぎないというしゅちょうは、らっかんてきすぎるのではないでしょうか。',
-        vietnamese: 'Tuy nhiên, quan điểm cho rằng năng lực AI hiện tại chỉ là công cụ hỗ trợ đơn thuần thì có phải quá lạc quan không?'
+        vietnamese: 'However, isn\'t the claim that current AI capability is merely an auxiliary tool overly optimistic?'
       },
       {
-        speaker: '田中',
+        speaker: 'Tanaka',
         japanese: 'おっしゃる通り、AIは効率を飛躍的に高める反面、人間にしかできない創造的な判断は依然として必要です。',
         kana: 'おっしゃるとおり、エーアイはこうりつをひやくてきにたかめるはんめん、にんげんにしかできないそうぞうてきなはんだんはいぜんとしてひつようです。',
-        vietnamese: 'Đúng như anh nói, AI nâng cao hiệu suất vượt bậc, nhưng mặt khác, những phán đoán sáng tạo mà chỉ con người mới làm được vẫn cần thiết.'
+        vietnamese: 'As you say, AI dramatically boosts efficiency, but on the other hand, creative judgment that only humans can make is still necessary.'
       },
       {
-        speaker: '山本',
+        speaker: 'Yamamoto',
         japanese: 'その点については同意しますが、「人間にしかできない」とされていた領域すら、AIが侵食し始めているのが現実です。',
         kana: 'そのてんについてはどういしますが、「にんげんにしかできない」とされていたりょういきすら、エーアイがしんしょくしはじめているのがげんじつです。',
-        vietnamese: 'Về điểm đó tôi đồng ý, nhưng thực tế là ngay cả những lĩnh vực được cho là "chỉ con người mới làm được", AI cũng đã bắt đầu xâm lấn.'
+        vietnamese: 'I agree on that point, but the reality is that AI has begun encroaching even on domains once thought to be "only humans can do this."'
       },
       {
-        speaker: '田中',
+        speaker: 'Tanaka',
         japanese: '確かに脅威はありますが、歴史的に見れば、技術革新は常に新たな雇用を生み出してきました。今回も例外とは限りません。',
         kana: 'たしかにきょういはありますが、れきしてきにみれば、ぎじゅつかくしんはつねにあらたなこようをうみだしてきました。こんかいもれいがいとはかぎりません。',
-        vietnamese: 'Đúng là có mối đe dọa, nhưng nhìn từ lịch sử, đổi mới công nghệ luôn tạo ra việc làm mới. Lần này cũng chưa chắc là ngoại lệ.'
+        vietnamese: 'Certainly there\'s a threat, but historically, technological innovation has always created new employment. This time won\'t necessarily be an exception either.'
       }
     ],
     culturalNote:
-      'Trong tranh luận học thuật Nhật, người nói thường dùng おっしゃる通り (đúng như ngài nói) để thừa nhận điểm đúng của đối phương trước khi phản biện — thể hiện sự tôn trọng. Phong cách "đồng ý trước, phản bác sau" (yes-but) là đặc trưng của văn hóa thảo luận Nhật, tránh đối đầu trực diện. Cấu trúc 〜とは限らない cho phép bác bỏ mà không gây mất mặt đối phương.'
+      'In Japanese academic debate, speakers often use おっしゃる通り (just as you say) to acknowledge the other side\'s valid point before countering — a mark of respect. The "yes, but" style is characteristic of Japanese discussion culture, avoiding direct confrontation. The ～とは限らない structure allows for refutation without causing the other party to lose face.'
   },
 
   // ── 2. Formal Speech (スピーチ) ──────────────────────────────
   {
     id: 'n1-conv-02',
-    title: 'Phát biểu trang trọng',
+    title: 'A formal speech',
     titleJp: 'スピーチ',
     level: 'N1',
-    situation: 'Giám đốc phát biểu tại lễ kỷ niệm 50 năm thành lập công ty, trước đông đảo nhân viên và đối tác',
+    situation: 'A CEO delivers a speech at the company\'s 50th anniversary ceremony before employees and business partners',
     patterns: [
       {
         japanese: '〜にあたって',
         kana: '〜にあたって',
-        vietnamese: 'Nhân dịp ~, vào lúc ~.',
+        vietnamese: 'On the occasion of ~, at the time of ~.',
         memoryTip:
-          'Nhớ: にあたって = "ni a tatte" → "nhân (ni) dịp đứng (tatte) ở thời khắc quan trọng". Chỉ dùng cho sự kiện trọng đại, không dùng cho việc thường ngày.'
+          'Remember: にあたって = "standing at" an important moment. Used only for significant events, not everyday matters.'
       },
       {
         japanese: '〜をもって',
         kana: '〜をもって',
-        vietnamese: 'Bằng ~, với ~ (trang trọng).',
+        vietnamese: 'By means of ~, with ~ (formal).',
         memoryTip:
-          'Nhớ: をもって = "mang theo, cầm lấy" → cầm lấy thứ gì đó (lòng biết ơn, sự kính trọng) để dâng tặng. Phiên bản trang trọng cực kỳ của で.'
+          'Remember: をもって = "carrying, holding" something (gratitude, respect) to present as an offering. An extremely formal version of で.'
       },
       {
         japanese: 'お礼申し上げます',
         kana: 'おれいもうしあげます',
-        vietnamese: 'Xin được bày tỏ lòng biết ơn.',
+        vietnamese: 'I would like to express my gratitude.',
         memoryTip:
-          'Nhớ: おれい (御礼) = lễ nghi + もうしあげます = "thưa gửi lên" → nâng lời cảm ơn lên cao, dâng đến người trên. Kính ngữ bậc cao nhất của ありがとう.'
+          'Remember: お礼 = a formal thanks + 申し上げます = "to humbly say upward" → elevates the thanks and offers it up to someone above. The highest honorific version of ありがとう.'
       }
     ],
     dialogue: [
       {
-        speaker: '社長',
+        speaker: 'CEO',
         japanese: '本日は、弊社創立五十周年の式典にあたり、ご多忙の中お集まりいただき、心よりお礼申し上げます。',
         kana: 'ほんじつは、へいしゃそうりつごじっしゅうねんのしきてんにあたり、ごたぼうのなかおあつまりいただき、こころよりおれいもうしあげます。',
-        vietnamese: 'Nhân dịp lễ kỷ niệm 50 năm thành lập công ty, giữa bận rộn quý vị vẫn đến tham dự, chúng tôi xin chân thành cảm ơn.'
+        vietnamese: 'On the occasion of our company\'s 50th anniversary ceremony today, I sincerely thank you for gathering here despite your busy schedules.'
       },
       {
-        speaker: '社長',
+        speaker: 'CEO',
         japanese: '半世紀にわたる歩みを振り返りますと、幾多の困難がございました。しかし、社員一人ひとりの努力をもって、今日のこの日を迎えることができました。',
         kana: 'はんせいきにわたるあゆみをふりかえりますと、いくたのこんなんがございました。しかし、しゃいんひとりひとりのどりょくをもって、こんにちのこのひをむかえることができました。',
-        vietnamese: 'Nhìn lại chặng đường nửa thế kỷ, đã có biết bao khó khăn. Tuy nhiên, bằng nỗ lực của từng nhân viên, chúng ta đã có thể đón ngày hôm nay.'
+        vietnamese: 'Looking back over half a century of progress, there have been countless hardships. But through the efforts of each and every employee, we have been able to reach this day.'
       },
       {
-        speaker: '社長',
+        speaker: 'CEO',
         japanese: '新たな五十年の出発にあたって、次の世代への架け橋となるべく、さらなる革新に挑んでまいります。',
         kana: 'あらたなごじゅうねんのしゅっぱつにあたって、つぎのせだいへのかけはしとなるべく、さらなるかくしんにいどんでまいります。',
-        vietnamese: 'Nhân dịp khởi đầu 50 năm mới, chúng tôi sẽ tiếp tục thách thức đổi mới, trở thành cầu nối cho thế hệ tiếp theo.'
+        vietnamese: 'On the occasion of setting off on the next 50 years, we will continue to pursue further innovation, so as to become a bridge to the next generation.'
       },
       {
-        speaker: '社長',
+        speaker: 'CEO',
         japanese: 'お取引先の皆様、そして全社員に対し、深甚なる感謝の意をもって、ご挨拶とさせていただきます。',
         kana: 'おとりひきさきのみなさま、そしてぜんしゃいんにたいし、しんじんなるかんしゃのいをもって、ごあいさつとさせていただきます。',
-        vietnamese: 'Với tấm lòng biết ơn sâu sắc nhất dành cho quý đối tác và toàn thể nhân viên, xin được kết thúc lời chào.'
+        vietnamese: 'With profound gratitude toward our business partners and all our employees, I would like to conclude my remarks.'
       }
     ],
     culturalNote:
-      'Bài phát biểu trang trọng (式辞 — しきじ) trong văn hóa Nhật tuân theo cấu trúc cố định: mở đầu bằng lời cảm ơn khách đến dự (お礼), hồi tưởng quá khứ (振り返り), tầm nhìn tương lai (展望), kết bằng lời cảm ơn tổng kết. Giám đốc luôn dùng 弊社 (へいしゃ — công ty chúng tôi, khiêm nhường) chứ không bao giờ nói 我が社. Cấu trúc 〜をもって ở đây mang sắc thái long trọng như "bằng tất cả lòng thành".'
+      'A formal speech (式辞 — shikiji) in Japanese culture follows a fixed structure: an opening thanks to attendees (お礼), reflection on the past (振り返り), a vision for the future (展望), and a closing thanks. A CEO always uses 弊社 (heisha — "our humble company"), never 我が社. The 〜をもって structure here carries the weight of "with all sincerity."'
   },
 
   // ── 3. Literary Expression (文学的表現) ──────────────────────
   {
     id: 'n1-conv-03',
-    title: 'Biểu đạt văn chương',
+    title: 'Literary expression',
     titleJp: '文学的表現',
     level: 'N1',
-    situation: 'Hai giáo sư văn học thảo luận về tiểu thuyết đương đại trong buổi tọa đàm phê bình văn học',
+    situation: 'Two literature professors discuss a contemporary novel at a literary criticism symposium',
     patterns: [
       {
         japanese: '〜ざるを得ない',
         kana: '〜ざるをえない',
-        vietnamese: 'Không thể không ~, buộc phải ~.',
+        vietnamese: 'Cannot help but ~, forced to ~.',
         memoryTip:
-          'Nhớ: ざる = phủ định cổ (ず → ざる) + を得ない = "không đạt được" → "không đạt được việc KHÔNG làm" = bắt buộc phải làm. Hai lần phủ định = khẳng định mạnh. Hình dung: bị khóa trong phòng, không có cách nào KHÔNG mở cửa.'
+          'Remember: ざる = classical negative (ず → ざる) + を得ない = "cannot obtain" → "cannot obtain the state of NOT doing" = compelled to do it. Double negation makes a strong affirmation. Picture being locked in a room with no way to NOT open the door.'
       },
       {
         japanese: '〜ならざるもの',
         kana: '〜ならざるもの',
-        vietnamese: 'Thứ không phải là ~, cái ngoài ~ ra.',
+        vietnamese: 'That which is not ~, something outside of ~.',
         memoryTip:
-          'Nhớ: ならざる = "không phải là" (văn ngôn) → ならない + ざる kết hợp cổ xưa. Nghe như một vị hiền triết nói: "kẻ chẳng phải là X thì..." — chỉ gặp trong văn viết cực trang trọng.'
+          'Remember: ならざる = "that which is not" (classical) → ならない + ざる combined in an archaic way. Sounds like a sage declaring: "that which is not X..." — found only in extremely formal writing.'
       },
       {
         japanese: '〜べきだ',
         kana: '〜べきだ',
-        vietnamese: 'Nên ~, phải ~ (nghĩa vụ đạo đức).',
+        vietnamese: 'Should ~, ought to ~ (moral obligation).',
         memoryTip:
-          'Nhớ: べき nghe như "back" (quay lại) → quay lại làm điều đúng đắn, làm điều mình CÓ BỔN PHẬN phải làm. Mạnh hơn ほうがいい, mang tính phán xét đạo đức.'
+          'Remember: べき carries the sense of returning to do the right thing, doing what one has a DUTY to do. Stronger than ほうがいい, carrying moral judgment.'
       }
     ],
     dialogue: [
       {
-        speaker: '佐藤教授',
+        speaker: 'Prof. Sato',
         japanese: 'この作品を読んで、現代文学の方向性について再考せざるを得ませんでした。',
         kana: 'このさくひんをよんで、げんだいぶんがくのほうこうせいについてさいこうせざるをえませんでした。',
-        vietnamese: 'Đọc tác phẩm này, tôi buộc phải suy nghĩ lại về hướng đi của văn học đương đại.'
+        vietnamese: 'Reading this work, I couldn\'t help but reconsider the direction of contemporary literature.'
       },
       {
-        speaker: '中村教授',
+        speaker: 'Prof. Nakamura',
         japanese: '同感です。作者は、言葉ならざるものによって読者の心を揺さぶるという、極めて稀な才能の持ち主です。',
         kana: 'どうかんです。さくしゃは、ことばならざるものによってどくしゃのこころをゆさぶるという、きわめてまれなさいのうのもちぬしです。',
-        vietnamese: 'Tôi đồng cảm. Tác giả là người sở hữu tài năng cực kỳ hiếm — lay động tâm hồn người đọc bằng thứ nằm ngoài ngôn từ.'
+        vietnamese: 'I agree. The author possesses an extremely rare talent — the ability to stir the reader\'s heart through that which lies outside of words.'
       },
       {
-        speaker: '佐藤教授',
+        speaker: 'Prof. Sato',
         japanese: '文学は時代を映す鏡であるべきだと言われますが、この小説は鏡を超えて、時代そのものを変えようとしている。',
         kana: 'ぶんがくはじだいをうつすかがみであるべきだといわれますが、このしょうせつはかがみをこえて、じだいそのものをかえようとしている。',
-        vietnamese: 'Người ta nói văn học nên là tấm gương phản chiếu thời đại, nhưng tiểu thuyết này vượt qua tấm gương ấy, cố gắng thay đổi chính thời đại.'
+        vietnamese: 'It\'s said that literature should be a mirror reflecting the times, but this novel goes beyond the mirror and tries to change the times themselves.'
       },
       {
-        speaker: '中村教授',
+        speaker: 'Prof. Nakamura',
         japanese: '行間に潜む沈黙こそが、この作品の真の言語であると認めざるを得ません。',
         kana: 'ぎょうかんにひそむちんもくこそが、このさくひんのしんのげんごであるとみとめざるをえません。',
-        vietnamese: 'Phải thừa nhận rằng chính sự im lặng ẩn giữa các dòng chữ mới là ngôn ngữ thực sự của tác phẩm này.'
+        vietnamese: 'I have to admit that the silence lurking between the lines is precisely the true language of this work.'
       },
       {
-        speaker: '佐藤教授',
+        speaker: 'Prof. Sato',
         japanese: '我々批評家は、作品を解体するのではなく、作品と対話するべきだという教訓を、この小説から得ました。',
         kana: 'われわれひひょうかは、さくひんをかいたいするのではなく、さくひんとたいわするべきだというきょうくんを、このしょうせつからえました。',
-        vietnamese: 'Chúng ta — những nhà phê bình — đã rút ra bài học từ tiểu thuyết này rằng nên đối thoại với tác phẩm chứ không phải mổ xẻ nó.'
+        vietnamese: 'We critics have learned a lesson from this novel: that we should engage in dialogue with a work, not dismantle it.'
       }
     ],
     culturalNote:
-      'Phê bình văn học Nhật Bản chịu ảnh hưởng sâu sắc từ khái niệm 行間を読む (ぎょうかんをよむ — đọc giữa các dòng). Người Nhật đánh giá cao "khoảng trống" (余白 — よはく) và "sự im lặng có ý nghĩa" (沈黙 — ちんもく). Cấu trúc ～ざるを得ない thường xuất hiện trong văn phê bình để diễn đạt sự buộc phải thừa nhận một sự thật không thể chối cãi, mang âm hưởng cổ kính và uy nghiêm.'
+      'Japanese literary criticism is deeply influenced by the concept of 行間を読む (yomu — "reading between the lines"). The Japanese highly value "blank space" (余白 — yohaku) and "meaningful silence" (沈黙 — chinmoku). The ～ざるを得ない structure often appears in criticism to express being compelled to acknowledge an undeniable truth, carrying an archaic and solemn resonance.'
   },
 
   // ── 4. Diplomatic Language (外交的表現) ──────────────────────
   {
     id: 'n1-conv-04',
-    title: 'Ngôn ngữ ngoại giao',
+    title: 'Diplomatic language',
     titleJp: '外交的表現',
     level: 'N1',
-    situation: 'Đại diện hai công ty đàm phán điều khoản hợp tác chiến lược trong phòng họp trang trọng',
+    situation: 'Representatives from two companies negotiate strategic partnership terms in a formal meeting room',
     patterns: [
       {
         japanese: '〜させていただく',
         kana: '〜させていただく',
-        vietnamese: 'Xin phép được ~ (khiêm nhường xin phép hành động).',
+        vietnamese: 'Allow me to humbly ~.',
         memoryTip:
-          'Nhớ: させて (cho phép) + いただく (nhận từ trên) → "xin được nhận sự cho phép từ phía trên để làm việc này". Kính ngữ kép: vừa xin phép vừa khiêm nhường. Cấu trúc quyền lực ngầm — người nói tự hạ mình để nâng đối phương.'
+          'Remember: させて (allow) + いただく (receive from above) → "I humbly receive permission from you to do this." Double honorific: asking permission while being humble. An implicit power move — the speaker lowers themselves to elevate the other party.'
       },
       {
         japanese: '〜と存じます',
         kana: '〜とぞんじます',
-        vietnamese: 'Tôi nghĩ rằng ~ (khiêm nhường cực cao).',
+        vietnamese: 'I believe that ~ (extremely humble).',
         memoryTip:
-          'Nhớ: ぞんじます = "tồn tri" (Hán Việt: biết, nhận thức) → phiên bản siêu khiêm nhường của 思います. Chỉ dùng trong thương mại cấp cao, ngoại giao, hoặc trước hoàng gia.'
+          'Remember: 存じます is the ultra-humble version of 思います. Used only in high-level business, diplomacy, or before royalty.'
       }
     ],
     dialogue: [
       {
-        speaker: '鈴木部長',
+        speaker: 'Director Suzuki',
         japanese: '本日は貴重なお時間をいただき、誠にありがとうございます。早速ですが、提携の件について、ご説明させていただきたいと存じます。',
         kana: 'ほんじつはきちょうなおじかんをいただき、まことにありがとうございます。さっそくですが、ていけいのけんについて、ごせつめいさせていただきたいとぞんじます。',
-        vietnamese: 'Hôm nay cảm ơn quý vị đã dành thời gian quý báu. Xin phép được đi thẳng vào vấn đề, tôi muốn trình bày về việc hợp tác.'
+        vietnamese: 'Thank you very much for your valuable time today. If I may get right to it, I would like to explain the matter of our partnership.'
       },
       {
-        speaker: '高橋取締役',
+        speaker: 'Executive Takahashi',
         japanese: 'ありがとうございます。弊社としましても、御社との連携は大変有意義であると存じております。',
         kana: 'ありがとうございます。へいしゃとしましても、おんしゃとのれんけいはたいへんゆういぎであるとぞんじております。',
-        vietnamese: 'Xin cảm ơn. Phía công ty chúng tôi cũng nhận thấy việc hợp tác với quý công ty là hết sức có ý nghĩa.'
+        vietnamese: 'Thank you. From our side as well, we believe that collaborating with your company would be highly meaningful.'
       },
       {
-        speaker: '鈴木部長',
+        speaker: 'Director Suzuki',
         japanese: '条件につきましては、双方にとって最善の形を模索させていただければと思います。一方的なご提案をするつもりはございません。',
         kana: 'じょうけんにつきましては、そうほうにとってさいぜんのかたちをもさくさせていただければとおもいます。いっぽうてきなごていあんをするつもりはございません。',
-        vietnamese: 'Về điều kiện, chúng tôi mong được tìm kiếm hình thức tốt nhất cho cả hai bên. Chúng tôi không có ý định đưa ra đề xuất một chiều.'
+        vietnamese: 'Regarding the terms, we would like to explore what would be optimal for both sides. We have no intention of making a one-sided proposal.'
       },
       {
-        speaker: '高橋取締役',
+        speaker: 'Executive Takahashi',
         japanese: 'その姿勢に深く敬意を表します。具体的な数字につきましては、社内で検討させていただいた上で、改めてご回答申し上げます。',
         kana: 'そのしせいにふかくけいいをひょうします。ぐたいてきなすうじにつきましては、しゃないでけんとうさせていただいたうえで、あらためてごかいとうもうしあげます。',
-        vietnamese: 'Chúng tôi vô cùng kính trọng thái độ đó. Về con số cụ thể, sau khi được phép xem xét nội bộ, chúng tôi sẽ trả lời lại.'
+        vietnamese: 'I deeply respect that stance. As for the specific figures, we will respond again after internal review.'
       },
       {
-        speaker: '鈴木部長',
+        speaker: 'Director Suzuki',
         japanese: 'かしこまりました。本日は忌憚のないご意見を賜り、大変実りある会談であったと存じます。今後ともよろしくお願い申し上げます。',
         kana: 'かしこまりました。ほんじつはきたんのないごいけんをたまわり、たいへんみのりあるかいだんであったとぞんじます。こんごともよろしくおねがいもうしあげます。',
-        vietnamese: 'Xin tuân mệnh. Hôm nay được nhận những ý kiến thẳng thắn, tôi cho rằng đây là cuộc hội đàm rất có kết quả. Mong được tiếp tục hợp tác.'
+        vietnamese: 'Understood. Having received such candid opinions today, I believe this has been a very fruitful discussion. We look forward to continued collaboration.'
       }
     ],
     culturalNote:
-      'Ngôn ngữ thương mại cấp cao Nhật sử dụng "kính ngữ kép" (二重敬語) một cách có chủ đích: ～させていただく vừa khiêm nhường vừa xin phép, tạo không gian cho đối phương từ chối mà không mất mặt. 忌憚のない (きたんのない — thẳng thắn) là lời mời gọi ý kiến trung thực, nhưng trong văn hóa Nhật, người nghe hiểu rằng vẫn cần giữ phép lịch sự. 存じます là khiêm nhường ngữ (謙譲語) của 思います, chỉ dùng khi tự nói về suy nghĩ của mình trước người bậc trên hoặc đối tác.'
+      'High-level Japanese business language deliberately uses "double honorifics" (二重敬語): ～させていただく is both humble and permission-seeking, leaving room for the other party to decline without losing face. 忌憚のない (candid) is an invitation for honest opinions, but listeners still understand that politeness must be maintained. 存じます is the humble form (謙譲語) of 思います, used only when speaking one\'s own thoughts to a superior or partner.'
   },
 
   // ── 5. Proverbs in Context (ことわざ) ────────────────────────
   {
     id: 'n1-conv-05',
-    title: 'Tục ngữ trong ngữ cảnh',
+    title: 'Proverbs in context',
     titleJp: 'ことわざ',
     level: 'N1',
-    situation: 'Senpai động viên kouhai sau thất bại trong kỳ thi, dùng tục ngữ Nhật để truyền cảm hứng',
+    situation: 'A senpai encourages a kouhai after an exam failure, using Japanese proverbs for inspiration',
     patterns: [
       {
         japanese: '猿も木から落ちる',
         kana: 'さるもきからおちる',
-        vietnamese: 'Khỉ cũng có lúc rơi từ cây (ai cũng có lúc thất bại).',
+        vietnamese: 'Even monkeys fall from trees (everyone fails sometimes).',
         memoryTip:
-          'Nhớ: Khỉ (さる) là bậc thầy leo cây, mà còn rơi → chuyên gia cũng sai. Tương đương "Bách phát bách trúng cũng có lúc trượt" trong tiếng Việt. Dùng để an ủi, không dùng để chê bai.'
+          'Remember: A monkey (さる) is a master climber, yet it still falls → even an expert can make mistakes. Equivalent to "even Homer nods." Used to console, never to mock.'
       },
       {
         japanese: '七転び八起き',
         kana: 'ななころびやおき',
-        vietnamese: 'Bảy lần ngã, tám lần đứng dậy.',
+        vietnamese: 'Fall down seven times, get up eight.',
         memoryTip:
-          'Nhớ: 7 lần ngã (ころび) + 8 lần dậy (おき) → luôn đứng dậy nhiều hơn số lần ngã MỘT. Con số 8 tượng trưng cho may mắn trong văn hóa Nhật. Tinh thần bất khuất cốt lõi của người Nhật.'
+          'Remember: 7 falls (ころび) + 8 rises (おき) → always getting up ONE more time than you fell. The number 8 symbolizes luck in Japanese culture. The core spirit of Japanese perseverance.'
       },
       {
         japanese: '失敗は成功のもと',
         kana: 'しっぱいはせいこうのもと',
-        vietnamese: 'Thất bại là mẹ thành công.',
+        vietnamese: 'Failure is the mother of success.',
         memoryTip:
-          'Nhớ: もと = gốc rễ, nguồn gốc → thất bại (しっぱい) là GỐC RỄ mọc lên cây thành công (せいこう). Giống hệt tục ngữ Việt "Thất bại là mẹ thành công" — dễ nhớ vì cùng ý tưởng xuyên văn hóa.'
+          'Remember: もと = root/origin → failure (失敗) is the ROOT from which the tree of success (成功) grows. Identical to the English proverb — easy to remember since the idea crosses cultures.'
       }
     ],
     dialogue: [
       {
-        speaker: '先輩',
+        speaker: 'Senpai',
         japanese: '試験の結果、聞いたよ。落ち込んでいるだろうけど、猿も木から落ちるって言うだろう。君ほど優秀な人でも、こういうことはあるんだ。',
         kana: 'しけんのけっか、きいたよ。おちこんでいるだろうけど、さるもきからおちるっていうだろう。きみほどゆうしゅうなひとでも、こういうことはあるんだ。',
-        vietnamese: 'Anh nghe kết quả thi rồi. Em chắc đang buồn lắm, nhưng người ta có câu "khỉ cũng có lúc rơi từ cây" mà. Người giỏi như em cũng có lúc gặp chuyện thế này.'
+        vietnamese: 'I heard about the exam results. You must be down about it, but you know they say "even monkeys fall from trees." Even someone as capable as you can have moments like this.'
       },
       {
-        speaker: '後輩',
+        speaker: 'Kouhai',
         japanese: 'ありがとうございます。でも、あれだけ準備したのに…。自分が情けなくて。',
         kana: 'ありがとうございます。でも、あれだけじゅんびしたのに…。じぶんがなさけなくて。',
-        vietnamese: 'Cảm ơn anh. Nhưng mà chuẩn bị kỹ thế rồi mà… Em thấy bản thân thật đáng thương.'
+        vietnamese: 'Thank you. But after all that preparation... I feel so pathetic.'
       },
       {
-        speaker: '先輩',
+        speaker: 'Senpai',
         japanese: '失敗は成功のもとだよ。今回の悔しさが、次の試験の最大の武器になる。',
         kana: 'しっぱいはせいこうのもとだよ。こんかいのくやしさが、つぎのしけんのさいだいのぶきになる。',
-        vietnamese: 'Thất bại là mẹ thành công mà. Nỗi uất ức lần này sẽ trở thành vũ khí lớn nhất cho kỳ thi tiếp theo.'
+        vietnamese: 'Failure is the mother of success. This frustration will become your greatest weapon for the next exam.'
       },
       {
-        speaker: '後輩',
+        speaker: 'Kouhai',
         japanese: '先輩も、そういう経験がおありですか。',
         kana: 'せんぱいも、そういうけいけんがおありですか。',
-        vietnamese: 'Anh cũng từng có trải nghiệm như vậy ạ?'
+        vietnamese: 'Have you had an experience like this too, senpai?'
       },
       {
-        speaker: '先輩',
+        speaker: 'Senpai',
         japanese: '何度もあるよ。でも七転び八起きの精神で、そのたびに立ち上がってきた。大事なのは、転んだ回数じゃなくて、起き上がった回数だ。',
         kana: 'なんどもあるよ。でもななころびやおきのせいしんで、そのたびにたちあがってきた。だいじなのは、ころんだかいすうじゃなくて、おきあがったかいすうだ。',
-        vietnamese: 'Nhiều lần lắm. Nhưng với tinh thần bảy lần ngã tám lần dậy, mỗi lần anh đều đứng lên. Điều quan trọng không phải số lần ngã, mà là số lần đứng dậy.'
+        vietnamese: 'Many times. But with the spirit of falling seven times and getting up eight, I picked myself up every time. What matters isn\'t how many times you fall, but how many times you get back up.'
       },
       {
-        speaker: '後輩',
+        speaker: 'Kouhai',
         japanese: '先輩の言葉、胸に刻みます。もう一度、挑戦させてください。',
         kana: 'せんぱいのことば、むねにきざみます。もういちど、ちょうせんさせてください。',
-        vietnamese: 'Em sẽ khắc ghi lời anh. Xin hãy để em thử thách thêm một lần nữa.'
+        vietnamese: 'I\'ll carve your words into my heart. Please let me try again.'
       }
     ],
     culturalNote:
-      'Tục ngữ Nhật (ことわざ) thường được dùng trong giao tiếp hàng ngày để truyền đạt trí tuệ dân gian. 七転び八起き không chỉ là câu nói mà còn là triết lý sống sâu sắc trong văn hóa Nhật — thể hiện qua búp bê Daruma (だるま) chỉ có thể lật đứng, tượng trưng cho ý chí bất khuất. Khi senpai dùng ことわざ để khuyên kouhai, đó là cách truyền đạt kinh nghiệm sống tinh tế mà không áp đặt hay lên giọng dạy đời — vì tục ngữ là "của chung", không phải ý kiến cá nhân.'
+      'Japanese proverbs (ことわざ) are often used in daily conversation to convey folk wisdom. 七転び八起き is not just a saying but a deep life philosophy in Japanese culture — embodied by the Daruma doll (だるま), which can only ever land upright, symbolizing unbreakable will. When a senpai uses ことわざ to advise a kouhai, it\'s a subtle way of passing on life experience without imposing or lecturing — because a proverb is "shared wisdom," not personal opinion.'
   },
 
   // ── 6. Philosophy (哲学) ────────────────────────────────────
   {
     id: 'n1-conv-06',
-    title: 'Triết học',
+    title: 'Philosophy',
     titleJp: '哲学',
     level: 'N1',
-    situation: 'Hai giáo sư triết học thảo luận về bản chất của sự tồn tại trong hội thảo triết học phương Đông và phương Tây',
+    situation: 'Two philosophy professors discuss the nature of existence at an East-West philosophy conference',
     patterns: [
       {
         japanese: '〜と言わざるを得ない',
         kana: '〜といわざるをえない',
-        vietnamese: 'Không thể không nói rằng ~, buộc phải thừa nhận ~.',
+        vietnamese: 'Cannot help but say ~, must admit that ~.',
         memoryTip:
-          'Nhớ: いわざる = "không nói" (cổ ngữ) + を得ない = "không thể" → "không thể KHÔNG nói" = buộc lòng phải thốt lên. Cấu trúc hai lần phủ định tạo khẳng định mạnh — triết gia dùng khi bị logic ép phải thừa nhận.'
+          'Remember: いわざる = "not saying" (archaic) + を得ない = "cannot" → "cannot NOT say" = compelled to declare it. A double negation creates a strong affirmation — a philosopher uses this when logic forces an admission.'
       },
       {
         japanese: '〜に他ならない',
         kana: '〜にほかならない',
-        vietnamese: 'Không gì khác ngoài ~, chính là ~.',
+        vietnamese: 'Nothing other than ~, precisely ~.',
         memoryTip:
-          'Nhớ: ほかならない = "không phải cái khác" → chỉ có DUY NHẤT câu trả lời này. Như mũi tên xuyên trúng hồng tâm — kết luận dứt khoát, không còn khả năng nào khác.'
+          'Remember: ほかならない = "is nothing else" → there is ONLY this one answer. Like an arrow striking dead center — a definitive conclusion, no other possibility remains.'
       },
       {
         japanese: '〜てやまない',
         kana: '〜てやまない',
-        vietnamese: 'Không ngừng ~, mãi mãi ~ (tình cảm mãnh liệt).',
+        vietnamese: 'Endlessly ~, forever ~ (intense feeling).',
         memoryTip:
-          'Nhớ: やまない = "không dừng lại" → dòng suối cảm xúc chảy mãi không ngừng. Chỉ dùng cho tình cảm tích cực sâu sắc: 願ってやまない (nguyện cầu không thôi), 愛してやまない (yêu mãi không ngừng).'
+          'Remember: やまない = "does not stop" → a stream of emotion flowing endlessly. Used only for deep, positive feelings: 願ってやまない (wish endlessly), 愛してやまない (love unceasingly).'
       }
     ],
     dialogue: [
       {
-        speaker: '西田教授',
+        speaker: 'Prof. Nishida',
         japanese: '存在とは何かという問いは、哲学の根本的な課題であると言わざるを得ません。',
         kana: 'そんざいとはなにかというといは、てつがくのこんぽんてきなかだいであるといわざるをえません。',
-        vietnamese: 'Phải thừa nhận rằng câu hỏi "tồn tại là gì" là vấn đề căn bản nhất của triết học.'
+        vietnamese: 'I must admit that the question "what is existence" is the fundamental problem of philosophy.'
       },
       {
-        speaker: '和辻教授',
+        speaker: 'Prof. Watsuji',
         japanese: '東洋哲学において、存在の認識は自己と世界の一体性に他なりません。デカルトの二元論とは根本的に異なります。',
         kana: 'とうようてつがくにおいて、そんざいのにんしきはじことせかいのいったいせいにほかなりません。デカルトのにげんろんとはこんぽんてきにことなります。',
-        vietnamese: 'Trong triết học phương Đông, nhận thức về tồn tại chính là sự nhất thể giữa bản ngã và thế giới. Điều này khác căn bản với nhị nguyên luận của Descartes.'
+        vietnamese: 'In Eastern philosophy, the recognition of existence is nothing other than the unity of self and world. This is fundamentally different from Descartes\' dualism.'
       },
       {
-        speaker: '西田教授',
+        speaker: 'Prof. Nishida',
         japanese: '本質を探求する営みこそが、人間を人間たらしめるものであると、私は信じてやみません。',
         kana: 'ほんしつをたんきゅうするいとなみこそが、にんげんをにんげんたらしめるものであると、わたしはしんじてやみません。',
-        vietnamese: 'Tôi tin không ngừng rằng chính hành trình tìm kiếm bản chất mới là thứ khiến con người thành con người.'
+        vietnamese: 'I believe endlessly that the very act of pursuing essence is precisely what makes a human being human.'
       },
       {
-        speaker: '和辻教授',
+        speaker: 'Prof. Watsuji',
         japanese: '同感です。しかし、存在の本質に迫れば迫るほど、言語の限界に突き当たると言わざるを得ない。',
         kana: 'どうかんです。しかし、そんざいのほんしつにせまればせまるほど、げんごのげんかいにつきあたるといわざるをえない。',
-        vietnamese: 'Tôi đồng ý. Tuy nhiên, phải thừa nhận rằng càng tiếp cận bản chất của tồn tại, ta càng va vào giới hạn của ngôn ngữ.'
+        vietnamese: 'I agree. However, I must admit that the closer we get to the essence of existence, the more we run into the limits of language.'
       },
       {
-        speaker: '西田教授',
+        speaker: 'Prof. Nishida',
         japanese: '「無」の中にこそ「有」が宿るという逆説、それが東洋思想の核心に他なりません。',
         kana: '「む」のなかにこそ「う」がやどるというぎゃくせつ、それがとうようしそうのかくしんにほかなりません。',
-        vietnamese: 'Nghịch lý rằng chính trong "vô" mới ẩn chứa "hữu" — đó chính là cốt lõi tư tưởng phương Đông, không gì khác.'
+        vietnamese: 'The paradox that "being" dwells precisely within "nothingness" — that is nothing other than the very core of Eastern thought.'
       }
     ],
     culturalNote:
-      'Triết học Nhật Bản (日本哲学) đặc biệt ở chỗ kết hợp Thiền tông, Phật giáo với triết học phương Tây. Trường phái Kyoto (京都学派) của Nishida Kitaro đề xuất khái niệm "Tuyệt đối vô" (絶対無) — cái vô tuyệt đối — như nền tảng tồn tại, khác biệt hoàn toàn với "hữu" (Being) của Heidegger. Khi triết gia Nhật dùng 〜に他ならない, họ đang đưa ra phán đoán tuyệt đối — không còn khả năng nào khác — phản ánh phong cách luận chứng chặt chẽ.'
+      'Japanese philosophy (日本哲学) is distinctive for combining Zen Buddhism with Western philosophy. The Kyoto School (京都学派), founded by Nishida Kitaro, proposed the concept of "Absolute Nothingness" (絶対無) as the foundation of existence — entirely different from Heidegger\'s "Being." When Japanese philosophers use ～に他ならない, they are making an absolute judgment — no other possibility remains — reflecting a tightly reasoned argumentative style.'
   },
 
   // ── 7. Law & Justice (法と正義) ─────────────────────────────
   {
     id: 'n1-conv-07',
-    title: 'Pháp luật và Công lý',
+    title: 'Law and justice',
     titleJp: '法と正義',
     level: 'N1',
-    situation: 'Luật sư bào chữa và công tố viên tranh luận trong phiên tòa xét xử vụ án phức tạp',
+    situation: 'A defense attorney and prosecutor debate in a courtroom over a complex case',
     patterns: [
       {
         japanese: '〜をもって',
         kana: '〜をもって',
-        vietnamese: 'Dựa trên ~, căn cứ theo ~ (pháp lý).',
+        vietnamese: 'On the basis of ~, according to ~ (legal).',
         memoryTip:
-          'Nhớ: をもって trong ngữ cảnh pháp lý = "cầm lấy bằng chứng/luật" → đặt lên bàn cân công lý. Khác với をもって trang trọng ở bài 2 — ở đây mang nghĩa "căn cứ, dựa trên".'
+          'Remember: をもって in a legal context = "holding evidence/law up" → placed on the scale of justice. Different from the formal をもって in Lesson 2 — here it means "based on, grounded in."'
       },
       {
         japanese: '〜に基づいて',
         kana: '〜にもとづいて',
-        vietnamese: 'Dựa trên ~, căn cứ vào ~.',
+        vietnamese: 'Based on ~, grounded on ~.',
         memoryTip:
-          'Nhớ: もとづいて = "đi theo nền móng (もと)" → mọi lập luận phải có NỀN TẢNG vững chắc. Luật sư xây nhà luận điểm trên nền móng bằng chứng.'
+          'Remember: もとづいて = "follows the foundation (もと)" → every argument must have a solid FOUNDATION. A lawyer builds the house of argument on a foundation of evidence.'
       },
       {
         japanese: '〜かねない',
         kana: '〜かねない',
-        vietnamese: 'Có khả năng ~, e rằng ~ (tiêu cực).',
+        vietnamese: 'Might possibly ~, there\'s a risk that ~ (negative).',
         memoryTip:
-          'Nhớ: かねない = "không thể gánh nổi" → tình huống nặng đến mức có thể đổ sụp bất kỳ lúc nào. Chỉ dùng cho kết quả TIÊU CỰC đáng lo ngại — cảnh báo nguy hiểm trước mắt.'
+          'Remember: かねない = "cannot bear the weight" → the situation is so heavy it could collapse at any time. Used only for concerning NEGATIVE outcomes — a warning of imminent danger.'
       }
     ],
     dialogue: [
       {
-        speaker: '弁護人',
+        speaker: 'Defense attorney',
         japanese: '裁判長、被告人の権利に基づき、弁護の機会を十分にいただきたく存じます。',
         kana: 'さいばんちょう、ひこくにんのけんりにもとづき、べんごのきかいをじゅうぶんにいただきたくぞんじます。',
-        vietnamese: 'Thưa chánh án, dựa trên quyền của bị cáo, tôi mong được có đầy đủ cơ hội bào chữa.'
+        vietnamese: 'Your Honor, based on the defendant\'s rights, I request a full opportunity for defense.'
       },
       {
-        speaker: '検察官',
+        speaker: 'Prosecutor',
         japanese: '証拠をもって申し上げます。被告人には義務を怠った重大な過失があります。',
         kana: 'しょうこをもってもうしあげます。ひこくにんにはぎむをおこたったじゅうだいなかしつがあります。',
-        vietnamese: 'Căn cứ vào bằng chứng, tôi xin trình bày rằng bị cáo có lỗi nghiêm trọng trong việc bỏ bê nghĩa vụ.'
+        vietnamese: 'On the basis of the evidence, I submit that the defendant is seriously at fault for neglecting their duty.'
       },
       {
-        speaker: '弁護人',
+        speaker: 'Defense attorney',
         japanese: 'しかし、状況証拠のみに基づいた判決は、冤罪を生みかねません。慎重な審理をお願いいたします。',
         kana: 'しかし、じょうきょうしょうこのみにもとづいたはんけつは、えんざいをうみかねません。しんちょうなしんりをおねがいいたします。',
-        vietnamese: 'Tuy nhiên, bản án chỉ dựa trên bằng chứng tình huống có khả năng tạo ra oan sai. Xin hãy xét xử thận trọng.'
+        vietnamese: 'However, a verdict based solely on circumstantial evidence could result in a wrongful conviction. I ask for careful deliberation.'
       },
       {
-        speaker: '検察官',
+        speaker: 'Prosecutor',
         japanese: '被告人が義務を履行していれば、このような事態には至らなかったはずです。法に基づいて厳正に裁くべきです。',
         kana: 'ひこくにんがぎむをりこうしていれば、このようなじたいにはいたらなかったはずです。ほうにもとづいてげんせいにさばくべきです。',
-        vietnamese: 'Nếu bị cáo thực hiện nghĩa vụ, tình huống này đã không xảy ra. Cần xét xử nghiêm minh dựa trên pháp luật.'
+        vietnamese: 'Had the defendant fulfilled their duty, this situation would not have arisen. The case should be judged strictly, based on the law.'
       }
     ],
     culturalNote:
-      'Hệ thống tư pháp Nhật Bản (司法制度) nổi tiếng với tỷ lệ kết tội trên 99%, khiến vai trò luật sư bào chữa cực kỳ khó khăn. Năm 2009, Nhật đưa vào chế độ bồi thẩm nhân dân (裁判員制度 — さいばんいんせいど) cho công dân tham gia xét xử. Trong tòa án, ngôn ngữ cực kỳ trang trọng: luật sư dùng 存じます, 申し上げます — kính ngữ bậc cao nhất — thể hiện sự tôn trọng tuyệt đối với chánh án và quy trình tố tụng.'
+      'Japan\'s judicial system (司法制度) is known for a conviction rate above 99%, making the defense attorney\'s role extremely difficult. In 2009, Japan introduced a lay judge system (裁判員制度 — saibanin seido) allowing citizens to participate in trials. In court, the language is extremely formal: lawyers use 存じます and 申し上げます — the highest honorific level — showing absolute respect for the judge and the legal process.'
   },
 
   // ── 8. Economics Debate (経済討論) ──────────────────────────
   {
     id: 'n1-conv-08',
-    title: 'Thảo luận kinh tế',
+    title: 'An economics debate',
     titleJp: '経済討論',
     level: 'N1',
-    situation: 'Hai nhà kinh tế học tranh luận về chính sách kinh tế vĩ mô trên chương trình thời sự truyền hình',
+    situation: 'Two economists debate macroeconomic policy on a TV news program',
     patterns: [
       {
         japanese: '〜を余儀なくされる',
         kana: '〜をよぎなくされる',
-        vietnamese: 'Bị buộc phải ~, không có lựa chọn nào khác.',
+        vietnamese: 'Forced to ~, with no other option.',
         memoryTip:
-          'Nhớ: 余儀 = "phương kế khác" + なくされる = "bị mất" → bị tước hết mọi phương kế, chỉ còn MỘT con đường duy nhất. Hoàn cảnh ép buộc, không phải ý muốn cá nhân.'
+          'Remember: 余儀 = "alternative measures" + なくされる = "made to lose" → stripped of every alternative, left with only ONE path. Driven by circumstance, not personal will.'
       },
       {
         japanese: '〜を踏まえて',
         kana: '〜をふまえて',
-        vietnamese: 'Dựa trên ~, xét đến ~.',
+        vietnamese: 'Based on ~, taking ~ into account.',
         memoryTip:
-          'Nhớ: ふまえて = "đạp chân lên, đứng vững trên" → đứng trên nền tảng dữ liệu/sự thật để đưa ra nhận xét. Khác với に基づいて (pháp lý) — ふまえて thiên về "cân nhắc tổng hợp".'
+          'Remember: ふまえて = "to stand firmly on" → standing on a foundation of data/facts to make a judgment. Unlike に基づいて (legal), ふまえて leans toward "comprehensive consideration."'
       }
     ],
     dialogue: [
       {
-        speaker: '経済学者A',
+        speaker: 'Economist A',
         japanese: '現在の経済政策を踏まえて申し上げますと、このままではインフレが加速する恐れがあります。',
         kana: 'げんざいのけいざいせいさくをふまえてもうしあげますと、このままではインフレがかそくするおそれがあります。',
-        vietnamese: 'Dựa trên chính sách kinh tế hiện tại mà nói, nếu cứ thế này thì lạm phát có nguy cơ gia tốc.'
+        vietnamese: 'Taking the current economic policy into account, if things continue as they are, there\'s a risk that inflation will accelerate.'
       },
       {
-        speaker: '経済学者B',
+        speaker: 'Economist B',
         japanese: 'しかし、デフレ対策を怠れば、企業は大規模なリストラを余儀なくされるのではないでしょうか。',
         kana: 'しかし、デフレたいさくをおこたれば、きぎょうはだいきぼなリストラをよぎなくされるのではないでしょうか。',
-        vietnamese: 'Tuy nhiên, nếu lơ là đối sách chống giảm phát, các doanh nghiệp chẳng phải sẽ bị buộc phải tái cơ cấu quy mô lớn sao?'
+        vietnamese: 'However, if we neglect deflation countermeasures, won\'t companies be forced into large-scale restructuring?'
       },
       {
-        speaker: '経済学者A',
+        speaker: 'Economist A',
         japanese: '過去のデータを踏まえれば、金融緩和だけでは構造的な問題は解決しないと言わざるを得ません。',
         kana: 'かこのデータをふまえれば、きんゆうかんわだけではこうぞうてきなもんだいはかいけつしないといわざるをえません。',
-        vietnamese: 'Dựa trên dữ liệu quá khứ, phải thừa nhận rằng chỉ nới lỏng tiền tệ thì không giải quyết được vấn đề cơ cấu.'
+        vietnamese: 'Based on past data, I must admit that monetary easing alone will not resolve structural problems.'
       },
       {
-        speaker: '経済学者B',
+        speaker: 'Economist B',
         japanese: '同意しますが、財政出動なくしては、国民生活が犠牲を余儀なくされます。バランスの取れた経済政策が急務です。',
         kana: 'どういしますが、ざいせいしゅつどうなくしては、こくみんせいかつがぎせいをよぎなくされます。バランスのとれたけいざいせいさくがきゅうむです。',
-        vietnamese: 'Tôi đồng ý, nhưng nếu không có can thiệp tài chính, đời sống quốc dân sẽ bị buộc phải hy sinh. Chính sách kinh tế cân bằng là việc cấp bách.'
+        vietnamese: 'I agree, but without fiscal stimulus, the lives of citizens will be forced into sacrifice. A balanced economic policy is urgently needed.'
       }
     ],
     culturalNote:
-      'Kinh tế Nhật Bản trải qua "Thập niên mất mát" (失われた十年 — うしなわれたじゅうねん) sau bong bóng kinh tế vỡ năm 1991. Chính sách Abenomics (アベノミクス) với "ba mũi tên" (三本の矢) là nỗ lực thoát giảm phát kéo dài. Trong tranh luận kinh tế trên TV Nhật, các chuyên gia vẫn giữ phong thái lịch sự — dùng ではないでしょうか (chẳng phải sao?) thay vì phản bác trực diện.'
+      'Japan\'s economy went through the "Lost Decade" (失われた十年 — ushinawareta juunen) after the bubble burst in 1991. Abenomics (アベノミクス) with its "three arrows" (三本の矢) was an attempt to escape prolonged deflation. In Japanese televised economic debates, experts maintain a polite demeanor — using ではないでしょうか (isn\'t it the case that?) rather than direct confrontation.'
   },
 
   // ── 9. Art Criticism (芸術批評) ─────────────────────────────
   {
     id: 'n1-conv-09',
-    title: 'Phê bình nghệ thuật',
+    title: 'Art criticism',
     titleJp: '芸術批評',
     level: 'N1',
-    situation: 'Hai nhà phê bình nghệ thuật thảo luận về triển lãm đương đại tại bảo tàng nghệ thuật quốc gia',
+    situation: 'Two art critics discuss a contemporary exhibition at the national art museum',
     patterns: [
       {
         japanese: '〜ともなると',
         kana: '〜ともなると',
-        vietnamese: 'Khi đã đạt đến mức ~, nếu là ~.',
+        vietnamese: 'Once one reaches the level of ~, when it comes to ~.',
         memoryTip:
-          'Nhớ: ともなると = "khi cùng trở thành" → khi đã tiến hóa đến cấp độ cao nhất thì mọi thứ khác hẳn. Dùng để nói về ngưỡng chuyển đổi chất lượng — từ "giỏi" thành "bậc thầy".'
+          'Remember: ともなると = "when it also becomes" → once something has evolved to the highest level, everything else changes. Used to talk about a qualitative threshold — from "skilled" to "master."'
       },
       {
         japanese: '〜ずにはいられない',
         kana: '〜ずにはいられない',
-        vietnamese: 'Không thể không ~, không kiềm chế được mà ~.',
+        vietnamese: 'Cannot help but ~, unable to hold back from ~.',
         memoryTip:
-          'Nhớ: ず (phủ định) + にはいられない = "không thể ở yên" → cảm xúc mãnh liệt đến mức KHÔNG THỂ KHÔNG hành động. Trái tim bật ra khỏi lồng ngực — bản năng vượt qua lý trí.'
+          'Remember: ず (negation) + にはいられない = "cannot remain still" → a feeling so intense one CANNOT NOT act. The heart bursting out of the chest — instinct overpowering reason.'
       }
     ],
     dialogue: [
       {
-        speaker: '批評家A',
+        speaker: 'Critic A',
         japanese: 'この芸術家ともなると、一筆一筆に哲学が込められていますね。',
         kana: 'このげいじゅつかともなると、ひとふでひとふでにてつがくがこめられていますね。',
-        vietnamese: 'Khi đã là nghệ sĩ ở tầm này, mỗi nét vẽ đều chứa đựng triết lý.'
+        vietnamese: 'Once an artist reaches this level, every single brushstroke is imbued with philosophy.'
       },
       {
-        speaker: '批評家B',
+        speaker: 'Critic B',
         japanese: '確かに。この作品を前にすると、美学とは何かを問い直さずにはいられません。',
         kana: 'たしかに。このさくひんをまえにすると、びがくとはなにかをといなおさずにはいられません。',
-        vietnamese: 'Đúng vậy. Đứng trước tác phẩm này, không thể không tự hỏi lại mỹ học là gì.'
+        vietnamese: 'Indeed. Standing before this work, I cannot help but reconsider what aesthetics even is.'
       },
       {
-        speaker: '批評家A',
+        speaker: 'Critic A',
         japanese: '従来の評価基準では、この作品の本質を捉えきれないと言わざるを得ません。新しい批評言語が必要です。',
         kana: 'じゅうらいのひょうかきじゅんでは、このさくひんのほんしつをとらえきれないといわざるをえません。あたらしいひひょうげんごがひつようです。',
-        vietnamese: 'Phải thừa nhận rằng tiêu chuẩn đánh giá truyền thống không nắm bắt hết bản chất tác phẩm này. Cần một ngôn ngữ phê bình mới.'
+        vietnamese: 'I have to admit that conventional evaluation criteria cannot fully capture the essence of this work. A new critical vocabulary is needed.'
       },
       {
-        speaker: '批評家B',
+        speaker: 'Critic B',
         japanese: '国際的な芸術家ともなると、文化の境界を超えて人類共通の感動を生み出せるものです。',
         kana: 'こくさいてきなげいじゅつかともなると、ぶんかのきょうかいをこえてじんるいきょうつうのかんどうをうみだせるものです。',
-        vietnamese: 'Khi đã là nghệ sĩ tầm quốc tế, họ có thể vượt qua ranh giới văn hóa để tạo ra cảm động chung cho nhân loại.'
+        vietnamese: 'Once an artist reaches an international level, they can transcend cultural boundaries and create emotion shared across humanity.'
       },
       {
-        speaker: '批評家A',
+        speaker: 'Critic A',
         japanese: '色彩の対比に目を奪われずにはいられない。静寂の中に激情が潜んでいる。まさに矛盾の美学です。',
         kana: 'しきさいのたいひにめをうばわれずにはいられない。せいじゃくのなかにげきじょうがひそんでいる。まさにむじゅんのびがくです。',
-        vietnamese: 'Không thể không bị cuốn hút bởi sự đối lập màu sắc. Trong tĩnh lặng ẩn chứa cơn cuồng nộ. Đúng là mỹ học của mâu thuẫn.'
+        vietnamese: 'I cannot help but be captivated by the contrast of colors. Fierce passion hides within stillness. It is truly the aesthetics of contradiction.'
       }
     ],
     culturalNote:
-      'Mỹ học Nhật Bản (日本美学) có những khái niệm độc đáo: 侘び寂び (wabi-sabi — vẻ đẹp của sự không hoàn hảo), 幽玄 (yūgen — vẻ đẹp u huyền sâu thẳm), 物の哀れ (mono no aware — nỗi buồn trước vạn vật). Phê bình nghệ thuật Nhật thường tìm kiếm "khoảng trống" (間 — ma) — không gian giữa các yếu tố — thay vì chỉ phân tích cái hiện hữu. Cấu trúc 〜ずにはいられない diễn đạt cảm xúc thẩm mỹ bất khả kháng.'
+      'Japanese aesthetics (日本美学) has distinctive concepts: 侘び寂び (wabi-sabi — the beauty of imperfection), 幽玄 (yuugen — a profound, mysterious beauty), and 物の哀れ (mono no aware — the poignant sadness inherent to all things). Japanese art criticism often seeks out "the space between" (間 — ma) rather than only analyzing what is present. The ～ずにはいられない structure expresses an irresistible aesthetic response.'
   },
 
   // ── 10. Political Discourse (政治談話) ──────────────────────
   {
     id: 'n1-conv-10',
-    title: 'Diễn ngôn chính trị',
+    title: 'Political discourse',
     titleJp: '政治談話',
     level: 'N1',
-    situation: 'Hai nhà bình luận chính trị phân tích tình hình quốc hội và chính sách đảng phái trên chương trình bình luận',
+    situation: 'Two political commentators analyze the state of parliament and party policy on a commentary program',
     patterns: [
       {
         japanese: '〜いかんによっては',
         kana: '〜いかんによっては',
-        vietnamese: 'Tùy thuộc vào ~, tùy theo tình hình ~.',
+        vietnamese: 'Depending on ~, according to how the situation ~.',
         memoryTip:
-          'Nhớ: いかん = 如何 (như thế nào — Hán Việt) + によっては = "tùy theo" → tùy theo tình hình diễn biến THẾ NÀO. Từ Hán cổ xuất hiện trong chính trị và pháp luật — âm hưởng quyền lực và nghiêm túc.'
+          'Remember: いかん = "how" (classical) + によっては = "depending on" → depending on HOW the situation unfolds. A classical word that appears in politics and law — carrying an air of weight and gravity.'
       },
       {
         japanese: '〜をめぐって',
         kana: '〜をめぐって',
-        vietnamese: 'Xoay quanh vấn đề ~, liên quan đến ~.',
+        vietnamese: 'Surrounding the issue of ~, regarding ~.',
         memoryTip:
-          'Nhớ: めぐって = "xoay vòng quanh" → mọi người đứng xung quanh VẤN ĐỀ ở trung tâm mà tranh luận. Như một bàn tròn với chủ đề nóng ở giữa.'
+          'Remember: めぐって = "revolving around" → everyone stands around the ISSUE at the center to debate it. Like a round table with a hot topic in the middle.'
       }
     ],
     dialogue: [
       {
-        speaker: '評論家A',
+        speaker: 'Commentator A',
         japanese: '今回の政策をめぐって、与党と野党の対立が激化しています。',
         kana: 'こんかいのせいさくをめぐって、よとうとやとうのたいりつがげきかしています。',
-        vietnamese: 'Xoay quanh chính sách lần này, đối lập giữa đảng cầm quyền và đảng đối lập ngày càng gay gắt.'
+        vietnamese: 'Regarding this policy, the confrontation between the ruling and opposition parties is intensifying.'
       },
       {
-        speaker: '評論家B',
+        speaker: 'Commentator B',
         japanese: '野党の対応いかんによっては、政権交代すら現実味を帯びてくるでしょう。',
         kana: 'やとうのたいおういかんによっては、せいけんこうたいすらげんじつみをおびてくるでしょう。',
-        vietnamese: 'Tùy thuộc vào cách ứng đối của phe đối lập, thậm chí thay đổi chính quyền cũng có thể trở nên hiện thực.'
+        vietnamese: 'Depending on how the opposition responds, even a change of government could become a real possibility.'
       },
       {
-        speaker: '評論家A',
+        speaker: 'Commentator A',
         japanese: '与党の政策に対する国民の信頼いかんによっては、次の選挙で大きな変動がありかねません。',
         kana: 'よとうのせいさくにたいするこくみんのしんらいいかんによっては、つぎのせんきょでおおきなへんどうがありかねません。',
-        vietnamese: 'Tùy vào niềm tin của quốc dân đối với chính sách đảng cầm quyền, kỳ bầu cử tới có thể có biến động lớn.'
+        vietnamese: 'Depending on the public\'s trust in the ruling party\'s policies, there could be major shifts in the next election.'
       },
       {
-        speaker: '評論家B',
+        speaker: 'Commentator B',
         japanese: '憲法改正をめぐる議論は、単なる政策論争に過ぎないのか、それとも国の根幹に関わる問題なのか。国民的議論が必要です。',
         kana: 'けんぽうかいせいをめぐるぎろんは、たんなるせいさくろんそうにすぎないのか、それともくにのこんかんにかかわるもんだいなのか。こくみんてきぎろんがひつようです。',
-        vietnamese: 'Cuộc tranh luận xoay quanh sửa đổi hiến pháp chỉ là tranh luận chính sách đơn thuần, hay là vấn đề liên quan đến nền tảng quốc gia? Cần có thảo luận toàn dân.'
+        vietnamese: 'Is the debate surrounding constitutional amendment merely a policy dispute, or an issue tied to the very foundation of the nation? A national discussion is needed.'
       }
     ],
     culturalNote:
-      'Chính trị Nhật Bản vận hành theo hệ thống đa đảng với Đảng Dân chủ Tự do (自民党 — じみんとう) thống trị gần như liên tục từ 1955. Quốc hội (国会 — こっかい) gồm Thượng viện (参議院) và Hạ viện (衆議院). Trong bình luận chính trị, từ いかん (如何) mang sắc thái Hán cổ trang trọng, thường xuất hiện trong phát biểu quốc hội và xã luận báo chí — phản ánh truyền thống dùng Hán ngữ trong diễn ngôn chính trị Nhật.'
+      'Japanese politics operates as a multi-party system with the Liberal Democratic Party (自民党 — Jiminto) dominant almost continuously since 1955. The Diet (国会 — Kokkai) consists of the House of Councillors (参議院) and the House of Representatives (衆議院). In political commentary, いかん (如何) carries a classical, formal tone commonly heard in Diet speeches and newspaper editorials — reflecting Japan\'s tradition of using classical Chinese-derived vocabulary in political discourse.'
   },
 
   // ── 11. Scientific Paper (科学論文) ─────────────────────────
   {
     id: 'n1-conv-11',
-    title: 'Luận văn khoa học',
+    title: 'A scientific paper',
     titleJp: '科学論文',
     level: 'N1',
-    situation: 'Giáo sư hướng dẫn và nghiên cứu sinh thảo luận về phương pháp luận và kết quả nghiên cứu trong buổi seminar',
+    situation: 'A supervising professor and a graduate student discuss research methodology and results in a seminar',
     patterns: [
       {
         japanese: '〜に即して',
         kana: '〜にそくして',
-        vietnamese: 'Theo đúng ~, phù hợp với ~.',
+        vietnamese: 'In line with ~, in keeping with ~.',
         memoryTip:
-          'Nhớ: そくして = "tức thì bám sát" → bám sát thực tế/dữ liệu như đường ray bám sát mặt đất. Khoa học yêu cầu lý thuyết phải ĐI SÁT thực nghiệm, không bay bổng.'
+          'Remember: そくして = "clinging closely to" → sticking close to reality/data, like rails hugging the ground. Science demands that theory stay CLOSE to experimentation, not float free.'
       },
       {
         japanese: '〜得る／〜得ない',
         kana: '〜うる／〜えない',
-        vietnamese: 'Có thể ~ / Không thể ~ (khả năng lý thuyết).',
+        vietnamese: 'Can ~ / Cannot ~ (theoretical possibility).',
         memoryTip:
-          'Nhớ: 得る(うる) = "đạt được" → xét về mặt lý thuyết, có KHẢ NĂNG đạt được kết quả này không? Dùng trong khoa học để nói về khả năng logic, không phải khả năng thực tế.'
+          'Remember: 得る(うる) = "to attain" → theoretically speaking, is this result attainable? Used in scientific writing to describe logical possibility, not practical possibility.'
       }
     ],
     dialogue: [
       {
-        speaker: '教授',
+        speaker: 'Professor',
         japanese: '君の仮説は興味深いが、実験データに即して検証する必要がある。理論だけでは不十分だ。',
         kana: 'きみのかせつはきょうみぶかいが、じっけんデータにそくしてけんしょうするひつようがある。りろんだけではふじゅうぶんだ。',
-        vietnamese: 'Giả thuyết của em rất thú vị, nhưng cần kiểm chứng theo đúng dữ liệu thực nghiệm. Chỉ lý thuyết thôi là không đủ.'
+        vietnamese: 'Your hypothesis is interesting, but it needs to be verified in line with the experimental data. Theory alone is not enough.'
       },
       {
-        speaker: '院生',
+        speaker: 'Graduate student',
         japanese: 'はい。現在の条件下では、この仮説が成立し得ると考えておりますが、追加実験が必要でしょうか。',
         kana: 'はい。げんざいのじょうけんかでは、このかせつがせいりつしうるとかんがえておりますが、ついかじっけんがひつようでしょうか。',
-        vietnamese: 'Vâng. Em cho rằng trong điều kiện hiện tại, giả thuyết này có thể thành lập, nhưng liệu có cần thêm thí nghiệm không ạ?'
+        vietnamese: 'Yes. I believe this hypothesis could hold under the current conditions, but do you think additional experiments are needed?'
       },
       {
-        speaker: '教授',
+        speaker: 'Professor',
         japanese: '再現性のない結果は、科学的に有意義とは言い得ない。サンプル数を増やして再実験してくれ。',
         kana: 'さいげんせいのないけっかは、かがくてきにゆういぎとはいいえない。サンプルすうをふやしてさいじっけんしてくれ。',
-        vietnamese: 'Kết quả không có tính tái hiện thì không thể nói là có ý nghĩa khoa học. Hãy tăng số mẫu và thí nghiệm lại.'
+        vietnamese: 'A result without reproducibility cannot be said to be scientifically meaningful. Increase the sample size and re-run the experiment.'
       },
       {
-        speaker: '院生',
+        speaker: 'Graduate student',
         japanese: '承知しました。先行研究に即して実験条件を見直し、検証の精度を高めます。',
         kana: 'しょうちしました。せんこうけんきゅうにそくしてじっけんじょうけんをみなおし、けんしょうのせいどをたかめます。',
-        vietnamese: 'Em hiểu rồi ạ. Em sẽ rà soát lại điều kiện thí nghiệm theo đúng nghiên cứu tiên hành, nâng cao độ chính xác kiểm chứng.'
+        vietnamese: 'Understood. I will review the experimental conditions in line with prior research and increase the precision of the verification.'
       }
     ],
     culturalNote:
-      'Văn phong khoa học Nhật (科学論文のスタイル) yêu cầu tính khách quan tuyệt đối. Nghiên cứu sinh (院生 — いんせい) nói chuyện với giáo sư dùng kính ngữ, nhưng giáo sư có thể dùng thể thường (タメ口). Cấu trúc 〜に即して phổ biến trong luận văn — nhấn mạnh sự bám sát thực tế. Trong seminar Nhật, giáo sư đặt câu hỏi sắc bén (鋭い質問) không phải để chê bai mà để rèn tư duy phản biện cho sinh viên.'
+      'Japanese scientific writing style (科学論文のスタイル) demands absolute objectivity. Graduate students (院生 — insei) speak to professors with honorific language, but professors may use casual speech (タメ口) with students. The ～に即して structure is common in academic papers, emphasizing adherence to reality. In Japanese seminars, a professor\'s sharp questioning (鋭い質問) isn\'t meant to belittle but to sharpen the student\'s critical thinking.'
   },
 
   // ── 12. Medical Ethics (医療倫理) ──────────────────────────
   {
     id: 'n1-conv-12',
-    title: 'Y đức',
+    title: 'Medical ethics',
     titleJp: '医療倫理',
     level: 'N1',
-    situation: 'Bác sĩ và chuyên gia đạo đức y khoa thảo luận về quyền tự quyết của bệnh nhân trong hội nghị y khoa',
+    situation: 'A doctor and a medical ethicist discuss patient autonomy at a medical conference',
     patterns: [
       {
         japanese: '〜を抜きにしては',
         kana: '〜をぬきにしては',
-        vietnamese: 'Không thể bỏ qua ~, nếu thiếu ~ thì không được.',
+        vietnamese: 'Cannot be discussed without ~, unless we account for ~.',
         memoryTip:
-          'Nhớ: ぬき = "rút ra, bỏ đi" + にしては = "nếu làm vậy thì" → nếu RÚT BỎ yếu tố này ra thì mọi thứ sụp đổ. Như rút cột trụ khỏi ngôi nhà — không thể thiếu.'
+          'Remember: ぬき = "removing, taking out" + にしては = "if we do that" → if this element is REMOVED, everything falls apart. Like pulling a pillar out from a house — indispensable.'
       },
       {
         japanese: '〜なくして（は）',
         kana: '〜なくして（は）',
-        vietnamese: 'Nếu không có ~, thiếu ~ thì không thể.',
+        vietnamese: 'Without ~, it cannot ~.',
         memoryTip:
-          'Nhớ: なくして = "không có mà làm" → điều kiện TIÊN QUYẾT không thể thiếu. Mạnh hơn ないと — mang tính tuyên ngôn: "KHÔNG CÓ X THÌ KHÔNG CÓ Y". Thường dùng trong diễn thuyết.'
+          'Remember: なくして = "without having" → an indispensable PRECONDITION. Stronger than ないと — carries the weight of a declaration: "WITHOUT X, THERE IS NO Y." Often used in formal speeches.'
       }
     ],
     dialogue: [
       {
-        speaker: '医師',
+        speaker: 'Doctor',
         japanese: 'インフォームド・コンセントを抜きにしては、いかなる治療も倫理的に正当化し得ません。',
         kana: 'インフォームド・コンセントをぬきにしては、いかなるちりょうもりんりてきにせいとうかしえません。',
-        vietnamese: 'Không thể bỏ qua việc đồng ý sau khi được thông tin đầy đủ — bất kỳ phương pháp điều trị nào cũng không thể biện minh về mặt đạo đức.'
+        vietnamese: 'No treatment can be ethically justified without informed consent.'
       },
       {
-        speaker: '倫理学者',
+        speaker: 'Ethicist',
         japanese: '同感です。患者の自己決定権なくしては、生命倫理の根幹が揺らぎます。',
         kana: 'どうかんです。かんじゃのじこけっていけんなくしては、せいめいりんりのこんかんがゆらぎます。',
-        vietnamese: 'Tôi đồng ý. Nếu không có quyền tự quyết của bệnh nhân, nền tảng đạo đức sinh mệnh sẽ lung lay.'
+        vietnamese: 'I agree. Without the patient\'s right to self-determination, the very foundation of bioethics is shaken.'
       },
       {
-        speaker: '医師',
+        speaker: 'Doctor',
         japanese: 'しかし、患者の意思確認が困難な緊急時には、医師の判断を抜きにしては命を救えない場面もあります。',
         kana: 'しかし、かんじゃのいしかくにんがこんなんなきんきゅうじには、いしのはんだんをぬきにしてはいのちをすくえないばめんもあります。',
-        vietnamese: 'Tuy nhiên, trong trường hợp khẩn cấp khi khó xác nhận ý chí bệnh nhân, cũng có lúc không thể cứu mạng nếu thiếu phán đoán của bác sĩ.'
+        vietnamese: 'However, in emergencies where it\'s difficult to confirm the patient\'s wishes, there are also situations where a life cannot be saved without the doctor\'s judgment.'
       },
       {
-        speaker: '倫理学者',
+        speaker: 'Ethicist',
         japanese: 'その通りです。信頼関係なくして、医療は成り立ちません。患者と医師の対話こそが、倫理の出発点に他なりません。',
         kana: 'そのとおりです。しんらいかんけいなくして、いりょうはなりたちません。かんじゃといしのたいわこそが、りんりのしゅっぱつてんにほかなりません。',
-        vietnamese: 'Đúng vậy. Không có mối quan hệ tin cậy, y tế không thể tồn tại. Đối thoại giữa bệnh nhân và bác sĩ chính là điểm xuất phát của đạo đức, không gì khác.'
+        vietnamese: 'Exactly. Without a relationship of trust, medicine cannot function. Dialogue between patient and doctor is precisely the starting point of ethics, and nothing else.'
       }
     ],
     culturalNote:
-      'Y đức Nhật Bản chịu ảnh hưởng từ truyền thống Á Đông: trước đây bác sĩ thường quyết định thay bệnh nhân (医師のパターナリズム). Khái niệm インフォームド・コンセント (informed consent — đồng ý sau khi được cung cấp đầy đủ thông tin) du nhập từ phương Tây và dần trở thành tiêu chuẩn. Vấn đề 告知 (こくち — thông báo bệnh nặng cho bệnh nhân) vẫn là chủ đề nhạy cảm — nhiều gia đình Nhật muốn giấu bệnh nhân để "bảo vệ" tinh thần họ.'
+      'Japanese medical ethics has been influenced by East Asian tradition: doctors previously often made decisions on behalf of patients (医師のパターナリズム — medical paternalism). The concept of informed consent (インフォームド・コンセント) was imported from the West and has gradually become standard. The issue of 告知 (kokuchi — disclosing a serious diagnosis to a patient) remains sensitive — many Japanese families prefer to conceal it to "protect" the patient\'s spirit.'
   },
 
   // ── 13. Environmental Summit (環境サミット) ─────────────────
   {
     id: 'n1-conv-13',
-    title: 'Hội nghị thượng đỉnh Môi trường',
+    title: 'An environmental summit',
     titleJp: '環境サミット',
     level: 'N1',
-    situation: 'Đại diện các quốc gia thảo luận về biến đổi khí hậu và cam kết giảm phát thải tại hội nghị quốc tế',
+    situation: 'National representatives discuss climate change and emissions-reduction commitments at an international conference',
     patterns: [
       {
         japanese: '〜を余儀なくさせる',
         kana: '〜をよぎなくさせる',
-        vietnamese: 'Buộc (ai đó) phải ~.',
+        vietnamese: 'To force (someone) to ~.',
         memoryTip:
-          'Nhớ: Phiên bản CHỦ ĐỘNG của 余儀なくされる — không phải "bị buộc" mà "BUỘC ai đó". Thiên tai buộc con người phải hành động — chủ ngữ là sức mạnh không thể chống lại.'
+          'Remember: the ACTIVE version of 余儀なくされる — not "being forced" but "forcing" someone else. A disaster forces humanity to act — the subject is an irresistible force.'
       },
       {
         japanese: '〜べからず',
         kana: '〜べからず',
-        vietnamese: 'Không được ~, cấm ~ (mệnh lệnh cổ ngữ).',
+        vietnamese: 'Must not ~, forbidden to ~ (classical imperative).',
         memoryTip:
-          'Nhớ: べからず = べき + あらず (phủ định cổ) → "KHÔNG ĐƯỢC LÀM". Giọng điệu như chiếu chỉ hoàng đế hoặc bảng cấm khắc trên đá. Cực kỳ mạnh và trang trọng.'
+          'Remember: べからず = べき + あらず (classical negation) → "MUST NOT DO." Sounds like an imperial decree or a prohibition carved into stone. Extremely strong and formal.'
       }
     ],
     dialogue: [
       {
-        speaker: '日本代表',
+        speaker: 'Japanese delegate',
         japanese: '温暖化の加速は、世界中の沿岸都市を移転を余儀なくさせかねません。CO2排出の削減は待ったなしです。',
         kana: 'おんだんかのかそくは、せかいじゅうのえんがんとしをいてんをよぎなくさせかねません。シーオーツーはいしゅつのさくげんはまったなしです。',
-        vietnamese: 'Sự gia tốc nóng lên toàn cầu có thể buộc các thành phố ven biển trên thế giới phải di dời. Giảm phát thải CO2 không thể chần chừ.'
+        vietnamese: 'The acceleration of global warming could force coastal cities around the world to relocate. There is no time to wait on reducing CO2 emissions.'
       },
       {
-        speaker: '欧州代表',
+        speaker: 'European delegate',
         japanese: '次世代に対する責任を忘れるべからず。対策の遅れは、取り返しのつかない結果を招きかねません。',
         kana: 'じせだいにたいするせきにんをわすれるべからず。たいさくのおくれは、とりかえしのつかないけっかをまねきかねません。',
-        vietnamese: 'Không được quên trách nhiệm với thế hệ tiếp theo. Sự chậm trễ đối sách có thể dẫn đến hậu quả không thể vãn hồi.'
+        vietnamese: 'We must not forget our responsibility to the next generation. A delayed response could lead to irreversible consequences.'
       },
       {
-        speaker: '日本代表',
+        speaker: 'Japanese delegate',
         japanese: '先進国と途上国の協力を抜きにしては、実効的な対策は実現し得ません。',
         kana: 'せんしんこくととじょうこくのきょうりょくをぬきにしては、じっこうてきなたいさくはじつげんしえません。',
-        vietnamese: 'Nếu thiếu sự hợp tác giữa các nước phát triển và đang phát triển, đối sách thực tế không thể thực hiện được.'
+        vietnamese: 'Effective countermeasures cannot be realized without cooperation between developed and developing nations.'
       },
       {
-        speaker: '欧州代表',
+        speaker: 'European delegate',
         japanese: '地球の未来は、今日の我々の決断いかんにかかっています。科学的知見に即した行動を取るべきです。',
         kana: 'ちきゅうのみらいは、こんにちのわれわれのけつだんいかんにかかっています。かがくてきちけんにそくしたこうどうをとるべきです。',
-        vietnamese: 'Tương lai Trái Đất phụ thuộc vào quyết định của chúng ta hôm nay. Cần hành động phù hợp với tri thức khoa học.'
+        vietnamese: 'The future of the planet depends on the decisions we make today. We must act in accordance with scientific knowledge.'
       }
     ],
     culturalNote:
-      'Nhật Bản là nơi ký kết Nghị định thư Kyoto (京都議定書 — きょうとぎていしょ, 1997) — thỏa thuận quốc tế đầu tiên ràng buộc pháp lý về giảm khí thải nhà kính. Nhật cam kết trung hòa carbon vào 2050. Trong ngoại giao môi trường, べからず là cách diễn đạt mệnh lệnh đạo đức mạnh nhất — mang âm hưởng cổ ngữ như lời thề thiêng liêng, không thể vi phạm.'
+      'Japan is where the Kyoto Protocol (京都議定書, 1997) was signed — the first internationally binding agreement on reducing greenhouse gas emissions. Japan has committed to carbon neutrality by 2050. In environmental diplomacy, べからず is one of the strongest moral imperatives — carrying the resonance of a sacred, inviolable oath.'
   },
 
   // ── 14. Cultural Identity (文化的アイデンティティ) ──────────
   {
     id: 'n1-conv-14',
-    title: 'Bản sắc văn hóa',
+    title: 'Cultural identity',
     titleJp: '文化的アイデンティティ',
     level: 'N1',
-    situation: 'Nhà nhân học và nhà văn thảo luận về xung đột giữa truyền thống và hiện đại trong bản sắc Nhật Bản',
+    situation: 'An anthropologist and a novelist discuss the conflict between tradition and modernity in Japanese identity',
     patterns: [
       {
         japanese: '〜からこそ',
         kana: '〜からこそ',
-        vietnamese: 'Chính vì ~ nên mới ~.',
+        vietnamese: 'Precisely because ~.',
         memoryTip:
-          'Nhớ: から (vì) + こそ (chính là) → nhấn mạnh gấp đôi nguyên nhân. Không chỉ "vì A nên B" mà "CHÍNH VÌ A nên B mới xảy ra". Dùng khi muốn đặt đèn pha chiếu vào lý do.'
+          'Remember: から (because) + こそ (precisely/emphatically) → double emphasis on the cause. Not merely "because A, B" but "PRECISELY because A, B occurs." Used to spotlight the reason.'
       },
       {
         japanese: '〜つつある',
         kana: '〜つつある',
-        vietnamese: 'Đang dần ~, đang trong quá trình ~.',
+        vietnamese: 'Is gradually ~, is in the process of ~.',
         memoryTip:
-          'Nhớ: つつ = "từng chút từng chút" + ある = "đang tồn tại" → quá trình đang diễn ra CHẬM RÃI nhưng CHẮC CHẮN. Như cát đồng hồ rơi — không dừng lại được. Dùng cho biến đổi lớn trong xã hội.'
+          'Remember: つつ = "little by little" + ある = "exists" → a process unfolding SLOWLY but SURELY. Like sand falling in an hourglass — unstoppable. Used for major social changes.'
       }
     ],
     dialogue: [
       {
-        speaker: '人類学者',
+        speaker: 'Anthropologist',
         japanese: '日本の伝統文化は、グローバル化の波の中で変容しつつあります。しかし、それは必ずしも喪失ではありません。',
         kana: 'にほんのでんとうぶんかは、グローバルかのなみのなかでへんようしつつあります。しかし、それはかならずしもそうしつではありません。',
-        vietnamese: 'Văn hóa truyền thống Nhật đang dần biến đổi trong làn sóng toàn cầu hóa. Tuy nhiên, điều đó không nhất thiết là mất mát.'
+        vietnamese: 'Japanese traditional culture is gradually transforming amid the waves of globalization. However, that is not necessarily a loss.'
       },
       {
-        speaker: '作家',
+        speaker: 'Novelist',
         japanese: '伝統を深く知るからこそ、現代との融合が可能になるのだと思います。根のない木は倒れますから。',
         kana: 'でんとうをふかくしるからこそ、げんだいとのゆうごうがかのうになるのだとおもいます。ねのないきはたおれますから。',
-        vietnamese: 'Chính vì hiểu sâu truyền thống nên mới có thể hòa nhập với hiện đại. Vì cây không rễ sẽ đổ.'
+        vietnamese: 'I think it\'s precisely because one deeply understands tradition that fusion with the modern becomes possible. A tree without roots falls, after all.'
       },
       {
-        speaker: '人類学者',
+        speaker: 'Anthropologist',
         japanese: '若者の間で、伝統芸能への関心が薄れつつあるのは事実です。しかし、新しい形で再生しつつある面もあります。',
         kana: 'わかもののあいだで、でんとうげいのうへのかんしんがうすれつつあるのはじじつです。しかし、あたらしいかたちでさいせいしつつあるめんもあります。',
-        vietnamese: 'Sự thật là quan tâm đến nghệ thuật truyền thống đang dần phai nhạt trong giới trẻ. Tuy nhiên, cũng có mặt đang tái sinh dưới hình thức mới.'
+        vietnamese: 'It is true that interest in traditional performing arts is gradually fading among young people. But there is also a side where it is being revived in new forms.'
       },
       {
-        speaker: '作家',
+        speaker: 'Novelist',
         japanese: '変化を恐れるからこそ、本質を見失う。融合の中にこそ、文化の生命力があるのではないでしょうか。',
         kana: 'へんかをおそれるからこそ、ほんしつをみうしなう。ゆうごうのなかにこそ、ぶんかのせいめいりょくがあるのではないでしょうか。',
-        vietnamese: 'Chính vì sợ thay đổi nên mới đánh mất bản chất. Trong sự hòa nhập mới chứa đựng sức sống của văn hóa, phải không?'
+        vietnamese: 'It is precisely because we fear change that we lose sight of the essence. Isn\'t the vitality of culture found precisely within fusion?'
       },
       {
-        speaker: '人類学者',
+        speaker: 'Anthropologist',
         japanese: '和洋折衷という概念自体が、日本文化の柔軟性を物語っていますね。',
         kana: 'わようせっちゅうというがいねんじたいが、にほんぶんかのじゅうなんせいをものがたっていますね。',
-        vietnamese: 'Bản thân khái niệm "hòa trộn Đông Tây" đã kể lên câu chuyện về sự linh hoạt của văn hóa Nhật rồi.'
+        vietnamese: 'The very concept of "East-West fusion" itself tells the story of the flexibility of Japanese culture.'
       }
     ],
     culturalNote:
-      '和洋折衷 (わようせっちゅう — hòa trộn Nhật-Tây) là triết lý văn hóa đặc trưng: Nhật Bản không loại bỏ cái cũ khi tiếp nhận cái mới, mà hòa trộn cả hai. Ví dụ: nhà kiểu Nhật có phòng washitsu (和室) truyền thống bên cạnh phòng kiểu Tây (洋室). Kimono tồn tại song song với thời trang phương Tây. Cấu trúc 〜つつある diễn đạt quá trình biến đổi đang diễn ra — phù hợp để nói về sự chuyển đổi văn hóa không có điểm kết thúc rõ ràng.'
+      'Wayou-secchuu (和洋折衷 — a fusion of Japanese and Western elements) is a distinctive cultural philosophy: Japan doesn\'t discard the old when adopting the new, but blends the two. For example, a Japanese house may have a traditional washitsu (和室) room alongside a Western-style room (洋室). Kimono exist alongside Western fashion. The ～つつある structure describes an ongoing process of change — fitting for discussing a cultural transformation with no clear endpoint.'
   },
 
   // ── 15. Media Criticism (メディア批評) ─────────────────────
   {
     id: 'n1-conv-15',
-    title: 'Phê bình truyền thông',
+    title: 'Media criticism',
     titleJp: 'メディア批評',
     level: 'N1',
-    situation: 'Giáo sư truyền thông và nhà báo kỳ cựu thảo luận về vai trò và trách nhiệm của truyền thông trong xã hội hiện đại',
+    situation: 'A media studies professor and a veteran journalist discuss the role and responsibility of the media in modern society',
     patterns: [
       {
         japanese: '〜であれ〜であれ',
         kana: '〜であれ〜であれ',
-        vietnamese: 'Dù là ~ hay ~, bất kể ~ hay ~.',
+        vietnamese: 'Whether ~ or ~, regardless of ~ or ~.',
         memoryTip:
-          'Nhớ: であれ = "dù có là" (mệnh lệnh thể cổ của である) → liệt kê hai trường hợp đối lập rồi nói "cả hai đều như nhau". Như mở rộng bàn tay ôm hết — không loại trừ bất kỳ ai.'
+          'Remember: であれ = "whether it be" (a classical imperative form of である) → lists two opposing cases and says "either way, the same applies." Like an open hand embracing everyone — excluding no one.'
       },
       {
         japanese: '〜まじき',
         kana: '〜まじき',
-        vietnamese: 'Không nên ~, không xứng đáng ~ (chỉ trích mạnh).',
+        vietnamese: 'Should not ~, unbecoming of ~ (strong criticism).',
         memoryTip:
-          'Nhớ: まじき = phủ định cổ ngữ của べき → "KHÔNG ĐÁNG LÀM, KHÔNG ĐƯỢC LÀM". Nặng hơn べきではない — mang sắc thái phán xét đạo đức nghiêm khắc. "Đó là hành vi BẤT XỨNG!"'
+          'Remember: まじき is a classical negation of べき → "SHOULD NOT BE DONE, UNACCEPTABLE." Stronger than べきではない — carries a stern moral judgment: "That is unbecoming behavior!"'
       }
     ],
     dialogue: [
       {
-        speaker: '教授',
+        speaker: 'Professor',
         japanese: 'テレビであれネットであれ、報道の公平性は守られるべきです。偏向報道は許されまじき行為です。',
         kana: 'テレビであれネットであれ、ほうどうのこうへいせいはまもられるべきです。へんこうほうどうはゆるされまじきこういです。',
-        vietnamese: 'Dù là truyền hình hay Internet, tính công bằng của báo chí phải được bảo vệ. Đưa tin thiên lệch là hành vi không thể tha thứ.'
+        vietnamese: 'Whether it\'s TV or the internet, fairness in reporting must be upheld. Biased reporting is an unacceptable act.'
       },
       {
-        speaker: '記者',
+        speaker: 'Journalist',
         japanese: 'しかし、完全な客観性というものは存在し得るのでしょうか。ファクトチェックを徹底するにしても、限界があります。',
         kana: 'しかし、かんぜんなきゃっかんせいというものはそんざいしうるのでしょうか。ファクトチェックをてっていするにしても、げんかいがあります。',
-        vietnamese: 'Tuy nhiên, liệu tính khách quan hoàn toàn có thể tồn tại không? Dù kiểm chứng sự thật triệt để, vẫn có giới hạn.'
+        vietnamese: 'But can perfect objectivity even exist? Even with thorough fact-checking, there are limits.'
       },
       {
-        speaker: '教授',
+        speaker: 'Professor',
         japanese: 'だからこそ、報道機関であれ個人メディアであれ、透明性の確保が不可欠なのです。',
         kana: 'だからこそ、ほうどうきかんであれこじんメディアであれ、とうめいせいのかくほがふかけつなのです。',
-        vietnamese: 'Chính vì thế, dù là cơ quan báo chí hay truyền thông cá nhân, việc đảm bảo tính minh bạch là không thể thiếu.'
+        vietnamese: 'That\'s exactly why, whether it\'s a news organization or independent media, ensuring transparency is indispensable.'
       },
       {
-        speaker: '記者',
+        speaker: 'Journalist',
         japanese: 'ジャーナリストにあるまじき行為とは何か、常に自問自答しています。事実に即した報道を心がけるしかありません。',
         kana: 'ジャーナリストにあるまじきこういとはなにか、つねにじもんじとうしています。じじつにそくしたほうどうをこころがけるしかありません。',
-        vietnamese: 'Hành vi nào là bất xứng với nhà báo — tôi luôn tự hỏi mình điều đó. Chỉ có thể nỗ lực đưa tin bám sát sự thật.'
+        vietnamese: 'I constantly ask myself what conduct is unbecoming of a journalist. All I can do is strive to report in line with the facts.'
       }
     ],
     culturalNote:
-      'Truyền thông Nhật Bản có hệ thống "câu lạc bộ báo chí" (記者クラブ — きしゃクラブ) độc đáo: chỉ phóng viên thuộc các tổ chức lớn mới được vào họp báo chính phủ, bị phê phán là thiếu minh bạch. Khái niệm 報道の自由 (ほうどうのじゆう — tự do báo chí) luôn là chủ đề nóng. まじき là cổ ngữ mạnh — khi dùng trong phê bình truyền thông, nó mang sức nặng đạo đức như bản án phán xét hành vi nghề nghiệp.'
+      'Japanese media has a distinctive "press club" system (記者クラブ — kisha kurabu): only reporters belonging to major organizations can attend government press conferences, drawing criticism for a lack of transparency. The concept of 報道の自由 (freedom of the press) is a perennial hot topic. まじき is a strong classical word — when used in media criticism, it carries the moral weight of a verdict on professional conduct.'
   },
 
   // ── 16. Historical Analysis (歴史分析) ─────────────────────
   {
     id: 'n1-conv-16',
-    title: 'Phân tích lịch sử',
+    title: 'Historical analysis',
     titleJp: '歴史分析',
     level: 'N1',
-    situation: 'Hai nhà sử học thảo luận về quá trình cải cách và biến chuyển xã hội Nhật Bản trong hội thảo học thuật',
+    situation: 'Two historians discuss the process of reform and social change in Japan at an academic symposium',
     patterns: [
       {
         japanese: '〜を経て',
         kana: '〜をへて',
-        vietnamese: 'Trải qua ~, qua quá trình ~.',
+        vietnamese: 'Having gone through ~, via the process of ~.',
         memoryTip:
-          'Nhớ: へて = "đi qua" → hành trình DÀI xuyên qua nhiều giai đoạn. Như con sông chảy qua nhiều vùng đất trước khi ra biển. Lịch sử = dòng chảy qua nhiều sự kiện.'
+          'Remember: へて = "passing through" → a LONG journey through many stages. Like a river flowing through many lands before reaching the sea. History = a flow through many events.'
       },
       {
         japanese: '〜たるもの',
         kana: '〜たるもの',
-        vietnamese: 'Với tư cách là ~, phàm đã là ~.',
+        vietnamese: 'As one who is ~, anyone claiming the title of ~.',
         memoryTip:
-          'Nhớ: たるもの = "cái đáng là, kẻ mang danh" → đặt ra tiêu chuẩn cho ai đó dựa trên danh phận. "Phàm đã là samurai thì phải..." — câu trúc định nghĩa bổn phận theo vai trò.'
+          'Remember: たるもの = "one who is worthy of being" → sets a standard for someone based on their role/status. "As a samurai, one must..." — defines duty according to one\'s position.'
       }
     ],
     dialogue: [
       {
-        speaker: '史学者A',
+        speaker: 'Historian A',
         japanese: '明治維新を経て、日本は封建社会から近代国家へと劇的な変貌を遂げました。その変遷は世界史に類を見ません。',
         kana: 'めいじいしんをへて、にほんはほうけんしゃかいからきんだいこっかへとげきてきなへんぼうをとげました。そのへんせんはせかいしにるいをみません。',
-        vietnamese: 'Trải qua Duy Tân Minh Trị, Nhật Bản đã biến đổi kịch tính từ xã hội phong kiến thành quốc gia hiện đại. Sự biến chuyển đó không có tiền lệ trong lịch sử thế giới.'
+        vietnamese: 'Having gone through the Meiji Restoration, Japan underwent a dramatic transformation from a feudal society to a modern nation. That transformation has no parallel in world history.'
       },
       {
-        speaker: '史学者B',
+        speaker: 'Historian B',
         japanese: '議員たるもの、歴史の教訓を踏まえた上で改革を推進すべきだったのですが、実際にはそうならなかった。',
         kana: 'ぎいんたるもの、れきしのきょうくんをふまえたうえでかいかくをすいしんすべきだったのですが、じっさいにはそうならなかった。',
-        vietnamese: 'Phàm đã là nghị viên, lẽ ra phải thúc đẩy cải cách dựa trên bài học lịch sử, nhưng thực tế không diễn ra như vậy.'
+        vietnamese: 'As legislators, they should have pushed reform based on the lessons of history, but in reality, that\'s not what happened.'
       },
       {
-        speaker: '史学者A',
+        speaker: 'Historian A',
         japanese: '幾多の試練を経て獲得した民主主義を、我々は軽視すべきではありません。',
         kana: 'いくたのしれんをへてかくとくしたみんしゅしゅぎを、われわれはけいしすべきではありません。',
-        vietnamese: 'Chúng ta không nên coi nhẹ nền dân chủ đã đạt được sau bao nhiêu thử thách.'
+        vietnamese: 'We should not take lightly the democracy we obtained after going through so many trials.'
       },
       {
-        speaker: '史学者B',
+        speaker: 'Historian B',
         japanese: '歴史家たるもの、過去を美化することなく、事実に即して冷静に分析する責務があります。',
         kana: 'れきしかたるもの、かこをびかすることなく、じじつにそくしてれいせいにぶんせきするせきむがあります。',
-        vietnamese: 'Phàm đã là nhà sử học, có trách nhiệm phân tích bình tĩnh, bám sát sự thật, không tô đẹp quá khứ.'
+        vietnamese: 'As historians, we have a duty to analyze calmly, in line with the facts, without romanticizing the past.'
       }
     ],
     culturalNote:
-      'Lịch sử Nhật Bản chia thành các thời kỳ theo niên hiệu (年号 — ねんごう): Meiji (明治, 1868-1912), Taisho (大正), Showa (昭和), Heisei (平成), Reiwa (令和). Duy Tân Minh Trị (明治維新) là cuộc cải cách toàn diện — bãi bỏ chế độ phong kiến, hiện đại hóa quân sự và giáo dục chỉ trong vài thập niên. Cấu trúc 〜たるもの xuất phát từ đạo đức Nho giáo và tinh thần võ sĩ đạo (武士道) — định nghĩa bổn phận dựa trên danh phận xã hội.'
+      'Japanese history is divided into eras named after imperial reigns (年号 — nengou): Meiji (明治, 1868–1912), Taisho (大正), Showa (昭和), Heisei (平成), Reiwa (令和). The Meiji Restoration (明治維新) was a comprehensive reform — abolishing feudalism and modernizing the military and education in just a few decades. The ～たるもの structure derives from Confucian ethics and the spirit of bushido (武士道) — defining duty based on social status.'
   },
 
   // ── 17. Diplomatic Negotiations (外交交渉) ─────────────────
   {
     id: 'n1-conv-17',
-    title: 'Đàm phán ngoại giao',
+    title: 'Diplomatic negotiations',
     titleJp: '外交交渉',
     level: 'N1',
-    situation: 'Đại sứ hai nước đàm phán về điều ước quốc tế và hợp tác song phương trong cuộc họp ngoại giao chính thức',
+    situation: 'Ambassadors from two countries negotiate an international treaty and bilateral cooperation at an official diplomatic meeting',
     patterns: [
       {
         japanese: '〜の如く',
         kana: '〜のごとく',
-        vietnamese: 'Như ~, giống như ~ (văn ngôn).',
+        vietnamese: 'Like ~, just as ~ (classical/literary).',
         memoryTip:
-          'Nhớ: ごとく = phiên bản cổ ngữ cực trang trọng của ように. Nghe như đọc chiếu chỉ: "như mặt trời chiếu sáng, hiệp ước này sẽ..." — chỉ dùng trong văn bản ngoại giao, diễn văn quốc gia, văn học cổ.'
+          'Remember: ごとく is an extremely formal, classical version of ように. It sounds like reading a proclamation: "as the sun shines, so shall this treaty..." — used only in diplomatic documents, national speeches, and classical literature.'
       },
       {
         japanese: '〜に鑑みて',
         kana: '〜にかんがみて',
-        vietnamese: 'Xét đến ~, chiếu theo ~.',
+        vietnamese: 'In light of ~, in view of ~.',
         memoryTip:
-          'Nhớ: かんがみて = "soi gương (鑑)" → lấy quá khứ/tình hình làm GƯƠNG SOI để đưa ra quyết định. Gương phản chiếu bài học — nhìn vào gương lịch sử trước khi hành động.'
+          'Remember: かんがみて = "reflecting in a mirror (鑑)" → using the past/current situation as a MIRROR to make a decision. A mirror that reflects lessons — looking into the mirror of history before acting.'
       }
     ],
     dialogue: [
       {
-        speaker: '日本大使',
+        speaker: 'Japanese ambassador',
         japanese: '両国の歴史的な友好関係に鑑みて、新たな条約の締結を提案させていただきたいと存じます。',
         kana: 'りょうこくのれきしてきなゆうこうかんけいにかんがみて、あらたなじょうやくのていけつをていあんさせていただきたいとぞんじます。',
-        vietnamese: 'Xét đến mối quan hệ hữu nghị lịch sử giữa hai nước, tôi muốn xin phép đề xuất ký kết hiệp ước mới.'
+        vietnamese: 'In light of the historic friendly relationship between our two nations, I would like to propose the conclusion of a new treaty.'
       },
       {
-        speaker: '相手国大使',
+        speaker: 'Foreign ambassador',
         japanese: 'ありがたきお言葉です。両国が水の如く自然に協力し合える関係を築きたいと願っております。',
         kana: 'ありがたきおことばです。りょうこくがみずのごとくしぜんにきょうりょくしあえるかんけいをきずきたいとねがっております。',
-        vietnamese: 'Lời nói quý báu. Chúng tôi mong muốn xây dựng mối quan hệ mà hai nước hợp tác tự nhiên như nước chảy.'
+        vietnamese: 'A most gracious word. We hope to build a relationship in which our two nations can cooperate as naturally as flowing water.'
       },
       {
-        speaker: '日本大使',
+        speaker: 'Japanese ambassador',
         japanese: '国際情勢の変化に鑑み、安全保障面での合意も協議に含めるべきかと存じます。',
         kana: 'こくさいじょうせいのへんかにかんがみ、あんぜんほしょうめんでのごういもきょうぎにふくめるべきかとぞんじます。',
-        vietnamese: 'Xét đến sự thay đổi tình hình quốc tế, tôi cho rằng nên đưa cả thỏa thuận an ninh vào nội dung hiệp nghị.'
+        vietnamese: 'In light of the changing international situation, I believe we should also include security-related agreements in the discussion.'
       },
       {
-        speaker: '相手国大使',
+        speaker: 'Foreign ambassador',
         japanese: '信頼の如く固く、柔軟性の如くしなやかな協定を目指しましょう。双方の利益に適う合意を期待しております。',
         kana: 'しんらいのごとくかたく、じゅうなんせいのごとくしなやかなきょうていをめざしましょう。そうほうのりえきにかなうごういをきたいしております。',
-        vietnamese: 'Hãy hướng đến hiệp định vững chắc như lòng tin, uyển chuyển như sự linh hoạt. Chúng tôi kỳ vọng thỏa thuận phù hợp lợi ích cả hai bên.'
+        vietnamese: 'Let us aim for an agreement as firm as trust and as supple as flexibility. We look forward to an accord that serves the interests of both sides.'
       }
     ],
     culturalNote:
-      'Ngoại giao Nhật Bản thể hiện "sức mạnh mềm" (ソフトパワー) qua ngôn ngữ tinh tế. Cấu trúc 〜の如く (ごとく) xuất phát từ Hán văn cổ, tạo ấn tượng trang nghiêm trong văn kiện ngoại giao. Nhật dùng 鑑みる khi viện dẫn tiền lệ lịch sử — gợi hình ảnh chiếc gương đồng (銅鏡) thời cổ đại, biểu tượng của sự sáng suốt. Trong đàm phán, người Nhật ưu tiên 根回し (ねまわし — vận động hậu trường) trước khi họp chính thức.'
+      'Japanese diplomacy expresses "soft power" (ソフトパワー) through refined language. The ～の如く (gotoku) structure derives from classical Chinese-influenced writing, lending a solemn tone to diplomatic documents. 鑑みる is used when invoking historical precedent — evoking the image of an ancient bronze mirror (銅鏡), a symbol of wisdom. In negotiations, the Japanese prioritize nemawashi (根回し — behind-the-scenes groundwork) before formal meetings.'
   },
 
   // ── 18. Corporate Governance (企業統治) ─────────────────────
   {
     id: 'n1-conv-18',
-    title: 'Quản trị doanh nghiệp',
+    title: 'Corporate governance',
     titleJp: '企業統治',
     level: 'N1',
-    situation: 'Cổ đông và ban giám đốc thảo luận về minh bạch quản trị tại đại hội cổ đông thường niên',
+    situation: 'Shareholders and the board of directors discuss governance transparency at an annual shareholders meeting',
     patterns: [
       {
         japanese: '〜の至りです',
         kana: '〜のいたりです',
-        vietnamese: 'Vô cùng ~ (cảm xúc ở mức cao nhất).',
+        vietnamese: 'Utterly ~ (the highest degree of feeling).',
         memoryTip:
-          'Nhớ: いたり = "cực điểm, đỉnh cao" → cảm xúc đã leo đến ĐỈNH NÚI, không thể cao hơn. 光栄の至り = vinh dự tột cùng. Cách diễn đạt khiêm nhường nhưng chứa cảm xúc mãnh liệt.'
+          'Remember: いたり = "the utmost extreme" → an emotion that has climbed to the PEAK of a mountain, unable to go higher. 光栄の至り = the utmost honor. A humble expression that carries intense feeling.'
       },
       {
         japanese: '〜に則って',
         kana: '〜にのっとって',
-        vietnamese: 'Tuân theo ~, theo đúng quy tắc ~.',
+        vietnamese: 'In accordance with ~, following the rules of ~.',
         memoryTip:
-          'Nhớ: のっとって = "noi theo, tuân thủ" → đặt chân theo đúng vết chân của quy tắc/pháp luật. Khác với に基づいて (dựa trên nền tảng) — のっとって nhấn mạnh TUÂN THỦ NGHIÊM NGẶT từng điều khoản.'
+          'Remember: のっとって = "following in the footsteps of" → walking in the exact footprints of a rule/law. Unlike に基づいて (based on a foundation), のっとって emphasizes STRICT COMPLIANCE with each provision.'
       }
     ],
     dialogue: [
       {
-        speaker: '株主',
+        speaker: 'Shareholder',
         japanese: '取締役会の皆様、本日の総会にお招きいただき、光栄の至りでございます。経営の透明性についてお伺いしたく存じます。',
         kana: 'とりしまりやくかいのみなさま、ほんじつのそうかいにおまねきいただき、こうえいのいたりでございます。けいえいのとうめいせいについておうかがいしたくぞんじます。',
-        vietnamese: 'Thưa quý ban giám đốc, được mời tham dự đại hội hôm nay là vinh dự tột cùng. Tôi muốn được hỏi về tính minh bạch trong quản trị.'
+        vietnamese: 'Esteemed members of the board, it is the utmost honor to be invited to today\'s general meeting. I would like to ask about the transparency of management.'
       },
       {
-        speaker: '取締役',
+        speaker: 'Director',
         japanese: 'ご質問ありがとうございます。コーポレートガバナンス・コードに則って、情報開示を徹底してまいります。',
         kana: 'ごしつもんありがとうございます。コーポレートガバナンス・コードにのっとって、じょうほうかいじをてっていしてまいります。',
-        vietnamese: 'Cảm ơn câu hỏi. Chúng tôi sẽ triệt để công khai thông tin tuân theo Bộ quy tắc quản trị doanh nghiệp.'
+        vietnamese: 'Thank you for the question. We will continue to thoroughly disclose information in accordance with the Corporate Governance Code.'
       },
       {
-        speaker: '株主',
+        speaker: 'Shareholder',
         japanese: '株主の利益を最優先に、法令に則った経営をお願いいたします。信頼なくして、企業の持続的成長はあり得ません。',
         kana: 'かぶぬしのりえきをさいゆうせんに、ほうれいにのっとったけいえいをおねがいいたします。しんらいなくして、きぎょうのじぞくてきせいちょうはありえません。',
-        vietnamese: 'Xin hãy ưu tiên lợi ích cổ đông, quản trị tuân thủ pháp luật. Không có niềm tin, doanh nghiệp không thể tăng trưởng bền vững.'
+        vietnamese: 'Please prioritize shareholder interests and manage the company in accordance with the law. Without trust, sustainable corporate growth is impossible.'
       },
       {
-        speaker: '取締役',
+        speaker: 'Director',
         japanese: '重く受け止めております。取締役たるもの、株主の皆様への説明責任を果たすのは当然の義務でございます。',
         kana: 'おもくうけとめております。とりしまりやくたるもの、かぶぬしのみなさまへのせつめいせきにんをはたすのはとうぜんのぎむでございます。',
-        vietnamese: 'Chúng tôi tiếp nhận nghiêm túc. Phàm đã là thành viên ban giám đốc, thực hiện trách nhiệm giải trình với cổ đông là nghĩa vụ đương nhiên.'
+        vietnamese: 'We take this very seriously. As board members, fulfilling our accountability to shareholders is a natural obligation.'
       }
     ],
     culturalNote:
-      'Quản trị doanh nghiệp Nhật (コーポレートガバナンス) đã thay đổi lớn sau bê bối kế toán của Olympus (2011) và Toshiba (2015). Nhật ban hành Bộ quy tắc quản trị (コーポレートガバナンス・コード) năm 2015, yêu cầu giám đốc độc lập (社外取締役). Đại hội cổ đông (株主総会 — かぶぬしそうかい) ở Nhật thường diễn ra rất hình thức — nhưng gần đây cổ đông hoạt động tích cực hơn (アクティビスト株主), đặt câu hỏi sắc bén về quản trị.'
+      'Japanese corporate governance (コーポレートガバナンス) changed dramatically after the Olympus (2011) and Toshiba (2015) accounting scandals. Japan enacted the Corporate Governance Code (コーポレートガバナンス・コード) in 2015, requiring independent outside directors (社外取締役). Shareholder meetings (株主総会) in Japan are traditionally very formal, but activist shareholders (アクティビスト株主) have recently become more vocal, asking pointed questions about governance.'
   },
 
   // ── 19. Educational Reform (教育改革) ──────────────────────
   {
     id: 'n1-conv-19',
-    title: 'Cải cách giáo dục',
+    title: 'Educational reform',
     titleJp: '教育改革',
     level: 'N1',
-    situation: 'Chuyên gia giáo dục và hiệu trưởng thảo luận về hệ thống thi cử và tỷ lệ thi đỗ đại học tại diễn đàn giáo dục',
+    situation: 'An education expert and a school principal discuss the exam system and university admission rates at an education forum',
     patterns: [
       {
         japanese: '〜ないまでも',
         kana: '〜ないまでも',
-        vietnamese: 'Dù không đến mức ~ thì ít nhất cũng ~.',
+        vietnamese: 'Even if not to the extent of ~, at least ~.',
         memoryTip:
-          'Nhớ: ないまでも = "không đến mức đó" + も (cũng) → đặt kỳ vọng ở mức THẤP HƠN nhưng vẫn yêu cầu TỐI THIỂU. "Dù không thể bay lên trời thì ít nhất cũng phải đứng trên đất" — đàm phán nhượng bộ.'
+          'Remember: ないまでも = "even if not to that extent" + も (also) → setting a LOWER expectation while still demanding a MINIMUM. "Even if we can\'t fly, we should at least stand on the ground" — a negotiated concession.'
       },
       {
         japanese: '〜に至っては',
         kana: '〜にいたっては',
-        vietnamese: 'Đến mức ~, nói đến ~ thì (tệ hơn).',
+        vietnamese: 'When it comes to ~ (an extreme case, usually worse).',
         memoryTip:
-          'Nhớ: にいたっては = "đến tận chỗ đó" → di chuyển đến TRƯỜNG HỢP CỰC ĐOAN nhất để minh họa. Thường dùng cho ví dụ tiêu cực: "Đến thành phố X thì còn tệ hơn nữa..."'
+          'Remember: にいたっては = "arriving all the way at" → moving to the MOST EXTREME case to illustrate a point. Usually used for negative examples: "When it comes to city X, it\'s even worse..."'
       }
     ],
     dialogue: [
       {
-        speaker: '教育専門家',
+        speaker: 'Education expert',
         japanese: '教育改革は急務です。全面的な見直しとまではいかないまでも、進学率の格差是正は最低限必要です。',
         kana: 'きょういくかいかくはきゅうむです。ぜんめんてきなみなおしとまではいかないまでも、しんがくりつのかくさぜせいはさいていげんひつようです。',
-        vietnamese: 'Cải cách giáo dục là việc cấp bách. Dù không đến mức rà soát toàn diện, ít nhất cũng cần điều chỉnh chênh lệch tỷ lệ thi đỗ đại học.'
+        vietnamese: 'Education reform is urgent. Even if it doesn\'t amount to a complete overhaul, correcting disparities in university admission rates is the bare minimum needed.'
       },
       {
-        speaker: '校長',
+        speaker: 'Principal',
         japanese: '都市部に至っては塾通いが当然視される一方、地方では教育資源が著しく不足しています。',
         kana: 'としぶにいたってはじゅくがよいがとうぜんしされるいっぽう、ちほうではきょういくしげんがいちじるしくふそくしています。',
-        vietnamese: 'Nói đến khu vực thành thị, việc đi học thêm được coi là đương nhiên, trong khi đó ở nông thôn, nguồn lực giáo dục thiếu trầm trọng.'
+        vietnamese: 'When it comes to urban areas, attending cram school is taken for granted, while in rural areas, educational resources are severely lacking.'
       },
       {
-        speaker: '教育専門家',
+        speaker: 'Education expert',
         japanese: '受験戦争を完全になくすことはできないまでも、多様な評価基準を導入すべきです。',
         kana: 'じゅけんせんそうをかんぜんになくすことはできないまでも、たようなひょうかきじゅんをどうにゅうすべきです。',
-        vietnamese: 'Dù không thể hoàn toàn loại bỏ cuộc chiến thi cử, ít nhất cũng nên đưa vào tiêu chuẩn đánh giá đa dạng.'
+        vietnamese: 'Even if the exam war can\'t be completely eliminated, diverse evaluation criteria should at least be introduced.'
       },
       {
-        speaker: '校長',
+        speaker: 'Principal',
         japanese: '不登校の問題に至っては、もはや個人の問題ではなく、社会構造の問題として捉えるべきです。',
         kana: 'ふとうこうのもんだいにいたっては、もはやこじんのもんだいではなく、しゃかいこうぞうのもんだいとしてとらえるべきです。',
-        vietnamese: 'Nói đến vấn đề bỏ học, đó không còn là vấn đề cá nhân mà cần nhìn nhận như vấn đề cơ cấu xã hội.'
+        vietnamese: 'When it comes to the issue of school refusal, it should no longer be seen as an individual problem, but as a structural social problem.'
       }
     ],
     culturalNote:
-      'Hệ thống giáo dục Nhật nổi tiếng với "chiến tranh thi cử" (受験戦争 — じゅけんせんそう) khốc liệt. Học sinh học thêm ở 塾 (じゅく — trường luyện thi) từ tiểu học. 不登校 (ふとうこう — bỏ học/không đến trường) là vấn đề xã hội nghiêm trọng — khoảng 300,000 học sinh Nhật không đến trường mỗi năm. Cải cách giáo dục (教育改革) luôn là chủ đề nóng, với tranh cãi giữa "giáo dục thoải mái" (ゆとり教育) và giáo dục chuyên sâu truyền thống.'
+      'Japan\'s education system is known for its fierce "exam war" (受験戦争 — juken sensou). Students attend cram schools (塾 — juku) starting from elementary school. School refusal (不登校 — futoukou) is a serious social issue — roughly 300,000 Japanese students don\'t attend school each year. Educational reform (教育改革) is a perennial hot topic, with ongoing debate between "relaxed education" (ゆとり教育) and traditional intensive schooling.'
   },
 
   // ── 20. Technology Ethics (技術倫理) ────────────────────────
   {
     id: 'n1-conv-20',
-    title: 'Đạo đức công nghệ',
+    title: 'Technology ethics',
     titleJp: '技術倫理',
     level: 'N1',
-    situation: 'Kỹ sư AI và nhà triết học thảo luận về ranh giới đạo đức trong phát triển trí tuệ nhân tạo và quyền riêng tư',
+    situation: 'An AI engineer and a philosopher discuss the ethical boundaries in developing artificial intelligence and privacy',
     patterns: [
       {
         japanese: '〜んがため（に）',
         kana: '〜んがため（に）',
-        vietnamese: 'Để mà ~, vì muốn ~ (mục đích mạnh, cổ ngữ).',
+        vietnamese: 'In order to ~, for the sake of wanting ~ (strong purpose, classical).',
         memoryTip:
-          'Nhớ: ん = む (ý chí cổ) + がため = "vì mục đích" → quyết tâm mãnh liệt PHẢI ĐẠT ĐƯỢC mục tiêu. Nghe như hiệp sĩ thề: "Vì bảo vệ thế giới, ta sẽ..." — chỉ dùng trong văn viết trang trọng.'
+          'Remember: ん = classical volitional む + がため = "for the purpose of" → an intense determination to ACHIEVE the goal. Sounds like a knight\'s oath: "To protect the world, I shall..." — used only in formal writing.'
       },
       {
         japanese: '〜もさることながら',
         kana: '〜もさることながら',
-        vietnamese: 'Không chỉ ~ mà còn ~, ~ đã đành nhưng ~ cũng.',
+        vietnamese: 'Not only ~ but also ~, ~ goes without saying, but ~ too.',
         memoryTip:
-          'Nhớ: さることながら = "đó đã là điều đương nhiên" → thừa nhận A quan trọng, nhưng lái sự chú ý sang B quan trọng HƠN. Như nói: "Vàng đã quý, nhưng kim cương còn quý hơn."'
+          'Remember: さることながら = "that is already a given" → acknowledges A is important, then shifts attention to B, which is EVEN more important. Like saying "gold is precious, but diamonds are more so."'
       }
     ],
     dialogue: [
       {
-        speaker: 'エンジニア',
+        speaker: 'Engineer',
         japanese: 'AI倫理の確立んがために、技術者と哲学者が協力する必要があります。',
         kana: 'エーアイりんりのかくりつんがために、ぎじゅつしゃとてつがくしゃがきょうりょくするひつようがあります。',
-        vietnamese: 'Để thiết lập đạo đức AI, kỹ sư và triết gia cần hợp tác.'
+        vietnamese: 'In order to establish AI ethics, engineers and philosophers need to cooperate.'
       },
       {
-        speaker: '哲学者',
+        speaker: 'Philosopher',
         japanese: '技術の進歩もさることながら、プライバシーの保護こそが最も議論すべき課題です。',
         kana: 'ぎじゅつのしんぽもさることながら、プライバシーのほごこそがもっともぎろんすべきかだいです。',
-        vietnamese: 'Tiến bộ công nghệ đã đành quan trọng, nhưng bảo vệ quyền riêng tư mới là vấn đề cần thảo luận nhất.'
+        vietnamese: 'Technological progress goes without saying, but protecting privacy is precisely the issue most in need of discussion.'
       },
       {
-        speaker: 'エンジニア',
+        speaker: 'Engineer',
         japanese: '監視技術の悪用を防がんがために、法的規制の整備が急がれます。しかし、技術の発展を阻害してはなりません。',
         kana: 'かんしぎじゅつのあくようをふせがんがために、ほうてききせいのせいびがいそがれます。しかし、ぎじゅつのはってんをそがいしてはなりません。',
-        vietnamese: 'Để ngăn chặn lạm dụng công nghệ giám sát, cần khẩn trương hoàn thiện quy định pháp lý. Tuy nhiên, không được cản trở phát triển công nghệ.'
+        vietnamese: 'In order to prevent misuse of surveillance technology, legal regulations urgently need to be developed. However, technological progress must not be hindered.'
       },
       {
-        speaker: '哲学者',
+        speaker: 'Philosopher',
         japanese: '効率性もさることながら、人間の尊厳を守ることが技術開発の大前提であるべきです。便利さの代償に自由を失ってはなりません。',
         kana: 'こうりつせいもさることながら、にんげんのそんげんをまもることがぎじゅつかいはつのだいぜんていであるべきです。べんりさのだいしょうにじゆうをうしなってはなりません。',
-        vietnamese: 'Tính hiệu quả đã đành, nhưng bảo vệ phẩm giá con người phải là đại tiền đề của phát triển công nghệ. Không được đánh mất tự do làm cái giá cho sự tiện lợi.'
+        vietnamese: 'Efficiency goes without saying, but protecting human dignity should be the great premise of technological development. Freedom must not be lost as the price of convenience.'
       }
     ],
     culturalNote:
-      'Nhật Bản ban hành "Nguyên tắc AI lấy con người làm trung tâm" (人間中心のAI社会原則) năm 2019, nhấn mạnh sự hòa hợp giữa AI và con người (共生 — きょうせい). Xã hội Nhật vừa ủng hộ đổi mới công nghệ vừa lo ngại quyền riêng tư — phản ánh qua luật bảo vệ thông tin cá nhân (個人情報保護法). Cấu trúc 〜んがため là cổ ngữ cực trang trọng — khi kỹ sư dùng trong bối cảnh đạo đức, nó nâng tầm cuộc thảo luận kỹ thuật thành cam kết đạo đức.'
+      'In 2019, Japan enacted the "Social Principles of Human-Centric AI" (人間中心のAI社会原則), emphasizing harmony (共生 — kyousei) between AI and humans. Japanese society both champions technological innovation and worries about privacy — reflected in its Personal Information Protection Act (個人情報保護法). The ～んがため structure is an extremely formal classical construction — when engineers use it in an ethical context, it elevates a technical discussion into a moral commitment.'
   },
 
   // ── 21. Aging Society (高齢化社会) ──────────────────────────
   {
     id: 'n1-conv-21',
-    title: 'Xã hội già hóa',
+    title: 'An aging society',
     titleJp: '高齢化社会',
     level: 'N1',
-    situation: 'Chuyên gia phúc lợi xã hội và chính trị gia thảo luận về hệ thống chăm sóc người cao tuổi và bảo hiểm xã hội',
+    situation: 'A social welfare expert and a politician discuss the elderly care system and social insurance',
     patterns: [
       {
         japanese: '〜なしには〜ない',
         kana: '〜なしには〜ない',
-        vietnamese: 'Nếu không có ~ thì không thể ~.',
+        vietnamese: 'Without ~, ~ is not possible.',
         memoryTip:
-          'Nhớ: なしには = "không có" + ない = "không thể" → hai lần "không" tạo mệnh đề điều kiện tuyệt đối. Như nói: "Không có oxy thì không thể sống" — điều kiện tiên quyết bất khả thương lượng.'
+          'Remember: なしには = "without" + ない = "cannot" → a double negative forming an absolute conditional clause. Like saying "without oxygen, there is no life" — a non-negotiable precondition.'
       },
       {
         japanese: '〜ともあろう（ものが）',
         kana: '〜ともあろう（ものが）',
-        vietnamese: 'Với tư cách/vị trí ~ mà lại ~ (chỉ trích/bất ngờ).',
+        vietnamese: 'For someone in the position of ~ to ~ (criticism/shock).',
         memoryTip:
-          'Nhớ: ともあろう = "cùng là, đã ở vị trí đó" → ai đó ĐÃ Ở VỊ TRÍ CAO mà lại làm điều bất xứng. Mang sắc thái thất vọng sâu sắc: "Ông ấy là bộ trưởng mà lại thế ư?"'
+          'Remember: ともあろう = "being of that standing" → someone who HOLDS a high position, yet does something unbecoming. Carries deep disappointment: "He is a minister, and yet he did THAT?"'
       }
     ],
     dialogue: [
       {
-        speaker: '福祉専門家',
+        speaker: 'Welfare expert',
         japanese: '介護人材の確保なしには、高齢化社会を支えることはできません。年金制度の持続性も危ぶまれています。',
         kana: 'かいごじんざいのかくほなしには、こうれいかしゃかいをささえることはできません。ねんきんせいどのじぞくせいもあやぶまれています。',
-        vietnamese: 'Nếu không đảm bảo nhân lực chăm sóc, không thể duy trì xã hội già hóa. Tính bền vững của hệ thống lương hưu cũng đang bị lo ngại.'
+        vietnamese: 'Without securing caregiving personnel, we cannot support an aging society. The sustainability of the pension system is also at risk.'
       },
       {
-        speaker: '政治家',
+        speaker: 'Politician',
         japanese: '社会保障の充実なしには、国民の安心は得られません。しかし、財源の問題が立ちはだかっています。',
         kana: 'しゃかいほしょうのじゅうじつなしには、こくみんのあんしんはえられません。しかし、ざいげんのもんだいがたちはだかっています。',
-        vietnamese: 'Nếu không hoàn thiện an sinh xã hội, không thể đạt được sự yên tâm cho quốc dân. Tuy nhiên, vấn đề nguồn tài chính đang cản đường.'
+        vietnamese: 'Without strengthening social security, we cannot achieve peace of mind for the public. However, the issue of funding stands in the way.'
       },
       {
-        speaker: '福祉専門家',
+        speaker: 'Welfare expert',
         japanese: '先進国ともあろう日本が、介護離職という問題を放置しているのは遺憾と言わざるを得ません。',
         kana: 'せんしんこくともあろうにほんが、かいごりしょくというもんだいをほうちしているのはいかんといわざるをえません。',
-        vietnamese: 'Nhật Bản với tư cách nước tiên tiến mà lại để mặc vấn đề nghỉ việc vì chăm sóc người già — phải nói là đáng tiếc.'
+        vietnamese: 'That Japan, a developed nation, is leaving the problem of care-related job loss unaddressed — I must say that is regrettable.'
       },
       {
-        speaker: '政治家',
+        speaker: 'Politician',
         japanese: '世代間の支え合いなしには、この国の未来はありません。政治家ともあろうものが、この問題から目を背けてはならないのです。',
         kana: 'せだいかんのささえあいなしには、このくにのみらいはありません。せいじかともあろうものが、このもんだいからめをそむけてはならないのです。',
-        vietnamese: 'Nếu không có sự hỗ trợ lẫn nhau giữa các thế hệ, đất nước này không có tương lai. Chính trị gia mà lại ngoảnh mặt trước vấn đề này thì không thể chấp nhận.'
+        vietnamese: 'Without mutual support across generations, this country has no future. Someone who calls themself a politician must not turn away from this issue.'
       }
     ],
     culturalNote:
-      'Nhật Bản có tỷ lệ người cao tuổi (65+) cao nhất thế giới — hơn 29% dân số. Hệ thống bảo hiểm chăm sóc dài hạn (介護保険制度 — かいごほけんせいど) ra đời năm 2000. 介護離職 (かいごりしょく — nghỉ việc để chăm sóc người thân) ảnh hưởng khoảng 100,000 người/năm. Khái niệm 共助 (きょうじょ — hỗ trợ lẫn nhau) là trụ cột của an sinh xã hội Nhật, phản ánh tinh thần cộng đồng truyền thống.'
+      'Japan has the highest proportion of elderly people (65+) in the world — over 29% of the population. The long-term care insurance system (介護保険制度) was introduced in 2000. 介護離職 (kaigo rishoku — leaving one\'s job to care for a family member) affects roughly 100,000 people per year. The concept of 共助 (kyoujo — mutual support) is a pillar of Japanese social security, reflecting traditional community spirit.'
   },
 
   // ── 22. Gender Equality (男女平等) ──────────────────────────
   {
     id: 'n1-conv-22',
-    title: 'Bình đẳng giới',
+    title: 'Gender equality',
     titleJp: '男女平等',
     level: 'N1',
-    situation: 'Nhà nghiên cứu giới và nữ doanh nhân thảo luận về bình đẳng giới tại diễn đàn phụ nữ',
+    situation: 'A gender studies researcher and a female entrepreneur discuss gender equality at a women\'s forum',
     patterns: [
       {
         japanese: '〜とはいえ',
         kana: '〜とはいえ',
-        vietnamese: 'Tuy nói vậy nhưng ~, mặc dù ~ nhưng.',
+        vietnamese: 'That said, ~ / although ~, [but].',
         memoryTip:
-          'Nhớ: とはいえ = "nói thì nói vậy" → THỪA NHẬN một sự thật, rồi LÁI sang thực tế ngược lại. Như phép nhượng bộ trong hùng biện: gật đầu trước khi lắc đầu.'
+          'Remember: とはいえ = "though one might say" → ACKNOWLEDGES a fact, then PIVOTS to a contrasting reality. Like a rhetorical concession: nodding before shaking one\'s head.'
       },
       {
         japanese: '〜からといって',
         kana: '〜からといって',
-        vietnamese: 'Không phải vì ~ mà ~, dù ~ đi nữa.',
+        vietnamese: 'Just because ~ doesn\'t mean ~, even though ~.',
         memoryTip:
-          'Nhớ: からといって = "nói rằng vì lý do đó" → phản bác một suy luận sai. "Vì A nên B" ư? KHÔNG ĐÚNG! Công cụ bác bỏ logic nguỵ biện — rất mạnh trong tranh luận về bình đẳng.'
+          'Remember: からといって = "saying that it is because of that" → refutes a faulty inference. "Because A, therefore B"? NOT SO! A powerful tool for debunking flawed logic — very effective in equality debates.'
       }
     ],
     dialogue: [
       {
-        speaker: '研究者',
+        speaker: 'Researcher',
         japanese: '男女共同参画社会基本法が制定されたとはいえ、実質的な男女平等の実現にはまだ程遠い現状です。',
         kana: 'だんじょきょうどうさんかくしゃかいきほんほうがせいていされたとはいえ、じっしつてきなだんじょびょうどうのじつげんにはまだほどとおいげんじょうです。',
-        vietnamese: 'Tuy nói là đã ban hành Luật Cơ bản về Xã hội Bình đẳng Nam nữ, nhưng thực tế vẫn còn rất xa mới đạt được bình đẳng giới thực chất.'
+        vietnamese: 'The Basic Act for a Gender-Equal Society may have been enacted, but the reality is that substantive gender equality is still far from being achieved.'
       },
       {
-        speaker: '女性起業家',
+        speaker: 'Female entrepreneur',
         japanese: '女性だからといって、経営能力が劣るという偏見は、もはや通用しない時代です。',
         kana: 'じょせいだからといって、けいえいのうりょくがおとるというへんけんは、もはやつうようしないじだいです。',
-        vietnamese: 'Không phải vì là phụ nữ mà năng lực quản lý kém hơn — thời đại mà định kiến đó còn tồn tại đã qua rồi.'
+        vietnamese: 'The prejudice that women have inferior management ability just because they are women — that\'s an idea whose time has passed.'
       },
       {
-        speaker: '研究者',
+        speaker: 'Researcher',
         japanese: '制度が整ったとはいえ、「女性史」の観点からみれば、意識の変革こそが最大の課題です。',
         kana: 'せいどがととのったとはいえ、「じょせいし」のかんてんからみれば、いしきのへんかくこそがさいだいのかだいです。',
-        vietnamese: 'Tuy nói là thể chế đã hoàn thiện, nhưng nhìn từ góc độ "lịch sử phụ nữ", thay đổi nhận thức mới là thách thức lớn nhất.'
+        vietnamese: 'The system may be in place, but from the perspective of "women\'s history," changing mindsets is precisely the biggest challenge.'
       },
       {
-        speaker: '女性起業家',
+        speaker: 'Female entrepreneur',
         japanese: '数が少ないからといって、声を上げることを諦めてはなりません。一人の行動が社会を変え得るのです。',
         kana: 'かずがすくないからといって、こえをあげることをあきらめてはなりません。ひとりのこうどうがしゃかいをかええうるのです。',
-        vietnamese: 'Không phải vì số lượng ít mà từ bỏ việc lên tiếng. Hành động của một người có thể thay đổi xã hội.'
+        vietnamese: 'Just because our numbers are few doesn\'t mean we should give up speaking out. One person\'s action can change society.'
       }
     ],
     culturalNote:
-      'Nhật Bản xếp hạng thấp về bình đẳng giới (Gender Gap Index) trong số các nước phát triển. 男女共同参画社会 (だんじょきょうどうさんかくしゃかい — xã hội tham gia bình đẳng nam nữ) là mục tiêu quốc gia nhưng thực tế còn nhiều rào cản: "bức tường thủy tinh" (ガラスの天井), kỳ vọng phụ nữ nghỉ việc sau khi sinh (寿退社 — ことぶきたいしゃ). Gần đây, phong trào #MeToo và 女性活躍推進法 (luật thúc đẩy phụ nữ hoạt động tích cực) đang tạo thay đổi dần dần.'
+      'Japan ranks low on the Gender Gap Index among developed nations. A gender-equal participatory society (男女共同参画社会) is a national goal, but many barriers remain: the "glass ceiling" (ガラスの天井), and expectations that women will quit their jobs after childbirth (寿退社 — kotobuki taisha). Recently, the #MeToo movement and the Act on Promotion of Women\'s Active Engagement (女性活躍推進法) are gradually driving change.'
   },
 
   // ── 23. Disaster Response (災害対応) ────────────────────────
   {
     id: 'n1-conv-23',
-    title: 'Ứng phó thiên tai',
+    title: 'Disaster response',
     titleJp: '災害対応',
     level: 'N1',
-    situation: 'Chuyên gia phòng chống thiên tai và thị trưởng thảo luận về bài học từ trận đại địa chấn và kế hoạch phục hồi',
+    situation: 'A disaster prevention expert and a mayor discuss lessons from a major earthquake and recovery planning',
     patterns: [
       {
         japanese: '〜極まりない',
         kana: '〜きわまりない',
-        vietnamese: 'Vô cùng ~, ~ đến cực điểm.',
+        vietnamese: 'Extremely ~, ~ to the utmost degree.',
         memoryTip:
-          'Nhớ: きわまりない = "không có giới hạn cực" → cảm xúc/tình trạng đã vượt qua MỌI GIỚI HẠN. Dùng cho cả tích cực (光栄極まりない) lẫn tiêu cực (危険極まりない). Mạnh hơn とても nhiều lần.'
+          'Remember: きわまりない = "has no limit" → a feeling/state that has exceeded EVERY BOUND. Used for both positive (光栄極まりない) and negative (危険極まりない) extremes. Much stronger than とても.'
       },
       {
         japanese: '〜を皮切りに',
         kana: '〜をかわきりに',
-        vietnamese: 'Bắt đầu từ ~, lấy ~ làm khởi điểm.',
+        vietnamese: 'Starting with ~, taking ~ as the starting point.',
         memoryTip:
-          'Nhớ: かわきり = "cắt lớp da đầu tiên" (từ kịch Kabuki — diễn viên đầu tiên mở màn) → sự kiện ĐẦU TIÊN khai mào chuỗi sự kiện tiếp theo. Hiệu ứng domino bắt đầu từ quân cờ đầu tiên.'
+          'Remember: かわきり = "cutting the first layer of skin" (originally from Kabuki theater — the first actor to open the show) → the FIRST event that kicks off a chain of subsequent events. A domino effect starting with the first tile.'
       }
     ],
     dialogue: [
       {
-        speaker: '防災専門家',
+        speaker: 'Disaster prevention expert',
         japanese: '東日本大震災を皮切りに、日本の防災意識は大きく変わりました。しかし、備えはまだ不十分極まりない状態です。',
         kana: 'ひがしにほんだいしんさいをかわきりに、にほんのぼうさいいしきはおおきくかわりました。しかし、そなえはまだふじゅうぶんきわまりないじょうたいです。',
-        vietnamese: 'Bắt đầu từ thảm họa Đại địa chấn Đông Nhật Bản, ý thức phòng chống thiên tai của Nhật đã thay đổi lớn. Tuy nhiên, sự chuẩn bị vẫn ở trạng thái thiếu sót vô cùng.'
+        vietnamese: 'Starting with the Great East Japan Earthquake, Japan\'s disaster preparedness awareness changed dramatically. However, preparations remain extremely insufficient.'
       },
       {
-        speaker: '市長',
+        speaker: 'Mayor',
         japanese: '避難計画の見直しを皮切りに、地域全体の復旧体制を再構築しなければなりません。',
         kana: 'ひなんけいかくのみなおしをかわきりに、ちいきぜんたいのふっきゅうたいせいをさいこうちくしなければなりません。',
-        vietnamese: 'Lấy việc rà soát kế hoạch sơ tán làm khởi điểm, cần tái thiết lập hệ thống phục hồi cho toàn khu vực.'
+        vietnamese: 'Starting with a review of the evacuation plan, we must rebuild the entire region\'s recovery system.'
       },
       {
-        speaker: '防災専門家',
+        speaker: 'Disaster prevention expert',
         japanese: '住民の命を預かる立場として、準備不足は無責任極まりないと言わざるを得ません。',
         kana: 'じゅうみんのいのちをあずかるたちばとして、じゅんびぶそくはむせきにんきわまりないといわざるをえません。',
-        vietnamese: 'Với tư cách là người chịu trách nhiệm sinh mạng cư dân, phải thừa nhận rằng thiếu chuẩn bị là vô trách nhiệm đến cực điểm.'
+        vietnamese: 'As those entrusted with residents\' lives, I must say that inadequate preparation is utterly irresponsible.'
       },
       {
-        speaker: '市長',
+        speaker: 'Mayor',
         japanese: 'おっしゃる通りです。この教訓を皮切りに、「自助・共助・公助」の精神で、災害に強い街づくりを進めてまいります。',
         kana: 'おっしゃるとおりです。このきょうくんをかわきりに、「じじょ・きょうじょ・こうじょ」のせいしんで、さいがいにつよいまちづくりをすすめてまいります。',
-        vietnamese: 'Đúng như ngài nói. Lấy bài học này làm khởi điểm, với tinh thần "tự cứu - cộng đồng cứu - chính quyền cứu", chúng tôi sẽ thúc đẩy xây dựng thành phố chống chịu thiên tai.'
+        vietnamese: 'You\'re absolutely right. Starting with this lesson, we will move forward with building a disaster-resilient city, guided by the spirit of "self-help, mutual help, public help."'
       }
     ],
     culturalNote:
-      'Nhật Bản là cường quốc phòng chống thiên tai với triết lý 自助・共助・公助 (じじょ・きょうじょ・こうじょ — tự cứu mình, cộng đồng giúp nhau, chính quyền hỗ trợ). Đại địa chấn Đông Nhật Bản 2011 (東日本大震災) với sóng thần và sự cố hạt nhân Fukushima là thảm họa kép chưa từng có. Khái niệm 復興 (ふっこう — phục hưng) không chỉ là tái thiết vật chất mà còn là hồi phục tinh thần cộng đồng — thể hiện qua câu khẩu hiệu 頑張ろう日本 (がんばろうにほん — Nhật Bản cố lên).'
+      'Japan is a disaster-preparedness powerhouse guided by the philosophy of 自助・共助・公助 (jijo-kyojo-koujo — self-help, mutual help, public help). The 2011 Great East Japan Earthquake (東日本大震災), with its tsunami and the Fukushima nuclear disaster, was an unprecedented compound catastrophe. The concept of 復興 (fukkou — recovery) means not just physical reconstruction but also restoring community spirit — captured in the slogan 頑張ろう日本 (ganbarou Nippon — "let\'s do our best, Japan").'
   },
 
   // ── 24. Immigration Policy (移民政策) ──────────────────────
   {
     id: 'n1-conv-24',
-    title: 'Chính sách nhập cư',
+    title: 'Immigration policy',
     titleJp: '移民政策',
     level: 'N1',
-    situation: 'Nhà xã hội học và quan chức chính phủ thảo luận về chính sách đa văn hóa và tiếp nhận lao động nước ngoài',
+    situation: 'A sociologist and a government official discuss multicultural policy and the acceptance of foreign workers',
     patterns: [
       {
         japanese: '〜にせよ〜にせよ',
         kana: '〜にせよ〜にせよ',
-        vietnamese: 'Dù ~ hay ~, bất kể ~ hay ~.',
+        vietnamese: 'Whether ~ or ~, regardless of ~ or ~.',
         memoryTip:
-          'Nhớ: にせよ = "dù cho là" (nhượng bộ) × 2 → liệt kê hai lựa chọn ĐỐI LẬP rồi nói "dù thế nào cũng..." Phiên bản trang trọng hơn của でも〜でも. Dùng trong chính sách và hùng biện.'
+          'Remember: にせよ = "even granting that" (concession) × 2 → lists two opposing options, then says "either way..." A more formal version of でも〜でも. Used in policy discussions and formal argument.'
       },
       {
         japanese: '〜ならでは',
         kana: '〜ならでは',
-        vietnamese: 'Chỉ có ~ mới có thể, độc nhất của ~.',
+        vietnamese: 'Unique to ~, only possible because of ~.',
         memoryTip:
-          'Nhớ: ならでは = "nếu không phải thì không" → thứ CHỈ TỒN TẠI ở X, không đâu khác có. "Hương vị ならでは của Kyoto" = chỉ Kyoto mới có. Ca ngợi sự ĐỘC NHẤT VÔ NHỊ.'
+          'Remember: ならでは = "if not that, then not" → something that exists ONLY at X, nowhere else. "The flavor ならでは of Kyoto" = something only Kyoto has. Praises uniqueness.'
       }
     ],
     dialogue: [
       {
-        speaker: '社会学者',
+        speaker: 'Sociologist',
         japanese: '移民を受け入れるにせよ受け入れないにせよ、多文化共生の議論は避けて通れません。',
         kana: 'いみんをうけいれるにせようけいれないにせよ、たぶんかきょうせいのぎろんはさけてとおれません。',
-        vietnamese: 'Dù tiếp nhận hay không tiếp nhận nhập cư, cuộc thảo luận về cộng sinh đa văn hóa không thể tránh khỏi.'
+        vietnamese: 'Whether we accept immigration or not, the discussion of multicultural coexistence cannot be avoided.'
       },
       {
-        speaker: '政府関係者',
+        speaker: 'Government official',
         japanese: '労働力不足の解消にせよ文化的多様性の促進にせよ、段階的なアプローチが不可欠です。',
         kana: 'ろうどうりょくぶそくのかいしょうにせよぶんかてきたようせいのそくしんにせよ、だんかいてきなアプローチがふかけつです。',
-        vietnamese: 'Dù là giải quyết thiếu hụt lao động hay thúc đẩy đa dạng văn hóa, cách tiếp cận từng bước là không thể thiếu.'
+        vietnamese: 'Whether it\'s resolving the labor shortage or promoting cultural diversity, a phased approach is essential.'
       },
       {
-        speaker: '社会学者',
+        speaker: 'Sociologist',
         japanese: '日本ならではの「おもてなし」の精神を、多文化共生の基盤にできるのではないでしょうか。',
         kana: 'にほんならではの「おもてなし」のせいしんを、たぶんかきょうせいのきばんにできるのではないでしょうか。',
-        vietnamese: 'Tinh thần "omotenashi" đón tiếp khách — thứ chỉ Nhật Bản mới có — liệu có thể trở thành nền tảng cho cộng sinh đa văn hóa không?'
+        vietnamese: 'Couldn\'t the spirit of "omotenashi" — hospitality unique to Japan — become the foundation for multicultural coexistence?'
       },
       {
-        speaker: '政府関係者',
+        speaker: 'Government official',
         japanese: '技能実習制度の問題にせよ、在留資格の複雑さにせよ、制度設計そのものを見直す時期に来ています。',
         kana: 'ぎのうじっしゅうせいどのもんだいにせよ、ざいりゅうしかくのふくざつさにせよ、せいどせっけいそのものをみなおすじきにきています。',
-        vietnamese: 'Dù là vấn đề chế độ thực tập kỹ năng hay sự phức tạp của tư cách cư trú, đã đến lúc rà soát lại chính thiết kế thể chế.'
+        vietnamese: 'Whether it\'s the problems with the Technical Intern Training Program or the complexity of residence status, the time has come to reassess the very design of the system.'
       },
       {
-        speaker: '社会学者',
+        speaker: 'Sociologist',
         japanese: '異なる文化ならではの視点こそが、社会の活力を生み出す源泉に他なりません。',
         kana: 'ことなるぶんかならではのしてんこそが、しゃかいのかつりょくをうみだすげんせんにほかなりません。',
-        vietnamese: 'Góc nhìn độc đáo chỉ có ở những nền văn hóa khác nhau chính là nguồn suối tạo ra sức sống cho xã hội, không gì khác.'
+        vietnamese: 'The perspectives unique to different cultures are precisely the wellspring that generates a society\'s vitality — nothing else.'
       }
     ],
     culturalNote:
-      'Nhật Bản truyền thống là xã hội đồng nhất (単一民族社会) nhưng đang đối mặt với nhu cầu lao động nước ngoài do dân số giảm. Chế độ 技能実習 (ぎのうじっしゅう — thực tập kỹ năng) bị phê phán vì bóc lột lao động. Năm 2019, Nhật mở visa 特定技能 (とくていぎのう — kỹ năng đặc định) cho 14 ngành thiếu nhân lực. Khái niệm 多文化共生 (たぶんかきょうせい — cộng sinh đa văn hóa) đang thay thế dần mô hình đồng hóa truyền thống.'
+      'Japan has traditionally been seen as a homogeneous society (単一民族社会) but is now facing a growing need for foreign labor due to a shrinking population. The Technical Intern Training Program (技能実習) has been criticized for exploiting workers. In 2019, Japan opened the "Specified Skilled Worker" visa (特定技能) for 14 industries facing labor shortages. The concept of multicultural coexistence (多文化共生) is gradually replacing the traditional assimilation model.'
   },
 
   // ── 25. Future of Humanity (人類の未来) ─────────────────────
   {
     id: 'n1-conv-25',
-    title: 'Tương lai nhân loại',
+    title: 'The future of humanity',
     titleJp: '人類の未来',
     level: 'N1',
-    situation: 'Nhà vật lý thiên văn và nhà tương lai học thảo luận về vận mệnh nhân loại, tiến bộ khoa học và phát triển bền vững',
+    situation: 'An astrophysicist and a futurist discuss the fate of humanity, scientific progress, and sustainable development',
     patterns: [
       {
         japanese: '〜たりとも〜ない',
         kana: '〜たりとも〜ない',
-        vietnamese: 'Dù chỉ một ~ cũng không ~.',
+        vietnamese: 'Not even a single ~.',
         memoryTip:
-          'Nhớ: たりとも = "dù chỉ là" → nhấn mạnh mức ĐỘ NHỎ NHẤT cũng không được phép. "Dù chỉ một giây cũng không lãng phí" — sự tuyệt đối hóa đến từng chi tiết nhỏ nhất.'
+          'Remember: たりとも = "even if it were merely" → emphasizes that not even the SMALLEST amount is permitted. "Not even a single second wasted" — absolutizing down to the finest detail.'
       },
       {
         japanese: '〜て然るべき',
         kana: '〜てしかるべき',
-        vietnamese: 'Đáng lẽ phải ~, ~ là điều đương nhiên.',
+        vietnamese: 'Should rightfully ~, it\'s only natural that ~.',
         memoryTip:
-          'Nhớ: しかるべき = "đáng như vậy, nên như vậy" → kết quả TẤT YẾU theo logic hoặc đạo đức. "Trời sáng thì mặt trời MẪU SỐ PHẢI mọc" — kỳ vọng về điều đương nhiên nhưng chưa xảy ra.'
+          'Remember: しかるべき = "as it should rightly be" → the INEVITABLE outcome according to logic or morality. "Naturally, the sun rises" — an expectation of what is proper but hasn\'t happened yet.'
       },
       {
         japanese: '〜て止まない',
         kana: '〜てやまない',
-        vietnamese: 'Không ngừng ~, mãi mãi ~ (nguyện vọng tha thiết).',
+        vietnamese: 'Endlessly ~, forever ~ (heartfelt wish).',
         memoryTip:
-          'Nhớ: やまない = "không dừng lại" (止まない) → lửa nguyện cầu cháy mãi trong lòng. Phiên bản Kanji của てやまない ở bài 6 — dùng khi hy vọng cho tương lai nhân loại.'
+          'Remember: やまない = "does not stop" (止まない) → a flame of hope burning endlessly in one\'s heart. The kanji version of てやまない from Lesson 6 — used when hoping for humanity\'s future.'
       }
     ],
     dialogue: [
       {
-        speaker: '天体物理学者',
+        speaker: 'Astrophysicist',
         japanese: '人類は科学技術の力で宇宙に進出すべきです。一日たりとも研究を怠ってはなりません。',
         kana: 'じんるいはかがくぎじゅつのちからでうちゅうにしんしゅつすべきです。いちにちたりともけんきゅうをおこたってはなりません。',
-        vietnamese: 'Nhân loại nên tiến ra vũ trụ bằng sức mạnh khoa học kỹ thuật. Không được lơ là nghiên cứu dù chỉ một ngày.'
+        vietnamese: 'Humanity should advance into space through the power of science and technology. We must not neglect research even for a single day.'
       },
       {
-        speaker: '未来学者',
+        speaker: 'Futurist',
         japanese: '宇宙進出もさることながら、まずは地球の持続可能性を確保して然るべきではないでしょうか。',
         kana: 'うちゅうしんしゅつもさることながら、まずはちきゅうのじぞくかのうせいをかくほしてしかるべきではないでしょうか。',
-        vietnamese: 'Tiến ra vũ trụ đã đành quan trọng, nhưng trước hết đáng lẽ phải đảm bảo tính bền vững của Trái Đất chẳng phải sao?'
+        vietnamese: 'Advancing into space goes without saying, but shouldn\'t we first rightfully ensure the sustainability of Earth?'
       },
       {
-        speaker: '天体物理学者',
+        speaker: 'Astrophysicist',
         japanese: '人類が一瞬たりとも進歩を止めなかったからこそ、今日の文明があるのです。',
         kana: 'じんるいがいっしゅんたりともしんぽをとめなかったからこそ、こんにちのぶんめいがあるのです。',
-        vietnamese: 'Chính vì nhân loại không dừng bước tiến dù chỉ một khoảnh khắc, nên mới có nền văn minh ngày nay.'
+        vietnamese: 'It is precisely because humanity never stopped progressing, not even for a moment, that today\'s civilization exists.'
       },
       {
-        speaker: '未来学者',
+        speaker: 'Futurist',
         japanese: '私は人類の叡智を信じて止みません。科学技術と倫理の調和こそが、持続可能な未来の鍵に他なりません。',
         kana: 'わたしはじんるいのえいちをしんじてやみません。かがくぎじゅつとりんりのちょうわこそが、じぞくかのうなみらいのかぎにほかなりません。',
-        vietnamese: 'Tôi tin mãi không thôi vào trí tuệ nhân loại. Sự hài hòa giữa khoa học kỹ thuật và đạo đức chính là chìa khóa cho tương lai bền vững, không gì khác.'
+        vietnamese: 'I believe endlessly in humanity\'s wisdom. The harmony between science, technology, and ethics is precisely the key to a sustainable future, and nothing else.'
       },
       {
-        speaker: '天体物理学者',
+        speaker: 'Astrophysicist',
         japanese: '次の世代が、我々の築いた基盤の上でさらなる飛躍を遂げることを、願って止みません。',
         kana: 'つぎのせだいが、われわれのきずいたきばんのうえでさらなるひやくをとげることを、ねがってやみません。',
-        vietnamese: 'Tôi nguyện cầu không ngừng rằng thế hệ tiếp theo sẽ đạt được bước nhảy vọt hơn nữa trên nền tảng chúng ta xây dựng.'
+        vietnamese: 'I wish endlessly that the next generation will achieve even greater leaps upon the foundation we have built.'
       }
     ],
     culturalNote:
-      'Nhật Bản đóng góp lớn cho khoa học với nhiều giải Nobel (日本人ノーベル賞受賞者) trong vật lý, hóa học và y sinh. Cơ quan Hàng không Vũ trụ Nhật (JAXA — 宇宙航空研究開発機構) tích cực trong khám phá tiểu hành tinh (Hayabusa — はやぶさ). Khái niệm 持続可能性 (じぞくかのうせい — sustainability) gắn liền với triết lý もったいない (tiếc nuối sự lãng phí) — quan niệm truyền thống Nhật về trân trọng tài nguyên, nay được UNESCO công nhận như triết lý môi trường toàn cầu.'
+      'Japan has made major contributions to science, with many Nobel laureates (日本人ノーベル賞受賞者) in physics, chemistry, and medicine. The Japan Aerospace Exploration Agency (JAXA — 宇宙航空研究開発機構) has been active in asteroid exploration (the Hayabusa missions — はやぶさ). The concept of sustainability (持続可能性) is tied to the philosophy of mottainai (もったいない — regret over waste) — a traditional Japanese view of valuing resources, now recognized by UNESCO as a global environmental philosophy.'
   }
 ];

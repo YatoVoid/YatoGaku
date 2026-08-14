@@ -4,1681 +4,1681 @@ export const N2_CONVERSATIONS: ConversationPattern[] = [
   // ── 1. Business Meeting (会議) ──────────────────────────────────
   {
     id: 'n2-conv-01',
-    title: 'Cuộc họp kinh doanh',
+    title: 'Business meeting',
     titleJp: '会議',
     level: 'N2',
-    situation: 'Tham gia cuộc họp công ty, trình bày đề xuất và đi đến quyết định',
+    situation: 'Attending a company meeting, presenting a proposal, and reaching a decision',
     patterns: [
       {
         japanese: '新しいプロジェクトについて提案がございます。',
         kana: 'あたらしいプロジェクトについてていあんがございます。',
-        vietnamese: 'Tôi có một đề xuất về dự án mới.',
+        vietnamese: 'I have a proposal regarding the new project.',
         memoryTip:
-          'Nhớ: 提案 (ていあん) = "tề + án" → đề ra phương án → đề xuất. ございます là dạng kính ngữ của あります.'
+          'Remember: 提案 (teian) = a proposal. ございます is the honorific form of あります.'
       },
       {
         japanese: 'この件について、もう少し検討させていただけますか。',
         kana: 'このけんについて、もうすこしけんとうさせていただけますか。',
-        vietnamese: 'Về vấn đề này, cho phép tôi được xem xét thêm một chút có được không?',
+        vietnamese: 'Regarding this matter, could I please have a bit more time to consider it?',
         memoryTip:
-          'Nhớ: 検討 (けんとう) = "kiểm + thảo" → kiểm tra và thảo luận → xem xét. させていただく = xin phép được làm (khiêm nhường nhất).'
+          'Remember: 検討 (kentou) = to examine/consider. させていただく = the most humble way to ask permission to do something.'
       },
       {
         japanese: 'それでは、本日の会議で決定したいと思います。',
         kana: 'それでは、ほんじつのかいぎでけっていしたいとおもいます。',
-        vietnamese: 'Vậy thì, tôi muốn đưa ra quyết định trong cuộc họp hôm nay.',
+        vietnamese: 'In that case, I would like us to reach a decision at today\'s meeting.',
         memoryTip:
-          'Nhớ: 決定 (けってい) = "quyết + định" → quyết định. 本日 (ほんじつ) = 今日 dạng trang trọng dùng trong công việc.'
+          'Remember: 決定 (kettei) = a decision. 本日 (honjitsu) is the formal, business version of 今日.'
       }
     ],
     dialogue: [
       {
-        speaker: '部長 (Trưởng phòng)',
+        speaker: 'Manager',
         japanese: '皆さん、本日の議題に入りましょう。',
         kana: 'みなさん、ほんじつのぎだいにはいりましょう。',
-        vietnamese: 'Mọi người, hãy bắt đầu vào chủ đề hôm nay.'
+        vietnamese: 'Everyone, let\'s get started on today\'s agenda.'
       },
       {
-        speaker: '田中 (Tanaka)',
+        speaker: 'Tanaka',
         japanese: 'はい。新製品の販売戦略について提案がございます。',
         kana: 'はい。しんせいひんのはんばいせんりゃくについてていあんがございます。',
-        vietnamese: 'Vâng. Tôi có đề xuất về chiến lược bán hàng sản phẩm mới.'
+        vietnamese: 'Yes. I have a proposal about the sales strategy for the new product.'
       },
       {
-        speaker: '部長',
+        speaker: 'Manager',
         japanese: 'なるほど。具体的にはどのようなことでしょうか。',
         kana: 'なるほど。ぐたいてきにはどのようなことでしょうか。',
-        vietnamese: 'Ra vậy. Cụ thể thì là điều gì?'
+        vietnamese: 'I see. What specifically did you have in mind?'
       },
       {
-        speaker: '田中',
+        speaker: 'Tanaka',
         japanese: 'オンラインマーケティングを強化すべきだと考えております。',
         kana: 'オンラインマーケティングをきょうかすべきだとかんがえております。',
-        vietnamese: 'Tôi cho rằng nên tăng cường marketing trực tuyến.'
+        vietnamese: 'I believe we should strengthen our online marketing.'
       },
       {
-        speaker: '鈴木 (Suzuki)',
+        speaker: 'Suzuki',
         japanese: 'その点について、もう少し検討させていただけますか。',
         kana: 'そのてんについて、もうすこしけんとうさせていただけますか。',
-        vietnamese: 'Về điểm đó, cho phép tôi được xem xét thêm có được không?'
+        vietnamese: 'Regarding that point, could I have a bit more time to consider it?'
       },
       {
-        speaker: '部長',
+        speaker: 'Manager',
         japanese: 'では、来週までに結論を出しましょう。',
         kana: 'では、らいしゅうまでにけつろんをだしましょう。',
-        vietnamese: 'Vậy thì, hãy đưa ra kết luận trước tuần sau.'
+        vietnamese: 'Then let\'s reach a conclusion by next week.'
       }
     ],
     culturalNote:
-      'Trong cuộc họp Nhật Bản, người ta thường không phản đối trực tiếp mà dùng cách nói gián tiếp như 「もう少し検討させていただけますか」(cho tôi xem xét thêm) thay vì nói "tôi không đồng ý". Quyết định thường được đưa ra theo hình thức đồng thuận (根回し - nemawashi), nghĩa là thảo luận riêng trước khi họp chính thức.'
+      'In Japanese meetings, people rarely oppose something directly — instead of saying "I disagree", they use an indirect phrase like もう少し検討させていただけますか (let me consider it a bit more). Decisions are usually reached by consensus (根回し — nemawashi), meaning informal discussion happens privately before the official meeting.'
   },
 
   // ── 2. Negotiation (交渉) ──────────────────────────────────────
   {
     id: 'n2-conv-02',
-    title: 'Đàm phán',
+    title: 'Negotiation',
     titleJp: '交渉',
     level: 'N2',
-    situation: 'Đàm phán hợp đồng với đối tác kinh doanh, thương lượng điều kiện',
+    situation: 'Negotiating a contract with a business partner and discussing terms',
     patterns: [
       {
         japanese: '価格について再度ご検討いただければ幸いです。',
         kana: 'かかくについてさいどごけんとういただければさいわいです。',
-        vietnamese: 'Nếu quý vị xem xét lại về giá cả thì thật may mắn (= Rất mong quý vị xem xét lại về giá).',
+        vietnamese: 'It would be greatly appreciated if you could reconsider the price.',
         memoryTip:
-          'Nhớ: ～いただければ幸いです = cấu trúc lịch sự nhất để yêu cầu. いただく (khiêm nhường) + ければ (điều kiện) + 幸い (may mắn) → "nếu được thế thì tôi rất vui".'
+          'Remember: ～いただければ幸いです is one of the most polite request structures — いただく (humble) + ければ (conditional) + 幸い (fortunate) = "I would be glad if that could happen."'
       },
       {
         japanese: '納期を一週間延ばしていただきたいということでご相談に参りました。',
         kana: 'のうきをいっしゅうかんのばしていただきたいということでごそうだんにまいりました。',
-        vietnamese: 'Tôi đến để bàn bạc về việc muốn xin gia hạn thời hạn giao hàng thêm một tuần.',
+        vietnamese: 'I\'ve come to discuss the possibility of extending the delivery deadline by one week.',
         memoryTip:
-          'Nhớ: ～ということで = "theo nghĩa là / với nội dung là" → nối lý do với hành động. 参りました (まいりました) là dạng khiêm nhường của 来ました.'
+          'Remember: ～ということで = "on the grounds that/regarding" — links a reason to an action. 参りました is the humble form of 来ました.'
       },
       {
         japanese: '双方にとってメリットのある条件を見つけたいと存じます。',
         kana: 'そうほうにとってメリットのあるじょうけんをみつけたいとぞんじます。',
-        vietnamese: 'Tôi muốn tìm ra điều kiện có lợi cho cả hai bên.',
+        vietnamese: 'I would like to find terms that are beneficial to both sides.',
         memoryTip:
-          'Nhớ: 存じます (ぞんじます) = dạng khiêm nhường của 思います. Dùng khi nói về suy nghĩ CỦA MÌNH với người trên. 双方 (そうほう) = song phương = hai bên.'
+          'Remember: 存じます (zonjimasu) is the humble form of 思います, used when stating YOUR OWN opinion to someone of higher status. 双方 (souhou) = both parties.'
       }
     ],
     dialogue: [
       {
-        speaker: '山本 (Yamamoto)',
+        speaker: 'Yamamoto',
         japanese: '本日はお忙しいところ、お時間をいただきありがとうございます。',
         kana: 'ほんじつはおいそがしいところ、おじかんをいただきありがとうございます。',
-        vietnamese: 'Hôm nay, dù quý vị rất bận, xin cảm ơn đã dành thời gian.'
+        vietnamese: 'Thank you for taking the time today despite your busy schedule.'
       },
       {
-        speaker: '李 (Lee)',
+        speaker: 'Lee',
         japanese: 'いいえ、こちらこそ。早速ですが、契約の件についてお話しさせていただけますか。',
         kana: 'いいえ、こちらこそ。さっそくですが、けいやくのけんについておはなしさせていただけますか。',
-        vietnamese: 'Không có gì, bên tôi mới phải cảm ơn. Đi thẳng vào vấn đề, tôi có thể nói về vụ hợp đồng được không?'
+        vietnamese: 'Not at all, thank you as well. If I may get right to it, could we discuss the contract?'
       },
       {
-        speaker: '山本',
+        speaker: 'Yamamoto',
         japanese: '価格について再度ご検討いただければ幸いです。',
         kana: 'かかくについてさいどごけんとういただければさいわいです。',
-        vietnamese: 'Rất mong quý vị xem xét lại về giá cả.'
+        vietnamese: 'We would greatly appreciate it if you could reconsider the price.'
       },
       {
-        speaker: '李',
+        speaker: 'Lee',
         japanese: 'ご要望は承りましたが、これ以上の値下げは難しい状況でございます。',
         kana: 'ごようぼうはうけたまわりましたが、これいじょうのねさげはむずかしいじょうきょうでございます。',
-        vietnamese: 'Tôi đã tiếp nhận yêu cầu, nhưng việc giảm giá thêm nữa là tình huống khó khăn.'
+        vietnamese: 'I\'ve noted your request, but further discounting is difficult under the current circumstances.'
       },
       {
-        speaker: '山本',
+        speaker: 'Yamamoto',
         japanese: 'では、数量を増やす代わりに単価を下げていただくというのはいかがでしょうか。',
         kana: 'では、すうりょうをふやすかわりにたんかをさげていただくというのはいかがでしょうか。',
-        vietnamese: 'Vậy thì, thay vì tăng số lượng thì giảm đơn giá thì sao ạ?'
+        vietnamese: 'Then how about lowering the unit price in exchange for us increasing the quantity?'
       },
       {
-        speaker: '李',
+        speaker: 'Lee',
         japanese: 'なるほど、その方向で前向きに検討させていただきます。',
         kana: 'なるほど、そのほうこうでまえむきにけんとうさせていただきます。',
-        vietnamese: 'Ra vậy, tôi sẽ xem xét tích cực theo hướng đó.'
+        vietnamese: 'I see. We will give that direction positive consideration.'
       }
     ],
     culturalNote:
-      'Trong đàm phán Nhật Bản, câu 「前向きに検討させていただきます」(xem xét tích cực) không nhất thiết nghĩa là đồng ý — có thể chỉ là cách từ chối nhẹ nhàng. Người Nhật rất coi trọng việc giữ thể diện cho đối phương (面子 - mentsu), nên hiếm khi nói "không" trực tiếp. Cần đọc không khí (空気を読む - kuuki wo yomu) để hiểu ý thực sự.'
+      'In Japanese negotiations, the phrase 前向きに検討させていただきます (we will give it positive consideration) doesn\'t necessarily mean "yes" — it can simply be a gentle way of declining. Japanese people place great importance on preserving the other party\'s face (面子 — mentsu), so they rarely say "no" outright. Reading between the lines (空気を読む — kuuki wo yomu) is essential to grasp the real meaning.'
   },
 
   // ── 3. Academic Discussion (学術) ─────────────────────────────
   {
     id: 'n2-conv-03',
-    title: 'Thảo luận học thuật',
+    title: 'Academic discussion',
     titleJp: '学術討論',
     level: 'N2',
-    situation: 'Thảo luận về nghiên cứu tại đại học, trình bày và phản biện luận văn',
+    situation: 'Discussing university research, presenting and defending a thesis',
     patterns: [
       {
         japanese: 'この研究では、日本語教育における動機づけの要因を分析しました。',
         kana: 'このけんきゅうでは、にほんごきょういくにおけるどうきづけのよういんをぶんせきしました。',
-        vietnamese: 'Trong nghiên cứu này, chúng tôi đã phân tích các yếu tố tạo động lực trong giáo dục tiếng Nhật.',
+        vietnamese: 'In this study, we analyzed the factors of motivation in Japanese language education.',
         memoryTip:
-          'Nhớ: 研究 (けんきゅう) = "nghiên + cứu" → nghiên cứu. 分析 (ぶんせき) = "phân + tích" → phân tích. における = "trong/ở" (dạng viết, trang trọng hơn の中の).'
+          'Remember: 研究 (kenkyuu) = research. 分析 (bunseki) = to analyze. における = "in/at" (a formal, written equivalent of の中の).'
       },
       {
         japanese: '先行研究と比較すると、異なる結果が得られました。',
         kana: 'せんこうけんきゅうとひかくすると、ことなるけっかがえられました。',
-        vietnamese: 'So sánh với nghiên cứu trước đó, chúng tôi thu được kết quả khác.',
+        vietnamese: 'Compared to prior research, we obtained different results.',
         memoryTip:
-          'Nhớ: 先行研究 (せんこうけんきゅう) = "tiên hành nghiên cứu" → nghiên cứu đi trước. 得られました = dạng bị động khả năng của 得る → "có thể thu được".'
+          'Remember: 先行研究 (senkou kenkyuu) = prior research (research that came before). 得られました is the potential-passive of 得る → "was able to be obtained."'
       },
       {
         japanese: '論文の結論として、さらなる調査が必要であると考えられます。',
         kana: 'ろんぶんのけつろんとして、さらなるちょうさがひつようであるとかんがえられます。',
-        vietnamese: 'Kết luận của luận văn là cần thiết phải có thêm điều tra nữa.',
+        vietnamese: 'As a conclusion of the paper, further investigation is considered necessary.',
         memoryTip:
-          'Nhớ: 論文 (ろんぶん) = "luận + văn" → luận văn. 考えられます = bị động → "được cho rằng / có thể nghĩ rằng" (khách quan hơn 考えます).'
+          'Remember: 論文 (ronbun) = a thesis/paper. 考えられます = passive → "is thought to be" (more objective than 考えます).'
       }
     ],
     dialogue: [
       {
-        speaker: '佐藤教授 (GS. Sato)',
+        speaker: 'Prof. Sato',
         japanese: '田中さんの研究テーマについて発表をお願いします。',
         kana: 'たなかさんのけんきゅうテーマについてはっぴょうをおねがいします。',
-        vietnamese: 'Xin mời Tanaka trình bày về đề tài nghiên cứu.'
+        vietnamese: 'Tanaka, please present your research topic.'
       },
       {
-        speaker: '田中',
+        speaker: 'Tanaka',
         japanese: 'はい。私の論文では、バイリンガル教育の効果を分析しております。',
         kana: 'はい。わたしのろんぶんでは、バイリンガルきょういくのこうかをぶんせきしております。',
-        vietnamese: 'Vâng. Trong luận văn của tôi, tôi đang phân tích hiệu quả của giáo dục song ngữ.'
+        vietnamese: 'Yes. In my thesis, I am analyzing the effects of bilingual education.'
       },
       {
-        speaker: '佐藤教授',
+        speaker: 'Prof. Sato',
         japanese: 'データの収集方法はどのようにされましたか。',
         kana: 'データのしゅうしゅうほうほうはどのようにされましたか。',
-        vietnamese: 'Phương pháp thu thập dữ liệu được thực hiện như thế nào?'
+        vietnamese: 'How did you go about collecting the data?'
       },
       {
-        speaker: '田中',
+        speaker: 'Tanaka',
         japanese: 'アンケート調査と面接調査を併用いたしました。',
         kana: 'アンケートちょうさとめんせつちょうさをへいよういたしました。',
-        vietnamese: 'Tôi đã sử dụng kết hợp khảo sát bảng hỏi và khảo sát phỏng vấn.'
+        vietnamese: 'I used a combination of questionnaire surveys and interviews.'
       },
       {
-        speaker: '鈴木 (Sinh viên)',
+        speaker: 'Suzuki (Student)',
         japanese: '先行研究との違いについて、もう少し詳しく説明していただけませんか。',
         kana: 'せんこうけんきゅうとのちがいについて、もうすこしくわしくせつめいしていただけませんか。',
-        vietnamese: 'Về sự khác biệt với nghiên cứu trước, bạn có thể giải thích chi tiết hơn không?'
+        vietnamese: 'Could you explain in more detail how this differs from prior research?'
       },
       {
-        speaker: '田中',
+        speaker: 'Tanaka',
         japanese: '先行研究では定量的な分析が中心でしたが、本研究では定性的なアプローチも取り入れました。',
         kana: 'せんこうけんきゅうではていりょうてきなぶんせきがちゅうしんでしたが、ほんけんきゅうではていせいてきなアプローチもとりいれました。',
-        vietnamese: 'Nghiên cứu trước chủ yếu phân tích định lượng, nhưng nghiên cứu này cũng đưa vào cách tiếp cận định tính.'
+        vietnamese: 'Prior research centered on quantitative analysis, but this study also incorporated a qualitative approach.'
       }
     ],
     culturalNote:
-      'Trong môi trường học thuật Nhật Bản, quan hệ thầy-trò (師弟関係 - shitei kankei) rất được coi trọng. Sinh viên dùng kính ngữ với giáo sư, và khi phản biện luận văn, người ta thường dùng cách hỏi gián tiếp như 「～していただけませんか」thay vì chỉ trích trực tiếp. Giáo sư thường được gọi là ～先生 chứ không phải ～さん.'
+      'In Japanese academic settings, the teacher-student relationship (師弟関係 — shitei kankei) is highly valued. Students use honorific language with professors, and when questioning a thesis, indirect phrasing like ～していただけませんか is used rather than direct criticism. A professor is usually addressed as ～先生, never ～さん.'
   },
 
   // ── 4. Expressing Regret (後悔) ───────────────────────────────
   {
     id: 'n2-conv-04',
-    title: 'Bày tỏ sự hối tiếc',
+    title: 'Expressing regret',
     titleJp: '後悔',
     level: 'N2',
-    situation: 'Bày tỏ sự hối tiếc về quyết định đã qua và xin lỗi trong công việc',
+    situation: 'Expressing regret over a past decision and apologizing at work',
     patterns: [
       {
         japanese: 'もっと早く相談すればよかったです。',
         kana: 'もっとはやくそうだんすればよかったです。',
-        vietnamese: 'Giá mà tôi đã trao đổi sớm hơn thì tốt rồi.',
+        vietnamese: 'I wish I had consulted you sooner.',
         memoryTip:
-          'Nhớ: ～ば よかった = "giá mà đã làm ~ thì tốt" → hối tiếc đã KHÔNG làm. すれば (điều kiện) + よかった (đã tốt) = regret pattern. Tưởng tượng đứng ở hiện tại nhìn lại quá khứ và thở dài.'
+          'Remember: ～ばよかった = "it would have been good if I had done ~" → regret over NOT doing something. すれば (conditional) + よかった (was good) = a regret pattern. Picture standing in the present, looking back and sighing.'
       },
       {
         japanese: 'ご連絡が遅くなりまして、大変申し訳ございません。',
         kana: 'ごれんらくがおそくなりまして、たいへんもうしわけございません。',
-        vietnamese: 'Việc liên lạc bị chậm trễ, tôi thực sự vô cùng xin lỗi.',
+        vietnamese: 'I sincerely apologize for the delay in contacting you.',
         memoryTip:
-          'Nhớ: 申し訳ございません (もうしわけございません) = xin lỗi trang trọng nhất. 申し訳 = "lời biện hộ" + ございません = "không có" → "không có lời nào biện hộ được" → xin lỗi sâu sắc.'
+          'Remember: 申し訳ございません (moushiwake gozaimasen) is the most formal apology. 申し訳 = "an excuse" + ございません = "there is none" → "there is no excuse" → a deep apology.'
       },
       {
         japanese: 'あの時、もう少し慎重に判断すべきでした。',
         kana: 'あのとき、もうすこししんちょうにはんだんすべきでした。',
-        vietnamese: 'Lúc đó, lẽ ra tôi nên phán đoán thận trọng hơn một chút.',
+        vietnamese: 'At that time, I should have judged more carefully.',
         memoryTip:
-          'Nhớ: ～すべきでした = "lẽ ra nên đã làm ~" → hối tiếc mạnh hơn ～ばよかった vì hàm ý trách nhiệm/nghĩa vụ. すべき = should + でした = quá khứ.'
+          'Remember: ～すべきでした = "should have done ~" → a stronger regret than ～ばよかった since it implies duty/responsibility. すべき = should + でした = past tense.'
       }
     ],
     dialogue: [
       {
-        speaker: '高橋 (Takahashi)',
+        speaker: 'Takahashi',
         japanese: '課長、先日のプレゼンの件でお話がございます。',
         kana: 'かちょう、せんじつのプレゼンのけんでおはなしがございます。',
-        vietnamese: 'Trưởng nhóm, tôi có chuyện muốn nói về vụ thuyết trình hôm trước.'
+        vietnamese: 'Section chief, I have something to discuss regarding the presentation the other day.'
       },
       {
-        speaker: '課長 (Trưởng nhóm)',
+        speaker: 'Section chief',
         japanese: 'どうしましたか。',
         kana: 'どうしましたか。',
-        vietnamese: 'Có chuyện gì?'
+        vietnamese: 'What is it?'
       },
       {
-        speaker: '高橋',
+        speaker: 'Takahashi',
         japanese: '資料にミスがあったことに気づきました。確認が不十分で、大変申し訳ございません。',
         kana: 'しりょうにミスがあったことにきづきました。かくにんがふじゅうぶんで、たいへんもうしわけございません。',
-        vietnamese: 'Tôi nhận ra tài liệu có sai sót. Việc kiểm tra chưa đầy đủ, tôi vô cùng xin lỗi.'
+        vietnamese: 'I noticed there was a mistake in the materials. My checking was insufficient, and I sincerely apologize.'
       },
       {
-        speaker: '課長',
+        speaker: 'Section chief',
         japanese: 'そうですか。どの部分にミスがあったのですか。',
         kana: 'そうですか。どのぶぶんにミスがあったのですか。',
-        vietnamese: 'Vậy à. Phần nào bị sai sót?'
+        vietnamese: 'I see. Which part had the mistake?'
       },
       {
-        speaker: '高橋',
+        speaker: 'Takahashi',
         japanese: '売上データの数字が間違っておりました。提出前にもう一度確認すればよかったです。',
         kana: 'うりあげデータのすうじがまちがっておりました。ていしゅつまえにもういちどかくにんすればよかったです。',
-        vietnamese: 'Số liệu dữ liệu doanh thu bị sai. Giá mà tôi kiểm tra lại một lần nữa trước khi nộp thì tốt rồi.'
+        vietnamese: 'The sales data figures were wrong. I wish I had checked them once more before submitting.'
       },
       {
-        speaker: '課長',
+        speaker: 'Section chief',
         japanese: '分かりました。今後はダブルチェックを徹底してください。訂正版を明日までに出してもらえますか。',
         kana: 'わかりました。こんごはダブルチェックをてっていしてください。ていせいばんをあしたまでにだしてもらえますか。',
-        vietnamese: 'Tôi hiểu rồi. Từ nay về sau hãy kiểm tra kép triệt để. Bạn có thể nộp bản sửa trước ngày mai không?'
+        vietnamese: 'Understood. From now on, please be thorough about double-checking. Can you submit a corrected version by tomorrow?'
       }
     ],
     culturalNote:
-      'Văn hóa xin lỗi (謝罪 - shazai) ở Nhật rất quan trọng. Khi mắc lỗi trong công việc, người Nhật thường: (1) nhận lỗi ngay lập tức, (2) giải thích nguyên nhân mà không viện cớ, (3) đề xuất cách khắc phục. Câu 「申し訳ございません」nặng hơn 「すみません」rất nhiều và thể hiện sự thành tâm. Cúi đầu sâu (深々とお辞儀) thường đi kèm lời xin lỗi trang trọng.'
+      'The culture of apology (謝罪 — shazai) is very important in Japan. When making a mistake at work, Japanese people typically: (1) acknowledge the mistake immediately, (2) explain the cause without making excuses, (3) propose a fix. 申し訳ございません carries far more weight than すみません and conveys deep sincerity. A deep bow (深々とお辞儀) often accompanies a formal apology.'
   },
 
   // ── 5. Formal Letter / Email (手紙) ───────────────────────────
   {
     id: 'n2-conv-05',
-    title: 'Thư / Email trang trọng',
+    title: 'Formal letters and emails',
     titleJp: '手紙・メール',
     level: 'N2',
-    situation: 'Viết và đọc email/thư trang trọng trong bối cảnh kinh doanh Nhật Bản',
+    situation: 'Writing and reading formal business letters and emails in a Japanese context',
     patterns: [
       {
         japanese: '拝啓　時下ますますご清栄のこととお慶び申し上げます。',
         kana: 'はいけい　じかますますごせいえいのこととおよろこびもうしあげます。',
-        vietnamese: 'Kính thưa, tôi xin chúc mừng quý vị ngày càng thịnh vượng.',
+        vietnamese: 'Dear Sir/Madam, I hope this finds you in continued prosperity.',
         memoryTip:
-          'Nhớ: 拝啓 (はいけい) = "bái + khải" → cúi chào mở đầu → lời chào đầu thư. Luôn đi cặp với 敬具 (けいぐ) ở cuối thư. Giống "Dear Sir" và "Sincerely" trong tiếng Anh.'
+          'Remember: 拝啓 (haikei) = a formal salutation that opens a letter, always paired with 敬具 (keigu) at the close. Like "Dear Sir" and "Sincerely" in English.'
       },
       {
         japanese: 'お忙しいところ恐れ入りますが、ご確認いただけますと幸いに存じます。',
         kana: 'おいそがしいところおそれいりますが、ごかくにんいただけますとさいわいにぞんじます。',
-        vietnamese: 'Dù quý vị đang bận, thật xin lỗi, nhưng nếu được quý vị xác nhận thì tôi rất lấy làm vinh hạnh.',
+        vietnamese: 'I apologize for the intrusion given how busy you are, but I would be grateful if you could confirm.',
         memoryTip:
-          'Nhớ: 恐れ入りますが (おそれいりますが) = "sợ hãi mà đi vào" → cực kỳ khiêm tốn khi nhờ vả. ～いたします là khiêm nhường ngữ của します, dùng khi nói về hành động CỦA MÌNH.'
+          'Remember: 恐れ入りますが (osoreirimasu ga) = an extremely humble phrase used when asking a favor. ～いたします is the humble form of します, used for one\'s own actions.'
       },
       {
         japanese: '今後とも何卒よろしくお願いいたします。敬具',
         kana: 'こんごともなにとぞよろしくおねがいいたします。けいぐ',
-        vietnamese: 'Từ nay về sau, khẩn khoản xin quý vị tiếp tục quan tâm. Kính bút.',
+        vietnamese: 'I humbly ask for your continued support going forward. Sincerely.',
         memoryTip:
-          'Nhớ: 何卒 (なにとぞ) = "cái gì cũng xin" → "khẩn khoản" — tăng mức độ lịch sự cho よろしくお願いします. 敬具 (けいぐ) = "kính + cụ" → kính cẩn dừng bút → kết thư.'
+          'Remember: 何卒 (nanitozo) = "by all means, I earnestly ask" — raises the politeness level of よろしくお願いします. 敬具 (keigu) = a formal closing, "respectfully."'
       }
     ],
     dialogue: [
       {
-        speaker: '(件名 - Tiêu đề)',
+        speaker: '(Subject line)',
         japanese: '新規取引のご挨拶',
         kana: 'しんきとりひきのごあいさつ',
-        vietnamese: 'Lời chào về giao dịch mới'
+        vietnamese: 'Greetings regarding a new business relationship'
       },
       {
-        speaker: '(本文 - Nội dung)',
+        speaker: '(Body)',
         japanese: '拝啓　貴社ますますご発展のこととお慶び申し上げます。',
         kana: 'はいけい　きしゃますますごはってんのこととおよろこびもうしあげます。',
-        vietnamese: 'Kính thưa, tôi xin chúc mừng quý công ty ngày càng phát triển.'
+        vietnamese: 'Dear Sir/Madam, I offer my congratulations on your company\'s continued growth.'
       },
       {
-        speaker: '(本文)',
+        speaker: '(Body)',
         japanese: 'このたびは弊社製品にご関心をお寄せいただき、誠にありがとうございます。',
         kana: 'このたびはへいしゃせいひんにごかんしんをおよせいただき、まことにありがとうございます。',
-        vietnamese: 'Lần này, chúng tôi thành thật cảm ơn quý vị đã quan tâm đến sản phẩm của công ty chúng tôi.'
+        vietnamese: 'Thank you very much for your interest in our company\'s products.'
       },
       {
-        speaker: '(本文)',
+        speaker: '(Body)',
         japanese: 'つきましては、カタログと見積書を同封いたしましたので、ご査収のほどお願い申し上げます。',
         kana: 'つきましては、カタログとみつもりしょをどうふういたしましたので、ごさしゅうのほどおねがいもうしあげます。',
-        vietnamese: 'Về vấn đề này, chúng tôi đã đính kèm catalog và bảng báo giá, kính mong quý vị kiểm nhận.'
+        vietnamese: 'Accordingly, we have enclosed our catalog and quotation, and kindly ask you to review them.'
       },
       {
-        speaker: '(本文)',
+        speaker: '(Body)',
         japanese: 'ご不明な点がございましたら、お気軽にお問い合わせくださいませ。',
         kana: 'ごふめいなてんがございましたら、おきがるにおといあわせくださいませ。',
-        vietnamese: 'Nếu có điểm nào chưa rõ, xin đừng ngại liên hệ.'
+        vietnamese: 'If anything is unclear, please feel free to contact us.'
       },
       {
-        speaker: '(結び - Kết thư)',
+        speaker: '(Closing)',
         japanese: '今後とも何卒よろしくお願いいたします。敬具',
         kana: 'こんごともなにとぞよろしくおねがいいたします。けいぐ',
-        vietnamese: 'Từ nay về sau, khẩn khoản xin quý vị tiếp tục quan tâm. Kính bút.'
+        vietnamese: 'We humbly ask for your continued support going forward. Sincerely.'
       }
     ],
     culturalNote:
-      'Thư từ trang trọng Nhật Bản (ビジネスレター) có cấu trúc cố định: (1) 拝啓 mở đầu, (2) 時候の挨拶 — lời chào theo mùa, (3) nội dung chính, (4) kết thúc bằng 敬具. Email hiện đại có thể bỏ 拝啓/敬具 nhưng vẫn giữ cấu trúc lịch sự. Chú ý: 貴社 (きしゃ - quý công ty) dùng khi viết, còn 御社 (おんしゃ) dùng khi nói. 弊社 (へいしゃ - công ty tệ) là cách khiêm tốn gọi công ty mình.'
+      'A formal Japanese business letter (ビジネスレター) follows a fixed structure: (1) 拝啓 as the opening, (2) 時候の挨拶 — a seasonal greeting, (3) the main content, (4) closing with 敬具. Modern emails may drop 拝啓/敬具 but keep the polite structure. Note: 貴社 (kisha — your esteemed company) is used in writing, while 御社 (onsha) is used when speaking. 弊社 (heisha — "our humble company") is the modest way to refer to one\'s own company.'
   },
 
   // ── 6. Job Hunting (就職活動) ─────────────────────────────────
   {
     id: 'n2-conv-06',
-    title: 'Tìm việc làm',
+    title: 'Job hunting',
     titleJp: '就職活動',
     level: 'N2',
-    situation: 'Chuẩn bị hồ sơ xin việc, phỏng vấn tuyển dụng tại công ty Nhật',
+    situation: 'Preparing job application documents and interviewing at a Japanese company',
     patterns: [
       {
         japanese: '御社の企業理念に深く共感し、志望いたしました。',
         kana: 'おんしゃのきぎょうりねんにふかくきょうかんし、しぼういたしました。',
-        vietnamese: 'Tôi đã đồng cảm sâu sắc với lý tưởng doanh nghiệp của quý công ty và xin ứng tuyển.',
+        vietnamese: 'I deeply resonated with your company\'s philosophy, which is why I applied.',
         memoryTip:
-          'Nhớ: 御社 (おんしゃ) = quý công ty (dùng khi NÓI, khác 貴社 dùng khi VIẾT). 志望 (しぼう) = "chí + vọng" → mong muốn hướng tới → ứng tuyển. 共感 = "cộng + cảm" → đồng cảm.'
+          'Remember: 御社 (onsha) = your esteemed company (used when SPEAKING, unlike 貴社 which is used in WRITING). 志望 (shibou) = an aspiration/application. 共感 = to empathize/resonate.'
       },
       {
         japanese: '履歴書と職務経歴書を添付いたしましたので、ご査収ください。',
         kana: 'りれきしょとしょくむけいれきしょをてんぷいたしましたので、ごさしゅうください。',
-        vietnamese: 'Tôi đã đính kèm hồ sơ lý lịch và bản mô tả kinh nghiệm làm việc, kính mong quý vị kiểm nhận.',
+        vietnamese: 'I have attached my resume and work history, please review them.',
         memoryTip:
-          'Nhớ: 履歴書 (りれきしょ) = "lí + lịch + thư" → CV. 職務経歴書 (しょくむけいれきしょ) = chi tiết kinh nghiệm nghề nghiệp. 添付 (てんぷ) = "thiêm + phụ" → đính kèm.'
+          'Remember: 履歴書 (rirekisho) = a resume/CV. 職務経歴書 (shokumu keirekisho) = a detailed work-history document. 添付 (tenpu) = to attach.'
       },
       {
         japanese: '面接の機会をいただければ、大変光栄に存じます。',
         kana: 'めんせつのきかいをいただければ、たいへんこうえいにぞんじます。',
-        vietnamese: 'Nếu được cơ hội phỏng vấn, tôi thấy vô cùng vinh hạnh.',
+        vietnamese: 'I would be deeply honored to be given the opportunity for an interview.',
         memoryTip:
-          'Nhớ: 面接 (めんせつ) = "diện + tiếp" → gặp mặt trực tiếp → phỏng vấn. 光栄 (こうえい) = "quang + vinh" → vinh dự. いただければ = nếu nhận được (khiêm nhường + điều kiện).'
+          'Remember: 面接 (mensetsu) = a job interview. 光栄 (kouei) = an honor/privilege. いただければ = "if I could receive" (humble + conditional).'
       }
     ],
     dialogue: [
       {
-        speaker: '面接官 (Người phỏng vấn)',
+        speaker: 'Interviewer',
         japanese: '本日はお越しいただき、ありがとうございます。自己紹介をお願いします。',
         kana: 'ほんじつはおこしいただき、ありがとうございます。じこしょうかいをおねがいします。',
-        vietnamese: 'Hôm nay cảm ơn bạn đã đến. Xin hãy tự giới thiệu bản thân.'
+        vietnamese: 'Thank you for coming today. Please introduce yourself.'
       },
       {
-        speaker: 'グエン (Nguyen)',
+        speaker: 'Nguyen',
         japanese: 'はい。グエンと申します。大学では経済学を専攻しておりました。',
         kana: 'はい。グエンともうします。だいがくではけいざいがくをせんこうしておりました。',
-        vietnamese: 'Vâng. Tôi tên là Nguyen. Ở đại học tôi chuyên ngành kinh tế học.'
+        vietnamese: 'Yes. My name is Nguyen. At university, I majored in economics.'
       },
       {
-        speaker: '面接官',
+        speaker: 'Interviewer',
         japanese: '当社を志望された理由をお聞かせください。',
         kana: 'とうしゃをしぼうされたりゆうをおきかせください。',
-        vietnamese: 'Xin cho biết lý do bạn ứng tuyển vào công ty chúng tôi.'
+        vietnamese: 'Please tell me why you applied to our company.'
       },
       {
-        speaker: 'グエン',
+        speaker: 'Nguyen',
         japanese: '御社のグローバル展開に魅力を感じ、私の語学力を活かせると考えました。',
         kana: 'おんしゃのグローバルてんかいにみりょくをかんじ、わたしのごがくりょくをいかせるとかんがえました。',
-        vietnamese: 'Tôi cảm thấy hấp dẫn bởi sự mở rộng toàn cầu của quý công ty, và nghĩ rằng có thể phát huy năng lực ngôn ngữ của mình.'
+        vietnamese: 'I was drawn to your company\'s global expansion and felt I could make use of my language abilities.'
       },
       {
-        speaker: '面接官',
+        speaker: 'Interviewer',
         japanese: '入社後、どのように貢献したいとお考えですか。',
         kana: 'にゅうしゃご、どのようにこうけんしたいとおかんがえですか。',
-        vietnamese: 'Sau khi vào công ty, bạn muốn đóng góp như thế nào?'
+        vietnamese: 'How would you like to contribute after joining the company?'
       },
       {
-        speaker: 'グエン',
+        speaker: 'Nguyen',
         japanese: 'ベトナム市場の開拓に携わり、御社の売上拡大に貢献したいと存じます。',
         kana: 'ベトナムしじょうのかいたくにたずさわり、おんしゃのうりあげかくだいにこうけんしたいとぞんじます。',
-        vietnamese: 'Tôi muốn tham gia khai phá thị trường Việt Nam và đóng góp vào việc mở rộng doanh thu của quý công ty.'
+        vietnamese: 'I would like to be involved in developing the Vietnamese market and contribute to growing your company\'s sales.'
       }
     ],
     culturalNote:
-      '就職活動 (しゅうかつ - shuukatsu) ở Nhật có quy trình rất nghiêm ngặt. Sinh viên năm 3 bắt đầu tìm việc, mặc suit đen (リクルートスーツ), gửi エントリーシート (entry sheet) cho nhiều công ty cùng lúc. Phỏng vấn thường qua nhiều vòng. Người xin việc phải thể hiện 志望動機 (lý do ứng tuyển) rõ ràng và 自己PR (tự quảng bá bản thân) thuyết phục.'
+      'Job hunting in Japan (就職活動, shuukatsu) follows a very strict process. Third-year university students begin job hunting, wear black recruit suits (リクルートスーツ), and submit entry sheets (エントリーシート) to many companies at once. Interviews usually go through multiple rounds. Applicants must clearly present their 志望動機 (reason for applying) and a convincing 自己PR (self-promotion).'
   },
 
   // ── 7. Presenting Data (プレゼン) ─────────────────────────────
   {
     id: 'n2-conv-07',
-    title: 'Trình bày dữ liệu',
+    title: 'Presenting data',
     titleJp: 'プレゼンテーション',
     level: 'N2',
-    situation: 'Thuyết trình kết quả phân tích dữ liệu bằng biểu đồ và số liệu',
+    situation: 'Presenting data analysis results using charts and figures',
     patterns: [
       {
         japanese: 'このグラフが示しているとおり、売上は前年比20%増加しております。',
         kana: 'このグラフがしめしているとおり、うりあげはぜんねんひ20パーセントぞうかしております。',
-        vietnamese: 'Như biểu đồ này cho thấy, doanh thu đã tăng 20% so với năm trước.',
+        vietnamese: 'As this graph shows, sales have increased 20% compared to the previous year.',
         memoryTip:
-          'Nhớ: グラフ = graph = biểu đồ. 前年比 (ぜんねんひ) = "tiền niên tỉ" → so sánh với năm trước. ～とおり = "đúng như ~". しております = đang (khiêm nhường).'
+          'Remember: グラフ = graph. 前年比 (zennenhi) = "compared to the previous year." ～とおり = "just as ~." しております = ongoing (humble).'
       },
       {
         japanese: 'データを分析した結果、以下の傾向が明らかになりました。',
         kana: 'データをぶんせきしたけっか、いかのけいこうがあきらかになりました。',
-        vietnamese: 'Kết quả phân tích dữ liệu cho thấy xu hướng sau đây đã trở nên rõ ràng.',
+        vietnamese: 'As a result of analyzing the data, the following trend became clear.',
         memoryTip:
-          'Nhớ: 傾向 (けいこう) = "khuynh + hướng" → xu hướng. 明らか (あきらか) = rõ ràng. 以下 (いか) = "dĩ + hạ" → từ đây trở xuống → sau đây.'
+          'Remember: 傾向 (keikou) = a trend/tendency. 明らか (akiraka) = clear/evident. 以下 (ika) = "the following" (literally "below this point").'
       }
     ],
     dialogue: [
       {
-        speaker: '発表者 (Người trình bày)',
+        speaker: 'Presenter',
         japanese: 'それでは、第三四半期の業績について報告いたします。',
         kana: 'それでは、だいさんしはんきのぎょうせきについてほうこくいたします。',
-        vietnamese: 'Vậy thì, tôi xin báo cáo về thành tích kinh doanh quý 3.'
+        vietnamese: 'Now, I will report on the third quarter\'s business results.'
       },
       {
-        speaker: '発表者',
+        speaker: 'Presenter',
         japanese: 'こちらの棒グラフをご覧ください。売上は順調に伸びております。',
         kana: 'こちらのぼうグラフをごらんください。うりあげはじゅんちょうにのびております。',
-        vietnamese: 'Xin hãy nhìn biểu đồ cột này. Doanh thu đang tăng trưởng thuận lợi.'
+        vietnamese: 'Please look at this bar graph. Sales are growing steadily.'
       },
       {
-        speaker: '質問者 (Người hỏi)',
+        speaker: 'Questioner',
         japanese: '利益率についてはいかがでしょうか。',
         kana: 'りえきりつについてはいかがでしょうか。',
-        vietnamese: 'Còn về tỷ suất lợi nhuận thì sao ạ?'
+        vietnamese: 'What about the profit margin?'
       },
       {
-        speaker: '発表者',
+        speaker: 'Presenter',
         japanese: '円グラフで示しておりますが、利益率は若干低下しております。',
         kana: 'えんグラフでしめしておりますが、りえきりつはじゃっかんていかしております。',
-        vietnamese: 'Như biểu đồ tròn cho thấy, tỷ suất lợi nhuận giảm nhẹ.'
+        vietnamese: 'As shown in the pie chart, the profit margin has declined slightly.'
       },
       {
-        speaker: '質問者',
+        speaker: 'Questioner',
         japanese: 'その原因は何だとお考えですか。',
         kana: 'そのげんいんはなんだとおかんがえですか。',
-        vietnamese: 'Bạn cho rằng nguyên nhân là gì?'
+        vietnamese: 'What do you think the cause is?'
       },
       {
-        speaker: '発表者',
+        speaker: 'Presenter',
         japanese: '原材料費の高騰が主な要因と分析しております。対策案は次のスライドでご説明いたします。',
         kana: 'げんざいりょうひのこうとうがおもなよういんとぶんせきしております。たいさくあんはつぎのスライドでごせつめいいたします。',
-        vietnamese: 'Chúng tôi phân tích rằng yếu tố chính là giá nguyên vật liệu tăng cao. Phương án đối sách sẽ được giải thích ở slide tiếp theo.'
+        vietnamese: 'We\'ve analyzed rising raw material costs as the main factor. I will explain our countermeasures on the next slide.'
       }
     ],
     culturalNote:
-      'Thuyết trình kinh doanh Nhật Bản thường tuân theo cấu trúc 起承転結 (khởi-thừa-chuyển-kết). Người trình bày dùng nhiều kính ngữ như ご覧ください (xin hãy xem) thay vì 見てください. Biểu đồ cột (棒グラフ), biểu đồ tròn (円グラフ), biểu đồ đường (折れ線グラフ) là công cụ trình bày phổ biến.'
+      'Japanese business presentations often follow the 起承転結 (kishoutenketsu — introduction-development-twist-conclusion) structure. Presenters use polite honorific expressions such as ご覧ください (please take a look) rather than 見てください. Bar graphs (棒グラフ), pie charts (円グラフ), and line graphs (折れ線グラフ) are common presentation tools.'
   },
 
   // ── 8. Customer Service (接客) ────────────────────────────────
   {
     id: 'n2-conv-08',
-    title: 'Chăm sóc khách hàng',
+    title: 'Customer service',
     titleJp: '接客対応',
     level: 'N2',
-    situation: 'Tiếp đón khách hàng, xử lý phàn nàn và giải quyết khiếu nại',
+    situation: 'Assisting a customer, handling a complaint, and resolving an issue',
     patterns: [
       {
         japanese: 'お客様、大変お待たせいたしました。ご用件をお伺いいたします。',
         kana: 'おきゃくさま、たいへんおまたせいたしました。ごようけんをおうかがいいたします。',
-        vietnamese: 'Thưa quý khách, xin lỗi đã để quý khách chờ lâu. Tôi xin nghe yêu cầu của quý khách.',
+        vietnamese: 'Thank you for waiting, sir/ma\'am. How may I help you?',
         memoryTip:
-          'Nhớ: お客様 (おきゃくさま) = "khách + sama" → quý khách (trang trọng nhất). お伺い (おうかがい) = khiêm nhường ngữ của 聞く → "xin được nghe". いたします = khiêm nhường của します.'
+          'Remember: お客様 (okyakusama) = "esteemed customer" (the most formal address). お伺い (ouкagai) is the humble form of 聞く → "may I ask/hear." いたします is the humble form of します.'
       },
       {
         japanese: 'ご不便をおかけしまして、誠に申し訳ございません。',
         kana: 'ごふべんをおかけしまして、まことにもうしわけございません。',
-        vietnamese: 'Đã gây bất tiện cho quý khách, thành thật xin lỗi.',
+        vietnamese: 'We sincerely apologize for the inconvenience caused.',
         memoryTip:
-          'Nhớ: ご不便 (ごふべん) = "bất + tiện" → sự bất tiện. おかけする = gây ra (khiêm nhường). 誠に (まことに) = thực sự / thành thật → mạnh hơn 本当に.'
+          'Remember: ご不便 (gofuben) = an inconvenience. おかけする = to cause (humble). 誠に (makotoni) = truly/sincerely — stronger than 本当に.'
       },
       {
         japanese: '早急に対応させていただきます。',
         kana: 'さっきゅうにたいおうさせていただきます。',
-        vietnamese: 'Tôi sẽ xin phép xử lý ngay lập tức.',
+        vietnamese: 'We will address this immediately.',
         memoryTip:
-          'Nhớ: 早急 (さっきゅう) = "tảo + cấp" → nhanh chóng khẩn cấp. 対応 (たいおう) = "đối + ứng" → đối ứng / xử lý. させていただく = xin phép được làm.'
+          'Remember: 早急 (sakkyuu) = urgently/promptly. 対応 (taiou) = to respond/handle. させていただく = to humbly ask permission to do something.'
       }
     ],
     dialogue: [
       {
-        speaker: 'お客様 (Khách hàng)',
+        speaker: 'Customer',
         japanese: 'すみません、先日購入した商品に不具合があるのですが。',
         kana: 'すみません、せんじつこうにゅうしたしょうひんにふぐあいがあるのですが。',
-        vietnamese: 'Xin lỗi, sản phẩm tôi mua hôm trước có lỗi.'
+        vietnamese: 'Excuse me, the item I bought the other day has a defect.'
       },
       {
-        speaker: '店員 (Nhân viên)',
+        speaker: 'Staff',
         japanese: 'ご不便をおかけしまして、誠に申し訳ございません。詳しくお聞かせいただけますか。',
         kana: 'ごふべんをおかけしまして、まことにもうしわけございません。くわしくおきかせいただけますか。',
-        vietnamese: 'Gây bất tiện cho quý khách, thành thật xin lỗi. Quý khách có thể cho biết chi tiết được không?'
+        vietnamese: 'We sincerely apologize for the inconvenience. Could you tell me more about it?'
       },
       {
-        speaker: 'お客様',
+        speaker: 'Customer',
         japanese: '電源を入れても画面が表示されないんです。',
         kana: 'でんげんをいれてもがめんがひょうじされないんです。',
-        vietnamese: 'Dù bật nguồn nhưng màn hình không hiển thị.'
+        vietnamese: 'Even when I turn the power on, the screen doesn\'t display anything.'
       },
       {
-        speaker: '店員',
+        speaker: 'Staff',
         japanese: '承知いたしました。すぐに新しい商品と交換させていただきます。',
         kana: 'しょうちいたしました。すぐにあたらしいしょうひんとこうかんさせていただきます。',
-        vietnamese: 'Tôi hiểu rồi ạ. Tôi sẽ đổi ngay cho quý khách sản phẩm mới.'
+        vietnamese: 'Understood. We will exchange it for a new item right away.'
       },
       {
-        speaker: 'お客様',
+        speaker: 'Customer',
         japanese: '返金は可能ですか。',
         kana: 'へんきんはかのうですか。',
-        vietnamese: 'Hoàn tiền có được không?'
+        vietnamese: 'Is a refund possible?'
       },
       {
-        speaker: '店員',
+        speaker: 'Staff',
         japanese: 'はい、もちろんでございます。返金手続きを進めさせていただきます。レシートをお持ちでしょうか。',
         kana: 'はい、もちろんでございます。へんきんてつづきをすすめさせていただきます。レシートをおもちでしょうか。',
-        vietnamese: 'Vâng, tất nhiên ạ. Tôi sẽ tiến hành thủ tục hoàn tiền. Quý khách có mang hóa đơn không ạ?'
+        vietnamese: 'Yes, of course. We will proceed with the refund process. Do you have your receipt?'
       }
     ],
     culturalNote:
-      'Dịch vụ khách hàng Nhật Bản (接客 - settai) nổi tiếng thế giới với tiêu chuẩn 「お客様は神様です」(khách hàng là thần). Nhân viên luôn dùng kính ngữ tối đa, cúi chào 45 độ khi xin lỗi. Ngay cả khi khách hàng sai, nhân viên vẫn phải nhẹ nhàng và không bao giờ tranh cãi trực tiếp.'
+      'Japanese customer service (接客 — sekkyaku) is world-renowned for its standard of 「お客様は神様です」("the customer is a god"). Staff always use maximum honorific language, and bow at 45 degrees when apologizing. Even when the customer is at fault, staff remain gentle and never argue back directly.'
   },
 
   // ── 9. Real Estate (不動産) ───────────────────────────────────
   {
     id: 'n2-conv-09',
-    title: 'Bất động sản',
+    title: 'Real estate',
     titleJp: '不動産',
     level: 'N2',
-    situation: 'Tìm kiếm nhà ở, thảo luận hợp đồng thuê hoặc mua bán bất động sản',
+    situation: 'House hunting, discussing rental or purchase contracts for property',
     patterns: [
       {
         japanese: '駅から徒歩10分以内の物件を探しているのですが。',
         kana: 'えきからとほ10ぷんいないのぶっけんをさがしているのですが。',
-        vietnamese: 'Tôi đang tìm bất động sản trong vòng 10 phút đi bộ từ ga.',
+        vietnamese: 'I\'m looking for a property within a 10-minute walk of the station.',
         memoryTip:
-          'Nhớ: 物件 (ぶっけん) = "vật + kiện" → bất động sản (nhà, phòng cho thuê). 徒歩 (とほ) = "đồ + bộ" → đi bộ. 以内 (いない) = "dĩ + nội" → trong phạm vi.'
+          'Remember: 物件 (bukken) = a property listing (a room/house for rent or sale). 徒歩 (toho) = on foot. 以内 (inai) = within a range.'
       },
       {
         japanese: '賃貸契約の更新について確認させていただきたいのですが。',
         kana: 'ちんたいけいやくのこうしんについてかくにんさせていただきたいのですが。',
-        vietnamese: 'Tôi muốn xin xác nhận về việc gia hạn hợp đồng thuê nhà.',
+        vietnamese: 'I would like to confirm about renewing the lease contract.',
         memoryTip:
-          'Nhớ: 賃貸 (ちんたい) = "nhâm + đại" → cho thuê. 契約 (けいやく) = "khế + ước" → hợp đồng. 更新 (こうしん) = "canh + tân" → gia hạn / cập nhật.'
+          'Remember: 賃貸 (chintai) = rental. 契約 (keiyaku) = a contract. 更新 (koushin) = renewal/update.'
       }
     ],
     dialogue: [
       {
-        speaker: '客 (Khách)',
+        speaker: 'Customer',
         japanese: '一人暮らし向けの1LDKの物件を探しております。',
         kana: 'ひとりぐらしむけの1LDKのぶっけんをさがしております。',
-        vietnamese: 'Tôi đang tìm bất động sản 1LDK phù hợp cho sống một mình.'
+        vietnamese: 'I\'m looking for a 1LDK property suited for living alone.'
       },
       {
-        speaker: '不動産屋 (Nhân viên BĐS)',
+        speaker: 'Real estate agent',
         japanese: 'ご予算はおいくらぐらいをお考えでしょうか。',
         kana: 'ごよさんはおいくらぐらいをおかんがえでしょうか。',
-        vietnamese: 'Quý khách dự tính ngân sách khoảng bao nhiêu ạ?'
+        vietnamese: 'About how much is your budget?'
       },
       {
-        speaker: '客',
+        speaker: 'Customer',
         japanese: '家賃は月8万円以内で、礼金なしの物件が希望です。',
         kana: 'やちんはつき8まんえんいないで、れいきんなしのぶっけんがきぼうです。',
-        vietnamese: 'Tiền thuê nhà trong 80,000 yên/tháng, mong muốn bất động sản không có tiền lễ.'
+        vietnamese: 'I\'d like rent within 80,000 yen a month, and a property with no key money.'
       },
       {
-        speaker: '不動産屋',
+        speaker: 'Real estate agent',
         japanese: 'こちらの物件はいかがでしょうか。築5年で、南向きの角部屋です。',
         kana: 'こちらのぶっけんはいかがでしょうか。ちく5ねんで、みなみむきのかどべやです。',
-        vietnamese: 'Bất động sản này thì sao ạ? Xây 5 năm, phòng góc hướng nam.'
+        vietnamese: 'How about this property? It\'s 5 years old and a south-facing corner unit.'
       },
       {
-        speaker: '客',
+        speaker: 'Customer',
         japanese: '敷金と仲介手数料はどのくらいかかりますか。',
         kana: 'しききんとちゅうかいてすうりょうはどのくらいかかりますか。',
-        vietnamese: 'Tiền cọc và phí môi giới khoảng bao nhiêu?'
+        vietnamese: 'About how much are the deposit and agency fee?'
       },
       {
-        speaker: '不動産屋',
+        speaker: 'Real estate agent',
         japanese: '敷金は家賃1ヶ月分、仲介手数料も1ヶ月分となっております。内見のご予約はいつがよろしいですか。',
         kana: 'しききんはやちん1かげつぶん、ちゅうかいてすうりょうも1かげつぶんとなっております。ないけんのごよやくはいつがよろしいですか。',
-        vietnamese: 'Tiền cọc bằng 1 tháng tiền thuê, phí môi giới cũng 1 tháng. Quý khách muốn đặt lịch xem nhà khi nào ạ?'
+        vietnamese: 'The deposit is one month\'s rent, and the agency fee is also one month\'s rent. When would be a good time to book a viewing?'
       }
     ],
     culturalNote:
-      'Thuê nhà ở Nhật có nhiều khoản phí đặc biệt: 敷金 (しききん - tiền cọc, thường được trả lại), 礼金 (れいきん - tiền lễ cảm ơn chủ nhà, KHÔNG trả lại), 仲介手数料 (ちゅうかいてすうりょう - phí môi giới). 1LDK = 1 phòng ngủ + phòng khách-ăn-bếp. Người nước ngoài thường cần 保証人 (ほしょうにん - người bảo lãnh) hoặc sử dụng 保証会社 (công ty bảo lãnh).'
+      'Renting in Japan comes with several unique fees: 敷金 (shikikin — a refundable deposit), 礼金 (reikin — a non-refundable "thank you" payment to the landlord), and 仲介手数料 (chuukai tesuuryou — an agency fee). 1LDK = one bedroom plus a living-dining-kitchen area. Foreigners often need a 保証人 (a guarantor) or must use a guarantor company (保証会社).'
   },
 
   // ── 10. Legal Matters (法律) ──────────────────────────────────
   {
     id: 'n2-conv-10',
-    title: 'Vấn đề pháp lý',
+    title: 'Legal matters',
     titleJp: '法律問題',
     level: 'N2',
-    situation: 'Tư vấn pháp lý về hợp đồng, vi phạm và bồi thường thiệt hại',
+    situation: 'Getting legal advice about contracts, breaches, and damages',
     patterns: [
       {
         japanese: '契約書の内容を確認したところ、いくつかの問題点が見つかりました。',
         kana: 'けいやくしょのないようをかくにんしたところ、いくつかのもんだいてんがみつかりました。',
-        vietnamese: 'Khi kiểm tra nội dung hợp đồng, tôi phát hiện một số vấn đề.',
+        vietnamese: 'When I checked the contract content, I found several problems.',
         memoryTip:
-          'Nhớ: 契約書 (けいやくしょ) = "khế ước thư" → văn bản hợp đồng. ～したところ = khi làm ~ thì (phát hiện kết quả). 問題点 (もんだいてん) = điểm có vấn đề.'
+          'Remember: 契約書 (keiyakusho) = a contract document. ～したところ = "when I did ~, [I found that]..." 問題点 (mondaiten) = problem points.'
       },
       {
         japanese: '相手方が契約に違反した場合、損害賠償を請求できます。',
         kana: 'あいてがたがけいやくにいはんしたばあい、そんがいばいしょうをせいきゅうできます。',
-        vietnamese: 'Trong trường hợp bên đối phương vi phạm hợp đồng, có thể yêu cầu bồi thường thiệt hại.',
+        vietnamese: 'If the other party breaches the contract, you can claim damages.',
         memoryTip:
-          'Nhớ: 違反 (いはん) = "vi + phản" → vi phạm. 損害賠償 (そんがいばいしょう) = "tổn hại bồi thường" → bồi thường thiệt hại. 請求 (せいきゅう) = "thỉnh + cầu" → yêu cầu / đòi.'
+          'Remember: 違反 (ihan) = a violation/breach. 損害賠償 (songai baishou) = compensation for damages. 請求 (seikyuu) = to claim/demand.'
       },
       {
         japanese: '弁護士に相談されることをお勧めいたします。',
         kana: 'べんごしにそうだんされることをおすすめいたします。',
-        vietnamese: 'Tôi khuyên quý vị nên tham vấn luật sư.',
+        vietnamese: 'I recommend that you consult a lawyer.',
         memoryTip:
-          'Nhớ: 弁護士 (べんごし) = "biện + hộ + sĩ" → người biện hộ → luật sư. ～されることをお勧めします = cách lịch sự để khuyên ai đó nên làm gì.'
+          'Remember: 弁護士 (bengoshi) = a lawyer/attorney. ～されることをお勧めします = a polite way to recommend someone do something.'
       }
     ],
     dialogue: [
       {
-        speaker: '相談者 (Người tư vấn)',
+        speaker: 'Client',
         japanese: '先生、取引先との契約トラブルについてご相談があるのですが。',
         kana: 'せんせい、とりひきさきとのけいやくトラブルについてごそうだんがあるのですが。',
-        vietnamese: 'Thưa luật sư, tôi có vấn đề muốn tư vấn về tranh chấp hợp đồng với đối tác.'
+        vietnamese: 'I\'d like to consult you about a contract dispute with a business partner.'
       },
       {
-        speaker: '弁護士 (Luật sư)',
+        speaker: 'Lawyer',
         japanese: 'どのような状況か、詳しくお聞かせいただけますか。',
         kana: 'どのようなじょうきょうか、くわしくおきかせいただけますか。',
-        vietnamese: 'Tình huống như thế nào, bạn có thể cho biết chi tiết được không?'
+        vietnamese: 'Could you tell me the details of the situation?'
       },
       {
-        speaker: '相談者',
+        speaker: 'Client',
         japanese: '納品された商品が契約の仕様と異なっていたのです。',
         kana: 'のうひんされたしょうひんがけいやくのしようとことなっていたのです。',
-        vietnamese: 'Sản phẩm được giao khác với quy cách trong hợp đồng.'
+        vietnamese: 'The delivered goods differed from the specifications in the contract.'
       },
       {
-        speaker: '弁護士',
+        speaker: 'Lawyer',
         japanese: '契約書に基づいて、損害賠償の請求が可能と考えられます。',
         kana: 'けいやくしょにもとづいて、そんがいばいしょうのせいきゅうがかのうとかんがえられます。',
-        vietnamese: 'Dựa trên hợp đồng, việc yêu cầu bồi thường thiệt hại được cho là khả thi.'
+        vietnamese: 'Based on the contract, it appears a claim for damages would be possible.'
       }
     ],
     culturalNote:
-      'Nhật Bản là xã hội ít kiện tụng so với phương Tây. Người Nhật thường ưu tiên giải quyết tranh chấp ngoài tòa qua 示談 (じだん - thương lượng riêng) hoặc 調停 (ちょうてい - hòa giải có trung gian). Luật sư ở Nhật gọi là 弁護士, và để trở thành luật sư phải vượt qua kỳ thi tư pháp (司法試験) cực kỳ khó khăn.'
+      'Japan is a much less litigious society than the West. Japanese people usually prefer to settle disputes out of court through 示談 (jidan — private negotiation) or 調停 (choutei — mediation). A lawyer in Japan is called 弁護士, and becoming one requires passing the extremely difficult bar exam (司法試験).'
   },
 
   // ── 11. Medical Consultation (医療相談) ────────────────────────
   {
     id: 'n2-conv-11',
-    title: 'Tư vấn y tế',
+    title: 'Medical consultation',
     titleJp: '医療相談',
     level: 'N2',
-    situation: 'Khám bệnh, mô tả triệu chứng và thảo luận phương pháp điều trị',
+    situation: 'Seeing a doctor, describing symptoms, and discussing treatment options',
     patterns: [
       {
         japanese: '一週間ほど前から頭痛と微熱の症状が続いております。',
         kana: 'いっしゅうかんほどまえからずつうとびねつのしょうじょうがつづいております。',
-        vietnamese: 'Từ khoảng một tuần trước, triệu chứng đau đầu và sốt nhẹ vẫn tiếp tục.',
+        vietnamese: 'For about a week now, I\'ve had ongoing symptoms of headache and low fever.',
         memoryTip:
-          'Nhớ: 症状 (しょうじょう) = "chứng + trạng" → triệu chứng. 微熱 (びねつ) = "vi + nhiệt" → sốt nhẹ. 頭痛 (ずつう) = "đầu + thống" → đau đầu. ～ほど前から = từ khoảng ~ trước.'
+          'Remember: 症状 (shoujou) = symptoms. 微熱 (binetsu) = a low-grade fever. 頭痛 (zutsuu) = a headache. ～ほど前から = "since about ~ ago."'
       },
       {
         japanese: '精密検査の結果、特に異常は見られませんでした。',
         kana: 'せいみつけんさのけっか、とくにいじょうはみられませんでした。',
-        vietnamese: 'Kết quả xét nghiệm chi tiết cho thấy không có bất thường đặc biệt.',
+        vietnamese: 'The detailed test results showed no particular abnormalities.',
         memoryTip:
-          'Nhớ: 精密検査 (せいみつけんさ) = "tinh mật kiểm tra" → xét nghiệm chi tiết. 異常 (いじょう) = "dị + thường" → bất thường. 見られません = không được thấy (bị động).'
+          'Remember: 精密検査 (seimitsu kensa) = a detailed examination/test. 異常 (ijou) = an abnormality. 見られません = passive → "was not seen."'
       },
       {
         japanese: '治療方針について、いくつかの選択肢がございます。',
         kana: 'ちりょうほうしんについて、いくつかのせんたくしがございます。',
-        vietnamese: 'Về phương châm điều trị, có một số lựa chọn.',
+        vietnamese: 'There are several options regarding the treatment approach.',
         memoryTip:
-          'Nhớ: 治療 (ちりょう) = "trị + liệu" → điều trị. 方針 (ほうしん) = "phương + châm" → phương châm / hướng đi. 選択肢 (せんたくし) = "tuyển trạch chi" → lựa chọn.'
+          'Remember: 治療 (chiryou) = treatment. 方針 (houshin) = a policy/direction. 選択肢 (sentakushi) = options/choices.'
       }
     ],
     dialogue: [
       {
-        speaker: '患者 (Bệnh nhân)',
+        speaker: 'Patient',
         japanese: '先生、最近めまいがひどくて、日常生活に支障が出ています。',
         kana: 'せんせい、さいきんめまいがひどくて、にちじょうせいかつにししょうがでています。',
-        vietnamese: 'Bác sĩ, gần đây chóng mặt rất nặng, ảnh hưởng đến sinh hoạt hàng ngày.'
+        vietnamese: 'Doctor, my dizziness has been really bad lately, and it\'s affecting my daily life.'
       },
       {
-        speaker: '医師 (Bác sĩ)',
+        speaker: 'Doctor',
         japanese: 'いつ頃から症状が出始めましたか。',
         kana: 'いつごろからしょうじょうがではじめましたか。',
-        vietnamese: 'Triệu chứng bắt đầu xuất hiện từ khoảng khi nào?'
+        vietnamese: 'About when did the symptoms start?'
       },
       {
-        speaker: '患者',
+        speaker: 'Patient',
         japanese: '二週間ほど前からです。特に朝起きた時にひどいです。',
         kana: 'にしゅうかんほどまえからです。とくにあさおきたときにひどいです。',
-        vietnamese: 'Từ khoảng hai tuần trước. Đặc biệt nặng khi thức dậy buổi sáng.'
+        vietnamese: 'About two weeks ago. It\'s especially bad when I wake up in the morning.'
       },
       {
-        speaker: '医師',
+        speaker: 'Doctor',
         japanese: '血液検査とMRI検査を受けていただきたいのですが、よろしいでしょうか。',
         kana: 'けつえきけんさとMRIけんさをうけていただきたいのですが、よろしいでしょうか。',
-        vietnamese: 'Tôi muốn bạn làm xét nghiệm máu và MRI, được không ạ?'
+        vietnamese: 'I would like you to undergo a blood test and an MRI, is that alright?'
       },
       {
-        speaker: '患者',
+        speaker: 'Patient',
         japanese: 'はい、お願いします。何か重大な病気の可能性はありますか。',
         kana: 'はい、おねがいします。なにかじゅうだいなびょうきのかのうせいはありますか。',
-        vietnamese: 'Vâng, xin bác sĩ. Có khả năng mắc bệnh nghiêm trọng nào không?'
+        vietnamese: 'Yes, please. Is there a possibility of something serious?'
       },
       {
-        speaker: '医師',
+        speaker: 'Doctor',
         japanese: '検査結果を見てから判断いたしますが、過度にご心配なさらないでください。',
         kana: 'けんさけっかをみてからはんだんいたしますが、かどにごしんぱいなさらないでください。',
-        vietnamese: 'Tôi sẽ phán đoán sau khi xem kết quả xét nghiệm, nhưng xin đừng lo lắng quá mức.'
+        vietnamese: 'I\'ll make a judgment after seeing the test results, but please try not to worry excessively.'
       }
     ],
     culturalNote:
-      'Hệ thống y tế Nhật Bản có bảo hiểm sức khỏe toàn dân (国民健康保険). Bệnh nhân chỉ trả 30% chi phí. Khi đi khám, cần mang thẻ bảo hiểm (保険証) và khám ở phòng khám nhỏ (クリニック) trước, nếu cần sẽ được giới thiệu đến bệnh viện lớn (紹介状). Bác sĩ thường được gọi là 先生.'
+      'Japan has universal health insurance (国民健康保険). Patients pay only 30% of the cost. When seeing a doctor, you bring your insurance card (保険証) and typically visit a small clinic (クリニック) first; if needed, you\'ll get a referral (紹介状) to a larger hospital. Doctors are usually addressed as 先生.'
   },
 
   // ── 12. Tax & Finance (税金) ──────────────────────────────────
   {
     id: 'n2-conv-12',
-    title: 'Thuế và tài chính',
+    title: 'Tax and finance',
     titleJp: '税金・財務',
     level: 'N2',
-    situation: 'Khai thuế thu nhập, tư vấn về tiết kiệm thuế và quản lý tài chính',
+    situation: 'Filing income taxes and discussing tax savings and financial management',
     patterns: [
       {
         japanese: '確定申告の期限が近づいておりますので、早めの準備をお勧めします。',
         kana: 'かくていしんこくのきげんがちかづいておりますので、はやめのじゅんびをおすすめします。',
-        vietnamese: 'Vì hạn nộp khai thuế đang đến gần, tôi khuyên nên chuẩn bị sớm.',
+        vietnamese: 'Since the tax filing deadline is approaching, I recommend preparing early.',
         memoryTip:
-          'Nhớ: 確定申告 (かくていしんこく) = "xác định thân cáo" → khai thuế thu nhập. 期限 (きげん) = "kỳ + hạn" → thời hạn. 近づく = đến gần.'
+          'Remember: 確定申告 (kakutei shinkoku) = an income tax return. 期限 (kigen) = a deadline. 近づく = to approach.'
       },
       {
         japanese: '医療費控除を申請すれば、節税になる可能性があります。',
         kana: 'いりょうひこうじょをしんせいすれば、せつぜいになるかのうせいがあります。',
-        vietnamese: 'Nếu xin khấu trừ chi phí y tế, có khả năng tiết kiệm thuế.',
+        vietnamese: 'If you apply for the medical expense deduction, you may be able to save on taxes.',
         memoryTip:
-          'Nhớ: 控除 (こうじょ) = "khống + trừ" → khấu trừ. 節税 (せつぜい) = "tiết + thuế" → tiết kiệm thuế. 医療費 (いりょうひ) = chi phí y tế. 申請 (しんせい) = "thân + thỉnh" → nộp đơn.'
+          'Remember: 控除 (koujo) = a deduction. 節税 (setsuzei) = tax savings. 医療費 (iryouhi) = medical expenses. 申請 (shinsei) = to apply/file.'
       }
     ],
     dialogue: [
       {
-        speaker: '相談者 (Người tư vấn)',
+        speaker: 'Client',
         japanese: 'フリーランスとして初めての確定申告なのですが、何から始めればよいですか。',
         kana: 'フリーランスとしてはじめてのかくていしんこくなのですが、なにからはじめればよいですか。',
-        vietnamese: 'Đây là lần đầu tôi khai thuế với tư cách freelancer, nên bắt đầu từ đâu?'
+        vietnamese: 'This is my first tax filing as a freelancer — where should I start?'
       },
       {
-        speaker: '税理士 (Kế toán thuế)',
+        speaker: 'Tax accountant',
         japanese: 'まず、収入と経費の記録を整理していただく必要があります。',
         kana: 'まず、しゅうにゅうときんぴのきろくをせいりしていただくひつようがあります。',
-        vietnamese: 'Trước hết, cần phải sắp xếp lại hồ sơ thu nhập và chi phí.'
+        vietnamese: 'First, you\'ll need to organize your income and expense records.'
       },
       {
-        speaker: '相談者',
+        speaker: 'Client',
         japanese: '自宅で仕事をしているのですが、家賃の一部は経費として計上できますか。',
         kana: 'じたくでしごとをしているのですが、やちんのいちぶはけいひとしてけいじょうできますか。',
-        vietnamese: 'Tôi làm việc tại nhà, vậy một phần tiền thuê nhà có thể tính vào chi phí không?'
+        vietnamese: 'I work from home — can part of my rent be counted as an expense?'
       },
       {
-        speaker: '税理士',
+        speaker: 'Tax accountant',
         japanese: 'はい、事業使用面積の割合に応じて、経費に算入できます。',
         kana: 'はい、じぎょうしようめんせきのわりあいにおうじて、けいひにさんにゅうできます。',
-        vietnamese: 'Vâng, theo tỷ lệ diện tích sử dụng cho công việc, có thể tính vào chi phí.'
+        vietnamese: 'Yes, you can include it as an expense based on the proportion of space used for business.'
       },
       {
-        speaker: '相談者',
+        speaker: 'Client',
         japanese: '青色申告のメリットについても教えていただけますか。',
         kana: 'あおいろしんこくのメリットについてもおしえていただけますか。',
-        vietnamese: 'Bạn có thể cho tôi biết về ưu điểm của khai thuế sổ xanh không?'
+        vietnamese: 'Could you also tell me about the advantages of the "blue return" filing?'
       },
       {
-        speaker: '税理士',
+        speaker: 'Tax accountant',
         japanese: '青色申告では最大65万円の特別控除が受けられますので、大変お得です。',
         kana: 'あおいろしんこくではさいだい65まんえんのとくべつこうじょがうけられますので、たいへんおとくです。',
-        vietnamese: 'Với khai thuế sổ xanh, được nhận khấu trừ đặc biệt tối đa 650,000 yên, rất có lợi.'
+        vietnamese: 'With the blue return, you can receive a special deduction of up to 650,000 yen, so it\'s very advantageous.'
       }
     ],
     culturalNote:
-      'Ở Nhật, nhân viên công ty thường không cần tự khai thuế vì công ty làm 年末調整 (ねんまつちょうせい - điều chỉnh cuối năm). Nhưng freelancer, người có thu nhập phụ trên 200,000 yên phải tự làm 確定申告. 青色申告 (sổ xanh) phức tạp hơn nhưng được ưu đãi thuế nhiều hơn 白色申告 (sổ trắng).'
+      'In Japan, company employees usually don\'t need to file their own taxes because the company handles a year-end adjustment (年末調整). But freelancers and those with side income over 200,000 yen must file 確定申告 themselves. 青色申告 (the "blue" filing) is more complex but offers more tax benefits than 白色申告 (the "white" filing).'
   },
 
   // ── 13. Education System (教育) ───────────────────────────────
   {
     id: 'n2-conv-13',
-    title: 'Hệ thống giáo dục',
+    title: 'The education system',
     titleJp: '教育制度',
     level: 'N2',
-    situation: 'Thảo luận về thi cử, bằng cấp và hệ thống tiến học ở Nhật Bản',
+    situation: 'Discussing exams, qualifications, and the school advancement system in Japan',
     patterns: [
       {
         japanese: '入試に合格するためには、偏差値60以上が必要だと言われています。',
         kana: 'にゅうしにごうかくするためには、へんさち60いじょうがひつようだといわれています。',
-        vietnamese: 'Để đỗ kỳ thi tuyển sinh, người ta nói rằng cần điểm hensachi trên 60.',
+        vietnamese: 'It\'s said that a hensachi score of 60 or above is needed to pass the entrance exam.',
         memoryTip:
-          'Nhớ: 入試 (にゅうし) = "nhập + thí" → thi tuyển sinh. 合格 (ごうかく) = "hợp + cách" → đỗ. 偏差値 (へんさち) = chỉ số đánh giá năng lực (trung bình = 50). ～と言われている = người ta nói rằng.'
+          'Remember: 入試 (nyuushi) = an entrance exam. 合格 (goukaku) = to pass. 偏差値 (hensachi) = a standardized academic score (average = 50). ～と言われている = "it is said that."'
       },
       {
         japanese: '学歴社会と呼ばれる日本では、大学名が就職に大きく影響します。',
         kana: 'がくれきしゃかいとよばれるにほんでは、だいがくめいがしゅうしょくにおおきくえいきょうします。',
-        vietnamese: 'Ở Nhật Bản — được gọi là xã hội trọng bằng cấp — tên trường đại học ảnh hưởng lớn đến việc tìm việc.',
+        vietnamese: 'In Japan — called a credential-based society — the name of one\'s university greatly affects job hunting.',
         memoryTip:
-          'Nhớ: 学歴 (がくれき) = "học + lịch" → học vấn / bằng cấp. 学歴社会 = xã hội trọng bằng cấp. ～と呼ばれる = được gọi là. 影響 (えいきょう) = "ảnh + hưởng" → ảnh hưởng.'
+          'Remember: 学歴 (gakureki) = academic history/credentials. 学歴社会 = a credential-based society. ～と呼ばれる = "called ~." 影響 (eikyou) = influence.'
       }
     ],
     dialogue: [
       {
-        speaker: '保護者 (Phụ huynh)',
+        speaker: 'Parent',
         japanese: '先生、息子の進学について相談させていただきたいのですが。',
         kana: 'せんせい、むすこのしんがくについてそうだんさせていただきたいのですが。',
-        vietnamese: 'Thưa cô, tôi muốn trao đổi về việc tiến học của con trai tôi.'
+        vietnamese: 'I\'d like to discuss my son\'s further schooling with you.'
       },
       {
-        speaker: '教師 (Giáo viên)',
+        speaker: 'Teacher',
         japanese: 'はい、もちろんです。現在の成績から見ますと、いくつかの選択肢がございます。',
         kana: 'はい、もちろんです。げんざいのせいせきからみますと、いくつかのせんたくしがございます。',
-        vietnamese: 'Vâng, tất nhiên. Từ thành tích hiện tại, có một số lựa chọn.'
+        vietnamese: 'Yes, of course. Based on his current grades, there are several options.'
       },
       {
-        speaker: '保護者',
+        speaker: 'Parent',
         japanese: '推薦入試と一般入試、どちらが有利でしょうか。',
         kana: 'すいせんにゅうしといっぱんにゅうし、どちらがゆうりでしょうか。',
-        vietnamese: 'Thi tuyển sinh theo diện giới thiệu và thi chung, cái nào có lợi hơn?'
+        vietnamese: 'Which would be more advantageous, the recommendation-based exam or the general exam?'
       },
       {
-        speaker: '教師',
+        speaker: 'Teacher',
         japanese: 'お子さんの場合、内申点が高いので推薦入試も十分狙えると思います。',
         kana: 'おこさんのばあい、ないしんてんがたかいのですいせんにゅうしもじゅうぶんねらえるとおもいます。',
-        vietnamese: 'Trường hợp con bạn, vì điểm đánh giá nội bộ cao nên thi diện giới thiệu cũng hoàn toàn có thể nhắm được.'
+        vietnamese: 'In your son\'s case, since his school record is strong, the recommendation exam is definitely within reach.'
       },
       {
-        speaker: '保護者',
+        speaker: 'Parent',
         japanese: '塾に通わせるべきでしょうか。',
         kana: 'じゅくにかよわせるべきでしょうか。',
-        vietnamese: 'Có nên cho cháu đi học thêm không ạ?'
+        vietnamese: 'Should I send him to a cram school?'
       },
       {
-        speaker: '教師',
+        speaker: 'Teacher',
         japanese: '志望校のレベルによりますが、苦手科目を補うために部分的に利用されるのもよいかと思います。',
         kana: 'しぼうこうのレベルによりますが、にがてかもくをおぎなうためにぶぶんてきにりようされるのもよいかとおもいます。',
-        vietnamese: 'Tùy thuộc vào trình độ trường mục tiêu, nhưng tôi nghĩ việc sử dụng một phần để bổ sung môn yếu cũng tốt.'
+        vietnamese: 'It depends on the level of the target school, but using it partially to shore up weak subjects would also be a good idea.'
       }
     ],
     culturalNote:
-      'Hệ thống giáo dục Nhật gồm 6-3-3-4: tiểu học 6 năm, trung học cơ sở 3 năm (nghĩa vụ), trung học phổ thông 3 năm, đại học 4 năm. 偏差値 (hensachi) là hệ thống đánh giá riêng của Nhật (50 = trung bình). 塾 (juku - học thêm) rất phổ biến, nhiều học sinh đi học thêm từ tiểu học. Áp lực thi cử gọi là 受験戦争 (juken sensou - chiến tranh thi cử).'
+      'Japan\'s education system follows a 6-3-3-4 structure: 6 years of elementary school, 3 years of junior high (compulsory), 3 years of high school, and 4 years of university. 偏差値 (hensachi) is Japan\'s own standardized scoring system (50 = average). 塾 (juku — cram schools) are extremely common, with many students attending from elementary school on. The pressure of exams is called 受験戦争 (juken sensou — "exam war").'
   },
 
   // ── 14. Corporate Culture (企業文化) ──────────────────────────
   {
     id: 'n2-conv-14',
-    title: 'Văn hóa doanh nghiệp',
+    title: 'Corporate culture',
     titleJp: '企業文化',
     level: 'N2',
-    situation: 'Thảo luận về chế độ lương, thăng tiến và quản lý nhân sự trong công ty Nhật',
+    situation: 'Discussing pay structures, promotion, and HR management at a Japanese company',
     patterns: [
       {
         japanese: '年功序列制度では、勤続年数に応じて給与が上がります。',
         kana: 'ねんこうじょれつせいどでは、きんぞくねんすうにおうじてきゅうよがあがります。',
-        vietnamese: 'Trong chế độ thâm niên, lương tăng theo số năm làm việc liên tục.',
+        vietnamese: 'Under the seniority system, pay increases according to years of continuous service.',
         memoryTip:
-          'Nhớ: 年功序列 (ねんこうじょれつ) = "niên công tự liệt" → xếp hạng theo thâm niên. 勤続年数 (きんぞくねんすう) = số năm làm việc liên tục. 応じて = tùy theo / theo.'
+          'Remember: 年功序列 (nenkou joretsu) = seniority-based ranking. 勤続年数 (kinzoku nensuu) = years of continuous service. 応じて = "according to."'
       },
       {
         japanese: '最近は成果主義を導入する企業が増えてきました。',
         kana: 'さいきんはせいかしゅぎをどうにゅうするきぎょうがふえてきました。',
-        vietnamese: 'Gần đây, các doanh nghiệp đưa vào chủ nghĩa trọng thành quả ngày càng nhiều.',
+        vietnamese: 'Recently, more and more companies have been adopting a performance-based system.',
         memoryTip:
-          'Nhớ: 成果主義 (せいかしゅぎ) = "thành quả chủ nghĩa" → trọng thành tích. 導入 (どうにゅう) = "đạo + nhập" → đưa vào / áp dụng. ～てきました = đã dần dần ~.'
+          'Remember: 成果主義 (seika shugi) = a performance-based (merit-based) system. 導入 (dounyuu) = to introduce/adopt. ～てきました = "has gradually ~."'
       },
       {
         japanese: '人事異動の内示が出ましたので、ご報告いたします。',
         kana: 'じんじいどうのないじがでましたので、ごほうこくいたします。',
-        vietnamese: 'Thông báo nội bộ về điều chuyển nhân sự đã ra, tôi xin báo cáo.',
+        vietnamese: 'The informal notice about the personnel transfer has come out, so I\'d like to report it.',
         memoryTip:
-          'Nhớ: 人事異動 (じんじいどう) = "nhân sự dị động" → điều chuyển nhân sự. 内示 (ないじ) = "nội + thị" → thông báo nội bộ (trước thông báo chính thức).'
+          'Remember: 人事異動 (jinji idou) = a personnel transfer. 内示 (naiji) = an unofficial/internal notice (before the formal announcement).'
       }
     ],
     dialogue: [
       {
-        speaker: '新入社員 (Nhân viên mới)',
+        speaker: 'New employee',
         japanese: '先輩、昇進の仕組みについて教えていただけますか。',
         kana: 'せんぱい、しょうしんのしくみについておしえていただけますか。',
-        vietnamese: 'Senpai, anh có thể chỉ cho tôi về cơ chế thăng tiến không?'
+        vietnamese: 'Senpai, could you explain how the promotion system works?'
       },
       {
-        speaker: '先輩 (Senpai)',
+        speaker: 'Senpai',
         japanese: 'うちの会社は年功序列が基本だが、最近は実績も重視されるようになってきた。',
         kana: 'うちのかいしゃはねんこうじょれつがきほんだが、さいきんはじっせきもじゅうしされるようになってきた。',
-        vietnamese: 'Công ty mình cơ bản là thâm niên, nhưng gần đây thành tích cũng được coi trọng.'
+        vietnamese: 'Our company is basically seniority-based, but lately, performance has come to matter more too.'
       },
       {
-        speaker: '新入社員',
+        speaker: 'New employee',
         japanese: '年収はどのくらいの幅で上がるものなのでしょうか。',
         kana: 'ねんしゅうはどのくらいのはばであがるものなのでしょうか。',
-        vietnamese: 'Thu nhập năm tăng theo biên độ khoảng bao nhiêu?'
+        vietnamese: 'By roughly how much does annual salary increase?'
       },
       {
-        speaker: '先輩',
+        speaker: 'Senpai',
         japanese: '毎年の昇給は平均3%程度だが、昇格すれば大きく変わるよ。',
         kana: 'まいとしのしょうきゅうはへいきん3パーセントていどだが、しょうかくすればおおきくかわるよ。',
-        vietnamese: 'Tăng lương hàng năm trung bình khoảng 3%, nhưng nếu lên chức thì thay đổi lớn.'
+        vietnamese: 'The annual raise averages about 3%, but it changes a lot if you get promoted.'
       },
       {
-        speaker: '新入社員',
+        speaker: 'New employee',
         japanese: '転勤の可能性もありますか。',
         kana: 'てんきんのかのうせいもありますか。',
-        vietnamese: 'Có khả năng chuyển công tác không?'
+        vietnamese: 'Is there a possibility of being transferred?'
       },
       {
-        speaker: '先輩',
+        speaker: 'Senpai',
         japanese: '総合職だから転勤はあり得る。でも最近は本人の希望も考慮されるようになってきている。',
         kana: 'そうごうしょくだからてんきんはありえる。でもさいきんはほんにんのきぼうもこうりょされるようになってきている。',
-        vietnamese: 'Vì là chức tổng hợp nên chuyển công tác có thể xảy ra. Nhưng gần đây nguyện vọng cá nhân cũng được cân nhắc.'
+        vietnamese: 'Since you\'re on the general career track, transfers are possible. But lately, personal preference is also being taken into consideration more.'
       }
     ],
     culturalNote:
-      'Văn hóa doanh nghiệp Nhật truyền thống dựa trên 3 trụ cột: 終身雇用 (shūshin koyō - tuyển dụng suốt đời), 年功序列 (nenkō joretsu - thâm niên), và 企業内組合 (kigyōnai kumiai - công đoàn nội bộ). Tuy nhiên, xu hướng hiện đại đang chuyển sang 成果主義 (trọng thành quả). 総合職 (sōgōshoku - chức tổng hợp) có thể bị chuyển công tác, còn 一般職 (ippanshoku - chức chung) thường cố định.'
+      'Traditional Japanese corporate culture rests on three pillars: 終身雇用 (shuushin koyou — lifetime employment), 年功序列 (nenkou joretsu — seniority-based pay), and 企業内組合 (kigyounai kumiai — enterprise unions). However, the modern trend is shifting toward 成果主義 (performance-based systems). 総合職 (sougoushoku — the general career track) is subject to transfers, while 一般職 (ippanshoku — the general clerical track) is usually fixed to one location.'
   },
 
   // ── 15. Crisis Management (危機管理) ──────────────────────────
   {
     id: 'n2-conv-15',
-    title: 'Quản lý khủng hoảng',
+    title: 'Crisis management',
     titleJp: '危機管理',
     level: 'N2',
-    situation: 'Xử lý tình huống khẩn cấp trong công ty, lập kế hoạch ứng phó sự cố',
+    situation: 'Handling an emergency situation at a company and planning an incident response',
     patterns: [
       {
         japanese: '緊急事態が発生いたしましたので、直ちにご報告いたします。',
         kana: 'きんきゅうじたいがはっせいいたしましたので、ただちにごほうこくいたします。',
-        vietnamese: 'Tình huống khẩn cấp đã xảy ra, tôi xin báo cáo ngay lập tức.',
+        vietnamese: 'An emergency has occurred, so I am reporting it immediately.',
         memoryTip:
-          'Nhớ: 緊急事態 (きんきゅうじたい) = "khẩn cấp sự thái" → tình huống khẩn cấp. 発生 (はっせい) = "phát + sinh" → phát sinh / xảy ra. 直ちに (ただちに) = ngay lập tức (trang trọng hơn すぐに).'
+          'Remember: 緊急事態 (kinkyuu jitai) = an emergency situation. 発生 (hassei) = to occur/arise. 直ちに (tadachini) = immediately (more formal than すぐに).'
       },
       {
         japanese: '危機管理マニュアルに従って、迅速に対応してください。',
         kana: 'ききかんりマニュアルにしたがって、じんそくにたいおうしてください。',
-        vietnamese: 'Hãy tuân theo sổ tay quản lý khủng hoảng và ứng phó nhanh chóng.',
+        vietnamese: 'Please follow the crisis management manual and respond quickly.',
         memoryTip:
-          'Nhớ: 危機管理 (ききかんり) = "nguy cơ quản lý" → quản lý khủng hoảng. 迅速 (じんそく) = "tấn + tốc" → nhanh chóng. 従って (したがって) = tuân theo.'
+          'Remember: 危機管理 (kiki kanri) = crisis management. 迅速 (jinsoku) = swiftly. 従って (shitagatte) = to follow/comply with.'
       }
     ],
     dialogue: [
       {
-        speaker: '社員 (Nhân viên)',
+        speaker: 'Employee',
         japanese: '部長、大変です！サーバーがダウンして、顧客データにアクセスできません。',
         kana: 'ぶちょう、たいへんです！サーバーがダウンして、こきゃくデータにアクセスできません。',
-        vietnamese: 'Trưởng phòng, nghiêm trọng rồi! Server sập, không thể truy cập dữ liệu khách hàng.'
+        vietnamese: 'Manager, this is bad! The server is down and we can\'t access customer data.'
       },
       {
-        speaker: '部長 (Trưởng phòng)',
+        speaker: 'Manager',
         japanese: '落ち着いてください。まず、IT部門に連絡を取ってください。',
         kana: 'おちついてください。まず、ITぶもんにれんらくをとってください。',
-        vietnamese: 'Hãy bình tĩnh. Trước hết, hãy liên lạc với bộ phận IT.'
+        vietnamese: 'Please stay calm. First, contact the IT department.'
       },
       {
-        speaker: '社員',
+        speaker: 'Employee',
         japanese: 'はい。それから、お客様への影響範囲を確認いたします。',
         kana: 'はい。それから、おきゃくさまへのえいきょうはんいをかくにんいたします。',
-        vietnamese: 'Vâng. Sau đó, tôi sẽ xác nhận phạm vi ảnh hưởng đến khách hàng.'
+        vietnamese: 'Yes. After that, I\'ll check the scope of impact on our customers.'
       },
       {
-        speaker: '部長',
+        speaker: 'Manager',
         japanese: '緊急対応チームを招集してください。30分以内に対策会議を開きます。',
         kana: 'きんきゅうたいおうチームをしょうしゅうしてください。30ぷんいないにたいさくかいぎをひらきます。',
-        vietnamese: 'Hãy triệu tập đội ứng phó khẩn cấp. Trong vòng 30 phút sẽ mở cuộc họp đối sách.'
+        vietnamese: 'Please assemble the emergency response team. We will hold a response meeting within 30 minutes.'
       },
       {
-        speaker: '社員',
+        speaker: 'Employee',
         japanese: '承知いたしました。関係者全員に至急連絡いたします。',
         kana: 'しょうちいたしました。かんけいしゃぜんいんにしきゅうれんらくいたします。',
-        vietnamese: 'Tôi hiểu rồi. Tôi sẽ liên lạc khẩn cấp đến tất cả những người liên quan.'
+        vietnamese: 'Understood. I will contact everyone involved immediately.'
       }
     ],
     culturalNote:
-      'Quản lý khủng hoảng (危機管理 - kiki kanri) ở Nhật Bản đặc biệt quan trọng do đất nước thường xuyên đối mặt với thiên tai. Mọi công ty đều có マニュアル (manual) ứng phó và tổ chức 避難訓練 (hinan kunren - diễn tập sơ tán) định kỳ. Nguyên tắc cơ bản: 報告・連絡・相談 (ほうれんそう - hōrensō: báo cáo-liên lạc-trao đổi).'
+      'Crisis management (危機管理 — kiki kanri) is especially important in Japan due to the country\'s frequent natural disasters. Every company has a manual (マニュアル) for responses and holds regular evacuation drills (避難訓練 — hinan kunren). The basic principle is 報告・連絡・相談 (hourensou: report-contact-consult).'
   },
 
   // ── 16. Public Speaking (演説) ────────────────────────────────
   {
     id: 'n2-conv-16',
-    title: 'Diễn thuyết công cộng',
+    title: 'Public speaking',
     titleJp: '演説・スピーチ',
     level: 'N2',
-    situation: 'Phát biểu trước công chúng, trình bày quan điểm và lập luận thuyết phục',
+    situation: 'Giving a speech in public, presenting a viewpoint and making a persuasive argument',
     patterns: [
       {
         japanese: '本日は貴重なお時間をいただき、心より感謝申し上げます。',
         kana: 'ほんじつはきちょうなおじかんをいただき、こころよりかんしゃもうしあげます。',
-        vietnamese: 'Hôm nay, xin chân thành cảm ơn quý vị đã dành thời gian quý báu.',
+        vietnamese: 'I sincerely thank you for taking your valuable time today.',
         memoryTip:
-          'Nhớ: 貴重 (きちょう) = "quý + trọng" → quý báu. 心より (こころより) = từ tận đáy lòng. 申し上げます = dạng khiêm nhường trang trọng nhất của 言います.'
+          'Remember: 貴重 (kichou) = precious/valuable. 心より (kokoro yori) = from the bottom of one\'s heart. 申し上げます is the most formal humble form of 言います.'
       },
       {
         japanese: '私が本日主張したいのは、多様性こそが社会の強みであるという点です。',
         kana: 'わたしがほんじつしゅちょうしたいのは、たようせいこそがしゃかいのつよみであるというてんです。',
-        vietnamese: 'Điều tôi muốn khẳng định hôm nay là: chính sự đa dạng mới là thế mạnh của xã hội.',
+        vietnamese: 'What I want to assert today is this: diversity, precisely, is society\'s strength.',
         memoryTip:
-          'Nhớ: 主張 (しゅちょう) = "chủ + trương" → chủ trương / khẳng định. 多様性 (たようせい) = "đa + dạng + tính" → tính đa dạng. ～こそが = chính ~ mới là (nhấn mạnh).'
+          'Remember: 主張 (shuchou) = to assert/argue. 多様性 (tayousei) = diversity. ～こそが = "it is precisely ~ that" (emphasis).'
       }
     ],
     dialogue: [
       {
-        speaker: '司会者 (MC)',
+        speaker: 'MC',
         japanese: 'それでは、基調講演を始めさせていただきます。',
         kana: 'それでは、きちょうこうえんをはじめさせていただきます。',
-        vietnamese: 'Vậy thì, xin phép bắt đầu bài phát biểu chính.'
+        vietnamese: 'Now, allow us to begin the keynote speech.'
       },
       {
-        speaker: '講演者 (Diễn giả)',
+        speaker: 'Speaker',
         japanese: '皆様、本日のテーマは「これからの日本社会と多文化共生」でございます。',
         kana: 'みなさま、ほんじつのテーマは「これからのにほんしゃかいとたぶんかきょうせい」でございます。',
-        vietnamese: 'Thưa quý vị, chủ đề hôm nay là "Xã hội Nhật Bản tương lai và cộng sinh đa văn hóa".'
+        vietnamese: 'Ladies and gentlemen, today\'s theme is "The Future of Japanese Society and Multicultural Coexistence."'
       },
       {
-        speaker: '講演者',
+        speaker: 'Speaker',
         japanese: '少子高齢化が進む中、外国人労働者の受け入れは避けて通れない課題です。',
         kana: 'しょうしこうれいかがすすむなか、がいこくじんろうどうしゃのうけいれはさけてとおれないかだいです。',
-        vietnamese: 'Trong bối cảnh già hóa - ít con ngày càng tiến triển, việc tiếp nhận lao động nước ngoài là vấn đề không thể tránh.'
+        vietnamese: 'As the population declines and ages, accepting foreign workers is an unavoidable issue.'
       },
       {
-        speaker: '講演者',
+        speaker: 'Speaker',
         japanese: '互いの文化を尊重し、共に生きる社会を築いていくべきだと確信しております。',
         kana: 'たがいのぶんかをそんちょうし、ともにいきるしゃかいをきずいていくべきだとかくしんしております。',
-        vietnamese: 'Tôi tin chắc rằng chúng ta nên tôn trọng văn hóa lẫn nhau và xây dựng xã hội cùng chung sống.'
+        vietnamese: 'I am convinced that we should respect each other\'s cultures and build a society where we live together.'
       },
       {
-        speaker: '聴衆 (Khán giả)',
+        speaker: 'Audience member',
         japanese: '具体的にはどのような政策が必要だとお考えですか。',
         kana: 'ぐたいてきにはどのようなせいさくがひつようだとおかんがえですか。',
-        vietnamese: 'Cụ thể thì cần những chính sách gì theo ý kiến của ông?'
+        vietnamese: 'What specific policies do you think are needed?'
       },
       {
-        speaker: '講演者',
+        speaker: 'Speaker',
         japanese: '教育制度の改革と、言語サポート体制の充実が最優先だと考えます。',
         kana: 'きょういくせいどのかいかくと、げんごサポートたいせいのじゅうじつがさいゆうせんだとかんがえます。',
-        vietnamese: 'Tôi cho rằng cải cách chế độ giáo dục và hoàn thiện hệ thống hỗ trợ ngôn ngữ là ưu tiên hàng đầu.'
+        vietnamese: 'I believe reforming the education system and strengthening language support are the top priorities.'
       }
     ],
     culturalNote:
-      'Diễn thuyết công cộng ở Nhật (演説 - enzetsu) thường trang trọng và có cấu trúc rõ ràng. Chính trị gia Nhật thường diễn thuyết trên đường phố (街頭演説 - gaitō enzetsu), đặc biệt trong mùa bầu cử. Phong cách nói chuyện trước công chúng của Nhật thiên về lý lẽ và dữ liệu hơn là cảm xúc, khác với phong cách phương Tây.'
+      'Public speaking in Japan (演説 — enzetsu) is usually formal and clearly structured. Japanese politicians often deliver speeches on the street (街頭演説 — gaitou enzetsu), especially during elections. Japanese public speaking style tends to lean more on logic and data than emotion, unlike Western styles.'
   },
 
   // ── 17. Research Methodology (研究方法) ───────────────────────
   {
     id: 'n2-conv-17',
-    title: 'Phương pháp nghiên cứu',
+    title: 'Research methodology',
     titleJp: '研究方法論',
     level: 'N2',
-    situation: 'Thảo luận về phương pháp điều tra, thí nghiệm và phân tích kết quả nghiên cứu',
+    situation: 'Discussing survey, experiment, and analysis methods for research findings',
     patterns: [
       {
         japanese: '本調査では、500名を対象にアンケートを実施いたしました。',
         kana: 'ほんちょうさでは、500めいをたいしょうにアンケートをじっしいたしました。',
-        vietnamese: 'Trong cuộc điều tra này, chúng tôi đã thực hiện khảo sát với 500 người là đối tượng.',
+        vietnamese: 'For this survey, we conducted a questionnaire with 500 participants.',
         memoryTip:
-          'Nhớ: 調査 (ちょうさ) = "điều + tra" → điều tra. 対象 (たいしょう) = "đối + tượng" → đối tượng. 実施 (じっし) = "thực + thi" → thực hiện. 名 (めい) = đơn vị đếm người (trang trọng).'
+          'Remember: 調査 (chousa) = a survey/investigation. 対象 (taishou) = subjects/targets. 実施 (jisshi) = to carry out. 名 (mei) = a formal counter for people.'
       },
       {
         japanese: '実験結果から、仮説が支持されたと言えます。',
         kana: 'じっけんけっかから、かせつがしじされたといえます。',
-        vietnamese: 'Từ kết quả thí nghiệm, có thể nói rằng giả thuyết đã được ủng hộ.',
+        vietnamese: 'From the experimental results, it can be said that the hypothesis was supported.',
         memoryTip:
-          'Nhớ: 実験 (じっけん) = "thực + nghiệm" → thí nghiệm. 仮説 (かせつ) = "giả + thuyết" → giả thuyết. 支持 (しじ) = "chi + trì" → ủng hộ / hỗ trợ.'
+          'Remember: 実験 (jikken) = an experiment. 仮説 (kasetsu) = a hypothesis. 支持 (shiji) = support.'
       },
       {
         japanese: '統計的に有意な差が認められました。',
         kana: 'とうけいてきにゆういなさがみとめられました。',
-        vietnamese: 'Sự khác biệt có ý nghĩa thống kê đã được ghi nhận.',
+        vietnamese: 'A statistically significant difference was observed.',
         memoryTip:
-          'Nhớ: 統計的 (とうけいてき) = "thống + kế + đích" → mang tính thống kê. 有意 (ゆうい) = "hữu + ý" → có ý nghĩa. 認められる = được công nhận / ghi nhận.'
+          'Remember: 統計的 (toukeiteki) = statistically. 有意 (yuui) = significant. 認められる = to be recognized/observed.'
       }
     ],
     dialogue: [
       {
-        speaker: '研究者A (Nghiên cứu sinh A)',
+        speaker: 'Researcher A',
         japanese: '今回の実験では、対照群と実験群に分けて比較分析を行いました。',
         kana: 'こんかいのじっけんでは、たいしょうぐんとじっけんぐんにわけてひかくぶんせきをおこないました。',
-        vietnamese: 'Trong thí nghiệm lần này, chúng tôi chia thành nhóm đối chứng và nhóm thí nghiệm rồi tiến hành phân tích so sánh.'
+        vietnamese: 'In this experiment, we divided participants into a control group and an experimental group and performed a comparative analysis.'
       },
       {
-        speaker: '指導教官 (Giáo viên hướng dẫn)',
+        speaker: 'Supervising professor',
         japanese: 'サンプル数は十分でしたか。',
         kana: 'サンプルすうはじゅうぶんでしたか。',
-        vietnamese: 'Số lượng mẫu có đủ không?'
+        vietnamese: 'Was the sample size sufficient?'
       },
       {
-        speaker: '研究者A',
+        speaker: 'Researcher A',
         japanese: 'はい、統計的有意性を確保するため、各群100名以上を確保しました。',
         kana: 'はい、とうけいてきゆういせいをかくほするため、かくぐん100めいいじょうをかくほしました。',
-        vietnamese: 'Vâng, để đảm bảo ý nghĩa thống kê, chúng tôi đã đảm bảo mỗi nhóm trên 100 người.'
+        vietnamese: 'Yes, to ensure statistical significance, we secured over 100 participants for each group.'
       },
       {
-        speaker: '指導教官',
+        speaker: 'Supervising professor',
         japanese: 'バイアスの排除についてはどのように対処しましたか。',
         kana: 'バイアスのはいじょについてはどのようにたいしょしましたか。',
-        vietnamese: 'Về việc loại bỏ thiên lệch thì đã xử lý như thế nào?'
+        vietnamese: 'How did you handle eliminating bias?'
       },
       {
-        speaker: '研究者A',
+        speaker: 'Researcher A',
         japanese: '二重盲検法を採用し、主観的な判断を排除いたしました。',
         kana: 'にじゅうもうけんほうをさいようし、しゅかんてきなはんだんをはいじょいたしました。',
-        vietnamese: 'Chúng tôi áp dụng phương pháp mù đôi và loại bỏ phán đoán chủ quan.'
+        vietnamese: 'We adopted a double-blind method and eliminated subjective judgment.'
       }
     ],
     culturalNote:
-      'Nghiên cứu khoa học ở Nhật Bản rất được coi trọng, với nhiều giải Nobel. Phương pháp nghiên cứu (研究方法論) tuân theo tiêu chuẩn quốc tế nhưng cũng có đặc thù riêng: hệ thống 研究室 (kenkyūshitsu - phòng thí nghiệm) do giáo sư đứng đầu, quan hệ senpai-kōhai chặt chẽ. 学会 (gakkai - hội nghị khoa học) là nơi trình bày và phản biện kết quả.'
+      'Scientific research is highly valued in Japan, with many Nobel Prize winners. Research methodology follows international standards but has its own characteristics: the 研究室 (kenkyuushitsu — lab) system led by a professor, and tight senpai-kouhai relationships. 学会 (gakkai — academic conferences) are where results are presented and debated.'
   },
 
   // ── 18. Cultural Exchange (文化交流) ──────────────────────────
   {
     id: 'n2-conv-18',
-    title: 'Giao lưu văn hóa',
+    title: 'Cultural exchange',
     titleJp: '文化交流',
     level: 'N2',
-    situation: 'Tham gia chương trình giao lưu quốc tế, thảo luận về hiểu biết liên văn hóa',
+    situation: 'Participating in an international exchange program and discussing cross-cultural understanding',
     patterns: [
       {
         japanese: '国際交流を通じて、異文化への理解を深めることが大切だと思います。',
         kana: 'こくさいこうりゅうをつうじて、いぶんかへのりかいをふかめることがたいせつだとおもいます。',
-        vietnamese: 'Tôi nghĩ việc qua giao lưu quốc tế để làm sâu sắc sự hiểu biết về dị văn hóa là rất quan trọng.',
+        vietnamese: 'I think it\'s important to deepen understanding of other cultures through international exchange.',
         memoryTip:
-          'Nhớ: 国際交流 (こくさいこうりゅう) = "quốc tế giao lưu" → giao lưu quốc tế. 異文化 (いぶんか) = "dị + văn + hóa" → văn hóa khác biệt. ～を通じて = thông qua / qua. 深める = làm sâu sắc thêm.'
+          'Remember: 国際交流 (kokusai kouryuu) = international exchange. 異文化 (ibunka) = a different/foreign culture. ～を通じて = "through ~." 深める = to deepen.'
       },
       {
         japanese: '文化の違いを乗り越えて、相互理解を図りたいと存じます。',
         kana: 'ぶんかのちがいをのりこえて、そうごりかいをはかりたいとぞんじます。',
-        vietnamese: 'Tôi muốn vượt qua sự khác biệt văn hóa và hướng tới sự hiểu biết lẫn nhau.',
+        vietnamese: 'I would like to overcome cultural differences and work toward mutual understanding.',
         memoryTip:
-          'Nhớ: 乗り越える (のりこえる) = vượt qua (khó khăn). 相互理解 (そうごりかい) = "tương hỗ lý giải" → hiểu biết lẫn nhau. 図る (はかる) = nhắm tới / mưu cầu.'
+          'Remember: 乗り越える (norikoeru) = to overcome (a difficulty). 相互理解 (sougo rikai) = mutual understanding. 図る (hakaru) = to aim for/seek.'
       }
     ],
     dialogue: [
       {
-        speaker: 'コーディネーター (Điều phối viên)',
+        speaker: 'Coordinator',
         japanese: '今回の交流プログラムでは、ベトナムと日本の学生が共同プロジェクトに取り組みます。',
         kana: 'こんかいのこうりゅうプログラムでは、ベトナムとにほんのがくせいがきょうどうプロジェクトにとりくみます。',
-        vietnamese: 'Trong chương trình giao lưu lần này, sinh viên Việt Nam và Nhật Bản sẽ cùng thực hiện dự án chung.'
+        vietnamese: 'In this exchange program, Vietnamese and Japanese students will work together on a joint project.'
       },
       {
-        speaker: 'ベトナム人学生 (SV Việt Nam)',
+        speaker: 'Vietnamese student',
         japanese: 'お互いの食文化について紹介し合うのはいかがでしょうか。',
         kana: 'おたがいのしょくぶんかについてしょうかいしあうのはいかがでしょうか。',
-        vietnamese: 'Giới thiệu cho nhau về văn hóa ẩm thực của nhau thì sao ạ?'
+        vietnamese: 'How about we introduce each other to our respective food cultures?'
       },
       {
-        speaker: '日本人学生 (SV Nhật)',
+        speaker: 'Japanese student',
         japanese: 'いいですね！ベトナム料理にはとても興味があります。',
         kana: 'いいですね！ベトナムりょうりにはとてもきょうみがあります。',
-        vietnamese: 'Hay quá! Tôi rất quan tâm đến ẩm thực Việt Nam.'
+        vietnamese: 'That sounds great! I\'m very interested in Vietnamese cuisine.'
       },
       {
-        speaker: 'ベトナム人学生',
+        speaker: 'Vietnamese student',
         japanese: '日本のおもてなし文化には感銘を受けました。ベトナムでも取り入れたいです。',
         kana: 'にほんのおもてなしぶんかにはかんめいをうけました。ベトナムでもとりいれたいです。',
-        vietnamese: 'Tôi ấn tượng sâu sắc với văn hóa omotenashi của Nhật. Tôi muốn áp dụng ở Việt Nam nữa.'
+        vietnamese: 'I was deeply impressed by Japan\'s culture of hospitality. I\'d like to bring that back to Vietnam too.'
       },
       {
-        speaker: 'コーディネーター',
+        speaker: 'Coordinator',
         japanese: '文化の違いで戸惑うこともあるかもしれませんが、それこそが学びの機会です。',
         kana: 'ぶんかのちがいでとまどうこともあるかもしれませんが、それこそがまなびのきかいです。',
-        vietnamese: 'Có thể sẽ bỡ ngỡ vì sự khác biệt văn hóa, nhưng chính điều đó mới là cơ hội học hỏi.'
+        vietnamese: 'You may feel confused at times due to cultural differences, but that is exactly what learning opportunities look like.'
       }
     ],
     culturalNote:
-      'Nhật Bản có nhiều chương trình giao lưu quốc tế như JET Programme (dạy tiếng Anh), JICA (hợp tác phát triển), và các chương trình trao đổi sinh viên. おもてなし (omotenashi - tinh thần hiếu khách) là giá trị cốt lõi của văn hóa Nhật. Khi giao lưu, người Nhật thường tặng おみやげ (quà lưu niệm) để thể hiện thiện chí.'
+      'Japan runs many international exchange programs, such as the JET Programme (English teaching) and JICA (development cooperation), along with various student exchange programs. おもてなし (omotenashi — the spirit of hospitality) is a core Japanese cultural value. During exchanges, Japanese people often give おみやげ (souvenirs) as a gesture of goodwill.'
   },
 
   // ── 19. Complaint Escalation (上位苦情) ───────────────────────
   {
     id: 'n2-conv-19',
-    title: 'Leo thang khiếu nại',
+    title: 'Escalating a complaint',
     titleJp: '苦情のエスカレーション',
     level: 'N2',
-    situation: 'Khiếu nại không được giải quyết, yêu cầu gặp người có trách nhiệm cao hơn',
+    situation: 'A complaint has not been resolved, and the customer asks to speak with someone more senior',
     patterns: [
       {
         japanese: '先日お伝えした件について、まだ対応いただけていないようですが。',
         kana: 'せんじつおつたえしたけんについて、まだたいおういただけていないようですが。',
-        vietnamese: 'Về vấn đề tôi đã trình bày hôm trước, dường như vẫn chưa được xử lý.',
+        vietnamese: 'Regarding the matter I raised the other day, it seems it still hasn\'t been addressed.',
         memoryTip:
-          'Nhớ: 先日 (せんじつ) = hôm trước (trang trọng hơn この前). お伝えした = đã truyền đạt (kính ngữ). ～ようですが = dường như ~ (cách nói gián tiếp, không đổ lỗi trực tiếp).'
+          'Remember: 先日 (senjitsu) = "the other day" (more formal than この前). お伝えした = "conveyed" (honorific). ～ようですが = "it seems that ~, but..." — an indirect way of raising a complaint without directly assigning blame.'
       },
       {
         japanese: '責任者の方とお話しさせていただけないでしょうか。',
         kana: 'せきにんしゃのかたとおはなしさせていただけないでしょうか。',
-        vietnamese: 'Tôi có thể nói chuyện với người có trách nhiệm được không?',
+        vietnamese: 'Could I possibly speak with the person in charge?',
         memoryTip:
-          'Nhớ: 責任者 (せきにんしゃ) = "trách + nhiệm + giả" → người chịu trách nhiệm. の方 (のかた) = lịch sự hơn の人. ～ていただけないでしょうか = cách hỏi xin phép lịch sự nhất (phủ định + suy đoán).'
+          'Remember: 責任者 (sekininsha) = the person responsible/in charge. の方 (no kata) = more polite than の人. ～ていただけないでしょうか = the most polite way to make a request (negative + conjecture).'
       },
       {
         japanese: '誠意ある対応をしていただけなければ、然るべき措置を取らざるを得ません。',
         kana: 'せいいあるたいおうをしていただけなければ、しかるべきそちをとらざるをえません。',
-        vietnamese: 'Nếu không được đối ứng thành ý, tôi buộc phải có biện pháp thích đáng.',
+        vietnamese: 'If a sincere response isn\'t forthcoming, I will have no choice but to take appropriate measures.',
         memoryTip:
-          'Nhớ: 誠意 (せいい) = "thành + ý" → thành ý. 然るべき (しかるべき) = thích đáng / phải lẽ. 措置 (そち) = "thố + trí" → biện pháp. ～ざるを得ない = buộc phải ~ (không thể không).'
+          'Remember: 誠意 (seii) = sincerity. 然るべき (shikarubeki) = appropriate/fitting. 措置 (sochi) = a measure/action. ～ざるを得ない = "cannot help but ~."'
       }
     ],
     dialogue: [
       {
-        speaker: '顧客 (Khách hàng)',
+        speaker: 'Customer',
         japanese: '2週間前に修理を依頼したのですが、まだ何の連絡もいただいておりません。',
         kana: '2しゅうかんまえにしゅうりをいらいしたのですが、まだなんのれんらくもいただいておりません。',
-        vietnamese: 'Tôi đã yêu cầu sửa chữa 2 tuần trước, nhưng vẫn chưa nhận được liên lạc nào.'
+        vietnamese: 'I requested a repair two weeks ago, but I still haven\'t heard anything.'
       },
       {
-        speaker: '担当者 (Nhân viên phụ trách)',
+        speaker: 'Staff',
         japanese: '大変申し訳ございません。確認いたしますので、少々お待ちいただけますか。',
         kana: 'たいへんもうしわけございません。かくにんいたしますので、しょうしょうおまちいただけますか。',
-        vietnamese: 'Thành thật xin lỗi. Tôi sẽ xác nhận, xin chờ một chút có được không?'
+        vietnamese: 'We are very sorry. I will check on this, could you please wait a moment?'
       },
       {
-        speaker: '顧客',
+        speaker: 'Customer',
         japanese: '前回も同じことをおっしゃいましたが、改善されていません。責任者の方をお願いします。',
         kana: 'ぜんかいもおなじことをおっしゃいましたが、かいぜんされていません。せきにんしゃのかたをおねがいします。',
-        vietnamese: 'Lần trước cũng nói y vậy, nhưng không được cải thiện. Xin cho gặp người có trách nhiệm.'
+        vietnamese: 'You said the same thing last time, but nothing has improved. Please let me speak with the person in charge.'
       },
       {
-        speaker: '上司 (Cấp trên)',
+        speaker: 'Supervisor',
         japanese: 'お客様、このたびは大変ご迷惑をおかけいたしました。店長の佐藤でございます。',
         kana: 'おきゃくさま、このたびはたいへんごめいわくをおかけいたしました。てんちょうのさとうでございます。',
-        vietnamese: 'Thưa quý khách, lần này đã gây phiền lớn cho quý khách. Tôi là cửa hàng trưởng Sato.'
+        vietnamese: 'Sir/Ma\'am, we deeply apologize for the trouble caused. I am Sato, the store manager.'
       },
       {
-        speaker: '上司',
+        speaker: 'Supervisor',
         japanese: '至急対応させていただきます。本日中に修理を完了し、ご報告いたします。',
         kana: 'しきゅうたいおうさせていただきます。ほんじつちゅうにしゅうりをかんりょうし、ごほうこくいたします。',
-        vietnamese: 'Tôi sẽ xin xử lý khẩn cấp. Trong ngày hôm nay sẽ hoàn thành sửa chữa và báo cáo lại.'
+        vietnamese: 'We will handle this immediately. We will complete the repair today and report back to you.'
       }
     ],
     culturalNote:
-      'Khi khiếu nại ở Nhật, người ta thường giữ thái độ lịch sự nhưng kiên quyết. Cụm từ 「責任者を出してください」(cho gặp người phụ trách) là tín hiệu mạnh rằng khách hàng rất không hài lòng. Cấp trên thường phải đích thân ra xin lỗi (謝罪) khi tình huống nghiêm trọng. Ở Nhật, khiếu nại bằng văn bản (書面) có trọng lượng pháp lý hơn lời nói.'
+      'When making a complaint in Japan, people usually remain polite but firm. The phrase 「責任者を出してください」("please have the person in charge come out") is a strong signal that the customer is very unhappy. A supervisor often personally comes out to apologize (謝罪) when a situation is serious. In Japan, a written complaint (書面) carries more legal weight than a spoken one.'
   },
 
   // ── 20. Project Management (プロジェクト管理) ─────────────────
   {
     id: 'n2-conv-20',
-    title: 'Quản lý dự án',
+    title: 'Project management',
     titleJp: 'プロジェクト管理',
     level: 'N2',
-    situation: 'Quản lý tiến độ dự án, phân công nhiệm vụ và xử lý vấn đề deadline',
+    situation: 'Managing project progress, assigning tasks, and handling deadline issues',
     patterns: [
       {
         japanese: '進捗状況を確認したところ、スケジュールに若干の遅れが生じております。',
         kana: 'しんちょくじょうきょうをかくにんしたところ、スケジュールにじゃっかんのおくれがしょうじております。',
-        vietnamese: 'Khi kiểm tra tiến độ, có sự chậm trễ nhẹ so với lịch trình.',
+        vietnamese: 'Upon checking the progress, there is a slight delay to the schedule.',
         memoryTip:
-          'Nhớ: 進捗 (しんちょく) = "tiến + bộ" → tiến độ. 状況 (じょうきょう) = tình hình. 若干 (じゃっかん) = "nhược can" → chút ít. 生じる (しょうじる) = phát sinh.'
+          'Remember: 進捗 (shinchoku) = progress. 状況 (joukyou) = a situation. 若干 (jakkan) = a slight amount. 生じる (shoujiru) = to arise/occur.'
       },
       {
         japanese: '期限日までにタスクを完了するよう、リソースを再配分いたします。',
         kana: 'きげんびまでにタスクをかんりょうするよう、リソースをさいはいぶんいたします。',
-        vietnamese: 'Để hoàn thành task trước deadline, tôi sẽ phân bổ lại nguồn lực.',
+        vietnamese: 'To complete the tasks by the deadline, we will reallocate resources.',
         memoryTip:
-          'Nhớ: 期限日 (きげんび) = "kỳ hạn nhật" → ngày deadline. 完了 (かんりょう) = "hoàn + liễu" → hoàn thành. 再配分 (さいはいぶん) = "tái phân phối" → phân bổ lại.'
+          'Remember: 期限日 (kigenbi) = the deadline date. 完了 (kanryou) = to complete. 再配分 (saihaibun) = to reallocate.'
       }
     ],
     dialogue: [
       {
-        speaker: 'PM (Quản lý dự án)',
+        speaker: 'PM',
         japanese: '今週の進捗会議を始めます。各チームから報告をお願いします。',
         kana: 'こんしゅうのしんちょくかいぎをはじめます。かくチームからほうこくをおねがいします。',
-        vietnamese: 'Bắt đầu cuộc họp tiến độ tuần này. Xin mỗi team báo cáo.'
+        vietnamese: 'Let\'s begin this week\'s progress meeting. Please have each team report.'
       },
       {
-        speaker: '開発リーダー (Trưởng phát triển)',
+        speaker: 'Dev lead',
         japanese: '開発は80%完了しておりますが、テスト工程で問題が発生しました。',
         kana: 'かいはつは80パーセントかんりょうしておりますが、テストこうていでもんだいがはっせいしました。',
-        vietnamese: 'Phát triển đã hoàn thành 80%, nhưng có vấn đề phát sinh ở giai đoạn test.'
+        vietnamese: 'Development is 80% complete, but an issue came up during the testing phase.'
       },
       {
         speaker: 'PM',
         japanese: 'リリース日に影響はありますか。',
         kana: 'リリースびにえいきょうはありますか。',
-        vietnamese: 'Có ảnh hưởng đến ngày release không?'
+        vietnamese: 'Will this affect the release date?'
       },
       {
-        speaker: '開発リーダー',
+        speaker: 'Dev lead',
         japanese: '現状のままですと、3日ほど遅延する見込みです。',
         kana: 'げんじょうのままですと、3にちほどちえんするみこみです。',
-        vietnamese: 'Nếu giữ nguyên tình hình hiện tại, dự kiến sẽ chậm khoảng 3 ngày.'
+        vietnamese: 'If things stay as they are, we expect about a 3-day delay.'
       },
       {
         speaker: 'PM',
         japanese: '分かりました。優先度の低いタスクを後回しにして、クリティカルパスに集中しましょう。',
         kana: 'わかりました。ゆうせんどのひくいタスクをあとまわしにして、クリティカルパスにしゅうちゅうしましょう。',
-        vietnamese: 'Hiểu rồi. Hãy hoãn lại task ưu tiên thấp và tập trung vào đường găng.'
+        vietnamese: 'Understood. Let\'s postpone the low-priority tasks and focus on the critical path.'
       },
       {
-        speaker: '開発リーダー',
+        speaker: 'Dev lead',
         japanese: '承知いたしました。追加の人員配置が可能であれば、間に合わせられると思います。',
         kana: 'しょうちいたしました。ついかのじんいんはいちがかのうであれば、まにあわせられるとおもいます。',
-        vietnamese: 'Tôi hiểu rồi. Nếu có thể bổ sung thêm nhân sự, tôi nghĩ sẽ kịp tiến độ.'
+        vietnamese: 'Understood. If we can bring in additional staff, I think we can make it in time.'
       }
     ],
     culturalNote:
-      'Quản lý dự án kiểu Nhật thường dùng phương pháp 報連相 (hōrensō): 報告 (báo cáo), 連絡 (liên lạc), 相談 (trao đổi). 朝会 (chōkai - họp sáng) hàng ngày là thói quen phổ biến. Khác với Agile phương Tây, dự án Nhật thường theo 滝型 (waterfall) truyền thống, nhưng ngày càng nhiều công ty áp dụng Scrum và Agile.'
+      'Japanese-style project management often uses the 報連相 (hourensou) method: 報告 (report), 連絡 (contact), 相談 (consult). A daily morning meeting (朝会 — choukai) is a common habit. Unlike Western Agile, Japanese projects traditionally follow a waterfall model, though more companies are adopting Scrum and Agile these days.'
   },
 
   // ── 21. Social Issues (社会問題) ──────────────────────────────
   {
     id: 'n2-conv-21',
-    title: 'Vấn đề xã hội',
+    title: 'Social issues',
     titleJp: '社会問題',
     level: 'N2',
-    situation: 'Thảo luận về các vấn đề xã hội Nhật Bản: già hóa, ít con, chênh lệch giàu nghèo',
+    situation: 'Discussing Japan\'s social issues: an aging population, falling birth rate, and income inequality',
     patterns: [
       {
         japanese: '高齢化社会が進む中、年金制度の持続可能性が問われています。',
         kana: 'こうれいかしゃかいがすすむなか、ねんきんせいどのじぞくかのうせいがとわれています。',
-        vietnamese: 'Trong bối cảnh xã hội già hóa tiến triển, tính bền vững của chế độ lương hưu đang bị đặt câu hỏi.',
+        vietnamese: 'As society continues to age, the sustainability of the pension system is being called into question.',
         memoryTip:
-          'Nhớ: 高齢化 (こうれいか) = "cao + linh + hóa" → già hóa. 年金 (ねんきん) = "niên + kim" → lương hưu. 持続可能性 (じぞくかのうせい) = sustainability = tính bền vững. 問われる = bị đặt câu hỏi (bị động).'
+          'Remember: 高齢化 (koureika) = aging (of society). 年金 (nenkin) = a pension. 持続可能性 (jizoku kanousei) = sustainability. 問われる = passive, "is being questioned."'
       },
       {
         japanese: '少子化対策として、育児支援の充実が求められています。',
         kana: 'しょうしかたいさくとして、いくじしえんのじゅうじつがもとめられています。',
-        vietnamese: 'Với tư cách đối sách cho vấn đề ít con, sự hoàn thiện hỗ trợ nuôi dạy trẻ đang được đòi hỏi.',
+        vietnamese: 'As a countermeasure to the falling birth rate, strengthening childcare support is being called for.',
         memoryTip:
-          'Nhớ: 少子化 (しょうしか) = "thiểu + tử + hóa" → ít con hóa. 育児支援 (いくじしえん) = hỗ trợ nuôi dạy trẻ. 充実 (じゅうじつ) = "sung + thực" → đầy đủ / hoàn thiện. 求められる = được đòi hỏi.'
+          'Remember: 少子化 (shoushika) = a declining birth rate. 育児支援 (ikuji shien) = childcare support. 充実 (juujitsu) = enrichment/enhancement. 求められる = to be called for.'
       },
       {
         japanese: '格差社会の拡大は、深刻な問題として認識されています。',
         kana: 'かくさしゃかいのかくだいは、しんこくなもんだいとしてにんしきされています。',
-        vietnamese: 'Sự mở rộng của xã hội chênh lệch được nhận thức là vấn đề nghiêm trọng.',
+        vietnamese: 'The widening of income inequality is recognized as a serious problem.',
         memoryTip:
-          'Nhớ: 格差 (かくさ) = "cách + sai" → chênh lệch. 拡大 (かくだい) = "khoách + đại" → mở rộng. 深刻 (しんこく) = "thâm + khắc" → nghiêm trọng. 認識 (にんしき) = "nhận + thức" → nhận thức.'
+          'Remember: 格差 (kakusa) = a gap/disparity. 拡大 (kakudai) = an expansion. 深刻 (shinkoku) = serious. 認識 (ninshiki) = recognition.'
       }
     ],
     dialogue: [
       {
-        speaker: '学生A (Sinh viên A)',
+        speaker: 'Student A',
         japanese: '日本の少子高齢化問題について、どう思いますか。',
         kana: 'にほんのしょうしこうれいかもんだいについて、どうおもいますか。',
-        vietnamese: 'Bạn nghĩ gì về vấn đề ít con - già hóa của Nhật?'
+        vietnamese: 'What do you think about Japan\'s declining birth rate and aging population?'
       },
       {
-        speaker: '学生B (Sinh viên B)',
+        speaker: 'Student B',
         japanese: '2050年には人口が1億人を下回ると予測されていて、かなり深刻だと思います。',
         kana: '2050ねんにはじんこうが1おくにんをしたまわるとよそくされていて、かなりしんこくだとおもいます。',
-        vietnamese: 'Dự đoán dân số sẽ giảm dưới 100 triệu vào năm 2050, tôi nghĩ khá nghiêm trọng.'
+        vietnamese: 'The population is projected to fall below 100 million by 2050 — I think it\'s quite serious.'
       },
       {
-        speaker: '学生A',
+        speaker: 'Student A',
         japanese: '移民を受け入れるべきだという意見もありますが。',
         kana: 'いみんをうけいれるべきだというけんもありますが。',
-        vietnamese: 'Cũng có ý kiến rằng nên tiếp nhận nhập cư.'
+        vietnamese: 'There\'s also an opinion that Japan should accept immigrants.'
       },
       {
-        speaker: '学生B',
+        speaker: 'Student B',
         japanese: '確かに労働力不足の解決にはなりますが、社会統合の課題もありますね。',
         kana: 'たしかにろうどうりょくぶそくのかいけつにはなりますが、しゃかいとうごうのかだいもありますね。',
-        vietnamese: 'Đúng là giải quyết được thiếu lao động, nhưng cũng có vấn đề hòa nhập xã hội.'
+        vietnamese: 'That would certainly solve the labor shortage, but there are also challenges around social integration.'
       },
       {
-        speaker: '学生A',
+        speaker: 'Student A',
         japanese: '貧富の格差についてはどうですか。非正規雇用の増加が心配です。',
         kana: 'ひんぷのかくさについてはどうですか。ひせいきこようのぞうかがしんぱいです。',
-        vietnamese: 'Về chênh lệch giàu nghèo thì sao? Tôi lo lắng về sự tăng tuyển dụng không chính thức.'
+        vietnamese: 'What about the gap between rich and poor? I\'m worried about the rise in non-regular employment.'
       },
       {
-        speaker: '学生B',
+        speaker: 'Student B',
         japanese: 'ワーキングプアの問題は見過ごせません。最低賃金の引き上げが必要だと考えます。',
         kana: 'ワーキングプアのもんだいはみすごせません。さいていちんぎんのひきあげがひつようだとかんがえます。',
-        vietnamese: 'Vấn đề working poor không thể bỏ qua. Tôi cho rằng cần tăng lương tối thiểu.'
+        vietnamese: 'The working-poor problem can\'t be ignored. I think raising the minimum wage is necessary.'
       }
     ],
     culturalNote:
-      'Nhật Bản đang đối mặt với 少子高齢化 (shōshi kōreika) nghiêm trọng nhất thế giới. Tỷ lệ sinh (合計特殊出生率) chỉ khoảng 1.2, thấp hơn nhiều so với mức thay thế 2.1. 格差社会 (kakusa shakai - xã hội chênh lệch) nổi lên từ thập niên 2000 với sự gia tăng 非正規雇用 (hiseiki koyō - tuyển dụng không chính thức) và ワーキングプア (working poor).'
+      'Japan faces one of the world\'s most severe cases of a declining birth rate and aging population (少子高齢化, shoushi koureika). The total fertility rate (合計特殊出生率) is only about 1.2, well below the replacement level of 2.1. 格差社会 (kakusa shakai — a society of disparity) emerged as a concept in the 2000s alongside the rise of non-regular employment (非正規雇用) and the working poor (ワーキングプア).'
   },
 
   // ── 22. Environmental Policy (環境政策) ───────────────────────
   {
     id: 'n2-conv-22',
-    title: 'Chính sách môi trường',
+    title: 'Environmental policy',
     titleJp: '環境政策',
     level: 'N2',
-    situation: 'Thảo luận về biến đổi khí hậu, năng lượng tái tạo và chính sách bảo vệ môi trường',
+    situation: 'Discussing climate change, renewable energy, and environmental protection policy',
     patterns: [
       {
         japanese: '地球温暖化を食い止めるためには、二酸化炭素の排出削減が不可欠です。',
         kana: 'ちきゅうおんだんかをくいとめるためには、にさんかたんそのはいしゅつさくげんがふかけつです。',
-        vietnamese: 'Để chặn đứng sự nóng lên toàn cầu, việc giảm phát thải carbon dioxide là không thể thiếu.',
+        vietnamese: 'To halt global warming, reducing carbon dioxide emissions is essential.',
         memoryTip:
-          'Nhớ: 温暖化 (おんだんか) = "ôn + noãn + hóa" → ấm lên. 食い止める (くいとめる) = chặn đứng. 排出削減 (はいしゅつさくげん) = giảm phát thải. 不可欠 (ふかけつ) = "bất + khả + khuyết" → không thể thiếu.'
+          'Remember: 温暖化 (ondanka) = warming. 食い止める (kuitomeru) = to halt/stop. 排出削減 (haishutsu sakugen) = emissions reduction. 不可欠 (fukaketsu) = indispensable.'
       },
       {
         japanese: '再生可能エネルギーへの転換を加速させる必要があります。',
         kana: 'さいせいかのうエネルギーへのてんかんをかそくさせるひつようがあります。',
-        vietnamese: 'Cần đẩy nhanh việc chuyển đổi sang năng lượng tái tạo.',
+        vietnamese: 'It\'s necessary to accelerate the shift to renewable energy.',
         memoryTip:
-          'Nhớ: 再生可能 (さいせいかのう) = "tái + sinh + khả + năng" → có thể tái sinh → tái tạo. 転換 (てんかん) = "chuyển + hoán" → chuyển đổi. 加速 (かそく) = "gia + tốc" → tăng tốc.'
+          'Remember: 再生可能 (saisei kanou) = renewable. 転換 (tenkan) = a shift/conversion. 加速 (kasoku) = acceleration.'
       }
     ],
     dialogue: [
       {
-        speaker: 'パネリスト A (Khách mời A)',
+        speaker: 'Panelist A',
         japanese: '2050年カーボンニュートラル達成のために、何が最も重要だと思われますか。',
         kana: '2050ねんカーボンニュートラルたっせいのために、なにがもっともじゅうようだとおもわれますか。',
-        vietnamese: 'Để đạt carbon neutral vào 2050, điều gì được cho là quan trọng nhất?'
+        vietnamese: 'What do you think is most important for achieving carbon neutrality by 2050?'
       },
       {
-        speaker: 'パネリスト B (Khách mời B)',
+        speaker: 'Panelist B',
         japanese: '原子力発電の是非はさておき、再生エネルギーの普及が鍵だと考えます。',
         kana: 'げんしりょくはつでんのぜひはさておき、さいせいエネルギーのふきゅうがかぎだとかんがえます。',
-        vietnamese: 'Gác lại vấn đề điện hạt nhân đúng sai, tôi cho rằng phổ cập năng lượng tái tạo là chìa khóa.'
+        vietnamese: 'Setting aside the debate over nuclear power, I think spreading renewable energy is the key.'
       },
       {
-        speaker: 'パネリスト A',
+        speaker: 'Panelist A',
         japanese: '太陽光発電のコストは下がっていますが、送電網の整備が追いついていません。',
         kana: 'たいようこうはつでんのコストはさがっていますが、そうでんもうのせいびがおいついていません。',
-        vietnamese: 'Chi phí điện mặt trời đang giảm, nhưng việc hoàn thiện lưới truyền tải chưa theo kịp.'
+        vietnamese: 'The cost of solar power is coming down, but grid infrastructure development isn\'t keeping pace.'
       },
       {
-        speaker: 'パネリスト B',
+        speaker: 'Panelist B',
         japanese: '企業の役割も大きいですね。ESG投資の拡大が企業行動を変えつつあります。',
         kana: 'きぎょうのやくわりもおおきいですね。ESGとうしのかくだいがきぎょうこうどうをかえつつあります。',
-        vietnamese: 'Vai trò của doanh nghiệp cũng lớn. Sự mở rộng đầu tư ESG đang dần thay đổi hành vi doanh nghiệp.'
+        vietnamese: 'The role of businesses matters a lot too. The growth of ESG investing is gradually changing corporate behavior.'
       },
       {
-        speaker: '司会者 (MC)',
+        speaker: 'MC',
         japanese: '個人レベルでできることは何でしょうか。',
         kana: 'こじんレベルでできることはなんでしょうか。',
-        vietnamese: 'Ở cấp độ cá nhân thì có thể làm gì?'
+        vietnamese: 'What can be done at the individual level?'
       },
       {
-        speaker: 'パネリスト A',
+        speaker: 'Panelist A',
         japanese: '省エネ意識の向上と、消費行動の見直しが第一歩だと思います。',
         kana: 'しょうエネいしきのこうじょうと、しょうひこうどうのみなおしがだいいっぽだとおもいます。',
-        vietnamese: 'Tôi nghĩ bước đầu tiên là nâng cao ý thức tiết kiệm năng lượng và xem xét lại hành vi tiêu dùng.'
+        vietnamese: 'I think the first step is raising energy-saving awareness and reconsidering our consumption habits.'
       }
     ],
     culturalNote:
-      'Nhật Bản cam kết đạt カーボンニュートラル (carbon neutral) vào 2050. Sau thảm họa Fukushima 2011, chính sách năng lượng trở thành chủ đề nóng. Nhật có văn hóa もったいない (mottainai - tiếc rẻ / đừng lãng phí) — triết lý tiết kiệm tài nguyên ăn sâu vào đời sống. Phân loại rác (ゴミ分別) ở Nhật cũng thuộc hàng nghiêm ngặt nhất thế giới.'
+      'Japan has committed to achieving carbon neutrality by 2050. After the 2011 Fukushima disaster, energy policy became a hot topic. Japan has a culture of もったいない (mottainai — "what a waste"), a philosophy of resource conservation deeply embedded in daily life. Trash sorting (ゴミ分別) in Japan is also among the strictest in the world.'
   },
 
   // ── 23. Philosophy of Work (仕事観) ───────────────────────────
   {
     id: 'n2-conv-23',
-    title: 'Triết lý về công việc',
+    title: 'A philosophy of work',
     titleJp: '仕事観',
     level: 'N2',
-    situation: 'Thảo luận về ý nghĩa công việc, ikigai và cân bằng công việc-cuộc sống',
+    situation: 'Discussing the meaning of work, ikigai, and work-life balance',
     patterns: [
       {
         japanese: '仕事にやりがいを感じることが、生きがいにつながると思います。',
         kana: 'しごとにやりがいをかんじることが、いきがいにつながるとおもいます。',
-        vietnamese: 'Tôi nghĩ việc cảm thấy ý nghĩa trong công việc dẫn đến lẽ sống.',
+        vietnamese: 'I think feeling a sense of purpose in one\'s work connects to having a reason for living.',
         memoryTip:
-          'Nhớ: やりがい = giá trị / ý nghĩa (khi làm việc). 生きがい (いきがい) = "sống + đáng" → lẽ sống / ikigai — khái niệm nổi tiếng của Nhật. つながる = kết nối / dẫn đến.'
+          'Remember: やりがい = a sense of purpose/worth (in doing something). 生きがい (ikigai) = "a reason to live" — a famous Japanese concept. つながる = to connect/lead to.'
       },
       {
         japanese: 'ワークライフバランスを重視する傾向が若い世代を中心に広がっています。',
         kana: 'ワークライフバランスをじゅうしするけいこうがわかいせだいをちゅうしんにひろがっています。',
-        vietnamese: 'Xu hướng coi trọng cân bằng công việc-cuộc sống đang lan rộng tập trung ở thế hệ trẻ.',
+        vietnamese: 'The trend of valuing work-life balance is spreading, mainly among the younger generation.',
         memoryTip:
-          'Nhớ: 重視 (じゅうし) = "trọng + thị" → coi trọng. 傾向 (けいこう) = xu hướng. 世代 (せだい) = "thế + đại" → thế hệ. を中心に = lấy ~ làm trung tâm.'
+          'Remember: 重視 (juushi) = to place importance on. 傾向 (keikou) = a trend. 世代 (sedai) = a generation. を中心に = "centered on/mainly."'
       }
     ],
     dialogue: [
       {
-        speaker: '先輩 (Senpai)',
+        speaker: 'Senpai',
         japanese: '最近の若い人は仕事に対する価値観が変わってきたと感じるな。',
         kana: 'さいきんのわかいひとはしごとにたいするかちかんがかわってきたとかんじるな。',
-        vietnamese: 'Tôi cảm thấy giá trị quan về công việc của người trẻ gần đây đã thay đổi.'
+        vietnamese: 'I feel like young people these days have changed their values around work.'
       },
       {
-        speaker: '後輩 (Kouhai)',
+        speaker: 'Kouhai',
         japanese: 'そうですね。私たちの世代は、仕事だけでなく私生活も大切にしたいと思っています。',
         kana: 'そうですね。わたしたちのせだいは、しごとだけでなくしせいかつもたいせつにしたいとおもっています。',
-        vietnamese: 'Đúng vậy. Thế hệ chúng tôi muốn coi trọng không chỉ công việc mà cả đời sống riêng.'
+        vietnamese: 'That\'s true. Our generation wants to value our personal life, not just work.'
       },
       {
-        speaker: '先輩',
+        speaker: 'Senpai',
         japanese: '昔は会社のために自分を犠牲にするのが当たり前だったけどな。',
         kana: 'むかしはかいしゃのためにじぶんをぎせいにするのがあたりまえだったけどな。',
-        vietnamese: 'Ngày xưa, hy sinh bản thân vì công ty là chuyện hiển nhiên.'
+        vietnamese: 'In the old days, sacrificing yourself for the company was just taken for granted.'
       },
       {
-        speaker: '後輩',
+        speaker: 'Kouhai',
         japanese: '確かに、でも過労死が社会問題になっている以上、働き方改革は必要だと思います。',
         kana: 'たしかに、でもかろうしがしゃかいもんだいになっているいじょう、はたらきかたかいかくはひつようだとおもいます。',
-        vietnamese: 'Đúng thế, nhưng vì chết vì làm việc quá sức đã trở thành vấn đề xã hội, tôi nghĩ cải cách cách làm việc là cần thiết.'
+        vietnamese: 'True, but given that death from overwork has become a social issue, I think work-style reform is necessary.'
       },
       {
-        speaker: '先輩',
+        speaker: 'Senpai',
         japanese: '君にとっての「生きがい」とは何だい？',
         kana: 'きみにとっての「いきがい」とはなんだい？',
-        vietnamese: '"Lẽ sống" của cậu là gì?'
+        vietnamese: 'What is "ikigai" to you?'
       },
       {
-        speaker: '後輩',
+        speaker: 'Kouhai',
         japanese: '好きなことで社会に貢献できることが、私の生きがいです。仕事も趣味も両立させたいです。',
         kana: 'すきなことでしゃかいにこうけんできることが、わたしのいきがいです。しごともしゅみもりょうりつさせたいです。',
-        vietnamese: 'Đóng góp cho xã hội bằng điều mình yêu thích là lẽ sống của tôi. Tôi muốn cân bằng cả công việc lẫn sở thích.'
+        vietnamese: 'Being able to contribute to society through what I love is my ikigai. I want to balance both work and hobbies.'
       }
     ],
     culturalNote:
-      '生きがい (ikigai) là khái niệm triết học Nhật Bản về lẽ sống — giao điểm giữa điều bạn yêu thích, điều bạn giỏi, điều thế giới cần, và điều có thể kiếm tiền. 過労死 (karōshi - chết vì làm việc quá sức) là hiện tượng đặc trưng của Nhật, đã dẫn đến 働き方改革 (hatarakikata kaikaku - cải cách cách làm việc) từ 2019, giới hạn giờ làm thêm và khuyến khích nghỉ phép.'
+      'Ikigai (生きがい) is a Japanese philosophical concept of a "reason for being" — the intersection of what you love, what you\'re good at, what the world needs, and what you can be paid for. 過労死 (karoushi — death from overwork) is a distinctly Japanese phenomenon that led to the 働き方改革 (hatarakikata kaikaku — work-style reform) starting in 2019, which limits overtime hours and encourages taking paid leave.'
   },
 
   // ── 24. Historical Discussion (歴史) ──────────────────────────
   {
     id: 'n2-conv-24',
-    title: 'Thảo luận lịch sử',
+    title: 'Historical discussion',
     titleJp: '歴史討論',
     level: 'N2',
-    situation: 'Thảo luận về các thời đại lịch sử, sự biến đổi và ảnh hưởng đến xã hội hiện đại',
+    situation: 'Discussing historical eras, societal change, and their influence on modern-day society',
     patterns: [
       {
         japanese: '明治維新は日本の近代化に決定的な影響を与えました。',
         kana: 'めいじいしんはにほんのきんだいかにけっていてきなえいきょうをあたえました。',
-        vietnamese: 'Cuộc Minh Trị Duy Tân đã có ảnh hưởng quyết định đến sự hiện đại hóa của Nhật Bản.',
+        vietnamese: 'The Meiji Restoration had a decisive influence on Japan\'s modernization.',
         memoryTip:
-          'Nhớ: 明治維新 (めいじいしん) = "Minh Trị Duy Tân" → cuộc cách mạng 1868. 近代化 (きんだいか) = "cận đại hóa" → hiện đại hóa. 決定的 (けっていてき) = mang tính quyết định. 影響を与える = gây ảnh hưởng.'
+          'Remember: 明治維新 (Meiji Ishin) = the Meiji Restoration, the 1868 revolution. 近代化 (kindaika) = modernization. 決定的 (ketteiteki) = decisive. 影響を与える = to have an influence on.'
       },
       {
         japanese: '時代の変遷とともに、人々の価値観も大きく変化してきました。',
         kana: 'じだいのへんせんとともに、ひとびとのかちかんもおおきくへんかしてきました。',
-        vietnamese: 'Cùng với sự biến đổi của thời đại, giá trị quan của con người cũng đã thay đổi lớn.',
+        vietnamese: 'Along with the changing of the eras, people\'s values have also changed greatly.',
         memoryTip:
-          'Nhớ: 時代 (じだい) = "thời + đại" → thời đại. 変遷 (へんせん) = "biến + thiên" → sự biến đổi qua thời gian. 価値観 (かちかん) = "giá trị quan" → quan niệm giá trị. ～とともに = cùng với.'
+          'Remember: 時代 (jidai) = an era. 変遷 (hensen) = a transition/change over time. 価値観 (kachikan) = a sense of values. ～とともに = "along with."'
       }
     ],
     dialogue: [
       {
-        speaker: '教授 (Giáo sư)',
+        speaker: 'Professor',
         japanese: '日本史の中で、最も重要な転換点は何だと思いますか。',
         kana: 'にほんしのなかで、もっともじゅうようなてんかんてんはなんだとおもいますか。',
-        vietnamese: 'Trong lịch sử Nhật Bản, bạn nghĩ bước ngoặt quan trọng nhất là gì?'
+        vietnamese: 'What do you think is the most important turning point in Japanese history?'
       },
       {
-        speaker: '学生 (Sinh viên)',
+        speaker: 'Student',
         japanese: '明治維新だと思います。鎖国から開国へ、社会構造が根本から変わりました。',
         kana: 'めいじいしんだとおもいます。さこくからかいこくへ、しゃかいこうぞうがこんぽんからかわりました。',
-        vietnamese: 'Tôi nghĩ là Minh Trị Duy Tân. Từ bế quan tỏa quốc sang mở cửa, cấu trúc xã hội thay đổi tận gốc.'
+        vietnamese: 'I think it\'s the Meiji Restoration. From national isolation to opening up, the social structure changed at its very roots.'
       },
       {
-        speaker: '教授',
+        speaker: 'Professor',
         japanese: '戦後の復興も見逃せませんね。焼け野原から経済大国になった過程は驚くべきものです。',
         kana: 'せんごのふっこうもみのがせませんね。やけのはらからけいざいたいこくになったかていはおどろくべきものです。',
-        vietnamese: 'Sự phục hưng sau chiến tranh cũng không thể bỏ qua. Quá trình từ đống tro tàn trở thành cường quốc kinh tế thật đáng kinh ngạc.'
+        vietnamese: 'The postwar recovery is also not to be overlooked. The process of going from a scorched wasteland to an economic superpower is astonishing.'
       },
       {
-        speaker: '学生',
+        speaker: 'Student',
         japanese: '江戸時代の鎖国政策が、独自の文化発展につながったという見方もありますね。',
         kana: 'えどじだいのさこくせいさくが、どくじのぶんかはってんにつながったというみかたもありますね。',
-        vietnamese: 'Cũng có cách nhìn rằng chính sách bế quan tỏa quốc thời Edo dẫn đến sự phát triển văn hóa độc đáo.'
+        vietnamese: 'There\'s also a view that the isolationist policy of the Edo period led to Japan\'s uniquely developed culture.'
       },
       {
-        speaker: '教授',
+        speaker: 'Professor',
         japanese: 'その通りです。歴史は多角的に見ることが大切です。一つの出来事にも、光と影があります。',
         kana: 'そのとおりです。れきしはたかくてきにみることがたいせつです。ひとつのできごとにも、ひかりとかげがあります。',
-        vietnamese: 'Chính xác. Nhìn lịch sử đa góc độ là quan trọng. Một sự kiện cũng có mặt sáng và mặt tối.'
+        vietnamese: 'Exactly. It\'s important to view history from multiple angles. Even a single event has both light and shadow.'
       }
     ],
     culturalNote:
-      'Lịch sử Nhật Bản chia thành các thời đại (時代): Jōmon → Yayoi → Kofun → Asuka → Nara → Heian → Kamakura → Muromachi → Azuchi-Momoyama → Edo → Meiji → Taishō → Shōwa → Heisei → Reiwa (hiện tại). 明治維新 (1868) là bước ngoặt chuyển từ phong kiến sang hiện đại. Người Nhật cũng dùng niên hiệu (元号 - gengō) song song với dương lịch.'
+      'Japanese history is divided into eras (時代): Jomon → Yayoi → Kofun → Asuka → Nara → Heian → Kamakura → Muromachi → Azuchi-Momoyama → Edo → Meiji → Taisho → Showa → Heisei → Reiwa (present). The Meiji Restoration (1868) marked the turning point from feudalism to modernity. Japanese people also use era names (元号 — gengou) alongside the Western calendar.'
   },
 
   // ── 25. Emotional Expression (感情表現) ───────────────────────
   {
     id: 'n2-conv-25',
-    title: 'Biểu đạt cảm xúc',
+    title: 'Expressing emotion',
     titleJp: '感情表現',
     level: 'N2',
-    situation: 'Diễn đạt các cung bậc cảm xúc phức tạp: buồn, vui sướng, tiếc nuối trong bối cảnh Nhật',
+    situation: 'Expressing complex layers of emotion — sadness, joy, regret — in a Japanese context',
     patterns: [
       {
         japanese: 'この結果を聞いて、悔しくてたまりません。',
         kana: 'このけっかをきいて、くやしくてたまりません。',
-        vietnamese: 'Nghe kết quả này, tôi ấm ức không chịu nổi.',
+        vietnamese: 'Hearing this result, I feel unbearably frustrated.',
         memoryTip:
-          'Nhớ: 悔しい (くやしい) = ấm ức / tiếc nuối vì thua / thất bại. ～てたまらない = không chịu nổi / cực kỳ (cảm giác tự nhiên, không kiểm soát được). Khác với 残念 (đáng tiếc — nhẹ hơn).'
+          'Remember: 悔しい (kuyashii) = frustrated/bitter about losing or failing. ～てたまらない = "unbearably ~" (an uncontrollable, natural feeling). Different from 残念 (regrettable — milder).'
       },
       {
         japanese: '合格の知らせを受けて、嬉しさのあまり涙が出ました。',
         kana: 'ごうかくのしらせをうけて、うれしさのあまりなみだがでました。',
-        vietnamese: 'Nhận tin đỗ, vì vui quá mà nước mắt trào ra.',
+        vietnamese: 'On hearing the news that I passed, tears came out from being so happy.',
         memoryTip:
-          'Nhớ: 嬉しさ (うれしさ) = niềm vui (danh từ hóa từ 嬉しい). ～のあまり = vì quá ~ mà... (cảm xúc mạnh đến mức gây ra hành động). 涙 (なみだ) = nước mắt.'
+          'Remember: 嬉しさ (ureshisa) = joy (the noun form of 嬉しい). ～のあまり = "to the extent that ~ resulted in..." (a strong emotion triggering an action). 涙 (namida) = tears.'
       },
       {
         japanese: '親友が遠くに引っ越すと聞いて、寂しさを感じずにはいられません。',
         kana: 'しんゆうがとおくにひっこすときいて、さびしさをかんじずにはいられません。',
-        vietnamese: 'Nghe tin bạn thân chuyển đi xa, tôi không thể không cảm thấy cô đơn.',
+        vietnamese: 'Hearing that my close friend is moving far away, I can\'t help but feel lonely.',
         memoryTip:
-          'Nhớ: 寂しさ (さびしさ) = sự cô đơn (danh từ hóa). ～ずにはいられない = không thể không ~ (hành động / cảm xúc tự phát, không kiềm chế được). 親友 (しんゆう) = "thân + hữu" → bạn thân.'
+          'Remember: 寂しさ (sabishisa) = loneliness (noun form). ～ずにはいられない = "cannot help but ~" (a spontaneous, uncontrollable feeling/action). 親友 (shinyuu) = a close friend.'
       }
     ],
     dialogue: [
       {
-        speaker: '田中 (Tanaka)',
+        speaker: 'Tanaka',
         japanese: 'コンテストの結果が出たんだ。残念ながら、入賞できなかった。',
         kana: 'コンテストのけっかがでたんだ。ざんねんながら、にゅうしょうできなかった。',
-        vietnamese: 'Kết quả cuộc thi đã ra rồi. Đáng tiếc, không được giải.'
+        vietnamese: 'The contest results are out. Unfortunately, I didn\'t place.'
       },
       {
-        speaker: '鈴木 (Suzuki)',
+        speaker: 'Suzuki',
         japanese: 'あんなに努力したのに、本当に悔しいよね。',
         kana: 'あんなにどりょくしたのに、ほんとうにくやしいよね。',
-        vietnamese: 'Đã cố gắng nhiều thế mà, thật sự ấm ức nhỉ.'
+        vietnamese: 'After putting in so much effort, that\'s really frustrating.'
       },
       {
-        speaker: '田中',
+        speaker: 'Tanaka',
         japanese: 'うん…。正直、悔しくて夜眠れなかった。でも、挑戦したこと自体に後悔はない。',
         kana: 'うん…。しょうじき、くやしくてよるねむれなかった。でも、ちょうせんしたことじたいにこうかいはない。',
-        vietnamese: 'Ừ... Thật lòng, ấm ức đến mức đêm không ngủ được. Nhưng, bản thân việc đã thử thách thì không hối hận.'
+        vietnamese: 'Yeah... Honestly, I was so frustrated I couldn\'t sleep at night. But I don\'t regret having tried in the first place.'
       },
       {
-        speaker: '鈴木',
+        speaker: 'Suzuki',
         japanese: 'その気持ち、すごく分かるよ。でも、次こそきっとうまくいくと信じてる。',
         kana: 'そのきもち、すごくわかるよ。でも、つぎこそきっとうまくいくとしんじてる。',
-        vietnamese: 'Tâm trạng ấy, tớ rất hiểu. Nhưng, lần sau chắc chắn sẽ suôn sẻ, tớ tin thế.'
+        vietnamese: 'I really understand how you feel. But I believe next time will surely go well.'
       },
       {
-        speaker: '田中',
+        speaker: 'Tanaka',
         japanese: 'ありがとう。そう言ってもらえると、救われた気がする。',
         kana: 'ありがとう。そういってもらえると、すくわれたきがする。',
-        vietnamese: 'Cảm ơn. Được nói vậy, tôi cảm thấy như được cứu rỗi.'
+        vietnamese: 'Thanks. Hearing you say that makes me feel like I\'ve been saved.'
       },
       {
-        speaker: '鈴木',
+        speaker: 'Suzuki',
         japanese: '辛い時こそ、自分を認めてあげることが大事だよ。一緒に頑張ろう。',
         kana: 'つらいときこそ、じぶんをみとめてあげることがだいじだよ。いっしょにがんばろう。',
-        vietnamese: 'Chính lúc khó khăn mới cần công nhận bản thân mình. Cùng cố gắng nhé.'
+        vietnamese: 'It\'s precisely in tough times that it matters to acknowledge yourself. Let\'s do our best together.'
       }
     ],
     culturalNote:
-      'Người Nhật thường kìm nén cảm xúc trước công chúng (建前 - tatemae) nhưng rất sâu sắc trong cảm xúc cá nhân (本音 - honne). 悔しい (kuyashii) là cảm xúc đặc trưng Nhật — ấm ức vì thua nhưng muốn cố gắng hơn, khác với "angry" hay "sad" trong tiếng Anh. Trong anime/manga, cảnh khóc vì 悔しい rất phổ biến. もの哀れ (mono no aware - nỗi buồn trước sự vô thường) là mỹ cảm cốt lõi của văn hóa Nhật.'
+      'Japanese people tend to suppress emotions in public (建前 — tatemae) while feeling deeply in private (本音 — honne). 悔しい (kuyashii) is a distinctly Japanese emotion — frustration at losing combined with a determination to do better, different from simply "angry" or "sad" in English. Crying out of 悔しい is a common scene in anime/manga. もの哀れ (mono no aware — a poignant awareness of impermanence) is a core aesthetic sensibility in Japanese culture.'
   }
 ];
