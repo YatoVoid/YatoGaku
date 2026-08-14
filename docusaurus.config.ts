@@ -69,7 +69,7 @@ const config: Config = {
       title: 'YatoGaku',
       logo: {
         alt: 'YatoGaku Logo',
-        src: 'img/logo.svg',
+        src: 'img/yatogaku-logo.png',
       },
       items: [
         {
